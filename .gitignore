@@ -1,5 +1,6 @@
 .env
 .local_memory_bank.json
+.scan_metadata.json
 __pycache__/
 *.pyc
 .DS_Store

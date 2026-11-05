@@ -1,6 +1,7 @@
 import os
 import json
 import time
+from email.utils import parsedate_to_datetime
 from datetime import datetime, timezone
 from typing import Dict, Any, List, Optional
 import requests
@@ -55,8 +56,7 @@ class HindsightService:
 
     def ensure_bank_exists(self, bank_id: str, bank_name: str) -> bool:
         """
-        Ensures the bank exists in Hindsight Cloud.
-        Cached in-memory to avoid redundant PUT calls on every request.
+        Ensures the bank exists in Hindsight Cloud. Cached in-memory to avoid redundant PUT calls.
         """
         if bank_id in self._known_banks:
             return True
@@ -78,29 +78,10 @@ class HindsightService:
             print(f"[Hindsight Bank Create Error] {e}")
         return False
 
-    def get_bank_memories_count(self, bank_id: str) -> int:
-        """
-        Returns number of memory items stored in this bank.
-        """
-        if not self.is_configured():
-            return len(self._load_local_bank(bank_id))
-        try:
-            res = requests.get(
-                f"{self.base_url}/v1/default/banks/{bank_id}/memories/list",
-                headers=self._get_headers(),
-                timeout=8
-            )
-            if res.status_code == 200:
-                items = res.json().get("items", [])
-                return len(items)
-        except Exception as e:
-            print(f"[Hindsight List Error] {e}")
-        return 0
-
     def retain_rich_articles(self, bank_id: str, articles: List[Dict[str, Any]], brand_name: str) -> Dict[str, Any]:
         """
-        Retains rich, real article contents into Hindsight Cloud so entity resolution
-        and multi-strategy recall have genuine, multi-paragraph content to operate on.
+        Retains rich, real article contents into Hindsight Cloud.
+        Anchors each article's timestamp to its real published_date from Tavily.
         """
         now_iso = datetime.now(timezone.utc).isoformat()
         items = []
@@ -110,11 +91,21 @@ class HindsightService:
             title = art.get("title", "").strip()
             source = art.get("source", "Web Source")
             url = art.get("url", "")
+            raw_pub_date = art.get("published_date")
 
-            body = f"Article Headline: {title}\nSource: {source}\nContent: {snippet}"
+            # Parse real publication date if available
+            article_timestamp = now_iso
+            if raw_pub_date:
+                try:
+                    dt = parsedate_to_datetime(raw_pub_date)
+                    article_timestamp = dt.isoformat()
+                except Exception:
+                    article_timestamp = now_iso
+
+            body = f"Article: {title}\nSource: {source}\nContent: {snippet}"
             items.append({
                 "content": body,
-                "timestamp": now_iso,
+                "timestamp": article_timestamp,
                 "metadata": {
                     "source": str(source),
                     "url": str(url),
@@ -146,7 +137,7 @@ class HindsightService:
             entry = {
                 "id": f"local-{int(time.time()*1000)}",
                 "text": it["content"],
-                "timestamp": now_iso,
+                "timestamp": it["timestamp"],
                 "metadata": it["metadata"],
                 "storage_backend": "local_disk_fallback"
             }
@@ -219,7 +210,7 @@ class HindsightService:
         recalled = recall_res.get("results", [])
         if not recalled:
             return {
-                "text": "Baseline market scan committed. Historical trajectory will emerge across subsequent scans.",
+                "text": "Baseline market scan committed. Trajectory will emerge across subsequent rescans.",
                 "based_on": [],
                 "storage_backend": "local_disk_fallback"
             }
