@@ -19,7 +19,6 @@ app.add_middleware(
 
 hindsight = HindsightService()
 
-# Serve static assets
 public_dir = os.path.join(os.path.dirname(__file__), "public")
 app.mount("/static", StaticFiles(directory=public_dir), name="static")
 
@@ -40,8 +39,7 @@ class AskRequest(BaseModel):
 @app.post("/api/ask")
 def ask_gods_eye(req: AskRequest):
     """
-    Trap 2 Fix: Interactive Memory Drilldown endpoint.
-    Recalls memories from Hindsight Cloud and synthesizes answers via Groq LLM.
+    Memory drilldown endpoint querying Hindsight Cloud reflect API.
     """
     try:
         answer_data = query_memory_drilldown(req.bank_id, req.brand_name, req.question)
@@ -52,9 +50,9 @@ def ask_gods_eye(req: AskRequest):
 @app.get("/api/hindsight/status")
 def get_hindsight_status():
     return {
-        "status": "connected" if hindsight.is_configured() else "local_agent_bank",
+        "status": "connected" if hindsight.is_configured() else "local_disk_fallback",
         "hindsight_configured": hindsight.is_configured(),
-        "provider": "Vectorize Hindsight Memory"
+        "provider": "Vectorize Hindsight Cloud"
     }
 
 if __name__ == "__main__":

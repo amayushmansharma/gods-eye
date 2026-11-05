@@ -4,11 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>God's Eye — Autonomous Market Intelligence</title>
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
-  <!-- Google Fonts: Inter & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -20,8 +17,6 @@
     .font-mono {
       font-family: 'JetBrains Mono', monospace;
     }
-    
-    /* Background Image setup */
     .bg-eclipse {
       background-image: url('/static/background.jpg');
       background-size: cover;
@@ -29,8 +24,6 @@
       background-repeat: no-repeat;
       background-attachment: fixed;
     }
-
-    /* Glass Pill Search Bar */
     .glass-pill-container {
       background: rgba(10, 10, 10, 0.45);
       backdrop-filter: blur(28px) saturate(180%);
@@ -51,8 +44,6 @@
         inset 0 -1px 2px rgba(0, 0, 0, 0.8);
       transform: translateY(-1px);
     }
-
-    /* Glass Panels */
     .glass-panel {
       background: rgba(12, 12, 14, 0.65);
       backdrop-filter: blur(20px);
@@ -61,7 +52,6 @@
       border-radius: 20px;
       box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.15);
     }
-
     .glass-chip {
       background: rgba(255, 255, 255, 0.06);
       backdrop-filter: blur(12px);
@@ -78,7 +68,6 @@
 </head>
 <body class="bg-black text-zinc-100 min-h-screen bg-eclipse flex flex-col relative overflow-x-hidden selection:bg-white/20 selection:text-white">
 
-  <!-- Contrast Gradient -->
   <div class="fixed inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/80 pointer-events-none -z-10"></div>
 
   <!-- Top Navigation Bar -->
@@ -89,15 +78,15 @@
       </div>
       <div>
         <span class="text-sm font-semibold tracking-wider uppercase text-zinc-100">God's Eye</span>
-        <span class="text-[10px] text-zinc-400 font-mono block -mt-0.5">AUTONOMOUS MARKET INTELLIGENCE</span>
+        <span class="text-[10px] text-zinc-400 font-mono block -mt-0.5">COMPETITIVE INTELLIGENCE // PERSISTENT MEMORY</span>
       </div>
     </div>
 
-    <!-- Hindsight Memory Live Status -->
+    <!-- Hindsight Memory Live Status Badge -->
     <div class="flex items-center space-x-3">
-      <div class="flex items-center space-x-2 px-3 py-1.5 rounded-full border border-white/15 bg-white/[0.04] text-xs">
-        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        <span class="text-zinc-300 font-mono text-[11px]">Hindsight Cloud: Connected</span>
+      <div id="connectionBadge" class="flex items-center space-x-2 px-3 py-1.5 rounded-full border border-white/15 bg-white/[0.04] text-xs">
+        <span id="connectionDot" class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span id="connectionText" class="text-zinc-300 font-mono text-[11px]">Hindsight Cloud: Checking...</span>
       </div>
       <a href="https://github.com/vectorize-io/hindsight" target="_blank" class="text-xs text-zinc-400 hover:text-white transition flex items-center space-x-1 font-mono">
         <span>Vectorize Engine</span>
@@ -113,13 +102,13 @@
     <div class="text-center max-w-2xl mb-8 space-y-3" id="heroHeader">
       <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full border border-white/10 bg-white/[0.03] text-xs text-zinc-400 mb-2">
         <i data-lucide="shield-alert" class="w-3.5 h-3.5 text-zinc-300"></i>
-        <span>Autonomous Market Surveillance Pipeline</span>
+        <span>Autonomous Market Intelligence</span>
       </div>
       <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-white drop-shadow-sm">
         Nothing Goes Unnoticed.
       </h1>
       <p class="text-sm md:text-base text-zinc-400 font-normal leading-relaxed">
-        God's Eye tracks competitor pricing shifts, messaging pivots, and feature announcements. Powered by <span class="text-zinc-200 underline decoration-white/40">Vectorize Hindsight</span> memory to retain, recall, and reflect across time.
+        God's Eye tracks competitor pricing shifts, messaging pivots, and feature announcements across time. Powered by <span class="text-zinc-200 underline decoration-white/40">Vectorize Hindsight</span> persistent memory.
       </p>
     </div>
 
@@ -163,16 +152,13 @@
             <div class="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
             <span class="text-sm font-semibold tracking-wide text-zinc-200">GOD'S EYE // RUNNING INTELLIGENCE PIPELINE</span>
           </div>
-          <span id="pipelineStatus" class="text-xs font-mono px-2 py-0.5 rounded bg-white/10 text-white">Live Querying...</span>
+          <span class="text-xs font-mono px-2 py-0.5 rounded bg-white/10 text-white">Live Querying...</span>
         </div>
 
-        <!-- Real-time Pipeline Activity Stream -->
-        <div class="bg-black/50 rounded-xl p-4 font-mono text-xs text-zinc-300 space-y-2.5 border border-white/10 h-44 overflow-y-auto" id="agentLogs">
-          <!-- Injected by JS -->
-        </div>
+        <div class="bg-black/50 rounded-xl p-4 font-mono text-xs text-zinc-300 space-y-2.5 border border-white/10 h-44 overflow-y-auto" id="agentLogs"></div>
 
         <div class="mt-3 text-[11px] text-zinc-500 text-center">
-          Querying live web signals via Tavily + Recalling persistent nodes from Vectorize Hindsight Cloud
+          Querying Tavily Web API + Recalling persistent nodes from Vectorize Hindsight Cloud
         </div>
       </div>
     </div>
@@ -203,7 +189,7 @@
         </div>
       </div>
 
-      <!-- Bento Grid 1: HINDSIGHT MEMORY RADAR (AUTHENTIC CLOUD REFLECTION) -->
+      <!-- Bento Grid 1: HINDSIGHT MEMORY RADAR -->
       <div class="glass-panel p-6 border-white/25 relative overflow-hidden bg-gradient-to-br from-zinc-900/80 via-black/80 to-zinc-950/90 shadow-[0_0_50px_rgba(255,255,255,0.05)]">
         <div class="flex items-center justify-between mb-4 pb-3 border-b border-white/10">
           <div class="flex items-center space-x-3">
@@ -225,9 +211,9 @@
           <div class="flex items-center justify-between text-xs font-mono">
             <span class="text-cyan-400 font-semibold flex items-center space-x-1.5">
               <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
-              <span>Live Hindsight Cloud Reflect Synthesis:</span>
+              <span>Live Hindsight Cloud reflect() Output:</span>
             </span>
-            <span class="text-[10px] text-zinc-500">Method: POST /v1/default/banks/{id}/reflect</span>
+            <span id="storageBackendLabel" class="text-[10px] text-zinc-500">Method: POST /v1/default/banks/{id}/reflect</span>
           </div>
           <p id="hindsightReflectionText" class="text-xs text-zinc-200 leading-relaxed whitespace-pre-line border-l-2 border-cyan-400/40 pl-3">
             Loading Hindsight reflection...
@@ -241,9 +227,7 @@
               <i data-lucide="git-commit" class="w-3.5 h-3.5 text-emerald-400"></i>
               <span>Synthesized Temporal Diffs:</span>
             </h4>
-            <div id="cumulativeDiffs" class="space-y-2.5 text-xs">
-              <!-- Injected by JS -->
-            </div>
+            <div id="cumulativeDiffs" class="space-y-2.5 text-xs"></div>
           </div>
 
           <div>
@@ -251,14 +235,12 @@
               <i data-lucide="history" class="w-3.5 h-3.5 text-cyan-400"></i>
               <span>Recalled Memory Nodes (Actual Cloud Objects):</span>
             </h4>
-            <div id="baselineHistory" class="space-y-2 font-mono text-[11px] max-h-56 overflow-y-auto pr-1">
-              <!-- Injected by JS -->
-            </div>
+            <div id="baselineHistory" class="space-y-2 font-mono text-[11px] max-h-60 overflow-y-auto pr-1"></div>
           </div>
         </div>
       </div>
 
-      <!-- Bento Grid 2: Competitors & Verified 7-Day Pulse -->
+      <!-- Bento Grid 2: Competitors & Verified Recent Web Signals -->
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
         
         <!-- Left: 2-4 Direct Competitor Cards (7 Cols) -->
@@ -271,9 +253,7 @@
             <span class="text-xs text-zinc-500 font-mono">Parsed via Groq 120B</span>
           </div>
 
-          <div id="competitorCards" class="space-y-3.5">
-            <!-- Injected by JS -->
-          </div>
+          <div id="competitorCards" class="space-y-3.5"></div>
         </div>
 
         <!-- Right: Real Clickable Tavily Web Signals (5 Cols) -->
@@ -281,14 +261,12 @@
           <div class="flex items-center justify-between mb-4">
             <div class="flex items-center space-x-2">
               <i data-lucide="newspaper" class="w-4 h-4 text-zinc-300"></i>
-              <h3 class="text-sm font-semibold tracking-wide uppercase text-zinc-200">Verified Web Signals</h3>
+              <h3 class="text-sm font-semibold tracking-wide uppercase text-zinc-200">Recent Web Signals</h3>
             </div>
             <span class="text-xs text-zinc-500 font-mono">Real Tavily Links</span>
           </div>
 
-          <div id="newsPulseList" class="space-y-3">
-            <!-- Injected by JS -->
-          </div>
+          <div id="newsPulseList" class="space-y-3"></div>
         </div>
 
       </div>
@@ -300,9 +278,7 @@
           <h3 class="text-sm font-semibold tracking-wide uppercase text-zinc-200">Executive Counter-Play</h3>
         </div>
 
-        <div id="recommendationsList" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <!-- Injected by JS -->
-        </div>
+        <div id="recommendationsList" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
       </div>
 
       <!-- Interrogate Memory Bank (Interactive Drilldown) -->
@@ -323,7 +299,7 @@
           <input 
             type="text" 
             id="askInput" 
-            placeholder="e.g., What is Audi's biggest vulnerability right now?" 
+            placeholder="e.g., What are the key competitor vulnerabilities based on recent moves?" 
             class="flex-1 bg-white/5 border border-white/15 rounded-xl px-4 py-2.5 text-xs text-zinc-200 focus:outline-none focus:border-cyan-400/50"
             required
           />
@@ -339,9 +315,9 @@
 
         <!-- Quick Question Chips -->
         <div class="flex flex-wrap gap-2 mb-4 text-xs">
-          <button onclick="setAskQuery('What is Audi\'s biggest vulnerability right now?')" class="glass-chip px-2.5 py-1 text-[11px] text-zinc-400 hover:text-white">"Audi's biggest vulnerability?"</button>
-          <button onclick="setAskQuery('Summarize Mercedes pricing shifts across past scans.')" class="glass-chip px-2.5 py-1 text-[11px] text-zinc-400 hover:text-white">"Mercedes pricing shifts?"</button>
-          <button onclick="setAskQuery('What counter-play should our sales reps use against competitors?')" class="glass-chip px-2.5 py-1 text-[11px] text-zinc-400 hover:text-white">"Counter-play vs competitors?"</button>
+          <button onclick="setAskQuery('What are our competitors\' biggest vulnerabilities right now?')" class="glass-chip px-2.5 py-1 text-[11px] text-zinc-400 hover:text-white">"Competitor vulnerabilities?"</button>
+          <button onclick="setAskQuery('Summarize competitor pricing shifts across past scans.')" class="glass-chip px-2.5 py-1 text-[11px] text-zinc-400 hover:text-white">"Competitor pricing shifts?"</button>
+          <button onclick="setAskQuery('What counter-play should our sales reps execute right now?')" class="glass-chip px-2.5 py-1 text-[11px] text-zinc-400 hover:text-white">"Counter-play strategy?"</button>
         </div>
 
         <!-- Answer Container -->
@@ -351,7 +327,7 @@
               <i data-lucide="check-circle-2" class="w-3 h-3"></i>
               <span>Hindsight Cloud Reflection Answer</span>
             </span>
-            <span class="text-zinc-500 font-mono">Verified Memory Context</span>
+            <span id="askBackendIndicator" class="text-zinc-500 font-mono">Source: Hindsight Cloud</span>
           </div>
           <div id="askAnswerText" class="text-xs text-zinc-200 leading-relaxed whitespace-pre-line"></div>
         </div>
@@ -361,7 +337,6 @@
 
   </main>
 
-  <!-- Clean Footer (Removed hackathon references) -->
   <footer class="w-full border-t border-white/10 px-6 py-4 flex flex-col md:flex-row items-center justify-between text-xs text-zinc-500 backdrop-blur-md bg-black/40">
     <div class="flex items-center space-x-2">
       <span class="text-zinc-400 font-medium">God's Eye</span>
@@ -373,11 +348,24 @@
     </div>
   </footer>
 
-  <!-- Script Logic -->
   <script>
     lucide.createIcons();
-
     let currentData = null;
+
+    // Check connection on load
+    fetch('/api/hindsight/status')
+      .then(r => r.json())
+      .then(d => {
+        const dot = document.getElementById('connectionDot');
+        const txt = document.getElementById('connectionText');
+        if (d.status === 'connected') {
+          dot.className = 'w-2 h-2 rounded-full bg-emerald-400 animate-pulse';
+          txt.textContent = 'Hindsight Cloud: Connected';
+        } else {
+          dot.className = 'w-2 h-2 rounded-full bg-amber-400';
+          txt.textContent = 'Local Disk Fallback Mode';
+        }
+      }).catch(() => {});
 
     function setQuery(url) {
       document.getElementById('urlInput').value = url;
@@ -409,23 +397,22 @@
 
       appendLog(`Connecting to live web intelligence pipeline for ${url}...`);
       appendLog(`Querying Tavily search API for verified 2026 competitor movements...`);
-      appendLog(`Initiating multi-strategy recall on Vectorize Hindsight Cloud bank...`);
+      appendLog(`Ensuring bank exists & initiating recall on Vectorize Hindsight Cloud...`);
 
       try {
-        const startTime = Date.now();
         const res = await fetch(`/api/analyze?url=${encodeURIComponent(url)}`);
         const data = await res.json();
         
-        appendLog(`Received ${data.news_pulse.length} verified news signals from Tavily.`);
-        appendLog(`Retrieved ${data.hindsight_bank.memories_count} historical memory nodes from Hindsight Cloud.`);
-        appendLog(`Executed Hindsight Cloud reflect() operation.`);
+        appendLog(`Received ${data.news_pulse.length} web signals via Tavily.`);
+        appendLog(`Retrieved ${data.hindsight_bank.memories_count} memory nodes from ${data.hindsight_bank.storage_backend}.`);
+        appendLog(`Executed Hindsight reflect() operation.`);
         appendLog(`Extracted ${data.competitors.length} competitors via Groq 120B reasoning.`);
-        appendLog(`New memory snapshot committed to Hindsight Cloud.`);
+        appendLog(`Committed current scan snapshot into memory bank.`);
 
         setTimeout(() => {
           document.getElementById('deepWorkView').classList.add('hidden');
           renderResults(data);
-        }, 800);
+        }, 600);
 
       } catch (err) {
         appendLog(`Pipeline error: ${err.message}`);
@@ -440,9 +427,17 @@
       document.getElementById('resUrl').textContent = data.target_url;
       document.getElementById('resTimestamp').textContent = data.scanned_at;
 
-      // Hindsight Memory Bank Info
       document.getElementById('bankIdBadge').textContent = `bank: ${data.hindsight_bank.bank_id}`;
       document.getElementById('hindsightReflectionText').textContent = data.hindsight_bank.hindsight_reflection_text;
+      
+      const backendLabel = document.getElementById('storageBackendLabel');
+      if (data.hindsight_bank.storage_backend === 'hindsight_cloud') {
+        backendLabel.textContent = '🟢 Vectorize Hindsight Cloud API (Verified Live)';
+        backendLabel.className = 'text-[10px] text-emerald-400 font-mono';
+      } else {
+        backendLabel.textContent = '🟡 Local Disk Fallback Mode';
+        backendLabel.className = 'text-[10px] text-amber-400 font-mono';
+      }
 
       // Cumulative Diffs
       const diffContainer = document.getElementById('cumulativeDiffs');
@@ -457,18 +452,26 @@
         diffContainer.appendChild(div);
       });
 
-      // Baseline Memory Nodes (Actual Cloud Objects)
+      // Recalled Memory Nodes (Actual Cloud Objects)
       const histContainer = document.getElementById('baselineHistory');
       histContainer.innerHTML = '';
       data.hindsight_bank.actual_memory_nodes.forEach(item => {
         const div = document.createElement('div');
-        div.className = 'p-2.5 rounded-lg bg-black/40 border border-white/10 text-zinc-400 space-y-1';
+        div.className = 'p-2.5 rounded-lg bg-black/40 border border-white/10 text-zinc-400 space-y-1.5';
+        
+        let tsClean = item.timestamp ? item.timestamp.slice(0, 10) : 'Recorded';
+        let entitiesHTML = '';
+        if (item.entities && item.entities.length > 0) {
+          entitiesHTML = item.entities.slice(0, 3).map(e => `<span class="px-1.5 py-0.2 rounded bg-white/5 border border-white/10 text-[9px] text-zinc-400">${e}</span>`).join(' ');
+        }
+
         div.innerHTML = `
           <div class="flex items-center justify-between text-[10px]">
-            <span class="text-cyan-400 font-mono font-semibold">${item.id}</span>
-            <span class="text-zinc-500">${item.timestamp.slice(0, 10)}</span>
+            <span class="text-cyan-400 font-mono font-semibold">${item.id.slice(0, 18)}...</span>
+            <span class="text-zinc-500 font-mono">${tsClean}</span>
           </div>
           <p class="text-zinc-300 text-xs">${item.text}</p>
+          ${entitiesHTML ? `<div class="pt-1 flex flex-wrap gap-1">${entitiesHTML}</div>` : ''}
         `;
         histContainer.appendChild(div);
       });
@@ -495,7 +498,7 @@
         compContainer.appendChild(card);
       });
 
-      // Real Verified Tavily Web Signals (Clickable URLs)
+      // Real Verified Tavily Web Signals (Clickable Links)
       const newsContainer = document.getElementById('newsPulseList');
       newsContainer.innerHTML = '';
       data.news_pulse.forEach(item => {
@@ -560,6 +563,7 @@
         
         document.getElementById('askAnswerBox').classList.remove('hidden');
         document.getElementById('askAnswerText').textContent = ans.answer;
+        document.getElementById('askBackendIndicator').textContent = `Source: ${ans.storage_backend}`;
         document.getElementById('askAnswerBox').scrollIntoView({ behavior: 'smooth' });
       } catch (err) {
         console.error(err);
