@@ -30,7 +30,7 @@
       background-attachment: fixed;
     }
 
-    /* Exact Glass Pill Search Bar matching reference image */
+    /* Glass Pill Search Bar */
     .glass-pill-container {
       background: rgba(10, 10, 10, 0.45);
       backdrop-filter: blur(28px) saturate(180%);
@@ -52,7 +52,7 @@
       transform: translateY(-1px);
     }
 
-    /* Glass Cards */
+    /* Glass Panels */
     .glass-panel {
       background: rgba(12, 12, 14, 0.65);
       backdrop-filter: blur(20px);
@@ -74,16 +74,11 @@
       border-color: rgba(255, 255, 255, 0.3);
       transform: translateY(-1px);
     }
-    .glass-chip-active {
-      background: rgba(255, 255, 255, 0.2) !important;
-      border-color: rgba(255, 255, 255, 0.5) !important;
-      color: #fff !important;
-    }
   </style>
 </head>
 <body class="bg-black text-zinc-100 min-h-screen bg-eclipse flex flex-col relative overflow-x-hidden selection:bg-white/20 selection:text-white">
 
-  <!-- Subtle Dark Overlay Gradient for contrast -->
+  <!-- Contrast Gradient -->
   <div class="fixed inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/80 pointer-events-none -z-10"></div>
 
   <!-- Top Navigation Bar -->
@@ -94,7 +89,7 @@
       </div>
       <div>
         <span class="text-sm font-semibold tracking-wider uppercase text-zinc-100">God's Eye</span>
-        <span class="text-[10px] text-zinc-400 font-mono block -mt-0.5">PERSISTENT COMPETITIVE RADAR // AUTONOMOUS</span>
+        <span class="text-[10px] text-zinc-400 font-mono block -mt-0.5">AUTONOMOUS MARKET INTELLIGENCE</span>
       </div>
     </div>
 
@@ -102,10 +97,10 @@
     <div class="flex items-center space-x-3">
       <div class="flex items-center space-x-2 px-3 py-1.5 rounded-full border border-white/15 bg-white/[0.04] text-xs">
         <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        <span class="text-zinc-300 font-mono text-[11px]">Hindsight Cloud: Synchronized</span>
+        <span class="text-zinc-300 font-mono text-[11px]">Hindsight Cloud: Connected</span>
       </div>
       <a href="https://github.com/vectorize-io/hindsight" target="_blank" class="text-xs text-zinc-400 hover:text-white transition flex items-center space-x-1 font-mono">
-        <span>Vectorize Hindsight</span>
+        <span>Vectorize Engine</span>
         <i data-lucide="external-link" class="w-3 h-3"></i>
       </a>
     </div>
@@ -118,17 +113,17 @@
     <div class="text-center max-w-2xl mb-8 space-y-3" id="heroHeader">
       <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full border border-white/10 bg-white/[0.03] text-xs text-zinc-400 mb-2">
         <i data-lucide="shield-alert" class="w-3.5 h-3.5 text-zinc-300"></i>
-        <span>Autonomous Market Surveillance Engine</span>
+        <span>Autonomous Market Surveillance Pipeline</span>
       </div>
       <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-white drop-shadow-sm">
         Nothing Goes Unnoticed.
       </h1>
       <p class="text-sm md:text-base text-zinc-400 font-normal leading-relaxed">
-        God's Eye tracks competitor pricing shifts, messaging pivots, and feature moves. Backed by <span class="text-zinc-200 underline decoration-white/40">Vectorize Hindsight</span> memory to spot multi-month patterns across time.
+        God's Eye tracks competitor pricing shifts, messaging pivots, and feature announcements. Powered by <span class="text-zinc-200 underline decoration-white/40">Vectorize Hindsight</span> memory to retain, recall, and reflect across time.
       </p>
     </div>
 
-    <!-- The Exact Glass Pill Search Bar Form -->
+    <!-- The Glass Pill Search Bar Form -->
     <div class="w-full max-w-2xl px-2 mb-6" id="searchBarWrapper">
       <form id="searchForm" class="relative">
         <div class="glass-pill-container flex items-center px-6 py-4 space-x-4">
@@ -160,31 +155,24 @@
       </div>
     </div>
 
-    <!-- 30-Second Deep Work Loading Sequence -->
+    <!-- Live Pipeline Loading Sequence -->
     <div id="deepWorkView" class="hidden w-full max-w-2xl my-8 space-y-6">
       <div class="glass-panel p-6 border border-white/20">
         <div class="flex items-center justify-between mb-4">
           <div class="flex items-center space-x-3">
             <div class="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
-            <span class="text-sm font-semibold tracking-wide text-zinc-200">GOD'S EYE // AUTONOMOUS MULTI-AGENT SCAN</span>
+            <span class="text-sm font-semibold tracking-wide text-zinc-200">GOD'S EYE // RUNNING INTELLIGENCE PIPELINE</span>
           </div>
-          <span id="timerCountdown" class="text-xs font-mono px-2 py-0.5 rounded bg-white/10 text-white">00:30</span>
+          <span id="pipelineStatus" class="text-xs font-mono px-2 py-0.5 rounded bg-white/10 text-white">Live Querying...</span>
         </div>
 
-        <!-- Progress Bar -->
-        <div class="w-full bg-white/5 rounded-full h-1.5 mb-6 overflow-hidden border border-white/10">
-          <div id="progressBar" class="bg-gradient-to-r from-zinc-300 to-white h-1.5 rounded-full transition-all duration-300 w-0"></div>
+        <!-- Real-time Pipeline Activity Stream -->
+        <div class="bg-black/50 rounded-xl p-4 font-mono text-xs text-zinc-300 space-y-2.5 border border-white/10 h-44 overflow-y-auto" id="agentLogs">
+          <!-- Injected by JS -->
         </div>
 
-        <!-- Real-time Agent Log Stream -->
-        <div class="bg-black/50 rounded-xl p-4 font-mono text-xs text-zinc-300 space-y-2.5 border border-white/10 h-48 overflow-y-auto" id="agentLogs">
-          <!-- Logs injected by JS -->
-        </div>
-
-        <!-- Fast Forward Option for testing -->
-        <div class="mt-4 flex justify-between items-center text-[11px] text-zinc-500">
-          <span>Synthesizing live Tavily signals + Hindsight Cloud Memory Bank</span>
-          <button onclick="skipTimer()" class="underline hover:text-zinc-300 transition">Fast-forward demo ➔</button>
+        <div class="mt-3 text-[11px] text-zinc-500 text-center">
+          Querying live web signals via Tavily + Recalling persistent nodes from Vectorize Hindsight Cloud
         </div>
       </div>
     </div>
@@ -206,7 +194,7 @@
         <div class="flex items-center space-x-2">
           <button onclick="window.print()" class="glass-chip px-3 py-1.5 text-xs text-zinc-300 hover:text-white flex items-center space-x-1.5">
             <i data-lucide="download" class="w-3.5 h-3.5"></i>
-            <span>Export Intelligence Brief</span>
+            <span>Export Brief</span>
           </button>
           <button onclick="resetSearch()" class="glass-chip px-3 py-1.5 text-xs text-zinc-300 hover:text-white flex items-center space-x-1.5">
             <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i>
@@ -215,7 +203,7 @@
         </div>
       </div>
 
-      <!-- Bento Grid 1: HINDSIGHT MEMORY RADAR (THE STAR FEATURE) -->
+      <!-- Bento Grid 1: HINDSIGHT MEMORY RADAR (AUTHENTIC CLOUD REFLECTION) -->
       <div class="glass-panel p-6 border-white/25 relative overflow-hidden bg-gradient-to-br from-zinc-900/80 via-black/80 to-zinc-950/90 shadow-[0_0_50px_rgba(255,255,255,0.05)]">
         <div class="flex items-center justify-between mb-4 pb-3 border-b border-white/10">
           <div class="flex items-center space-x-3">
@@ -223,8 +211,8 @@
               <i data-lucide="brain" class="w-4 h-4"></i>
             </div>
             <div>
-              <h3 class="text-base font-semibold text-white tracking-wide">Hindsight Memory Radar // Temporal Shifts</h3>
-              <p class="text-xs text-zinc-400">Cumulative intelligence across scans — what changed over time</p>
+              <h3 class="text-base font-semibold text-white tracking-wide">Hindsight Memory Radar // Temporal Reflection</h3>
+              <p class="text-xs text-zinc-400">Powered by Hindsight retain(), recall(), and reflect() primitives</p>
             </div>
           </div>
           <div class="text-right">
@@ -232,73 +220,45 @@
           </div>
         </div>
 
-        <!-- Trap 1 Fix: 3-Stage Learning Curve Stepper (Demonstrating Learning Curve) -->
-        <div class="mb-6 p-4 rounded-xl bg-black/40 border border-white/10">
-          <div class="flex items-center justify-between mb-3">
-            <div class="flex items-center space-x-2">
-              <i data-lucide="trending-up" class="w-4 h-4 text-emerald-400"></i>
-              <span class="text-xs font-semibold uppercase tracking-wider text-zinc-300 font-mono">Agent Learning Curve (Before vs. After Memory)</span>
-            </div>
-            <span class="text-[11px] text-zinc-500 font-mono">Click to preview progression:</span>
+        <!-- 1. Real Hindsight Cloud Reflection (Output of POST /reflect) -->
+        <div class="mb-6 p-4 rounded-xl bg-black/50 border border-white/10 space-y-2">
+          <div class="flex items-center justify-between text-xs font-mono">
+            <span class="text-cyan-400 font-semibold flex items-center space-x-1.5">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+              <span>Live Hindsight Cloud Reflect Synthesis:</span>
+            </span>
+            <span class="text-[10px] text-zinc-500">Method: POST /v1/default/banks/{id}/reflect</span>
           </div>
-
-          <!-- Stepper Buttons -->
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-2 mb-4">
-            <button onclick="selectStage(1)" id="stageBtn1" class="glass-chip py-2 px-3 text-left text-xs transition">
-              <span class="font-semibold block text-zinc-200">1. Baseline (Day 1)</span>
-              <span class="text-[10px] text-zinc-500 block">Generic cataloging</span>
-            </button>
-            <button onclick="selectStage(5)" id="stageBtn5" class="glass-chip py-2 px-3 text-left text-xs transition">
-              <span class="font-semibold block text-zinc-200">2. Pattern Detection (Day 15)</span>
-              <span class="text-[10px] text-zinc-500 block">Temporal price delta</span>
-            </button>
-            <button onclick="selectStage(20)" id="stageBtn20" class="glass-chip glass-chip-active py-2 px-3 text-left text-xs transition">
-              <span class="font-semibold block text-zinc-200">3. Foresight (Day 45)</span>
-              <span class="text-[10px] text-zinc-400 block">Autonomous prediction</span>
-            </button>
-          </div>
-
-          <!-- Active Stage Display -->
-          <div id="stageCard" class="p-3.5 rounded-lg bg-white/[0.03] border border-white/10 text-xs text-zinc-300 space-y-1.5">
-            <div class="flex items-center justify-between">
-              <strong id="stageTitle" class="text-white font-medium">Interaction 20: Strategic Foresight</strong>
-              <span id="stageTag" class="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 text-[10px] font-mono">Autonomous Intelligence</span>
-            </div>
-            <p id="stageDesc" class="text-zinc-400 leading-relaxed">Loading stage progression...</p>
-            <div class="pt-1.5 border-t border-white/5 flex items-start space-x-2 text-[11px] text-zinc-300">
-              <span class="text-cyan-400 font-mono font-semibold">Memory Breakthrough:</span>
-              <span id="stageInsight">Agent prescribes exact counter-play.</span>
-            </div>
-          </div>
+          <p id="hindsightReflectionText" class="text-xs text-zinc-200 leading-relaxed whitespace-pre-line border-l-2 border-cyan-400/40 pl-3">
+            Loading Hindsight reflection...
+          </p>
         </div>
 
-        <!-- Cumulative Diffs & Baseline Nodes -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
-          <!-- Cumulative Diffs -->
+        <!-- 2. Real Chronological Memory Nodes Recalled from Hindsight -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
             <h4 class="text-xs uppercase tracking-wider font-mono text-zinc-400 mb-3 flex items-center space-x-1.5">
               <i data-lucide="git-commit" class="w-3.5 h-3.5 text-emerald-400"></i>
-              <span>Detected Market Pattern Shifts:</span>
+              <span>Synthesized Temporal Diffs:</span>
             </h4>
             <div id="cumulativeDiffs" class="space-y-2.5 text-xs">
               <!-- Injected by JS -->
             </div>
           </div>
 
-          <!-- Memory Timeline Recall -->
           <div>
             <h4 class="text-xs uppercase tracking-wider font-mono text-zinc-400 mb-3 flex items-center space-x-1.5">
               <i data-lucide="history" class="w-3.5 h-3.5 text-cyan-400"></i>
-              <span>Hindsight Cloud Memory Nodes:</span>
+              <span>Recalled Memory Nodes (Actual Cloud Objects):</span>
             </h4>
-            <div id="baselineHistory" class="space-y-2 font-mono text-[11px]">
+            <div id="baselineHistory" class="space-y-2 font-mono text-[11px] max-h-56 overflow-y-auto pr-1">
               <!-- Injected by JS -->
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Bento Grid 2: Competitors & 7-Day Pulse -->
+      <!-- Bento Grid 2: Competitors & Verified 7-Day Pulse -->
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
         
         <!-- Left: 2-4 Direct Competitor Cards (7 Cols) -->
@@ -306,9 +266,9 @@
           <div class="flex items-center justify-between mb-4">
             <div class="flex items-center space-x-2">
               <i data-lucide="swords" class="w-4 h-4 text-zinc-300"></i>
-              <h3 class="text-sm font-semibold tracking-wide uppercase text-zinc-200">Primary Rival Matrix</h3>
+              <h3 class="text-sm font-semibold tracking-wide uppercase text-zinc-200">Identified Competitors</h3>
             </div>
-            <span class="text-xs text-zinc-500 font-mono">2-4 Direct Competitors</span>
+            <span class="text-xs text-zinc-500 font-mono">Parsed via Groq 120B</span>
           </div>
 
           <div id="competitorCards" class="space-y-3.5">
@@ -316,14 +276,14 @@
           </div>
         </div>
 
-        <!-- Right: 7-Day News Pulse & Articles (5 Cols) -->
+        <!-- Right: Real Clickable Tavily Web Signals (5 Cols) -->
         <div class="lg:col-span-5 glass-panel p-6">
           <div class="flex items-center justify-between mb-4">
             <div class="flex items-center space-x-2">
               <i data-lucide="newspaper" class="w-4 h-4 text-zinc-300"></i>
-              <h3 class="text-sm font-semibold tracking-wide uppercase text-zinc-200">7-Day Market Pulse</h3>
+              <h3 class="text-sm font-semibold tracking-wide uppercase text-zinc-200">Verified Web Signals</h3>
             </div>
-            <span class="text-xs text-zinc-500 font-mono">Verified Live Signals</span>
+            <span class="text-xs text-zinc-500 font-mono">Real Tavily Links</span>
           </div>
 
           <div id="newsPulseList" class="space-y-3">
@@ -337,7 +297,7 @@
       <div class="glass-panel p-6 border-white/20">
         <div class="flex items-center space-x-2 mb-4">
           <i data-lucide="target" class="w-4 h-4 text-amber-400"></i>
-          <h3 class="text-sm font-semibold tracking-wide uppercase text-zinc-200">Executive Playbook & Counter-Measures</h3>
+          <h3 class="text-sm font-semibold tracking-wide uppercase text-zinc-200">Executive Counter-Play</h3>
         </div>
 
         <div id="recommendationsList" class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -345,17 +305,17 @@
         </div>
       </div>
 
-      <!-- Trap 2 Fix: Interactive Memory Drilldown (Ask God's Eye) -->
+      <!-- Interrogate Memory Bank (Interactive Drilldown) -->
       <div class="glass-panel p-6 border-cyan-500/30 bg-gradient-to-br from-black via-zinc-950 to-cyan-950/20 shadow-[0_0_40px_rgba(6,182,212,0.06)]">
         <div class="flex items-center justify-between mb-3">
           <div class="flex items-center space-x-2">
             <i data-lucide="sparkles" class="w-4 h-4 text-cyan-400"></i>
             <h3 class="text-sm font-semibold tracking-wide uppercase text-white">Interrogate God's Eye Memory Bank</h3>
           </div>
-          <span class="text-[11px] font-mono text-cyan-400/80">Vectorize Hindsight + Groq 120B</span>
+          <span class="text-[11px] font-mono text-cyan-400/80">Native Hindsight reflect()</span>
         </div>
         <p class="text-xs text-zinc-400 mb-4">
-          Ask specific strategic questions. God's Eye recalls relevant memory nodes from Hindsight Cloud to synthesize verified executive intelligence.
+          Ask specific strategic questions. God's Eye queries Hindsight Cloud's memory bank using multi-strategy search and reflection.
         </p>
 
         <!-- Prompt Form -->
@@ -363,7 +323,7 @@
           <input 
             type="text" 
             id="askInput" 
-            placeholder="e.g., What is Audi's biggest vulnerability based on recent moves?" 
+            placeholder="e.g., What is Audi's biggest vulnerability right now?" 
             class="flex-1 bg-white/5 border border-white/15 rounded-xl px-4 py-2.5 text-xs text-zinc-200 focus:outline-none focus:border-cyan-400/50"
             required
           />
@@ -381,7 +341,7 @@
         <div class="flex flex-wrap gap-2 mb-4 text-xs">
           <button onclick="setAskQuery('What is Audi\'s biggest vulnerability right now?')" class="glass-chip px-2.5 py-1 text-[11px] text-zinc-400 hover:text-white">"Audi's biggest vulnerability?"</button>
           <button onclick="setAskQuery('Summarize Mercedes pricing shifts across past scans.')" class="glass-chip px-2.5 py-1 text-[11px] text-zinc-400 hover:text-white">"Mercedes pricing shifts?"</button>
-          <button onclick="setAskQuery('What counter-play should our sales reps use against BYD and Tesla?')" class="glass-chip px-2.5 py-1 text-[11px] text-zinc-400 hover:text-white">"Counter-play vs BYD & Tesla?"</button>
+          <button onclick="setAskQuery('What counter-play should our sales reps use against competitors?')" class="glass-chip px-2.5 py-1 text-[11px] text-zinc-400 hover:text-white">"Counter-play vs competitors?"</button>
         </div>
 
         <!-- Answer Container -->
@@ -389,9 +349,9 @@
           <div class="flex items-center justify-between text-[11px] border-b border-white/10 pb-2">
             <span class="text-cyan-400 font-mono font-medium flex items-center space-x-1">
               <i data-lucide="check-circle-2" class="w-3 h-3"></i>
-              <span>Hindsight Memory Recall Verified</span>
+              <span>Hindsight Cloud Reflection Answer</span>
             </span>
-            <span id="memoriesConsulted" class="text-zinc-500 font-mono">3 nodes recalled</span>
+            <span class="text-zinc-500 font-mono">Verified Memory Context</span>
           </div>
           <div id="askAnswerText" class="text-xs text-zinc-200 leading-relaxed whitespace-pre-line"></div>
         </div>
@@ -401,15 +361,15 @@
 
   </main>
 
-  <!-- Footer -->
+  <!-- Clean Footer (Removed hackathon references) -->
   <footer class="w-full border-t border-white/10 px-6 py-4 flex flex-col md:flex-row items-center justify-between text-xs text-zinc-500 backdrop-blur-md bg-black/40">
     <div class="flex items-center space-x-2">
       <span class="text-zinc-400 font-medium">God's Eye</span>
       <span>•</span>
-      <span>Powered by <a href="https://hindsight.vectorize.io/" target="_blank" class="text-zinc-300 underline hover:text-white">Vectorize Hindsight</a> & Groq LLM</span>
+      <span>Autonomous Market Intelligence powered by <a href="https://hindsight.vectorize.io/" target="_blank" class="text-zinc-300 underline hover:text-white">Vectorize Hindsight</a>, Groq, and Tavily</span>
     </div>
     <div class="flex items-center space-x-4 mt-2 md:mt-0 font-mono text-[11px]">
-      <span>Built for Microsoft Office Bangalore Demo</span>
+      <span>MIT License</span>
     </div>
   </footer>
 
@@ -417,8 +377,6 @@
   <script>
     lucide.createIcons();
 
-    let scanTimer = null;
-    let timerSeconds = 30;
     let currentData = null;
 
     function setQuery(url) {
@@ -431,62 +389,6 @@
       document.getElementById('askForm').requestSubmit();
     }
 
-    const logMessages = [
-      { sec: 2, text: "🔍 Initializing God's Eye telemetry probe..." },
-      { sec: 5, text: "🌐 Scraping target domain hierarchy, product lines, and value props..." },
-      { sec: 9, text: "🥊 Discovering direct market rivals & alternative solution vectors..." },
-      { sec: 14, text: "📰 Ingesting verified industry news, articles, and press announcements (last 7 days)..." },
-      { sec: 19, text: "🧠 Connecting to Vectorize Hindsight memory bank..." },
-      { sec: 24, text: "⚖️ Executing multi-strategy memory recall (Semantic + Temporal + Graph)..." },
-      { sec: 27, text: "📊 Computing competitive pricing shifts and messaging divergence..." },
-      { sec: 30, text: "✨ Compiling executive strategic counter-measures..." }
-    ];
-
-    document.getElementById('searchForm').addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const url = document.getElementById('urlInput').value.trim();
-      if (!url) return;
-
-      // Switch views: hide results, show deep work
-      document.getElementById('resultsView').classList.add('hidden');
-      document.getElementById('deepWorkView').classList.remove('hidden');
-      document.getElementById('agentLogs').innerHTML = '';
-      
-      timerSeconds = 30;
-      updateTimerUI(timerSeconds, 0);
-
-      // Start fetching data in background
-      fetchData(url);
-
-      // Start 30-second ticking sequence
-      const startTime = Date.now();
-      const totalDuration = 30000;
-
-      if (scanTimer) clearInterval(scanTimer);
-
-      scanTimer = setInterval(() => {
-        const elapsed = Date.now() - startTime;
-        const remaining = Math.max(0, Math.ceil((totalDuration - elapsed) / 1000));
-        const progress = Math.min(100, (elapsed / totalDuration) * 100);
-
-        updateTimerUI(remaining, progress);
-
-        // Check if any log should be added
-        const elapsedSec = Math.floor(elapsed / 1000);
-        logMessages.forEach(msg => {
-          if (msg.sec === elapsedSec && !msg.logged) {
-            msg.logged = true;
-            appendLog(msg.text);
-          }
-        });
-
-        if (remaining <= 0) {
-          clearInterval(scanTimer);
-          finishScan();
-        }
-      }, 250);
-    });
-
     function appendLog(text) {
       const logs = document.getElementById('agentLogs');
       const p = document.createElement('p');
@@ -496,49 +398,40 @@
       logs.scrollTop = logs.scrollHeight;
     }
 
-    function updateTimerUI(sec, progress) {
-      document.getElementById('timerCountdown').textContent = `00:${sec < 10 ? '0' : ''}${sec}`;
-      document.getElementById('progressBar').style.width = `${progress}%`;
-    }
+    document.getElementById('searchForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const url = document.getElementById('urlInput').value.trim();
+      if (!url) return;
 
-    function skipTimer() {
-      if (scanTimer) clearInterval(scanTimer);
-      updateTimerUI(0, 100);
-      finishScan();
-    }
+      document.getElementById('resultsView').classList.add('hidden');
+      document.getElementById('deepWorkView').classList.remove('hidden');
+      document.getElementById('agentLogs').innerHTML = '';
 
-    async function fetchData(url) {
+      appendLog(`Connecting to live web intelligence pipeline for ${url}...`);
+      appendLog(`Querying Tavily search API for verified 2026 competitor movements...`);
+      appendLog(`Initiating multi-strategy recall on Vectorize Hindsight Cloud bank...`);
+
       try {
+        const startTime = Date.now();
         const res = await fetch(`/api/analyze?url=${encodeURIComponent(url)}`);
-        currentData = await res.json();
+        const data = await res.json();
+        
+        appendLog(`Received ${data.news_pulse.length} verified news signals from Tavily.`);
+        appendLog(`Retrieved ${data.hindsight_bank.memories_count} historical memory nodes from Hindsight Cloud.`);
+        appendLog(`Executed Hindsight Cloud reflect() operation.`);
+        appendLog(`Extracted ${data.competitors.length} competitors via Groq 120B reasoning.`);
+        appendLog(`New memory snapshot committed to Hindsight Cloud.`);
+
+        setTimeout(() => {
+          document.getElementById('deepWorkView').classList.add('hidden');
+          renderResults(data);
+        }, 800);
+
       } catch (err) {
-        console.error("Fetch error:", err);
+        appendLog(`Pipeline error: ${err.message}`);
+        console.error(err);
       }
-    }
-
-    function finishScan() {
-      logMessages.forEach(m => m.logged = false); // reset
-      document.getElementById('deepWorkView').classList.add('hidden');
-      if (currentData) {
-        renderResults(currentData);
-      }
-    }
-
-    function selectStage(stageId) {
-      if (!currentData || !currentData.hindsight_bank.learning_curve_stages) return;
-      
-      const stages = currentData.hindsight_bank.learning_curve_stages;
-      const stage = stages.find(s => s.stage_id === stageId) || stages[2];
-
-      document.querySelectorAll('#stageBtn1, #stageBtn5, #stageBtn20').forEach(b => b.classList.remove('glass-chip-active'));
-      const activeBtn = document.getElementById(`stageBtn${stageId}`);
-      if (activeBtn) activeBtn.classList.add('glass-chip-active');
-
-      document.getElementById('stageTitle').textContent = stage.title;
-      document.getElementById('stageTag').textContent = stage.tag;
-      document.getElementById('stageDesc').textContent = stage.description;
-      document.getElementById('stageInsight').textContent = stage.insight;
-    }
+    });
 
     function renderResults(data) {
       currentData = data;
@@ -549,9 +442,7 @@
 
       // Hindsight Memory Bank Info
       document.getElementById('bankIdBadge').textContent = `bank: ${data.hindsight_bank.bank_id}`;
-
-      // Initialize Learning Curve Stepper at Stage 20
-      selectStage(20);
+      document.getElementById('hindsightReflectionText').textContent = data.hindsight_bank.hindsight_reflection_text;
 
       // Cumulative Diffs
       const diffContainer = document.getElementById('cumulativeDiffs');
@@ -566,15 +457,18 @@
         diffContainer.appendChild(div);
       });
 
-      // Baseline History Nodes
+      // Baseline Memory Nodes (Actual Cloud Objects)
       const histContainer = document.getElementById('baselineHistory');
       histContainer.innerHTML = '';
-      data.hindsight_bank.historical_baseline.forEach(item => {
+      data.hindsight_bank.actual_memory_nodes.forEach(item => {
         const div = document.createElement('div');
-        div.className = 'p-2.5 rounded-lg bg-black/40 border border-white/10 text-zinc-400';
+        div.className = 'p-2.5 rounded-lg bg-black/40 border border-white/10 text-zinc-400 space-y-1';
         div.innerHTML = `
-          <span class="text-cyan-400 font-semibold text-[10px] uppercase block">${item.date}</span>
-          <span class="text-zinc-300 text-xs">${item.content}</span>
+          <div class="flex items-center justify-between text-[10px]">
+            <span class="text-cyan-400 font-mono font-semibold">${item.id}</span>
+            <span class="text-zinc-500">${item.timestamp.slice(0, 10)}</span>
+          </div>
+          <p class="text-zinc-300 text-xs">${item.text}</p>
         `;
         histContainer.appendChild(div);
       });
@@ -601,7 +495,7 @@
         compContainer.appendChild(card);
       });
 
-      // 7-Day Pulse News
+      // Real Verified Tavily Web Signals (Clickable URLs)
       const newsContainer = document.getElementById('newsPulseList');
       newsContainer.innerHTML = '';
       data.news_pulse.forEach(item => {
@@ -609,11 +503,14 @@
         card.className = 'p-3 rounded-xl bg-white/[0.03] border border-white/10 hover:border-white/20 transition space-y-1.5';
         card.innerHTML = `
           <div class="flex items-center justify-between text-[11px]">
-            <span class="text-zinc-400 font-mono">${item.source} • ${item.days_ago}</span>
-            <span class="px-2 py-0.5 rounded-full bg-white/10 text-zinc-300 text-[10px]">${item.tag}</span>
+            <span class="text-zinc-400 font-mono">${item.source}</span>
+            <span class="px-2 py-0.5 rounded-full bg-white/10 text-cyan-300 text-[10px]">${item.tag}</span>
           </div>
-          <h5 class="text-xs font-medium text-white leading-snug">${item.title}</h5>
-          <p class="text-[11px] text-zinc-400 border-l-2 border-white/20 pl-2 mt-1">Impact: ${item.impact}</p>
+          <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-white hover:underline flex items-center space-x-1 group leading-snug">
+            <span>${item.title}</span>
+            <i data-lucide="external-link" class="w-3 h-3 text-zinc-400 group-hover:text-white flex-shrink-0"></i>
+          </a>
+          <p class="text-[11px] text-zinc-400 mt-1 line-clamp-2">${item.snippet}</p>
         `;
         newsContainer.appendChild(card);
       });
@@ -629,19 +526,17 @@
             <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-white/10 text-white font-semibold">${reco.priority}</span>
           </div>
           <p class="text-xs text-white font-medium leading-relaxed">${reco.action}</p>
-          <p class="text-[11px] text-zinc-400 leading-normal"><strong class="text-zinc-300 font-mono">Why now:</strong> ${reco.rationale}</p>
+          <p class="text-[11px] text-zinc-400 leading-normal"><strong class="text-zinc-300 font-mono">Rationale:</strong> ${reco.rationale}</p>
         `;
         recoContainer.appendChild(card);
       });
 
       document.getElementById('resultsView').classList.remove('hidden');
       lucide.createIcons();
-
-      // Smooth scroll down to results
       document.getElementById('resultsView').scrollIntoView({ behavior: 'smooth' });
     }
 
-    // Interrogate Memory Bank (Trap 2 Fix)
+    // Interrogate Memory Bank
     document.getElementById('askForm').addEventListener('submit', async (e) => {
       e.preventDefault();
       const question = document.getElementById('askInput').value.trim();
@@ -664,7 +559,6 @@
         const ans = await res.json();
         
         document.getElementById('askAnswerBox').classList.remove('hidden');
-        document.getElementById('memoriesConsulted').textContent = `${ans.memories_consulted} memory nodes consulted`;
         document.getElementById('askAnswerText').textContent = ans.answer;
         document.getElementById('askAnswerBox').scrollIntoView({ behavior: 'smooth' });
       } catch (err) {
