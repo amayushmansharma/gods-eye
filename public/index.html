@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>God's Eye — Autonomous Market Intelligence</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    
+    /* Background Image setup */
+    .bg-eclipse {
+      background-image: url('/static/background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    /* Exact Glass Pill Search Bar matching reference image */
+    .glass-pill-container {
+      background: rgba(10, 10, 10, 0.45);
+      backdrop-filter: blur(28px) saturate(180%);
+      -webkit-backdrop-filter: blur(28px) saturate(180%);
+      border: 1.5px solid rgba(255, 255, 255, 0.28);
+      border-radius: 9999px;
+      box-shadow: 
+        0 0 25px rgba(255, 255, 255, 0.08),
+        inset 0 1px 2px rgba(255, 255, 255, 0.4),
+        inset 0 -1px 2px rgba(0, 0, 0, 0.6);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-pill-container:focus-within {
+      border-color: rgba(255, 255, 255, 0.55);
+      box-shadow: 
+        0 0 35px rgba(255, 255, 255, 0.16),
+        inset 0 1px 3px rgba(255, 255, 255, 0.6),
+        inset 0 -1px 2px rgba(0, 0, 0, 0.8);
+      transform: translateY(-1px);
+    }
+
+    /* Glass Cards */
+    .glass-panel {
+      background: rgba(12, 12, 14, 0.65);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 20px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+    }
+
+    .glass-chip {
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 9999px;
+      transition: all 0.2s ease;
+    }
+    .glass-chip:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.3);
+      transform: translateY(-1px);
+    }
+
+    /* Pulse Glow */
+    @keyframes radar-pulse {
+      0%, 100% { opacity: 0.3; transform: scale(1); }
+      50% { opacity: 0.8; transform: scale(1.05); }
+    }
+    .radar-pulse-anim {
+      animation: radar-pulse 3s infinite ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-black text-zinc-100 min-h-screen bg-eclipse flex flex-col relative overflow-x-hidden selection:bg-white/20 selection:text-white">
+
+  <!-- Subtle Dark Overlay Gradient for contrast -->
+  <div class="fixed inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/80 pointer-events-none -z-10"></div>
+
+  <!-- Top Navigation Bar -->
+  <header class="w-full border-b border-white/10 px-6 py-4 flex items-center justify-between backdrop-blur-md bg-black/30 sticky top-0 z-50">
+    <div class="flex items-center space-x-3">
+      <div class="w-8 h-8 rounded-full border border-white/30 flex items-center justify-center bg-white/5 shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+        <i data-lucide="eye" class="w-4 h-4 text-white"></i>
+      </div>
+      <div>
+        <span class="text-sm font-semibold tracking-wider uppercase text-zinc-100">God's Eye</span>
+        <span class="text-[10px] text-zinc-400 font-mono block -mt-0.5">COMPETITIVE RADAR // AUTONOMOUS</span>
+      </div>
+    </div>
+
+    <!-- Hindsight Memory Live Status -->
+    <div class="flex items-center space-x-3">
+      <div class="flex items-center space-x-2 px-3 py-1.5 rounded-full border border-white/15 bg-white/[0.04] text-xs">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span class="text-zinc-300 font-mono text-[11px]">Hindsight Memory: Active</span>
+      </div>
+      <a href="https://github.com/vectorize-io/hindsight" target="_blank" class="text-xs text-zinc-400 hover:text-white transition flex items-center space-x-1 font-mono">
+        <span>Vectorize Engine</span>
+        <i data-lucide="external-link" class="w-3 h-3"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Hero View -->
+  <main class="flex-1 flex flex-col items-center justify-center px-4 max-w-6xl mx-auto w-full py-12 transition-all duration-700" id="mainContainer">
+    
+    <!-- Hero Header -->
+    <div class="text-center max-w-2xl mb-8 space-y-3" id="heroHeader">
+      <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full border border-white/10 bg-white/[0.03] text-xs text-zinc-400 mb-2">
+        <i data-lucide="shield-alert" class="w-3.5 h-3.5 text-zinc-300"></i>
+        <span>Persistent Competitive Surveillance</span>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-white drop-shadow-sm">
+        Nothing Goes Unnoticed.
+      </h1>
+      <p class="text-sm md:text-base text-zinc-400 font-normal leading-relaxed">
+        God's Eye monitors competitor moves, pricing shifts, and industry announcements. Backed by <span class="text-zinc-200 underline decoration-white/40">Hindsight</span> persistent memory to detect multi-month strategic trends.
+      </p>
+    </div>
+
+    <!-- The Exact Glass Pill Search Bar Form -->
+    <div class="w-full max-w-2xl px-2 mb-6" id="searchBarWrapper">
+      <form id="searchForm" class="relative">
+        <div class="glass-pill-container flex items-center px-6 py-4 space-x-4">
+          <input 
+            type="text" 
+            id="urlInput"
+            value="https://www.bmw.in"
+            placeholder="Enter brand URL (e.g., https://www.bmw.in)..." 
+            class="bg-transparent flex-1 text-zinc-100 placeholder-zinc-400 text-base md:text-lg focus:outline-none tracking-wide"
+            required
+          />
+          <button 
+            type="submit" 
+            id="searchBtn"
+            class="w-10 h-10 rounded-full flex items-center justify-center text-zinc-300 hover:text-white transition-all transform hover:scale-105 active:scale-95"
+            title="Launch God's Eye Analysis"
+          >
+            <i data-lucide="search" class="w-5 h-5 text-white/80 hover:text-white"></i>
+          </button>
+        </div>
+      </form>
+
+      <!-- Quick Preset Suggestions -->
+      <div class="flex flex-wrap items-center justify-center gap-2 mt-4 text-xs text-zinc-400" id="quickPills">
+        <span class="text-zinc-500 font-mono text-[11px]">Instant Demos:</span>
+        <button onclick="setQuery('https://www.bmw.in')" class="glass-chip px-3 py-1 text-zinc-300 hover:text-white">bmw.in</button>
+        <button onclick="setQuery('https://stripe.com')" class="glass-chip px-3 py-1 text-zinc-300 hover:text-white">stripe.com</button>
+        <button onclick="setQuery('https://linear.app')" class="glass-chip px-3 py-1 text-zinc-300 hover:text-white">linear.app</button>
+      </div>
+    </div>
+
+    <!-- 30-Second Deep Work Loading Sequence -->
+    <div id="deepWorkView" class="hidden w-full max-w-2xl my-8 space-y-6">
+      <div class="glass-panel p-6 border border-white/20">
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex items-center space-x-3">
+            <div class="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+            <span class="text-sm font-semibold tracking-wide text-zinc-200">GOD'S EYE // AUTONOMOUS MULTI-AGENT SCAN</span>
+          </div>
+          <span id="timerCountdown" class="text-xs font-mono px-2 py-0.5 rounded bg-white/10 text-white">00:30</span>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="w-full bg-white/5 rounded-full h-1.5 mb-6 overflow-hidden border border-white/10">
+          <div id="progressBar" class="bg-gradient-to-r from-zinc-300 to-white h-1.5 rounded-full transition-all duration-300 w-0"></div>
+        </div>
+
+        <!-- Real-time Agent Log Stream -->
+        <div class="bg-black/50 rounded-xl p-4 font-mono text-xs text-zinc-300 space-y-2.5 border border-white/10 h-48 overflow-y-auto" id="agentLogs">
+          <!-- Logs injected by JS -->
+        </div>
+
+        <!-- Fast Forward Option for testing -->
+        <div class="mt-4 flex justify-between items-center text-[11px] text-zinc-500">
+          <span>Synthesizing live web pulse + Hindsight Memory Bank</span>
+          <button onclick="skipTimer()" class="underline hover:text-zinc-300 transition">Fast-forward demo ➔</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dashboard Results Container (Bento Grid) -->
+    <div id="resultsView" class="hidden w-full space-y-8 animate-fade-in pb-16">
+      
+      <!-- Meta Overview Header -->
+      <div class="glass-panel p-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <div class="flex items-center space-x-3 mb-1">
+            <h2 id="resBrandName" class="text-2xl font-bold text-white tracking-tight">BMW India</h2>
+            <span id="resIndustry" class="text-xs px-2.5 py-0.5 rounded-full bg-white/10 border border-white/15 text-zinc-300">Luxury Automotive</span>
+          </div>
+          <p class="text-xs text-zinc-400 font-mono">
+            Target: <span id="resUrl" class="text-zinc-200">https://www.bmw.in</span> • Timestamp: <span id="resTimestamp" class="text-zinc-300">Just now</span>
+          </p>
+        </div>
+        <div class="flex items-center space-x-2">
+          <button onclick="window.print()" class="glass-chip px-3 py-1.5 text-xs text-zinc-300 hover:text-white flex items-center space-x-1.5">
+            <i data-lucide="download" class="w-3.5 h-3.5"></i>
+            <span>Export Intelligence Brief</span>
+          </button>
+          <button onclick="resetSearch()" class="glass-chip px-3 py-1.5 text-xs text-zinc-300 hover:text-white flex items-center space-x-1.5">
+            <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i>
+            <span>New Scan</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Bento Grid 1: HINDSIGHT MEMORY RADAR (THE STAR FEATURE) -->
+      <div class="glass-panel p-6 border-white/25 relative overflow-hidden bg-gradient-to-br from-zinc-900/80 via-black/80 to-zinc-950/90 shadow-[0_0_50px_rgba(255,255,255,0.05)]">
+        <div class="flex items-center justify-between mb-4 pb-3 border-b border-white/10">
+          <div class="flex items-center space-x-3">
+            <div class="w-8 h-8 rounded-lg bg-white/10 border border-white/20 flex items-center justify-center text-white">
+              <i data-lucide="brain" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <h3 class="text-base font-semibold text-white tracking-wide">Hindsight Memory Radar // Temporal Shifts</h3>
+              <p class="text-xs text-zinc-400">Cumulative intelligence across scans — what changed over time</p>
+            </div>
+          </div>
+          <div class="text-right">
+            <span id="bankIdBadge" class="text-[11px] font-mono px-2 py-0.5 rounded bg-white/10 border border-white/15 text-zinc-300">bank: godseye-bank-bmw</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+          <!-- Cumulative Diffs -->
+          <div>
+            <h4 class="text-xs uppercase tracking-wider font-mono text-zinc-400 mb-3 flex items-center space-x-1.5">
+              <i data-lucide="git-commit" class="w-3.5 h-3.5 text-emerald-400"></i>
+              <span>Detected Market Pattern Shifts:</span>
+            </h4>
+            <div id="cumulativeDiffs" class="space-y-2.5 text-xs">
+              <!-- Injected by JS -->
+            </div>
+          </div>
+
+          <!-- Memory Timeline Recall -->
+          <div>
+            <h4 class="text-xs uppercase tracking-wider font-mono text-zinc-400 mb-3 flex items-center space-x-1.5">
+              <i data-lucide="history" class="w-3.5 h-3.5 text-cyan-400"></i>
+              <span>Persistent Memory Recall (Hindsight Engine):</span>
+            </h4>
+            <div id="baselineHistory" class="space-y-2 font-mono text-[11px]">
+              <!-- Injected by JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bento Grid 2: Competitors & 7-Day Pulse -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        
+        <!-- Left: 2-4 Direct Competitor Cards (7 Cols) -->
+        <div class="lg:col-span-7 glass-panel p-6">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center space-x-2">
+              <i data-lucide="swords" class="w-4 h-4 text-zinc-300"></i>
+              <h3 class="text-sm font-semibold tracking-wide uppercase text-zinc-200">Primary Rival Matrix</h3>
+            </div>
+            <span class="text-xs text-zinc-500 font-mono">2-4 Direct Competitors</span>
+          </div>
+
+          <div id="competitorCards" class="space-y-3.5">
+            <!-- Injected by JS -->
+          </div>
+        </div>
+
+        <!-- Right: 7-Day News Pulse & Articles (5 Cols) -->
+        <div class="lg:col-span-5 glass-panel p-6">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center space-x-2">
+              <i data-lucide="newspaper" class="w-4 h-4 text-zinc-300"></i>
+              <h3 class="text-sm font-semibold tracking-wide uppercase text-zinc-200">7-Day Market Pulse</h3>
+            </div>
+            <span class="text-xs text-zinc-500 font-mono">Last 168 Hours</span>
+          </div>
+
+          <div id="newsPulseList" class="space-y-3">
+            <!-- Injected by JS -->
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bento Grid 3: Strategic Counter-Measures -->
+      <div class="glass-panel p-6 border-white/20">
+        <div class="flex items-center space-x-2 mb-4">
+          <i data-lucide="target" class="w-4 h-4 text-amber-400"></i>
+          <h3 class="text-sm font-semibold tracking-wide uppercase text-zinc-200">Executive Playbook & Counter-Measures</h3>
+        </div>
+
+        <div id="recommendationsList" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full border-t border-white/10 px-6 py-4 flex flex-col md:flex-row items-center justify-between text-xs text-zinc-500 backdrop-blur-md bg-black/40">
+    <div class="flex items-center space-x-2">
+      <span class="text-zinc-400 font-medium">God's Eye</span>
+      <span>•</span>
+      <span>Powered by <a href="https://hindsight.vectorize.io/" target="_blank" class="text-zinc-300 underline hover:text-white">Vectorize Hindsight</a> & Groq LLM</span>
+    </div>
+    <div class="flex items-center space-x-4 mt-2 md:mt-0 font-mono text-[11px]">
+      <span>Built for Microsoft Office Bangalore Demo</span>
+    </div>
+  </footer>
+
+  <!-- Script Logic -->
+  <script>
+    lucide.createIcons();
+
+    let scanTimer = null;
+    let timerSeconds = 30;
+    let pendingData = null;
+
+    function setQuery(url) {
+      document.getElementById('urlInput').value = url;
+      document.getElementById('searchForm').requestSubmit();
+    }
+
+    const logMessages = [
+      { sec: 2, text: "🔍 Initializing God's Eye telemetry probe..." },
+      { sec: 5, text: "🌐 Scraping target domain hierarchy, product lines, and value props..." },
+      { sec: 9, text: "🥊 Discovering direct market rivals & alternative solution vectors..." },
+      { sec: 14, text: "📰 Ingesting verified industry news, articles, and press announcements (last 7 days)..." },
+      { sec: 19, text: "🧠 Connecting to Vectorize Hindsight memory bank..." },
+      { sec: 24, text: "⚖️ Executing multi-strategy memory recall (Semantic + Temporal + Graph)..." },
+      { sec: 27, text: "📊 Computing competitive pricing shifts and messaging divergence..." },
+      { sec: 30, text: "✨ Compiling executive strategic counter-measures..." }
+    ];
+
+    document.getElementById('searchForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const url = document.getElementById('urlInput').value.trim();
+      if (!url) return;
+
+      // Switch views: hide results, show deep work
+      document.getElementById('resultsView').classList.add('hidden');
+      document.getElementById('deepWorkView').classList.remove('hidden');
+      document.getElementById('agentLogs').innerHTML = '';
+      
+      timerSeconds = 30;
+      updateTimerUI(timerSeconds, 0);
+
+      // Start fetching data in background
+      fetchData(url);
+
+      // Start 30-second ticking sequence
+      const startTime = Date.now();
+      const totalDuration = 30000;
+
+      if (scanTimer) clearInterval(scanTimer);
+
+      scanTimer = setInterval(() => {
+        const elapsed = Date.now() - startTime;
+        const remaining = Math.max(0, Math.ceil((totalDuration - elapsed) / 1000));
+        const progress = Math.min(100, (elapsed / totalDuration) * 100);
+
+        updateTimerUI(remaining, progress);
+
+        // Check if any log should be added
+        const elapsedSec = Math.floor(elapsed / 1000);
+        logMessages.forEach(msg => {
+          if (msg.sec === elapsedSec && !msg.logged) {
+            msg.logged = true;
+            appendLog(msg.text);
+          }
+        });
+
+        if (remaining <= 0) {
+          clearInterval(scanTimer);
+          finishScan();
+        }
+      }, 250);
+    });
+
+    function appendLog(text) {
+      const logs = document.getElementById('agentLogs');
+      const p = document.createElement('p');
+      p.className = 'text-zinc-300 flex items-start space-x-2';
+      p.innerHTML = `<span class="text-zinc-500 font-mono">[${new Date().toLocaleTimeString()}]</span> <span>${text}</span>`;
+      logs.appendChild(p);
+      logs.scrollTop = logs.scrollHeight;
+    }
+
+    function updateTimerUI(sec, progress) {
+      document.getElementById('timerCountdown').textContent = `00:${sec < 10 ? '0' : ''}${sec}`;
+      document.getElementById('progressBar').style.width = `${progress}%`;
+    }
+
+    function skipTimer() {
+      if (scanTimer) clearInterval(scanTimer);
+      updateTimerUI(0, 100);
+      finishScan();
+    }
+
+    async function fetchData(url) {
+      try {
+        const res = await fetch(`/api/analyze?url=${encodeURIComponent(url)}`);
+        pendingData = await res.json();
+      } catch (err) {
+        console.error("Fetch error:", err);
+      }
+    }
+
+    function finishScan() {
+      logMessages.forEach(m => m.logged = false); // reset
+      document.getElementById('deepWorkView').classList.add('hidden');
+      if (pendingData) {
+        renderResults(pendingData);
+      }
+    }
+
+    function renderResults(data) {
+      document.getElementById('resBrandName').textContent = data.brand_name;
+      document.getElementById('resIndustry').textContent = data.industry;
+      document.getElementById('resUrl').textContent = data.target_url;
+      document.getElementById('resTimestamp').textContent = data.scanned_at;
+
+      // Hindsight Memory Bank Info
+      document.getElementById('bankIdBadge').textContent = `bank: ${data.hindsight_bank.bank_id}`;
+
+      // Cumulative Diffs
+      const diffContainer = document.getElementById('cumulativeDiffs');
+      diffContainer.innerHTML = '';
+      data.hindsight_bank.cumulative_diffs.forEach(diff => {
+        const div = document.createElement('div');
+        div.className = 'p-3 rounded-xl bg-white/[0.04] border border-white/10 text-zinc-300 leading-relaxed flex items-start space-x-2.5';
+        div.innerHTML = `
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-1.5 flex-shrink-0"></span>
+          <span>${diff}</span>
+        `;
+        diffContainer.appendChild(div);
+      });
+
+      // Baseline History
+      const histContainer = document.getElementById('baselineHistory');
+      histContainer.innerHTML = '';
+      data.hindsight_bank.historical_baseline.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'p-2.5 rounded-lg bg-black/40 border border-white/10 text-zinc-400';
+        div.innerHTML = `
+          <span class="text-cyan-400 font-semibold text-[10px] uppercase block">${item.date}</span>
+          <span class="text-zinc-300 text-xs">${item.content}</span>
+        `;
+        histContainer.appendChild(div);
+      });
+
+      // Competitor Cards
+      const compContainer = document.getElementById('competitorCards');
+      compContainer.innerHTML = '';
+      data.competitors.forEach(comp => {
+        const threatColor = comp.threat_level === 'High' ? 'text-rose-400 border-rose-500/30 bg-rose-500/10' : 'text-amber-400 border-amber-500/30 bg-amber-500/10';
+        const card = document.createElement('div');
+        card.className = 'p-4 rounded-xl bg-white/[0.03] border border-white/10 hover:border-white/20 transition space-y-2';
+        card.innerHTML = `
+          <div class="flex items-center justify-between">
+            <h4 class="text-sm font-semibold text-white">${comp.name}</h4>
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded-full border ${threatColor}">${comp.threat_level} Threat</span>
+          </div>
+          <p class="text-xs text-zinc-400"><strong class="text-zinc-300">Focus:</strong> ${comp.focus}</p>
+          <p class="text-xs text-zinc-300"><strong class="text-zinc-400">Recent Movement:</strong> ${comp.recent_move}</p>
+          <div class="flex items-center justify-between pt-1 text-[11px] text-zinc-400 font-mono border-t border-white/5">
+            <span>Price: <span class="text-zinc-200">${comp.price_trend}</span></span>
+            <span>Sentiment: <span class="text-zinc-200">${comp.sentiment}</span></span>
+          </div>
+        `;
+        compContainer.appendChild(card);
+      });
+
+      // 7-Day Pulse News
+      const newsContainer = document.getElementById('newsPulseList');
+      newsContainer.innerHTML = '';
+      data.news_pulse.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'p-3 rounded-xl bg-white/[0.03] border border-white/10 hover:border-white/20 transition space-y-1.5';
+        card.innerHTML = `
+          <div class="flex items-center justify-between text-[11px]">
+            <span class="text-zinc-400 font-mono">${item.source} • ${item.days_ago}</span>
+            <span class="px-2 py-0.5 rounded-full bg-white/10 text-zinc-300 text-[10px]">${item.tag}</span>
+          </div>
+          <h5 class="text-xs font-medium text-white leading-snug">${item.title}</h5>
+          <p class="text-[11px] text-zinc-400 border-l-2 border-white/20 pl-2 mt-1">Impact: ${item.impact}</p>
+        `;
+        newsContainer.appendChild(card);
+      });
+
+      // Strategic Recommendations
+      const recoContainer = document.getElementById('recommendationsList');
+      recoContainer.innerHTML = '';
+      data.strategic_recommendations.forEach(reco => {
+        const card = document.createElement('div');
+        card.className = 'p-4 rounded-xl bg-white/[0.04] border border-white/10 space-y-2';
+        card.innerHTML = `
+          <div class="flex items-center justify-between">
+            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-white/10 text-white font-semibold">${reco.priority}</span>
+          </div>
+          <p class="text-xs text-white font-medium leading-relaxed">${reco.action}</p>
+          <p class="text-[11px] text-zinc-400 leading-normal"><strong class="text-zinc-300 font-mono">Why now:</strong> ${reco.rationale}</p>
+        `;
+        recoContainer.appendChild(card);
+      });
+
+      document.getElementById('resultsView').classList.remove('hidden');
+      lucide.createIcons();
+
+      // Smooth scroll down to results
+      document.getElementById('resultsView').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function resetSearch() {
+      document.getElementById('resultsView').classList.add('hidden');
+      document.getElementById('heroHeader').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
