@@ -49,11 +49,11 @@ def ask_gods_eye(req: AskRequest):
 
 @app.get("/api/hindsight/status")
 def get_hindsight_status():
-    return {
-        "status": "connected" if hindsight.is_configured() else "local_disk_fallback",
-        "hindsight_configured": hindsight.is_configured(),
-        "provider": "Vectorize Hindsight Cloud"
-    }
+    """
+    True live healthcheck hitting Hindsight Cloud API.
+    """
+    health = hindsight.check_health()
+    return JSONResponse(content=health)
 
 if __name__ == "__main__":
     import uvicorn

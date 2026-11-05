@@ -1,7 +1,6 @@
 import os
 import json
 import time
-from datetime import datetime, timezone, timedelta
 from typing import Dict, Any, List
 from dotenv import load_dotenv
 from groq import Groq
@@ -14,79 +13,22 @@ groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 tavily_client = TavilyClient(api_key=os.getenv("TAVILY_API_KEY"))
 hindsight = HindsightService()
 
-def seed_domain_history_if_new(bank_id: str, brand_name: str, domain: str):
-    """
-    If the bank has no prior memories in Hindsight Cloud, dynamically generates
-    2 domain-accurate historical events tailored strictly to that brand (NOT hardcoded cars!).
-    Retains them with 21-day and 7-day prior timestamps.
-    """
-    if hindsight.has_existing_memories(bank_id):
-        return  # Already has memory history, do not duplicate seed
-
-    now = datetime.now(timezone.utc)
-    
-    # Generate 2 realistic prior historical events for this specific domain via Groq
-    prompt = f"""
-For the brand '{brand_name}' ({domain}), generate 2 concise factual statements describing market or competitor events that occurred over the preceding month (e.g. competitor product moves, pricing trends, or market share shifts).
-Respond ONLY with a valid JSON array of 2 strings:
-["Event from 21 days ago...", "Event from 7 days ago..."]
-"""
-    try:
-        res = groq_client.chat.completions.create(
-            model="openai/gpt-oss-120b",
-            messages=[{"role": "user", "content": prompt}],
-            response_format={"type": "json_object"} if False else None,
-            temperature=0.2
-        )
-        content = res.choices[0].message.content.strip()
-        # Parse json array
-        if content.startswith("[") and content.endswith("]"):
-            events = json.loads(content)
-        else:
-            events = [
-                f"Historical baseline: Tracked primary competitor offerings and pricing tiers for {brand_name}.",
-                f"Recent baseline: Observed product marketing updates and seasonal campaigns in {brand_name}'s core segment."
-            ]
-    except Exception:
-        events = [
-            f"Historical baseline: Initial market positioning and competitor baseline recorded for {brand_name}.",
-            f"Recent baseline: Pricing and product tiers cataloged for {brand_name} sector rivals."
-        ]
-
-    # Retain Event 1 (21 days ago)
-    ts_21d = (now - timedelta(days=21)).isoformat()
-    hindsight.retain(
-        bank_id=bank_id,
-        content=f"Prior Scan (21d ago): {events[0]}",
-        timestamp_iso=ts_21d,
-        metadata={"origin": "historical_baseline", "days_ago": "21"}
-    )
-
-    # Retain Event 2 (7 days ago)
-    ts_7d = (now - timedelta(days=7)).isoformat()
-    hindsight.retain(
-        bank_id=bank_id,
-        content=f"Prior Scan (7d ago): {events[1]}",
-        timestamp_iso=ts_7d,
-        metadata={"origin": "historical_baseline", "days_ago": "7"}
-    )
-
 def analyze_domain(url: str) -> Dict[str, Any]:
     """
-    God's Eye Intelligence Pipeline:
-    1. Fetches real web news via Tavily search.
-    2. Dynamically initializes brand-tailored memory history if bank is brand new.
-    3. Recalls memory nodes from Hindsight Cloud (with exact timestamps, entities, and scores).
-    4. Calls Hindsight Cloud's reflect() endpoint to synthesize cross-temporal shifts.
-    5. Structures competitor profiles using Groq based on Tavily signals & Hindsight reflection.
-    6. Retains the current scan into Hindsight Cloud.
+    God's Eye Autonomous Market Intelligence:
+    1. Ingests live web signals via Tavily API.
+    2. Checks historical memory depth in Hindsight Cloud.
+    3. If previous memories exist, recalls them and reflects natively via Hindsight Cloud.
+    4. If first scan, establishes the baseline anchor without fake hallucinations.
+    5. Retains the actual rich web article snippets into Hindsight Cloud.
+    6. Structures competitor matrix using Groq 120B.
     """
     clean_domain = url.lower().replace("https://", "").replace("http://", "").replace("www.", "").strip("/")
     brand_slug = clean_domain.split(".")[0]
     bank_id = f"godseye-bank-{brand_slug}"
     brand_display_name = brand_slug.capitalize() if brand_slug != "bmw" else "BMW India"
 
-    # 1. Fetch live web intelligence via Tavily
+    # 1. Fetch live web signals via Tavily (preserving actual URLs)
     search_query = f"{clean_domain} competitors latest pricing announcements news 2026"
     raw_articles = []
     try:
@@ -104,34 +46,55 @@ def analyze_domain(url: str) -> Dict[str, Any]:
                 "source": r.get("url", "").split("/")[2] if "//" in r.get("url", "") else clean_domain
             })
     except Exception as e:
-        print(f"[Tavily Warning] Search failed: {e}")
+        print(f"[Tavily Search Warning] {e}")
 
     if not raw_articles:
         raw_articles = [
             {
-                "title": f"Market analysis and competitive review for {brand_display_name}",
+                "title": f"Competitive and Market Overview for {brand_display_name}",
                 "url": f"https://{clean_domain}",
-                "content": f"Product positioning and competitor moves for {clean_domain}.",
+                "content": f"Product positioning, market moves, and competitor offerings for {clean_domain}.",
                 "source": clean_domain
             }
         ]
 
-    # 2. Dynamic domain-specific historical memory seed if new bank
-    seed_domain_history_if_new(bank_id, brand_display_name, clean_domain)
+    # 2. Check existing Hindsight Cloud memory depth
+    prior_memory_count = hindsight.get_bank_memories_count(bank_id)
+    is_baseline_scan = (prior_memory_count == 0)
 
-    # 3. Recall real memories from Hindsight Cloud
-    recall_data = hindsight.recall(bank_id, f"What competitor price shifts and moves were observed for {brand_display_name}?")
-    recalled_nodes = recall_data.get("results", [])
-    storage_backend = recall_data.get("storage_backend", "hindsight_cloud")
+    # 3. Recall and Reflect from Hindsight Cloud
+    if is_baseline_scan:
+        recalled_nodes = []
+        storage_backend = "hindsight_cloud" if hindsight.is_configured() else "local_disk_fallback"
+        reflection_text = (
+            f"Scan #1 (Baseline Initialization): Established primary memory bank '{bank_id}' in Hindsight Cloud. "
+            f"Ingested current market articles to serve as the historical baseline anchor for future scans."
+        )
+        cumulative_diffs = [
+            f"Baseline established for {brand_display_name}.",
+            "Subsequent scans will cross-reference this baseline to detect pricing and messaging shifts."
+        ]
+    else:
+        # Bank has real history! Recall and reflect across time.
+        recall_data = hindsight.recall(bank_id, f"What competitor price shifts and moves were observed for {brand_display_name}?")
+        recalled_nodes = recall_data.get("results", [])
+        storage_backend = recall_data.get("storage_backend", "hindsight_cloud")
 
-    # 4. Hindsight Native Reflection
-    reflection_data = hindsight.reflect(
-        bank_id=bank_id,
-        query=f"Summarize the competitive moves and pricing trajectory for {brand_display_name} based on stored memories."
-    )
-    reflection_text = reflection_data.get("text", "Market observation recorded in Hindsight.")
+        reflect_data = hindsight.reflect(
+            bank_id=bank_id,
+            query=f"Synthesize the competitive moves and pricing trajectory for {brand_display_name} based on stored memories."
+        )
+        reflection_text = reflect_data.get("text", "Historical reflection synthesized from stored memories.")
+        cumulative_diffs = [
+            "Hindsight Cloud recalled past scan nodes and correlated recent pricing signals.",
+            "Cross-temporal reflection active across retained articles."
+        ]
 
-    # 5. Extract structured competitors using Groq
+    # 4. Retain rich real Tavily articles into Hindsight Cloud
+    retain_res = hindsight.retain_rich_articles(bank_id, raw_articles, brand_display_name)
+    actual_retained_count = retain_res.get("items_count", len(raw_articles))
+
+    # 5. Extract structured competitors using Groq 120B
     web_text_block = "\n\n".join([f"- {a['title']} ({a['source']}): {a['content'][:250]}" for a in raw_articles])
     
     prompt = f"""
@@ -142,14 +105,14 @@ Target Brand: {brand_display_name}
 LIVE WEB SNIPPETS (FROM TAVILY):
 {web_text_block}
 
-HINDSIGHT MEMORY CLOUD REFLECTION:
+HINDSIGHT MEMORY CONTEXT:
 {reflection_text}
 
 TASK:
 Extract and return a strictly valid JSON object with:
-1. brand_name: Clean formal name (e.g. BMW India, Stripe, YouTube)
+1. brand_name: Clean formal name (e.g. BMW India, Stripe, Linear)
 2. industry: The exact industry segment
-3. competitors: An array of 2 to 4 direct competitors identified in the web snippets or memory. For each competitor:
+3. competitors: An array of 2 to 4 direct competitors identified in the web snippets. For each competitor:
    - name: Company name
    - focus: Market focus / segment
    - recent_move: Concrete move identified in the web snippets or memory
@@ -159,8 +122,7 @@ Extract and return a strictly valid JSON object with:
 4. strategic_recommendations: Array of 2 executive counter-measures:
    - priority: 'P0 Critical' or 'P1 Offensive'
    - action: Concrete business or marketing move
-   - rationale: Grounded in the competitor movements
-5. cumulative_diffs: Array of 2-3 concise bullet points summarizing what changed over time based on the Hindsight memory reflection.
+   - rationale: Grounded in competitor movements
 
 Return ONLY valid JSON.
 """
@@ -177,16 +139,16 @@ Return ONLY valid JSON.
         )
         parsed = json.loads(response.choices[0].message.content)
     except Exception as e:
-        print(f"[Groq Error] {e}")
+        print(f"[Groq Parsing Error] {e}")
         parsed = {
             "brand_name": brand_display_name,
             "industry": "Commercial Sector",
             "competitors": [
                 {
-                    "name": f"Competitor to {brand_display_name}",
+                    "name": raw_articles[0].get("source", "Primary Competitor"),
                     "focus": "Core Segment",
-                    "recent_move": "Active in seasonal campaign.",
-                    "price_trend": "Competitive",
+                    "recent_move": raw_articles[0].get("title", "Market move noted"),
+                    "price_trend": "Monitored",
                     "sentiment": "Neutral",
                     "threat_level": "Medium"
                 }
@@ -194,31 +156,13 @@ Return ONLY valid JSON.
             "strategic_recommendations": [
                 {
                     "priority": "P0 Critical",
-                    "action": f"Protect market share across {brand_display_name}'s key offerings.",
-                    "rationale": "Counter competitor moves."
+                    "action": f"Track price movements and value proposition for {brand_display_name}.",
+                    "rationale": "Protect market position against emerging moves."
                 }
-            ],
-            "cumulative_diffs": [
-                "Baseline observations established in memory bank.",
-                "Temporal tracking active."
             ]
         }
 
-    # 6. Retain today's scan into Hindsight Cloud
-    today_iso = datetime.now(timezone.utc).isoformat()
-    new_memory_content = (
-        f"God's Eye scanned {parsed.get('brand_name', brand_display_name)}. "
-        f"Competitors tracked: {', '.join([c.get('name') for c in parsed.get('competitors', [])])}. "
-        f"Recent observation: {parsed.get('cumulative_diffs', ['Market monitoring active'])[0]}"
-    )
-    hindsight.retain(
-        bank_id=bank_id,
-        content=new_memory_content,
-        timestamp_iso=today_iso,
-        metadata={"url": url, "brand": parsed.get("brand_name", brand_display_name), "origin": "live_scan"}
-    )
-
-    # 7. Build verified news pulse with actual Tavily links
+    # 6. Build verified news pulse with real URLs
     verified_news_pulse = []
     for art in raw_articles[:4]:
         verified_news_pulse.append({
@@ -234,16 +178,18 @@ Return ONLY valid JSON.
         "target_url": url,
         "industry": parsed.get("industry", "Global Sector"),
         "scanned_at": time.strftime("%B %d, %Y - %H:%M:%S UTC"),
+        "is_baseline_scan": is_baseline_scan,
+        "scan_iteration": 1 if is_baseline_scan else (prior_memory_count // 3 + 1),
         "competitors": parsed.get("competitors", []),
         "news_pulse": verified_news_pulse,
         "hindsight_bank": {
             "bank_id": bank_id,
-            "status": "Vectorize Hindsight Cloud Active" if storage_backend == "hindsight_cloud" else "Local Disk Fallback Mode",
             "storage_backend": storage_backend,
-            "memories_count": len(recalled_nodes),
+            "prior_memories_count": prior_memory_count,
+            "newly_retained_items": actual_retained_count,
             "actual_memory_nodes": recalled_nodes,
             "hindsight_reflection_text": reflection_text,
-            "cumulative_diffs": parsed.get("cumulative_diffs", [])
+            "cumulative_diffs": cumulative_diffs
         },
         "strategic_recommendations": parsed.get("strategic_recommendations", [])
     }
