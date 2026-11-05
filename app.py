@@ -1,9 +1,10 @@
 import os
-from fastapi import FastAPI, Query
+from fastapi import FastAPI, Query, HTTPException
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
-from services.intelligence_engine import analyze_domain
+from pydantic import BaseModel
+from services.intelligence_engine import analyze_domain, query_memory_drilldown
 from services.hindsight_service import HindsightService
 
 app = FastAPI(title="God's Eye - Competitive Intelligence Agent")
@@ -30,6 +31,23 @@ def read_root():
 def run_analysis(url: str = Query(..., description="Target brand URL to analyze")):
     result = analyze_domain(url)
     return JSONResponse(content=result)
+
+class AskRequest(BaseModel):
+    bank_id: str
+    question: str
+    brand_name: str
+
+@app.post("/api/ask")
+def ask_gods_eye(req: AskRequest):
+    """
+    Trap 2 Fix: Interactive Memory Drilldown endpoint.
+    Recalls memories from Hindsight Cloud and synthesizes answers via Groq LLM.
+    """
+    try:
+        answer_data = query_memory_drilldown(req.bank_id, req.brand_name, req.question)
+        return JSONResponse(content=answer_data)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/api/hindsight/status")
 def get_hindsight_status():

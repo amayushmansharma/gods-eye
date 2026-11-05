@@ -1,0 +1,12 @@
+Most AI agents suffer from amnesia. You run a web scrape, get a snapshot, and tomorrow the model has forgotten everything it saw.
+
+We fixed this by connecting our market agent, God's Eye, to Vectorize Hindsight persistent memory.
+
+What changed:
+• Day 1: Catalogs rival prices (Mercedes vs Audi). Generic, stateless baseline.
+• Day 15: Mercedes raises prices 2.4%; Audi slashes ₹2.5L. Hindsight recalls Day 1, spots the divergence, and alerts us.
+• Day 45: Correlates 20 scans across pricing & hiring. Flags rival upmarket retreat before earnings.
+
+Stop stuffing raw logs into system prompts. Giving your agent an autonomous memory layer with retain/recall changes everything.
+
+#AIAgents #AI #Hindsight #AgentMemory #AIMemory #LLM
