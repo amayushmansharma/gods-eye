@@ -5,11 +5,18 @@ import hashlib
 import difflib
 from datetime import datetime, timezone
 from typing import Dict, Any, List, Optional, Tuple
+import requests
 from tavily import TavilyClient
+from groq import Groq
+from dotenv import load_dotenv
+
+ENV_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".env"))
+load_dotenv(ENV_PATH)
 
 SNAPSHOTS_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".snapshots"))
 MANIFEST_FILE = os.path.join(SNAPSHOTS_DIR, "manifest.json")
 SCAN_LOG_FILE = os.path.join(SNAPSHOTS_DIR, "scan_log.jsonl")
+DECISIONS_FILE = os.path.join(SNAPSHOTS_DIR, "decisions.json")
 
 # Standard watchlist definition for SaaS competitors
 DEFAULT_WATCHLIST = [
@@ -48,8 +55,12 @@ class SnapshotService:
         os.makedirs(self.snapshots_dir, exist_ok=True)
         self.manifest_path = MANIFEST_FILE
         self.scan_log_path = SCAN_LOG_FILE
+        self.decisions_path = DECISIONS_FILE
         self.api_key = tavily_api_key or os.getenv("TAVILY_API_KEY", "")
         self.client = TavilyClient(api_key=self.api_key) if self.api_key else None
+        
+        self.groq_api_key = os.getenv("GROQ_API_KEY", "")
+        self.groq_client = Groq(api_key=self.groq_api_key) if self.groq_api_key else None
         self._ensure_manifest()
 
     def _ensure_manifest(self):
@@ -102,13 +113,76 @@ class SnapshotService:
                 continue
             filtered.append(stripped)
 
-        # Deduplicate consecutive identical lines (e.g. repeated buttons/nav items)
+        # Deduplicate consecutive identical lines
         deduped = []
         for l in filtered:
             if not deduped or deduped[-1] != l:
                 deduped.append(l)
 
         return "\n".join(deduped)
+
+    def discover_pages(self, raw_input: str) -> Dict[str, Any]:
+        """
+        Discovers pricing and changelog pages for a given website domain or URL.
+        Tests candidate paths deterministically with HTTP probes.
+        """
+        cleaned = raw_input.strip()
+        if not cleaned.startswith("http://") and not cleaned.startswith("https://"):
+            base_url = "https://" + cleaned
+        else:
+            base_url = cleaned
+        base_url = base_url.rstrip("/")
+
+        domain = re.sub(r"^https?://(www\.)?", "", base_url).split("/")[0].lower()
+        name = domain.split(".")[0].capitalize()
+        if name.lower() == "github":
+            name = "GitHub"
+
+        headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"}
+        pricing_candidates = ["/pricing", "/pricing/", "/price", "/plans"]
+        changelog_candidates = ["/changelog", "/releases", "/release-notes", "/updates", "/blog"]
+
+        found_pricing = None
+        for p in pricing_candidates:
+            test_url = base_url + p
+            try:
+                r = requests.head(test_url, headers=headers, allow_redirects=True, timeout=3)
+                if r.status_code == 200:
+                    found_pricing = r.url
+                    break
+                if r.status_code in [403, 405]:
+                    r_get = requests.get(test_url, headers=headers, stream=True, allow_redirects=True, timeout=3)
+                    if r_get.status_code == 200:
+                        found_pricing = r_get.url
+                        break
+            except Exception:
+                pass
+
+        found_changelog = None
+        for p in changelog_candidates:
+            test_url = base_url + p
+            try:
+                r = requests.head(test_url, headers=headers, allow_redirects=True, timeout=3)
+                if r.status_code == 200:
+                    found_changelog = r.url
+                    break
+                if r.status_code in [403, 405]:
+                    r_get = requests.get(test_url, headers=headers, stream=True, allow_redirects=True, timeout=3)
+                    if r_get.status_code == 200:
+                        found_changelog = r_get.url
+                        break
+            except Exception:
+                pass
+
+        return {
+            "name": name,
+            "domain": domain,
+            "base_url": base_url,
+            "pricing_url": found_pricing,
+            "changelog_url": found_changelog,
+            "pricing_tested": pricing_candidates,
+            "changelog_tested": changelog_candidates
+        }
 
     def extract_page(self, url: str) -> Tuple[bool, str, Optional[str]]:
         """
@@ -275,7 +349,8 @@ class SnapshotService:
                 "is_change": False,
                 "timestamp": now_iso,
                 "diff": None,
-                "content_preview": normalized[:500]
+                "content_preview": normalized[:500],
+                "normalized_full": normalized
             }
 
         # Compare with previous snapshot
@@ -314,8 +389,149 @@ class SnapshotService:
             "is_change": diff_info["is_change"],
             "previous_timestamp": prev_ts,
             "current_timestamp": now_iso,
-            "diff": diff_info
+            "diff": diff_info,
+            "normalized_full": normalized
         }
+
+    def summarize_baseline(self, raw_pricing: str, raw_changelog: str, competitor_name: str) -> Dict[str, Any]:
+        """
+        Extracts structured pricing tiers, plan limits, and latest changelog entries
+        strictly from the extracted raw page text.
+        """
+        combined_text = f"=== PRICING PAGE CONTENT FOR {competitor_name} ===\n{raw_pricing[:3500]}\n\n=== CHANGELOG CONTENT FOR {competitor_name} ===\n{raw_changelog[:3500]}"
+        if not self.groq_client:
+            return {
+                "pricing_tiers": [],
+                "plan_limits": ["Groq API not configured for LLM summarization."],
+                "latest_changelog": []
+            }
+
+        prompt = f"""
+You are extracting verified competitive facts for {competitor_name}.
+Ground your extraction ONLY in the source text provided. Do NOT extrapolate or invent facts.
+
+SOURCE TEXT:
+{combined_text}
+
+TASK:
+Extract the verified facts into valid JSON with these exact keys:
+1. "pricing_tiers": Array of 2 to 4 objects with:
+   - "tier": Tier name (e.g. Free, Starter, Pro, Enterprise)
+   - "price": Price display (e.g. "$0", "$8/mo", "$20/mo", "Contact sales")
+   - "billing": Billing interval or basis (e.g. "monthly per user", "free forever")
+2. "plan_limits": Array of 3 to 6 concise strings listing key plan limits, caps, and quotas (e.g. "Free tier: 250 active issues limit, 10MB file limit", "Pro: unlimited issues, 250MB files")
+3. "latest_changelog": Array of 2 to 4 recent changelog entries with:
+   - "title": Feature or release title
+   - "date_or_version": Version number or date mentioned in text
+   - "summary": 1-sentence factual description of the update
+
+Return ONLY valid JSON.
+"""
+        try:
+            res = self.groq_client.chat.completions.create(
+                model="openai/gpt-oss-120b",
+                messages=[{"role": "user", "content": prompt}],
+                response_format={"type": "json_object"},
+                temperature=0.1
+            )
+            data = json.loads(res.choices[0].message.content)
+            return {
+                "pricing_tiers": data.get("pricing_tiers", []),
+                "plan_limits": data.get("plan_limits", []),
+                "latest_changelog": data.get("latest_changelog", [])
+            }
+        except Exception as e:
+            return {
+                "pricing_tiers": [],
+                "plan_limits": [f"Extraction note: {str(e)}"],
+                "latest_changelog": []
+            }
+
+    def synthesize_recommendation(self, competitor_name: str, diff_text: str, is_change: bool, memory_context: str) -> Dict[str, Any]:
+        """
+        Synthesizes an executive recommendation based on the observed diff and recalled memory facts.
+        """
+        if not self.groq_client:
+            return {
+                "action": "Maintain monitoring posture.",
+                "rationale": "Groq client not configured."
+            }
+
+        prompt = f"""
+You are the competitive intelligence advisor for God's Eye.
+Competitor: {competitor_name}
+Diff Status: {'Changes detected in latest scan' if is_change else '0 lines changed (content identical to previous snapshot)'}
+
+RAW DIFF / SNAPSHOT DELTA:
+{diff_text[:2000] if diff_text else 'No text changes detected between snapshots.'}
+
+RECALLED HISTORICAL MEMORY CONTEXT:
+{memory_context[:2000] if memory_context else 'No prior memories recorded.'}
+
+TASK:
+Provide a concrete tactical recommendation for a founder competing against {competitor_name}.
+Return JSON with:
+1. "action": One concise recommended move (e.g. "Hold pricing steady; highlight generous free tier quotas in marketing", "Evaluate matching enterprise SSO tier")
+2. "rationale": 2-sentence rationale directly grounded in the observed moves or lack thereof.
+
+Return ONLY valid JSON.
+"""
+        try:
+            res = self.groq_client.chat.completions.create(
+                model="openai/gpt-oss-120b",
+                messages=[{"role": "user", "content": prompt}],
+                response_format={"type": "json_object"},
+                temperature=0.2
+            )
+            data = json.loads(res.choices[0].message.content)
+            return {
+                "action": data.get("action", "Hold current pricing and monitor."),
+                "rationale": data.get("rationale", "No immediate market disruption detected.")
+            }
+        except Exception as e:
+            return {
+                "action": "Maintain current market positioning.",
+                "rationale": f"Advisory synthesis note: {str(e)}"
+            }
+
+    def get_decisions(self, competitor_id: str) -> List[Dict[str, Any]]:
+        if not os.path.exists(self.decisions_path):
+            return []
+        try:
+            with open(self.decisions_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                return data.get(competitor_id, [])
+        except Exception:
+            return []
+
+    def save_decision(self, competitor_id: str, competitor_name: str, action: str, note: str, is_sample: bool = True) -> Dict[str, Any]:
+        data = {}
+        if os.path.exists(self.decisions_path):
+            try:
+                with open(self.decisions_path, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+            except Exception:
+                data = {}
+
+        now_iso = datetime.now(timezone.utc).isoformat()
+        entry = {
+            "id": f"dec_{int(datetime.now().timestamp()*1000)}",
+            "competitor_id": competitor_id,
+            "competitor_name": competitor_name,
+            "action": action,
+            "note": note,
+            "timestamp": now_iso,
+            "is_sample": is_sample
+        }
+
+        if competitor_id not in data:
+            data[competitor_id] = []
+        data[competitor_id].insert(0, entry)
+
+        with open(self.decisions_path, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2)
+
+        return entry
 
     def _append_scan_log(self, record: Dict[str, Any]):
         try:

@@ -25,9 +25,9 @@
       background: radial-gradient(circle at 50% -20%, rgba(255, 255, 255, 0.08) 0%, rgba(0, 0, 0, 1) 70%);
     }
     .glass-panel {
-      background: rgba(14, 14, 18, 0.65);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
+      background: rgba(14, 14, 18, 0.72);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
       border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 20px;
       box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.15);
@@ -40,24 +40,36 @@
       transition: all 0.2s ease;
     }
     .glass-chip:hover {
-      background: rgba(255, 255, 255, 0.12);
-      border-color: rgba(255, 255, 255, 0.3);
+      background: rgba(255, 255, 255, 0.14);
+      border-color: rgba(255, 255, 255, 0.35);
       transform: translateY(-1px);
     }
     .diff-code-box {
-      background: rgba(0, 0, 0, 0.7);
+      background: rgba(0, 0, 0, 0.75);
       border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 8px;
+      border-radius: 10px;
       font-family: 'JetBrains Mono', monospace;
       font-size: 11px;
-      line-height: 1.5;
+      line-height: 1.6;
       overflow-x: auto;
+    }
+    .diff-added {
+      color: #34d399;
+      background: rgba(16, 185, 129, 0.12);
+      display: block;
+      padding: 1px 6px;
+    }
+    .diff-removed {
+      color: #f87171;
+      background: rgba(239, 68, 68, 0.12);
+      display: block;
+      padding: 1px 6px;
     }
   </style>
 </head>
 <body class="bg-black text-zinc-100 min-h-screen bg-eclipse flex flex-col relative overflow-x-hidden selection:bg-white/20 selection:text-white">
 
-  <!-- ThreeUI Intro Animation Overlay (variant="threeui-intro", mode="dark") -->
+  <!-- ThreeUI Intro Animation Overlay -->
   <div id="introOverlay" class="fixed inset-0 z-[100] bg-black flex items-center justify-center transition-opacity duration-700 ease-out pointer-events-auto">
     <iframe id="introFrame" src="/static/intro.html" class="w-full h-full border-0 block" allow="autoplay"></iframe>
     <button id="skipIntroBtn" class="absolute bottom-6 right-6 text-[11px] text-zinc-500 hover:text-zinc-200 font-mono tracking-widest uppercase transition-all px-3 py-1.5 rounded-full border border-white/10 hover:border-white/30 bg-black/60 backdrop-blur-md z-10 cursor-pointer flex items-center space-x-1.5 shadow-lg">
@@ -69,8 +81,8 @@
   <div class="fixed inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/80 pointer-events-none -z-10"></div>
 
   <!-- Top Navigation Bar -->
-  <header class="w-full border-b border-white/10 px-6 py-4 flex items-center justify-between backdrop-blur-md bg-black/30 sticky top-0 z-50">
-    <div class="flex items-center space-x-3">
+  <header class="w-full border-b border-white/10 px-6 py-4 flex items-center justify-between backdrop-blur-md bg-black/40 sticky top-0 z-50">
+    <div class="flex items-center space-x-3 cursor-pointer" onclick="resetToHome()">
       <div class="w-8 h-8 rounded-full border border-white/30 flex items-center justify-center bg-white/5 shadow-[0_0_15px_rgba(255,255,255,0.1)]">
         <i data-lucide="eye" class="w-4 h-4 text-white"></i>
       </div>
@@ -80,177 +92,135 @@
       </div>
     </div>
 
-    <!-- Live Status & Controls -->
+    <!-- Live Status Badge (Strict Real Health Check) -->
     <div class="flex items-center space-x-3">
       <div id="connectionBadge" class="flex items-center space-x-2 px-3 py-1.5 rounded-full border border-white/15 bg-white/[0.04] text-xs">
         <span id="connectionDot" class="w-2 h-2 rounded-full bg-zinc-500"></span>
-        <span id="connectionText" class="text-zinc-300 font-mono text-[11px]">Connecting...</span>
+        <span id="connectionText" class="text-zinc-300 font-mono text-[11px]">Probing Hindsight...</span>
       </div>
-
-      <button id="runScanBtn" onclick="triggerScan()" class="px-3.5 py-1.5 rounded-full bg-white text-black hover:bg-zinc-200 text-xs font-semibold flex items-center space-x-1.5 transition-all shadow-[0_0_20px_rgba(255,255,255,0.15)] cursor-pointer">
-        <i data-lucide="refresh-cw" class="w-3.5 h-3.5" id="scanIcon"></i>
-        <span>Run Scan Now</span>
-      </button>
-
-      <button onclick="openAddModal()" class="px-3 py-1.5 rounded-full border border-white/20 hover:border-white/40 text-xs font-medium text-zinc-300 hover:text-white transition flex items-center space-x-1 bg-white/[0.04]">
-        <i data-lucide="plus" class="w-3.5 h-3.5"></i>
-        <span>Add Competitor</span>
-      </button>
     </div>
   </header>
 
-  <!-- Main Watchlist View -->
-  <main class="flex-1 flex flex-col px-4 max-w-6xl mx-auto w-full py-8 space-y-8" id="mainContainer">
-    
-    <!-- Health Warning Banner (Only visible if real probe fails) -->
-    <div id="cloudWarningBanner" class="hidden p-4 rounded-xl border border-red-500/50 bg-red-950/70 text-red-200 text-xs font-mono space-y-1">
+  <!-- Health Warning Banner (Only visible if real probe fails) -->
+  <div id="healthWarningBanner" class="hidden max-w-4xl mx-auto w-full px-4 mt-4">
+    <div class="p-3.5 rounded-xl border border-red-500/40 bg-red-950/60 text-red-200 text-xs font-mono space-y-1">
       <div class="flex items-center space-x-2 font-bold text-red-300">
         <i data-lucide="alert-triangle" class="w-4 h-4 text-red-400"></i>
         <span>HINDSIGHT HEALTH PROBE FAILED</span>
       </div>
-      <p id="cloudWarningDetail" class="text-red-300/90 leading-relaxed"></p>
-      <div class="text-[11px] text-red-400/80 pt-1">
-        Warning: Memory persistence to Hindsight is currently unavailable. Ensure your Hindsight instance is running at the configured endpoint.
-      </div>
+      <p id="healthWarningDetail" class="text-red-300/90 leading-relaxed"></p>
     </div>
+  </div>
 
-    <!-- Hero / Status Banner -->
-    <div class="flex flex-col md:flex-row md:items-center justify-between pb-4 border-b border-white/10 gap-4">
-      <div>
-        <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-white flex items-center space-x-2.5">
-          <span>Competitor Watchlist</span>
-          <span class="text-xs px-2.5 py-0.5 rounded-full border border-white/20 bg-white/5 font-mono font-normal text-zinc-300" id="trackedCountBadge">
-            3 Competitors // 6 Pages
-          </span>
-        </h1>
-        <p class="text-xs md:text-sm text-zinc-400 mt-1">
-          Tracking live pricing tiers and changelog releases. Normalized snapshots diffed deterministically in Python and retained into Hindsight.
-        </p>
+  <!-- Main Hero Screen -->
+  <main class="flex-1 flex flex-col px-4 max-w-5xl mx-auto w-full py-10 space-y-10" id="mainContainer">
+    
+    <!-- Hero Header -->
+    <section class="text-center space-y-4 pt-4">
+      <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white drop-shadow-sm">
+        Nothing Goes Unnoticed.
+      </h1>
+      
+      <!-- Subtitle with darkened backdrop for high contrast -->
+      <div class="pt-1">
+        <div class="inline-block bg-black/80 backdrop-blur-md px-5 py-2 rounded-xl border border-white/10 text-zinc-300 text-sm max-w-xl mx-auto shadow-2xl leading-relaxed">
+          Autonomous pricing & changelog tracking with persistent agent memory.
+        </div>
       </div>
 
-      <!-- Execution Log Pill -->
-      <div class="flex items-center space-x-2 text-xs font-mono text-zinc-400 bg-white/[0.03] border border-white/10 px-3.5 py-2 rounded-xl">
-        <i data-lucide="clock" class="w-3.5 h-3.5 text-zinc-400"></i>
-        <span id="lastRunLabel">Last Run: Checking...</span>
-      </div>
-    </div>
+      <!-- One Big Input -->
+      <div class="max-w-2xl mx-auto pt-6">
+        <form id="scanForm" onsubmit="handleScanSubmit(event)" class="relative flex items-center">
+          <div class="absolute left-4.5 text-zinc-400 pointer-events-none">
+            <i data-lucide="search" class="w-5 h-5"></i>
+          </div>
+          <input 
+            type="text" 
+            id="urlInput"
+            placeholder="Paste competitor URL (e.g. linear.app, posthog.com)..."
+            class="w-full h-14 pl-12 pr-40 bg-black/70 border border-white/20 rounded-2xl text-sm md:text-base text-zinc-100 placeholder-zinc-500 focus:outline-none focus:border-white/50 focus:ring-1 focus:ring-white/30 transition shadow-[0_8px_30px_rgba(0,0,0,0.7)]"
+            required
+          />
+          <button 
+            type="submit" 
+            id="scanSubmitBtn"
+            class="absolute right-2 h-10 px-5 bg-white text-black hover:bg-zinc-200 rounded-xl text-xs font-semibold flex items-center space-x-1.5 transition cursor-pointer shadow-md"
+          >
+            <i data-lucide="scan" class="w-3.5 h-3.5" id="scanBtnIcon"></i>
+            <span id="scanBtnLabel">Scan Site</span>
+          </button>
+        </form>
 
-    <!-- Scan Progress Bar (Hidden by default) -->
-    <div id="scanProgressBar" class="hidden glass-panel p-4 flex items-center justify-between border-white/30 bg-white/[0.04]">
+        <!-- Example Chips -->
+        <div class="flex items-center justify-center space-x-2 pt-3 text-xs text-zinc-400">
+          <span class="text-zinc-500 text-[11px]">Quick inspect:</span>
+          <button type="button" onclick="fillAndScan('linear.app')" class="glass-chip px-3 py-1 text-[11px] text-zinc-300 hover:text-white cursor-pointer">linear.app</button>
+          <button type="button" onclick="fillAndScan('posthog.com')" class="glass-chip px-3 py-1 text-[11px] text-zinc-300 hover:text-white cursor-pointer">posthog.com</button>
+          <button type="button" onclick="fillAndScan('resend.com')" class="glass-chip px-3 py-1 text-[11px] text-zinc-300 hover:text-white cursor-pointer">resend.com</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scan Loading Bar -->
+    <div id="scanLoadingBox" class="hidden glass-panel p-5 max-w-2xl mx-auto w-full border-white/30 bg-white/[0.03] space-y-2">
       <div class="flex items-center space-x-3">
         <div class="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
-        <span class="text-xs font-mono text-zinc-200">Executing live Tavily extraction, snapshot normalization & Hindsight diff checks...</span>
+        <span class="text-xs font-mono text-zinc-200" id="scanLoadingText">Discovering /pricing & /changelog pages...</span>
       </div>
-      <span class="text-[11px] font-mono text-zinc-400">Please wait</span>
-    </div>
-
-    <!-- Competitors Cards Grid -->
-    <div id="watchlistGrid" class="grid grid-cols-1 gap-6">
-      <!-- Cards rendered dynamically via JS -->
-      <div class="glass-panel p-8 text-center text-zinc-400 text-sm">
-        Loading Watchlist...
+      <div class="w-full bg-zinc-800 rounded-full h-1 overflow-hidden">
+        <div class="bg-white h-1 rounded-full animate-pulse w-3/4"></div>
       </div>
     </div>
 
-    <!-- Bottom Interrogate Glass Bar -->
-    <section class="glass-panel p-6 border-white/20 mt-12">
-      <div class="flex items-center space-x-2.5 mb-2">
-        <i data-lucide="sparkles" class="w-4 h-4 text-white"></i>
-        <h2 class="text-sm font-semibold tracking-wide text-zinc-100 uppercase">Interrogate Watchlist Memory Bank</h2>
-      </div>
-      <p class="text-xs text-zinc-400 mb-4">
-        Direct query against Hindsight's <code class="text-zinc-300 bg-white/10 px-1 py-0.5 rounded">reflect()</code> endpoint across stored competitor memories.
-      </p>
+    <!-- Active Result Card View (Rendered when URL is scanned or clicked) -->
+    <section id="resultCardContainer" class="hidden space-y-6"></section>
 
-      <form id="askForm" class="flex flex-col sm:flex-row gap-2">
-        <input 
-          type="text" 
-          id="askInput"
-          placeholder="e.g. Compare Linear and PostHog pricing models based on recent memory..."
-          class="flex-1 bg-black/50 border border-white/15 rounded-xl px-4 py-2.5 text-sm text-zinc-200 placeholder-zinc-500 focus:outline-none focus:border-white/40"
-          required
-        />
-        <button 
-          type="submit" 
-          id="askBtn"
-          class="px-5 py-2.5 rounded-xl bg-white text-black hover:bg-zinc-200 text-xs font-semibold flex items-center justify-center space-x-1.5 transition cursor-pointer"
-        >
-          <span>Ask Hindsight</span>
-          <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-        </button>
-      </form>
-
-      <!-- Pre-set questions -->
-      <div class="flex flex-wrap gap-2 mt-3 text-xs text-zinc-400">
-        <span class="text-zinc-500 text-[11px]">Quick Questions:</span>
-        <button onclick="setAskQuery('What recent product features did Linear launch in Loops?')" class="glass-chip px-2.5 py-1 text-[11px] text-zinc-300 hover:text-white">Linear Loops features?</button>
-        <button onclick="setAskQuery('What does PostHog offer for free every month according to memory?')" class="glass-chip px-2.5 py-1 text-[11px] text-zinc-300 hover:text-white">PostHog free tier limits?</button>
-        <button onclick="setAskQuery('Compare Resend add-ons with core pricing.')" class="glass-chip px-2.5 py-1 text-[11px] text-zinc-300 hover:text-white">Resend add-ons?</button>
+    <!-- Compact Watchlist Section (Below input) -->
+    <section id="watchlistSection" class="pt-4 max-w-4xl mx-auto w-full space-y-3">
+      <div class="flex items-center justify-between px-1">
+        <h2 class="text-xs font-semibold uppercase tracking-wider text-zinc-400 flex items-center space-x-2">
+          <i data-lucide="layers" class="w-3.5 h-3.5 text-zinc-400"></i>
+          <span>Tracked Competitors Watchlist</span>
+        </h2>
+        <span class="text-[10px] font-mono text-zinc-500" id="watchlistCountLabel">3 Monitored</span>
       </div>
 
-      <!-- Live Answer Box -->
-      <div id="askAnswerBox" class="hidden mt-4 p-4 rounded-xl bg-black/60 border border-white/15">
-        <div class="flex items-center justify-between text-[11px] font-mono text-zinc-400 mb-2">
-          <span class="text-emerald-400 flex items-center space-x-1">
-            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-            <span>Hindsight reflect() Synthesized Answer</span>
-          </span>
-          <span id="askBackendIndicator">Source: Hindsight</span>
-        </div>
-        <p id="askAnswerText" class="text-sm text-zinc-200 leading-relaxed whitespace-pre-wrap"></p>
+      <div id="compactWatchlistList" class="glass-panel divide-y divide-white/10 overflow-hidden border-white/15">
+        <div class="p-6 text-center text-xs text-zinc-500 font-mono">Loading watchlist...</div>
       </div>
     </section>
 
   </main>
 
-  <!-- Add Competitor Modal -->
-  <div id="addModal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
-    <div class="glass-panel p-6 max-w-md w-full border border-white/20">
-      <div class="flex items-center justify-between mb-4">
-        <h3 class="text-base font-semibold text-white">Add Monitored Competitor</h3>
-        <button onclick="closeAddModal()" class="text-zinc-400 hover:text-white"><i data-lucide="x" class="w-4 h-4"></i></button>
-      </div>
-      <form id="addCompetitorForm" class="space-y-3.5">
-        <div>
-          <label class="block text-xs text-zinc-400 mb-1">Competitor Name</label>
-          <input type="text" id="addCompName" placeholder="e.g. Supabase" class="w-full bg-black/50 border border-white/15 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-white/40" required />
-        </div>
-        <div>
-          <label class="block text-xs text-zinc-400 mb-1">Domain</label>
-          <input type="text" id="addCompDomain" placeholder="e.g. supabase.com" class="w-full bg-black/50 border border-white/15 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-white/40" required />
-        </div>
-        <div>
-          <label class="block text-xs text-zinc-400 mb-1">Pricing Page URL</label>
-          <input type="url" id="addCompPricing" placeholder="https://supabase.com/pricing" class="w-full bg-black/50 border border-white/15 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-white/40" required />
-        </div>
-        <div>
-          <label class="block text-xs text-zinc-400 mb-1">Changelog / Release Notes URL</label>
-          <input type="url" id="addCompChangelog" placeholder="https://supabase.com/changelog" class="w-full bg-black/50 border border-white/15 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-white/40" required />
-        </div>
-        <div class="flex justify-end space-x-2 pt-2">
-          <button type="button" onclick="closeAddModal()" class="px-4 py-2 rounded-lg text-xs text-zinc-400 hover:text-white">Cancel</button>
-          <button type="submit" class="px-4 py-2 rounded-lg bg-white text-black text-xs font-semibold hover:bg-zinc-200">Save to Watchlist</button>
-        </div>
-      </form>
-    </div>
-  </div>
-
   <!-- Footer -->
-  <footer class="w-full border-t border-white/10 py-6 text-center text-xs text-zinc-500 font-mono">
+  <footer class="w-full border-t border-white/10 py-6 text-center text-xs text-zinc-500 font-mono mt-auto">
     God's Eye — Autonomous Competitor Watchlist // Built with Hindsight & Groq
   </footer>
 
-  <!-- Application Logic -->
+  <!-- App Script -->
   <script>
-    let watchlistData = [];
+    let watchlistItems = [];
+    let activeResultData = null;
 
-    // Real retain & recall probe health check on startup
+    // Check query params to allow skipping intro animation in headless mode
+    (function checkNoIntroParam() {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('nointro') === '1') {
+        const overlay = document.getElementById('introOverlay');
+        if (overlay) {
+          overlay.style.display = 'none';
+          overlay.style.opacity = '0';
+        }
+      }
+    })();
+
+    // 1. Live Health Probe against /api/hindsight/status
     async function checkHealth() {
       const dot = document.getElementById('connectionDot');
       const text = document.getElementById('connectionText');
       const badge = document.getElementById('connectionBadge');
-      const banner = document.getElementById('cloudWarningBanner');
-      const bannerDetail = document.getElementById('cloudWarningDetail');
+      const banner = document.getElementById('healthWarningBanner');
+      const bannerDetail = document.getElementById('healthWarningDetail');
 
       try {
         const res = await fetch('/api/hindsight/status');
@@ -259,7 +229,7 @@
         if (data.healthy) {
           dot.className = 'w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.6)]';
           text.textContent = `Hindsight Active (${data.latency_ms}ms)`;
-          badge.className = 'flex items-center space-x-2 px-3 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-xs text-emerald-200';
+          badge.className = 'flex items-center space-x-2 px-3 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-xs text-emerald-300';
           if (banner) banner.classList.add('hidden');
         } else {
           dot.className = 'w-2 h-2 rounded-full bg-red-500 shadow-[0_0_8px_rgba(239,68,68,0.8)]';
@@ -273,7 +243,7 @@
         }
       } catch (e) {
         dot.className = 'w-2 h-2 rounded-full bg-red-500 shadow-[0_0_8px_rgba(239,68,68,0.8)]';
-        text.textContent = 'Hindsight Server Error';
+        text.textContent = 'Hindsight Error';
         badge.className = 'flex items-center space-x-2 px-3 py-1.5 rounded-full border border-red-500/40 bg-red-500/15 text-xs text-red-300';
         if (banner && bannerDetail) {
           bannerDetail.textContent = `Server connection error: ${e.message}`;
@@ -283,158 +253,69 @@
       }
     }
 
-    // Load watchlist state
+    // 2. Load compact watchlist
     async function loadWatchlist() {
       try {
         const res = await fetch('/api/watchlist');
         const data = await res.json();
-        watchlistData = data.watchlist || [];
-        renderWatchlist(watchlistData);
-
-        if (data.recent_runs && data.recent_runs.length > 0) {
-          const last = data.recent_runs[data.recent_runs.length - 1];
-          const dt = new Date(last.timestamp);
-          document.getElementById('lastRunLabel').textContent = `Last Run: ${dt.toLocaleTimeString()} (${last.status})`;
-        } else {
-          document.getElementById('lastRunLabel').textContent = 'Last Run: Not yet executed';
-        }
+        watchlistItems = data.watchlist || [];
+        renderCompactWatchlist(watchlistItems);
       } catch (err) {
         console.error('Failed to load watchlist:', err);
       }
     }
 
-    function renderWatchlist(list) {
-      const container = document.getElementById('watchlistGrid');
+    function renderCompactWatchlist(list) {
+      const container = document.getElementById('compactWatchlistList');
+      const countLabel = document.getElementById('watchlistCountLabel');
+      if (countLabel) countLabel.textContent = `${list.length} Competitors Tracked`;
+
       if (!list || list.length === 0) {
-        container.innerHTML = `<div class="glass-panel p-8 text-center text-zinc-400">No competitors currently in watchlist.</div>`;
+        container.innerHTML = `<div class="p-6 text-center text-xs text-zinc-500 font-mono">No competitors in watchlist yet.</div>`;
         return;
       }
 
-      container.innerHTML = list.map(comp => {
-        const memories = comp.memories || [];
-        const pages = comp.pages || [];
-        const pricingPage = pages.find(p => p.type === 'pricing') || {};
-        const changelogPage = pages.find(p => p.type === 'changelog') || {};
+      container.innerHTML = list.map(item => {
+        let chipClass = 'border-zinc-700 bg-zinc-800 text-zinc-400';
+        if (item.status === 'Baseline Active') chipClass = 'border-teal-500/30 bg-teal-500/10 text-teal-300';
+        else if (item.status === 'Changes Detected') chipClass = 'border-amber-500/40 bg-amber-500/15 text-amber-300';
+        else if (item.status === 'Monitored (Stable)') chipClass = 'border-emerald-500/30 bg-emerald-500/10 text-emerald-400';
 
-        const isHealthyHindsight = (comp.storage_backend === 'hindsight' || comp.storage_backend === 'hindsight_cloud') && !comp.recall_error;
-        const isError = comp.storage_backend === 'error' || Boolean(comp.recall_error);
-
-        let backendChipClass = 'border-amber-500/40 bg-amber-500/15 text-amber-300';
-        let backendChipLabel = 'Local Fallback';
-
-        if (isHealthyHindsight) {
-          backendChipClass = 'border-emerald-500/30 bg-emerald-500/10 text-emerald-400';
-          backendChipLabel = 'Hindsight';
-        } else if (isError) {
-          backendChipClass = 'border-red-500/40 bg-red-500/15 text-red-300';
-          backendChipLabel = 'Recall Error';
-        }
+        const lastScanLabel = item.last_scanned_at 
+          ? new Date(item.last_scanned_at).toLocaleTimeString() 
+          : 'Pending Initial Scan';
 
         return `
-          <div class="glass-panel p-6 border-white/15 space-y-5">
-            <!-- Header Row -->
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-white/10 gap-2">
-              <div class="flex items-center space-x-3">
-                <div class="w-9 h-9 rounded-xl border border-white/20 bg-white/5 flex items-center justify-center font-bold text-white text-base">
-                  ${comp.name[0]}
-                </div>
-                <div>
-                  <div class="flex items-center space-x-2">
-                    <h3 class="text-lg font-bold text-white tracking-wide">${comp.name}</h3>
-                    <span class="text-[11px] font-mono text-zinc-400 bg-white/5 border border-white/10 px-2 py-0.5 rounded">
-                      ${comp.domain}
-                    </span>
-                  </div>
-                  <span class="text-[11px] font-mono text-zinc-500">Bank ID: ${comp.bank_id}</span>
-                </div>
+          <div 
+            onclick="selectWatchlistItem('${item.domain || item.name}')"
+            class="p-4 hover:bg-white/[0.03] transition flex items-center justify-between cursor-pointer group"
+          >
+            <div class="flex items-center space-x-3.5">
+              <div class="w-8 h-8 rounded-lg border border-white/15 bg-white/5 flex items-center justify-center font-bold text-white text-xs">
+                ${item.name[0]}
               </div>
-
-              <div class="flex items-center space-x-2 text-xs font-mono">
-                <span class="px-2.5 py-1 rounded-full border border-white/15 bg-white/5 text-zinc-300">
-                  Total Scans: ${Math.max(pricingPage.scan_count || 0, changelogPage.scan_count || 0)}
-                </span>
-                <span class="px-2.5 py-1 rounded-full border ${backendChipClass}">
-                  ${backendChipLabel}
-                </span>
-              </div>
-            </div>
-
-            <!-- Monitored Pages Status Bento Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <!-- Pricing Page Status -->
-              <div class="bg-black/40 border border-white/10 rounded-xl p-4 space-y-2">
-                <div class="flex items-center justify-between">
-                  <span class="text-xs font-bold uppercase tracking-wider text-zinc-300 flex items-center space-x-1.5">
-                    <i data-lucide="tag" class="w-3.5 h-3.5 text-zinc-400"></i>
-                    <span>Pricing Page</span>
-                  </span>
-                  <span class="text-[10px] font-mono px-2 py-0.5 rounded ${pricingPage.scan_count > 0 ? 'bg-emerald-500/15 text-emerald-300 border border-emerald-500/20' : 'bg-zinc-800 text-zinc-400'}">
-                    ${pricingPage.scan_count > 0 ? 'Baseline Monitored' : 'Pending'}
-                  </span>
+              <div>
+                <div class="flex items-center space-x-2">
+                  <span class="text-sm font-semibold text-white group-hover:text-zinc-200">${item.name}</span>
+                  <span class="text-[11px] font-mono text-zinc-400">${item.domain}</span>
                 </div>
-                <a href="${pricingPage.url}" target="_blank" class="text-xs text-zinc-400 hover:text-white truncate block underline decoration-white/20">
-                  ${pricingPage.url}
-                </a>
-                <div class="text-[11px] font-mono text-zinc-500 flex justify-between pt-1">
-                  <span>Scans: ${pricingPage.scan_count || 0}</span>
-                  <span>${pricingPage.last_scanned_at ? new Date(pricingPage.last_scanned_at).toLocaleTimeString() : 'Never'}</span>
-                </div>
-              </div>
-
-              <!-- Changelog Page Status -->
-              <div class="bg-black/40 border border-white/10 rounded-xl p-4 space-y-2">
-                <div class="flex items-center justify-between">
-                  <span class="text-xs font-bold uppercase tracking-wider text-zinc-300 flex items-center space-x-1.5">
-                    <i data-lucide="file-text" class="w-3.5 h-3.5 text-zinc-400"></i>
-                    <span>Changelog / Release Notes</span>
-                  </span>
-                  <span class="text-[10px] font-mono px-2 py-0.5 rounded ${changelogPage.scan_count > 0 ? 'bg-emerald-500/15 text-emerald-300 border border-emerald-500/20' : 'bg-zinc-800 text-zinc-400'}">
-                    ${changelogPage.scan_count > 0 ? 'Baseline Monitored' : 'Pending'}
-                  </span>
-                </div>
-                <a href="${changelogPage.url}" target="_blank" class="text-xs text-zinc-400 hover:text-white truncate block underline decoration-white/20">
-                  ${changelogPage.url}
-                </a>
-                <div class="text-[11px] font-mono text-zinc-500 flex justify-between pt-1">
-                  <span>Scans: ${changelogPage.scan_count || 0}</span>
-                  <span>${changelogPage.last_scanned_at ? new Date(changelogPage.last_scanned_at).toLocaleTimeString() : 'Never'}</span>
+                <div class="text-[10px] font-mono text-zinc-500 flex items-center space-x-3 mt-0.5">
+                  <span>Scans: ${item.scan_count || 0}</span>
+                  <span>•</span>
+                  <span>Last: ${lastScanLabel}</span>
                 </div>
               </div>
             </div>
 
-            <!-- Recalled Hindsight Memory Nodes -->
-            <div class="pt-2">
-              <div class="flex items-center justify-between mb-2">
-                <span class="text-xs font-semibold text-zinc-300 uppercase tracking-wider flex items-center space-x-1.5">
-                  <i data-lucide="database" class="w-3.5 h-3.5 text-zinc-400"></i>
-                  <span>Recalled Hindsight Memory Nodes (${memories.length})</span>
-                </span>
-                <span class="text-[10px] font-mono text-zinc-500">Temporal Primitives</span>
-              </div>
-
-              ${comp.recall_error ? `
-                <div class="text-xs font-mono text-red-300 bg-red-950/40 border border-red-500/30 p-3 rounded-lg">
-                  Recall failed: ${comp.recall_error}
-                </div>
-              ` : memories.length === 0 ? `
-                <div class="text-xs font-mono text-zinc-500 bg-black/30 p-3 rounded-lg border border-white/5">
-                  No memory nodes recorded yet for this competitor. Run scan to establish initial baseline.
-                </div>
-              ` : `
-                <div class="space-y-2">
-                  ${memories.slice(0, 3).map(m => `
-                    <div class="bg-black/50 border border-white/10 rounded-lg p-3 text-xs space-y-1">
-                      <div class="flex items-center justify-between text-[10px] font-mono text-zinc-500">
-                        <span class="text-zinc-400">Node ID: ${m.id ? m.id.slice(0, 12) : 'hindsight'}...</span>
-                        <span>${m.timestamp ? m.timestamp.slice(0, 10) : 'Recent'}</span>
-                      </div>
-                      <p class="text-zinc-200 font-sans leading-relaxed">${m.text}</p>
-                    </div>
-                  `).join('')}
-                </div>
-              `}
+            <div class="flex items-center space-x-3">
+              <span class="text-[10px] font-mono px-2.5 py-0.5 rounded-full border ${chipClass}">
+                ${item.status}
+              </span>
+              <button class="text-xs font-mono text-zinc-400 group-hover:text-white flex items-center space-x-1">
+                <span>View</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </button>
             </div>
-
           </div>
         `;
       }).join('');
@@ -442,98 +323,541 @@
       lucide.createIcons();
     }
 
+    function fillAndScan(domain) {
+      document.getElementById('urlInput').value = domain;
+      executeScan(domain);
+    }
+
+    function selectWatchlistItem(domainOrName) {
+      const needle = (domainOrName || '').toLowerCase().replace(/-/g, '.');
+      const match = watchlistItems.find(i => 
+        i.domain.toLowerCase() === needle || 
+        i.name.toLowerCase() === needle || 
+        i.id.toLowerCase() === needle ||
+        i.domain.toLowerCase().includes(needle) ||
+        needle.includes(i.domain.toLowerCase())
+      );
+      if (match && match.last_result) {
+        activeResultData = match.last_result;
+        renderResultCard(activeResultData);
+        const resultContainer = document.getElementById('resultCardContainer');
+        resultContainer.classList.remove('hidden');
+        resultContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        return;
+      }
+      const target = match ? match.domain : domainOrName;
+      document.getElementById('urlInput').value = target;
+      executeScan(target);
+    }
+
+    function handleScanSubmit(e) {
+      e.preventDefault();
+      const val = document.getElementById('urlInput').value.trim();
+      if (!val) return;
+      executeScan(val);
+    }
+
+    // 3. Scan Execution Pipeline
+    async function executeScan(targetUrl) {
+      const loadingBox = document.getElementById('scanLoadingBox');
+      const submitBtn = document.getElementById('scanSubmitBtn');
+      const resultContainer = document.getElementById('resultCardContainer');
+
+      loadingBox.classList.remove('hidden');
+      submitBtn.disabled = true;
+
+      try {
+        const res = await fetch('/api/scan_url', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ url: targetUrl })
+        });
+        const data = await res.json();
+        activeResultData = data;
+
+        if (!data.success && data.error) {
+          resultContainer.innerHTML = `
+            <div class="glass-panel p-6 border-red-500/40 bg-red-950/40 text-red-200 space-y-2">
+              <div class="flex items-center space-x-2 font-bold text-red-300">
+                <i data-lucide="alert-circle" class="w-4 h-4 text-red-400"></i>
+                <span>Discovery Error</span>
+              </div>
+              <p class="text-xs font-mono leading-relaxed">${data.error}</p>
+            </div>
+          `;
+          resultContainer.classList.remove('hidden');
+        } else {
+          renderResultCard(data);
+          resultContainer.classList.remove('hidden');
+          resultContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        // Refresh watchlist
+        await loadWatchlist();
+      } catch (err) {
+        alert('Scan failed: ' + err.message);
+      } finally {
+        loadingBox.classList.add('hidden');
+        submitBtn.disabled = false;
+        lucide.createIcons();
+      }
+    }
+
+    // 4. Render 3-Section Result Card
+    function renderResultCard(data) {
+      const container = document.getElementById('resultCardContainer');
+      const isBaseline = Boolean(data.is_baseline);
+      const isHealthyHindsight = (data.storage_backend === 'hindsight' || data.storage_backend === 'hindsight_cloud') && !data.recall_error;
+      const isRecallError = Boolean(data.recall_error);
+
+      let storageChipClass = 'border-amber-500/40 bg-amber-500/15 text-amber-300';
+      let storageChipLabel = 'Local Fallback';
+      if (isHealthyHindsight) {
+        storageChipClass = 'border-emerald-500/30 bg-emerald-500/10 text-emerald-400';
+        storageChipLabel = 'Hindsight';
+      } else if (isRecallError) {
+        storageChipClass = 'border-red-500/40 bg-red-500/15 text-red-300';
+        storageChipLabel = 'Recall Error';
+      }
+
+      container.innerHTML = `
+        <div class="glass-panel p-6 md:p-8 space-y-8 border-white/20">
+          
+          <!-- Card Header Row -->
+          <div class="flex flex-col md:flex-row md:items-center justify-between pb-6 border-b border-white/10 gap-4">
+            <div class="space-y-1">
+              <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl border border-white/20 bg-white/5 flex items-center justify-center font-bold text-white text-base">
+                  ${data.name[0]}
+                </div>
+                <div>
+                  <div class="flex items-center space-x-2.5">
+                    <h2 class="text-2xl font-bold text-white tracking-tight">${data.name}</h2>
+                    <span class="text-xs font-mono text-zinc-400 bg-white/5 border border-white/10 px-2.5 py-0.5 rounded-full">
+                      ${data.domain}
+                    </span>
+                  </div>
+                  <span class="text-[11px] font-mono text-zinc-500">Bank ID: ${data.bank_id}</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center space-x-2 font-mono text-xs">
+              <span class="px-3 py-1 rounded-full border ${isBaseline ? 'border-teal-500/40 bg-teal-500/15 text-teal-300' : 'border-white/20 bg-white/5 text-zinc-300'}">
+                ${isBaseline ? 'Baseline Saved (Scan #1)' : `Scan #${data.scan_number} Complete`}
+              </span>
+              <span class="px-3 py-1 rounded-full border ${storageChipClass}">
+                ${storageChipLabel}
+              </span>
+            </div>
+          </div>
+
+          <!-- Monitored URLs Metadata Bar -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 bg-black/40 border border-white/10 rounded-xl p-3 text-xs font-mono">
+            <div class="flex items-center space-x-2 truncate">
+              <span class="text-zinc-500 text-[11px] uppercase">Pricing:</span>
+              ${data.pricing_url ? `
+                <a href="${data.pricing_url}" target="_blank" class="text-zinc-300 hover:text-white underline truncate decoration-white/20">
+                  ${data.pricing_url}
+                </a>
+              ` : `<span class="text-red-400">Not found</span>`}
+            </div>
+            <div class="flex items-center space-x-2 truncate">
+              <span class="text-zinc-500 text-[11px] uppercase">Changelog:</span>
+              ${data.changelog_url ? `
+                <a href="${data.changelog_url}" target="_blank" class="text-zinc-300 hover:text-white underline truncate decoration-white/20">
+                  ${data.changelog_url}
+                </a>
+              ` : `<span class="text-red-400">Not found</span>`}
+            </div>
+          </div>
+
+          <!-- SECTION 1: WHAT CHANGED -->
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-2">
+                <i data-lucide="git-commit" class="w-4 h-4 text-zinc-400"></i>
+                <h3 class="text-sm font-bold uppercase tracking-wider text-zinc-200">1. What Changed</h3>
+              </div>
+              <span class="text-xs font-mono text-zinc-500">${data.timestamp ? new Date(data.timestamp).toLocaleTimeString() : ''}</span>
+            </div>
+
+            ${isBaseline ? renderBaselineSection(data.baseline_summary) : renderDiffSection(data)}
+          </div>
+
+          <!-- SECTION 2: WHAT MEMORY RECALLS -->
+          <div class="space-y-4 pt-4 border-t border-white/10">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-2">
+                <i data-lucide="database" class="w-4 h-4 text-zinc-400"></i>
+                <h3 class="text-sm font-bold uppercase tracking-wider text-zinc-200">2. What Memory Recalls</h3>
+              </div>
+              <span class="text-xs font-mono text-zinc-500">Persistent Temporal Store</span>
+            </div>
+
+            ${renderMemorySection(data)}
+          </div>
+
+          <!-- SECTION 3: RECOMMENDED ACTION & FOUNDER DECISION LOG -->
+          <div class="space-y-4 pt-4 border-t border-white/10">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-2">
+                <i data-lucide="compass" class="w-4 h-4 text-zinc-400"></i>
+                <h3 class="text-sm font-bold uppercase tracking-wider text-zinc-200">3. Recommended Action & Decision Log</h3>
+              </div>
+            </div>
+
+            ${renderActionAndDecisionSection(data)}
+          </div>
+
+        </div>
+      `;
+
       lucide.createIcons();
     }
 
-    // Trigger scan
-    async function triggerScan() {
-      const btn = document.getElementById('runScanBtn');
-      const icon = document.getElementById('scanIcon');
-      const progress = document.getElementById('scanProgressBar');
+    // Section 1 Helper: Baseline View
+    function renderBaselineSection(summary) {
+      if (!summary) return `<div class="p-4 bg-black/40 rounded-xl text-xs text-zinc-400">Baseline captured.</div>`;
+      
+      const tiers = summary.pricing_tiers || [];
+      const limits = summary.plan_limits || [];
+      const changelog = summary.latest_changelog || [];
 
-      btn.disabled = true;
-      icon.classList.add('animate-spin');
-      progress.classList.remove('hidden');
+      return `
+        <div class="space-y-3">
+          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full border border-teal-500/30 bg-teal-500/10 text-xs font-mono text-teal-300">
+            <i data-lucide="check-circle" class="w-3.5 h-3.5"></i>
+            <span>Baseline saved: real page structure established</span>
+          </div>
 
-      try {
-        const res = await fetch('/api/watchlist/scan', { method: 'POST' });
-        const data = await res.json();
-        await loadWatchlist();
-      } catch (err) {
-        alert('Scan execution failed: ' + err.message);
-      } finally {
-        btn.disabled = false;
-        icon.classList.remove('animate-spin');
-        progress.classList.add('hidden');
-      }
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+            <!-- Pricing Tiers Bento Box -->
+            <div class="bg-black/50 border border-white/10 rounded-xl p-4 space-y-3">
+              <span class="text-xs font-bold uppercase text-zinc-400 flex items-center space-x-1.5">
+                <i data-lucide="tag" class="w-3.5 h-3.5 text-zinc-400"></i>
+                <span>Pricing Tiers</span>
+              </span>
+              <div class="space-y-2">
+                ${tiers.length === 0 ? `<div class="text-xs text-zinc-500">No explicit tier pricing found.</div>` : tiers.map(t => `
+                  <div class="p-2.5 rounded-lg bg-white/[0.03] border border-white/5 space-y-0.5">
+                    <div class="flex items-center justify-between text-xs">
+                      <span class="font-bold text-white">${t.tier}</span>
+                      <span class="font-mono text-emerald-400 font-semibold">${t.price}</span>
+                    </div>
+                    <span class="text-[10px] text-zinc-400 block">${t.billing || 'Standard billing'}</span>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+
+            <!-- Plan Limits Bento Box -->
+            <div class="bg-black/50 border border-white/10 rounded-xl p-4 space-y-3">
+              <span class="text-xs font-bold uppercase text-zinc-400 flex items-center space-x-1.5">
+                <i data-lucide="sliders" class="w-3.5 h-3.5 text-zinc-400"></i>
+                <span>Plan Limits & Features</span>
+              </span>
+              <ul class="space-y-2 text-xs text-zinc-300">
+                ${limits.length === 0 ? `<li class="text-zinc-500">No quota details found.</li>` : limits.map(l => `
+                  <li class="flex items-start space-x-2">
+                    <span class="text-zinc-500">•</span>
+                    <span class="leading-relaxed">${l}</span>
+                  </li>
+                `).join('')}
+              </ul>
+            </div>
+
+            <!-- Latest Changelog Bento Box -->
+            <div class="bg-black/50 border border-white/10 rounded-xl p-4 space-y-3">
+              <span class="text-xs font-bold uppercase text-zinc-400 flex items-center space-x-1.5">
+                <i data-lucide="newspaper" class="w-3.5 h-3.5 text-zinc-400"></i>
+                <span>Latest Changelog Releases</span>
+              </span>
+              <div class="space-y-2">
+                ${changelog.length === 0 ? `<div class="text-xs text-zinc-500">No releases detected.</div>` : changelog.map(c => `
+                  <div class="p-2.5 rounded-lg bg-white/[0.03] border border-white/5 space-y-1">
+                    <div class="flex items-center justify-between text-xs">
+                      <span class="font-semibold text-zinc-200">${c.title}</span>
+                      <span class="text-[10px] font-mono text-zinc-500">${c.date_or_version || ''}</span>
+                    </div>
+                    <p class="text-[11px] text-zinc-400 leading-snug">${c.summary}</p>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
     }
 
-    // Modal controls
-    function openAddModal() { document.getElementById('addModal').classList.remove('hidden'); }
-    function closeAddModal() { document.getElementById('addModal').classList.add('hidden'); }
+    // Section 1 Helper: Diff View
+    function renderDiffSection(data) {
+      const pDiff = data.pricing_diff;
+      const cDiff = data.changelog_diff;
+      const rawDiff = data.raw_diff;
+      const isChange = Boolean(data.is_change);
 
-    document.getElementById('addCompetitorForm').addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const payload = {
-        name: document.getElementById('addCompName').value.trim(),
-        domain: document.getElementById('addCompDomain').value.trim(),
-        pricing_url: document.getElementById('addCompPricing').value.trim(),
-        changelog_url: document.getElementById('addCompChangelog').value.trim()
+      if (!isChange) {
+        return `
+          <div class="bg-black/40 border border-white/10 rounded-xl p-5 space-y-2">
+            <div class="flex items-center space-x-2 text-xs font-mono text-emerald-400">
+              <i data-lucide="check" class="w-4 h-4"></i>
+              <span class="font-bold">0 Lines Changed — No changes detected</span>
+            </div>
+            <p class="text-xs text-zinc-400 leading-relaxed">
+              Page content extracted in this scan is identical to the baseline snapshot. No competitor moves were detected on pricing or changelog pages.
+            </p>
+          </div>
+        `;
+      }
+
+      // Format raw diff lines with syntax styling
+      const formattedDiff = rawDiff.split('\n').map(line => {
+        if (line.startsWith('+') && !line.startsWith('+++')) return `<span class="diff-added">${escapeHtml(line)}</span>`;
+        if (line.startsWith('-') && !line.startsWith('---')) return `<span class="diff-removed">${escapeHtml(line)}</span>`;
+        return `<span class="text-zinc-400 px-1.5 block">${escapeHtml(line)}</span>`;
+      }).join('');
+
+      return `
+        <div class="space-y-3">
+          <div class="flex items-center space-x-2 text-xs font-mono text-amber-300 bg-amber-500/10 border border-amber-500/30 px-3 py-1.5 rounded-xl w-fit">
+            <i data-lucide="alert-circle" class="w-3.5 h-3.5"></i>
+            <span>Real Diff Detected between snapshots</span>
+          </div>
+          <div class="diff-code-box p-3 max-h-80 overflow-y-auto">
+            ${formattedDiff}
+          </div>
+        </div>
+      `;
+    }
+
+    // Section 2 Helper: Memory View
+    function renderMemorySection(data) {
+      const memories = data.recalled_memories || [];
+      const recallError = data.recall_error;
+      const reflection = data.reflection;
+
+      return `
+        <div class="space-y-3">
+          <!-- Honest Error Banner if Recall failed -->
+          ${recallError ? `
+            <div class="p-3.5 rounded-xl border border-red-500/40 bg-red-950/50 text-red-300 text-xs font-mono space-y-1">
+              <div class="font-bold flex items-center space-x-1.5">
+                <i data-lucide="alert-octagon" class="w-4 h-4 text-red-400"></i>
+                <span>Recall failed: ${escapeHtml(recallError)}</span>
+              </div>
+              <p class="text-red-400/80 text-[11px]">Hindsight server is not responding at the configured endpoint.</p>
+            </div>
+          ` : ''}
+
+          <!-- Recalled Nodes List -->
+          ${!recallError && memories.length === 0 ? `
+            <div class="text-xs font-mono text-zinc-500 bg-black/40 p-4 rounded-xl border border-white/5">
+              No memory nodes recorded yet for this competitor. Run scan to establish initial baseline.
+            </div>
+          ` : ''}
+
+          ${memories.length > 0 ? `
+            <div class="space-y-2">
+              ${memories.map(m => `
+                <div class="bg-black/50 border border-white/10 rounded-xl p-3.5 text-xs space-y-1.5">
+                  <div class="flex items-center justify-between text-[10px] font-mono text-zinc-500">
+                    <span class="text-zinc-400 font-semibold">Node ID: ${m.id ? m.id.slice(0, 16) : 'node'}...</span>
+                    <span>${m.timestamp ? new Date(m.timestamp).toLocaleDateString() + ' ' + new Date(m.timestamp).toLocaleTimeString() : 'Recorded'}</span>
+                  </div>
+                  <p class="text-zinc-200 leading-relaxed font-sans">${escapeHtml(m.text)}</p>
+                </div>
+              `).join('')}
+            </div>
+          ` : ''}
+
+          <!-- Native Hindsight reflect() Synthesis -->
+          ${reflection ? `
+            <div class="p-4 rounded-xl bg-black/60 border border-white/10 space-y-2">
+              <div class="flex items-center justify-between text-[11px] font-mono text-zinc-400">
+                <span class="text-emerald-400 flex items-center space-x-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                  <span>Hindsight reflect() Multi-Week Trajectory Synthesis</span>
+                </span>
+              </div>
+              <p class="text-xs text-zinc-200 leading-relaxed whitespace-pre-wrap">${escapeHtml(reflection)}</p>
+            </div>
+          ` : ''}
+        </div>
+      `;
+    }
+
+    // Section 3 Helper: Action & Decision Log View
+    function renderActionAndDecisionSection(data) {
+      const rec = data.recommendation || {
+        action: "Maintain current pricing posture.",
+        rationale: "Baseline established. Trajectory will emerge on subsequent rescans."
       };
-      try {
-        const res = await fetch('/api/watchlist/add', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload)
-        });
-        closeAddModal();
-        await loadWatchlist();
-      } catch (err) {
-        alert('Failed to add competitor: ' + err.message);
-      }
-    });
+      const decisions = data.decisions || [];
 
-    // Interrogate form
-    function setAskQuery(q) {
-      document.getElementById('askInput').value = q;
-      document.getElementById('askForm').dispatchEvent(new Event('submit'));
+      return `
+        <div class="space-y-5">
+          <!-- Recommended Tactical Action -->
+          <div class="bg-black/60 border border-white/15 rounded-xl p-5 space-y-2">
+            <div class="flex items-center space-x-2 text-xs font-bold uppercase text-zinc-300">
+              <i data-lucide="zap" class="w-3.5 h-3.5 text-amber-400"></i>
+              <span>Executive Counter-Measure</span>
+            </div>
+            <p class="text-sm font-semibold text-white leading-snug">${escapeHtml(rec.action)}</p>
+            <p class="text-xs text-zinc-400 leading-relaxed">${escapeHtml(rec.rationale)}</p>
+          </div>
+
+          <!-- Interactive Decision Log -->
+          <div class="bg-black/40 border border-white/10 rounded-xl p-5 space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold uppercase tracking-wider text-zinc-300 flex items-center space-x-2">
+                <i data-lucide="clipboard-check" class="w-3.5 h-3.5 text-zinc-400"></i>
+                <span>Log Founder Decision</span>
+              </span>
+              <span class="text-[10px] font-mono text-amber-400/90 bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/20">
+                Sample Founder Decision
+              </span>
+            </div>
+
+            <!-- Decision Action Buttons -->
+            <div class="flex flex-wrap gap-2" id="decisionButtonRow">
+              <button type="button" onclick="selectDecisionAction(this, 'Held price')" class="decision-btn px-3.5 py-1.5 rounded-lg border border-white/15 bg-white/5 hover:bg-white/10 text-xs font-medium text-zinc-200 transition">
+                Held price
+              </button>
+              <button type="button" onclick="selectDecisionAction(this, 'Matched')" class="decision-btn px-3.5 py-1.5 rounded-lg border border-white/15 bg-white/5 hover:bg-white/10 text-xs font-medium text-zinc-200 transition">
+                Matched
+              </button>
+              <button type="button" onclick="selectDecisionAction(this, 'Launched campaign')" class="decision-btn px-3.5 py-1.5 rounded-lg border border-white/15 bg-white/5 hover:bg-white/10 text-xs font-medium text-zinc-200 transition">
+                Launched campaign
+              </button>
+              <button type="button" onclick="selectDecisionAction(this, 'Ignored')" class="decision-btn px-3.5 py-1.5 rounded-lg border border-white/15 bg-white/5 hover:bg-white/10 text-xs font-medium text-zinc-200 transition">
+                Ignored
+              </button>
+            </div>
+
+            <!-- Note & Submit -->
+            <div class="space-y-3 pt-1">
+              <input 
+                type="text" 
+                id="decisionNoteInput"
+                placeholder="Founder outcome / rationale note (e.g. Preserved 80% margins while rival discounted)..." 
+                class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-2 text-xs text-zinc-200 placeholder-zinc-500 focus:outline-none focus:border-white/40"
+              />
+
+              <div class="flex items-center justify-between pt-1">
+                <label class="flex items-center space-x-2 text-[11px] text-zinc-400 cursor-pointer">
+                  <input type="checkbox" id="markRealDecisionCheckbox" class="rounded border-zinc-700 bg-black/60 text-white focus:ring-0">
+                  <span>Mark as real founder decision (uncheck for sample)</span>
+                </label>
+
+                <button 
+                  type="button" 
+                  onclick="submitFounderDecision('${data.competitor_id}', '${data.name}')" 
+                  class="px-4 py-1.5 rounded-lg bg-white text-black hover:bg-zinc-200 text-xs font-semibold flex items-center space-x-1.5 cursor-pointer shadow"
+                >
+                  <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                  <span>Record Decision</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Historical Logged Decisions -->
+            <div class="pt-3 border-t border-white/10 space-y-2" id="historicalDecisionsBox">
+              <span class="text-[11px] font-mono text-zinc-500 uppercase tracking-wider block">Decision History</span>
+              ${decisions.length === 0 ? `
+                <div class="text-xs text-zinc-500 font-mono">No decisions recorded yet.</div>
+              ` : `
+                <div class="space-y-2">
+                  ${decisions.map(d => `
+                    <div class="p-3 rounded-lg bg-black/50 border border-white/10 text-xs space-y-1">
+                      <div class="flex items-center justify-between">
+                        <span class="font-bold text-white">${escapeHtml(d.action)}</span>
+                        <span class="text-[10px] font-mono px-2 py-0.5 rounded ${d.is_sample ? 'bg-amber-500/15 text-amber-300 border border-amber-500/30' : 'bg-emerald-500/15 text-emerald-300 border border-emerald-500/30'}">
+                          ${d.is_sample ? 'sample founder decision' : 'real founder decision'}
+                        </span>
+                      </div>
+                      ${d.note ? `<p class="text-zinc-300 text-[11px]">${escapeHtml(d.note)}</p>` : ''}
+                      <span class="text-[10px] font-mono text-zinc-500 block">${new Date(d.timestamp).toLocaleDateString()} ${new Date(d.timestamp).toLocaleTimeString()}</span>
+                    </div>
+                  `).join('')}
+                </div>
+              `}
+            </div>
+          </div>
+        </div>
+      `;
     }
 
-    document.getElementById('askForm').addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const q = document.getElementById('askInput').value.trim();
-      if (!q) return;
+    let selectedAction = 'Held price';
+    function selectDecisionAction(btn, action) {
+      selectedAction = action;
+      document.querySelectorAll('#decisionButtonRow .decision-btn').forEach(b => {
+        b.classList.remove('bg-white', 'text-black', 'border-white');
+        b.classList.add('bg-white/5', 'text-zinc-200', 'border-white/15');
+      });
+      btn.classList.remove('bg-white/5', 'text-zinc-200', 'border-white/15');
+      btn.classList.add('bg-white', 'text-black', 'border-white');
+    }
 
-      const btn = document.getElementById('askBtn');
-      btn.disabled = true;
-      btn.innerHTML = `<div class="w-3.5 h-3.5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>`;
+    async function submitFounderDecision(competitorId, competitorName) {
+      const noteInput = document.getElementById('decisionNoteInput');
+      const isRealCheckbox = document.getElementById('markRealDecisionCheckbox');
+      const note = noteInput ? noteInput.value.trim() : '';
+      const isSample = isRealCheckbox ? !isRealCheckbox.checked : true;
 
       try {
-        const res = await fetch('/api/ask', {
+        const res = await fetch('/api/decisions', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            bank_id: 'godseye-watchlist-linear',
-            brand_name: 'Linear',
-            question: q
+            competitor_id: competitorId,
+            competitor_name: competitorName,
+            action: selectedAction,
+            note: note,
+            is_sample: isSample
           })
         });
-        const ans = await res.json();
-        document.getElementById('askAnswerBox').classList.remove('hidden');
-        document.getElementById('askAnswerText').textContent = ans.answer || ans.text;
-        document.getElementById('askBackendIndicator').textContent = `Source: ${ans.storage_backend || 'Hindsight'}`;
+        const result = await res.json();
+        if (result.success && activeResultData) {
+          activeResultData.decisions = result.decisions;
+          renderResultCard(activeResultData);
+        }
       } catch (err) {
-        alert('Failed to query memory: ' + err.message);
-      } finally {
-        btn.disabled = false;
-        btn.innerHTML = `<span>Ask Hindsight</span><i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>`;
-        lucide.createIcons();
+        alert('Failed to log decision: ' + err.message);
       }
-    });
+    }
 
-    // Initial load
-    loadWatchlist();
-    setTimeout(checkHealth, 0);
+    function resetToHome() {
+      document.getElementById('resultCardContainer').classList.add('hidden');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    // Startup Initializations
+    (async function init() {
+      await loadWatchlist();
+      setTimeout(checkHealth, 0);
+
+      const params = new URLSearchParams(window.location.search);
+      const scanParam = params.get('scan');
+      if (scanParam) {
+        fillAndScan(scanParam);
+      } else {
+        const viewParam = params.get('view');
+        if (viewParam) {
+          selectWatchlistItem(viewParam);
+        }
+      }
+    })();
 
     // Intro Overlay Controller
     (function initThreeUIIntro() {
