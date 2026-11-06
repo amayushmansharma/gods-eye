@@ -7,7 +7,8 @@ from typing import Dict, Any, List, Optional
 import requests
 from dotenv import load_dotenv
 
-load_dotenv()
+ENV_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".env"))
+load_dotenv(ENV_PATH)
 
 LOCAL_STORAGE_FILE = os.path.join(os.path.dirname(__file__), "..", ".local_memory_bank.json")
 
@@ -144,6 +145,59 @@ class HindsightService:
             self._save_local_bank(bank_id, entry)
 
         return {"success": True, "bank_id": bank_id, "items_count": len(items), "storage_backend": "local_disk_fallback"}
+
+    def retain_page_diff(self, bank_id: str, competitor: str, page_type: str, url: str, diff_text: str, timestamp_iso: str, status: str, lines_changed: int) -> Dict[str, Any]:
+        """
+        Retains a verified page diff directly into Hindsight Cloud.
+        """
+        body = (
+            f"Competitor Move Detected: {competitor} ({page_type})\n"
+            f"URL: {url}\n"
+            f"Status: {status}\n"
+            f"Lines Changed: {lines_changed}\n"
+            f"Detected At: {timestamp_iso}\n\n"
+            f"Diff Content:\n{diff_text}"
+        )
+        item = {
+            "content": body,
+            "timestamp": timestamp_iso,
+            "metadata": {
+                "competitor": str(competitor),
+                "page_type": str(page_type),
+                "url": str(url),
+                "status": str(status),
+                "lines_changed": str(lines_changed),
+                "type": "page_diff_event"
+            }
+        }
+        if self.is_configured():
+            try:
+                self.ensure_bank_exists(bank_id, f"Gods Eye {competitor}")
+                res = requests.post(
+                    f"{self.base_url}/v1/default/banks/{bank_id}/memories",
+                    headers=self._get_headers(),
+                    json={"items": [item]},
+                    timeout=15
+                )
+                if res.status_code in [200, 201, 202]:
+                    data = res.json()
+                    data["storage_backend"] = "hindsight_cloud"
+                    return data
+                else:
+                    print(f"[Hindsight Retain Diff Error] {res.status_code}: {res.text}")
+            except Exception as e:
+                print(f"[Hindsight Retain Diff Failed] {e}")
+
+        # Fallback
+        entry = {
+            "id": f"local-{int(time.time()*1000)}",
+            "text": item["content"],
+            "timestamp": item["timestamp"],
+            "metadata": item["metadata"],
+            "storage_backend": "local_disk_fallback"
+        }
+        self._save_local_bank(bank_id, entry)
+        return {"success": True, "bank_id": bank_id, "items_count": 1, "storage_backend": "local_disk_fallback"}
 
     def recall(self, bank_id: str, query: str) -> Dict[str, Any]:
         """
