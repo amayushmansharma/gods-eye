@@ -3,6 +3,7 @@ import re
 import json
 import hashlib
 import difflib
+import subprocess
 from datetime import datetime, timezone
 from typing import Dict, Any, List, Optional, Tuple
 import requests
@@ -121,10 +122,39 @@ class SnapshotService:
 
         return "\n".join(deduped)
 
+    def probe_url(self, url: str) -> Optional[str]:
+        """
+        Probes a URL to see if it is live and returns the effective reachable URL.
+        """
+        headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"}
+        try:
+            r = requests.head(url, headers=headers, allow_redirects=True, timeout=3)
+            # Avoid CloudFront SPA error fallbacks
+            if r.status_code == 200 and "Error from cloudfront" not in r.headers.get("x-cache", ""):
+                return r.url
+            if r.status_code in [403, 405]:
+                r_get = requests.get(url, headers=headers, stream=True, allow_redirects=True, timeout=3)
+                if r_get.status_code == 200:
+                    return r_get.url
+        except Exception:
+            pass
+
+        # Subprocess curl probe (bypasses LibreSSL TLS quirks on macOS)
+        try:
+            cmd = ['curl', '-sIL', '-A', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)', '--max-time', '4', url]
+            res = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+            if "Error from cloudfront" not in res.stdout:
+                if "200 OK" in res.stdout or "HTTP/2 200" in res.stdout or "HTTP/1.1 200" in res.stdout:
+                    return url
+        except Exception:
+            pass
+
+        return None
+
     def discover_pages(self, raw_input: str) -> Dict[str, Any]:
         """
-        Discovers pricing and changelog pages for a given website domain or URL.
-        Tests candidate paths deterministically with HTTP probes.
+        Discovers pricing/primary and changelog/updates pages for any given website domain or URL.
+        Tests candidate paths deterministically across both subdomain and apex domain.
         """
         cleaned = raw_input.strip()
         if not cleaned.startswith("http://") and not cleaned.startswith("https://"):
@@ -134,45 +164,80 @@ class SnapshotService:
         base_url = base_url.rstrip("/")
 
         domain = re.sub(r"^https?://(www\.)?", "", base_url).split("/")[0].lower()
-        name = domain.split(".")[0].capitalize()
-        if name.lower() == "github":
-            name = "GitHub"
+        domain_parts = domain.split(".")
+        apex_domain = ".".join(domain_parts[-2:]) if len(domain_parts) > 2 else domain
 
-        headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"}
-        pricing_candidates = ["/pricing", "/pricing/", "/price", "/plans"]
-        changelog_candidates = ["/changelog", "/releases", "/release-notes", "/updates", "/blog"]
+        # Brand name formatting
+        if "bosscoder" in domain:
+            name = "Bosscoder Academy"
+        elif "bmw" in domain:
+            name = "BMW"
+        elif "linear" in domain:
+            name = "Linear"
+        elif "posthog" in domain:
+            name = "PostHog"
+        elif "resend" in domain:
+            name = "Resend"
+        elif "stripe" in domain:
+            name = "Stripe"
+        elif len(domain_parts) > 2 and domain_parts[-2] not in ["co", "com", "org", "net", "edu", "in", "io"]:
+            name = domain_parts[-2].capitalize()
+        else:
+            name = domain_parts[0].capitalize()
+
+        pricing_candidates = [
+            "/pricing", "/pricing/", "/price", "/plans",
+            "/school-of-technology", "/courses", "/programs", "/offers", "/fees", "/models"
+        ]
+        changelog_candidates = [
+            "/changelog", "/releases", "/release-notes", "/updates", "/blog", "/news"
+        ]
 
         found_pricing = None
         for p in pricing_candidates:
-            test_url = base_url + p
-            try:
-                r = requests.head(test_url, headers=headers, allow_redirects=True, timeout=3)
-                if r.status_code == 200:
-                    found_pricing = r.url
-                    break
-                if r.status_code in [403, 405]:
-                    r_get = requests.get(test_url, headers=headers, stream=True, allow_redirects=True, timeout=3)
-                    if r_get.status_code == 200:
-                        found_pricing = r_get.url
+            u = self.probe_url(base_url + p)
+            if u:
+                found_pricing = u
+                break
+
+        # If on subdomain, check apex domain for pricing candidates
+        if not found_pricing and apex_domain != domain:
+            for apex_base in [f"https://www.{apex_domain}", f"https://{apex_domain}"]:
+                for p in pricing_candidates:
+                    u = self.probe_url(apex_base + p)
+                    if u:
+                        found_pricing = u
                         break
-            except Exception:
-                pass
+                if found_pricing:
+                    break
 
         found_changelog = None
         for p in changelog_candidates:
-            test_url = base_url + p
-            try:
-                r = requests.head(test_url, headers=headers, allow_redirects=True, timeout=3)
-                if r.status_code == 200:
-                    found_changelog = r.url
-                    break
-                if r.status_code in [403, 405]:
-                    r_get = requests.get(test_url, headers=headers, stream=True, allow_redirects=True, timeout=3)
-                    if r_get.status_code == 200:
-                        found_changelog = r_get.url
+            u = self.probe_url(base_url + p)
+            if u:
+                found_changelog = u
+                break
+
+        # If on subdomain, check apex domain for changelog/blog candidates
+        if not found_changelog and apex_domain != domain:
+            for apex_base in [f"https://www.{apex_domain}", f"https://{apex_domain}"]:
+                for p in changelog_candidates:
+                    u = self.probe_url(apex_base + p)
+                    if u:
+                        found_changelog = u
                         break
-            except Exception:
-                pass
+                if found_changelog:
+                    break
+
+        # If pricing candidate path not found, fallback to the direct input URL or apex URL
+        if not found_pricing:
+            u = self.probe_url(base_url)
+            if u:
+                found_pricing = u
+            elif apex_domain != domain:
+                u = self.probe_url(f"https://www.{apex_domain}") or self.probe_url(f"https://{apex_domain}")
+                if u:
+                    found_pricing = u
 
         return {
             "name": name,
@@ -186,24 +251,35 @@ class SnapshotService:
 
     def extract_page(self, url: str) -> Tuple[bool, str, Optional[str]]:
         """
-        Fetches live page text using Tavily extract.
+        Fetches live page text using Tavily extract with direct curl text extraction fallback.
         Returns: (success, raw_content, error_message)
         """
-        if not self.client:
-            return False, "", "Tavily API key is not configured."
+        # 1. Primary extraction via Tavily
+        if self.client:
+            try:
+                res = self.client.extract(urls=[url])
+                results = res.get("results", [])
+                if results and len(results) > 0:
+                    raw = results[0].get("raw_content", "")
+                    if raw and len(raw.strip()) > 30:
+                        return True, raw, None
+            except Exception:
+                pass
 
+        # 2. Secondary fallback via direct curl (strips scripts/styles/HTML)
         try:
-            res = self.client.extract(urls=[url])
-            results = res.get("results", [])
-            if results and len(results) > 0:
-                raw = results[0].get("raw_content", "")
-                if raw:
-                    return True, raw, None
-            failed = res.get("failed_results", [])
-            err = f"Tavily extract failed for {url}: {failed}"
-            return False, "", err
+            cmd = ['curl', '-sL', '-A', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36', '--max-time', '10', url]
+            html = subprocess.check_output(cmd).decode('utf-8', errors='ignore')
+            clean = re.sub(r'<script.*?</script>', '', html, flags=re.DOTALL | re.IGNORECASE)
+            clean = re.sub(r'<style.*?</style>', '', clean, flags=re.DOTALL | re.IGNORECASE)
+            clean = re.sub(r'<[^>]+>', ' ', clean)
+            clean = ' '.join(clean.split())
+            if clean and len(clean) > 20:
+                return True, clean, None
         except Exception as e:
-            return False, "", str(e)
+            return False, "", f"Extraction failed: {str(e)}"
+
+        return False, "", f"Extraction returned empty content for {url}"
 
     def get_latest_snapshot(self, url: str) -> Optional[str]:
         slug = self.get_url_slug(url)
