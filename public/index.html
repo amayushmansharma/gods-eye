@@ -102,6 +102,18 @@
   <!-- Main Watchlist View -->
   <main class="flex-1 flex flex-col px-4 max-w-6xl mx-auto w-full py-8 space-y-8" id="mainContainer">
     
+    <!-- Health Warning Banner (Only visible if real probe fails) -->
+    <div id="cloudWarningBanner" class="hidden p-4 rounded-xl border border-red-500/50 bg-red-950/70 text-red-200 text-xs font-mono space-y-1">
+      <div class="flex items-center space-x-2 font-bold text-red-300">
+        <i data-lucide="alert-triangle" class="w-4 h-4 text-red-400"></i>
+        <span>HINDSIGHT CLOUD HEALTH PROBE FAILED</span>
+      </div>
+      <p id="cloudWarningDetail" class="text-red-300/90 leading-relaxed"></p>
+      <div class="text-[11px] text-red-400/80 pt-1">
+        Warning: Memory persistence to Hindsight Cloud is currently failing. Check API key and account balance at ui.hindsight.vectorize.io.
+      </div>
+    </div>
+
     <!-- Hero / Status Banner -->
     <div class="flex flex-col md:flex-row md:items-center justify-between pb-4 border-b border-white/10 gap-4">
       <div>
@@ -232,22 +244,42 @@
   <script>
     let watchlistData = [];
 
-    // Health check on startup
+    // Real retain & recall probe health check on startup
     async function checkHealth() {
+      const dot = document.getElementById('connectionDot');
+      const text = document.getElementById('connectionText');
+      const badge = document.getElementById('connectionBadge');
+      const banner = document.getElementById('cloudWarningBanner');
+      const bannerDetail = document.getElementById('cloudWarningDetail');
+
       try {
         const res = await fetch('/api/hindsight/status');
         const data = await res.json();
-        const dot = document.getElementById('connectionDot');
-        const text = document.getElementById('connectionText');
-        if (data.status === 'connected' && data.cloud_healthy) {
+
+        if (data.healthy) {
           dot.className = 'w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.6)]';
           text.textContent = `Hindsight Cloud Active (${data.latency_ms}ms)`;
+          badge.className = 'flex items-center space-x-2 px-3 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-xs text-emerald-200';
+          if (banner) banner.classList.add('hidden');
         } else {
-          dot.className = 'w-2 h-2 rounded-full bg-amber-400';
-          text.textContent = `Local Memory Active`;
+          dot.className = 'w-2 h-2 rounded-full bg-red-500 shadow-[0_0_8px_rgba(239,68,68,0.8)]';
+          text.textContent = `Hindsight Failed (${data.error ? data.error.slice(0, 30) : 'Probe Failed'}...)`;
+          badge.className = 'flex items-center space-x-2 px-3 py-1.5 rounded-full border border-red-500/40 bg-red-500/15 text-xs text-red-300';
+          if (banner && bannerDetail) {
+            bannerDetail.textContent = data.error || 'Retain and recall probe failed against Hindsight Cloud.';
+            banner.classList.remove('hidden');
+            lucide.createIcons();
+          }
         }
       } catch (e) {
-        document.getElementById('connectionText').textContent = 'Memory Local';
+        dot.className = 'w-2 h-2 rounded-full bg-red-500 shadow-[0_0_8px_rgba(239,68,68,0.8)]';
+        text.textContent = 'Hindsight Server Error';
+        badge.className = 'flex items-center space-x-2 px-3 py-1.5 rounded-full border border-red-500/40 bg-red-500/15 text-xs text-red-300';
+        if (banner && bannerDetail) {
+          bannerDetail.textContent = `Server connection error: ${e.message}`;
+          banner.classList.remove('hidden');
+          lucide.createIcons();
+        }
       }
     }
 

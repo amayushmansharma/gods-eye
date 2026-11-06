@@ -34,26 +34,115 @@ class HindsightService:
 
     def check_health(self) -> Dict[str, Any]:
         """
-        True live health check hitting Hindsight Cloud API /health/ready.
+        Executes a real probe retain and probe recall against Hindsight Cloud
+        on a dedicated health test bank ('godseye-health-probe').
+        Returns pass/fail with exact latency and raw error response if it fails.
         """
         if not self.is_configured():
-            return {"status": "unconfigured", "message": "Missing HINDSIGHT_API_KEY"}
-        
+            return {
+                "healthy": False,
+                "status": "unconfigured",
+                "retain_passed": False,
+                "recall_passed": False,
+                "error": "Missing HINDSIGHT_API_KEY",
+                "latency_ms": 0
+            }
+
         t0 = time.time()
-        try:
-            res = requests.get(f"{self.base_url}/health/ready", timeout=5)
+        test_bank = "godseye-health-probe"
+        now_iso = datetime.now(timezone.utc).isoformat()
+
+        # 1. Ensure test bank exists
+        bank_ok = self.ensure_bank_exists(test_bank, "Health Probe Bank")
+        if not bank_ok:
             latency_ms = int((time.time() - t0) * 1000)
-            if res.status_code == 200:
-                data = res.json()
+            return {
+                "healthy": False,
+                "status": "failed",
+                "retain_passed": False,
+                "recall_passed": False,
+                "error": "Failed to create/reach test bank on Hindsight Cloud",
+                "latency_ms": latency_ms
+            }
+
+        # 2. Real Retain probe
+        try:
+            probe_item = {
+                "content": f"Health check probe verified at {now_iso}.",
+                "timestamp": now_iso,
+                "metadata": {"type": "health_probe", "probe_time": str(now_iso)}
+            }
+            res_retain = requests.post(
+                f"{self.base_url}/v1/default/banks/{test_bank}/memories",
+                headers=self._get_headers(),
+                json={"items": [probe_item]},
+                timeout=8
+            )
+            if res_retain.status_code not in [200, 201, 202]:
+                latency_ms = int((time.time() - t0) * 1000)
+                err_text = res_retain.text[:200]
                 return {
-                    "status": "connected",
-                    "cloud_healthy": data.get("status") == "healthy",
-                    "latency_ms": latency_ms,
-                    "provider": "Vectorize Hindsight Cloud"
+                    "healthy": False,
+                    "status": "failed",
+                    "retain_passed": False,
+                    "recall_passed": False,
+                    "error": f"Retain failed (HTTP {res_retain.status_code}): {err_text}",
+                    "latency_ms": latency_ms
                 }
-            return {"status": "error", "code": res.status_code, "latency_ms": latency_ms}
         except Exception as e:
-            return {"status": "error", "message": str(e)}
+            latency_ms = int((time.time() - t0) * 1000)
+            return {
+                "healthy": False,
+                "status": "failed",
+                "retain_passed": False,
+                "recall_passed": False,
+                "error": f"Retain exception: {str(e)}",
+                "latency_ms": latency_ms
+            }
+
+        # 3. Real Recall probe
+        try:
+            res_recall = requests.post(
+                f"{self.base_url}/v1/default/banks/{test_bank}/memories/recall",
+                headers=self._get_headers(),
+                json={"query": "Health check probe verified"},
+                timeout=8
+            )
+            latency_ms = int((time.time() - t0) * 1000)
+            if res_recall.status_code != 200:
+                err_text = res_recall.text[:200]
+                return {
+                    "healthy": False,
+                    "status": "failed",
+                    "retain_passed": True,
+                    "recall_passed": False,
+                    "error": f"Recall failed (HTTP {res_recall.status_code}): {err_text}",
+                    "latency_ms": latency_ms
+                }
+            
+            recalled_results = res_recall.json().get("results", [])
+            recalled_id = recalled_results[0].get("id") if recalled_results else "node_created"
+
+            return {
+                "healthy": True,
+                "status": "passed",
+                "retain_passed": True,
+                "recall_passed": True,
+                "latency_ms": latency_ms,
+                "probe_bank": test_bank,
+                "recalled_node_id": recalled_id,
+                "provider": "Vectorize Hindsight Cloud"
+            }
+        except Exception as e:
+            latency_ms = int((time.time() - t0) * 1000)
+            return {
+                "healthy": False,
+                "status": "failed",
+                "retain_passed": True,
+                "recall_passed": False,
+                "error": f"Recall exception: {str(e)}",
+                "latency_ms": latency_ms
+            }
 
     def ensure_bank_exists(self, bank_id: str, bank_name: str) -> bool:
         """
