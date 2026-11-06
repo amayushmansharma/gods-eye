@@ -56,7 +56,7 @@ def get_watchlist():
                 "history": manifest_info.get("history", [])[-5:]
             })
         
-        # Recall memories from Hindsight Cloud
+        # Recall memories from Hindsight
         memories = hindsight.recall(bank_id, f"{c_name} pricing changelog competitor move")
         
         watchlist_data.append({
@@ -66,7 +66,8 @@ def get_watchlist():
             "bank_id": bank_id,
             "pages": pages_status,
             "memories": memories.get("results", []),
-            "storage_backend": memories.get("storage_backend", "hindsight_cloud")
+            "storage_backend": memories.get("storage_backend", "hindsight"),
+            "recall_error": memories.get("error")
         })
 
     history = snapshot_svc.get_scan_history()
@@ -80,7 +81,7 @@ def get_watchlist():
 def trigger_watchlist_scan():
     """
     Triggers live watchlist scan across pricing and changelog pages,
-    diffing against previous snapshots and updating Hindsight Cloud.
+    diffing against previous snapshots and updating Hindsight.
     """
     try:
         results = run_watchlist_scan()
@@ -121,7 +122,7 @@ class AskRequest(BaseModel):
 @app.post("/api/ask")
 def ask_gods_eye(req: AskRequest):
     """
-    Memory drilldown endpoint querying Hindsight Cloud reflect API.
+    Memory drilldown endpoint querying Hindsight reflect API.
     """
     try:
         answer_data = query_memory_drilldown(req.bank_id, req.brand_name, req.question)
@@ -130,11 +131,11 @@ def ask_gods_eye(req: AskRequest):
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/api/hindsight/status")
-def get_hindsight_status():
+def get_hindsight_status(force: bool = False):
     """
-    True live healthcheck hitting Hindsight Cloud API.
+    Live healthcheck hitting Hindsight API (cached for 60s).
     """
-    health = hindsight.check_health()
+    health = hindsight.check_health(force=force)
     return JSONResponse(content=health)
 
 if __name__ == "__main__":

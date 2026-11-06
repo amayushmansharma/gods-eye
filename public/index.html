@@ -106,11 +106,11 @@
     <div id="cloudWarningBanner" class="hidden p-4 rounded-xl border border-red-500/50 bg-red-950/70 text-red-200 text-xs font-mono space-y-1">
       <div class="flex items-center space-x-2 font-bold text-red-300">
         <i data-lucide="alert-triangle" class="w-4 h-4 text-red-400"></i>
-        <span>HINDSIGHT CLOUD HEALTH PROBE FAILED</span>
+        <span>HINDSIGHT HEALTH PROBE FAILED</span>
       </div>
       <p id="cloudWarningDetail" class="text-red-300/90 leading-relaxed"></p>
       <div class="text-[11px] text-red-400/80 pt-1">
-        Warning: Memory persistence to Hindsight Cloud is currently failing. Check API key and account balance at ui.hindsight.vectorize.io.
+        Warning: Memory persistence to Hindsight is currently unavailable. Ensure your Hindsight instance is running at the configured endpoint.
       </div>
     </div>
 
@@ -124,7 +124,7 @@
           </span>
         </h1>
         <p class="text-xs md:text-sm text-zinc-400 mt-1">
-          Tracking live pricing tiers and changelog releases. Normalized snapshots diffed deterministically in Python and retained into Vectorize Hindsight Cloud.
+          Tracking live pricing tiers and changelog releases. Normalized snapshots diffed deterministically in Python and retained into Hindsight.
         </p>
       </div>
 
@@ -159,7 +159,7 @@
         <h2 class="text-sm font-semibold tracking-wide text-zinc-100 uppercase">Interrogate Watchlist Memory Bank</h2>
       </div>
       <p class="text-xs text-zinc-400 mb-4">
-        Direct query against Hindsight Cloud's <code class="text-zinc-300 bg-white/10 px-1 py-0.5 rounded">reflect()</code> endpoint across stored competitor memories.
+        Direct query against Hindsight's <code class="text-zinc-300 bg-white/10 px-1 py-0.5 rounded">reflect()</code> endpoint across stored competitor memories.
       </p>
 
       <form id="askForm" class="flex flex-col sm:flex-row gap-2">
@@ -193,9 +193,9 @@
         <div class="flex items-center justify-between text-[11px] font-mono text-zinc-400 mb-2">
           <span class="text-emerald-400 flex items-center space-x-1">
             <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-            <span>Hindsight Cloud reflect() Synthesized Answer</span>
+            <span>Hindsight reflect() Synthesized Answer</span>
           </span>
-          <span id="askBackendIndicator">Source: Vectorize Hindsight Cloud</span>
+          <span id="askBackendIndicator">Source: Hindsight</span>
         </div>
         <p id="askAnswerText" class="text-sm text-zinc-200 leading-relaxed whitespace-pre-wrap"></p>
       </div>
@@ -237,7 +237,7 @@
 
   <!-- Footer -->
   <footer class="w-full border-t border-white/10 py-6 text-center text-xs text-zinc-500 font-mono">
-    God's Eye — Autonomous Competitor Watchlist // Built with Vectorize Hindsight & Groq
+    God's Eye — Autonomous Competitor Watchlist // Built with Hindsight & Groq
   </footer>
 
   <!-- Application Logic -->
@@ -258,15 +258,15 @@
 
         if (data.healthy) {
           dot.className = 'w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.6)]';
-          text.textContent = `Hindsight Cloud Active (${data.latency_ms}ms)`;
+          text.textContent = `Hindsight Active (${data.latency_ms}ms)`;
           badge.className = 'flex items-center space-x-2 px-3 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-xs text-emerald-200';
           if (banner) banner.classList.add('hidden');
         } else {
           dot.className = 'w-2 h-2 rounded-full bg-red-500 shadow-[0_0_8px_rgba(239,68,68,0.8)]';
-          text.textContent = `Hindsight Failed (${data.error ? data.error.slice(0, 30) : 'Probe Failed'}...)`;
+          text.textContent = `Hindsight Offline`;
           badge.className = 'flex items-center space-x-2 px-3 py-1.5 rounded-full border border-red-500/40 bg-red-500/15 text-xs text-red-300';
           if (banner && bannerDetail) {
-            bannerDetail.textContent = data.error || 'Retain and recall probe failed against Hindsight Cloud.';
+            bannerDetail.textContent = data.error || 'Health check probe failed against Hindsight.';
             banner.classList.remove('hidden');
             lucide.createIcons();
           }
@@ -316,6 +316,20 @@
         const pricingPage = pages.find(p => p.type === 'pricing') || {};
         const changelogPage = pages.find(p => p.type === 'changelog') || {};
 
+        const isHealthyHindsight = (comp.storage_backend === 'hindsight' || comp.storage_backend === 'hindsight_cloud') && !comp.recall_error;
+        const isError = comp.storage_backend === 'error' || Boolean(comp.recall_error);
+
+        let backendChipClass = 'border-amber-500/40 bg-amber-500/15 text-amber-300';
+        let backendChipLabel = 'Local Fallback';
+
+        if (isHealthyHindsight) {
+          backendChipClass = 'border-emerald-500/30 bg-emerald-500/10 text-emerald-400';
+          backendChipLabel = 'Hindsight';
+        } else if (isError) {
+          backendChipClass = 'border-red-500/40 bg-red-500/15 text-red-300';
+          backendChipLabel = 'Recall Error';
+        }
+
         return `
           <div class="glass-panel p-6 border-white/15 space-y-5">
             <!-- Header Row -->
@@ -339,8 +353,8 @@
                 <span class="px-2.5 py-1 rounded-full border border-white/15 bg-white/5 text-zinc-300">
                   Total Scans: ${Math.max(pricingPage.scan_count || 0, changelogPage.scan_count || 0)}
                 </span>
-                <span class="px-2.5 py-1 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400">
-                  ${comp.storage_backend === 'hindsight_cloud' ? 'Hindsight Cloud' : 'Local Fallback'}
+                <span class="px-2.5 py-1 rounded-full border ${backendChipClass}">
+                  ${backendChipLabel}
                 </span>
               </div>
             </div>
@@ -393,12 +407,16 @@
               <div class="flex items-center justify-between mb-2">
                 <span class="text-xs font-semibold text-zinc-300 uppercase tracking-wider flex items-center space-x-1.5">
                   <i data-lucide="database" class="w-3.5 h-3.5 text-zinc-400"></i>
-                  <span>Recalled Hindsight Cloud Memory Nodes (${memories.length})</span>
+                  <span>Recalled Hindsight Memory Nodes (${memories.length})</span>
                 </span>
                 <span class="text-[10px] font-mono text-zinc-500">Temporal Primitives</span>
               </div>
 
-              ${memories.length === 0 ? `
+              ${comp.recall_error ? `
+                <div class="text-xs font-mono text-red-300 bg-red-950/40 border border-red-500/30 p-3 rounded-lg">
+                  Recall failed: ${comp.recall_error}
+                </div>
+              ` : memories.length === 0 ? `
                 <div class="text-xs font-mono text-zinc-500 bg-black/30 p-3 rounded-lg border border-white/5">
                   No memory nodes recorded yet for this competitor. Run scan to establish initial baseline.
                 </div>
@@ -407,7 +425,7 @@
                   ${memories.slice(0, 3).map(m => `
                     <div class="bg-black/50 border border-white/10 rounded-lg p-3 text-xs space-y-1">
                       <div class="flex items-center justify-between text-[10px] font-mono text-zinc-500">
-                        <span class="text-zinc-400">Node ID: ${m.id ? m.id.slice(0, 12) : 'cloud'}...</span>
+                        <span class="text-zinc-400">Node ID: ${m.id ? m.id.slice(0, 12) : 'hindsight'}...</span>
                         <span>${m.timestamp ? m.timestamp.slice(0, 10) : 'Recent'}</span>
                       </div>
                       <p class="text-zinc-200 font-sans leading-relaxed">${m.text}</p>
@@ -420,6 +438,9 @@
           </div>
         `;
       }).join('');
+
+      lucide.createIcons();
+    }
 
       lucide.createIcons();
     }
@@ -500,7 +521,7 @@
         const ans = await res.json();
         document.getElementById('askAnswerBox').classList.remove('hidden');
         document.getElementById('askAnswerText').textContent = ans.answer || ans.text;
-        document.getElementById('askBackendIndicator').textContent = `Source: ${ans.storage_backend || 'Hindsight Cloud'}`;
+        document.getElementById('askBackendIndicator').textContent = `Source: ${ans.storage_backend || 'Hindsight'}`;
       } catch (err) {
         alert('Failed to query memory: ' + err.message);
       } finally {
@@ -511,8 +532,8 @@
     });
 
     // Initial load
-    checkHealth();
     loadWatchlist();
+    setTimeout(checkHealth, 0);
 
     // Intro Overlay Controller
     (function initThreeUIIntro() {

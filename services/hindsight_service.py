@@ -3,7 +3,7 @@ import json
 import time
 from email.utils import parsedate_to_datetime
 from datetime import datetime, timezone
-from typing import Dict, Any, List, Optional
+from typing import Dict, Any, List, Optional, Tuple
 import requests
 from dotenv import load_dotenv
 
@@ -14,56 +14,83 @@ LOCAL_STORAGE_FILE = os.path.join(os.path.dirname(__file__), "..", ".local_memor
 
 class HindsightService:
     """
-    Client for Vectorize Hindsight memory engine.
-    Connects to Hindsight Cloud (https://api.hindsight.vectorize.io).
+    Client for Hindsight memory engine.
+    Supports self-hosted instances (e.g. http://localhost:8888) as well as cloud endpoints.
     """
     def __init__(self):
-        self.base_url = os.getenv("HINDSIGHT_BASE_URL", "https://api.hindsight.vectorize.io")
-        self.api_key = os.getenv("HINDSIGHT_API_KEY", "")
+        base_url_env = os.getenv("HINDSIGHT_BASE_URL", "").strip()
+        # Default to self-hosted localhost:8888 if unspecified or still set to cloud URL
+        if not base_url_env or "api.hindsight.vectorize.io" in base_url_env:
+            self.base_url = "http://localhost:8888"
+        else:
+            self.base_url = base_url_env.rstrip("/")
+
+        self.api_key = os.getenv("HINDSIGHT_API_KEY", "").strip()
         self.local_storage_path = os.path.abspath(LOCAL_STORAGE_FILE)
         self._known_banks = set()
+        self._health_cache: Optional[Dict[str, Any]] = None
+        self._health_cache_time: float = 0.0
 
     def is_configured(self) -> bool:
-        return bool(self.api_key and self.api_key.startswith("hsk_"))
+        return bool(self.base_url)
 
     def _get_headers(self) -> Dict[str, str]:
-        return {
-            "Authorization": f"Bearer {self.api_key}",
+        headers = {
             "Content-Type": "application/json"
         }
+        if self.api_key:
+            headers["Authorization"] = f"Bearer {self.api_key}"
+        return headers
 
-    def check_health(self) -> Dict[str, Any]:
+    def check_health(self, force: bool = False) -> Dict[str, Any]:
         """
-        Executes a real probe retain and probe recall against Hindsight Cloud
+        Executes a real probe retain and probe recall against Hindsight
         on a dedicated health test bank ('godseye-health-probe').
-        Returns pass/fail with exact latency and raw error response if it fails.
+        Cached for 60 seconds to avoid blocking page load.
         """
+        now = time.time()
+        if not force and self._health_cache and (now - self._health_cache_time < 60.0):
+            cached = dict(self._health_cache)
+            cached["cached"] = True
+            cached["cache_age_seconds"] = int(now - self._health_cache_time)
+            return cached
+
         if not self.is_configured():
-            return {
+            res = {
                 "healthy": False,
                 "status": "unconfigured",
                 "retain_passed": False,
                 "recall_passed": False,
-                "error": "Missing HINDSIGHT_API_KEY",
-                "latency_ms": 0
+                "error": "Hindsight base URL not configured",
+                "latency_ms": 0,
+                "base_url": self.base_url,
+                "provider": "Hindsight"
             }
+            self._health_cache = res
+            self._health_cache_time = now
+            return res
 
         t0 = time.time()
         test_bank = "godseye-health-probe"
         now_iso = datetime.now(timezone.utc).isoformat()
 
         # 1. Ensure test bank exists
-        bank_ok = self.ensure_bank_exists(test_bank, "Health Probe Bank")
+        bank_ok, bank_err = self.ensure_bank_exists(test_bank, "Health Probe Bank")
         if not bank_ok:
             latency_ms = int((time.time() - t0) * 1000)
-            return {
+            res = {
                 "healthy": False,
                 "status": "failed",
                 "retain_passed": False,
                 "recall_passed": False,
-                "error": "Failed to create/reach test bank on Hindsight Cloud",
-                "latency_ms": latency_ms
+                "error": f"Failed to reach Hindsight at {self.base_url}: {bank_err}",
+                "latency_ms": latency_ms,
+                "base_url": self.base_url,
+                "provider": "Hindsight"
             }
+            self._health_cache = res
+            self._health_cache_time = time.time()
+            return res
 
         # 2. Real Retain probe
         try:
@@ -76,29 +103,54 @@ class HindsightService:
                 f"{self.base_url}/v1/default/banks/{test_bank}/memories",
                 headers=self._get_headers(),
                 json={"items": [probe_item]},
-                timeout=8
+                timeout=6
             )
             if res_retain.status_code not in [200, 201, 202]:
                 latency_ms = int((time.time() - t0) * 1000)
                 err_text = res_retain.text[:200]
-                return {
+                res = {
                     "healthy": False,
                     "status": "failed",
                     "retain_passed": False,
                     "recall_passed": False,
                     "error": f"Retain failed (HTTP {res_retain.status_code}): {err_text}",
-                    "latency_ms": latency_ms
+                    "latency_ms": latency_ms,
+                    "base_url": self.base_url,
+                    "provider": "Hindsight"
                 }
-        except Exception as e:
+                self._health_cache = res
+                self._health_cache_time = time.time()
+                return res
+        except requests.exceptions.ConnectionError:
             latency_ms = int((time.time() - t0) * 1000)
-            return {
+            res = {
                 "healthy": False,
                 "status": "failed",
                 "retain_passed": False,
                 "recall_passed": False,
-                "error": f"Retain exception: {str(e)}",
-                "latency_ms": latency_ms
+                "error": f"Connection refused at {self.base_url}",
+                "latency_ms": latency_ms,
+                "base_url": self.base_url,
+                "provider": "Hindsight"
             }
+            self._health_cache = res
+            self._health_cache_time = time.time()
+            return res
+        except Exception as e:
+            latency_ms = int((time.time() - t0) * 1000)
+            res = {
+                "healthy": False,
+                "status": "failed",
+                "retain_passed": False,
+                "recall_passed": False,
+                "error": f"Retain error: {str(e)}",
+                "latency_ms": latency_ms,
+                "base_url": self.base_url,
+                "provider": "Hindsight"
+            }
+            self._health_cache = res
+            self._health_cache_time = time.time()
+            return res
 
         # 3. Real Recall probe
         try:
@@ -106,24 +158,29 @@ class HindsightService:
                 f"{self.base_url}/v1/default/banks/{test_bank}/memories/recall",
                 headers=self._get_headers(),
                 json={"query": "Health check probe verified"},
-                timeout=8
+                timeout=6
             )
             latency_ms = int((time.time() - t0) * 1000)
             if res_recall.status_code != 200:
                 err_text = res_recall.text[:200]
-                return {
+                res = {
                     "healthy": False,
                     "status": "failed",
                     "retain_passed": True,
                     "recall_passed": False,
                     "error": f"Recall failed (HTTP {res_recall.status_code}): {err_text}",
-                    "latency_ms": latency_ms
+                    "latency_ms": latency_ms,
+                    "base_url": self.base_url,
+                    "provider": "Hindsight"
                 }
-            
+                self._health_cache = res
+                self._health_cache_time = time.time()
+                return res
+
             recalled_results = res_recall.json().get("results", [])
             recalled_id = recalled_results[0].get("id") if recalled_results else "node_created"
 
-            return {
+            res = {
                 "healthy": True,
                 "status": "passed",
                 "retain_passed": True,
@@ -131,46 +188,72 @@ class HindsightService:
                 "latency_ms": latency_ms,
                 "probe_bank": test_bank,
                 "recalled_node_id": recalled_id,
-                "provider": "Vectorize Hindsight Cloud"
+                "base_url": self.base_url,
+                "provider": "Hindsight"
             }
-        except Exception as e:
+            self._health_cache = res
+            self._health_cache_time = time.time()
+            return res
+        except requests.exceptions.ConnectionError:
             latency_ms = int((time.time() - t0) * 1000)
-            return {
+            res = {
                 "healthy": False,
                 "status": "failed",
                 "retain_passed": True,
                 "recall_passed": False,
-                "error": f"Recall exception: {str(e)}",
-                "latency_ms": latency_ms
+                "error": f"Recall connection refused at {self.base_url}",
+                "latency_ms": latency_ms,
+                "base_url": self.base_url,
+                "provider": "Hindsight"
             }
+            self._health_cache = res
+            self._health_cache_time = time.time()
+            return res
+        except Exception as e:
+            latency_ms = int((time.time() - t0) * 1000)
+            res = {
+                "healthy": False,
+                "status": "failed",
+                "retain_passed": True,
+                "recall_passed": False,
+                "error": f"Recall error: {str(e)}",
+                "latency_ms": latency_ms,
+                "base_url": self.base_url,
+                "provider": "Hindsight"
+            }
+            self._health_cache = res
+            self._health_cache_time = time.time()
+            return res
 
-    def ensure_bank_exists(self, bank_id: str, bank_name: str) -> bool:
+    def ensure_bank_exists(self, bank_id: str, bank_name: str) -> Tuple[bool, str]:
         """
-        Ensures the bank exists in Hindsight Cloud. Cached in-memory to avoid redundant PUT calls.
+        Ensures the bank exists in Hindsight. Cached in-memory to avoid redundant PUT calls.
         """
         if bank_id in self._known_banks:
-            return True
+            return True, ""
 
         if not self.is_configured():
-            return False
+            return False, "Base URL not configured"
 
         try:
             res = requests.put(
                 f"{self.base_url}/v1/default/banks/{bank_id}",
                 headers=self._get_headers(),
                 json={"name": bank_name},
-                timeout=8
+                timeout=6
             )
             if res.status_code in [200, 201]:
                 self._known_banks.add(bank_id)
-                return True
+                return True, ""
+            return False, f"HTTP {res.status_code}: {res.text[:150]}"
+        except requests.exceptions.ConnectionError:
+            return False, f"Connection refused at {self.base_url}"
         except Exception as e:
-            print(f"[Hindsight Bank Create Error] {e}")
-        return False
+            return False, str(e)
 
     def retain_rich_articles(self, bank_id: str, articles: List[Dict[str, Any]], brand_name: str) -> Dict[str, Any]:
         """
-        Retains rich, real article contents into Hindsight Cloud.
+        Retains rich, real article contents into Hindsight.
         Anchors each article's timestamp to its real published_date from Tavily.
         """
         now_iso = datetime.now(timezone.utc).isoformat()
@@ -206,7 +289,9 @@ class HindsightService:
 
         if self.is_configured() and items:
             try:
-                self.ensure_bank_exists(bank_id, f"Gods Eye {brand_name}")
+                bank_ok, bank_err = self.ensure_bank_exists(bank_id, f"Gods Eye {brand_name}")
+                if not bank_ok:
+                    return {"success": False, "error": bank_err, "storage_backend": "error"}
                 res = requests.post(
                     f"{self.base_url}/v1/default/banks/{bank_id}/memories",
                     headers=self._get_headers(),
@@ -215,29 +300,26 @@ class HindsightService:
                 )
                 if res.status_code in [200, 201, 202]:
                     data = res.json()
-                    data["storage_backend"] = "hindsight_cloud"
+                    data["storage_backend"] = "hindsight"
                     return data
                 else:
-                    print(f"[Hindsight Retain Error] {res.status_code}: {res.text}")
+                    err_msg = f"HTTP {res.status_code}: {res.text[:150]}"
+                    print(f"[Hindsight Retain Error] {err_msg}")
+                    return {"success": False, "error": err_msg, "storage_backend": "error"}
+            except requests.exceptions.ConnectionError:
+                err_msg = f"Connection refused at {self.base_url}"
+                print(f"[Hindsight Retain Error] {err_msg}")
+                return {"success": False, "error": err_msg, "storage_backend": "error"}
             except Exception as e:
-                print(f"[Hindsight Retain Failed] {e}")
+                err_msg = str(e)
+                print(f"[Hindsight Retain Failed] {err_msg}")
+                return {"success": False, "error": err_msg, "storage_backend": "error"}
 
-        # Local fallback
-        for it in items:
-            entry = {
-                "id": f"local-{int(time.time()*1000)}",
-                "text": it["content"],
-                "timestamp": it["timestamp"],
-                "metadata": it["metadata"],
-                "storage_backend": "local_disk_fallback"
-            }
-            self._save_local_bank(bank_id, entry)
-
-        return {"success": True, "bank_id": bank_id, "items_count": len(items), "storage_backend": "local_disk_fallback"}
+        return {"success": False, "error": "No items to retain or base URL not configured", "storage_backend": "error"}
 
     def retain_page_diff(self, bank_id: str, competitor: str, page_type: str, url: str, diff_text: str, timestamp_iso: str, status: str, lines_changed: int) -> Dict[str, Any]:
         """
-        Retains a verified page diff directly into Hindsight Cloud.
+        Retains a verified page diff directly into Hindsight.
         """
         body = (
             f"Competitor Move Detected: {competitor} ({page_type})\n"
@@ -261,7 +343,9 @@ class HindsightService:
         }
         if self.is_configured():
             try:
-                self.ensure_bank_exists(bank_id, f"Gods Eye {competitor}")
+                bank_ok, bank_err = self.ensure_bank_exists(bank_id, f"Gods Eye {competitor}")
+                if not bank_ok:
+                    return {"success": False, "error": bank_err, "storage_backend": "error"}
                 res = requests.post(
                     f"{self.base_url}/v1/default/banks/{bank_id}/memories",
                     headers=self._get_headers(),
@@ -270,36 +354,41 @@ class HindsightService:
                 )
                 if res.status_code in [200, 201, 202]:
                     data = res.json()
-                    data["storage_backend"] = "hindsight_cloud"
+                    data["storage_backend"] = "hindsight"
                     return data
                 else:
-                    print(f"[Hindsight Retain Diff Error] {res.status_code}: {res.text}")
+                    err_msg = f"HTTP {res.status_code}: {res.text[:150]}"
+                    print(f"[Hindsight Retain Diff Error] {err_msg}")
+                    return {"success": False, "error": err_msg, "storage_backend": "error"}
+            except requests.exceptions.ConnectionError:
+                err_msg = f"Connection refused at {self.base_url}"
+                print(f"[Hindsight Retain Diff Error] {err_msg}")
+                return {"success": False, "error": err_msg, "storage_backend": "error"}
             except Exception as e:
-                print(f"[Hindsight Retain Diff Failed] {e}")
+                err_msg = str(e)
+                print(f"[Hindsight Retain Diff Failed] {err_msg}")
+                return {"success": False, "error": err_msg, "storage_backend": "error"}
 
-        # Fallback
-        entry = {
-            "id": f"local-{int(time.time()*1000)}",
-            "text": item["content"],
-            "timestamp": item["timestamp"],
-            "metadata": item["metadata"],
-            "storage_backend": "local_disk_fallback"
-        }
-        self._save_local_bank(bank_id, entry)
-        return {"success": True, "bank_id": bank_id, "items_count": 1, "storage_backend": "local_disk_fallback"}
+        return {"success": False, "error": "Hindsight base URL not configured", "storage_backend": "error"}
 
     def recall(self, bank_id: str, query: str) -> Dict[str, Any]:
         """
-        Recall memories from Hindsight Cloud via multi-strategy search.
+        Recall memories from Hindsight via multi-strategy search.
         """
         if self.is_configured():
             try:
-                self.ensure_bank_exists(bank_id, f"Gods Eye {bank_id}")
+                bank_ok, bank_err = self.ensure_bank_exists(bank_id, f"Gods Eye {bank_id}")
+                if not bank_ok:
+                    return {
+                        "results": [],
+                        "error": bank_err,
+                        "storage_backend": "error"
+                    }
                 res = requests.post(
                     f"{self.base_url}/v1/default/banks/{bank_id}/memories/recall",
                     headers=self._get_headers(),
                     json={"query": query},
-                    timeout=12
+                    timeout=10
                 )
                 if res.status_code == 200:
                     raw_results = res.json().get("results", [])
@@ -307,21 +396,28 @@ class HindsightService:
                     for item in raw_results:
                         ts = item.get("mentioned_at") or item.get("occurred_start") or item.get("timestamp") or "Recorded"
                         cleaned.append({
-                            "id": item.get("id", "cloud-node"),
+                            "id": item.get("id", "hindsight-node"),
                             "text": item.get("text", ""),
                             "timestamp": ts,
                             "entities": item.get("entities", []),
                             "scores": item.get("scores", {}),
-                            "storage_backend": "hindsight_cloud"
+                            "storage_backend": "hindsight"
                         })
-                    return {"results": cleaned, "storage_backend": "hindsight_cloud"}
+                    return {"results": cleaned, "storage_backend": "hindsight"}
                 else:
-                    print(f"[Hindsight Recall Error] {res.status_code}: {res.text}")
+                    err_msg = f"HTTP {res.status_code}: {res.text[:120]}"
+                    print(f"[Hindsight Recall Error] {err_msg}")
+                    return {"results": [], "error": err_msg, "storage_backend": "error"}
+            except requests.exceptions.ConnectionError:
+                err_msg = f"Connection refused at {self.base_url}"
+                print(f"[Hindsight Recall Error] {err_msg}")
+                return {"results": [], "error": err_msg, "storage_backend": "error"}
             except Exception as e:
-                print(f"[Hindsight Recall Failed] {e}")
+                err_msg = str(e)
+                print(f"[Hindsight Recall Failed] {err_msg}")
+                return {"results": [], "error": err_msg, "storage_backend": "error"}
 
-        local_items = self._load_local_bank(bank_id)
-        return {"results": local_items, "storage_backend": "local_disk_fallback"}
+        return {"results": [], "error": "Hindsight base URL not configured", "storage_backend": "error"}
 
     def reflect(self, bank_id: str, query: str) -> Dict[str, Any]:
         """
@@ -329,7 +425,13 @@ class HindsightService:
         """
         if self.is_configured():
             try:
-                self.ensure_bank_exists(bank_id, f"Gods Eye {bank_id}")
+                bank_ok, bank_err = self.ensure_bank_exists(bank_id, f"Gods Eye {bank_id}")
+                if not bank_ok:
+                    return {
+                        "text": "",
+                        "error": bank_err,
+                        "storage_backend": "error"
+                    }
                 res = requests.post(
                     f"{self.base_url}/v1/default/banks/{bank_id}/reflect",
                     headers=self._get_headers(),
@@ -341,49 +443,19 @@ class HindsightService:
                     return {
                         "text": data.get("text", ""),
                         "based_on": data.get("based_on", []),
-                        "storage_backend": "hindsight_cloud"
+                        "storage_backend": "hindsight"
                     }
                 else:
-                    print(f"[Hindsight Reflect Error] {res.status_code}: {res.text}")
+                    err_msg = f"HTTP {res.status_code}: {res.text[:120]}"
+                    print(f"[Hindsight Reflect Error] {err_msg}")
+                    return {"text": "", "error": err_msg, "storage_backend": "error"}
+            except requests.exceptions.ConnectionError:
+                err_msg = f"Connection refused at {self.base_url}"
+                print(f"[Hindsight Reflect Error] {err_msg}")
+                return {"text": "", "error": err_msg, "storage_backend": "error"}
             except Exception as e:
-                print(f"[Hindsight Reflect Failed] {e}")
+                err_msg = str(e)
+                print(f"[Hindsight Reflect Failed] {err_msg}")
+                return {"text": "", "error": err_msg, "storage_backend": "error"}
 
-        # Local fallback reflection
-        recall_res = self.recall(bank_id, query)
-        recalled = recall_res.get("results", [])
-        if not recalled:
-            return {
-                "text": "Baseline market scan committed. Trajectory will emerge across subsequent rescans.",
-                "based_on": [],
-                "storage_backend": "local_disk_fallback"
-            }
-        summary_points = [f"• {m.get('text', '')}" for m in recalled[:3]]
-        return {
-            "text": "Local fallback memory review:\n" + "\n".join(summary_points),
-            "based_on": recalled,
-            "storage_backend": "local_disk_fallback"
-        }
-
-    def _load_local_bank(self, bank_id: str) -> List[Dict[str, Any]]:
-        try:
-            if os.path.exists(self.local_storage_path):
-                with open(self.local_storage_path, "r", encoding="utf-8") as f:
-                    data = json.load(f)
-                    return data.get(bank_id, [])
-        except Exception:
-            pass
-        return []
-
-    def _save_local_bank(self, bank_id: str, entry: Dict[str, Any]):
-        try:
-            data = {}
-            if os.path.exists(self.local_storage_path):
-                with open(self.local_storage_path, "r", encoding="utf-8") as f:
-                    data = json.load(f)
-            if bank_id not in data:
-                data[bank_id] = []
-            data[bank_id].append(entry)
-            with open(self.local_storage_path, "w", encoding="utf-8") as f:
-                json.dump(data, f, indent=2)
-        except Exception as e:
-            print(f"[Hindsight Local] Save error: {e}")
+        return {"text": "", "error": "Hindsight base URL not configured", "storage_backend": "error"}

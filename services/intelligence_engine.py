@@ -65,8 +65,8 @@ def analyze_domain(url: str) -> Dict[str, Any]:
     God's Eye Market Intelligence Pipeline:
     1. Ingests live news via Tavily with topic='news' and real published_date.
     2. Maintains explicit local scan count and URL registry per bank to prevent duplicate memories.
-    3. Retains only NEW articles into Hindsight Cloud, anchored to their real publication dates.
-    4. If scan > 1, recalls prior memories and executes Hindsight Cloud's reflect() endpoint.
+    3. Retains only NEW articles into Hindsight, anchored to their real publication dates.
+    4. If scan > 1, recalls prior memories and executes Hindsight's reflect() endpoint.
     5. Structures competitor matrix via Groq 120B.
     """
     clean_domain = url.lower().replace("https://", "").replace("http://", "").replace("www.", "").strip("/")
@@ -122,28 +122,28 @@ def analyze_domain(url: str) -> Dict[str, Any]:
     stored_urls = set(prior_meta.get("stored_urls", []))
     new_articles = [a for a in raw_articles if a["url"] not in stored_urls] if is_live_search_success else []
 
-    # 3. Retain ONLY new verified articles into Hindsight Cloud (skip if already stored or placeholder)
+    # 3. Retain ONLY new verified articles into Hindsight (skip if already stored or placeholder)
     newly_retained_count = 0
     if is_live_search_success and new_articles:
         retain_res = hindsight.retain_rich_articles(bank_id, new_articles, brand_display_name)
         newly_retained_count = retain_res.get("items_count", len(new_articles))
-        storage_backend = retain_res.get("storage_backend", "hindsight_cloud")
+        storage_backend = retain_res.get("storage_backend", "hindsight")
     else:
-        storage_backend = "hindsight_cloud" if hindsight.is_configured() else "local_disk_fallback"
+        storage_backend = "hindsight" if hindsight.is_configured() else "local_disk_fallback"
 
     # Update metadata registry
     updated_meta = record_scan_metadata(bank_id, [a["url"] for a in new_articles])
 
-    # 4. Recall and Reflect from Hindsight Cloud
+    # 4. Recall and Reflect from Hindsight
     if is_baseline_scan:
         recalled_nodes = []
         reflection_text = (
-            f"Scan #1 (Baseline Anchor): Ingested {newly_retained_count} verified news articles into Hindsight Cloud "
+            f"Scan #1 (Baseline Anchor): Ingested {newly_retained_count} verified news articles into Hindsight "
             f"for bank '{bank_id}'. Stored with real publication dates to serve as historical benchmark."
         )
         cumulative_diffs = [
             f"Scan #1: Baseline market anchor established for {brand_display_name}.",
-            f"Retained {newly_retained_count} verified news articles in Hindsight Cloud.",
+            f"Retained {newly_retained_count} verified news articles in Hindsight.",
             "Subsequent scans will diff new signals against this baseline."
         ]
     else:
@@ -161,7 +161,7 @@ def analyze_domain(url: str) -> Dict[str, Any]:
         diff_summary = f"{len(new_articles)} new articles detected since last scan." if len(new_articles) > 0 else "0 new articles (all live web URLs already retained in memory)."
         cumulative_diffs = [
             f"Scan #{current_scan_number}: {diff_summary}",
-            f"Recalled {len(recalled_nodes)} historical memory nodes from Hindsight Cloud.",
+            f"Recalled {len(recalled_nodes)} historical memory nodes from Hindsight.",
             f"Cross-temporal reflect executed across {len(updated_meta.get('stored_urls', []))} total retained articles."
         ]
 
@@ -271,7 +271,7 @@ Return ONLY valid JSON.
 def query_memory_drilldown(bank_id: str, brand_name: str, question: str) -> Dict[str, Any]:
     """
     Direct Interrogation into Hindsight Memory:
-    Calls Hindsight Cloud's reflect endpoint directly for true memory-grounded answers.
+    Calls Hindsight's reflect endpoint directly for true memory-grounded answers.
     """
     reflect_res = hindsight.reflect(bank_id=bank_id, query=question)
     hindsight_answer = reflect_res.get("text", "")
