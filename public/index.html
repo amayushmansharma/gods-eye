@@ -1,37 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>God's Eye — Autonomous Competitor Watchlist & Memory</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>God's Eye — Autonomous Market Intelligence</title>
   
-  <!-- Tailwind CDN -->
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Typography & Styling -->
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
-
-    body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
+    * {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     }
     .font-mono {
       font-family: 'JetBrains Mono', monospace;
     }
+    
+    /* Background Image matching reference visual */
     .bg-eclipse {
-      background: radial-gradient(circle at 50% -20%, rgba(255, 255, 255, 0.08) 0%, rgba(0, 0, 0, 1) 70%);
+      background-image: url('/static/background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
     }
+
+    /* Exact Glass Pill Search Bar matching reference image */
+    .glass-pill-container {
+      background: rgba(10, 10, 10, 0.55);
+      backdrop-filter: blur(28px) saturate(180%);
+      -webkit-backdrop-filter: blur(28px) saturate(180%);
+      border: 1.5px solid rgba(255, 255, 255, 0.28);
+      border-radius: 9999px;
+      box-shadow: 
+        0 0 30px rgba(0, 0, 0, 0.8),
+        0 0 20px rgba(255, 255, 255, 0.06),
+        inset 0 1px 2px rgba(255, 255, 255, 0.35),
+        inset 0 -1px 2px rgba(0, 0, 0, 0.6);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-pill-container:focus-within {
+      border-color: rgba(255, 255, 255, 0.55);
+      box-shadow: 
+        0 0 35px rgba(255, 255, 255, 0.16),
+        inset 0 1px 3px rgba(255, 255, 255, 0.6),
+        inset 0 -1px 2px rgba(0, 0, 0, 0.8);
+      transform: translateY(-1px);
+    }
+
+    /* Glass Cards */
     .glass-panel {
-      background: rgba(14, 14, 18, 0.72);
+      background: rgba(12, 12, 14, 0.72);
       backdrop-filter: blur(24px);
       -webkit-backdrop-filter: blur(24px);
       border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 20px;
-      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7), inset 0 1px 1px rgba(255, 255, 255, 0.15);
     }
+
     .glass-chip {
       background: rgba(255, 255, 255, 0.06);
       backdrop-filter: blur(12px);
@@ -44,8 +76,9 @@
       border-color: rgba(255, 255, 255, 0.35);
       transform: translateY(-1px);
     }
+
     .diff-code-box {
-      background: rgba(0, 0, 0, 0.75);
+      background: rgba(0, 0, 0, 0.8);
       border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 10px;
       font-family: 'JetBrains Mono', monospace;
@@ -78,82 +111,79 @@
     </button>
   </div>
 
-  <div class="fixed inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/80 pointer-events-none -z-10"></div>
+  <!-- Subtle Dark Overlay Gradient for high contrast & dark center vignette for subtitle readability -->
+  <div class="fixed inset-0 bg-gradient-to-b from-black/60 via-black/25 to-black/80 pointer-events-none -z-10"></div>
+  <div class="fixed inset-0 pointer-events-none -z-10" style="background: radial-gradient(circle at 50% 40%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 70%);"></div>
 
-  <!-- Top Navigation Bar -->
-  <header class="w-full border-b border-white/10 px-6 py-4 flex items-center justify-between backdrop-blur-md bg-black/40 sticky top-0 z-50">
+  <!-- Top Navigation Bar matching reference visual -->
+  <header class="w-full border-b border-white/10 px-6 py-4 flex items-center justify-between backdrop-blur-md bg-black/30 sticky top-0 z-50">
     <div class="flex items-center space-x-3 cursor-pointer" onclick="resetToHome()">
       <div class="w-8 h-8 rounded-full border border-white/30 flex items-center justify-center bg-white/5 shadow-[0_0_15px_rgba(255,255,255,0.1)]">
         <i data-lucide="eye" class="w-4 h-4 text-white"></i>
       </div>
       <div>
         <span class="text-sm font-semibold tracking-wider uppercase text-zinc-100">God's Eye</span>
-        <span class="text-[10px] text-zinc-400 font-mono block -mt-0.5">COMPETITOR WATCHLIST // PRICING & CHANGELOG MEMORY</span>
+        <span class="text-[10px] text-zinc-400 font-mono block -mt-0.5">COMPETITIVE INTELLIGENCE // PERSISTENT MEMORY</span>
       </div>
     </div>
 
-    <!-- Live Status Badge (Strict Real Health Check) -->
+    <!-- Live Status & Vectorize Link -->
     <div class="flex items-center space-x-3">
       <div id="connectionBadge" class="flex items-center space-x-2 px-3 py-1.5 rounded-full border border-white/15 bg-white/[0.04] text-xs">
         <span id="connectionDot" class="w-2 h-2 rounded-full bg-zinc-500"></span>
-        <span id="connectionText" class="text-zinc-300 font-mono text-[11px]">Probing Hindsight...</span>
+        <span id="connectionText" class="text-zinc-300 font-mono text-[11px]">Connecting...</span>
       </div>
+      <a href="https://github.com/vectorize-io/hindsight" target="_blank" class="text-xs text-zinc-400 hover:text-white transition flex items-center space-x-1 font-mono">
+        <span>Vectorize Engine</span>
+        <i data-lucide="external-link" class="w-3 h-3"></i>
+      </a>
     </div>
   </header>
 
-  <!-- Health Warning Banner (Only visible if real probe fails) -->
-  <div id="healthWarningBanner" class="hidden max-w-4xl mx-auto w-full px-4 mt-4">
-    <div class="p-3.5 rounded-xl border border-red-500/40 bg-red-950/60 text-red-200 text-xs font-mono space-y-1">
-      <div class="flex items-center space-x-2 font-bold text-red-300">
-        <i data-lucide="alert-triangle" class="w-4 h-4 text-red-400"></i>
-        <span>HINDSIGHT HEALTH PROBE FAILED</span>
-      </div>
-      <p id="healthWarningDetail" class="text-red-300/90 leading-relaxed"></p>
-    </div>
-  </div>
-
-  <!-- Main Hero Screen -->
-  <main class="flex-1 flex flex-col px-4 max-w-5xl mx-auto w-full py-10 space-y-10" id="mainContainer">
+  <!-- Main View -->
+  <main class="flex-1 flex flex-col items-center justify-center px-4 max-w-5xl mx-auto w-full py-12 space-y-10" id="mainContainer">
     
-    <!-- Hero Header -->
-    <section class="text-center space-y-4 pt-4">
-      <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white drop-shadow-sm">
+    <!-- Hero Header matching reference visual -->
+    <section class="text-center space-y-3 pt-6 max-w-2xl mx-auto">
+      <div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full border border-white/15 bg-black/50 backdrop-blur-md text-xs text-zinc-300 mb-2 font-mono shadow-sm">
+        <i data-lucide="shield" class="w-3.5 h-3.5 text-zinc-400"></i>
+        <span>Autonomous Market Intelligence</span>
+      </div>
+      
+      <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-white drop-shadow-md">
         Nothing Goes Unnoticed.
       </h1>
       
-      <!-- Subtitle with darkened backdrop for high contrast -->
-      <div class="pt-1">
-        <div class="inline-block bg-black/80 backdrop-blur-md px-5 py-2 rounded-xl border border-white/10 text-zinc-300 text-sm max-w-xl mx-auto shadow-2xl leading-relaxed">
-          Autonomous pricing & changelog tracking with persistent agent memory.
-        </div>
-      </div>
+      <!-- Subtitle darkened with text-shadow and soft backdrop for crisp contrast -->
+      <p class="text-sm md:text-base text-zinc-300 font-normal leading-relaxed max-w-xl mx-auto pt-1 drop-shadow-sm">
+        God's Eye tracks competitor pricing shifts, messaging pivots, and feature announcements across time. Powered by <span class="text-white font-medium underline decoration-white/40">Vectorize Hindsight</span> persistent memory.
+      </p>
 
-      <!-- One Big Input -->
-      <div class="max-w-2xl mx-auto pt-6">
-        <form id="scanForm" onsubmit="handleScanSubmit(event)" class="relative flex items-center">
-          <div class="absolute left-4.5 text-zinc-400 pointer-events-none">
-            <i data-lucide="search" class="w-5 h-5"></i>
+      <!-- Glass Pill Search Bar Form matching reference visual -->
+      <div class="w-full max-w-xl mx-auto pt-6 px-2">
+        <form id="scanForm" onsubmit="handleScanSubmit(event)" class="relative">
+          <div class="glass-pill-container flex items-center px-6 py-3.5 space-x-3">
+            <input 
+              type="text" 
+              id="urlInput"
+              placeholder="https://linear.app"
+              class="w-full bg-transparent text-sm md:text-base text-zinc-100 placeholder-zinc-500 focus:outline-none"
+              required
+            />
+            <button 
+              type="submit" 
+              id="scanSubmitBtn"
+              class="text-zinc-400 hover:text-white transition cursor-pointer p-1"
+              title="Scan Site"
+            >
+              <i data-lucide="search" class="w-5 h-5" id="scanBtnIcon"></i>
+            </button>
           </div>
-          <input 
-            type="text" 
-            id="urlInput"
-            placeholder="Paste competitor URL (e.g. linear.app, posthog.com)..."
-            class="w-full h-14 pl-12 pr-40 bg-black/70 border border-white/20 rounded-2xl text-sm md:text-base text-zinc-100 placeholder-zinc-500 focus:outline-none focus:border-white/50 focus:ring-1 focus:ring-white/30 transition shadow-[0_8px_30px_rgba(0,0,0,0.7)]"
-            required
-          />
-          <button 
-            type="submit" 
-            id="scanSubmitBtn"
-            class="absolute right-2 h-10 px-5 bg-white text-black hover:bg-zinc-200 rounded-xl text-xs font-semibold flex items-center space-x-1.5 transition cursor-pointer shadow-md"
-          >
-            <i data-lucide="scan" class="w-3.5 h-3.5" id="scanBtnIcon"></i>
-            <span id="scanBtnLabel">Scan Site</span>
-          </button>
         </form>
 
-        <!-- Example Chips -->
+        <!-- Example Chips matching reference visual -->
         <div class="flex items-center justify-center space-x-2 pt-3 text-xs text-zinc-400">
-          <span class="text-zinc-500 text-[11px]">Quick inspect:</span>
+          <span class="text-zinc-500 text-[11px]">Instant Scans:</span>
           <button type="button" onclick="fillAndScan('linear.app')" class="glass-chip px-3 py-1 text-[11px] text-zinc-300 hover:text-white cursor-pointer">linear.app</button>
           <button type="button" onclick="fillAndScan('posthog.com')" class="glass-chip px-3 py-1 text-[11px] text-zinc-300 hover:text-white cursor-pointer">posthog.com</button>
           <button type="button" onclick="fillAndScan('resend.com')" class="glass-chip px-3 py-1 text-[11px] text-zinc-300 hover:text-white cursor-pointer">resend.com</button>
@@ -162,7 +192,7 @@
     </section>
 
     <!-- Scan Loading Bar -->
-    <div id="scanLoadingBox" class="hidden glass-panel p-5 max-w-2xl mx-auto w-full border-white/30 bg-white/[0.03] space-y-2">
+    <div id="scanLoadingBox" class="hidden glass-panel p-5 max-w-xl mx-auto w-full border-white/30 bg-white/[0.03] space-y-2">
       <div class="flex items-center space-x-3">
         <div class="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
         <span class="text-xs font-mono text-zinc-200" id="scanLoadingText">Discovering /pricing & /changelog pages...</span>
@@ -173,16 +203,16 @@
     </div>
 
     <!-- Active Result Card View (Rendered when URL is scanned or clicked) -->
-    <section id="resultCardContainer" class="hidden space-y-6"></section>
+    <section id="resultCardContainer" class="hidden w-full max-w-4xl mx-auto space-y-6"></section>
 
     <!-- Compact Watchlist Section (Below input) -->
-    <section id="watchlistSection" class="pt-4 max-w-4xl mx-auto w-full space-y-3">
+    <section id="watchlistSection" class="pt-4 max-w-2xl mx-auto w-full space-y-3">
       <div class="flex items-center justify-between px-1">
         <h2 class="text-xs font-semibold uppercase tracking-wider text-zinc-400 flex items-center space-x-2">
           <i data-lucide="layers" class="w-3.5 h-3.5 text-zinc-400"></i>
           <span>Tracked Competitors Watchlist</span>
         </h2>
-        <span class="text-[10px] font-mono text-zinc-500" id="watchlistCountLabel">3 Monitored</span>
+        <span class="text-[10px] font-mono text-zinc-500" id="watchlistCountLabel">3 Competitors Tracked</span>
       </div>
 
       <div id="compactWatchlistList" class="glass-panel divide-y divide-white/10 overflow-hidden border-white/15">
@@ -192,9 +222,14 @@
 
   </main>
 
-  <!-- Footer -->
-  <footer class="w-full border-t border-white/10 py-6 text-center text-xs text-zinc-500 font-mono mt-auto">
-    God's Eye — Autonomous Competitor Watchlist // Built with Hindsight & Groq
+  <!-- Footer matching reference visual -->
+  <footer class="w-full border-t border-white/10 px-8 py-5 flex items-center justify-between text-xs text-zinc-500 font-mono mt-auto backdrop-blur-md bg-black/40">
+    <div>
+      God's Eye • Autonomous Market Intelligence powered by <a href="https://github.com/vectorize-io/hindsight" target="_blank" class="text-zinc-300 underline decoration-white/30 hover:text-white">Vectorize Hindsight</a>, Groq, and Tavily
+    </div>
+    <div>
+      MIT License
+    </div>
   </footer>
 
   <!-- App Script -->
@@ -219,37 +254,27 @@
       const dot = document.getElementById('connectionDot');
       const text = document.getElementById('connectionText');
       const badge = document.getElementById('connectionBadge');
-      const banner = document.getElementById('healthWarningBanner');
-      const bannerDetail = document.getElementById('healthWarningDetail');
 
       try {
         const res = await fetch('/api/hindsight/status');
         const data = await res.json();
 
         if (data.healthy) {
-          dot.className = 'w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.6)]';
-          text.textContent = `Hindsight Active (${data.latency_ms}ms)`;
+          dot.className = 'w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.6)] animate-pulse';
+          text.textContent = `Hindsight Cloud: Connected`;
           badge.className = 'flex items-center space-x-2 px-3 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-xs text-emerald-300';
-          if (banner) banner.classList.add('hidden');
+          badge.title = `Latency: ${data.latency_ms}ms`;
         } else {
           dot.className = 'w-2 h-2 rounded-full bg-red-500 shadow-[0_0_8px_rgba(239,68,68,0.8)]';
-          text.textContent = `Hindsight Offline`;
+          text.textContent = `Hindsight: Offline`;
           badge.className = 'flex items-center space-x-2 px-3 py-1.5 rounded-full border border-red-500/40 bg-red-500/15 text-xs text-red-300';
-          if (banner && bannerDetail) {
-            bannerDetail.textContent = data.error || 'Health check probe failed against Hindsight.';
-            banner.classList.remove('hidden');
-            lucide.createIcons();
-          }
+          badge.title = data.error || 'Server offline';
         }
       } catch (e) {
         dot.className = 'w-2 h-2 rounded-full bg-red-500 shadow-[0_0_8px_rgba(239,68,68,0.8)]';
-        text.textContent = 'Hindsight Error';
+        text.textContent = 'Hindsight: Offline';
         badge.className = 'flex items-center space-x-2 px-3 py-1.5 rounded-full border border-red-500/40 bg-red-500/15 text-xs text-red-300';
-        if (banner && bannerDetail) {
-          bannerDetail.textContent = `Server connection error: ${e.message}`;
-          banner.classList.remove('hidden');
-          lucide.createIcons();
-        }
+        badge.title = `Connection error: ${e.message}`;
       }
     }
 
@@ -282,24 +307,24 @@
         else if (item.status === 'Monitored (Stable)') chipClass = 'border-emerald-500/30 bg-emerald-500/10 text-emerald-400';
 
         const lastScanLabel = item.last_scanned_at 
-          ? new Date(item.last_scanned_at).toLocaleTimeString() 
-          : 'Pending Initial Scan';
+          ? new Date(item.last_scanned_at).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) 
+          : 'Pending Scan';
 
         return `
           <div 
             onclick="selectWatchlistItem('${item.domain || item.name}')"
-            class="p-4 hover:bg-white/[0.03] transition flex items-center justify-between cursor-pointer group"
+            class="p-3.5 hover:bg-white/[0.03] transition flex items-center justify-between cursor-pointer group"
           >
-            <div class="flex items-center space-x-3.5">
-              <div class="w-8 h-8 rounded-lg border border-white/15 bg-white/5 flex items-center justify-center font-bold text-white text-xs">
+            <div class="flex items-center space-x-3">
+              <div class="w-7 h-7 rounded-lg border border-white/15 bg-white/5 flex items-center justify-center font-bold text-white text-xs">
                 ${item.name[0]}
               </div>
               <div>
                 <div class="flex items-center space-x-2">
-                  <span class="text-sm font-semibold text-white group-hover:text-zinc-200">${item.name}</span>
+                  <span class="text-xs font-semibold text-white group-hover:text-zinc-200">${item.name}</span>
                   <span class="text-[11px] font-mono text-zinc-400">${item.domain}</span>
                 </div>
-                <div class="text-[10px] font-mono text-zinc-500 flex items-center space-x-3 mt-0.5">
+                <div class="text-[10px] font-mono text-zinc-500 flex items-center space-x-2">
                   <span>Scans: ${item.scan_count || 0}</span>
                   <span>•</span>
                   <span>Last: ${lastScanLabel}</span>
@@ -308,7 +333,7 @@
             </div>
 
             <div class="flex items-center space-x-3">
-              <span class="text-[10px] font-mono px-2.5 py-0.5 rounded-full border ${chipClass}">
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded-full border ${chipClass}">
                 ${item.status}
               </span>
               <button class="text-xs font-mono text-zinc-400 group-hover:text-white flex items-center space-x-1">
@@ -592,8 +617,6 @@
 
     // Section 1 Helper: Diff View
     function renderDiffSection(data) {
-      const pDiff = data.pricing_diff;
-      const cDiff = data.changelog_diff;
       const rawDiff = data.raw_diff;
       const isChange = Boolean(data.is_change);
 
@@ -663,7 +686,7 @@
                 <div class="bg-black/50 border border-white/10 rounded-xl p-3.5 text-xs space-y-1.5">
                   <div class="flex items-center justify-between text-[10px] font-mono text-zinc-500">
                     <span class="text-zinc-400 font-semibold">Node ID: ${m.id ? m.id.slice(0, 16) : 'node'}...</span>
-                    <span>${m.timestamp ? new Date(m.timestamp).toLocaleDateString() + ' ' + new Date(m.timestamp).toLocaleTimeString() : 'Recorded'}</span>
+                    <span>${m.timestamp ? new Date(m.timestamp).toLocaleDateString() + ' ' + new Date(m.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : 'Recorded'}</span>
                   </div>
                   <p class="text-zinc-200 leading-relaxed font-sans">${escapeHtml(m.text)}</p>
                 </div>
@@ -777,7 +800,7 @@
                         </span>
                       </div>
                       ${d.note ? `<p class="text-zinc-300 text-[11px]">${escapeHtml(d.note)}</p>` : ''}
-                      <span class="text-[10px] font-mono text-zinc-500 block">${new Date(d.timestamp).toLocaleDateString()} ${new Date(d.timestamp).toLocaleTimeString()}</span>
+                      <span class="text-[10px] font-mono text-zinc-500 block">${new Date(d.timestamp).toLocaleDateString()} ${new Date(d.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</span>
                     </div>
                   `).join('')}
                 </div>
