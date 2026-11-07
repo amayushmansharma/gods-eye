@@ -1,0 +1,1182 @@
+{
+  "success": true,
+  "target_url": "https://www.microsoft.com/",
+  "domain": "microsoft.com",
+  "brand_name": "Microsoft",
+  "tagline": "Empowering every person and every organization to achieve more",
+  "industry": "Technology \u2013 Software, Cloud & AI Services",
+  "executive_summary": "Microsoft remains the dominant enterprise software and cloud platform, leveraging its integrated productivity suite and AI\u2011driven Copilot to deepen stickiness. Competitive pressure intensifies from AWS, Google Cloud, Oracle and Adobe, each advancing pricing transparency and generative\u2011AI capabilities. Recent moves\u2014including 25% discounts on Microsoft 365\u202fCopilot Business and the launch of the always\u2011on Microsoft Scout agent\u2014signal a strategic pivot toward affordable, AI\u2011first offerings to protect margin and market share.",
+  "scanned_at": "November 07, 2026 \u2022 15:04:41 UTC",
+  "scanned_at_iso": "2026-11-07T15:04:41.165051+00:00",
+  "duration_seconds": 32.7,
+  "is_baseline_scan": false,
+  "scan_iteration": 4,
+  "bank_id": "godseye-intel-microsoft-com",
+  "use_memory": true,
+  "is_memory_enabled": true,
+  "stats": {
+    "competitors_count": 4,
+    "news_coverage_days": 0,
+    "verified_sources_count": 6,
+    "recalled_memories_count": 8,
+    "detected_changes_count": 10
+  },
+  "what_happened": {
+    "competitors": [
+      {
+        "id": "amazon-aws",
+        "name": "Amazon Web Services",
+        "domain": "aws.amazon.com",
+        "market_share": "~28% of global cloud infrastructure (Q2\u202f2026)",
+        "focus": "IaaS & Generative AI services",
+        "recent_move": "2026 price reduction on EC2 compute and launch of Bedrock Gen\u2011AI models with pay\u2011per\u2011token pricing",
+        "price_trend": "Promotional",
+        "threat_level": "High",
+        "key_advantage": "Unmatched scale, breadth of services and aggressive pricing",
+        "key_vulnerability": "Limited integration with Microsoft productivity stack",
+        "brand": "Microsoft",
+        "fact_type": "competitor_profile",
+        "url": "https://aws.amazon.com"
+      },
+      {
+        "id": "google-cloud",
+        "name": "Google Cloud",
+        "domain": "cloud.google.com",
+        "market_share": "~12% of global cloud infrastructure (Q2\u202f2026)",
+        "focus": "Cloud + AI/ML platform",
+        "recent_move": "Introduced Vertex AI Gemini integration and bundled AI credits for Workspace customers",
+        "price_trend": "Stable",
+        "threat_level": "Medium",
+        "key_advantage": "Leadership in data analytics and AI research",
+        "key_vulnerability": "Smaller enterprise footprint compared to Azure",
+        "brand": "Microsoft",
+        "fact_type": "competitor_profile",
+        "url": "https://cloud.google.com"
+      },
+      {
+        "id": "oracle-cloud",
+        "name": "Oracle Cloud",
+        "domain": "oracle.com",
+        "market_share": "~5% of global cloud infrastructure (Q2\u202f2026)",
+        "focus": "Enterprise SaaS & Cloud for ERP",
+        "recent_move": "Launched Oracle Cloud Free Tier for AI workloads and announced price increase for premium DBaaS services",
+        "price_trend": "+2% Increase",
+        "threat_level": "Medium",
+        "key_advantage": "Deep integration with Oracle ERP and database portfolio",
+        "key_vulnerability": "Narrow developer ecosystem and lower brand perception in AI",
+        "brand": "Microsoft",
+        "fact_type": "competitor_profile",
+        "url": "https://oracle.com"
+      },
+      {
+        "id": "adobe",
+        "name": "Adobe",
+        "domain": "adobe.com",
+        "market_share": "Leader in creative SaaS (not cloud infra)",
+        "focus": "Creative Cloud & Generative AI (Firefly)",
+        "recent_move": "Bundled Firefly generative\u2011AI tools into Creative Cloud subscription and introduced AI\u2011enhanced document workflows",
+        "price_trend": "Premium",
+        "threat_level": "Moderate",
+        "key_advantage": "Market dominance in creative software and AI\u2011enhanced design tools",
+        "key_vulnerability": "Limited relevance to core enterprise productivity and cloud infrastructure",
+        "brand": "Microsoft",
+        "fact_type": "competitor_profile",
+        "url": "https://adobe.com"
+      }
+    ],
+    "market_share_benchmark": {
+      "target": {
+        "name": "Microsoft",
+        "share": 28,
+        "color": "#0ea5e9",
+        "is_target": true
+      },
+      "rivals": [
+        {
+          "name": "Amazon Web Services",
+          "share": 28,
+          "color": "#f43f5e",
+          "is_target": false,
+          "domain": "aws.amazon.com"
+        },
+        {
+          "name": "Google Cloud",
+          "share": 12,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "cloud.google.com"
+        },
+        {
+          "name": "Oracle Cloud",
+          "share": 5,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "oracle.com"
+        },
+        {
+          "name": "Adobe",
+          "share": 9,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "adobe.com"
+        }
+      ],
+      "all_bars": [
+        {
+          "name": "Microsoft",
+          "share": 28,
+          "color": "#0ea5e9",
+          "is_target": true
+        },
+        {
+          "name": "Amazon Web Services",
+          "share": 28,
+          "color": "#f43f5e",
+          "is_target": false,
+          "domain": "aws.amazon.com"
+        },
+        {
+          "name": "Google Cloud",
+          "share": 12,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "cloud.google.com"
+        },
+        {
+          "name": "Oracle Cloud",
+          "share": 5,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "oracle.com"
+        },
+        {
+          "name": "Adobe",
+          "share": 9,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "adobe.com"
+        }
+      ]
+    },
+    "pricing_trajectory": {
+      "tiers": [
+        "Tier 1 / Entry",
+        "Tier 2 / Mid-...",
+        "Tier 3 / Flag."
+      ],
+      "target_name": "Microsoft",
+      "rival_name": "Amazon Web Services Benchmark",
+      "target_curve": [
+        14,
+        38,
+        92
+      ],
+      "rival_curve": [
+        15,
+        48,
+        94
+      ],
+      "points": [
+        {
+          "tier": "Tier 1 / Entry",
+          "target_val": "Microsoft 365 Business Basic + Copilot Business \u2013 $6\u202fUSD/user/mo (after 25% discount, Dec\u202f2026)",
+          "rival_val": "AWS Activate Starter \u2013 Free tier, compute $0.02\u202fUSD/hr thereafter",
+          "target_pct": 14,
+          "rival_pct": 15
+        },
+        {
+          "tier": "Tier 2 / Mid-...",
+          "target_val": "Microsoft 365 Business Standard + Copilot \u2013 $12\u202fUSD/user/mo",
+          "rival_val": "AWS EC2 m5.large \u2013 $0.096\u202fUSD/hr (on\u2011demand)",
+          "target_pct": 38,
+          "rival_pct": 48
+        },
+        {
+          "tier": "Tier 3 / Flag.",
+          "target_val": "Microsoft 365 E5 + Copilot Enterprise \u2013 $57\u202fUSD/user/mo",
+          "rival_val": "AWS Enterprise Support \u2013 $15,000\u202fUSD/yr",
+          "target_pct": 92,
+          "rival_pct": 94
+        }
+      ]
+    },
+    "pricing_feature_matrix": [
+      {
+        "segment": "Tier 1 / Entry",
+        "target_offering": "Microsoft 365 Business Basic + Copilot Business \u2013 $6\u202fUSD/user/mo (after 25% discount, Dec\u202f2026)",
+        "comp1_offering": "AWS Activate Starter \u2013 Free tier, compute $0.02\u202fUSD/hr thereafter",
+        "comp2_offering": "Google Workspace Business Starter \u2013 $6\u202fUSD/user/mo",
+        "comp3_offering": "Oracle Cloud Free Tier \u2013 $0\u202fUSD (limited compute)",
+        "comp4_offering": "Adobe Creative Cloud Single App \u2013 $20\u202fUSD/user/mo"
+      },
+      {
+        "segment": "Tier 2 / Mid-Volume",
+        "target_offering": "Microsoft 365 Business Standard + Copilot \u2013 $12\u202fUSD/user/mo",
+        "comp1_offering": "AWS EC2 m5.large \u2013 $0.096\u202fUSD/hr (on\u2011demand)",
+        "comp2_offering": "Google Workspace Business Standard \u2013 $12\u202fUSD/user/mo",
+        "comp3_offering": "Oracle Cloud Standard VM \u2013 $0.03\u202fUSD/hr",
+        "comp4_offering": "Adobe Creative Cloud All Apps \u2013 $54\u202fUSD/user/mo"
+      },
+      {
+        "segment": "Tier 3 / Flagship",
+        "target_offering": "Microsoft 365 E5 + Copilot Enterprise \u2013 $57\u202fUSD/user/mo",
+        "comp1_offering": "AWS Enterprise Support \u2013 $15,000\u202fUSD/yr",
+        "comp2_offering": "Google Cloud Anthos \u2013 $30,000\u202fUSD/yr",
+        "comp3_offering": "Oracle Cloud Enterprise \u2013 $25,000\u202fUSD/yr",
+        "comp4_offering": "Adobe Enterprise \u2013 $80,000\u202fUSD/yr"
+      }
+    ],
+    "news_pulse_7_days": [],
+    "detected_changes": [
+      {
+        "category": "Pricing Strategy",
+        "item": "Amazon Web Services Price Trajectory",
+        "change_type": "changed",
+        "previous_value": "+2% Increase (premium tier)",
+        "current_value": "Promotional",
+        "summary": "Detected pricing trend variance for Amazon Web Services: shifted from +2% Increase (premium tier) to Promotional.",
+        "significance": "High",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Competitive Moves",
+        "item": "Amazon Web Services Feature / Move",
+        "change_type": "changed",
+        "previous_value": "Introduced \"Bedrock Pro\" with 20% lower pricing fo...",
+        "current_value": "2026 price reduction on EC2 compute and launch of ...",
+        "summary": "Observed strategic update for Amazon Web Services: 2026 price reduction on EC2 compute and launch of Bedrock Gen\u2011AI models with pay\u2011per\u2011token pricing",
+        "significance": "Medium",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Pricing Strategy",
+        "item": "Google Cloud Price Trajectory",
+        "change_type": "changed",
+        "previous_value": "Stable (promotional for AI tokens)",
+        "current_value": "Stable",
+        "summary": "Detected pricing trend variance for Google Cloud: shifted from Stable (promotional for AI tokens) to Stable.",
+        "significance": "High",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Competitive Moves",
+        "item": "Google Cloud Feature / Move",
+        "change_type": "changed",
+        "previous_value": "Launched Gemini\u20112 model with free tier for up to 1...",
+        "current_value": "Introduced Vertex AI Gemini integration and bundle...",
+        "summary": "Observed strategic update for Google Cloud: Introduced Vertex AI Gemini integration and bundled AI credits for Workspace customers",
+        "significance": "Medium",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Pricing Strategy",
+        "item": "Oracle Cloud Price Trajectory",
+        "change_type": "changed",
+        "previous_value": "Promotional (discounts for existing Oracle licensees)",
+        "current_value": "+2% Increase",
+        "summary": "Detected pricing trend variance for Oracle Cloud: shifted from Promotional (discounts for existing Oracle licensees) to +2% Increase.",
+        "significance": "High",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Competitive Moves",
+        "item": "Oracle Cloud Feature / Move",
+        "change_type": "changed",
+        "previous_value": "Acquired cloud\u2011security startup SecuriX to bolster...",
+        "current_value": "Launched Oracle Cloud Free Tier for AI workloads a...",
+        "summary": "Observed strategic update for Oracle Cloud: Launched Oracle Cloud Free Tier for AI workloads and announced price increase for premium DBaaS services",
+        "significance": "Medium",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Market Structure",
+        "item": "New Rival Identified: Adobe",
+        "change_type": "new",
+        "previous_value": "Untracked in prior scan",
+        "current_value": "Creative Cloud & Generative AI (Firefly)",
+        "summary": "Discovered additional market rival Adobe (adobe.com) competing against Microsoft.",
+        "significance": "Medium",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Packaging & Tiers",
+        "item": "Tier 1 / Entry Offering Shift",
+        "change_type": "changed",
+        "previous_value": "Azure Virtual Machines B1s \u2013 $0.040 per vCPU\u2011hour (incl. 5\u202fM AI tokens)",
+        "current_value": "Microsoft 365 Business Basic + Copilot Business \u2013 $6\u202fUSD/user/mo (after 25% discount, Dec\u202f2026)",
+        "summary": "Pricing tier offering adjusted for Tier 1 / Entry from 'Azure Virtual Machines B1s \u2013 $0.040 per vCPU\u2011hour (incl. 5\u202fM AI tokens)' to 'Microsoft 365 Business Basic + Copilot Business \u2013 $6\u202fUSD/user/mo (after 25% discount, Dec\u202f2026)'.",
+        "significance": "High",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Packaging & Tiers",
+        "item": "Tier 2 / Mid-Volume Offering Shift",
+        "change_type": "changed",
+        "previous_value": "Azure D8s_v5 \u2013 $0.120 per vCPU\u2011hour + $0.045 per 1\u202fM input tokens",
+        "current_value": "Microsoft 365 Business Standard + Copilot \u2013 $12\u202fUSD/user/mo",
+        "summary": "Pricing tier offering adjusted for Tier 2 / Mid-Volume from 'Azure D8s_v5 \u2013 $0.120 per vCPU\u2011hour + $0.045 per 1\u202fM input tokens' to 'Microsoft 365 Business Standard + Copilot \u2013 $12\u202fUSD/user/mo'.",
+        "significance": "High",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Packaging & Tiers",
+        "item": "Tier 3 / Flagship Offering Shift",
+        "change_type": "changed",
+        "previous_value": "Azure HBv3 (GPU) \u2013 $2.30 per GPU\u2011hour + $0.042 per 1\u202fM input tokens (Copilot\u202fPremium)",
+        "current_value": "Microsoft 365 E5 + Copilot Enterprise \u2013 $57\u202fUSD/user/mo",
+        "summary": "Pricing tier offering adjusted for Tier 3 / Flagship from 'Azure HBv3 (GPU) \u2013 $2.30 per GPU\u2011hour + $0.042 per 1\u202fM input tokens (Copilot\u202fPremium)' to 'Microsoft 365 E5 + Copilot Enterprise \u2013 $57\u202fUSD/user/mo'.",
+        "significance": "High",
+        "type": "verified_fact"
+      }
+    ]
+  },
+  "market_share_benchmark": {
+    "target": {
+      "name": "Microsoft",
+      "share": 28,
+      "color": "#0ea5e9",
+      "is_target": true
+    },
+    "rivals": [
+      {
+        "name": "Amazon Web Services",
+        "share": 28,
+        "color": "#f43f5e",
+        "is_target": false,
+        "domain": "aws.amazon.com"
+      },
+      {
+        "name": "Google Cloud",
+        "share": 12,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "cloud.google.com"
+      },
+      {
+        "name": "Oracle Cloud",
+        "share": 5,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "oracle.com"
+      },
+      {
+        "name": "Adobe",
+        "share": 9,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "adobe.com"
+      }
+    ],
+    "all_bars": [
+      {
+        "name": "Microsoft",
+        "share": 28,
+        "color": "#0ea5e9",
+        "is_target": true
+      },
+      {
+        "name": "Amazon Web Services",
+        "share": 28,
+        "color": "#f43f5e",
+        "is_target": false,
+        "domain": "aws.amazon.com"
+      },
+      {
+        "name": "Google Cloud",
+        "share": 12,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "cloud.google.com"
+      },
+      {
+        "name": "Oracle Cloud",
+        "share": 5,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "oracle.com"
+      },
+      {
+        "name": "Adobe",
+        "share": 9,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "adobe.com"
+      }
+    ]
+  },
+  "pricing_trajectory": {
+    "tiers": [
+      "Tier 1 / Entry",
+      "Tier 2 / Mid-...",
+      "Tier 3 / Flag."
+    ],
+    "target_name": "Microsoft",
+    "rival_name": "Amazon Web Services Benchmark",
+    "target_curve": [
+      14,
+      38,
+      92
+    ],
+    "rival_curve": [
+      15,
+      48,
+      94
+    ],
+    "points": [
+      {
+        "tier": "Tier 1 / Entry",
+        "target_val": "Microsoft 365 Business Basic + Copilot Business \u2013 $6\u202fUSD/user/mo (after 25% discount, Dec\u202f2026)",
+        "rival_val": "AWS Activate Starter \u2013 Free tier, compute $0.02\u202fUSD/hr thereafter",
+        "target_pct": 14,
+        "rival_pct": 15
+      },
+      {
+        "tier": "Tier 2 / Mid-...",
+        "target_val": "Microsoft 365 Business Standard + Copilot \u2013 $12\u202fUSD/user/mo",
+        "rival_val": "AWS EC2 m5.large \u2013 $0.096\u202fUSD/hr (on\u2011demand)",
+        "target_pct": 38,
+        "rival_pct": 48
+      },
+      {
+        "tier": "Tier 3 / Flag.",
+        "target_val": "Microsoft 365 E5 + Copilot Enterprise \u2013 $57\u202fUSD/user/mo",
+        "rival_val": "AWS Enterprise Support \u2013 $15,000\u202fUSD/yr",
+        "target_pct": 92,
+        "rival_pct": 94
+      }
+    ]
+  },
+  "why_does_it_matter": {
+    "market_trends": [
+      {
+        "trend": "AI\u2011Embedded Productivity",
+        "description": "Microsoft, Google and Adobe have integrated generative\u2011AI assistants directly into core productivity apps, driving higher usage and upsell potential",
+        "impact": "Accelerates subscription upgrades and raises average revenue per user (ARPU) by 8\u201112% YoY",
+        "type": "market_trend"
+      },
+      {
+        "trend": "Transparent Tiered Pricing",
+        "description": "Recent Microsoft partner discounts and competitor free\u2011tier offerings reflect a market shift toward clear, consumption\u2011based pricing models",
+        "impact": "Pressures margin compression for legacy license models; favors vendors with flexible subscription structures",
+        "type": "market_trend"
+      }
+    ],
+    "opportunities": [
+      {
+        "title": "SMB AI\u2011First Bundle",
+        "gap": "SMB segment lacks affordable, all\u2011in\u2011one AI productivity bundles",
+        "actionable_counter": "Launch a bundled Microsoft 365\u202f+\u202fCopilot package at $5\u202fUSD/user/mo with usage\u2011based AI token caps",
+        "potential_upside": "High"
+      },
+      {
+        "title": "Industry\u2011Specific AI Agents",
+        "gap": "Vertical markets (healthcare, manufacturing) have limited AI\u2011driven workflow automation",
+        "actionable_counter": "Deploy Microsoft Scout/Autopilot as pre\u2011trained, compliance\u2011ready agents for top 3 verticals with partner co\u2011sell incentives",
+        "potential_upside": "Medium"
+      }
+    ],
+    "threats": [
+      {
+        "title": "AWS Compute Price War",
+        "competitor": "Amazon Web Services",
+        "move_detail": "Q3\u202f2026 announced 15% price cuts on core EC2 instances and introduced free tier AI credits",
+        "severity": "High",
+        "impact_timeline": "Immediate (0-30 days)"
+      },
+      {
+        "title": "Google Cloud Value Repositioning",
+        "competitor": "Google Cloud",
+        "move_detail": "Google Cloud is leveraging Leadership in data analytics and AI research to undercut core Microsoft tiers.",
+        "severity": "Medium",
+        "impact_timeline": "Near-term (30-60 days)"
+      }
+    ],
+    "hindsight_reflection": "Microsoft\u2019s competitive trajectory reveals a strategic pivot from opaque, sales-driven pricing to transparent, tiered structures, exemplified by the publication of specific per-user costs for Dynamics 365 Business Central and aggressive promotional discounts, such as 30% off Microsoft 365 E3 for partners. This pricing clarity is paired with a shift in product positioning toward autonomous, always-on AI agents, marked by the rebranding of Microsoft Scout to Autopilot and the general availability of Copilot Cowork with granular cost-management controls. Developing strategies include leveraging open-weight models like Qwen3.5-9B for high-speed, low-cost classification tasks via Microsoft Foundry, while continuing the trend of integrating AI directly into core productivity workflows to drive adoption and upsell opportunities.",
+    "recalled_nodes": [
+      {
+        "id": "node_a60c5b8ae8dfc6b5",
+        "text": "Article: FY27 Q1 - Press Releases - Investor Relations - Microsoft\nSource: www.microsoft.com\nPublished: 2026-09-22T14:14:14+00:00\nURL: https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast\nContent: 2026 Assets Current assets: Cash and cash equivalents$20,281$20,935 Short-term investments44,22855,908 Total cash, cash equivalents, and short-term investments64,50976,843 Accounts receivable, net of allowance for doubtful accounts of $728 and $1,04062,08480,876 Inventories1,8351,397 Other current assets57,70948,594 Total current assets186,137207,710 Property and equipment, net of accumulated depreciation of $127,208 and $118,691346,844313,076 Operating lease right-of-use assets30,17824,177 Equity and other investments37,80836,348 Goodwill119,646119,651 Intangible assets, net17,75118,609 Other long-term assets41,03938,805 Total assets$779,403$758,376 Liabilities and stockholders' equity Current liabilities: Accounts payable$42,625$42,416 Current portion of long-term debt4,3919,227 [...] All information in this release is as of September 30, 2026. The company undertakes no duty to update any forward-looking statement to conform the statement to actual results or changes in the company\u2019s expectations. For more information, press only: Microsoft Media Relations, WE Communications for Microsoft, (425) 638-7777,rrt@we-worldwide.com For more information, financial analysts and investors only: Jonathan Neilson, Vice President, Investor Relations, (425) 706-4400 [...] PRODUCT AND SERVICE OFFERINGS REVENUE (In millions) (Unaudited) Three Months Ended September 30, 20262025 Azure$33,165$22,384 Microsoft 365 cloud27,77823,694 Productivity and server licensing8,4078,678 Search and advertising6,5545,942 XBOX5,3795,508 Industry solutions5,3374,894 Windows OEM and devices3,5514,551 Frontier and support services2,1082,022 Total revenue$92,279$77,673 We have recast certain prior period amounts to conform to the way we internally manage and monitor our business, which reflects the fiscal year 2027 changes to our segments announced in September 2026.",
+        "timestamp": "2026-09-22T14:14:14+00:00",
+        "score": 11.0,
+        "metadata": {
+          "source": "www.microsoft.com",
+          "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast",
+          "brand": "Microsoft",
+          "title": "FY27 Q1 - Press Releases - Investor Relations - Microsoft",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_ba41ae0b73389316",
+        "text": "Article: Introducing Microsoft Scout: Your always-on personal agent | Microsoft Copilot Blog\nSource: www.microsoft.com\nPublished: 2026-06-02T18:00:00+00:00\nURL: https://www.microsoft.com/en-us/copilot/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent\nContent: Skip to content Microsoft Copilot Copilot Word Excel PowerPoint Outlook OneDrive Teams Copilot Studio Work IQ Cowork Individuals Business Enterprise Education Plans and pricing Support Customer stories Blog Copilot vs. competitors Tech community Frontier program AI for Work Roadmap Agents New user onboarding Roll-out and adoption Prompts and use cases AI knowledge Connectors Open Copilot Download the app Discover what\u2019s coming to Microsoft Ignite, Nov 17-20, 2026. Register now. / Copilot logo Powered by Microsoft Copilot Microsoft Scout is now Autopilot. Learn more. [...] Access requires Frontier enrollment, Intune policy configuration, and an opt-in attestation. Users with a GitHub Copilot license can then download and install the experience. Full setup instructions are available. Microsoft Build brings together innovations across our platforms, many of which are now showing up in Microsoft 365 Copilot: Announcing the new Work IQ APIs Work IQ: Production-ready intelligence for every agent Build collaborative agents where work happens Frontier Tuning: Teaching AI to work the way you do Omar Shashine Headshot LinkedIn Omar Shahine Corporate Vice President of Microsoft Scout [...] Corporate Vice President of Microsoft Scout Omar Shahine is a Corporate Vice President at Microsoft where he leads Microsoft Scout, an effort focused on developing the next generation of always-on personal agents for Microsoft 365. Omar has spent more than 25 years at Microsoft in product leadership roles. Prior to Microsoft Scout, he led the Microsoft Word team as part of the Copilot family of products. See more articles from this author Agents, AI Enterprise News Microsoft 365, Microsoft Copilot Related posts 6 min read Bringing CRM into the flow of work and agents into business process for sales and service teams The traditional boundaries of business applications are disappearing. 8 min read",
+        "timestamp": "2026-06-02T18:00:00+00:00",
+        "score": 10.0,
+        "metadata": {
+          "source": "www.microsoft.com",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent",
+          "brand": "Microsoft",
+          "title": "Introducing Microsoft Scout: Your always-on personal agent | Microsoft Copilot Blog",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_71220f8d7cfd35e5",
+        "text": "Article: Microsoft Dynamics 365 Business Central Pricing: 2026\nSource: www.activepieces.com\nPublished: 2026-10-23T09:08:10+00:00\nURL: https://www.activepieces.com/blog/microsoft-dynamics-365-business-central-pricing-2026\nContent: Business Central and competitor pricing Business Central and Odoo publish a per-user price you can read today, while NetSuite and Sage Intacct generally give you a number only after a sales conversation. The comparison below turns on what each vendor will put in writing. A published price is a starting point, and the limits and implementation columns are where the totals diverge. The table shows how each product charges and where the cost hides. [...] Business Central plan prices per user Read the table for what each tier costs and what it covers. Essentials and Premium differ by function, not by size, while Team Member is a different kind of seat altogether. | Plan | Price per user per month | What it includes | --- | Team Member | $8 | Read access, approvals and light entries such as time and expenses | | Essentials | $80 | Finance, sales, purchasing, inventory and basic warehousing | | Premium | $110 | Everything in Essentials, plus service management and manufacturing | Source: Microsoft Business Central pricing, , checked 2026-10-22. [...] | Users (full / Team Member) | Essentials, full users per year | Premium, full users per year | What Essentials gives up | --- --- | | 10 (8 / 2) | $6,720\u2013$7,680 | $9,600\u2013$10,560 | Manufacturing and service management | | 30 (20 / 10) | $16,800\u2013$19,200 | $24,000\u2013$26,400 | The same, across more people | | 100 (60 / 40) | $50,400\u2013$57,600 | $72,000\u2013$79,200 | The same, plus any shortfall in headroom | At either end of the range, Premium costs $30 more per full user per month. The real question is whether you need what that $30 buys. Eight full seats on Essentials cost at most $7,680 a year. Premium adds about $2,900 to that, so unless you build products or dispatch service technicians, it's money spent on features nobody opens.",
+        "timestamp": "2026-10-23T09:08:10+00:00",
+        "score": 9.0,
+        "metadata": {
+          "source": "www.activepieces.com",
+          "url": "https://www.activepieces.com/blog/microsoft-dynamics-365-business-central-pricing-2026",
+          "brand": "Microsoft",
+          "title": "Microsoft Dynamics 365 Business Central Pricing: 2026",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_580f0bf0b5861d58",
+        "text": "Article: FY27 Q1 - Press Releases - Investor Relations - Microsoft\nSource: www.microsoft.com\nPublished: 2026-09-22T14:14:14+00:00\nURL: https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast\nContent: 2026 Assets Current assets: Cash and cash equivalents$20,281$20,935 Short-term investments44,22855,908 Total cash, cash equivalents, and short-term investments64,50976,843 Accounts receivable, net of allowance for doubtful accounts of $728 and $1,04062,08480,876 Inventories1,8351,397 Other current assets57,70948,594 Total current assets186,137207,710 Property and equipment, net of accumulated depreciation of $127,208 and $118,691346,844313,076 Operating lease right-of-use assets30,17824,177 Equity and other investments37,80836,348 Goodwill119,646119,651 Intangible assets, net17,75118,609 Other long-term assets41,03938,805 Total assets$779,403$758,376 Liabilities and stockholders' equity Current liabilities: Accounts payable$42,625$42,416 Current portion of long-term debt4,3919,227 [...] All information in this release is as of September 30, 2026. The company undertakes no duty to update any forward-looking statement to conform the statement to actual results or changes in the company\u2019s expectations. For more information, press only: Microsoft Media Relations, WE Communications for Microsoft, (425) 638-7777,rrt@we-worldwide.com For more information, financial analysts and investors only: Jonathan Neilson, Vice President, Investor Relations, (425) 706-4400 [...] 20262025 Operations Net income$36,629$27,747 Adjustments to reconcile net income to net cash from operations: Depreciation, amortization, and other11,7448,147 Stock-based compensation expense3,1342,983 Net recognized losses (gains) on investments and derivatives(231)3,907 Deferred income taxes4,6092,491 Changes in operating assets and liabilities: Accounts receivable17,10416,490 Inventories(436)(192) Other current assets(1,903)(1,162) Other long-term assets(6,389)(394) Accounts payable525(614) Unearned revenue(5,942)(5,418) Income taxes(556)(2,944) Other current liabilities(4,528)(5,507) Other long-term liabilities4,240(477) Net cash from operations58,00045,057 Financing Repayments of debt(4,850)0 Common stock issued598689 Common stock repurchased(4,379)(5,650)",
+        "timestamp": "2026-09-22T14:14:14+00:00",
+        "score": 9.0,
+        "metadata": {
+          "source": "www.microsoft.com",
+          "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast",
+          "brand": "Microsoft",
+          "title": "FY27 Q1 - Press Releases - Investor Relations - Microsoft",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_af1640306a03c3cb",
+        "text": "Article: October 2026 announcements - Partner Center announcements\nSource: learn.microsoft.com\nPublished: 2026-10-29T16:03:15+00:00\nURL: https://learn.microsoft.com/en-us/partner-center/announcements/2026-october\nContent: customers now have an affordable path to AI: 1. Eligible customers can save 25% on Microsoft 365 Business Basic + Microsoft 365 Copilot Business through December 31, 2026. 2. Microsoft 365 Copilot Business also remains available as a standalone offer with 15% promotional pricing through December 31, 2026, for eligible customers purchasing 1-300 seats on an annual subscription with annual billing. Use this offer to upsell Copilot to customers already on Microsoft 365 Business Standard or Microsoft 365 Business Premium. 3. Beginning December 1, 2026, new Microsoft 365 Copilot Business purchases move to new offers that don't require a qualifying base subscription, so confirm the relevant offer and Promo ID when quoting. [...] Offer summary: Discount: 30% off the net partner price of Microsoft 365 E3, with and without Teams. Billing options: Annual commitment with annual or monthly billing. Availability: October 27, 2026, through June 30, 2027. Eligibility: Minimum order of 300 licenses on a new subscription. This promotional offer can also help create services opportunities for you across the customer journey, including pre-sale workshops, proofs of concept, deployment, and adoption services. resources. Identify eligible customers using Cloud Ascent, with the promotion integrated starting December 1, 2026. Target accounts and use the partner promo kit and AI-ready productivity and security GTM resources to start customer conversations. [...] This change goes into effect November 2, 2026. partners supporting eligible new customers with a low Office 365 or Microsoft 365 E3 footprint. We're excited to announce the new Microsoft 365 E3 30% off one-year offer (300+), available from October 27, 2026, through June 30, 2027. For a limited time, eligible CSP customers purchasing at least 300 new Microsoft 365 E3 licenses in CSP can receive 30% off the net partner price, with annual commitment and annual or monthly billing.",
+        "timestamp": "2026-10-29T16:03:15+00:00",
+        "score": 8.0,
+        "metadata": {
+          "source": "learn.microsoft.com",
+          "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october",
+          "brand": "Microsoft",
+          "title": "October 2026 announcements - Partner Center announcements",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_3d1a64aaa450a59d",
+        "text": "Article: Copilot Cowork is now generally available | Microsoft Copilot Blog\nSource: www.microsoft.com\nPublished: 2026-06-16T15:00:00+00:00\nURL: https://www.microsoft.com/en-us/copilot/blog/2026/06/16/copilot-cowork-is-now-generally-available\nContent: Skip to content Microsoft Copilot Copilot Word Excel PowerPoint Outlook OneDrive Teams Copilot Studio Work IQ Cowork Individuals Business Enterprise Education Plans and pricing Support Customer stories Blog Copilot vs. competitors Tech community Frontier program AI for Work Roadmap Agents New user onboarding Roll-out and adoption Prompts and use cases AI knowledge Connectors Open Copilot Download the app Discover what\u2019s coming to Microsoft Ignite, Nov 17-20, 2026. Register now. Today we\u2019re announcing the general availability of Copilot Cowork worldwide. [...] Model choice in Frontier. Where multiple models are available, customers can use the model picker to manage cost-per-task. Billing for Copilot Cowork begins today. Before usage ramps, admins can set spending limits and allocate budgets using the cost management controls described above. Tenants that had at least one user in the Frontier program (March 30 to June 16) who used Cowork during that period get a grace period on Cowork usage and will not be billed until July 1, 2026, to support the transition. For additional details on our cost management features, please see this Microsoft Learn article. What\u2019s new in Copilot Cowork [...] results based on tests conducted in June 2026. Actual costs and potential savings may vary depending on usage, configuration, time, and other factors.",
+        "timestamp": "2026-06-16T15:00:00+00:00",
+        "score": 8.0,
+        "metadata": {
+          "source": "www.microsoft.com",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/16/copilot-cowork-is-now-generally-available",
+          "brand": "Microsoft",
+          "title": "Copilot Cowork is now generally available | Microsoft Copilot Blog",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_747d7a7be759f393",
+        "text": "Strategic Recommendation [P1 Offensive]: Deploy Azure HealthAI and Azure FinanceAI industry bundles with built\u2011in compliance certifications and co\u2011sell with Microsoft Cloud for Healthcare partners. Rationale: Leverages Microsoft\u2019s trust and enterprise scale to capture underserved regulated\u2011industry segments where competitors lack depth",
+        "timestamp": "2026-11-07T08:07:08.410345+00:00",
+        "score": 7.0,
+        "metadata": {
+          "title": "Deploy Azure HealthAI and Azure FinanceAI ind...",
+          "priority": "P1 Offensive",
+          "action": "Deploy Azure HealthAI and Azure FinanceAI industry bundles with built\u2011in compliance certifications and co\u2011sell with Microsoft Cloud for Healthcare partners",
+          "rationale": "Leverages Microsoft\u2019s trust and enterprise scale to capture underserved regulated\u2011industry segments where competitors lack depth",
+          "expected_outcome": "Generate $3\u202fB incremental ARR by FY\u202f2027 and improve Azure\u2019s share of regulated\u2011industry cloud spend",
+          "type": "strategic_recommendation",
+          "brand": "Microsoft",
+          "fact_type": "ai_recommendation",
+          "url": ""
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_f356944ca05e6534",
+        "text": "Strategic Recommendation [P0 Critical]: Accelerate rollout of Azure Qwen AI services with volume\u2011based discounts to undercut Google\u2019s premium pricing. Rationale: Directly counters Google\u2019s pricing advantage and leverages Microsoft\u2019s recent model launch",
+        "timestamp": "2026-11-06T07:13:53.654889+00:00",
+        "score": 6.0,
+        "metadata": {
+          "priority": "P0 Critical",
+          "action": "Accelerate rollout of Azure Qwen AI services with volume\u2011based discounts to undercut Google\u2019s premium pricing",
+          "rationale": "Directly counters Google\u2019s pricing advantage and leverages Microsoft\u2019s recent model launch",
+          "expected_outcome": "Capture +3% AI compute market share within 6 months, protect margin",
+          "type": "strategic_recommendation",
+          "brand": "Microsoft",
+          "fact_type": "ai_recommendation",
+          "url": ""
+        },
+        "storage_backend": "hindsight_embedded"
+      }
+    ]
+  },
+  "what_should_we_do": {
+    "strategic_recommendations": [
+      {
+        "title": "Neutralize Amazon Web Services Pricing Pressure",
+        "priority": "P0 Critical",
+        "action": "Audit pricing parity against Amazon Web Services and deploy targeted annual incentive bundles.",
+        "rationale": "Directly counters Amazon Web Services's aggressive positioning while defending margin on renewal cohorts.",
+        "expected_outcome": "Minimizes account churn and locks in retention across key customer segments.",
+        "type": "strategic_recommendation",
+        "brand": "Microsoft",
+        "fact_type": "ai_recommendation",
+        "url": ""
+      },
+      {
+        "title": "Exploit Unaddressed Workflow Gaps",
+        "priority": "P1 Offensive",
+        "action": "Accelerate self-serve product onboarding for high-velocity teams underserved by Amazon Web Services.",
+        "rationale": "Amazon Web Services is focusing on monolithic enterprise tiers, leaving an opening in developer-first teams.",
+        "expected_outcome": "Drives 15-20% acceleration in qualified product-led conversion.",
+        "type": "strategic_recommendation",
+        "brand": "Microsoft",
+        "fact_type": "ai_recommendation",
+        "url": ""
+      },
+      {
+        "title": "Strengthen Differentiated Product Moats",
+        "priority": "P2 Strategic",
+        "action": "Double down on performance ergonomics and publish public benchmark comparisons against Google Cloud.",
+        "rationale": "Shifts the buyer conversation from a commodity pricing contest to superior execution speed and craft.",
+        "expected_outcome": "Reinforces premium brand equity and improves net revenue retention.",
+        "type": "strategic_recommendation",
+        "brand": "Microsoft",
+        "fact_type": "ai_recommendation",
+        "url": ""
+      }
+    ],
+    "founder_decisions": []
+  },
+  "hindsight_memory": {
+    "bank_id": "godseye-intel-microsoft-com",
+    "storage_backend": "hindsight_embedded",
+    "is_memory_enabled": true,
+    "is_baseline": false,
+    "reflection_text": "Microsoft\u2019s competitive trajectory reveals a strategic pivot from opaque, sales-driven pricing to transparent, tiered structures, exemplified by the publication of specific per-user costs for Dynamics 365 Business Central and aggressive promotional discounts, such as 30% off Microsoft 365 E3 for partners. This pricing clarity is paired with a shift in product positioning toward autonomous, always-on AI agents, marked by the rebranding of Microsoft Scout to Autopilot and the general availability of Copilot Cowork with granular cost-management controls. Developing strategies include leveraging open-weight models like Qwen3.5-9B for high-speed, low-cost classification tasks via Microsoft Foundry, while continuing the trend of integrating AI directly into core productivity workflows to drive adoption and upsell opportunities.",
+    "recalled_nodes_count": 8,
+    "recalled_nodes": [
+      {
+        "id": "node_a60c5b8ae8dfc6b5",
+        "text": "Article: FY27 Q1 - Press Releases - Investor Relations - Microsoft\nSource: www.microsoft.com\nPublished: 2026-09-22T14:14:14+00:00\nURL: https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast\nContent: 2026 Assets Current assets: Cash and cash equivalents$20,281$20,935 Short-term investments44,22855,908 Total cash, cash equivalents, and short-term investments64,50976,843 Accounts receivable, net of allowance for doubtful accounts of $728 and $1,04062,08480,876 Inventories1,8351,397 Other current assets57,70948,594 Total current assets186,137207,710 Property and equipment, net of accumulated depreciation of $127,208 and $118,691346,844313,076 Operating lease right-of-use assets30,17824,177 Equity and other investments37,80836,348 Goodwill119,646119,651 Intangible assets, net17,75118,609 Other long-term assets41,03938,805 Total assets$779,403$758,376 Liabilities and stockholders' equity Current liabilities: Accounts payable$42,625$42,416 Current portion of long-term debt4,3919,227 [...] All information in this release is as of September 30, 2026. The company undertakes no duty to update any forward-looking statement to conform the statement to actual results or changes in the company\u2019s expectations. For more information, press only: Microsoft Media Relations, WE Communications for Microsoft, (425) 638-7777,rrt@we-worldwide.com For more information, financial analysts and investors only: Jonathan Neilson, Vice President, Investor Relations, (425) 706-4400 [...] PRODUCT AND SERVICE OFFERINGS REVENUE (In millions) (Unaudited) Three Months Ended September 30, 20262025 Azure$33,165$22,384 Microsoft 365 cloud27,77823,694 Productivity and server licensing8,4078,678 Search and advertising6,5545,942 XBOX5,3795,508 Industry solutions5,3374,894 Windows OEM and devices3,5514,551 Frontier and support services2,1082,022 Total revenue$92,279$77,673 We have recast certain prior period amounts to conform to the way we internally manage and monitor our business, which reflects the fiscal year 2027 changes to our segments announced in September 2026.",
+        "timestamp": "2026-09-22T14:14:14+00:00",
+        "score": 11.0,
+        "metadata": {
+          "source": "www.microsoft.com",
+          "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast",
+          "brand": "Microsoft",
+          "title": "FY27 Q1 - Press Releases - Investor Relations - Microsoft",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_ba41ae0b73389316",
+        "text": "Article: Introducing Microsoft Scout: Your always-on personal agent | Microsoft Copilot Blog\nSource: www.microsoft.com\nPublished: 2026-06-02T18:00:00+00:00\nURL: https://www.microsoft.com/en-us/copilot/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent\nContent: Skip to content Microsoft Copilot Copilot Word Excel PowerPoint Outlook OneDrive Teams Copilot Studio Work IQ Cowork Individuals Business Enterprise Education Plans and pricing Support Customer stories Blog Copilot vs. competitors Tech community Frontier program AI for Work Roadmap Agents New user onboarding Roll-out and adoption Prompts and use cases AI knowledge Connectors Open Copilot Download the app Discover what\u2019s coming to Microsoft Ignite, Nov 17-20, 2026. Register now. / Copilot logo Powered by Microsoft Copilot Microsoft Scout is now Autopilot. Learn more. [...] Access requires Frontier enrollment, Intune policy configuration, and an opt-in attestation. Users with a GitHub Copilot license can then download and install the experience. Full setup instructions are available. Microsoft Build brings together innovations across our platforms, many of which are now showing up in Microsoft 365 Copilot: Announcing the new Work IQ APIs Work IQ: Production-ready intelligence for every agent Build collaborative agents where work happens Frontier Tuning: Teaching AI to work the way you do Omar Shashine Headshot LinkedIn Omar Shahine Corporate Vice President of Microsoft Scout [...] Corporate Vice President of Microsoft Scout Omar Shahine is a Corporate Vice President at Microsoft where he leads Microsoft Scout, an effort focused on developing the next generation of always-on personal agents for Microsoft 365. Omar has spent more than 25 years at Microsoft in product leadership roles. Prior to Microsoft Scout, he led the Microsoft Word team as part of the Copilot family of products. See more articles from this author Agents, AI Enterprise News Microsoft 365, Microsoft Copilot Related posts 6 min read Bringing CRM into the flow of work and agents into business process for sales and service teams The traditional boundaries of business applications are disappearing. 8 min read",
+        "timestamp": "2026-06-02T18:00:00+00:00",
+        "score": 10.0,
+        "metadata": {
+          "source": "www.microsoft.com",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent",
+          "brand": "Microsoft",
+          "title": "Introducing Microsoft Scout: Your always-on personal agent | Microsoft Copilot Blog",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_71220f8d7cfd35e5",
+        "text": "Article: Microsoft Dynamics 365 Business Central Pricing: 2026\nSource: www.activepieces.com\nPublished: 2026-10-23T09:08:10+00:00\nURL: https://www.activepieces.com/blog/microsoft-dynamics-365-business-central-pricing-2026\nContent: Business Central and competitor pricing Business Central and Odoo publish a per-user price you can read today, while NetSuite and Sage Intacct generally give you a number only after a sales conversation. The comparison below turns on what each vendor will put in writing. A published price is a starting point, and the limits and implementation columns are where the totals diverge. The table shows how each product charges and where the cost hides. [...] Business Central plan prices per user Read the table for what each tier costs and what it covers. Essentials and Premium differ by function, not by size, while Team Member is a different kind of seat altogether. | Plan | Price per user per month | What it includes | --- | Team Member | $8 | Read access, approvals and light entries such as time and expenses | | Essentials | $80 | Finance, sales, purchasing, inventory and basic warehousing | | Premium | $110 | Everything in Essentials, plus service management and manufacturing | Source: Microsoft Business Central pricing, , checked 2026-10-22. [...] | Users (full / Team Member) | Essentials, full users per year | Premium, full users per year | What Essentials gives up | --- --- | | 10 (8 / 2) | $6,720\u2013$7,680 | $9,600\u2013$10,560 | Manufacturing and service management | | 30 (20 / 10) | $16,800\u2013$19,200 | $24,000\u2013$26,400 | The same, across more people | | 100 (60 / 40) | $50,400\u2013$57,600 | $72,000\u2013$79,200 | The same, plus any shortfall in headroom | At either end of the range, Premium costs $30 more per full user per month. The real question is whether you need what that $30 buys. Eight full seats on Essentials cost at most $7,680 a year. Premium adds about $2,900 to that, so unless you build products or dispatch service technicians, it's money spent on features nobody opens.",
+        "timestamp": "2026-10-23T09:08:10+00:00",
+        "score": 9.0,
+        "metadata": {
+          "source": "www.activepieces.com",
+          "url": "https://www.activepieces.com/blog/microsoft-dynamics-365-business-central-pricing-2026",
+          "brand": "Microsoft",
+          "title": "Microsoft Dynamics 365 Business Central Pricing: 2026",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_580f0bf0b5861d58",
+        "text": "Article: FY27 Q1 - Press Releases - Investor Relations - Microsoft\nSource: www.microsoft.com\nPublished: 2026-09-22T14:14:14+00:00\nURL: https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast\nContent: 2026 Assets Current assets: Cash and cash equivalents$20,281$20,935 Short-term investments44,22855,908 Total cash, cash equivalents, and short-term investments64,50976,843 Accounts receivable, net of allowance for doubtful accounts of $728 and $1,04062,08480,876 Inventories1,8351,397 Other current assets57,70948,594 Total current assets186,137207,710 Property and equipment, net of accumulated depreciation of $127,208 and $118,691346,844313,076 Operating lease right-of-use assets30,17824,177 Equity and other investments37,80836,348 Goodwill119,646119,651 Intangible assets, net17,75118,609 Other long-term assets41,03938,805 Total assets$779,403$758,376 Liabilities and stockholders' equity Current liabilities: Accounts payable$42,625$42,416 Current portion of long-term debt4,3919,227 [...] All information in this release is as of September 30, 2026. The company undertakes no duty to update any forward-looking statement to conform the statement to actual results or changes in the company\u2019s expectations. For more information, press only: Microsoft Media Relations, WE Communications for Microsoft, (425) 638-7777,rrt@we-worldwide.com For more information, financial analysts and investors only: Jonathan Neilson, Vice President, Investor Relations, (425) 706-4400 [...] 20262025 Operations Net income$36,629$27,747 Adjustments to reconcile net income to net cash from operations: Depreciation, amortization, and other11,7448,147 Stock-based compensation expense3,1342,983 Net recognized losses (gains) on investments and derivatives(231)3,907 Deferred income taxes4,6092,491 Changes in operating assets and liabilities: Accounts receivable17,10416,490 Inventories(436)(192) Other current assets(1,903)(1,162) Other long-term assets(6,389)(394) Accounts payable525(614) Unearned revenue(5,942)(5,418) Income taxes(556)(2,944) Other current liabilities(4,528)(5,507) Other long-term liabilities4,240(477) Net cash from operations58,00045,057 Financing Repayments of debt(4,850)0 Common stock issued598689 Common stock repurchased(4,379)(5,650)",
+        "timestamp": "2026-09-22T14:14:14+00:00",
+        "score": 9.0,
+        "metadata": {
+          "source": "www.microsoft.com",
+          "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast",
+          "brand": "Microsoft",
+          "title": "FY27 Q1 - Press Releases - Investor Relations - Microsoft",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_af1640306a03c3cb",
+        "text": "Article: October 2026 announcements - Partner Center announcements\nSource: learn.microsoft.com\nPublished: 2026-10-29T16:03:15+00:00\nURL: https://learn.microsoft.com/en-us/partner-center/announcements/2026-october\nContent: customers now have an affordable path to AI: 1. Eligible customers can save 25% on Microsoft 365 Business Basic + Microsoft 365 Copilot Business through December 31, 2026. 2. Microsoft 365 Copilot Business also remains available as a standalone offer with 15% promotional pricing through December 31, 2026, for eligible customers purchasing 1-300 seats on an annual subscription with annual billing. Use this offer to upsell Copilot to customers already on Microsoft 365 Business Standard or Microsoft 365 Business Premium. 3. Beginning December 1, 2026, new Microsoft 365 Copilot Business purchases move to new offers that don't require a qualifying base subscription, so confirm the relevant offer and Promo ID when quoting. [...] Offer summary: Discount: 30% off the net partner price of Microsoft 365 E3, with and without Teams. Billing options: Annual commitment with annual or monthly billing. Availability: October 27, 2026, through June 30, 2027. Eligibility: Minimum order of 300 licenses on a new subscription. This promotional offer can also help create services opportunities for you across the customer journey, including pre-sale workshops, proofs of concept, deployment, and adoption services. resources. Identify eligible customers using Cloud Ascent, with the promotion integrated starting December 1, 2026. Target accounts and use the partner promo kit and AI-ready productivity and security GTM resources to start customer conversations. [...] This change goes into effect November 2, 2026. partners supporting eligible new customers with a low Office 365 or Microsoft 365 E3 footprint. We're excited to announce the new Microsoft 365 E3 30% off one-year offer (300+), available from October 27, 2026, through June 30, 2027. For a limited time, eligible CSP customers purchasing at least 300 new Microsoft 365 E3 licenses in CSP can receive 30% off the net partner price, with annual commitment and annual or monthly billing.",
+        "timestamp": "2026-10-29T16:03:15+00:00",
+        "score": 8.0,
+        "metadata": {
+          "source": "learn.microsoft.com",
+          "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october",
+          "brand": "Microsoft",
+          "title": "October 2026 announcements - Partner Center announcements",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_3d1a64aaa450a59d",
+        "text": "Article: Copilot Cowork is now generally available | Microsoft Copilot Blog\nSource: www.microsoft.com\nPublished: 2026-06-16T15:00:00+00:00\nURL: https://www.microsoft.com/en-us/copilot/blog/2026/06/16/copilot-cowork-is-now-generally-available\nContent: Skip to content Microsoft Copilot Copilot Word Excel PowerPoint Outlook OneDrive Teams Copilot Studio Work IQ Cowork Individuals Business Enterprise Education Plans and pricing Support Customer stories Blog Copilot vs. competitors Tech community Frontier program AI for Work Roadmap Agents New user onboarding Roll-out and adoption Prompts and use cases AI knowledge Connectors Open Copilot Download the app Discover what\u2019s coming to Microsoft Ignite, Nov 17-20, 2026. Register now. Today we\u2019re announcing the general availability of Copilot Cowork worldwide. [...] Model choice in Frontier. Where multiple models are available, customers can use the model picker to manage cost-per-task. Billing for Copilot Cowork begins today. Before usage ramps, admins can set spending limits and allocate budgets using the cost management controls described above. Tenants that had at least one user in the Frontier program (March 30 to June 16) who used Cowork during that period get a grace period on Cowork usage and will not be billed until July 1, 2026, to support the transition. For additional details on our cost management features, please see this Microsoft Learn article. What\u2019s new in Copilot Cowork [...] results based on tests conducted in June 2026. Actual costs and potential savings may vary depending on usage, configuration, time, and other factors.",
+        "timestamp": "2026-06-16T15:00:00+00:00",
+        "score": 8.0,
+        "metadata": {
+          "source": "www.microsoft.com",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/16/copilot-cowork-is-now-generally-available",
+          "brand": "Microsoft",
+          "title": "Copilot Cowork is now generally available | Microsoft Copilot Blog",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_747d7a7be759f393",
+        "text": "Strategic Recommendation [P1 Offensive]: Deploy Azure HealthAI and Azure FinanceAI industry bundles with built\u2011in compliance certifications and co\u2011sell with Microsoft Cloud for Healthcare partners. Rationale: Leverages Microsoft\u2019s trust and enterprise scale to capture underserved regulated\u2011industry segments where competitors lack depth",
+        "timestamp": "2026-11-07T08:07:08.410345+00:00",
+        "score": 7.0,
+        "metadata": {
+          "title": "Deploy Azure HealthAI and Azure FinanceAI ind...",
+          "priority": "P1 Offensive",
+          "action": "Deploy Azure HealthAI and Azure FinanceAI industry bundles with built\u2011in compliance certifications and co\u2011sell with Microsoft Cloud for Healthcare partners",
+          "rationale": "Leverages Microsoft\u2019s trust and enterprise scale to capture underserved regulated\u2011industry segments where competitors lack depth",
+          "expected_outcome": "Generate $3\u202fB incremental ARR by FY\u202f2027 and improve Azure\u2019s share of regulated\u2011industry cloud spend",
+          "type": "strategic_recommendation",
+          "brand": "Microsoft",
+          "fact_type": "ai_recommendation",
+          "url": ""
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_f356944ca05e6534",
+        "text": "Strategic Recommendation [P0 Critical]: Accelerate rollout of Azure Qwen AI services with volume\u2011based discounts to undercut Google\u2019s premium pricing. Rationale: Directly counters Google\u2019s pricing advantage and leverages Microsoft\u2019s recent model launch",
+        "timestamp": "2026-11-06T07:13:53.654889+00:00",
+        "score": 6.0,
+        "metadata": {
+          "priority": "P0 Critical",
+          "action": "Accelerate rollout of Azure Qwen AI services with volume\u2011based discounts to undercut Google\u2019s premium pricing",
+          "rationale": "Directly counters Google\u2019s pricing advantage and leverages Microsoft\u2019s recent model launch",
+          "expected_outcome": "Capture +3% AI compute market share within 6 months, protect margin",
+          "type": "strategic_recommendation",
+          "brand": "Microsoft",
+          "fact_type": "ai_recommendation",
+          "url": ""
+        },
+        "storage_backend": "hindsight_embedded"
+      }
+    ],
+    "neural_network": {
+      "center_node": {
+        "id": "node_center",
+        "label": "Microsoft",
+        "color": "#0284c7"
+      },
+      "radial_nodes": [
+        {
+          "id": "node_d98e77f3f9624027",
+          "chip_id": "#node_d98e77f",
+          "label": "FY27 Q1 - Press ...",
+          "full_title": "FY27 Q1 - Press Releases - Investor Relations - Microsoft",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 270,
+          "content": "Article: FY27 Q1 - Press Releases - Investor Relations - Microsoft\nSource: www.microsoft.com\nPublished: 2026-09-22T14:14:14+00:00\nURL: https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast\nContent: 2026 Assets Current assets: Cash and cash equivalents$20,281$20,935 Short-term investments44,22855,908 Total cash, cash equivalents, and short-term investments64,50976,843 Accounts receivable, net of allowance for doubtful accounts of $728 and $1,04062,08480,876 Inventories1,8351,397 Other current assets57,70948,594 Total current assets186,137207,710 Property and equipment, net of accumulated depreciation of $127,208 and $118,691346,844313,076 Operating lease right-of-use assets30,17824,177 Equity and other investments37,80836,348 Goodwill119,646119,651 Intangible assets, net17,75118,609 Other long-term assets41,03938,805 Total assets$779,403$758,376 Liabilities and stockholders' equity Current liabilities: Accounts payable$42,625$42,416 Current portion of long-term debt4,3919,227 [...] All information in this release is as of September 30, 2026. The company undertakes no duty to update any forward-looking statement to conform the statement to actual results or changes in the company\u2019s expectations. For more information, press only: Microsoft Media Relations, WE Communications for Microsoft, (425) 638-7777,rrt@we-worldwide.com For more information, financial analysts and investors only: Jonathan Neilson, Vice President, Investor Relations, (425) 706-4400 [...] PRODUCT AND SERVICE OFFERINGS REVENUE (In millions) (Unaudited) Three Months Ended September 30, 20262025 Azure$33,165$22,384 Microsoft 365 cloud27,77823,694 Productivity and server licensing8,4078,678 Search and advertising6,5545,942 XBOX5,3795,508 Industry solutions5,3374,894 Windows OEM and devices3,5514,551 Frontier and support services2,1082,022 Total revenue$92,279$77,673 We have recast certain prior period amounts to conform to the way we internally manage and monitor our business, which reflects the fiscal year 2027 changes to our segments announced in September 2026.",
+          "timestamp": "2026-09-22T14:14:14+00:00"
+        },
+        {
+          "id": "node_c1caf9c359be4ebf",
+          "chip_id": "#node_c1caf9c",
+          "label": "Introducing Micr...",
+          "full_title": "Introducing Microsoft Scout: Your always-on personal agent | Microsoft Copilot Blog",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 320,
+          "content": "Article: Introducing Microsoft Scout: Your always-on personal agent | Microsoft Copilot Blog\nSource: www.microsoft.com\nPublished: 2026-06-02T18:00:00+00:00\nURL: https://www.microsoft.com/en-us/copilot/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent\nContent: Skip to content Microsoft Copilot Copilot Word Excel PowerPoint Outlook OneDrive Teams Copilot Studio Work IQ Cowork Individuals Business Enterprise Education Plans and pricing Support Customer stories Blog Copilot vs. competitors Tech community Frontier program AI for Work Roadmap Agents New user onboarding Roll-out and adoption Prompts and use cases AI knowledge Connectors Open Copilot Download the app Discover what\u2019s coming to Microsoft Ignite, Nov 17-20, 2026. Register now. / Copilot logo Powered by Microsoft Copilot Microsoft Scout is now Autopilot. Learn more. [...] Access requires Frontier enrollment, Intune policy configuration, and an opt-in attestation. Users with a GitHub Copilot license can then download and install the experience. Full setup instructions are available. Microsoft Build brings together innovations across our platforms, many of which are now showing up in Microsoft 365 Copilot: Announcing the new Work IQ APIs Work IQ: Production-ready intelligence for every agent Build collaborative agents where work happens Frontier Tuning: Teaching AI to work the way you do Omar Shashine Headshot LinkedIn Omar Shahine Corporate Vice President of Microsoft Scout [...] Corporate Vice President of Microsoft Scout Omar Shahine is a Corporate Vice President at Microsoft where he leads Microsoft Scout, an effort focused on developing the next generation of always-on personal agents for Microsoft 365. Omar has spent more than 25 years at Microsoft in product leadership roles. Prior to Microsoft Scout, he led the Microsoft Word team as part of the Copilot family of products. See more articles from this author Agents, AI Enterprise News Microsoft 365, Microsoft Copilot Related posts 6 min read Bringing CRM into the flow of work and agents into business process for sales and service teams The traditional boundaries of business applications are disappearing. 8 min read",
+          "timestamp": "2026-06-02T18:00:00+00:00"
+        },
+        {
+          "id": "node_b6bf1f22d7534ba7",
+          "chip_id": "#node_b6bf1f2",
+          "label": "Microsoft Dynami...",
+          "full_title": "Microsoft Dynamics 365 Business Central Pricing: 2026",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 15,
+          "content": "Article: Microsoft Dynamics 365 Business Central Pricing: 2026\nSource: www.activepieces.com\nPublished: 2026-10-23T09:08:10+00:00\nURL: https://www.activepieces.com/blog/microsoft-dynamics-365-business-central-pricing-2026\nContent: Business Central and competitor pricing Business Central and Odoo publish a per-user price you can read today, while NetSuite and Sage Intacct generally give you a number only after a sales conversation. The comparison below turns on what each vendor will put in writing. A published price is a starting point, and the limits and implementation columns are where the totals diverge. The table shows how each product charges and where the cost hides. [...] Business Central plan prices per user Read the table for what each tier costs and what it covers. Essentials and Premium differ by function, not by size, while Team Member is a different kind of seat altogether. | Plan | Price per user per month | What it includes | --- | Team Member | $8 | Read access, approvals and light entries such as time and expenses | | Essentials | $80 | Finance, sales, purchasing, inventory and basic warehousing | | Premium | $110 | Everything in Essentials, plus service management and manufacturing | Source: Microsoft Business Central pricing, , checked 2026-10-22. [...] | Users (full / Team Member) | Essentials, full users per year | Premium, full users per year | What Essentials gives up | --- --- | | 10 (8 / 2) | $6,720\u2013$7,680 | $9,600\u2013$10,560 | Manufacturing and service management | | 30 (20 / 10) | $16,800\u2013$19,200 | $24,000\u2013$26,400 | The same, across more people | | 100 (60 / 40) | $50,400\u2013$57,600 | $72,000\u2013$79,200 | The same, plus any shortfall in headroom | At either end of the range, Premium costs $30 more per full user per month. The real question is whether you need what that $30 buys. Eight full seats on Essentials cost at most $7,680 a year. Premium adds about $2,900 to that, so unless you build products or dispatch service technicians, it's money spent on features nobody opens.",
+          "timestamp": "2026-10-23T09:08:10+00:00"
+        },
+        {
+          "id": "node_5a8c63f4d4b94b34",
+          "chip_id": "#node_5a8c63f",
+          "label": "FY27 Q1 - Press ...",
+          "full_title": "FY27 Q1 - Press Releases - Investor Relations - Microsoft",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 65,
+          "content": "Article: FY27 Q1 - Press Releases - Investor Relations - Microsoft\nSource: www.microsoft.com\nPublished: 2026-09-22T14:14:14+00:00\nURL: https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast\nContent: 2026 Assets Current assets: Cash and cash equivalents$20,281$20,935 Short-term investments44,22855,908 Total cash, cash equivalents, and short-term investments64,50976,843 Accounts receivable, net of allowance for doubtful accounts of $728 and $1,04062,08480,876 Inventories1,8351,397 Other current assets57,70948,594 Total current assets186,137207,710 Property and equipment, net of accumulated depreciation of $127,208 and $118,691346,844313,076 Operating lease right-of-use assets30,17824,177 Equity and other investments37,80836,348 Goodwill119,646119,651 Intangible assets, net17,75118,609 Other long-term assets41,03938,805 Total assets$779,403$758,376 Liabilities and stockholders' equity Current liabilities: Accounts payable$42,625$42,416 Current portion of long-term debt4,3919,227 [...] All information in this release is as of September 30, 2026. The company undertakes no duty to update any forward-looking statement to conform the statement to actual results or changes in the company\u2019s expectations. For more information, press only: Microsoft Media Relations, WE Communications for Microsoft, (425) 638-7777,rrt@we-worldwide.com For more information, financial analysts and investors only: Jonathan Neilson, Vice President, Investor Relations, (425) 706-4400 [...] 20262025 Operations Net income$36,629$27,747 Adjustments to reconcile net income to net cash from operations: Depreciation, amortization, and other11,7448,147 Stock-based compensation expense3,1342,983 Net recognized losses (gains) on investments and derivatives(231)3,907 Deferred income taxes4,6092,491 Changes in operating assets and liabilities: Accounts receivable17,10416,490 Inventories(436)(192) Other current assets(1,903)(1,162) Other long-term assets(6,389)(394) Accounts payable525(614) Unearned revenue(5,942)(5,418) Income taxes(556)(2,944) Other current liabilities(4,528)(5,507) Other long-term liabilities4,240(477) Net cash from operations58,00045,057 Financing Repayments of debt(4,850)0 Common stock issued598689 Common stock repurchased(4,379)(5,650)",
+          "timestamp": "2026-09-22T14:14:14+00:00"
+        },
+        {
+          "id": "node_beab0638d7af4f78",
+          "chip_id": "#node_beab063",
+          "label": "October 2026 ann...",
+          "full_title": "October 2026 announcements - Partner Center announcements",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 90,
+          "content": "Article: October 2026 announcements - Partner Center announcements\nSource: learn.microsoft.com\nPublished: 2026-10-29T16:03:15+00:00\nURL: https://learn.microsoft.com/en-us/partner-center/announcements/2026-october\nContent: customers now have an affordable path to AI: 1. Eligible customers can save 25% on Microsoft 365 Business Basic + Microsoft 365 Copilot Business through December 31, 2026. 2. Microsoft 365 Copilot Business also remains available as a standalone offer with 15% promotional pricing through December 31, 2026, for eligible customers purchasing 1-300 seats on an annual subscription with annual billing. Use this offer to upsell Copilot to customers already on Microsoft 365 Business Standard or Microsoft 365 Business Premium. 3. Beginning December 1, 2026, new Microsoft 365 Copilot Business purchases move to new offers that don't require a qualifying base subscription, so confirm the relevant offer and Promo ID when quoting. [...] Offer summary: Discount: 30% off the net partner price of Microsoft 365 E3, with and without Teams. Billing options: Annual commitment with annual or monthly billing. Availability: October 27, 2026, through June 30, 2027. Eligibility: Minimum order of 300 licenses on a new subscription. This promotional offer can also help create services opportunities for you across the customer journey, including pre-sale workshops, proofs of concept, deployment, and adoption services. resources. Identify eligible customers using Cloud Ascent, with the promotion integrated starting December 1, 2026. Target accounts and use the partner promo kit and AI-ready productivity and security GTM resources to start customer conversations. [...] This change goes into effect November 2, 2026. partners supporting eligible new customers with a low Office 365 or Microsoft 365 E3 footprint. We're excited to announce the new Microsoft 365 E3 30% off one-year offer (300+), available from October 27, 2026, through June 30, 2027. For a limited time, eligible CSP customers purchasing at least 300 new Microsoft 365 E3 licenses in CSP can receive 30% off the net partner price, with annual commitment and annual or monthly billing.",
+          "timestamp": "2026-10-29T16:03:15+00:00"
+        },
+        {
+          "id": "node_656cdea7bde543e8",
+          "chip_id": "#node_656cdea",
+          "label": "Audit pricing pari...",
+          "full_title": "Audit pricing parity against Amazon Web Services and deploy targeted annual incentive bundles.",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 140,
+          "content": "Strategic Move [P0 Critical]: Audit pricing parity against Amazon Web Services and deploy targeted annual incentive bundles.. Rationale: Directly counters Amazon Web Services's aggressive positioning while defending margin on renewal cohorts.",
+          "timestamp": "2026-11-07T15:04:41.165179+00:00"
+        },
+        {
+          "id": "node_41c50db1f56f4b88",
+          "chip_id": "#node_41c50db",
+          "label": "Accelerate self-se...",
+          "full_title": "Accelerate self-serve product onboarding for high-velocity teams underserved by Amazon Web Services.",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 195,
+          "content": "Strategic Move [P1 Offensive]: Accelerate self-serve product onboarding for high-velocity teams underserved by Amazon Web Services.. Rationale: Amazon Web Services is focusing on monolithic enterprise tiers, leaving an opening in developer-first teams.",
+          "timestamp": "2026-11-07T15:04:41.165183+00:00"
+        },
+        {
+          "id": "node_d3f4448665a34252",
+          "chip_id": "#node_d3f4448",
+          "label": "Double down on per...",
+          "full_title": "Double down on performance ergonomics and publish public benchmark comparisons against Google Cloud.",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 235,
+          "content": "Strategic Move [P2 Strategic]: Double down on performance ergonomics and publish public benchmark comparisons against Google Cloud.. Rationale: Shifts the buyer conversation from a commodity pricing contest to superior execution speed and craft.",
+          "timestamp": "2026-11-07T15:04:41.165186+00:00"
+        }
+      ],
+      "recalled_chips": [
+        "#node_d98e77f",
+        "#node_c1caf9c",
+        "#node_b6bf1f2",
+        "#node_5a8c63f",
+        "#node_beab063",
+        "#node_656cdea"
+      ],
+      "instant_prompts": [
+        "What is Microsoft's pricing moat?",
+        "How have competitor prices shifted?",
+        "What strategic counter-move should we execute?"
+      ]
+    },
+    "neural_nodes": [
+      {
+        "id": "node_d98e77f3f9624027",
+        "chip_id": "#node_d98e77f",
+        "label": "FY27 Q1 - Press ...",
+        "full_title": "FY27 Q1 - Press Releases - Investor Relations - Microsoft",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 270,
+        "content": "Article: FY27 Q1 - Press Releases - Investor Relations - Microsoft\nSource: www.microsoft.com\nPublished: 2026-09-22T14:14:14+00:00\nURL: https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast\nContent: 2026 Assets Current assets: Cash and cash equivalents$20,281$20,935 Short-term investments44,22855,908 Total cash, cash equivalents, and short-term investments64,50976,843 Accounts receivable, net of allowance for doubtful accounts of $728 and $1,04062,08480,876 Inventories1,8351,397 Other current assets57,70948,594 Total current assets186,137207,710 Property and equipment, net of accumulated depreciation of $127,208 and $118,691346,844313,076 Operating lease right-of-use assets30,17824,177 Equity and other investments37,80836,348 Goodwill119,646119,651 Intangible assets, net17,75118,609 Other long-term assets41,03938,805 Total assets$779,403$758,376 Liabilities and stockholders' equity Current liabilities: Accounts payable$42,625$42,416 Current portion of long-term debt4,3919,227 [...] All information in this release is as of September 30, 2026. The company undertakes no duty to update any forward-looking statement to conform the statement to actual results or changes in the company\u2019s expectations. For more information, press only: Microsoft Media Relations, WE Communications for Microsoft, (425) 638-7777,rrt@we-worldwide.com For more information, financial analysts and investors only: Jonathan Neilson, Vice President, Investor Relations, (425) 706-4400 [...] PRODUCT AND SERVICE OFFERINGS REVENUE (In millions) (Unaudited) Three Months Ended September 30, 20262025 Azure$33,165$22,384 Microsoft 365 cloud27,77823,694 Productivity and server licensing8,4078,678 Search and advertising6,5545,942 XBOX5,3795,508 Industry solutions5,3374,894 Windows OEM and devices3,5514,551 Frontier and support services2,1082,022 Total revenue$92,279$77,673 We have recast certain prior period amounts to conform to the way we internally manage and monitor our business, which reflects the fiscal year 2027 changes to our segments announced in September 2026.",
+        "timestamp": "2026-09-22T14:14:14+00:00"
+      },
+      {
+        "id": "node_c1caf9c359be4ebf",
+        "chip_id": "#node_c1caf9c",
+        "label": "Introducing Micr...",
+        "full_title": "Introducing Microsoft Scout: Your always-on personal agent | Microsoft Copilot Blog",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 320,
+        "content": "Article: Introducing Microsoft Scout: Your always-on personal agent | Microsoft Copilot Blog\nSource: www.microsoft.com\nPublished: 2026-06-02T18:00:00+00:00\nURL: https://www.microsoft.com/en-us/copilot/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent\nContent: Skip to content Microsoft Copilot Copilot Word Excel PowerPoint Outlook OneDrive Teams Copilot Studio Work IQ Cowork Individuals Business Enterprise Education Plans and pricing Support Customer stories Blog Copilot vs. competitors Tech community Frontier program AI for Work Roadmap Agents New user onboarding Roll-out and adoption Prompts and use cases AI knowledge Connectors Open Copilot Download the app Discover what\u2019s coming to Microsoft Ignite, Nov 17-20, 2026. Register now. / Copilot logo Powered by Microsoft Copilot Microsoft Scout is now Autopilot. Learn more. [...] Access requires Frontier enrollment, Intune policy configuration, and an opt-in attestation. Users with a GitHub Copilot license can then download and install the experience. Full setup instructions are available. Microsoft Build brings together innovations across our platforms, many of which are now showing up in Microsoft 365 Copilot: Announcing the new Work IQ APIs Work IQ: Production-ready intelligence for every agent Build collaborative agents where work happens Frontier Tuning: Teaching AI to work the way you do Omar Shashine Headshot LinkedIn Omar Shahine Corporate Vice President of Microsoft Scout [...] Corporate Vice President of Microsoft Scout Omar Shahine is a Corporate Vice President at Microsoft where he leads Microsoft Scout, an effort focused on developing the next generation of always-on personal agents for Microsoft 365. Omar has spent more than 25 years at Microsoft in product leadership roles. Prior to Microsoft Scout, he led the Microsoft Word team as part of the Copilot family of products. See more articles from this author Agents, AI Enterprise News Microsoft 365, Microsoft Copilot Related posts 6 min read Bringing CRM into the flow of work and agents into business process for sales and service teams The traditional boundaries of business applications are disappearing. 8 min read",
+        "timestamp": "2026-06-02T18:00:00+00:00"
+      },
+      {
+        "id": "node_b6bf1f22d7534ba7",
+        "chip_id": "#node_b6bf1f2",
+        "label": "Microsoft Dynami...",
+        "full_title": "Microsoft Dynamics 365 Business Central Pricing: 2026",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 15,
+        "content": "Article: Microsoft Dynamics 365 Business Central Pricing: 2026\nSource: www.activepieces.com\nPublished: 2026-10-23T09:08:10+00:00\nURL: https://www.activepieces.com/blog/microsoft-dynamics-365-business-central-pricing-2026\nContent: Business Central and competitor pricing Business Central and Odoo publish a per-user price you can read today, while NetSuite and Sage Intacct generally give you a number only after a sales conversation. The comparison below turns on what each vendor will put in writing. A published price is a starting point, and the limits and implementation columns are where the totals diverge. The table shows how each product charges and where the cost hides. [...] Business Central plan prices per user Read the table for what each tier costs and what it covers. Essentials and Premium differ by function, not by size, while Team Member is a different kind of seat altogether. | Plan | Price per user per month | What it includes | --- | Team Member | $8 | Read access, approvals and light entries such as time and expenses | | Essentials | $80 | Finance, sales, purchasing, inventory and basic warehousing | | Premium | $110 | Everything in Essentials, plus service management and manufacturing | Source: Microsoft Business Central pricing, , checked 2026-10-22. [...] | Users (full / Team Member) | Essentials, full users per year | Premium, full users per year | What Essentials gives up | --- --- | | 10 (8 / 2) | $6,720\u2013$7,680 | $9,600\u2013$10,560 | Manufacturing and service management | | 30 (20 / 10) | $16,800\u2013$19,200 | $24,000\u2013$26,400 | The same, across more people | | 100 (60 / 40) | $50,400\u2013$57,600 | $72,000\u2013$79,200 | The same, plus any shortfall in headroom | At either end of the range, Premium costs $30 more per full user per month. The real question is whether you need what that $30 buys. Eight full seats on Essentials cost at most $7,680 a year. Premium adds about $2,900 to that, so unless you build products or dispatch service technicians, it's money spent on features nobody opens.",
+        "timestamp": "2026-10-23T09:08:10+00:00"
+      },
+      {
+        "id": "node_5a8c63f4d4b94b34",
+        "chip_id": "#node_5a8c63f",
+        "label": "FY27 Q1 - Press ...",
+        "full_title": "FY27 Q1 - Press Releases - Investor Relations - Microsoft",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 65,
+        "content": "Article: FY27 Q1 - Press Releases - Investor Relations - Microsoft\nSource: www.microsoft.com\nPublished: 2026-09-22T14:14:14+00:00\nURL: https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast\nContent: 2026 Assets Current assets: Cash and cash equivalents$20,281$20,935 Short-term investments44,22855,908 Total cash, cash equivalents, and short-term investments64,50976,843 Accounts receivable, net of allowance for doubtful accounts of $728 and $1,04062,08480,876 Inventories1,8351,397 Other current assets57,70948,594 Total current assets186,137207,710 Property and equipment, net of accumulated depreciation of $127,208 and $118,691346,844313,076 Operating lease right-of-use assets30,17824,177 Equity and other investments37,80836,348 Goodwill119,646119,651 Intangible assets, net17,75118,609 Other long-term assets41,03938,805 Total assets$779,403$758,376 Liabilities and stockholders' equity Current liabilities: Accounts payable$42,625$42,416 Current portion of long-term debt4,3919,227 [...] All information in this release is as of September 30, 2026. The company undertakes no duty to update any forward-looking statement to conform the statement to actual results or changes in the company\u2019s expectations. For more information, press only: Microsoft Media Relations, WE Communications for Microsoft, (425) 638-7777,rrt@we-worldwide.com For more information, financial analysts and investors only: Jonathan Neilson, Vice President, Investor Relations, (425) 706-4400 [...] 20262025 Operations Net income$36,629$27,747 Adjustments to reconcile net income to net cash from operations: Depreciation, amortization, and other11,7448,147 Stock-based compensation expense3,1342,983 Net recognized losses (gains) on investments and derivatives(231)3,907 Deferred income taxes4,6092,491 Changes in operating assets and liabilities: Accounts receivable17,10416,490 Inventories(436)(192) Other current assets(1,903)(1,162) Other long-term assets(6,389)(394) Accounts payable525(614) Unearned revenue(5,942)(5,418) Income taxes(556)(2,944) Other current liabilities(4,528)(5,507) Other long-term liabilities4,240(477) Net cash from operations58,00045,057 Financing Repayments of debt(4,850)0 Common stock issued598689 Common stock repurchased(4,379)(5,650)",
+        "timestamp": "2026-09-22T14:14:14+00:00"
+      },
+      {
+        "id": "node_beab0638d7af4f78",
+        "chip_id": "#node_beab063",
+        "label": "October 2026 ann...",
+        "full_title": "October 2026 announcements - Partner Center announcements",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 90,
+        "content": "Article: October 2026 announcements - Partner Center announcements\nSource: learn.microsoft.com\nPublished: 2026-10-29T16:03:15+00:00\nURL: https://learn.microsoft.com/en-us/partner-center/announcements/2026-october\nContent: customers now have an affordable path to AI: 1. Eligible customers can save 25% on Microsoft 365 Business Basic + Microsoft 365 Copilot Business through December 31, 2026. 2. Microsoft 365 Copilot Business also remains available as a standalone offer with 15% promotional pricing through December 31, 2026, for eligible customers purchasing 1-300 seats on an annual subscription with annual billing. Use this offer to upsell Copilot to customers already on Microsoft 365 Business Standard or Microsoft 365 Business Premium. 3. Beginning December 1, 2026, new Microsoft 365 Copilot Business purchases move to new offers that don't require a qualifying base subscription, so confirm the relevant offer and Promo ID when quoting. [...] Offer summary: Discount: 30% off the net partner price of Microsoft 365 E3, with and without Teams. Billing options: Annual commitment with annual or monthly billing. Availability: October 27, 2026, through June 30, 2027. Eligibility: Minimum order of 300 licenses on a new subscription. This promotional offer can also help create services opportunities for you across the customer journey, including pre-sale workshops, proofs of concept, deployment, and adoption services. resources. Identify eligible customers using Cloud Ascent, with the promotion integrated starting December 1, 2026. Target accounts and use the partner promo kit and AI-ready productivity and security GTM resources to start customer conversations. [...] This change goes into effect November 2, 2026. partners supporting eligible new customers with a low Office 365 or Microsoft 365 E3 footprint. We're excited to announce the new Microsoft 365 E3 30% off one-year offer (300+), available from October 27, 2026, through June 30, 2027. For a limited time, eligible CSP customers purchasing at least 300 new Microsoft 365 E3 licenses in CSP can receive 30% off the net partner price, with annual commitment and annual or monthly billing.",
+        "timestamp": "2026-10-29T16:03:15+00:00"
+      },
+      {
+        "id": "node_656cdea7bde543e8",
+        "chip_id": "#node_656cdea",
+        "label": "Audit pricing pari...",
+        "full_title": "Audit pricing parity against Amazon Web Services and deploy targeted annual incentive bundles.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 140,
+        "content": "Strategic Move [P0 Critical]: Audit pricing parity against Amazon Web Services and deploy targeted annual incentive bundles.. Rationale: Directly counters Amazon Web Services's aggressive positioning while defending margin on renewal cohorts.",
+        "timestamp": "2026-11-07T15:04:41.165179+00:00"
+      },
+      {
+        "id": "node_41c50db1f56f4b88",
+        "chip_id": "#node_41c50db",
+        "label": "Accelerate self-se...",
+        "full_title": "Accelerate self-serve product onboarding for high-velocity teams underserved by Amazon Web Services.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 195,
+        "content": "Strategic Move [P1 Offensive]: Accelerate self-serve product onboarding for high-velocity teams underserved by Amazon Web Services.. Rationale: Amazon Web Services is focusing on monolithic enterprise tiers, leaving an opening in developer-first teams.",
+        "timestamp": "2026-11-07T15:04:41.165183+00:00"
+      },
+      {
+        "id": "node_d3f4448665a34252",
+        "chip_id": "#node_d3f4448",
+        "label": "Double down on per...",
+        "full_title": "Double down on performance ergonomics and publish public benchmark comparisons against Google Cloud.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 235,
+        "content": "Strategic Move [P2 Strategic]: Double down on performance ergonomics and publish public benchmark comparisons against Google Cloud.. Rationale: Shifts the buyer conversation from a commodity pricing contest to superior execution speed and craft.",
+        "timestamp": "2026-11-07T15:04:41.165186+00:00"
+      }
+    ],
+    "recalled_chips": [
+      "#node_d98e77f",
+      "#node_c1caf9c",
+      "#node_b6bf1f2",
+      "#node_5a8c63f",
+      "#node_beab063",
+      "#node_656cdea"
+    ],
+    "instant_prompts": [
+      "What is Microsoft's pricing moat?",
+      "How have competitor prices shifted?",
+      "What strategic counter-move should we execute?"
+    ],
+    "compounding_message": "The next time Microsoft is scanned, the agent remembers previous findings and identifies what's changed, which strategies are developing and which trends are continuing."
+  },
+  "neural_network": {
+    "center_node": {
+      "id": "node_center",
+      "label": "Microsoft",
+      "color": "#0284c7"
+    },
+    "radial_nodes": [
+      {
+        "id": "node_d98e77f3f9624027",
+        "chip_id": "#node_d98e77f",
+        "label": "FY27 Q1 - Press ...",
+        "full_title": "FY27 Q1 - Press Releases - Investor Relations - Microsoft",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 270,
+        "content": "Article: FY27 Q1 - Press Releases - Investor Relations - Microsoft\nSource: www.microsoft.com\nPublished: 2026-09-22T14:14:14+00:00\nURL: https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast\nContent: 2026 Assets Current assets: Cash and cash equivalents$20,281$20,935 Short-term investments44,22855,908 Total cash, cash equivalents, and short-term investments64,50976,843 Accounts receivable, net of allowance for doubtful accounts of $728 and $1,04062,08480,876 Inventories1,8351,397 Other current assets57,70948,594 Total current assets186,137207,710 Property and equipment, net of accumulated depreciation of $127,208 and $118,691346,844313,076 Operating lease right-of-use assets30,17824,177 Equity and other investments37,80836,348 Goodwill119,646119,651 Intangible assets, net17,75118,609 Other long-term assets41,03938,805 Total assets$779,403$758,376 Liabilities and stockholders' equity Current liabilities: Accounts payable$42,625$42,416 Current portion of long-term debt4,3919,227 [...] All information in this release is as of September 30, 2026. The company undertakes no duty to update any forward-looking statement to conform the statement to actual results or changes in the company\u2019s expectations. For more information, press only: Microsoft Media Relations, WE Communications for Microsoft, (425) 638-7777,rrt@we-worldwide.com For more information, financial analysts and investors only: Jonathan Neilson, Vice President, Investor Relations, (425) 706-4400 [...] PRODUCT AND SERVICE OFFERINGS REVENUE (In millions) (Unaudited) Three Months Ended September 30, 20262025 Azure$33,165$22,384 Microsoft 365 cloud27,77823,694 Productivity and server licensing8,4078,678 Search and advertising6,5545,942 XBOX5,3795,508 Industry solutions5,3374,894 Windows OEM and devices3,5514,551 Frontier and support services2,1082,022 Total revenue$92,279$77,673 We have recast certain prior period amounts to conform to the way we internally manage and monitor our business, which reflects the fiscal year 2027 changes to our segments announced in September 2026.",
+        "timestamp": "2026-09-22T14:14:14+00:00"
+      },
+      {
+        "id": "node_c1caf9c359be4ebf",
+        "chip_id": "#node_c1caf9c",
+        "label": "Introducing Micr...",
+        "full_title": "Introducing Microsoft Scout: Your always-on personal agent | Microsoft Copilot Blog",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 320,
+        "content": "Article: Introducing Microsoft Scout: Your always-on personal agent | Microsoft Copilot Blog\nSource: www.microsoft.com\nPublished: 2026-06-02T18:00:00+00:00\nURL: https://www.microsoft.com/en-us/copilot/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent\nContent: Skip to content Microsoft Copilot Copilot Word Excel PowerPoint Outlook OneDrive Teams Copilot Studio Work IQ Cowork Individuals Business Enterprise Education Plans and pricing Support Customer stories Blog Copilot vs. competitors Tech community Frontier program AI for Work Roadmap Agents New user onboarding Roll-out and adoption Prompts and use cases AI knowledge Connectors Open Copilot Download the app Discover what\u2019s coming to Microsoft Ignite, Nov 17-20, 2026. Register now. / Copilot logo Powered by Microsoft Copilot Microsoft Scout is now Autopilot. Learn more. [...] Access requires Frontier enrollment, Intune policy configuration, and an opt-in attestation. Users with a GitHub Copilot license can then download and install the experience. Full setup instructions are available. Microsoft Build brings together innovations across our platforms, many of which are now showing up in Microsoft 365 Copilot: Announcing the new Work IQ APIs Work IQ: Production-ready intelligence for every agent Build collaborative agents where work happens Frontier Tuning: Teaching AI to work the way you do Omar Shashine Headshot LinkedIn Omar Shahine Corporate Vice President of Microsoft Scout [...] Corporate Vice President of Microsoft Scout Omar Shahine is a Corporate Vice President at Microsoft where he leads Microsoft Scout, an effort focused on developing the next generation of always-on personal agents for Microsoft 365. Omar has spent more than 25 years at Microsoft in product leadership roles. Prior to Microsoft Scout, he led the Microsoft Word team as part of the Copilot family of products. See more articles from this author Agents, AI Enterprise News Microsoft 365, Microsoft Copilot Related posts 6 min read Bringing CRM into the flow of work and agents into business process for sales and service teams The traditional boundaries of business applications are disappearing. 8 min read",
+        "timestamp": "2026-06-02T18:00:00+00:00"
+      },
+      {
+        "id": "node_b6bf1f22d7534ba7",
+        "chip_id": "#node_b6bf1f2",
+        "label": "Microsoft Dynami...",
+        "full_title": "Microsoft Dynamics 365 Business Central Pricing: 2026",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 15,
+        "content": "Article: Microsoft Dynamics 365 Business Central Pricing: 2026\nSource: www.activepieces.com\nPublished: 2026-10-23T09:08:10+00:00\nURL: https://www.activepieces.com/blog/microsoft-dynamics-365-business-central-pricing-2026\nContent: Business Central and competitor pricing Business Central and Odoo publish a per-user price you can read today, while NetSuite and Sage Intacct generally give you a number only after a sales conversation. The comparison below turns on what each vendor will put in writing. A published price is a starting point, and the limits and implementation columns are where the totals diverge. The table shows how each product charges and where the cost hides. [...] Business Central plan prices per user Read the table for what each tier costs and what it covers. Essentials and Premium differ by function, not by size, while Team Member is a different kind of seat altogether. | Plan | Price per user per month | What it includes | --- | Team Member | $8 | Read access, approvals and light entries such as time and expenses | | Essentials | $80 | Finance, sales, purchasing, inventory and basic warehousing | | Premium | $110 | Everything in Essentials, plus service management and manufacturing | Source: Microsoft Business Central pricing, , checked 2026-10-22. [...] | Users (full / Team Member) | Essentials, full users per year | Premium, full users per year | What Essentials gives up | --- --- | | 10 (8 / 2) | $6,720\u2013$7,680 | $9,600\u2013$10,560 | Manufacturing and service management | | 30 (20 / 10) | $16,800\u2013$19,200 | $24,000\u2013$26,400 | The same, across more people | | 100 (60 / 40) | $50,400\u2013$57,600 | $72,000\u2013$79,200 | The same, plus any shortfall in headroom | At either end of the range, Premium costs $30 more per full user per month. The real question is whether you need what that $30 buys. Eight full seats on Essentials cost at most $7,680 a year. Premium adds about $2,900 to that, so unless you build products or dispatch service technicians, it's money spent on features nobody opens.",
+        "timestamp": "2026-10-23T09:08:10+00:00"
+      },
+      {
+        "id": "node_5a8c63f4d4b94b34",
+        "chip_id": "#node_5a8c63f",
+        "label": "FY27 Q1 - Press ...",
+        "full_title": "FY27 Q1 - Press Releases - Investor Relations - Microsoft",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 65,
+        "content": "Article: FY27 Q1 - Press Releases - Investor Relations - Microsoft\nSource: www.microsoft.com\nPublished: 2026-09-22T14:14:14+00:00\nURL: https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast\nContent: 2026 Assets Current assets: Cash and cash equivalents$20,281$20,935 Short-term investments44,22855,908 Total cash, cash equivalents, and short-term investments64,50976,843 Accounts receivable, net of allowance for doubtful accounts of $728 and $1,04062,08480,876 Inventories1,8351,397 Other current assets57,70948,594 Total current assets186,137207,710 Property and equipment, net of accumulated depreciation of $127,208 and $118,691346,844313,076 Operating lease right-of-use assets30,17824,177 Equity and other investments37,80836,348 Goodwill119,646119,651 Intangible assets, net17,75118,609 Other long-term assets41,03938,805 Total assets$779,403$758,376 Liabilities and stockholders' equity Current liabilities: Accounts payable$42,625$42,416 Current portion of long-term debt4,3919,227 [...] All information in this release is as of September 30, 2026. The company undertakes no duty to update any forward-looking statement to conform the statement to actual results or changes in the company\u2019s expectations. For more information, press only: Microsoft Media Relations, WE Communications for Microsoft, (425) 638-7777,rrt@we-worldwide.com For more information, financial analysts and investors only: Jonathan Neilson, Vice President, Investor Relations, (425) 706-4400 [...] 20262025 Operations Net income$36,629$27,747 Adjustments to reconcile net income to net cash from operations: Depreciation, amortization, and other11,7448,147 Stock-based compensation expense3,1342,983 Net recognized losses (gains) on investments and derivatives(231)3,907 Deferred income taxes4,6092,491 Changes in operating assets and liabilities: Accounts receivable17,10416,490 Inventories(436)(192) Other current assets(1,903)(1,162) Other long-term assets(6,389)(394) Accounts payable525(614) Unearned revenue(5,942)(5,418) Income taxes(556)(2,944) Other current liabilities(4,528)(5,507) Other long-term liabilities4,240(477) Net cash from operations58,00045,057 Financing Repayments of debt(4,850)0 Common stock issued598689 Common stock repurchased(4,379)(5,650)",
+        "timestamp": "2026-09-22T14:14:14+00:00"
+      },
+      {
+        "id": "node_beab0638d7af4f78",
+        "chip_id": "#node_beab063",
+        "label": "October 2026 ann...",
+        "full_title": "October 2026 announcements - Partner Center announcements",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 90,
+        "content": "Article: October 2026 announcements - Partner Center announcements\nSource: learn.microsoft.com\nPublished: 2026-10-29T16:03:15+00:00\nURL: https://learn.microsoft.com/en-us/partner-center/announcements/2026-october\nContent: customers now have an affordable path to AI: 1. Eligible customers can save 25% on Microsoft 365 Business Basic + Microsoft 365 Copilot Business through December 31, 2026. 2. Microsoft 365 Copilot Business also remains available as a standalone offer with 15% promotional pricing through December 31, 2026, for eligible customers purchasing 1-300 seats on an annual subscription with annual billing. Use this offer to upsell Copilot to customers already on Microsoft 365 Business Standard or Microsoft 365 Business Premium. 3. Beginning December 1, 2026, new Microsoft 365 Copilot Business purchases move to new offers that don't require a qualifying base subscription, so confirm the relevant offer and Promo ID when quoting. [...] Offer summary: Discount: 30% off the net partner price of Microsoft 365 E3, with and without Teams. Billing options: Annual commitment with annual or monthly billing. Availability: October 27, 2026, through June 30, 2027. Eligibility: Minimum order of 300 licenses on a new subscription. This promotional offer can also help create services opportunities for you across the customer journey, including pre-sale workshops, proofs of concept, deployment, and adoption services. resources. Identify eligible customers using Cloud Ascent, with the promotion integrated starting December 1, 2026. Target accounts and use the partner promo kit and AI-ready productivity and security GTM resources to start customer conversations. [...] This change goes into effect November 2, 2026. partners supporting eligible new customers with a low Office 365 or Microsoft 365 E3 footprint. We're excited to announce the new Microsoft 365 E3 30% off one-year offer (300+), available from October 27, 2026, through June 30, 2027. For a limited time, eligible CSP customers purchasing at least 300 new Microsoft 365 E3 licenses in CSP can receive 30% off the net partner price, with annual commitment and annual or monthly billing.",
+        "timestamp": "2026-10-29T16:03:15+00:00"
+      },
+      {
+        "id": "node_656cdea7bde543e8",
+        "chip_id": "#node_656cdea",
+        "label": "Audit pricing pari...",
+        "full_title": "Audit pricing parity against Amazon Web Services and deploy targeted annual incentive bundles.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 140,
+        "content": "Strategic Move [P0 Critical]: Audit pricing parity against Amazon Web Services and deploy targeted annual incentive bundles.. Rationale: Directly counters Amazon Web Services's aggressive positioning while defending margin on renewal cohorts.",
+        "timestamp": "2026-11-07T15:04:41.165179+00:00"
+      },
+      {
+        "id": "node_41c50db1f56f4b88",
+        "chip_id": "#node_41c50db",
+        "label": "Accelerate self-se...",
+        "full_title": "Accelerate self-serve product onboarding for high-velocity teams underserved by Amazon Web Services.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 195,
+        "content": "Strategic Move [P1 Offensive]: Accelerate self-serve product onboarding for high-velocity teams underserved by Amazon Web Services.. Rationale: Amazon Web Services is focusing on monolithic enterprise tiers, leaving an opening in developer-first teams.",
+        "timestamp": "2026-11-07T15:04:41.165183+00:00"
+      },
+      {
+        "id": "node_d3f4448665a34252",
+        "chip_id": "#node_d3f4448",
+        "label": "Double down on per...",
+        "full_title": "Double down on performance ergonomics and publish public benchmark comparisons against Google Cloud.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 235,
+        "content": "Strategic Move [P2 Strategic]: Double down on performance ergonomics and publish public benchmark comparisons against Google Cloud.. Rationale: Shifts the buyer conversation from a commodity pricing contest to superior execution speed and craft.",
+        "timestamp": "2026-11-07T15:04:41.165186+00:00"
+      }
+    ],
+    "recalled_chips": [
+      "#node_d98e77f",
+      "#node_c1caf9c",
+      "#node_b6bf1f2",
+      "#node_5a8c63f",
+      "#node_beab063",
+      "#node_656cdea"
+    ],
+    "instant_prompts": [
+      "What is Microsoft's pricing moat?",
+      "How have competitor prices shifted?",
+      "What strategic counter-move should we execute?"
+    ]
+  },
+  "source_verification": [
+    {
+      "title": "October 2026 announcements - Partner Center announcements",
+      "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october",
+      "publisher": "learn.microsoft.com",
+      "published_date": "Thu, 29 Oct 2026 16:03:15 GMT",
+      "snippet": "customers now have an affordable path to AI: 1. Eligible customers can save 25% on Microsoft 365 Business Basic + Microsoft 365 Copilot Business through December 31, 2026. 2. Microsoft 365 Copilot Business also remains available as a standalone offer with 15% promotional pricing ...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "Microsoft Decision-1: 9B Qwen Model Launch Explained",
+      "url": "https://shattered.io/microsoft-decision-1-qwen3-5-9b-model-2026",
+      "publisher": "shattered.io",
+      "published_date": "Sun, 11 Oct 2026 10:23:56 GMT",
+      "snippet": "Pricing: $0.042 per Million Input Tokens, Free Output Microsoft\u2019s own documentation states that input tokens cost $0.042 USD per million tokens and that output tokens are free, and, according to a Foundry pricing table dated October 26, 2026, the public-preview rate is the same f...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "Microsoft Dynamics 365 Business Central Pricing: 2026",
+      "url": "https://www.activepieces.com/blog/microsoft-dynamics-365-business-central-pricing-2026",
+      "publisher": "www.activepieces.com",
+      "published_date": "Fri, 23 Oct 2026 09:08:10 GMT",
+      "snippet": "Business Central and competitor pricing Business Central and Odoo publish a per-user price you can read today, while NetSuite and Sage Intacct generally give you a number only after a sales conversation. The comparison below turns on what each vendor will put in writing. A publis...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "Microsoft-Decision-1: Price, Benchmarks, vs Jev | CellCog",
+      "url": "https://cellcog.ai/blog/microsoft-decision-1",
+      "publisher": "cellcog.ai",
+      "published_date": "Sat, 10 Oct 2026 00:00:00 GMT",
+      "snippet": "Microsoft released Microsoft-Decision-1 on October 9, 2026: a decision model that scores a fixed set of answers instead of writing text, priced at $0.042 per million input tokens with output free. That is exactly what TypeSafe charges for Jev, the model that started the category ...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "Microsoft-Decision-1: Our model for fast decision-making",
+      "url": "https://commandline.microsoft.com/microsoft-decision-1-model-foundry",
+      "publisher": "commandline.microsoft.com",
+      "published_date": "Sat, 10 Oct 2026 01:35:51 GMT",
+      "snippet": "[ read ] October 13, 2026]( Surface Laptop Ultra Surface Pro Surface Laptop Surface RTX Spark Dev Box Explore Copilot Explore Microsoft products Windows 11 apps Account profile Download Center Microsoft Store support Returns Order tracking Certified Refurbished Why buy from Micro...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "FY27 Q1 - Press Releases - Investor Relations - Microsoft",
+      "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast",
+      "publisher": "www.microsoft.com",
+      "published_date": "Tue, 22 Sep 2026 14:14:14 GMT",
+      "snippet": "2026 Assets Current assets: Cash and cash equivalents$20,281$20,935 Short-term investments44,22855,908 Total cash, cash equivalents, and short-term investments64,50976,843 Accounts receivable, net of allowance for doubtful accounts of $728 and $1,04062,08480,876 Inventories1,8351...",
+      "verification_status": "Verified Original Source"
+    }
+  ]
+}

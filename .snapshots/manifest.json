@@ -1,0 +1,433 @@
+{
+  "urls": {
+    "https://linear.app/pricing": {
+      "competitor": "Linear",
+      "page_type": "pricing",
+      "scan_count": 2,
+      "history": [
+        {
+          "timestamp": "2026-11-06T04:41:07.207850+00:00",
+          "event": "baseline_established",
+          "lines_count": 123
+        },
+        {
+          "timestamp": "2026-11-06T04:41:24.137576+00:00",
+          "status": "unchanged",
+          "changed_lines": 0
+        }
+      ],
+      "baseline_at": "2026-11-06T04:41:07.207850+00:00",
+      "last_scanned_at": "2026-11-06T04:41:24.137576+00:00"
+    },
+    "https://linear.app/changelog": {
+      "competitor": "Linear",
+      "page_type": "changelog",
+      "scan_count": 2,
+      "history": [
+        {
+          "timestamp": "2026-11-06T04:41:08.239420+00:00",
+          "event": "baseline_established",
+          "lines_count": 763
+        },
+        {
+          "timestamp": "2026-11-06T04:41:24.404849+00:00",
+          "status": "unchanged",
+          "changed_lines": 0
+        }
+      ],
+      "baseline_at": "2026-11-06T04:41:08.239420+00:00",
+      "last_scanned_at": "2026-11-06T04:41:24.404849+00:00"
+    },
+    "https://posthog.com/pricing": {
+      "competitor": "Posthog",
+      "page_type": "pricing",
+      "scan_count": 1,
+      "history": [
+        {
+          "timestamp": "2026-11-06T04:42:14.912534+00:00",
+          "event": "baseline_established",
+          "lines_count": 195
+        }
+      ],
+      "baseline_at": "2026-11-06T04:42:14.912534+00:00",
+      "last_scanned_at": "2026-11-06T04:42:14.912534+00:00"
+    },
+    "https://posthog.com/changelog": {
+      "competitor": "Posthog",
+      "page_type": "changelog",
+      "scan_count": 1,
+      "history": [
+        {
+          "timestamp": "2026-11-06T04:42:15.325693+00:00",
+          "event": "baseline_established",
+          "lines_count": 4748
+        }
+      ],
+      "baseline_at": "2026-11-06T04:42:15.325693+00:00",
+      "last_scanned_at": "2026-11-06T04:42:15.325693+00:00"
+    },
+    "https://resend.com/pricing": {
+      "competitor": "Resend",
+      "page_type": "pricing",
+      "scan_count": 2,
+      "history": [
+        {
+          "timestamp": "2026-11-06T05:08:22.383920+00:00",
+          "event": "baseline_established",
+          "lines_count": 228
+        },
+        {
+          "timestamp": "2026-11-06T05:08:44.652561+00:00",
+          "status": "unchanged",
+          "changed_lines": 0
+        }
+      ],
+      "baseline_at": "2026-11-06T05:08:22.383920+00:00",
+      "last_scanned_at": "2026-11-06T05:08:44.652561+00:00"
+    },
+    "https://resend.com/changelog": {
+      "competitor": "Resend",
+      "page_type": "changelog",
+      "scan_count": 2,
+      "history": [
+        {
+          "timestamp": "2026-11-06T05:08:23.884725+00:00",
+          "event": "baseline_established",
+          "lines_count": 321
+        },
+        {
+          "timestamp": "2026-11-06T05:08:44.905179+00:00",
+          "status": "unchanged",
+          "changed_lines": 0
+        }
+      ],
+      "baseline_at": "2026-11-06T05:08:23.884725+00:00",
+      "last_scanned_at": "2026-11-06T05:08:44.905179+00:00"
+    },
+    "https://www.bosscoderacademy.com/school-of-technology": {
+      "competitor": "Bosscoder Academy",
+      "page_type": "pricing",
+      "scan_count": 3,
+      "history": [
+        {
+          "timestamp": "2026-11-06T05:22:48.794144+00:00",
+          "event": "baseline_established",
+          "lines_count": 479
+        },
+        {
+          "timestamp": "2026-11-06T05:23:24.548871+00:00",
+          "status": "unchanged",
+          "changed_lines": 0
+        },
+        {
+          "timestamp": "2026-11-06T05:24:50.909426+00:00",
+          "status": "unchanged",
+          "changed_lines": 0
+        }
+      ],
+      "baseline_at": "2026-11-06T05:22:48.794144+00:00",
+      "last_scanned_at": "2026-11-06T05:24:50.909426+00:00"
+    },
+    "https://www.bosscoderacademy.com/blog": {
+      "competitor": "Bosscoder Academy",
+      "page_type": "changelog",
+      "scan_count": 3,
+      "history": [
+        {
+          "timestamp": "2026-11-06T05:22:50.409384+00:00",
+          "event": "baseline_established",
+          "lines_count": 90
+        },
+        {
+          "timestamp": "2026-11-06T05:23:25.511804+00:00",
+          "status": "unchanged",
+          "changed_lines": 0
+        },
+        {
+          "timestamp": "2026-11-06T05:24:51.431899+00:00",
+          "status": "unchanged",
+          "changed_lines": 0
+        }
+      ],
+      "baseline_at": "2026-11-06T05:22:50.409384+00:00",
+      "last_scanned_at": "2026-11-06T05:24:51.431899+00:00"
+    }
+  },
+  "competitors": {
+    "linear-app": {
+      "name": "Linear",
+      "domain": "linear.app",
+      "pages": [
+        {
+          "type": "pricing",
+          "url": "https://linear.app/pricing"
+        },
+        {
+          "type": "changelog",
+          "url": "https://linear.app/changelog"
+        }
+      ],
+      "last_result": {
+        "success": true,
+        "competitor_id": "linear-app",
+        "name": "Linear",
+        "domain": "linear.app",
+        "bank_id": "godseye-watchlist-linear-app",
+        "is_baseline": false,
+        "status": "unchanged",
+        "scan_number": 2,
+        "pricing_url": "https://linear.app/pricing",
+        "changelog_url": "https://linear.app/changelog",
+        "pricing_diff": {
+          "is_change": false,
+          "status": "unchanged",
+          "changed_lines_count": 0,
+          "added_count": 0,
+          "removed_count": 0,
+          "added_lines": [],
+          "removed_lines": [],
+          "raw_diff": ""
+        },
+        "changelog_diff": {
+          "is_change": false,
+          "status": "unchanged",
+          "changed_lines_count": 0,
+          "added_count": 0,
+          "removed_count": 0,
+          "added_lines": [],
+          "removed_lines": [],
+          "raw_diff": ""
+        },
+        "pricing_status": "unchanged",
+        "changelog_status": "unchanged",
+        "is_change": false,
+        "raw_diff": "",
+        "recalled_memories": [],
+        "recall_error": "Connection refused at http://localhost:8888",
+        "storage_backend": "error",
+        "reflection": "",
+        "reflection_error": "Connection refused at http://localhost:8888",
+        "recommendation": {
+          "action": "Launch a targeted marketing campaign highlighting your unlimited free tier and deeper integrations, while keeping pricing unchanged",
+          "rationale": "Linear's product and pricing have remained static, indicating no immediate pressure on price; emphasizing superior free\u2011tier value and integration breadth will attract cost\u2011sensitive teams and lock in early adoption."
+        },
+        "timestamp": "2026-11-06T04:41:24.137560+00:00",
+        "decisions": []
+      }
+    },
+    "posthog-com": {
+      "name": "Posthog",
+      "domain": "posthog.com",
+      "pages": [
+        {
+          "type": "pricing",
+          "url": "https://posthog.com/pricing"
+        },
+        {
+          "type": "changelog",
+          "url": "https://posthog.com/changelog"
+        }
+      ],
+      "last_result": {
+        "success": true,
+        "competitor_id": "posthog-com",
+        "name": "Posthog",
+        "domain": "posthog.com",
+        "bank_id": "godseye-watchlist-posthog-com",
+        "is_baseline": true,
+        "status": "baseline_saved",
+        "scan_number": 1,
+        "pricing_url": "https://posthog.com/pricing",
+        "changelog_url": "https://posthog.com/changelog",
+        "pricing_status": "baseline_established",
+        "changelog_status": "baseline_established",
+        "baseline_summary": {
+          "pricing_tiers": [
+            {
+              "tier": "Free",
+              "price": "$0",
+              "billing": "free forever"
+            },
+            {
+              "tier": "Pay-as-you-go",
+              "price": "Varies",
+              "billing": "monthly usage\u2011based"
+            }
+          ],
+          "plan_limits": [
+            "Free tier: 1M analytics events, 5K session replay recordings, 1M feature\u2011flag requests per month",
+            "Free tier: 100K error\u2011tracking exceptions, 1,500 survey responses, 1M source rows with historical data",
+            "Free tier: 10K destination events + 1M rows, 100K AI observability events, 500 PostHog AI credits ($5)",
+            "Free tier: 10\u202fGB logs ingestion, 10K workflow messages per channel, 2,500 Replay Vision credits ($25), 2,000 Desktop credits ($20)",
+            "Free tier: 1 project with 1\u2011year data retention, unlimited team members, community support"
+          ],
+          "latest_changelog": [
+            {
+              "title": "Trace Gemini Interactions calls",
+              "date_or_version": "October 23, 2026",
+              "summary": "AI observability now captures foreground Gemini Interaction calls, including streamed responses, tool activity, usage, and supported media output; agent and background interactions remain excluded."
+            },
+            {
+              "title": "WebMCP tool-call analytics",
+              "date_or_version": "October 23, 2026",
+              "summary": "Browser\u2011based WebMCP tool calls are captured with the standard MCP Analytics event contract, linked to user, session, and replay, with sanitized intent and model metadata."
+            },
+            {
+              "title": "More sources for Self-Driving",
+              "date_or_version": "October 23, 2026",
+              "summary": "Self\u2011Driving can now draw on 38 external sources, with GitHub, Linear, Zendesk, Sentry, and Jira highlighted at the top of the source list."
+            },
+            {
+              "title": "Clearer report resolution outcomes",
+              "date_or_version": "October 23, 2026",
+              "summary": "When resolving a Self\u2011Driving inbox report, users can indicate if it was implemented manually or required no action, with distinct logging and a confirmation step before closing the PR."
+            }
+          ]
+        },
+        "recalled_memories": [],
+        "recall_error": "Connection refused at http://localhost:8888",
+        "storage_backend": "error",
+        "timestamp": "2026-11-06T04:42:14.912518+00:00",
+        "decisions": []
+      }
+    },
+    "resend-com": {
+      "name": "Resend",
+      "domain": "resend.com",
+      "pages": [
+        {
+          "type": "pricing",
+          "url": "https://resend.com/pricing"
+        },
+        {
+          "type": "changelog",
+          "url": "https://resend.com/changelog"
+        }
+      ],
+      "last_result": {
+        "success": true,
+        "competitor_id": "resend-com",
+        "name": "Resend",
+        "domain": "resend.com",
+        "bank_id": "godseye-watchlist-resend-com",
+        "is_baseline": false,
+        "status": "unchanged",
+        "scan_number": 2,
+        "pricing_url": "https://resend.com/pricing",
+        "changelog_url": "https://resend.com/changelog",
+        "pricing_diff": {
+          "is_change": false,
+          "status": "unchanged",
+          "changed_lines_count": 0,
+          "added_count": 0,
+          "removed_count": 0,
+          "added_lines": [],
+          "removed_lines": [],
+          "raw_diff": ""
+        },
+        "changelog_diff": {
+          "is_change": false,
+          "status": "unchanged",
+          "changed_lines_count": 0,
+          "added_count": 0,
+          "removed_count": 0,
+          "added_lines": [],
+          "removed_lines": [],
+          "raw_diff": ""
+        },
+        "pricing_status": "unchanged",
+        "changelog_status": "unchanged",
+        "is_change": false,
+        "raw_diff": "",
+        "recalled_memories": [
+          {
+            "id": "node_20bb19c671f68675",
+            "text": "Competitor Move Detected: Resend (baseline)\nURL: https://resend.com/pricing\nStatus: baseline_established\nLines Changed: 0\nDetected At: 2026-11-06T05:08:22.383902+00:00\n\nDiff Content:\nBaseline established for Resend. Content cataloged.",
+            "timestamp": "2026-11-06T05:08:22.383902+00:00",
+            "score": 7.0,
+            "storage_backend": "hindsight"
+          }
+        ],
+        "recall_error": null,
+        "storage_backend": "hindsight",
+        "reflection": "Based on the sole stored observation (Node\u202fnode_20bb19c671f68675, captured on\u202f2026\u201111\u201106\u202f05:08:22\u202fUTC), Resend\u2019s pricing page was recorded as a baseline with **no lines changed**, indicating that its pricing structure remained stable at that point in time. Because the observation contains only the baseline snapshot and no additional entries, there is no evidence of any pricing adjustments, new feature launches, or other competitive moves for Resend across the stored history. Consequently, the available data suggest a period of continuity rather than any observable trajectory shift.",
+        "reflection_error": null,
+        "recommendation": {
+          "action": "Introduce a higher\u2011quota free tier (e.g., double the current email send limit) and promote it in developer channels",
+          "rationale": "Resend\u2019s pricing and tier structure remain static, indicating no immediate competitive pressure; offering a more generous free tier lets you attract price\u2011sensitive developers and build early lock\u2011in before Resend reacts."
+        },
+        "timestamp": "2026-11-06T05:08:44.652544+00:00",
+        "decisions": []
+      }
+    },
+    "school-bosscoderacademy-com": {
+      "name": "Bosscoder Academy",
+      "domain": "school.bosscoderacademy.com",
+      "pages": [
+        {
+          "type": "pricing",
+          "url": "https://www.bosscoderacademy.com/school-of-technology"
+        },
+        {
+          "type": "changelog",
+          "url": "https://www.bosscoderacademy.com/blog"
+        }
+      ],
+      "last_result": {
+        "success": true,
+        "competitor_id": "school-bosscoderacademy-com",
+        "name": "Bosscoder Academy",
+        "domain": "school.bosscoderacademy.com",
+        "bank_id": "godseye-watchlist-school-bosscoderacademy-com",
+        "is_baseline": false,
+        "status": "unchanged",
+        "scan_number": 3,
+        "pricing_url": "https://www.bosscoderacademy.com/school-of-technology",
+        "changelog_url": "https://www.bosscoderacademy.com/blog",
+        "pricing_diff": {
+          "is_change": false,
+          "status": "unchanged",
+          "changed_lines_count": 0,
+          "added_count": 0,
+          "removed_count": 0,
+          "added_lines": [],
+          "removed_lines": [],
+          "raw_diff": ""
+        },
+        "changelog_diff": {
+          "is_change": false,
+          "status": "unchanged",
+          "changed_lines_count": 0,
+          "added_count": 0,
+          "removed_count": 0,
+          "added_lines": [],
+          "removed_lines": [],
+          "raw_diff": ""
+        },
+        "pricing_status": "unchanged",
+        "changelog_status": "unchanged",
+        "is_change": false,
+        "raw_diff": "",
+        "recalled_memories": [
+          {
+            "id": "node_ea9b837d3eb370a5",
+            "text": "Competitor Move Detected: Bosscoder Academy (baseline)\nURL: https://www.bosscoderacademy.com/school-of-technology\nStatus: baseline_established\nLines Changed: 0\nDetected At: 2026-11-06T05:22:48.794123+00:00\n\nDiff Content:\nBaseline established for Bosscoder Academy. Content cataloged.",
+            "timestamp": "2026-11-06T05:22:48.794123+00:00",
+            "score": 7.0,
+            "storage_backend": "hindsight"
+          }
+        ],
+        "recall_error": null,
+        "storage_backend": "hindsight",
+        "reflection": "Based on the sole observation retrieved\u2014a baseline snapshot of Bosscoder Academy\u2019s \u201cSchool of Technology\u201d page captured on\u202f2026\u201111\u201106 with no lines changed\u2014the competitive trajectory appears static: there have been no recorded pricing adjustments or new feature launches since the baseline was established. Consequently, the available data indicate stability rather than any discernible shift in Bosscoder Academy\u2019s offering or pricing strategy.",
+        "reflection_error": null,
+        "recommendation": {
+          "action": "Launch a limited-time scholarship program for high\u2011school coders, promoted heavily on TikTok and Discord",
+          "rationale": "Bosscoder Academy shows no recent product updates or pricing changes, indicating a static offering. By offering a scholarship, we can attract price\u2011sensitive talent and generate buzz while the competitor remains inert."
+        },
+        "timestamp": "2026-11-06T05:24:50.909373+00:00",
+        "decisions": []
+      }
+    }
+  }
+}

@@ -8,13 +8,22 @@
 *.DS_Store
 __MACOSX/
 
-# Local databases and persistence snapshots
+# Local databases and runtime logs
 *.db
 *.sqlite
 *.sqlite3
-.snapshots/
+.snapshots/*.db
+.snapshots/*.txt
+.snapshots/scan_log.jsonl
+.snapshots/hindsight_embedded.db
 .local_memory_bank.json
 .scan_metadata.json
+
+# Keep canonical scan snapshots for preloaded showcase watchlist
+!.snapshots/
+!.snapshots/scans/
+!.snapshots/scans/*.json
+.snapshots/scans/*_scan_*.json
 
 # Runtime logs
 *.log

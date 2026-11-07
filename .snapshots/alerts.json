@@ -1,0 +1,29 @@
+[
+  {
+    "id": "alert-1793944072277",
+    "title": "BMW 3-Series Price Shift Alert",
+    "company": "BMW India",
+    "condition": "Price hike or tier revision detected",
+    "channel": "Slack + Email",
+    "status": "Active",
+    "created_at": "2026-11-06"
+  },
+  {
+    "id": "alert-1",
+    "title": "Competitor Price Increase > 2%",
+    "company": "All Tracked",
+    "condition": "Price change exceeds +2.0%",
+    "channel": "In-App Banner + Slack Webhook",
+    "status": "Active",
+    "created_at": "2026-11-01"
+  },
+  {
+    "id": "alert-2",
+    "title": "Flagship EV / AI Feature Launch",
+    "company": "BMW India & Rivals",
+    "condition": "New model launch or major feature release announced",
+    "channel": "Email Digest",
+    "status": "Active",
+    "created_at": "2026-11-03"
+  }
+]

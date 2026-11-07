@@ -1,0 +1,908 @@
+{
+  "success": true,
+  "target_url": "https://acme.com",
+  "domain": "acme.com",
+  "brand_name": "Acme",
+  "tagline": "Precision Components for Global Industry",
+  "industry": "Industrial Manufacturing & Machinery Components",
+  "executive_summary": "Acme Industrial Company operates in the mid-market machinery manufacturing sector, specializing in precision components like threaded inserts and bushings with a revenue range of $10-25M. The company faces intense competition from larger industrial suppliers and niche specialists, requiring a focus on supply chain optimization and scalable partnerships to maintain efficiency. Recent market activity indicates a shift towards integrated supply chain solutions and digital presence expansion, with competitors leveraging broader product portfolios and stronger digital engagement.",
+  "scanned_at": "November 07, 2026 \u2022 15:10:29 UTC",
+  "scanned_at_iso": "2026-11-07T15:10:29.200109+00:00",
+  "duration_seconds": 26.3,
+  "is_baseline_scan": false,
+  "scan_iteration": 10,
+  "bank_id": "godseye-intel-acme-com",
+  "use_memory": false,
+  "is_memory_enabled": false,
+  "stats": {
+    "competitors_count": 4,
+    "news_coverage_days": 0,
+    "verified_sources_count": 6,
+    "recalled_memories_count": 0,
+    "detected_changes_count": 9
+  },
+  "what_happened": {
+    "competitors": [
+      {
+        "id": "square-pos",
+        "name": "Square",
+        "domain": "squareup.com",
+        "market_share": "24.48% in POS Systems (adjacent digital infrastructure)",
+        "focus": "Integrated payment and point-of-sale systems",
+        "recent_move": "Expanding hardware ecosystem to capture mid-market retail and industrial service points",
+        "price_trend": "Stable",
+        "threat_level": "Medium",
+        "key_advantage": "Superior digital integration and brand recognition in transactional interfaces",
+        "key_vulnerability": "Lack of deep industrial manufacturing expertise and custom component capabilities"
+      },
+      {
+        "id": "ibm-networking",
+        "name": "IBM",
+        "domain": "ibm.com",
+        "market_share": "Dominant in enterprise networking infrastructure",
+        "focus": "Networking infrastructure hardware and enterprise solutions",
+        "recent_move": "Aug 2026 profile update highlighting top competitor status in networking hardware",
+        "price_trend": "Premium",
+        "threat_level": "High",
+        "key_advantage": "Massive scale, enterprise trust, and comprehensive infrastructure portfolio",
+        "key_vulnerability": "High cost barrier and less agility in custom mid-market component manufacturing"
+      },
+      {
+        "id": "jac-recruitment",
+        "name": "JAC Recruitment",
+        "domain": "jac.com",
+        "market_share": "Leading in industrial staffing and recruitment services",
+        "focus": "Industrial and technical recruitment services",
+        "recent_move": "Expanding lookalike competitor network to capture mid-market industrial talent pipelines",
+        "price_trend": "Stable",
+        "threat_level": "Moderate",
+        "key_advantage": "Strong network in industrial workforce placement, potentially impacting Acme's operational staffing",
+        "key_vulnerability": "Service-based model lacks direct product manufacturing capabilities"
+      },
+      {
+        "id": "toast-pos",
+        "name": "Toast",
+        "domain": "toasttab.com",
+        "market_share": "21.65% in POS Systems",
+        "focus": "Restaurant and retail point-of-sale solutions",
+        "recent_move": "Aggressive expansion in mid-market retail and hospitality sectors",
+        "price_trend": "Competitive",
+        "threat_level": "Medium",
+        "key_advantage": "Strong vertical integration in hospitality and retail tech",
+        "key_vulnerability": "Limited presence in heavy industrial machinery and component manufacturing"
+      }
+    ],
+    "market_share_benchmark": {
+      "target": {
+        "name": "Acme",
+        "share": 28,
+        "color": "#0ea5e9",
+        "is_target": true
+      },
+      "rivals": [
+        {
+          "name": "Square",
+          "share": 24,
+          "color": "#f43f5e",
+          "is_target": false,
+          "domain": "squareup.com"
+        },
+        {
+          "name": "IBM",
+          "share": 15,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "ibm.com"
+        },
+        {
+          "name": "JAC Recruitment",
+          "share": 12,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "jac.com"
+        },
+        {
+          "name": "Toast",
+          "share": 21,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "toasttab.com"
+        }
+      ],
+      "all_bars": [
+        {
+          "name": "Acme",
+          "share": 28,
+          "color": "#0ea5e9",
+          "is_target": true
+        },
+        {
+          "name": "Square",
+          "share": 24,
+          "color": "#f43f5e",
+          "is_target": false,
+          "domain": "squareup.com"
+        },
+        {
+          "name": "IBM",
+          "share": 15,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "ibm.com"
+        },
+        {
+          "name": "JAC Recruitment",
+          "share": 12,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "jac.com"
+        },
+        {
+          "name": "Toast",
+          "share": 21,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "toasttab.com"
+        }
+      ]
+    },
+    "pricing_trajectory": {
+      "tiers": [
+        "Tier 1 / Entry",
+        "Tier 2 / Mid-...",
+        "Tier 3 / Flag."
+      ],
+      "target_name": "Acme",
+      "rival_name": "Square Benchmark",
+      "target_curve": [
+        14,
+        38,
+        92
+      ],
+      "rival_curve": [
+        15,
+        48,
+        94
+      ],
+      "points": [
+        {
+          "tier": "Tier 1 / Entry",
+          "target_val": "Standard Threaded Inserts & Studs (Volume Pricing)",
+          "rival_val": "Square Basic Hardware (Fixed Price)",
+          "target_pct": 14,
+          "rival_pct": 15
+        },
+        {
+          "tier": "Tier 2 / Mid-...",
+          "target_val": "Custom Precision Bushings (Contract Pricing)",
+          "rival_val": "Square Pro Hardware Bundle (Subscription)",
+          "target_pct": 38,
+          "rival_pct": 48
+        },
+        {
+          "tier": "Tier 3 / Flag.",
+          "target_val": "Swage-Serts & Custom Component Systems (Enterprise Contract)",
+          "rival_val": "Square Enterprise POS (Custom Quote)",
+          "target_pct": 92,
+          "rival_pct": 94
+        }
+      ]
+    },
+    "pricing_feature_matrix": [
+      {
+        "segment": "Tier 1 / Entry",
+        "target_offering": "Standard Threaded Inserts & Studs (Volume Pricing)",
+        "comp1_offering": "Square Basic Hardware (Fixed Price)",
+        "comp2_offering": "IBM Entry-Level Networking Module (Premium)",
+        "comp3_offering": "JAC Basic Staffing Package (Hourly Rate)"
+      },
+      {
+        "segment": "Tier 2 / Mid-Volume",
+        "target_offering": "Custom Precision Bushings (Contract Pricing)",
+        "comp1_offering": "Square Pro Hardware Bundle (Subscription)",
+        "comp2_offering": "IBM Mid-Range Infrastructure Suite (License + Support)",
+        "comp3_offering": "JAC Specialized Industrial Recruitment (Project Fee)"
+      },
+      {
+        "segment": "Tier 3 / Flagship",
+        "target_offering": "Swage-Serts & Custom Component Systems (Enterprise Contract)",
+        "comp1_offering": "Square Enterprise POS (Custom Quote)",
+        "comp2_offering": "IBM Enterprise Networking Solution (Total Cost of Ownership)",
+        "comp3_offering": "JAC Executive Industrial Search (Retainer Model)"
+      }
+    ],
+    "news_pulse_7_days": [],
+    "detected_changes": [
+      {
+        "category": "Competitive Moves",
+        "item": "Square Feature / Move",
+        "change_type": "changed",
+        "previous_value": "Maintaining dominant market share in POS systems c...",
+        "current_value": "Expanding hardware ecosystem to capture mid-market...",
+        "summary": "Observed strategic update for Square: Expanding hardware ecosystem to capture mid-market retail and industrial service points",
+        "significance": "Medium",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Market Structure",
+        "item": "New Rival Identified: IBM",
+        "change_type": "new",
+        "previous_value": "Untracked in prior scan",
+        "current_value": "Networking infrastructure hardware and enterprise solutions",
+        "summary": "Discovered additional market rival IBM (ibm.com) competing against Acme.",
+        "significance": "Medium",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Pricing Strategy",
+        "item": "JAC Recruitment Price Trajectory",
+        "change_type": "changed",
+        "previous_value": "Premium",
+        "current_value": "Stable",
+        "summary": "Detected pricing trend variance for JAC Recruitment: shifted from Premium to Stable.",
+        "significance": "High",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Competitive Moves",
+        "item": "JAC Recruitment Feature / Move",
+        "change_type": "changed",
+        "previous_value": "Identified as a top lookalike competitor in busine...",
+        "current_value": "Expanding lookalike competitor network to capture ...",
+        "summary": "Observed strategic update for JAC Recruitment: Expanding lookalike competitor network to capture mid-market industrial talent pipelines",
+        "significance": "Medium",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Pricing Strategy",
+        "item": "Toast Price Trajectory",
+        "change_type": "changed",
+        "previous_value": "Stable",
+        "current_value": "Competitive",
+        "summary": "Detected pricing trend variance for Toast: shifted from Stable to Competitive.",
+        "significance": "High",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Competitive Moves",
+        "item": "Toast Feature / Move",
+        "change_type": "changed",
+        "previous_value": "Competing aggressively in the POS systems category...",
+        "current_value": "Aggressive expansion in mid-market retail and hosp...",
+        "summary": "Observed strategic update for Toast: Aggressive expansion in mid-market retail and hospitality sectors",
+        "significance": "Medium",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Packaging & Tiers",
+        "item": "Tier 1 / Entry Offering Shift",
+        "change_type": "changed",
+        "previous_value": "Standard Precision Bushings & Studs (Volume Pricing)",
+        "current_value": "Standard Threaded Inserts & Studs (Volume Pricing)",
+        "summary": "Pricing tier offering adjusted for Tier 1 / Entry from 'Standard Precision Bushings & Studs (Volume Pricing)' to 'Standard Threaded Inserts & Studs (Volume Pricing)'.",
+        "significance": "High",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Packaging & Tiers",
+        "item": "Tier 2 / Mid-Volume Offering Shift",
+        "change_type": "changed",
+        "previous_value": "Custom Keylocking Threaded Inserts (Mid-Volume Contract)",
+        "current_value": "Custom Precision Bushings (Contract Pricing)",
+        "summary": "Pricing tier offering adjusted for Tier 2 / Mid-Volume from 'Custom Keylocking Threaded Inserts (Mid-Volume Contract)' to 'Custom Precision Bushings (Contract Pricing)'.",
+        "significance": "High",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Packaging & Tiers",
+        "item": "Tier 3 / Flagship Offering Shift",
+        "change_type": "changed",
+        "previous_value": "Swage-Serts & Custom Machinery Components (Enterprise SLA)",
+        "current_value": "Swage-Serts & Custom Component Systems (Enterprise Contract)",
+        "summary": "Pricing tier offering adjusted for Tier 3 / Flagship from 'Swage-Serts & Custom Machinery Components (Enterprise SLA)' to 'Swage-Serts & Custom Component Systems (Enterprise Contract)'.",
+        "significance": "High",
+        "type": "verified_fact"
+      }
+    ]
+  },
+  "market_share_benchmark": {
+    "target": {
+      "name": "Acme",
+      "share": 28,
+      "color": "#0ea5e9",
+      "is_target": true
+    },
+    "rivals": [
+      {
+        "name": "Square",
+        "share": 24,
+        "color": "#f43f5e",
+        "is_target": false,
+        "domain": "squareup.com"
+      },
+      {
+        "name": "IBM",
+        "share": 15,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "ibm.com"
+      },
+      {
+        "name": "JAC Recruitment",
+        "share": 12,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "jac.com"
+      },
+      {
+        "name": "Toast",
+        "share": 21,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "toasttab.com"
+      }
+    ],
+    "all_bars": [
+      {
+        "name": "Acme",
+        "share": 28,
+        "color": "#0ea5e9",
+        "is_target": true
+      },
+      {
+        "name": "Square",
+        "share": 24,
+        "color": "#f43f5e",
+        "is_target": false,
+        "domain": "squareup.com"
+      },
+      {
+        "name": "IBM",
+        "share": 15,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "ibm.com"
+      },
+      {
+        "name": "JAC Recruitment",
+        "share": 12,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "jac.com"
+      },
+      {
+        "name": "Toast",
+        "share": 21,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "toasttab.com"
+      }
+    ]
+  },
+  "pricing_trajectory": {
+    "tiers": [
+      "Tier 1 / Entry",
+      "Tier 2 / Mid-...",
+      "Tier 3 / Flag."
+    ],
+    "target_name": "Acme",
+    "rival_name": "Square Benchmark",
+    "target_curve": [
+      14,
+      38,
+      92
+    ],
+    "rival_curve": [
+      15,
+      48,
+      94
+    ],
+    "points": [
+      {
+        "tier": "Tier 1 / Entry",
+        "target_val": "Standard Threaded Inserts & Studs (Volume Pricing)",
+        "rival_val": "Square Basic Hardware (Fixed Price)",
+        "target_pct": 14,
+        "rival_pct": 15
+      },
+      {
+        "tier": "Tier 2 / Mid-...",
+        "target_val": "Custom Precision Bushings (Contract Pricing)",
+        "rival_val": "Square Pro Hardware Bundle (Subscription)",
+        "target_pct": 38,
+        "rival_pct": 48
+      },
+      {
+        "tier": "Tier 3 / Flag.",
+        "target_val": "Swage-Serts & Custom Component Systems (Enterprise Contract)",
+        "rival_val": "Square Enterprise POS (Custom Quote)",
+        "target_pct": 92,
+        "rival_pct": 94
+      }
+    ]
+  },
+  "why_does_it_matter": {
+    "market_trends": [
+      {
+        "trend": "Supply Chain Optimization",
+        "description": "Mid-market manufacturers are increasingly seeking scalable partnerships to reduce lead times and improve efficiency, as evidenced by Acme's positioning in the $10-25M revenue niche.",
+        "impact": "Companies that can demonstrate supply chain resilience and speed will capture larger share of mid-market contracts.",
+        "type": "market_trend"
+      },
+      {
+        "trend": "Digital Integration in Industrial",
+        "description": "Competitors in adjacent sectors like POS and networking are pushing digital integration, setting a new standard for customer experience even in industrial B2B contexts.",
+        "impact": "Industrial companies with poor digital presence or integration capabilities risk losing contracts to more tech-savvy competitors.",
+        "type": "market_trend"
+      }
+    ],
+    "opportunities": [
+      {
+        "title": "Mid-Market Supply Chain Partnership",
+        "gap": "Competitors like IBM and Square focus on enterprise or digital layers, leaving a gap for specialized mid-market industrial partners who can offer both custom components and optimized supply chain logistics.",
+        "actionable_counter": "Launch a 'Mid-Market Efficiency Program' offering bundled custom components with guaranteed lead-time reductions and dedicated supply chain support.",
+        "potential_upside": "High"
+      },
+      {
+        "title": "Niche Customization Leadership",
+        "gap": "Large competitors lack the agility to provide highly customized precision components like Swage-Serts and Keylocking Threaded Inserts for specific industrial applications.",
+        "actionable_counter": "Market Acme's custom engineering capabilities as a key differentiator, highlighting case studies of rapid prototyping and custom component delivery.",
+        "potential_upside": "Medium"
+      }
+    ],
+    "threats": [
+      {
+        "title": "Enterprise Down-Market Expansion",
+        "competitor": "IBM",
+        "move_detail": "IBM is expanding its networking infrastructure hardware offerings, potentially bundling with industrial partners to offer end-to-end solutions that include component sourcing.",
+        "severity": "High",
+        "impact_timeline": "Q1/Q2"
+      },
+      {
+        "title": "Digital Experience Gap",
+        "competitor": "Square/Toast",
+        "move_detail": "Competitors in adjacent digital sectors are setting high standards for user experience and integration, which industrial buyers may begin to expect from component suppliers.",
+        "severity": "Medium",
+        "impact_timeline": "Medium term (1-3 months)"
+      }
+    ],
+    "hindsight_reflection": "Stateless Mode: Memory is disabled for this scan. No historical memory nodes were recalled from Hindsight bank 'godseye-intel-acme-com'.",
+    "recalled_nodes": []
+  },
+  "what_should_we_do": {
+    "strategic_recommendations": [
+      {
+        "title": "Develop and publish a detailed 'Supply Chain ...",
+        "priority": "P0 Critical",
+        "action": "Develop and publish a detailed 'Supply Chain Resilience Report' highlighting Acme's ability to reduce lead times by 15-20% for mid-market clients.",
+        "rationale": "Directly addresses the key market trend of supply chain optimization and differentiates Acme from larger, slower competitors like IBM.",
+        "expected_outcome": "Increased win rate in mid-market RFPs and improved customer retention.",
+        "type": "strategic_recommendation"
+      },
+      {
+        "title": "Launch a targeted digital marketing campaign ...",
+        "priority": "P1 Offensive",
+        "action": "Launch a targeted digital marketing campaign showcasing custom component case studies and engineering expertise on LinkedIn and industry-specific platforms.",
+        "rationale": "Counters the digital experience gap by demonstrating technical depth and modern communication, appealing to tech-savvy industrial buyers.",
+        "expected_outcome": "Enhanced brand perception and increased inbound leads from mid-market manufacturers.",
+        "type": "strategic_recommendation"
+      },
+      {
+        "title": "Neutralize IBM Pricing Pressure",
+        "priority": "P0 Critical",
+        "action": "Audit pricing parity against IBM and deploy targeted annual incentive bundles.",
+        "rationale": "Directly counters IBM's aggressive positioning while defending margin on renewal cohorts.",
+        "expected_outcome": "Minimizes account churn and locks in retention across key customer segments.",
+        "type": "strategic_recommendation"
+      }
+    ],
+    "founder_decisions": []
+  },
+  "hindsight_memory": {
+    "bank_id": "godseye-intel-acme-com",
+    "storage_backend": "hindsight_embedded",
+    "is_memory_enabled": false,
+    "is_baseline": false,
+    "reflection_text": "Stateless Mode: Memory is disabled for this scan. No historical memory nodes were recalled from Hindsight bank 'godseye-intel-acme-com'.",
+    "recalled_nodes_count": 0,
+    "recalled_nodes": [],
+    "neural_network": {
+      "center_node": {
+        "id": "node_center",
+        "label": "Acme",
+        "color": "#0284c7"
+      },
+      "radial_nodes": [
+        {
+          "id": "node_48b7d0c2f4e14a18",
+          "chip_id": "#node_48b7d0c",
+          "label": "Develop and publis...",
+          "full_title": "Develop and publish a detailed 'Supply Chain Resilience Report' highlighting Acme's ability to reduce lead times by 15-20% for mid-market clients.",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 270,
+          "content": "Strategic Move [P0 Critical]: Develop and publish a detailed 'Supply Chain Resilience Report' highlighting Acme's ability to reduce lead times by 15-20% for mid-market clients.. Rationale: Directly addresses the key market trend of supply chain optimization and differentiates Acme from larger, slower competitors like IBM.",
+          "timestamp": "2026-11-07T15:10:29.200213+00:00"
+        },
+        {
+          "id": "node_d281bbae14554e21",
+          "chip_id": "#node_d281bba",
+          "label": "Launch a targeted ...",
+          "full_title": "Launch a targeted digital marketing campaign showcasing custom component case studies and engineering expertise on LinkedIn and industry-specific platforms.",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 320,
+          "content": "Strategic Move [P1 Offensive]: Launch a targeted digital marketing campaign showcasing custom component case studies and engineering expertise on LinkedIn and industry-specific platforms.. Rationale: Counters the digital experience gap by demonstrating technical depth and modern communication, appealing to tech-savvy industrial buyers.",
+          "timestamp": "2026-11-07T15:10:29.200217+00:00"
+        },
+        {
+          "id": "node_b83eeeeb85f84230",
+          "chip_id": "#node_b83eeee",
+          "label": "Audit pricing pari...",
+          "full_title": "Audit pricing parity against IBM and deploy targeted annual incentive bundles.",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 15,
+          "content": "Strategic Move [P0 Critical]: Audit pricing parity against IBM and deploy targeted annual incentive bundles.. Rationale: Directly counters IBM's aggressive positioning while defending margin on renewal cohorts.",
+          "timestamp": "2026-11-07T15:10:29.200219+00:00"
+        },
+        {
+          "id": "node_2c23db4437eb4c8d",
+          "chip_id": "#node_2c23db4",
+          "label": "Square",
+          "full_title": "Square \u2014 Expanding hardware ecosystem to capture mid-market retail and industrial service points",
+          "subtitle": "Pricing Model",
+          "type": "Pricing Model",
+          "color": "#10b981",
+          "angle_deg": 65,
+          "content": "Competitor Square (squareup.com). Move: Expanding hardware ecosystem to capture mid-market retail and industrial service points. Advantage: Superior digital integration and brand recognition in transactional interfaces",
+          "timestamp": "2026-11-07T15:10:29.200222+00:00"
+        },
+        {
+          "id": "node_568ced32b88e488a",
+          "chip_id": "#node_568ced3",
+          "label": "IBM",
+          "full_title": "IBM \u2014 Aug 2026 profile update highlighting top competitor status in networking hardware",
+          "subtitle": "Pricing Model",
+          "type": "Pricing Model",
+          "color": "#10b981",
+          "angle_deg": 90,
+          "content": "Competitor IBM (ibm.com). Move: Aug 2026 profile update highlighting top competitor status in networking hardware. Advantage: Massive scale, enterprise trust, and comprehensive infrastructure portfolio",
+          "timestamp": "2026-11-07T15:10:29.200224+00:00"
+        },
+        {
+          "id": "node_99b36af56357497c",
+          "chip_id": "#node_99b36af",
+          "label": "JAC Recruitment",
+          "full_title": "JAC Recruitment \u2014 Expanding lookalike competitor network to capture mid-market industrial talent pipelines",
+          "subtitle": "Pricing Model",
+          "type": "Pricing Model",
+          "color": "#10b981",
+          "angle_deg": 140,
+          "content": "Competitor JAC Recruitment (jac.com). Move: Expanding lookalike competitor network to capture mid-market industrial talent pipelines. Advantage: Strong network in industrial workforce placement, potentially impacting Acme's operational staffing",
+          "timestamp": "2026-11-07T15:10:29.200226+00:00"
+        },
+        {
+          "id": "node_cd32446c028945f9",
+          "chip_id": "#node_cd32446",
+          "label": "Sample Briefings ...",
+          "full_title": "Sample Briefings | BriefingIQ",
+          "subtitle": "Pricing Model",
+          "type": "Pricing Model",
+          "color": "#10b981",
+          "angle_deg": 195,
+          "content": "Article: Sample Briefings | BriefingIQ\nSource: www.briefingiq.ai\nSample Briefings Three example briefings, three different roles These are illustrative examples \u2014 same shape as the briefings real subscribers receive, but with company-specific de",
+          "timestamp": "Fri, 16 Oct 2026 00:00:00 GMT"
+        },
+        {
+          "id": "node_5b6010d9ae35467a",
+          "chip_id": "#node_5b6010d",
+          "label": "How to Write a Pr...",
+          "full_title": "How to Write a Press Release: Format, Template, and Examples (2026 Guide) | Shadow",
+          "subtitle": "Pricing Model",
+          "type": "Pricing Model",
+          "color": "#10b981",
+          "angle_deg": 235,
+          "content": "Article: How to Write a Press Release: Format, Template, and Examples (2026 Guide) | Shadow\nSource: www.shadow.inc\nThe most common headline failure is leading with the company name in a self-congratulatory frame. 'Acme Corp Announces Amazing New Platform' tells the journalist nothing about the ",
+          "timestamp": "Thu, 25 Jun 2026 00:00:00 GMT"
+        }
+      ],
+      "recalled_chips": [
+        "#node_48b7d0c",
+        "#node_d281bba",
+        "#node_b83eeee",
+        "#node_2c23db4",
+        "#node_568ced3",
+        "#node_99b36af"
+      ],
+      "instant_prompts": [
+        "What is Acme's pricing moat?",
+        "How have competitor prices shifted?",
+        "What strategic counter-move should we execute?"
+      ]
+    },
+    "neural_nodes": [
+      {
+        "id": "node_48b7d0c2f4e14a18",
+        "chip_id": "#node_48b7d0c",
+        "label": "Develop and publis...",
+        "full_title": "Develop and publish a detailed 'Supply Chain Resilience Report' highlighting Acme's ability to reduce lead times by 15-20% for mid-market clients.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 270,
+        "content": "Strategic Move [P0 Critical]: Develop and publish a detailed 'Supply Chain Resilience Report' highlighting Acme's ability to reduce lead times by 15-20% for mid-market clients.. Rationale: Directly addresses the key market trend of supply chain optimization and differentiates Acme from larger, slower competitors like IBM.",
+        "timestamp": "2026-11-07T15:10:29.200213+00:00"
+      },
+      {
+        "id": "node_d281bbae14554e21",
+        "chip_id": "#node_d281bba",
+        "label": "Launch a targeted ...",
+        "full_title": "Launch a targeted digital marketing campaign showcasing custom component case studies and engineering expertise on LinkedIn and industry-specific platforms.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 320,
+        "content": "Strategic Move [P1 Offensive]: Launch a targeted digital marketing campaign showcasing custom component case studies and engineering expertise on LinkedIn and industry-specific platforms.. Rationale: Counters the digital experience gap by demonstrating technical depth and modern communication, appealing to tech-savvy industrial buyers.",
+        "timestamp": "2026-11-07T15:10:29.200217+00:00"
+      },
+      {
+        "id": "node_b83eeeeb85f84230",
+        "chip_id": "#node_b83eeee",
+        "label": "Audit pricing pari...",
+        "full_title": "Audit pricing parity against IBM and deploy targeted annual incentive bundles.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 15,
+        "content": "Strategic Move [P0 Critical]: Audit pricing parity against IBM and deploy targeted annual incentive bundles.. Rationale: Directly counters IBM's aggressive positioning while defending margin on renewal cohorts.",
+        "timestamp": "2026-11-07T15:10:29.200219+00:00"
+      },
+      {
+        "id": "node_2c23db4437eb4c8d",
+        "chip_id": "#node_2c23db4",
+        "label": "Square",
+        "full_title": "Square \u2014 Expanding hardware ecosystem to capture mid-market retail and industrial service points",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 65,
+        "content": "Competitor Square (squareup.com). Move: Expanding hardware ecosystem to capture mid-market retail and industrial service points. Advantage: Superior digital integration and brand recognition in transactional interfaces",
+        "timestamp": "2026-11-07T15:10:29.200222+00:00"
+      },
+      {
+        "id": "node_568ced32b88e488a",
+        "chip_id": "#node_568ced3",
+        "label": "IBM",
+        "full_title": "IBM \u2014 Aug 2026 profile update highlighting top competitor status in networking hardware",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 90,
+        "content": "Competitor IBM (ibm.com). Move: Aug 2026 profile update highlighting top competitor status in networking hardware. Advantage: Massive scale, enterprise trust, and comprehensive infrastructure portfolio",
+        "timestamp": "2026-11-07T15:10:29.200224+00:00"
+      },
+      {
+        "id": "node_99b36af56357497c",
+        "chip_id": "#node_99b36af",
+        "label": "JAC Recruitment",
+        "full_title": "JAC Recruitment \u2014 Expanding lookalike competitor network to capture mid-market industrial talent pipelines",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 140,
+        "content": "Competitor JAC Recruitment (jac.com). Move: Expanding lookalike competitor network to capture mid-market industrial talent pipelines. Advantage: Strong network in industrial workforce placement, potentially impacting Acme's operational staffing",
+        "timestamp": "2026-11-07T15:10:29.200226+00:00"
+      },
+      {
+        "id": "node_cd32446c028945f9",
+        "chip_id": "#node_cd32446",
+        "label": "Sample Briefings ...",
+        "full_title": "Sample Briefings | BriefingIQ",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 195,
+        "content": "Article: Sample Briefings | BriefingIQ\nSource: www.briefingiq.ai\nSample Briefings Three example briefings, three different roles These are illustrative examples \u2014 same shape as the briefings real subscribers receive, but with company-specific de",
+        "timestamp": "Fri, 16 Oct 2026 00:00:00 GMT"
+      },
+      {
+        "id": "node_5b6010d9ae35467a",
+        "chip_id": "#node_5b6010d",
+        "label": "How to Write a Pr...",
+        "full_title": "How to Write a Press Release: Format, Template, and Examples (2026 Guide) | Shadow",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 235,
+        "content": "Article: How to Write a Press Release: Format, Template, and Examples (2026 Guide) | Shadow\nSource: www.shadow.inc\nThe most common headline failure is leading with the company name in a self-congratulatory frame. 'Acme Corp Announces Amazing New Platform' tells the journalist nothing about the ",
+        "timestamp": "Thu, 25 Jun 2026 00:00:00 GMT"
+      }
+    ],
+    "recalled_chips": [
+      "#node_48b7d0c",
+      "#node_d281bba",
+      "#node_b83eeee",
+      "#node_2c23db4",
+      "#node_568ced3",
+      "#node_99b36af"
+    ],
+    "instant_prompts": [
+      "What is Acme's pricing moat?",
+      "How have competitor prices shifted?",
+      "What strategic counter-move should we execute?"
+    ],
+    "compounding_message": "Memory mode disabled: Stateless analysis performed without historical retention."
+  },
+  "neural_network": {
+    "center_node": {
+      "id": "node_center",
+      "label": "Acme",
+      "color": "#0284c7"
+    },
+    "radial_nodes": [
+      {
+        "id": "node_48b7d0c2f4e14a18",
+        "chip_id": "#node_48b7d0c",
+        "label": "Develop and publis...",
+        "full_title": "Develop and publish a detailed 'Supply Chain Resilience Report' highlighting Acme's ability to reduce lead times by 15-20% for mid-market clients.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 270,
+        "content": "Strategic Move [P0 Critical]: Develop and publish a detailed 'Supply Chain Resilience Report' highlighting Acme's ability to reduce lead times by 15-20% for mid-market clients.. Rationale: Directly addresses the key market trend of supply chain optimization and differentiates Acme from larger, slower competitors like IBM.",
+        "timestamp": "2026-11-07T15:10:29.200213+00:00"
+      },
+      {
+        "id": "node_d281bbae14554e21",
+        "chip_id": "#node_d281bba",
+        "label": "Launch a targeted ...",
+        "full_title": "Launch a targeted digital marketing campaign showcasing custom component case studies and engineering expertise on LinkedIn and industry-specific platforms.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 320,
+        "content": "Strategic Move [P1 Offensive]: Launch a targeted digital marketing campaign showcasing custom component case studies and engineering expertise on LinkedIn and industry-specific platforms.. Rationale: Counters the digital experience gap by demonstrating technical depth and modern communication, appealing to tech-savvy industrial buyers.",
+        "timestamp": "2026-11-07T15:10:29.200217+00:00"
+      },
+      {
+        "id": "node_b83eeeeb85f84230",
+        "chip_id": "#node_b83eeee",
+        "label": "Audit pricing pari...",
+        "full_title": "Audit pricing parity against IBM and deploy targeted annual incentive bundles.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 15,
+        "content": "Strategic Move [P0 Critical]: Audit pricing parity against IBM and deploy targeted annual incentive bundles.. Rationale: Directly counters IBM's aggressive positioning while defending margin on renewal cohorts.",
+        "timestamp": "2026-11-07T15:10:29.200219+00:00"
+      },
+      {
+        "id": "node_2c23db4437eb4c8d",
+        "chip_id": "#node_2c23db4",
+        "label": "Square",
+        "full_title": "Square \u2014 Expanding hardware ecosystem to capture mid-market retail and industrial service points",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 65,
+        "content": "Competitor Square (squareup.com). Move: Expanding hardware ecosystem to capture mid-market retail and industrial service points. Advantage: Superior digital integration and brand recognition in transactional interfaces",
+        "timestamp": "2026-11-07T15:10:29.200222+00:00"
+      },
+      {
+        "id": "node_568ced32b88e488a",
+        "chip_id": "#node_568ced3",
+        "label": "IBM",
+        "full_title": "IBM \u2014 Aug 2026 profile update highlighting top competitor status in networking hardware",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 90,
+        "content": "Competitor IBM (ibm.com). Move: Aug 2026 profile update highlighting top competitor status in networking hardware. Advantage: Massive scale, enterprise trust, and comprehensive infrastructure portfolio",
+        "timestamp": "2026-11-07T15:10:29.200224+00:00"
+      },
+      {
+        "id": "node_99b36af56357497c",
+        "chip_id": "#node_99b36af",
+        "label": "JAC Recruitment",
+        "full_title": "JAC Recruitment \u2014 Expanding lookalike competitor network to capture mid-market industrial talent pipelines",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 140,
+        "content": "Competitor JAC Recruitment (jac.com). Move: Expanding lookalike competitor network to capture mid-market industrial talent pipelines. Advantage: Strong network in industrial workforce placement, potentially impacting Acme's operational staffing",
+        "timestamp": "2026-11-07T15:10:29.200226+00:00"
+      },
+      {
+        "id": "node_cd32446c028945f9",
+        "chip_id": "#node_cd32446",
+        "label": "Sample Briefings ...",
+        "full_title": "Sample Briefings | BriefingIQ",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 195,
+        "content": "Article: Sample Briefings | BriefingIQ\nSource: www.briefingiq.ai\nSample Briefings Three example briefings, three different roles These are illustrative examples \u2014 same shape as the briefings real subscribers receive, but with company-specific de",
+        "timestamp": "Fri, 16 Oct 2026 00:00:00 GMT"
+      },
+      {
+        "id": "node_5b6010d9ae35467a",
+        "chip_id": "#node_5b6010d",
+        "label": "How to Write a Pr...",
+        "full_title": "How to Write a Press Release: Format, Template, and Examples (2026 Guide) | Shadow",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 235,
+        "content": "Article: How to Write a Press Release: Format, Template, and Examples (2026 Guide) | Shadow\nSource: www.shadow.inc\nThe most common headline failure is leading with the company name in a self-congratulatory frame. 'Acme Corp Announces Amazing New Platform' tells the journalist nothing about the ",
+        "timestamp": "Thu, 25 Jun 2026 00:00:00 GMT"
+      }
+    ],
+    "recalled_chips": [
+      "#node_48b7d0c",
+      "#node_d281bba",
+      "#node_b83eeee",
+      "#node_2c23db4",
+      "#node_568ced3",
+      "#node_99b36af"
+    ],
+    "instant_prompts": [
+      "What is Acme's pricing moat?",
+      "How have competitor prices shifted?",
+      "What strategic counter-move should we execute?"
+    ]
+  },
+  "source_verification": [
+    {
+      "title": "Sample Briefings | BriefingIQ",
+      "url": "https://www.briefingiq.ai/samples",
+      "publisher": "www.briefingiq.ai",
+      "published_date": "Fri, 16 Oct 2026 00:00:00 GMT",
+      "snippet": "Sample Briefings Three example briefings, three different roles These are illustrative examples \u2014 same shape as the briefings real subscribers receive, but with company-specific details swapped for a genericacme.com. Your briefing will be tuned to your actual role, industry, and ...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "How to Write a Press Release: Format, Template, and Examples (2026 Guide) | Shadow",
+      "url": "https://www.shadow.inc/resources/how-to-write-a-press-release",
+      "publisher": "www.shadow.inc",
+      "published_date": "Thu, 25 Jun 2026 00:00:00 GMT",
+      "snippet": "The most common headline failure is leading with the company name in a self-congratulatory frame. 'Acme Corp Announces Amazing New Platform' tells the journalist nothing about the news. 'Acme Corp Raises current published pricingM Series C to Expand Enterprise AI Platform' tells ...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/p/DecbFYEx9th",
+      "publisher": "www.instagram.com",
+      "published_date": "Monitored Source",
+      "snippet": "acmefurnitureofficial \ud83c\udf89 Join Acme at the 2026 High Point Fall Market! Discover exciting new designs, exceptional quality, and competitive prices at our historic five-floor showroom! Explore our extensive furniture collection, enjoy exclusive showroom discounts, and take advantage...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "ACME Presentation 2026 & 5 Star Equine Sales",
+      "url": "https://www.facebook.com/ReiningFuturity/posts/acme-presentation-2026-5-star-equine-sales-greater-visibility-for-participating-/1113844261039148",
+      "publisher": "www.facebook.com",
+      "published_date": "Monitored Source",
+      "snippet": "We're thrilled to announce our new partnership with 5 Star Equine Sales and ACME S.r.l.. to bring a whole new kind of sales experience to the Futurity in",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "Acme United Corporation Announces New Bank Facility",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/acme-united-corporation-announces-bank-200000580.html",
+      "publisher": "finance.yahoo.com",
+      "published_date": "Wed, 15 Jul 2026 00:00:00 GMT",
+      "snippet": "1. Crypto Crypto 2. AI AI This is a paid press release. Contact the press release distributor directly with any inquiries. GlobeNewswire Acme United Corporation Announces New Bank Facility Acme United Corporation 4 min read HSBC -1.66% ACU +1.35% Acme United Corporation Acme Unit...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "Acme United Q3 2026 Earnings Call Transcript - Acme United (AMEX:ACU)",
+      "url": "https://www.benzinga.com/news/26/10/62628642/acme-united-q3-2026-earnings-call-transcript",
+      "publisher": "www.benzinga.com",
+      "published_date": "Tue, 27 Oct 2026 16:47:35 GMT",
+      "snippet": "Advertisment Image 5: Gold, Silver & Copper: Drilling for the Next Discovery Gold, Silver & Copper: Drilling for the Next Discovery Ad by SMX(17b disclosure) With new capital raised, reduced debt and higher equity, SMX (NASDAQ: SMX) is developing technology designed to verify and...",
+      "verification_status": "Verified Original Source"
+    }
+  ]
+}

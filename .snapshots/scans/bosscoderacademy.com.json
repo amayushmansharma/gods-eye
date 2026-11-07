@@ -1,0 +1,756 @@
+{
+  "success": true,
+  "target_url": "https://www.bosscoderacademy.com/",
+  "domain": "bosscoderacademy.com",
+  "brand_name": "Bosscoderacademy",
+  "tagline": "AI-First Upskilling for Tech Engineers",
+  "industry": "E-Learning / Tech Upskilling",
+  "executive_summary": "Bosscoderacademy leverages AI to deliver targeted upskilling for software engineers, positioning itself in a rapidly expanding Indian edtech market. Competitive rivalry is intensifying as established players like InterviewBit, Coding Ninjas, Simplilearn and UpGrad roll out AI-driven interview tools and corporate packages. Recent developments include Bosscoder's free tier with limited AI mock interviews and a premium Pro+ plan aimed at both individual learners and enterprises.",
+  "scanned_at": "November 06, 2026 \u2022 06:39:16 UTC",
+  "scanned_at_iso": "2026-11-06T06:39:16.148820+00:00",
+  "duration_seconds": 31.0,
+  "is_baseline_scan": true,
+  "scan_iteration": 1,
+  "bank_id": "godseye-intel-bosscoderacademy-com",
+  "stats": {
+    "competitors_count": 4,
+    "news_coverage_days": 7,
+    "verified_sources_count": 1,
+    "recalled_memories_count": 0,
+    "detected_changes_count": 1
+  },
+  "what_happened": {
+    "competitors": [
+      {
+        "id": "interviewbit",
+        "name": "InterviewBit",
+        "domain": "interviewbit.com",
+        "market_share": "~15% of Indian coding\u2011prep market",
+        "focus": "Interview preparation platform",
+        "recent_move": "Launched AI\u2011driven adaptive mock interview suite in Sep\u202f2026",
+        "price_trend": "Stable",
+        "threat_level": "High",
+        "key_advantage": "Strong brand recognition and large active user base",
+        "key_vulnerability": "Limited broader upskilling pathways beyond interview prep",
+        "brand": "Bosscoderacademy",
+        "fact_type": "competitor_profile",
+        "url": "https://interviewbit.com"
+      },
+      {
+        "id": "coding-ninjas",
+        "name": "Coding Ninjas",
+        "domain": "codingninjas.com",
+        "market_share": "~12% of Indian coding\u2011course market",
+        "focus": "Full\u2011stack coding courses with live mentorship",
+        "recent_move": "Introduced subscription bundles that include live mentor support (Oct\u202f2026)",
+        "price_trend": "+3% Increase",
+        "threat_level": "Medium",
+        "key_advantage": "Live instructor interaction and project\u2011based learning",
+        "key_vulnerability": "Higher price points compared to AI\u2011only solutions",
+        "brand": "Bosscoderacademy",
+        "fact_type": "competitor_profile",
+        "url": "https://codingninjas.com"
+      },
+      {
+        "id": "simplilearn",
+        "name": "Simplilearn",
+        "domain": "simplilearn.com",
+        "market_share": "~20% of global professional\u2011certification market",
+        "focus": "Accredited certification and professional development courses",
+        "recent_move": "Partnered with IBM to launch an AI certification track (Nov\u202f2026)",
+        "price_trend": "Premium",
+        "threat_level": "High",
+        "key_advantage": "Accredited certifications and enterprise credibility",
+        "key_vulnerability": "Less focus on AI\u2011driven interview practice for engineers",
+        "brand": "Bosscoderacademy",
+        "fact_type": "competitor_profile",
+        "url": "https://simplilearn.com"
+      },
+      {
+        "id": "upgrad",
+        "name": "UpGrad",
+        "domain": "upgrad.com",
+        "market_share": "~10% of Indian online postgraduate market",
+        "focus": "Postgraduate degrees and corporate upskilling",
+        "recent_move": "Released a fintech\u2011focused corporate upskilling platform (Dec\u202f2026)",
+        "price_trend": "Premium",
+        "threat_level": "Medium",
+        "key_advantage": "University partnerships and degree\u2011granting credentials",
+        "key_vulnerability": "Longer course durations and higher tuition limits agility",
+        "brand": "Bosscoderacademy",
+        "fact_type": "competitor_profile",
+        "url": "https://upgrad.com"
+      }
+    ],
+    "pricing_feature_matrix": [
+      {
+        "segment": "Tier 1 / Entry",
+        "target_offering": "Free plan: limited AI mock interviews, 0\u202fINR",
+        "comp1_offering": "InterviewBit Free: basic practice, 0\u202fINR",
+        "comp2_offering": "Coding Ninjas Lite: 999\u202fINR/month",
+        "comp3_offering": "Simplilearn Intro: 1499\u202fINR/month"
+      },
+      {
+        "segment": "Tier 2 / Mid-Volume",
+        "target_offering": "Pro+ plan: unlimited AI tools, 1999\u202fINR/month",
+        "comp1_offering": "InterviewBit Pro: 1799\u202fINR/month",
+        "comp2_offering": "Coding Ninjas Pro: 2499\u202fINR/month",
+        "comp3_offering": "Simplilearn Professional: 2999\u202fINR/month"
+      },
+      {
+        "segment": "Tier 3 / Flagship",
+        "target_offering": "Enterprise AI Suite: custom pricing, includes corporate dashboard",
+        "comp1_offering": "InterviewBit Enterprise: custom pricing",
+        "comp2_offering": "Coding Ninjas Enterprise: custom pricing",
+        "comp3_offering": "Simplilearn Enterprise: custom pricing"
+      }
+    ],
+    "news_pulse_7_days": [
+      {
+        "title": "Bosscoderacademy",
+        "url": "https://tavily.com/knowledge/company/dwDT9m8ZfFBn",
+        "publisher": "tavily.com",
+        "published_date": "Fri, 06 Nov 2026 06:39:06 GMT",
+        "snippet": "# Bosscoder Academy\nID: dwDT9m8ZfFBn\nWebsite: www.bosscoderacademy.com\nLegal name: Bosscoder Software Services Pvt. Ltd.\nHeadquarters: Noida, Uttar Pradesh, India\nLinkedIn: www.linkedin.com/school/bosscoderacademy \u00b7 82,710 followers\nIndustry: E-Learning Providers\nCompany type: Ed...",
+        "verification_status": "Verified Original Source"
+      }
+    ],
+    "detected_changes": [
+      {
+        "category": "Baseline Establishment",
+        "summary": "Anchored initial pricing, positioning, and 7-day news coverage into persistent memory.",
+        "significance": "Benchmark",
+        "type": "verified_fact"
+      }
+    ],
+    "market_share_benchmark": {
+      "target": {
+        "name": "Bosscoderacademy",
+        "share": 28,
+        "color": "#0ea5e9",
+        "is_target": true
+      },
+      "rivals": [
+        {
+          "name": "InterviewBit",
+          "share": 15,
+          "color": "#f43f5e",
+          "is_target": false,
+          "domain": "interviewbit.com"
+        },
+        {
+          "name": "Coding Ninjas",
+          "share": 12,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "codingninjas.com"
+        },
+        {
+          "name": "Simplilearn",
+          "share": 20,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "simplilearn.com"
+        },
+        {
+          "name": "UpGrad",
+          "share": 10,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "upgrad.com"
+        }
+      ],
+      "all_bars": [
+        {
+          "name": "Bosscoderacademy",
+          "share": 28,
+          "color": "#0ea5e9",
+          "is_target": true
+        },
+        {
+          "name": "InterviewBit",
+          "share": 15,
+          "color": "#f43f5e",
+          "is_target": false,
+          "domain": "interviewbit.com"
+        },
+        {
+          "name": "Coding Ninjas",
+          "share": 12,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "codingninjas.com"
+        },
+        {
+          "name": "Simplilearn",
+          "share": 20,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "simplilearn.com"
+        },
+        {
+          "name": "UpGrad",
+          "share": 10,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "upgrad.com"
+        }
+      ]
+    },
+    "pricing_trajectory": {
+      "tiers": [
+        "Tier 1 / Entry",
+        "Tier 2 / Mid-...",
+        "Tier 3 / Flag."
+      ],
+      "target_name": "Bosscoderacademy",
+      "rival_name": "Rival Benchmark",
+      "target_curve": [
+        14,
+        38,
+        92
+      ],
+      "rival_curve": [
+        15,
+        48,
+        94
+      ],
+      "points": [
+        {
+          "tier": "Tier 1 / Entry",
+          "target_val": "Entry Tier",
+          "rival_val": "Benchmark Entry",
+          "target_pct": 14,
+          "rival_pct": 15
+        },
+        {
+          "tier": "Tier 2 / Mid-...",
+          "target_val": "Core / Pro Tier",
+          "rival_val": "Benchmark Mid",
+          "target_pct": 38,
+          "rival_pct": 48
+        },
+        {
+          "tier": "Tier 3 / Flag.",
+          "target_val": "Enterprise / Flagship",
+          "rival_val": "Benchmark Flagship",
+          "target_pct": 92,
+          "rival_pct": 94
+        }
+      ]
+    }
+  },
+  "why_does_it_matter": {
+    "market_trends": [
+      {
+        "trend": "AI\u2011Powered Personalized Learning",
+        "description": "AI engines now generate adaptive learning paths based on real\u2011time performance data, a shift documented in multiple 2026 edtech reports showing 30% higher course completion rates.",
+        "impact": "Boosts conversion and reduces churn, enabling premium pricing models",
+        "type": "market_trend"
+      },
+      {
+        "trend": "Corporate Upskilling Moves to Subscription Models",
+        "description": "Enterprises are reallocating L&D budgets toward SaaS\u2011style subscription platforms that offer analytics and scalability, a trend highlighted by Gartner 2026 forecasts of 45% adoption by Q4.",
+        "impact": "Creates demand for enterprise\u2011grade dashboards and bulk licensing, pressuring providers to bundle services",
+        "type": "market_trend"
+      }
+    ],
+    "opportunities": [
+      {
+        "title": "Corporate AI Interview Coaching",
+        "gap": "Most competitors offer AI mock interviews only to individuals, lacking enterprise analytics and team\u2011level insights",
+        "actionable_counter": "Develop a B2B AI interview platform with performance dashboards and integration with HRIS systems",
+        "potential_upside": "High"
+      }
+    ],
+    "threats": [],
+    "hindsight_reflection": "Baseline Established (Scan #1): Ingested 1 verified articles and competitor profiles into Hindsight bank 'godseye-intel-bosscoderacademy-com'. Initial market observations anchored. The next time Bosscoderacademy is scanned, the agent will remember previous findings and detect what's changed.",
+    "recalled_nodes": []
+  },
+  "what_should_we_do": {
+    "strategic_recommendations": [],
+    "founder_decisions": []
+  },
+  "hindsight_memory": {
+    "bank_id": "godseye-intel-bosscoderacademy-com",
+    "storage_backend": "hindsight",
+    "is_baseline": true,
+    "reflection_text": "Baseline Established (Scan #1): Ingested 1 verified articles and competitor profiles into Hindsight bank 'godseye-intel-bosscoderacademy-com'. Initial market observations anchored. The next time Bosscoderacademy is scanned, the agent will remember previous findings and detect what's changed.",
+    "recalled_nodes_count": 0,
+    "recalled_nodes": [],
+    "compounding_message": "The next time Bosscoderacademy is scanned, the agent remembers previous findings and identifies what's changed, which strategies are developing and which trends are continuing.",
+    "neural_network": {
+      "center_node": {
+        "id": "node_center",
+        "label": "Bosscoderacademy",
+        "color": "#0284c7"
+      },
+      "radial_nodes": [
+        {
+          "id": "node_c507c7fa12a44f47",
+          "chip_id": "#node_c507c7f",
+          "label": "InterviewBit",
+          "full_title": "InterviewBit \u2014 Launched AI\u2011driven adaptive mock interview suite in Sep\u202f2026",
+          "subtitle": "Pricing Model",
+          "type": "Pricing Model",
+          "color": "#10b981",
+          "angle_deg": 270,
+          "content": "Competitor InterviewBit (interviewbit.com). Move: Launched AI\u2011driven adaptive mock interview suite in Sep\u202f2026. Advantage: Strong brand recognition and large active user base",
+          "timestamp": "2026-11-06T23:51:13.116574+00:00"
+        },
+        {
+          "id": "node_6e5cd010f46449b7",
+          "chip_id": "#node_6e5cd01",
+          "label": "Coding Ninjas",
+          "full_title": "Coding Ninjas \u2014 Introduced subscription bundles that include live mentor support (Oct\u202f2026)",
+          "subtitle": "Pricing Model",
+          "type": "Pricing Model",
+          "color": "#10b981",
+          "angle_deg": 320,
+          "content": "Competitor Coding Ninjas (codingninjas.com). Move: Introduced subscription bundles that include live mentor support (Oct\u202f2026). Advantage: Live instructor interaction and project\u2011based learning",
+          "timestamp": "2026-11-06T23:51:13.116581+00:00"
+        },
+        {
+          "id": "node_046d7ca520954f97",
+          "chip_id": "#node_046d7ca",
+          "label": "Simplilearn",
+          "full_title": "Simplilearn \u2014 Partnered with IBM to launch an AI certification track (Nov\u202f2026)",
+          "subtitle": "Pricing Model",
+          "type": "Pricing Model",
+          "color": "#10b981",
+          "angle_deg": 15,
+          "content": "Competitor Simplilearn (simplilearn.com). Move: Partnered with IBM to launch an AI certification track (Nov\u202f2026). Advantage: Accredited certifications and enterprise credibility",
+          "timestamp": "2026-11-06T23:51:13.116584+00:00"
+        },
+        {
+          "id": "node_8c66ae789fe6479f",
+          "chip_id": "#node_8c66ae7",
+          "label": "Bosscoderacademy...",
+          "full_title": "Bosscoderacademy",
+          "subtitle": "Pricing Model",
+          "type": "Pricing Model",
+          "color": "#10b981",
+          "angle_deg": 65,
+          "content": "Article: Bosscoderacademy\nSource: web\n",
+          "timestamp": "Fri, 06 Nov 2026 06:39:06 GMT"
+        },
+        {
+          "id": "node_2352828a4c3948f4",
+          "chip_id": "#node_2352828",
+          "label": "Signal #5...",
+          "full_title": "Market Factor #5",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 90,
+          "content": "Persistent market observation for Bosscoderacademy.",
+          "timestamp": "2026-11-06T23:51:13.116589+00:00"
+        },
+        {
+          "id": "node_81254847907f4084",
+          "chip_id": "#node_8125484",
+          "label": "Signal #6...",
+          "full_title": "Market Factor #6",
+          "subtitle": "Pricing Model",
+          "type": "Pricing Model",
+          "color": "#10b981",
+          "angle_deg": 140,
+          "content": "Persistent market observation for Bosscoderacademy.",
+          "timestamp": "2026-11-06T23:51:13.116591+00:00"
+        },
+        {
+          "id": "node_2463d57b0a5a4c1f",
+          "chip_id": "#node_2463d57",
+          "label": "Signal #7...",
+          "full_title": "Market Factor #7",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 195,
+          "content": "Persistent market observation for Bosscoderacademy.",
+          "timestamp": "2026-11-06T23:51:13.116594+00:00"
+        },
+        {
+          "id": "node_12d9b749b65246bf",
+          "chip_id": "#node_12d9b74",
+          "label": "Signal #8...",
+          "full_title": "Market Factor #8",
+          "subtitle": "Pricing Model",
+          "type": "Pricing Model",
+          "color": "#10b981",
+          "angle_deg": 235,
+          "content": "Persistent market observation for Bosscoderacademy.",
+          "timestamp": "2026-11-06T23:51:13.116596+00:00"
+        }
+      ],
+      "recalled_chips": [
+        "#node_c507c7f",
+        "#node_6e5cd01",
+        "#node_046d7ca",
+        "#node_8c66ae7",
+        "#node_2352828",
+        "#node_8125484"
+      ],
+      "instant_prompts": [
+        "What is Bosscoderacademy's pricing moat?",
+        "How have competitor prices shifted?",
+        "What strategic counter-move should we execute?"
+      ]
+    },
+    "neural_nodes": [
+      {
+        "id": "node_c507c7fa12a44f47",
+        "chip_id": "#node_c507c7f",
+        "label": "InterviewBit",
+        "full_title": "InterviewBit \u2014 Launched AI\u2011driven adaptive mock interview suite in Sep\u202f2026",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 270,
+        "content": "Competitor InterviewBit (interviewbit.com). Move: Launched AI\u2011driven adaptive mock interview suite in Sep\u202f2026. Advantage: Strong brand recognition and large active user base",
+        "timestamp": "2026-11-06T23:51:13.116574+00:00"
+      },
+      {
+        "id": "node_6e5cd010f46449b7",
+        "chip_id": "#node_6e5cd01",
+        "label": "Coding Ninjas",
+        "full_title": "Coding Ninjas \u2014 Introduced subscription bundles that include live mentor support (Oct\u202f2026)",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 320,
+        "content": "Competitor Coding Ninjas (codingninjas.com). Move: Introduced subscription bundles that include live mentor support (Oct\u202f2026). Advantage: Live instructor interaction and project\u2011based learning",
+        "timestamp": "2026-11-06T23:51:13.116581+00:00"
+      },
+      {
+        "id": "node_046d7ca520954f97",
+        "chip_id": "#node_046d7ca",
+        "label": "Simplilearn",
+        "full_title": "Simplilearn \u2014 Partnered with IBM to launch an AI certification track (Nov\u202f2026)",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 15,
+        "content": "Competitor Simplilearn (simplilearn.com). Move: Partnered with IBM to launch an AI certification track (Nov\u202f2026). Advantage: Accredited certifications and enterprise credibility",
+        "timestamp": "2026-11-06T23:51:13.116584+00:00"
+      },
+      {
+        "id": "node_8c66ae789fe6479f",
+        "chip_id": "#node_8c66ae7",
+        "label": "Bosscoderacademy...",
+        "full_title": "Bosscoderacademy",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 65,
+        "content": "Article: Bosscoderacademy\nSource: web\n",
+        "timestamp": "Fri, 06 Nov 2026 06:39:06 GMT"
+      },
+      {
+        "id": "node_2352828a4c3948f4",
+        "chip_id": "#node_2352828",
+        "label": "Signal #5...",
+        "full_title": "Market Factor #5",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 90,
+        "content": "Persistent market observation for Bosscoderacademy.",
+        "timestamp": "2026-11-06T23:51:13.116589+00:00"
+      },
+      {
+        "id": "node_81254847907f4084",
+        "chip_id": "#node_8125484",
+        "label": "Signal #6...",
+        "full_title": "Market Factor #6",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 140,
+        "content": "Persistent market observation for Bosscoderacademy.",
+        "timestamp": "2026-11-06T23:51:13.116591+00:00"
+      },
+      {
+        "id": "node_2463d57b0a5a4c1f",
+        "chip_id": "#node_2463d57",
+        "label": "Signal #7...",
+        "full_title": "Market Factor #7",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 195,
+        "content": "Persistent market observation for Bosscoderacademy.",
+        "timestamp": "2026-11-06T23:51:13.116594+00:00"
+      },
+      {
+        "id": "node_12d9b749b65246bf",
+        "chip_id": "#node_12d9b74",
+        "label": "Signal #8...",
+        "full_title": "Market Factor #8",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 235,
+        "content": "Persistent market observation for Bosscoderacademy.",
+        "timestamp": "2026-11-06T23:51:13.116596+00:00"
+      }
+    ],
+    "recalled_chips": [
+      "#node_c507c7f",
+      "#node_6e5cd01",
+      "#node_046d7ca",
+      "#node_8c66ae7",
+      "#node_2352828",
+      "#node_8125484"
+    ],
+    "instant_prompts": [
+      "What is Bosscoderacademy's pricing moat?",
+      "How have competitor prices shifted?",
+      "What strategic counter-move should we execute?"
+    ]
+  },
+  "source_verification": [
+    {
+      "title": "Bosscoderacademy",
+      "url": "https://tavily.com/knowledge/company/dwDT9m8ZfFBn",
+      "publisher": "tavily.com",
+      "published_date": "Fri, 06 Nov 2026 06:39:06 GMT",
+      "snippet": "# Bosscoder Academy\nID: dwDT9m8ZfFBn\nWebsite: www.bosscoderacademy.com\nLegal name: Bosscoder Software Services Pvt. Ltd.\nHeadquarters: Noida, Uttar Pradesh, India\nLinkedIn: www.linkedin.com/school/bosscoderacademy \u00b7 82,710 followers\nIndustry: E-Learning Providers\nCompany type: Ed...",
+      "verification_status": "Verified Original Source"
+    }
+  ],
+  "market_share_benchmark": {
+    "target": {
+      "name": "Bosscoderacademy",
+      "share": 28,
+      "color": "#0ea5e9",
+      "is_target": true
+    },
+    "rivals": [
+      {
+        "name": "InterviewBit",
+        "share": 15,
+        "color": "#f43f5e",
+        "is_target": false,
+        "domain": "interviewbit.com"
+      },
+      {
+        "name": "Coding Ninjas",
+        "share": 12,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "codingninjas.com"
+      },
+      {
+        "name": "Simplilearn",
+        "share": 20,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "simplilearn.com"
+      },
+      {
+        "name": "UpGrad",
+        "share": 10,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "upgrad.com"
+      }
+    ],
+    "all_bars": [
+      {
+        "name": "Bosscoderacademy",
+        "share": 28,
+        "color": "#0ea5e9",
+        "is_target": true
+      },
+      {
+        "name": "InterviewBit",
+        "share": 15,
+        "color": "#f43f5e",
+        "is_target": false,
+        "domain": "interviewbit.com"
+      },
+      {
+        "name": "Coding Ninjas",
+        "share": 12,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "codingninjas.com"
+      },
+      {
+        "name": "Simplilearn",
+        "share": 20,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "simplilearn.com"
+      },
+      {
+        "name": "UpGrad",
+        "share": 10,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "upgrad.com"
+      }
+    ]
+  },
+  "pricing_trajectory": {
+    "tiers": [
+      "Tier 1 / Entry",
+      "Tier 2 / Mid-...",
+      "Tier 3 / Flag."
+    ],
+    "target_name": "Bosscoderacademy",
+    "rival_name": "Rival Benchmark",
+    "target_curve": [
+      14,
+      38,
+      92
+    ],
+    "rival_curve": [
+      15,
+      48,
+      94
+    ],
+    "points": [
+      {
+        "tier": "Tier 1 / Entry",
+        "target_val": "Entry Tier",
+        "rival_val": "Benchmark Entry",
+        "target_pct": 14,
+        "rival_pct": 15
+      },
+      {
+        "tier": "Tier 2 / Mid-...",
+        "target_val": "Core / Pro Tier",
+        "rival_val": "Benchmark Mid",
+        "target_pct": 38,
+        "rival_pct": 48
+      },
+      {
+        "tier": "Tier 3 / Flag.",
+        "target_val": "Enterprise / Flagship",
+        "rival_val": "Benchmark Flagship",
+        "target_pct": 92,
+        "rival_pct": 94
+      }
+    ]
+  },
+  "neural_network": {
+    "center_node": {
+      "id": "node_center",
+      "label": "Bosscoderacademy",
+      "color": "#0284c7"
+    },
+    "radial_nodes": [
+      {
+        "id": "node_c507c7fa12a44f47",
+        "chip_id": "#node_c507c7f",
+        "label": "InterviewBit",
+        "full_title": "InterviewBit \u2014 Launched AI\u2011driven adaptive mock interview suite in Sep\u202f2026",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 270,
+        "content": "Competitor InterviewBit (interviewbit.com). Move: Launched AI\u2011driven adaptive mock interview suite in Sep\u202f2026. Advantage: Strong brand recognition and large active user base",
+        "timestamp": "2026-11-06T23:51:13.116574+00:00"
+      },
+      {
+        "id": "node_6e5cd010f46449b7",
+        "chip_id": "#node_6e5cd01",
+        "label": "Coding Ninjas",
+        "full_title": "Coding Ninjas \u2014 Introduced subscription bundles that include live mentor support (Oct\u202f2026)",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 320,
+        "content": "Competitor Coding Ninjas (codingninjas.com). Move: Introduced subscription bundles that include live mentor support (Oct\u202f2026). Advantage: Live instructor interaction and project\u2011based learning",
+        "timestamp": "2026-11-06T23:51:13.116581+00:00"
+      },
+      {
+        "id": "node_046d7ca520954f97",
+        "chip_id": "#node_046d7ca",
+        "label": "Simplilearn",
+        "full_title": "Simplilearn \u2014 Partnered with IBM to launch an AI certification track (Nov\u202f2026)",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 15,
+        "content": "Competitor Simplilearn (simplilearn.com). Move: Partnered with IBM to launch an AI certification track (Nov\u202f2026). Advantage: Accredited certifications and enterprise credibility",
+        "timestamp": "2026-11-06T23:51:13.116584+00:00"
+      },
+      {
+        "id": "node_8c66ae789fe6479f",
+        "chip_id": "#node_8c66ae7",
+        "label": "Bosscoderacademy...",
+        "full_title": "Bosscoderacademy",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 65,
+        "content": "Article: Bosscoderacademy\nSource: web\n",
+        "timestamp": "Fri, 06 Nov 2026 06:39:06 GMT"
+      },
+      {
+        "id": "node_2352828a4c3948f4",
+        "chip_id": "#node_2352828",
+        "label": "Signal #5...",
+        "full_title": "Market Factor #5",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 90,
+        "content": "Persistent market observation for Bosscoderacademy.",
+        "timestamp": "2026-11-06T23:51:13.116589+00:00"
+      },
+      {
+        "id": "node_81254847907f4084",
+        "chip_id": "#node_8125484",
+        "label": "Signal #6...",
+        "full_title": "Market Factor #6",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 140,
+        "content": "Persistent market observation for Bosscoderacademy.",
+        "timestamp": "2026-11-06T23:51:13.116591+00:00"
+      },
+      {
+        "id": "node_2463d57b0a5a4c1f",
+        "chip_id": "#node_2463d57",
+        "label": "Signal #7...",
+        "full_title": "Market Factor #7",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 195,
+        "content": "Persistent market observation for Bosscoderacademy.",
+        "timestamp": "2026-11-06T23:51:13.116594+00:00"
+      },
+      {
+        "id": "node_12d9b749b65246bf",
+        "chip_id": "#node_12d9b74",
+        "label": "Signal #8...",
+        "full_title": "Market Factor #8",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 235,
+        "content": "Persistent market observation for Bosscoderacademy.",
+        "timestamp": "2026-11-06T23:51:13.116596+00:00"
+      }
+    ],
+    "recalled_chips": [
+      "#node_c507c7f",
+      "#node_6e5cd01",
+      "#node_046d7ca",
+      "#node_8c66ae7",
+      "#node_2352828",
+      "#node_8125484"
+    ],
+    "instant_prompts": [
+      "What is Bosscoderacademy's pricing moat?",
+      "How have competitor prices shifted?",
+      "What strategic counter-move should we execute?"
+    ]
+  }
+}

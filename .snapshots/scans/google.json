@@ -1,0 +1,781 @@
+{
+  "success": true,
+  "target_url": "google",
+  "domain": "google",
+  "brand_name": "Google",
+  "tagline": "Market Leader",
+  "industry": "Commercial & Technology",
+  "executive_summary": "Google operates in a highly competitive market requiring continuous tracking of pricing shifts and feature launches.",
+  "scanned_at": "November 06, 2026 \u2022 07:21:03 UTC",
+  "scanned_at_iso": "2026-11-06T07:21:03.053810+00:00",
+  "duration_seconds": 30.0,
+  "is_baseline_scan": true,
+  "scan_iteration": 1,
+  "bank_id": "godseye-intel-google",
+  "stats": {
+    "competitors_count": 2,
+    "news_coverage_days": 7,
+    "verified_sources_count": 5,
+    "recalled_memories_count": 0,
+    "detected_changes_count": 1
+  },
+  "what_happened": {
+    "competitors": [
+      {
+        "id": "rival-1",
+        "name": "Direct Rival A",
+        "domain": "rival-a.com",
+        "market_share": "~35%",
+        "focus": "Core Product Segment",
+        "recent_move": "Announced tier restructuring",
+        "price_trend": "Increasing",
+        "threat_level": "High",
+        "key_advantage": "Established ecosystem",
+        "key_vulnerability": "Higher total cost of ownership",
+        "brand": "Google",
+        "fact_type": "competitor_profile",
+        "url": "https://rival-a.com"
+      },
+      {
+        "id": "rival-2",
+        "name": "Direct Rival B",
+        "domain": "rival-b.com",
+        "market_share": "~25%",
+        "focus": "Growth Segment",
+        "recent_move": "Launched promotional bundles",
+        "price_trend": "Stable",
+        "threat_level": "Medium",
+        "key_advantage": "Rapid onboarding",
+        "key_vulnerability": "Limited enterprise customization",
+        "brand": "Google",
+        "fact_type": "competitor_profile",
+        "url": "https://rival-b.com"
+      }
+    ],
+    "pricing_feature_matrix": [
+      {
+        "segment": "Standard Tier",
+        "target_offering": "Full Feature Suite",
+        "comp1_offering": "Tier A ($49/mo)",
+        "comp2_offering": "Tier B ($39/mo)",
+        "comp3_offering": "Tier C ($59/mo)"
+      }
+    ],
+    "news_pulse_7_days": [
+      {
+        "title": "Apple HomeView Hits $299, Takes on Amazon, Google",
+        "url": "https://tech-insider.org/apple-homeview-smart-display-amazon-google-2026",
+        "publisher": "tech-insider.org",
+        "published_date": "Wed, 14 Oct 2026 10:08:46 GMT",
+        "snippet": "an India price of \u20b939,900 for HomeView launching November 13, 2026. [...] ### Apple Home Collection Prices Worth Knowing\n\nApple announced the Apple Home Collection on October 13, 2026. The collection includes LG indoor and outdoor cameras, a video doorbell, a smart deadbolt, a th...",
+        "verification_status": "Verified Original Source"
+      },
+      {
+        "title": "How Much Does Google Ads Cost? 2026 CPC & CPL Benchmarks by Industry | AdManage.ai Blog",
+        "url": "https://admanage.ai/blog/how-much-does-it-cost-to-advertise-on-google",
+        "publisher": "admanage.ai",
+        "published_date": "Fri, 17 Jul 2026 00:00:00 GMT",
+        "snippet": "That last part is where most teams hit a real ceiling. Not for lack of ideas, but because shipping, naming, tracking, and iterating on hundreds or thousands of variants quickly requires infrastructure that native Ads Manager wasn't built to support at scale. AdManage is built for...",
+        "verification_status": "Verified Original Source"
+      },
+      {
+        "title": "What Google Cloud announced in AI this month \u2013 and how it helps you | Google Cloud Blog",
+        "url": "https://cloud.google.com/blog/products/ai-machine-learning/what-google-cloud-announced-in-ai-this-month",
+        "publisher": "cloud.google.com",
+        "published_date": "Sat, 08 Feb 2025 04:47:27 GMT",
+        "snippet": "AI & Machine Learning\n\n# What Google Cloud announced in AI this month\n\nNovember 3, 2026\n\n##### Andrea Morange\n\nEditor, Google Cloud\n\n##### Try Gemini today\n\nThe front door to AI in the workplace\n\nTry now\n\nEditor\u2019s note: Want to keep up with the latest from Google Cloud? Check bac...",
+        "verification_status": "Verified Original Source"
+      },
+      {
+        "title": "New Gemini business landing page and tools launched",
+        "url": "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners",
+        "publisher": "blog.google",
+        "published_date": "Tue, 20 Oct 2026 00:00:00 GMT",
+        "snippet": "And for larger businesses looking to scale AI across teams with centralized administrative controls, advanced data governance, and enterprise-grade security, explore Gemini for your business.\n\n## Get the latest news from Google in your inbox\n\nSign up for our newsletters with prod...",
+        "verification_status": "Verified Original Source"
+      },
+      {
+        "title": "Tavily",
+        "url": "https://tavily.com/knowledge/company/G3cVIaB2LvXb",
+        "publisher": "tavily.com",
+        "published_date": "Fri, 06 Nov 2026 07:20:52 GMT",
+        "snippet": "Tavily ranks #1 in Company Search Benchmark. Explore the results \u2192\n\nCut agentic search costs. Join our live Office Hours on Nov 17. Register \u2192\n\nWorld of Tavily NYC is happening November 12. Request to join\u2192\n\nImage 1: Tavily by Nebius\n\nProduct Solutions ResourcesDocsPricing\n\nEndpo...",
+        "verification_status": "Verified Original Source"
+      }
+    ],
+    "detected_changes": [
+      {
+        "category": "Baseline Establishment",
+        "summary": "Anchored initial pricing, positioning, and 7-day news coverage into persistent memory.",
+        "significance": "Benchmark",
+        "type": "verified_fact"
+      }
+    ],
+    "market_share_benchmark": {
+      "target": {
+        "name": "Google",
+        "share": 28,
+        "color": "#0ea5e9",
+        "is_target": true
+      },
+      "rivals": [
+        {
+          "name": "Direct Rival A",
+          "share": 35,
+          "color": "#f43f5e",
+          "is_target": false,
+          "domain": "rival-a.com"
+        },
+        {
+          "name": "Direct Rival B",
+          "share": 25,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "rival-b.com"
+        },
+        {
+          "name": "Peer 3",
+          "share": 15,
+          "color": "#10b981",
+          "is_target": false
+        },
+        {
+          "name": "Peer 4",
+          "share": 9,
+          "color": "#10b981",
+          "is_target": false
+        }
+      ],
+      "all_bars": [
+        {
+          "name": "Google",
+          "share": 28,
+          "color": "#0ea5e9",
+          "is_target": true
+        },
+        {
+          "name": "Direct Rival A",
+          "share": 35,
+          "color": "#f43f5e",
+          "is_target": false,
+          "domain": "rival-a.com"
+        },
+        {
+          "name": "Direct Rival B",
+          "share": 25,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "rival-b.com"
+        },
+        {
+          "name": "Peer 3",
+          "share": 15,
+          "color": "#10b981",
+          "is_target": false
+        },
+        {
+          "name": "Peer 4",
+          "share": 9,
+          "color": "#10b981",
+          "is_target": false
+        }
+      ]
+    },
+    "pricing_trajectory": {
+      "tiers": [
+        "Tier 1 / Entry",
+        "Tier 2 / Mid-...",
+        "Tier 3 / Flag."
+      ],
+      "target_name": "Google",
+      "rival_name": "Rival Benchmark",
+      "target_curve": [
+        14,
+        38,
+        92
+      ],
+      "rival_curve": [
+        15,
+        48,
+        94
+      ],
+      "points": [
+        {
+          "tier": "Tier 1 / Entry",
+          "target_val": "Entry Tier",
+          "rival_val": "Benchmark Entry",
+          "target_pct": 14,
+          "rival_pct": 15
+        },
+        {
+          "tier": "Tier 2 / Mid-...",
+          "target_val": "Core / Pro Tier",
+          "rival_val": "Benchmark Mid",
+          "target_pct": 38,
+          "rival_pct": 48
+        },
+        {
+          "tier": "Tier 3 / Flag.",
+          "target_val": "Enterprise / Flagship",
+          "rival_val": "Benchmark Flagship",
+          "target_pct": 92,
+          "rival_pct": 94
+        }
+      ]
+    }
+  },
+  "why_does_it_matter": {
+    "market_trends": [
+      {
+        "trend": "AI Localization",
+        "description": "Rapid integration of specialized workflows.",
+        "impact": "Drives retention.",
+        "type": "market_trend"
+      }
+    ],
+    "opportunities": [
+      {
+        "title": "Unbundled Packaging",
+        "gap": "Rivals enforce monolithic plans.",
+        "actionable_counter": "Offer modular pricing.",
+        "potential_upside": "High"
+      }
+    ],
+    "threats": [
+      {
+        "title": "Aggressive Discounting",
+        "competitor": "Rival A",
+        "move_detail": "Slashing annual contracts.",
+        "severity": "High",
+        "impact_timeline": "Immediate"
+      }
+    ],
+    "hindsight_reflection": "Baseline Established (Scan #1): Ingested 5 verified articles and competitor profiles into Hindsight bank 'godseye-intel-google'. Initial market observations anchored. The next time Google is scanned, the agent will remember previous findings and detect what's changed.",
+    "recalled_nodes": []
+  },
+  "what_should_we_do": {
+    "strategic_recommendations": [
+      {
+        "priority": "P0 Critical",
+        "action": "Counter with bundled value guarantee.",
+        "rationale": "Defends core margins.",
+        "expected_outcome": "Retains key accounts.",
+        "type": "strategic_recommendation",
+        "brand": "Google",
+        "fact_type": "ai_recommendation",
+        "url": ""
+      }
+    ],
+    "founder_decisions": []
+  },
+  "hindsight_memory": {
+    "bank_id": "godseye-intel-google",
+    "storage_backend": "hindsight",
+    "is_baseline": true,
+    "reflection_text": "Baseline Established (Scan #1): Ingested 5 verified articles and competitor profiles into Hindsight bank 'godseye-intel-google'. Initial market observations anchored. The next time Google is scanned, the agent will remember previous findings and detect what's changed.",
+    "recalled_nodes_count": 0,
+    "recalled_nodes": [],
+    "compounding_message": "The next time Google is scanned, the agent remembers previous findings and identifies what's changed, which strategies are developing and which trends are continuing.",
+    "neural_network": {
+      "center_node": {
+        "id": "node_center",
+        "label": "Google",
+        "color": "#0284c7"
+      },
+      "radial_nodes": [
+        {
+          "id": "node_f2c7b50f259d4236",
+          "chip_id": "#node_f2c7b50",
+          "label": "Counter with bundl...",
+          "full_title": "Counter with bundled value guarantee.",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 270,
+          "content": "Strategic Move [P0 Critical]: Counter with bundled value guarantee.. Rationale: Defends core margins.",
+          "timestamp": "2026-11-06T23:51:13.132188+00:00"
+        },
+        {
+          "id": "node_78972261899c416f",
+          "chip_id": "#node_7897226",
+          "label": "Direct Rival A",
+          "full_title": "Direct Rival A \u2014 Announced tier restructuring",
+          "subtitle": "Pricing Model",
+          "type": "Pricing Model",
+          "color": "#10b981",
+          "angle_deg": 320,
+          "content": "Competitor Direct Rival A (rival-a.com). Move: Announced tier restructuring. Advantage: Established ecosystem",
+          "timestamp": "2026-11-06T23:51:13.132193+00:00"
+        },
+        {
+          "id": "node_1351d3e63322405d",
+          "chip_id": "#node_1351d3e",
+          "label": "Direct Rival B",
+          "full_title": "Direct Rival B \u2014 Launched promotional bundles",
+          "subtitle": "Pricing Model",
+          "type": "Pricing Model",
+          "color": "#10b981",
+          "angle_deg": 15,
+          "content": "Competitor Direct Rival B (rival-b.com). Move: Launched promotional bundles. Advantage: Rapid onboarding",
+          "timestamp": "2026-11-06T23:51:13.132195+00:00"
+        },
+        {
+          "id": "node_6ab056ca85ab4f4c",
+          "chip_id": "#node_6ab056c",
+          "label": "Apple HomeView Hi...",
+          "full_title": "Apple HomeView Hits $299, Takes on Amazon, Google",
+          "subtitle": "Pricing Model",
+          "type": "Pricing Model",
+          "color": "#10b981",
+          "angle_deg": 65,
+          "content": "Article: Apple HomeView Hits $299, Takes on Amazon, Google\nSource: web\n",
+          "timestamp": "Wed, 14 Oct 2026 10:08:46 GMT"
+        },
+        {
+          "id": "node_dd0e11251e6e415d",
+          "chip_id": "#node_dd0e112",
+          "label": "How Much Does Goo...",
+          "full_title": "How Much Does Google Ads Cost? 2026 CPC & CPL Benchmarks by Industry | AdManage.ai Blog",
+          "subtitle": "Pricing Model",
+          "type": "Pricing Model",
+          "color": "#10b981",
+          "angle_deg": 90,
+          "content": "Article: How Much Does Google Ads Cost? 2026 CPC & CPL Benchmarks by Industry | AdManage.ai Blog\nSource: web\n",
+          "timestamp": "Fri, 17 Jul 2026 00:00:00 GMT"
+        },
+        {
+          "id": "node_07a02b192a96447b",
+          "chip_id": "#node_07a02b1",
+          "label": "What Google Cloud...",
+          "full_title": "What Google Cloud announced in AI this month \u2013 and how it helps you | Google Cloud Blog",
+          "subtitle": "Pricing Model",
+          "type": "Pricing Model",
+          "color": "#10b981",
+          "angle_deg": 140,
+          "content": "Article: What Google Cloud announced in AI this month \u2013 and how it helps you | Google Cloud Blog\nSource: web\n",
+          "timestamp": "Sat, 08 Feb 2025 04:47:27 GMT"
+        },
+        {
+          "id": "node_332599c3699e40b9",
+          "chip_id": "#node_332599c",
+          "label": "New Gemini busine...",
+          "full_title": "New Gemini business landing page and tools launched",
+          "subtitle": "Pricing Model",
+          "type": "Pricing Model",
+          "color": "#10b981",
+          "angle_deg": 195,
+          "content": "Article: New Gemini business landing page and tools launched\nSource: web\n",
+          "timestamp": "Tue, 20 Oct 2026 00:00:00 GMT"
+        },
+        {
+          "id": "node_7be98a9462ca4dbb",
+          "chip_id": "#node_7be98a9",
+          "label": "Signal #8...",
+          "full_title": "Market Factor #8",
+          "subtitle": "Pricing Model",
+          "type": "Pricing Model",
+          "color": "#10b981",
+          "angle_deg": 235,
+          "content": "Persistent market observation for Google.",
+          "timestamp": "2026-11-06T23:51:13.132202+00:00"
+        }
+      ],
+      "recalled_chips": [
+        "#node_f2c7b50",
+        "#node_7897226",
+        "#node_1351d3e",
+        "#node_6ab056c",
+        "#node_dd0e112",
+        "#node_07a02b1"
+      ],
+      "instant_prompts": [
+        "What is Google's pricing moat?",
+        "How have competitor prices shifted?",
+        "What strategic counter-move should we execute?"
+      ]
+    },
+    "neural_nodes": [
+      {
+        "id": "node_f2c7b50f259d4236",
+        "chip_id": "#node_f2c7b50",
+        "label": "Counter with bundl...",
+        "full_title": "Counter with bundled value guarantee.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 270,
+        "content": "Strategic Move [P0 Critical]: Counter with bundled value guarantee.. Rationale: Defends core margins.",
+        "timestamp": "2026-11-06T23:51:13.132188+00:00"
+      },
+      {
+        "id": "node_78972261899c416f",
+        "chip_id": "#node_7897226",
+        "label": "Direct Rival A",
+        "full_title": "Direct Rival A \u2014 Announced tier restructuring",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 320,
+        "content": "Competitor Direct Rival A (rival-a.com). Move: Announced tier restructuring. Advantage: Established ecosystem",
+        "timestamp": "2026-11-06T23:51:13.132193+00:00"
+      },
+      {
+        "id": "node_1351d3e63322405d",
+        "chip_id": "#node_1351d3e",
+        "label": "Direct Rival B",
+        "full_title": "Direct Rival B \u2014 Launched promotional bundles",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 15,
+        "content": "Competitor Direct Rival B (rival-b.com). Move: Launched promotional bundles. Advantage: Rapid onboarding",
+        "timestamp": "2026-11-06T23:51:13.132195+00:00"
+      },
+      {
+        "id": "node_6ab056ca85ab4f4c",
+        "chip_id": "#node_6ab056c",
+        "label": "Apple HomeView Hi...",
+        "full_title": "Apple HomeView Hits $299, Takes on Amazon, Google",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 65,
+        "content": "Article: Apple HomeView Hits $299, Takes on Amazon, Google\nSource: web\n",
+        "timestamp": "Wed, 14 Oct 2026 10:08:46 GMT"
+      },
+      {
+        "id": "node_dd0e11251e6e415d",
+        "chip_id": "#node_dd0e112",
+        "label": "How Much Does Goo...",
+        "full_title": "How Much Does Google Ads Cost? 2026 CPC & CPL Benchmarks by Industry | AdManage.ai Blog",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 90,
+        "content": "Article: How Much Does Google Ads Cost? 2026 CPC & CPL Benchmarks by Industry | AdManage.ai Blog\nSource: web\n",
+        "timestamp": "Fri, 17 Jul 2026 00:00:00 GMT"
+      },
+      {
+        "id": "node_07a02b192a96447b",
+        "chip_id": "#node_07a02b1",
+        "label": "What Google Cloud...",
+        "full_title": "What Google Cloud announced in AI this month \u2013 and how it helps you | Google Cloud Blog",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 140,
+        "content": "Article: What Google Cloud announced in AI this month \u2013 and how it helps you | Google Cloud Blog\nSource: web\n",
+        "timestamp": "Sat, 08 Feb 2025 04:47:27 GMT"
+      },
+      {
+        "id": "node_332599c3699e40b9",
+        "chip_id": "#node_332599c",
+        "label": "New Gemini busine...",
+        "full_title": "New Gemini business landing page and tools launched",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 195,
+        "content": "Article: New Gemini business landing page and tools launched\nSource: web\n",
+        "timestamp": "Tue, 20 Oct 2026 00:00:00 GMT"
+      },
+      {
+        "id": "node_7be98a9462ca4dbb",
+        "chip_id": "#node_7be98a9",
+        "label": "Signal #8...",
+        "full_title": "Market Factor #8",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 235,
+        "content": "Persistent market observation for Google.",
+        "timestamp": "2026-11-06T23:51:13.132202+00:00"
+      }
+    ],
+    "recalled_chips": [
+      "#node_f2c7b50",
+      "#node_7897226",
+      "#node_1351d3e",
+      "#node_6ab056c",
+      "#node_dd0e112",
+      "#node_07a02b1"
+    ],
+    "instant_prompts": [
+      "What is Google's pricing moat?",
+      "How have competitor prices shifted?",
+      "What strategic counter-move should we execute?"
+    ]
+  },
+  "source_verification": [
+    {
+      "title": "Apple HomeView Hits $299, Takes on Amazon, Google",
+      "url": "https://tech-insider.org/apple-homeview-smart-display-amazon-google-2026",
+      "publisher": "tech-insider.org",
+      "published_date": "Wed, 14 Oct 2026 10:08:46 GMT",
+      "snippet": "an India price of \u20b939,900 for HomeView launching November 13, 2026. [...] ### Apple Home Collection Prices Worth Knowing\n\nApple announced the Apple Home Collection on October 13, 2026. The collection includes LG indoor and outdoor cameras, a video doorbell, a smart deadbolt, a th...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "How Much Does Google Ads Cost? 2026 CPC & CPL Benchmarks by Industry | AdManage.ai Blog",
+      "url": "https://admanage.ai/blog/how-much-does-it-cost-to-advertise-on-google",
+      "publisher": "admanage.ai",
+      "published_date": "Fri, 17 Jul 2026 00:00:00 GMT",
+      "snippet": "That last part is where most teams hit a real ceiling. Not for lack of ideas, but because shipping, naming, tracking, and iterating on hundreds or thousands of variants quickly requires infrastructure that native Ads Manager wasn't built to support at scale. AdManage is built for...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "What Google Cloud announced in AI this month \u2013 and how it helps you | Google Cloud Blog",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/what-google-cloud-announced-in-ai-this-month",
+      "publisher": "cloud.google.com",
+      "published_date": "Sat, 08 Feb 2025 04:47:27 GMT",
+      "snippet": "AI & Machine Learning\n\n# What Google Cloud announced in AI this month\n\nNovember 3, 2026\n\n##### Andrea Morange\n\nEditor, Google Cloud\n\n##### Try Gemini today\n\nThe front door to AI in the workplace\n\nTry now\n\nEditor\u2019s note: Want to keep up with the latest from Google Cloud? Check bac...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "New Gemini business landing page and tools launched",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners",
+      "publisher": "blog.google",
+      "published_date": "Tue, 20 Oct 2026 00:00:00 GMT",
+      "snippet": "And for larger businesses looking to scale AI across teams with centralized administrative controls, advanced data governance, and enterprise-grade security, explore Gemini for your business.\n\n## Get the latest news from Google in your inbox\n\nSign up for our newsletters with prod...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "Tavily",
+      "url": "https://tavily.com/knowledge/company/G3cVIaB2LvXb",
+      "publisher": "tavily.com",
+      "published_date": "Fri, 06 Nov 2026 07:20:52 GMT",
+      "snippet": "Tavily ranks #1 in Company Search Benchmark. Explore the results \u2192\n\nCut agentic search costs. Join our live Office Hours on Nov 17. Register \u2192\n\nWorld of Tavily NYC is happening November 12. Request to join\u2192\n\nImage 1: Tavily by Nebius\n\nProduct Solutions ResourcesDocsPricing\n\nEndpo...",
+      "verification_status": "Verified Original Source"
+    }
+  ],
+  "market_share_benchmark": {
+    "target": {
+      "name": "Google",
+      "share": 28,
+      "color": "#0ea5e9",
+      "is_target": true
+    },
+    "rivals": [
+      {
+        "name": "Direct Rival A",
+        "share": 35,
+        "color": "#f43f5e",
+        "is_target": false,
+        "domain": "rival-a.com"
+      },
+      {
+        "name": "Direct Rival B",
+        "share": 25,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "rival-b.com"
+      },
+      {
+        "name": "Peer 3",
+        "share": 15,
+        "color": "#10b981",
+        "is_target": false
+      },
+      {
+        "name": "Peer 4",
+        "share": 9,
+        "color": "#10b981",
+        "is_target": false
+      }
+    ],
+    "all_bars": [
+      {
+        "name": "Google",
+        "share": 28,
+        "color": "#0ea5e9",
+        "is_target": true
+      },
+      {
+        "name": "Direct Rival A",
+        "share": 35,
+        "color": "#f43f5e",
+        "is_target": false,
+        "domain": "rival-a.com"
+      },
+      {
+        "name": "Direct Rival B",
+        "share": 25,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "rival-b.com"
+      },
+      {
+        "name": "Peer 3",
+        "share": 15,
+        "color": "#10b981",
+        "is_target": false
+      },
+      {
+        "name": "Peer 4",
+        "share": 9,
+        "color": "#10b981",
+        "is_target": false
+      }
+    ]
+  },
+  "pricing_trajectory": {
+    "tiers": [
+      "Tier 1 / Entry",
+      "Tier 2 / Mid-...",
+      "Tier 3 / Flag."
+    ],
+    "target_name": "Google",
+    "rival_name": "Rival Benchmark",
+    "target_curve": [
+      14,
+      38,
+      92
+    ],
+    "rival_curve": [
+      15,
+      48,
+      94
+    ],
+    "points": [
+      {
+        "tier": "Tier 1 / Entry",
+        "target_val": "Entry Tier",
+        "rival_val": "Benchmark Entry",
+        "target_pct": 14,
+        "rival_pct": 15
+      },
+      {
+        "tier": "Tier 2 / Mid-...",
+        "target_val": "Core / Pro Tier",
+        "rival_val": "Benchmark Mid",
+        "target_pct": 38,
+        "rival_pct": 48
+      },
+      {
+        "tier": "Tier 3 / Flag.",
+        "target_val": "Enterprise / Flagship",
+        "rival_val": "Benchmark Flagship",
+        "target_pct": 92,
+        "rival_pct": 94
+      }
+    ]
+  },
+  "neural_network": {
+    "center_node": {
+      "id": "node_center",
+      "label": "Google",
+      "color": "#0284c7"
+    },
+    "radial_nodes": [
+      {
+        "id": "node_f2c7b50f259d4236",
+        "chip_id": "#node_f2c7b50",
+        "label": "Counter with bundl...",
+        "full_title": "Counter with bundled value guarantee.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 270,
+        "content": "Strategic Move [P0 Critical]: Counter with bundled value guarantee.. Rationale: Defends core margins.",
+        "timestamp": "2026-11-06T23:51:13.132188+00:00"
+      },
+      {
+        "id": "node_78972261899c416f",
+        "chip_id": "#node_7897226",
+        "label": "Direct Rival A",
+        "full_title": "Direct Rival A \u2014 Announced tier restructuring",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 320,
+        "content": "Competitor Direct Rival A (rival-a.com). Move: Announced tier restructuring. Advantage: Established ecosystem",
+        "timestamp": "2026-11-06T23:51:13.132193+00:00"
+      },
+      {
+        "id": "node_1351d3e63322405d",
+        "chip_id": "#node_1351d3e",
+        "label": "Direct Rival B",
+        "full_title": "Direct Rival B \u2014 Launched promotional bundles",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 15,
+        "content": "Competitor Direct Rival B (rival-b.com). Move: Launched promotional bundles. Advantage: Rapid onboarding",
+        "timestamp": "2026-11-06T23:51:13.132195+00:00"
+      },
+      {
+        "id": "node_6ab056ca85ab4f4c",
+        "chip_id": "#node_6ab056c",
+        "label": "Apple HomeView Hi...",
+        "full_title": "Apple HomeView Hits $299, Takes on Amazon, Google",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 65,
+        "content": "Article: Apple HomeView Hits $299, Takes on Amazon, Google\nSource: web\n",
+        "timestamp": "Wed, 14 Oct 2026 10:08:46 GMT"
+      },
+      {
+        "id": "node_dd0e11251e6e415d",
+        "chip_id": "#node_dd0e112",
+        "label": "How Much Does Goo...",
+        "full_title": "How Much Does Google Ads Cost? 2026 CPC & CPL Benchmarks by Industry | AdManage.ai Blog",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 90,
+        "content": "Article: How Much Does Google Ads Cost? 2026 CPC & CPL Benchmarks by Industry | AdManage.ai Blog\nSource: web\n",
+        "timestamp": "Fri, 17 Jul 2026 00:00:00 GMT"
+      },
+      {
+        "id": "node_07a02b192a96447b",
+        "chip_id": "#node_07a02b1",
+        "label": "What Google Cloud...",
+        "full_title": "What Google Cloud announced in AI this month \u2013 and how it helps you | Google Cloud Blog",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 140,
+        "content": "Article: What Google Cloud announced in AI this month \u2013 and how it helps you | Google Cloud Blog\nSource: web\n",
+        "timestamp": "Sat, 08 Feb 2025 04:47:27 GMT"
+      },
+      {
+        "id": "node_332599c3699e40b9",
+        "chip_id": "#node_332599c",
+        "label": "New Gemini busine...",
+        "full_title": "New Gemini business landing page and tools launched",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 195,
+        "content": "Article: New Gemini business landing page and tools launched\nSource: web\n",
+        "timestamp": "Tue, 20 Oct 2026 00:00:00 GMT"
+      },
+      {
+        "id": "node_7be98a9462ca4dbb",
+        "chip_id": "#node_7be98a9",
+        "label": "Signal #8...",
+        "full_title": "Market Factor #8",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 235,
+        "content": "Persistent market observation for Google.",
+        "timestamp": "2026-11-06T23:51:13.132202+00:00"
+      }
+    ],
+    "recalled_chips": [
+      "#node_f2c7b50",
+      "#node_7897226",
+      "#node_1351d3e",
+      "#node_6ab056c",
+      "#node_dd0e112",
+      "#node_07a02b1"
+    ],
+    "instant_prompts": [
+      "What is Google's pricing moat?",
+      "How have competitor prices shifted?",
+      "What strategic counter-move should we execute?"
+    ]
+  }
+}

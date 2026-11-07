@@ -1,0 +1,1007 @@
+{
+  "success": true,
+  "target_url": "https://chatgpt.com",
+  "domain": "chatgpt.com",
+  "brand_name": "Chatgpt",
+  "tagline": "Market Intelligence Profile",
+  "industry": "Commercial & Technology",
+  "executive_summary": "Competitive research completed for Chatgpt (chatgpt.com). Real-time market observations and source citations compiled.",
+  "scanned_at": "November 07, 2026 \u2022 11:16:19 UTC",
+  "scanned_at_iso": "2026-11-07T11:16:19.385459+00:00",
+  "duration_seconds": 30.0,
+  "is_baseline_scan": false,
+  "scan_iteration": 3,
+  "bank_id": "godseye-intel-chatgpt-com",
+  "use_memory": true,
+  "is_memory_enabled": true,
+  "stats": {
+    "competitors_count": 2,
+    "news_coverage_days": 7,
+    "verified_sources_count": 6,
+    "recalled_memories_count": 8,
+    "detected_changes_count": 2
+  },
+  "what_happened": {
+    "competitors": [
+      {
+        "id": "comp-1",
+        "name": "Google Competitors 2026",
+        "domain": "www.companieshistory.com",
+        "market_share": "Peer Competitor",
+        "focus": "Direct Industry Competitor",
+        "recent_move": "Active in target market segment",
+        "price_trend": "Monitored",
+        "threat_level": "Medium",
+        "key_advantage": "Market presence in core segment",
+        "key_vulnerability": "Specialized positioning gap",
+        "brand": "Chatgpt",
+        "fact_type": "competitor_profile",
+        "url": "https://www.companieshistory.com"
+      },
+      {
+        "id": "comp-4",
+        "name": "ChatGPT Competitors",
+        "domain": "www.fool.com",
+        "market_share": "Peer Competitor",
+        "focus": "Direct Industry Competitor",
+        "recent_move": "Active in target market segment",
+        "price_trend": "Monitored",
+        "threat_level": "Medium",
+        "key_advantage": "Market presence in core segment",
+        "key_vulnerability": "Specialized positioning gap",
+        "brand": "Chatgpt",
+        "fact_type": "competitor_profile",
+        "url": "https://www.fool.com"
+      }
+    ],
+    "market_share_benchmark": {
+      "target": {
+        "name": "Chatgpt",
+        "share": 28,
+        "color": "#0ea5e9",
+        "is_target": true
+      },
+      "rivals": [
+        {
+          "name": "Google Competitors 2026",
+          "share": 30,
+          "color": "#f43f5e",
+          "is_target": false,
+          "domain": "www.companieshistory.com"
+        },
+        {
+          "name": "ChatGPT Competitors",
+          "share": 15,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "www.fool.com"
+        },
+        {
+          "name": "Peer 3",
+          "share": 12,
+          "color": "#10b981",
+          "is_target": false
+        },
+        {
+          "name": "Peer 4",
+          "share": 9,
+          "color": "#10b981",
+          "is_target": false
+        }
+      ],
+      "all_bars": [
+        {
+          "name": "Chatgpt",
+          "share": 28,
+          "color": "#0ea5e9",
+          "is_target": true
+        },
+        {
+          "name": "Google Competitors 2026",
+          "share": 30,
+          "color": "#f43f5e",
+          "is_target": false,
+          "domain": "www.companieshistory.com"
+        },
+        {
+          "name": "ChatGPT Competitors",
+          "share": 15,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "www.fool.com"
+        },
+        {
+          "name": "Peer 3",
+          "share": 12,
+          "color": "#10b981",
+          "is_target": false
+        },
+        {
+          "name": "Peer 4",
+          "share": 9,
+          "color": "#10b981",
+          "is_target": false
+        }
+      ]
+    },
+    "pricing_trajectory": {
+      "tiers": [
+        "Tier 1 / Entry",
+        "Tier 2 / Mid-...",
+        "Tier 3 / Flag."
+      ],
+      "target_name": "Chatgpt",
+      "rival_name": "Google Competitors 2026 Benchmark",
+      "target_curve": [
+        14,
+        38,
+        92
+      ],
+      "rival_curve": [
+        15,
+        48,
+        94
+      ],
+      "points": [
+        {
+          "tier": "Tier 1 / Entry",
+          "target_val": "Chatgpt Tier 1",
+          "rival_val": "Google Competitors 2026 Tier 1",
+          "target_pct": 14,
+          "rival_pct": 15
+        },
+        {
+          "tier": "Tier 2 / Mid-...",
+          "target_val": "Chatgpt Tier 2",
+          "rival_val": "Google Competitors 2026 Tier 2",
+          "target_pct": 38,
+          "rival_pct": 48
+        },
+        {
+          "tier": "Tier 3 / Flag.",
+          "target_val": "Chatgpt Tier 3",
+          "rival_val": "Google Competitors 2026 Tier 3",
+          "target_pct": 92,
+          "rival_pct": 94
+        }
+      ]
+    },
+    "pricing_feature_matrix": [],
+    "news_pulse_7_days": [
+      {
+        "title": "ChatGPT Business Plan 2026: Price, Features, vs Plus | Coursiv Blog",
+        "url": "https://coursiv.io/blog/chatgpt-business-plan",
+        "content": "A 40-person companyForty Standard seats: $800amonthonannualbilling($9,600 a year), $1,000 monthly. Now the admin tools matter more than the chat. SSO, roles and a single invoice save real hours. The trap is buying 40 seats for 40 people when only 15 will use it daily. Pilot with a group first. And remember the ceiling: at 200 seats, you\u2019re in Enterprise territory anyway. One honest note across all three: seats don\u2019t make anyone good at AI. Our piece on AI training for employees covers the part the license can\u2019t. Alternatives in one tableChatGPT isn\u2019t the only team plan. Prices below are US list prices as of October 21, 2026. Always check the vendor\u2019s page before buying. [...] | Plan | Price (US, as of Oct 21, 2026) | Best for | Key limits | Admin and data controls | --- --- | Free | $0 | Trying it out | Lowest limits | Personal settings only | | Go | $8/month | Light daily use | More than Free, well below Plus | Personal settings only | | Plus | $20/month | One person, daily use | Per-person caps | Personal data-controls toggle | | Pro | From $100/month | Heavy solo users | Highest individual limits | Personal settings only | | Business | $20/seat/month annual, $25 monthly, 2-seat minimum | Teams of 2\u2013200 seats | Standard seat; Premium seat has 5x the usage | Admin console, roles, SSO, workspace data not used for training | | Enterprise | Custom, through sales | Large orgs that need contracts | Custom | Contracted controls | [...] | Option | Price per user/month | Seats and requirements | Best for | Official page | Our page | --- --- --- | | ChatGPT Business | $20 annual / $25 monthly (Standard) | 2\u2013200 seats | General-purpose team chat, projects, GPTs | OpenAI help center | This article | | Claude Team | $20 annual / $25 monthly (Standard); $100/$125 Premium | 2-seat minimum | Writing, analysis, teams that like Claude | Anthropic support | Claude for teams | | Microsoft 365 Copilot Business | $21 annual; $18 promo through Dec 31, 2026 | Up to 300 users, needs a Microsoft 365 plan | Teams living in Word, Excel, Outlook, Teams | Microsoft | Copilot vs ChatGPT |",
+        "source": "coursiv.io",
+        "published_date": "Mon, 02 Nov 2026 09:00:00 GMT"
+      }
+    ],
+    "detected_changes": [
+      {
+        "category": "Market Structure",
+        "item": "New Rival Identified: Google Competitors 2026",
+        "change_type": "new",
+        "previous_value": "Untracked in prior scan",
+        "current_value": "Direct Industry Competitor",
+        "summary": "Discovered additional market rival Google Competitors 2026 (www.companieshistory.com) competing against Chatgpt.",
+        "significance": "Medium",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Market Structure",
+        "item": "New Rival Identified: ChatGPT Competitors",
+        "change_type": "new",
+        "previous_value": "Untracked in prior scan",
+        "current_value": "Direct Industry Competitor",
+        "summary": "Discovered additional market rival ChatGPT Competitors (www.fool.com) competing against Chatgpt.",
+        "significance": "Medium",
+        "type": "verified_fact"
+      }
+    ]
+  },
+  "market_share_benchmark": {
+    "target": {
+      "name": "Chatgpt",
+      "share": 28,
+      "color": "#0ea5e9",
+      "is_target": true
+    },
+    "rivals": [
+      {
+        "name": "Google Competitors 2026",
+        "share": 30,
+        "color": "#f43f5e",
+        "is_target": false,
+        "domain": "www.companieshistory.com"
+      },
+      {
+        "name": "ChatGPT Competitors",
+        "share": 15,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "www.fool.com"
+      },
+      {
+        "name": "Peer 3",
+        "share": 12,
+        "color": "#10b981",
+        "is_target": false
+      },
+      {
+        "name": "Peer 4",
+        "share": 9,
+        "color": "#10b981",
+        "is_target": false
+      }
+    ],
+    "all_bars": [
+      {
+        "name": "Chatgpt",
+        "share": 28,
+        "color": "#0ea5e9",
+        "is_target": true
+      },
+      {
+        "name": "Google Competitors 2026",
+        "share": 30,
+        "color": "#f43f5e",
+        "is_target": false,
+        "domain": "www.companieshistory.com"
+      },
+      {
+        "name": "ChatGPT Competitors",
+        "share": 15,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "www.fool.com"
+      },
+      {
+        "name": "Peer 3",
+        "share": 12,
+        "color": "#10b981",
+        "is_target": false
+      },
+      {
+        "name": "Peer 4",
+        "share": 9,
+        "color": "#10b981",
+        "is_target": false
+      }
+    ]
+  },
+  "pricing_trajectory": {
+    "tiers": [
+      "Tier 1 / Entry",
+      "Tier 2 / Mid-...",
+      "Tier 3 / Flag."
+    ],
+    "target_name": "Chatgpt",
+    "rival_name": "Google Competitors 2026 Benchmark",
+    "target_curve": [
+      14,
+      38,
+      92
+    ],
+    "rival_curve": [
+      15,
+      48,
+      94
+    ],
+    "points": [
+      {
+        "tier": "Tier 1 / Entry",
+        "target_val": "Chatgpt Tier 1",
+        "rival_val": "Google Competitors 2026 Tier 1",
+        "target_pct": 14,
+        "rival_pct": 15
+      },
+      {
+        "tier": "Tier 2 / Mid-...",
+        "target_val": "Chatgpt Tier 2",
+        "rival_val": "Google Competitors 2026 Tier 2",
+        "target_pct": 38,
+        "rival_pct": 48
+      },
+      {
+        "tier": "Tier 3 / Flag.",
+        "target_val": "Chatgpt Tier 3",
+        "rival_val": "Google Competitors 2026 Tier 3",
+        "target_pct": 92,
+        "rival_pct": 94
+      }
+    ]
+  },
+  "why_does_it_matter": {
+    "market_trends": [],
+    "opportunities": [],
+    "threats": [
+      {
+        "title": "Google Competitors 2026 Market Encroachment",
+        "competitor": "Google Competitors 2026",
+        "move_detail": "Active in target market segment",
+        "severity": "Medium",
+        "impact_timeline": "Immediate (0-30 days)"
+      },
+      {
+        "title": "ChatGPT Competitors Value Repositioning",
+        "competitor": "ChatGPT Competitors",
+        "move_detail": "ChatGPT Competitors is leveraging Market presence in core segment to undercut core Chatgpt tiers.",
+        "severity": "Medium",
+        "impact_timeline": "Near-term (30-60 days)"
+      }
+    ],
+    "hindsight_reflection": "Reflection note: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m6m5tghee7htb8xa64vqd7tm` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199783, Requested 3498. Please try again in 23m37.392s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "recalled_nodes": [
+      {
+        "id": "node_f635b7d4d8ad3875",
+        "text": "Article: ChatGPT Pricing 2026: Which Plan Is Right for You?\nSource: alloypress.com\nPublished: 2026-07-13T18:30:31+00:00\nURL: https://alloypress.com/blogs/chatgpt-pricing-plans\nContent: In one line: Start with Plus at $20 a month. Only move up when you actually hit a limit. > Note: OpenAI changes plans often. In 2026 alone, Go launched in the US (January), Business got cheaper (April), Business Premium seats arrived (August) and a new $500 Pro plan launched (September 29). Always check the official ChatGPT pricing page before you buy. What Changed Since Our Last Update? ChatGPT has made a few important changes to its plans, models and API pricing. Here are the key updates. 1. New $500 Pro Plan Launched on September 29, 2026. Offers the highest usage allowance among personal Pro plans. Includes Ultrafast mode, available only on Pro 500. 2. Pro 200 Usage Reduced [...] 2. Pro 200 Usage Reduced New subscribers get a lower usage allowance for the same $200/month. Eligible existing subscribers keep their previous allowance until October 29, 2026. After that, the reduced allowance applies. 3. New ChatGPT Business Seat Options Standard: For regular team usage. Premium: 5\u00d7 more included usage, with no five-hour usage limit. Businesses can mix both seat types in one workspace. 4. Unlimited Everyday Text Chats on Free Free users can send unlimited everyday text messages, subject to fair-use safeguards. File uploads, image generation, voice, and deep research still have separate limits. 5. New GPT-6 Models [...] 5. New GPT-6 Models GPT-6 Sol is rolling out in ChatGPT. GPT-6 Astra powers GPT-6 Pro. GPT-6.1 Sol is available in ChatGPT Work and Codex. Model access depends on your plan and availability. 6. Lower API Pricing GPT-6 Sol API pricing is now: Input: $2 per million tokens. Output: $10 per million tokens. This can lower costs for developers building AI-powered apps and websites. API usage is billed separately from a ChatGPT subscription. Before You Choose a Plan ChatGPT used to be simple. You either used it free, or you paid $20 for Plus.",
+        "timestamp": "2026-07-13T18:30:31+00:00",
+        "score": 9.0,
+        "metadata": {
+          "source": "alloypress.com",
+          "url": "https://alloypress.com/blogs/chatgpt-pricing-plans",
+          "brand": "Chatgpt",
+          "title": "ChatGPT Pricing 2026: Which Plan Is Right for You?",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_10e41393ab7ea127",
+        "text": "Article: Introducing GPT-6.1 Terra\nSource: openai.com\nPublished: 2026-10-26T18:08:29+00:00\nURL: https://openai.com/index/introducing-gpt-6-1-terra\nContent: Pricing and availability Starting today, GPT-6.1 Terra is available to all Plus, Pro, Enterprise, and Edu users in ChatGPT Work and Codex. Developers can also access it through the OpenAI API as `gpt-6.1-terra`. Standard API pricing is $1 per million input tokens, $0.05 per million cached input tokens, and $5 per million output tokens. 2026 GPT Author OpenAI Research Research Index Research Overview Economic Research Latest Advancements GPT-6.1 Sol GPT-6 Astra GPT-5.6 GPT-5.5 Safety Safety Approach Deployment Safety(opens in a new window) Security & Privacy Trust & Transparency [...] Terra continues to advance the cost-intelligence frontier across our model families, providing a new balance of speed, capability, and cost. Its standard API prices are 50% lower than those of GPT-5.6 Terra and GPT-6.1 Sol, making it practical for developers to automate high-volume work, like reading incoming invoices and entering their details into accounting software. In ChatGPT Work and Codex, your plan goes further with GPT-6.1 Terra\u2014the same usage allowance covers more tasks than with GPT\u20115.6 Terra and substantially more than with GPT\u20116.1 Sol or GPT\u20116 Astra. From visual understanding to action [...] Skip to main content Log inTry ChatGPT(opens in a new window) Research Products Business Developers Company Foundation(opens in a new window) Introducing GPT-6.1 Terra | OpenAI GPT-6.1 Terra From visual understanding to action From visual understanding to action A significant step up on factuality and coding Safety and alignment Pricing and availability From visual understanding to action A significant step up on factuality and coding Safety and alignment Pricing and availability Delivering fast and capable computer use at scale A 30-second introduction to GPT-6.1 Terra. Video 1",
+        "timestamp": "2026-10-26T18:08:29+00:00",
+        "score": 8.0,
+        "metadata": {
+          "source": "openai.com",
+          "url": "https://openai.com/index/introducing-gpt-6-1-terra",
+          "brand": "Chatgpt",
+          "title": "Introducing GPT-6.1 Terra",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_d13c74ad388e3545",
+        "text": "Article: ChatGPT Pricing 2026: Free, Go, Plus and Pro Plans Compared\nSource: felloai.com\nPublished: 2026-10-30T18:00:00+00:00\nURL: https://felloai.com/chatgpt-pricing\nContent: ChatGPT pricing in 2026 covers eight pricing plans plus pay-per-token API access: Free at $0, Go at $8/month, Plus at $20/month, Pro at $100, $200 or $500/month, Business at $25/user/month, and Enterprise on custom pricing. No existing plan price has moved since April 2026, but OpenAI added Pro $500 on September 29 and what each plan buys has changed. GPT-6 Astra now answers in standard chat as GPT-6 Pro on every Pro tier, Business and Enterprise; Plus gets Astra in ChatGPT Work and Codex rather than in Chat, and answers ordinary chats on GPT-5.6 Sol; Free and Go stay on GPT-5.6 Luna with unlimited text chats. [...] 5x more usage than a standard seat No five-hour usage limit, the cap that cuts off long Codex and agent runs mid-task Predictable weekly usage resets Overflow handled through shared workspace credits managed by the workspace owner Access is by waitlist. OpenAI\u2019s announcement is titled \u201cPremium seats are coming to ChatGPT Business\u201d and says some customers may get early access \u201cbefore Premium becomes generally available\u201d, and the public ChatGPT pricing page still did not list the tier as of 20 August 2026. Treat $125 as announced pricing rather than a plan you can buy today. It is also worth knowing that Claude Team Premium carries the identical $125/seat monthly and $100/seat annual rate, so the two now sit seat for seat. ChatGPT Enterprise (Custom Pricing) [...] OpenAI added Pro $500 on 29 September 2026 as its highest-usage Pro tier. It has the same model suite as the other two, GPT-6 Pro in standard chat and GPT-5.6 Sol Pro, plus the most included usage, which OpenAI put at 25 times the Plus allowance at launch and doubled for Work and Codex on 29 October 2026, and Ultrafast, a faster service tier for GPT-6 Astra and GPT-6.1 Sol in ChatGPT Work and Codex that no other Pro tier unlocks, even with purchased credits. Ultrafast uses your included allowance first and then your credit balance. At launch, Pro $500 is sold through ChatGPT on the web. ChatGPT Business ($25/user/month)",
+        "timestamp": "2026-10-30T18:00:00+00:00",
+        "score": 7.0,
+        "metadata": {
+          "source": "felloai.com",
+          "url": "https://felloai.com/chatgpt-pricing",
+          "brand": "Chatgpt",
+          "title": "ChatGPT Pricing 2026: Free, Go, Plus and Pro Plans Compared",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_8f66f58d37d2949b",
+        "text": "Article: ChatGPT Team Pricing 2026: Plans, Seats & API Costs\nSource: www.activepieces.com\nPublished: 2026-10-28T09:05:41+00:00\nURL: https://www.activepieces.com/blog/chatgpt-team-pricing-2026-plans-seats-api-costs\nContent: Plan | Built for | How it's billed | --- | Free | One person trying the tool | No charge, one account | | Go | One person, light regular use | Individual subscription | | Plus | One person, heavier daily use | Individual subscription | | Pro | One person, the heaviest use | Individual subscription | | Business Standard | A team sharing a workspace | $25 per seat per month, per person | | Business Premium | A team sharing a workspace | Per seat, per person | | Enterprise | Large organizations | Negotiated with OpenAI | Prices and plan limits checked against chatgpt.com on October 28, 2026. [...] Buying four Plus accounts isn't the same as buying four Business seats. The first gives you four separate logins with no shared control, and the second gives you one workspace someone can administer. What changed since the plan was launched If you remember the launch price, it has dropped: the standard seat fell from $30 to $25 in 2026, so the plan's cheaper than it was at launch. OpenAI's own figures put it at $30 per seat per month in January 2024. It was still $30 in August 2025. The drop to $25 came by April 2026, and the price held in August 2026. For a five-person team, that's $25 a month saved on the seat bill, or $300 a year. If you are running this arithmetic for your own team, see what the same workload costs on Activepieces. [...] Skip to content Build for free ChatGPT Team Pricing 2026: Plans, Seats & API Costs Dario Espinoza-Blum Dario Espinoza-Blum Covers untangling inherited e-commerce spreadsheets for solo operators: what to fix first, what to leave alone, and what neglect costs. This article was researched and fact-checked by an advanced research system. \u00b7Oct 28, 2026\u00b714 min read ChatGPT Team pricing today, plan by plan How much ChatGPT Team costs per seat Search for ChatGPT Team and you land on ChatGPT Business, whose standard seat costs $25 per seat per month as of August 2026. That's the number on the page, and it's the smallest line on what a building team pays.",
+        "timestamp": "2026-10-28T09:05:41+00:00",
+        "score": 7.0,
+        "metadata": {
+          "source": "www.activepieces.com",
+          "url": "https://www.activepieces.com/blog/chatgpt-team-pricing-2026-plans-seats-api-costs",
+          "brand": "Chatgpt",
+          "title": "ChatGPT Team Pricing 2026: Plans, Seats & API Costs",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_0112e1f9257dd669",
+        "text": "Article: ChatGPT Team Pricing 2026: Plans, Seats & API Costs\nSource: www.activepieces.com\nPublished: 2026-10-28T09:05:41+00:00\nURL: https://www.activepieces.com/blog/chatgpt-team-pricing-2026-plans-seats-api-costs\nContent: Plan | Built for | How it's billed | --- | Free | One person trying the tool | No charge, one account | | Go | One person, light regular use | Individual subscription | | Plus | One person, heavier daily use | Individual subscription | | Pro | One person, the heaviest use | Individual subscription | | Business Standard | A team sharing a workspace | $25 per seat per month, per person | | Business Premium | A team sharing a workspace | Per seat, per person | | Enterprise | Large organizations | Negotiated with OpenAI | Prices and plan limits checked against chatgpt.com on October 28, 2026. [...] Buying four Plus accounts isn't the same as buying four Business seats. The first gives you four separate logins with no shared control, and the second gives you one workspace someone can administer. What changed since the plan was launched If you remember the launch price, it has dropped: the standard seat fell from $30 to $25 in 2026, so the plan's cheaper than it was at launch. OpenAI's own figures put it at $30 per seat per month in January 2024. It was still $30 in August 2025. The drop to $25 came by April 2026, and the price held in August 2026. For a five-person team, that's $25 a month saved on the seat bill, or $300 a year. If you are running this arithmetic for your own team, see what the same workload costs on Activepieces. [...] Skip to content Build for free ChatGPT Team Pricing 2026: Plans, Seats & API Costs Dario Espinoza-Blum Dario Espinoza-Blum Covers untangling inherited e-commerce spreadsheets for solo operators: what to fix first, what to leave alone, and what neglect costs. This article was researched and fact-checked by an advanced research system. \u00b7Oct 28, 2026\u00b714 min read ChatGPT Team pricing today, plan by plan How much ChatGPT Team costs per seat Search for ChatGPT Team and you land on ChatGPT Business, whose standard seat costs $25 per seat per month as of August 2026. That's the number on the page, and it's the smallest line on what a building team pays.",
+        "timestamp": "2026-10-28T09:05:41+00:00",
+        "score": 7.0,
+        "metadata": {
+          "source": "www.activepieces.com",
+          "url": "https://www.activepieces.com/blog/chatgpt-team-pricing-2026-plans-seats-api-costs",
+          "brand": "Chatgpt",
+          "title": "ChatGPT Team Pricing 2026: Plans, Seats & API Costs",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_6f7a66f76aa2fe69",
+        "text": "Article: ChatGPT Enterprise pricing in 2026: seats, minimums, tokens\nSource: www.cloudzero.com\nPublished: 2026-10-20T18:11:38+00:00\nURL: https://www.cloudzero.com/blog/chatgpt-enterprise-pricing\nContent: Quick Answer ChatGPT Enterprise has no public list price. Reported 2026 contracts average about $60 per user per month within a $45 to $75 range, with 150-seat minimums and annual prepayment, putting the floor near $108,000 a year. Newer eligible agreements add usage-based billing under OpenAI's published token rate card. On June 21, 2026, Samsung Electronics switched on ChatGPT Enterprise and Codex for its entire South Korean workforce and every employee in its global Device eXperience division, tens of thousands of people across multiple continents. OpenAI described it as one of its largest enterprise deployments to date. [...] | Model | Input | Cached input | Output | --- --- | | GPT-6 Astra (Work/Codex) | $10.00 | $1.00 | $50.00 | | GPT-5.6 Sol | $4.00 | $0.40 | $20.00 | | GPT-5.6 Terra | $2.00 | $0.20 | $12.00 | | GPT-5.6 Luna | $0.20 | $0.02 | $1.20 | | GPT-5.5 Pro (Chat) | $30.00 | N/A | $180.00 | List prices above are from OpenAI\u2019s first-party Enterprise rate card, checked September 30, 2026. Partner clouds and credit-billed workspaces publish different figures for the same models. Feature charges stack on top of model tokens. Voice runs $0.05 per connected minute plus backend model tokens. Web search costs $10 per 1,000 runs plus content tokens. Deep research bills at $2 input and $8 output per million on its dedicated model. Image generation runs $8 input and $30 output per million tokens. [...] The reversal took three years. In May 2023, Samsung banned generative AI tools across company devices and internal networks after engineers pasted proprietary source code into the public version of ChatGPT. Nvidia hit a comparable milestone earlier in 2026, putting Codex in front of more than 10,000 employees across engineering and non-engineering roles. Both announcements share a shape: headcounts, and no prices. Enterprise AI deals get celebrated in seats and almost never in dollars, so a finance leader pricing a rollout is left assembling the number from sales calls, buyer-reported contract data, and one document OpenAI actually does publish. That document rewrote how enterprise ChatGPT gets budgeted, and it is where any 2026 budget has to start.",
+        "timestamp": "2026-10-20T18:11:38+00:00",
+        "score": 7.0,
+        "metadata": {
+          "source": "www.cloudzero.com",
+          "url": "https://www.cloudzero.com/blog/chatgpt-enterprise-pricing",
+          "brand": "Chatgpt",
+          "title": "ChatGPT Enterprise pricing in 2026: seats, minimums, tokens",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_4fc9a76c45208738",
+        "text": "Article: How Much Does ChatGPT Cost? All Plan & Pricing Tiers Explained\nSource: www.cloudzero.com\nPublished: 2026-04-30T14:19:32+00:00\nURL: https://www.cloudzero.com/blog/how-much-does-chatgpt-cost\nContent: Frequently asked questions about ChatGPT pricing How much is ChatGPT Plus per month? $20 per month, billed monthly. There\u2019s no annual discount on Plus. It includes the GPT-5.6 model family, roughly 160 messages per three hours, 10 full plus 15 lightweight Deep Research tasks monthly, Agent mode, and image and voice tools. Is ChatGPT free? Yes, and more than ever: since OpenAI\u2019s August 6, 2026 announcement, Free accounts get unlimited text conversations on GPT-5.6 Luna (rolling out from the week of August 10), with ads in the US and caps remaining on images, files, and voice. Paid plans start at $8/month (Go) and buy better models, tools, and no ads rather than message volume. What is ChatGPT Go? [...] What is ChatGPT Go? An $8/month entry tier that launched globally on January 16, 2026. It raises Free\u2019s message, upload, and image limits with longer memory, but excludes Agent mode, Deep Research, and top-tier model selection. It\u2019s for regular light users, not professionals or teams. What\u2019s the difference between ChatGPT Pro at $100 and $200? Usage. The $100 tier buys 5x Plus usage; the $200 tier buys 20x, plus the largest limits, around 250 Deep Research tasks split across the full and lightweight versions, and priority compute. Same tools, different ceilings. How much does ChatGPT Business cost? [...] Read the report What does each ChatGPT plan include? Free ($0). The free tier just got its biggest upgrade ever: on August 6, 2026, OpenAI announced unlimited text conversations for Free accounts (rolling out the week of August 10), retiring the old roughly-10-messages-per-5-hours cap, with GPT-5.6 Luna as the new default model and a Think button for harder questions. So if you\u2019re asking \u201cdoes ChatGPT cost money,\u201d the answer is now genuinely no for text chat. The remaining catches: images, file uploads, and voice keep their caps, US free users see ads (rolled out February 9, 2026), and Free users also get GPT-5.6 Terra in Codex and ChatGPT Work per OpenAI\u2019s July announcement.",
+        "timestamp": "2026-04-30T14:19:32+00:00",
+        "score": 7.0,
+        "metadata": {
+          "source": "www.cloudzero.com",
+          "url": "https://www.cloudzero.com/blog/how-much-does-chatgpt-cost",
+          "brand": "Chatgpt",
+          "title": "How Much Does ChatGPT Cost? All Plan & Pricing Tiers Explained",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_38f9cbb2d78e89e5",
+        "text": "Article: Chatgpt\nSource: tavily.com\nPublished: 2026-11-06T19:31:40.934691+00:00\nURL: https://tavily.com/knowledge/company/asaVJ6NV8Cyh\nContent: ChatGPT Website: www.chatgpt.com/ Headquarters: San Francisco, California, United States LinkedIn: www.linkedin.com/showcase/chatgpt \u00b7 1,617,802 followers Industry: Technology, Information and Internet Company type: Private Social profiles: www.facebook.com/openai, www.twitter.com/openai Description: ChatGPT is an AI-powered platform that allows users to answer questions, write, create images, complete work, and code. Products and services Keywords: technology/software, generative ai software, large language models (llms) software, chatgpt, ai chatbots, enterprise ai chatbots, ai code generation, large language models (llms), work, ai, code, create Headcount - Now: 0 \u00b7 0 yearly \u00b7 0 quarterly \u00b7 0 monthly Financials - Annual revenue: 38.40M USD [...] Financials - Annual revenue: 38.40M USD Reputation - Open roles: 0 Similar companies - bing - meta ai - anthropic - github copilot - jasper - aws - character.ai - perplexity",
+        "timestamp": "2026-11-06T19:31:40.934691+00:00",
+        "score": 6.0,
+        "metadata": {
+          "source": "tavily.com",
+          "url": "https://tavily.com/knowledge/company/asaVJ6NV8Cyh",
+          "brand": "Chatgpt",
+          "title": "Chatgpt",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      }
+    ]
+  },
+  "what_should_we_do": {
+    "strategic_recommendations": [
+      {
+        "title": "Neutralize Google Competitors 2026 Pricing Pressure",
+        "priority": "P0 Critical",
+        "action": "Audit pricing parity against Google Competitors 2026 and deploy targeted annual incentive bundles.",
+        "rationale": "Directly counters Google Competitors 2026's aggressive positioning while defending margin on renewal cohorts.",
+        "expected_outcome": "Minimizes account churn and locks in retention across key customer segments.",
+        "type": "strategic_recommendation",
+        "brand": "Chatgpt",
+        "fact_type": "ai_recommendation",
+        "url": ""
+      },
+      {
+        "title": "Exploit Unaddressed Workflow Gaps",
+        "priority": "P1 Offensive",
+        "action": "Accelerate self-serve product onboarding for high-velocity teams underserved by Google Competitors 2026.",
+        "rationale": "Google Competitors 2026 is focusing on monolithic enterprise tiers, leaving an opening in developer-first teams.",
+        "expected_outcome": "Drives 15-20% acceleration in qualified product-led conversion.",
+        "type": "strategic_recommendation",
+        "brand": "Chatgpt",
+        "fact_type": "ai_recommendation",
+        "url": ""
+      },
+      {
+        "title": "Strengthen Differentiated Product Moats",
+        "priority": "P2 Strategic",
+        "action": "Double down on performance ergonomics and publish public benchmark comparisons against ChatGPT Competitors.",
+        "rationale": "Shifts the buyer conversation from a commodity pricing contest to superior execution speed and craft.",
+        "expected_outcome": "Reinforces premium brand equity and improves net revenue retention.",
+        "type": "strategic_recommendation",
+        "brand": "Chatgpt",
+        "fact_type": "ai_recommendation",
+        "url": ""
+      }
+    ],
+    "founder_decisions": []
+  },
+  "hindsight_memory": {
+    "bank_id": "godseye-intel-chatgpt-com",
+    "storage_backend": "hindsight_embedded",
+    "is_memory_enabled": true,
+    "is_baseline": false,
+    "reflection_text": "Reflection note: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m6m5tghee7htb8xa64vqd7tm` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199783, Requested 3498. Please try again in 23m37.392s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "recalled_nodes_count": 8,
+    "recalled_nodes": [
+      {
+        "id": "node_f635b7d4d8ad3875",
+        "text": "Article: ChatGPT Pricing 2026: Which Plan Is Right for You?\nSource: alloypress.com\nPublished: 2026-07-13T18:30:31+00:00\nURL: https://alloypress.com/blogs/chatgpt-pricing-plans\nContent: In one line: Start with Plus at $20 a month. Only move up when you actually hit a limit. > Note: OpenAI changes plans often. In 2026 alone, Go launched in the US (January), Business got cheaper (April), Business Premium seats arrived (August) and a new $500 Pro plan launched (September 29). Always check the official ChatGPT pricing page before you buy. What Changed Since Our Last Update? ChatGPT has made a few important changes to its plans, models and API pricing. Here are the key updates. 1. New $500 Pro Plan Launched on September 29, 2026. Offers the highest usage allowance among personal Pro plans. Includes Ultrafast mode, available only on Pro 500. 2. Pro 200 Usage Reduced [...] 2. Pro 200 Usage Reduced New subscribers get a lower usage allowance for the same $200/month. Eligible existing subscribers keep their previous allowance until October 29, 2026. After that, the reduced allowance applies. 3. New ChatGPT Business Seat Options Standard: For regular team usage. Premium: 5\u00d7 more included usage, with no five-hour usage limit. Businesses can mix both seat types in one workspace. 4. Unlimited Everyday Text Chats on Free Free users can send unlimited everyday text messages, subject to fair-use safeguards. File uploads, image generation, voice, and deep research still have separate limits. 5. New GPT-6 Models [...] 5. New GPT-6 Models GPT-6 Sol is rolling out in ChatGPT. GPT-6 Astra powers GPT-6 Pro. GPT-6.1 Sol is available in ChatGPT Work and Codex. Model access depends on your plan and availability. 6. Lower API Pricing GPT-6 Sol API pricing is now: Input: $2 per million tokens. Output: $10 per million tokens. This can lower costs for developers building AI-powered apps and websites. API usage is billed separately from a ChatGPT subscription. Before You Choose a Plan ChatGPT used to be simple. You either used it free, or you paid $20 for Plus.",
+        "timestamp": "2026-07-13T18:30:31+00:00",
+        "score": 9.0,
+        "metadata": {
+          "source": "alloypress.com",
+          "url": "https://alloypress.com/blogs/chatgpt-pricing-plans",
+          "brand": "Chatgpt",
+          "title": "ChatGPT Pricing 2026: Which Plan Is Right for You?",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_10e41393ab7ea127",
+        "text": "Article: Introducing GPT-6.1 Terra\nSource: openai.com\nPublished: 2026-10-26T18:08:29+00:00\nURL: https://openai.com/index/introducing-gpt-6-1-terra\nContent: Pricing and availability Starting today, GPT-6.1 Terra is available to all Plus, Pro, Enterprise, and Edu users in ChatGPT Work and Codex. Developers can also access it through the OpenAI API as `gpt-6.1-terra`. Standard API pricing is $1 per million input tokens, $0.05 per million cached input tokens, and $5 per million output tokens. 2026 GPT Author OpenAI Research Research Index Research Overview Economic Research Latest Advancements GPT-6.1 Sol GPT-6 Astra GPT-5.6 GPT-5.5 Safety Safety Approach Deployment Safety(opens in a new window) Security & Privacy Trust & Transparency [...] Terra continues to advance the cost-intelligence frontier across our model families, providing a new balance of speed, capability, and cost. Its standard API prices are 50% lower than those of GPT-5.6 Terra and GPT-6.1 Sol, making it practical for developers to automate high-volume work, like reading incoming invoices and entering their details into accounting software. In ChatGPT Work and Codex, your plan goes further with GPT-6.1 Terra\u2014the same usage allowance covers more tasks than with GPT\u20115.6 Terra and substantially more than with GPT\u20116.1 Sol or GPT\u20116 Astra. From visual understanding to action [...] Skip to main content Log inTry ChatGPT(opens in a new window) Research Products Business Developers Company Foundation(opens in a new window) Introducing GPT-6.1 Terra | OpenAI GPT-6.1 Terra From visual understanding to action From visual understanding to action A significant step up on factuality and coding Safety and alignment Pricing and availability From visual understanding to action A significant step up on factuality and coding Safety and alignment Pricing and availability Delivering fast and capable computer use at scale A 30-second introduction to GPT-6.1 Terra. Video 1",
+        "timestamp": "2026-10-26T18:08:29+00:00",
+        "score": 8.0,
+        "metadata": {
+          "source": "openai.com",
+          "url": "https://openai.com/index/introducing-gpt-6-1-terra",
+          "brand": "Chatgpt",
+          "title": "Introducing GPT-6.1 Terra",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_d13c74ad388e3545",
+        "text": "Article: ChatGPT Pricing 2026: Free, Go, Plus and Pro Plans Compared\nSource: felloai.com\nPublished: 2026-10-30T18:00:00+00:00\nURL: https://felloai.com/chatgpt-pricing\nContent: ChatGPT pricing in 2026 covers eight pricing plans plus pay-per-token API access: Free at $0, Go at $8/month, Plus at $20/month, Pro at $100, $200 or $500/month, Business at $25/user/month, and Enterprise on custom pricing. No existing plan price has moved since April 2026, but OpenAI added Pro $500 on September 29 and what each plan buys has changed. GPT-6 Astra now answers in standard chat as GPT-6 Pro on every Pro tier, Business and Enterprise; Plus gets Astra in ChatGPT Work and Codex rather than in Chat, and answers ordinary chats on GPT-5.6 Sol; Free and Go stay on GPT-5.6 Luna with unlimited text chats. [...] 5x more usage than a standard seat No five-hour usage limit, the cap that cuts off long Codex and agent runs mid-task Predictable weekly usage resets Overflow handled through shared workspace credits managed by the workspace owner Access is by waitlist. OpenAI\u2019s announcement is titled \u201cPremium seats are coming to ChatGPT Business\u201d and says some customers may get early access \u201cbefore Premium becomes generally available\u201d, and the public ChatGPT pricing page still did not list the tier as of 20 August 2026. Treat $125 as announced pricing rather than a plan you can buy today. It is also worth knowing that Claude Team Premium carries the identical $125/seat monthly and $100/seat annual rate, so the two now sit seat for seat. ChatGPT Enterprise (Custom Pricing) [...] OpenAI added Pro $500 on 29 September 2026 as its highest-usage Pro tier. It has the same model suite as the other two, GPT-6 Pro in standard chat and GPT-5.6 Sol Pro, plus the most included usage, which OpenAI put at 25 times the Plus allowance at launch and doubled for Work and Codex on 29 October 2026, and Ultrafast, a faster service tier for GPT-6 Astra and GPT-6.1 Sol in ChatGPT Work and Codex that no other Pro tier unlocks, even with purchased credits. Ultrafast uses your included allowance first and then your credit balance. At launch, Pro $500 is sold through ChatGPT on the web. ChatGPT Business ($25/user/month)",
+        "timestamp": "2026-10-30T18:00:00+00:00",
+        "score": 7.0,
+        "metadata": {
+          "source": "felloai.com",
+          "url": "https://felloai.com/chatgpt-pricing",
+          "brand": "Chatgpt",
+          "title": "ChatGPT Pricing 2026: Free, Go, Plus and Pro Plans Compared",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_8f66f58d37d2949b",
+        "text": "Article: ChatGPT Team Pricing 2026: Plans, Seats & API Costs\nSource: www.activepieces.com\nPublished: 2026-10-28T09:05:41+00:00\nURL: https://www.activepieces.com/blog/chatgpt-team-pricing-2026-plans-seats-api-costs\nContent: Plan | Built for | How it's billed | --- | Free | One person trying the tool | No charge, one account | | Go | One person, light regular use | Individual subscription | | Plus | One person, heavier daily use | Individual subscription | | Pro | One person, the heaviest use | Individual subscription | | Business Standard | A team sharing a workspace | $25 per seat per month, per person | | Business Premium | A team sharing a workspace | Per seat, per person | | Enterprise | Large organizations | Negotiated with OpenAI | Prices and plan limits checked against chatgpt.com on October 28, 2026. [...] Buying four Plus accounts isn't the same as buying four Business seats. The first gives you four separate logins with no shared control, and the second gives you one workspace someone can administer. What changed since the plan was launched If you remember the launch price, it has dropped: the standard seat fell from $30 to $25 in 2026, so the plan's cheaper than it was at launch. OpenAI's own figures put it at $30 per seat per month in January 2024. It was still $30 in August 2025. The drop to $25 came by April 2026, and the price held in August 2026. For a five-person team, that's $25 a month saved on the seat bill, or $300 a year. If you are running this arithmetic for your own team, see what the same workload costs on Activepieces. [...] Skip to content Build for free ChatGPT Team Pricing 2026: Plans, Seats & API Costs Dario Espinoza-Blum Dario Espinoza-Blum Covers untangling inherited e-commerce spreadsheets for solo operators: what to fix first, what to leave alone, and what neglect costs. This article was researched and fact-checked by an advanced research system. \u00b7Oct 28, 2026\u00b714 min read ChatGPT Team pricing today, plan by plan How much ChatGPT Team costs per seat Search for ChatGPT Team and you land on ChatGPT Business, whose standard seat costs $25 per seat per month as of August 2026. That's the number on the page, and it's the smallest line on what a building team pays.",
+        "timestamp": "2026-10-28T09:05:41+00:00",
+        "score": 7.0,
+        "metadata": {
+          "source": "www.activepieces.com",
+          "url": "https://www.activepieces.com/blog/chatgpt-team-pricing-2026-plans-seats-api-costs",
+          "brand": "Chatgpt",
+          "title": "ChatGPT Team Pricing 2026: Plans, Seats & API Costs",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_0112e1f9257dd669",
+        "text": "Article: ChatGPT Team Pricing 2026: Plans, Seats & API Costs\nSource: www.activepieces.com\nPublished: 2026-10-28T09:05:41+00:00\nURL: https://www.activepieces.com/blog/chatgpt-team-pricing-2026-plans-seats-api-costs\nContent: Plan | Built for | How it's billed | --- | Free | One person trying the tool | No charge, one account | | Go | One person, light regular use | Individual subscription | | Plus | One person, heavier daily use | Individual subscription | | Pro | One person, the heaviest use | Individual subscription | | Business Standard | A team sharing a workspace | $25 per seat per month, per person | | Business Premium | A team sharing a workspace | Per seat, per person | | Enterprise | Large organizations | Negotiated with OpenAI | Prices and plan limits checked against chatgpt.com on October 28, 2026. [...] Buying four Plus accounts isn't the same as buying four Business seats. The first gives you four separate logins with no shared control, and the second gives you one workspace someone can administer. What changed since the plan was launched If you remember the launch price, it has dropped: the standard seat fell from $30 to $25 in 2026, so the plan's cheaper than it was at launch. OpenAI's own figures put it at $30 per seat per month in January 2024. It was still $30 in August 2025. The drop to $25 came by April 2026, and the price held in August 2026. For a five-person team, that's $25 a month saved on the seat bill, or $300 a year. If you are running this arithmetic for your own team, see what the same workload costs on Activepieces. [...] Skip to content Build for free ChatGPT Team Pricing 2026: Plans, Seats & API Costs Dario Espinoza-Blum Dario Espinoza-Blum Covers untangling inherited e-commerce spreadsheets for solo operators: what to fix first, what to leave alone, and what neglect costs. This article was researched and fact-checked by an advanced research system. \u00b7Oct 28, 2026\u00b714 min read ChatGPT Team pricing today, plan by plan How much ChatGPT Team costs per seat Search for ChatGPT Team and you land on ChatGPT Business, whose standard seat costs $25 per seat per month as of August 2026. That's the number on the page, and it's the smallest line on what a building team pays.",
+        "timestamp": "2026-10-28T09:05:41+00:00",
+        "score": 7.0,
+        "metadata": {
+          "source": "www.activepieces.com",
+          "url": "https://www.activepieces.com/blog/chatgpt-team-pricing-2026-plans-seats-api-costs",
+          "brand": "Chatgpt",
+          "title": "ChatGPT Team Pricing 2026: Plans, Seats & API Costs",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_6f7a66f76aa2fe69",
+        "text": "Article: ChatGPT Enterprise pricing in 2026: seats, minimums, tokens\nSource: www.cloudzero.com\nPublished: 2026-10-20T18:11:38+00:00\nURL: https://www.cloudzero.com/blog/chatgpt-enterprise-pricing\nContent: Quick Answer ChatGPT Enterprise has no public list price. Reported 2026 contracts average about $60 per user per month within a $45 to $75 range, with 150-seat minimums and annual prepayment, putting the floor near $108,000 a year. Newer eligible agreements add usage-based billing under OpenAI's published token rate card. On June 21, 2026, Samsung Electronics switched on ChatGPT Enterprise and Codex for its entire South Korean workforce and every employee in its global Device eXperience division, tens of thousands of people across multiple continents. OpenAI described it as one of its largest enterprise deployments to date. [...] | Model | Input | Cached input | Output | --- --- | | GPT-6 Astra (Work/Codex) | $10.00 | $1.00 | $50.00 | | GPT-5.6 Sol | $4.00 | $0.40 | $20.00 | | GPT-5.6 Terra | $2.00 | $0.20 | $12.00 | | GPT-5.6 Luna | $0.20 | $0.02 | $1.20 | | GPT-5.5 Pro (Chat) | $30.00 | N/A | $180.00 | List prices above are from OpenAI\u2019s first-party Enterprise rate card, checked September 30, 2026. Partner clouds and credit-billed workspaces publish different figures for the same models. Feature charges stack on top of model tokens. Voice runs $0.05 per connected minute plus backend model tokens. Web search costs $10 per 1,000 runs plus content tokens. Deep research bills at $2 input and $8 output per million on its dedicated model. Image generation runs $8 input and $30 output per million tokens. [...] The reversal took three years. In May 2023, Samsung banned generative AI tools across company devices and internal networks after engineers pasted proprietary source code into the public version of ChatGPT. Nvidia hit a comparable milestone earlier in 2026, putting Codex in front of more than 10,000 employees across engineering and non-engineering roles. Both announcements share a shape: headcounts, and no prices. Enterprise AI deals get celebrated in seats and almost never in dollars, so a finance leader pricing a rollout is left assembling the number from sales calls, buyer-reported contract data, and one document OpenAI actually does publish. That document rewrote how enterprise ChatGPT gets budgeted, and it is where any 2026 budget has to start.",
+        "timestamp": "2026-10-20T18:11:38+00:00",
+        "score": 7.0,
+        "metadata": {
+          "source": "www.cloudzero.com",
+          "url": "https://www.cloudzero.com/blog/chatgpt-enterprise-pricing",
+          "brand": "Chatgpt",
+          "title": "ChatGPT Enterprise pricing in 2026: seats, minimums, tokens",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_4fc9a76c45208738",
+        "text": "Article: How Much Does ChatGPT Cost? All Plan & Pricing Tiers Explained\nSource: www.cloudzero.com\nPublished: 2026-04-30T14:19:32+00:00\nURL: https://www.cloudzero.com/blog/how-much-does-chatgpt-cost\nContent: Frequently asked questions about ChatGPT pricing How much is ChatGPT Plus per month? $20 per month, billed monthly. There\u2019s no annual discount on Plus. It includes the GPT-5.6 model family, roughly 160 messages per three hours, 10 full plus 15 lightweight Deep Research tasks monthly, Agent mode, and image and voice tools. Is ChatGPT free? Yes, and more than ever: since OpenAI\u2019s August 6, 2026 announcement, Free accounts get unlimited text conversations on GPT-5.6 Luna (rolling out from the week of August 10), with ads in the US and caps remaining on images, files, and voice. Paid plans start at $8/month (Go) and buy better models, tools, and no ads rather than message volume. What is ChatGPT Go? [...] What is ChatGPT Go? An $8/month entry tier that launched globally on January 16, 2026. It raises Free\u2019s message, upload, and image limits with longer memory, but excludes Agent mode, Deep Research, and top-tier model selection. It\u2019s for regular light users, not professionals or teams. What\u2019s the difference between ChatGPT Pro at $100 and $200? Usage. The $100 tier buys 5x Plus usage; the $200 tier buys 20x, plus the largest limits, around 250 Deep Research tasks split across the full and lightweight versions, and priority compute. Same tools, different ceilings. How much does ChatGPT Business cost? [...] Read the report What does each ChatGPT plan include? Free ($0). The free tier just got its biggest upgrade ever: on August 6, 2026, OpenAI announced unlimited text conversations for Free accounts (rolling out the week of August 10), retiring the old roughly-10-messages-per-5-hours cap, with GPT-5.6 Luna as the new default model and a Think button for harder questions. So if you\u2019re asking \u201cdoes ChatGPT cost money,\u201d the answer is now genuinely no for text chat. The remaining catches: images, file uploads, and voice keep their caps, US free users see ads (rolled out February 9, 2026), and Free users also get GPT-5.6 Terra in Codex and ChatGPT Work per OpenAI\u2019s July announcement.",
+        "timestamp": "2026-04-30T14:19:32+00:00",
+        "score": 7.0,
+        "metadata": {
+          "source": "www.cloudzero.com",
+          "url": "https://www.cloudzero.com/blog/how-much-does-chatgpt-cost",
+          "brand": "Chatgpt",
+          "title": "How Much Does ChatGPT Cost? All Plan & Pricing Tiers Explained",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_38f9cbb2d78e89e5",
+        "text": "Article: Chatgpt\nSource: tavily.com\nPublished: 2026-11-06T19:31:40.934691+00:00\nURL: https://tavily.com/knowledge/company/asaVJ6NV8Cyh\nContent: ChatGPT Website: www.chatgpt.com/ Headquarters: San Francisco, California, United States LinkedIn: www.linkedin.com/showcase/chatgpt \u00b7 1,617,802 followers Industry: Technology, Information and Internet Company type: Private Social profiles: www.facebook.com/openai, www.twitter.com/openai Description: ChatGPT is an AI-powered platform that allows users to answer questions, write, create images, complete work, and code. Products and services Keywords: technology/software, generative ai software, large language models (llms) software, chatgpt, ai chatbots, enterprise ai chatbots, ai code generation, large language models (llms), work, ai, code, create Headcount - Now: 0 \u00b7 0 yearly \u00b7 0 quarterly \u00b7 0 monthly Financials - Annual revenue: 38.40M USD [...] Financials - Annual revenue: 38.40M USD Reputation - Open roles: 0 Similar companies - bing - meta ai - anthropic - github copilot - jasper - aws - character.ai - perplexity",
+        "timestamp": "2026-11-06T19:31:40.934691+00:00",
+        "score": 6.0,
+        "metadata": {
+          "source": "tavily.com",
+          "url": "https://tavily.com/knowledge/company/asaVJ6NV8Cyh",
+          "brand": "Chatgpt",
+          "title": "Chatgpt",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      }
+    ],
+    "neural_network": {
+      "center_node": {
+        "id": "node_center",
+        "label": "Chatgpt",
+        "color": "#0284c7"
+      },
+      "radial_nodes": [
+        {
+          "id": "node_fa6746f0771644b3",
+          "chip_id": "#node_fa6746f",
+          "label": "ChatGPT Pricing ...",
+          "full_title": "ChatGPT Pricing 2026: Which Plan Is Right for You?",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 270,
+          "content": "Article: ChatGPT Pricing 2026: Which Plan Is Right for You?\nSource: alloypress.com\nPublished: 2026-07-13T18:30:31+00:00\nURL: https://alloypress.com/blogs/chatgpt-pricing-plans\nContent: In one line: Start with Plus at $20 a month. Only move up when you actually hit a limit. > Note: OpenAI changes plans often. In 2026 alone, Go launched in the US (January), Business got cheaper (April), Business Premium seats arrived (August) and a new $500 Pro plan launched (September 29). Always check the official ChatGPT pricing page before you buy. What Changed Since Our Last Update? ChatGPT has made a few important changes to its plans, models and API pricing. Here are the key updates. 1. New $500 Pro Plan Launched on September 29, 2026. Offers the highest usage allowance among personal Pro plans. Includes Ultrafast mode, available only on Pro 500. 2. Pro 200 Usage Reduced [...] 2. Pro 200 Usage Reduced New subscribers get a lower usage allowance for the same $200/month. Eligible existing subscribers keep their previous allowance until October 29, 2026. After that, the reduced allowance applies. 3. New ChatGPT Business Seat Options Standard: For regular team usage. Premium: 5\u00d7 more included usage, with no five-hour usage limit. Businesses can mix both seat types in one workspace. 4. Unlimited Everyday Text Chats on Free Free users can send unlimited everyday text messages, subject to fair-use safeguards. File uploads, image generation, voice, and deep research still have separate limits. 5. New GPT-6 Models [...] 5. New GPT-6 Models GPT-6 Sol is rolling out in ChatGPT. GPT-6 Astra powers GPT-6 Pro. GPT-6.1 Sol is available in ChatGPT Work and Codex. Model access depends on your plan and availability. 6. Lower API Pricing GPT-6 Sol API pricing is now: Input: $2 per million tokens. Output: $10 per million tokens. This can lower costs for developers building AI-powered apps and websites. API usage is billed separately from a ChatGPT subscription. Before You Choose a Plan ChatGPT used to be simple. You either used it free, or you paid $20 for Plus.",
+          "timestamp": "2026-07-13T18:30:31+00:00"
+        },
+        {
+          "id": "node_8d1ed3cc48be479a",
+          "chip_id": "#node_8d1ed3c",
+          "label": "Introducing GPT-...",
+          "full_title": "Introducing GPT-6.1 Terra",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 320,
+          "content": "Article: Introducing GPT-6.1 Terra\nSource: openai.com\nPublished: 2026-10-26T18:08:29+00:00\nURL: https://openai.com/index/introducing-gpt-6-1-terra\nContent: Pricing and availability Starting today, GPT-6.1 Terra is available to all Plus, Pro, Enterprise, and Edu users in ChatGPT Work and Codex. Developers can also access it through the OpenAI API as `gpt-6.1-terra`. Standard API pricing is $1 per million input tokens, $0.05 per million cached input tokens, and $5 per million output tokens. 2026 GPT Author OpenAI Research Research Index Research Overview Economic Research Latest Advancements GPT-6.1 Sol GPT-6 Astra GPT-5.6 GPT-5.5 Safety Safety Approach Deployment Safety(opens in a new window) Security & Privacy Trust & Transparency [...] Terra continues to advance the cost-intelligence frontier across our model families, providing a new balance of speed, capability, and cost. Its standard API prices are 50% lower than those of GPT-5.6 Terra and GPT-6.1 Sol, making it practical for developers to automate high-volume work, like reading incoming invoices and entering their details into accounting software. In ChatGPT Work and Codex, your plan goes further with GPT-6.1 Terra\u2014the same usage allowance covers more tasks than with GPT\u20115.6 Terra and substantially more than with GPT\u20116.1 Sol or GPT\u20116 Astra. From visual understanding to action [...] Skip to main content Log inTry ChatGPT(opens in a new window) Research Products Business Developers Company Foundation(opens in a new window) Introducing GPT-6.1 Terra | OpenAI GPT-6.1 Terra From visual understanding to action From visual understanding to action A significant step up on factuality and coding Safety and alignment Pricing and availability From visual understanding to action A significant step up on factuality and coding Safety and alignment Pricing and availability Delivering fast and capable computer use at scale A 30-second introduction to GPT-6.1 Terra. Video 1",
+          "timestamp": "2026-10-26T18:08:29+00:00"
+        },
+        {
+          "id": "node_0a0f24dda18b4e92",
+          "chip_id": "#node_0a0f24d",
+          "label": "ChatGPT Pricing ...",
+          "full_title": "ChatGPT Pricing 2026: Free, Go, Plus and Pro Plans Compared",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 15,
+          "content": "Article: ChatGPT Pricing 2026: Free, Go, Plus and Pro Plans Compared\nSource: felloai.com\nPublished: 2026-10-30T18:00:00+00:00\nURL: https://felloai.com/chatgpt-pricing\nContent: ChatGPT pricing in 2026 covers eight pricing plans plus pay-per-token API access: Free at $0, Go at $8/month, Plus at $20/month, Pro at $100, $200 or $500/month, Business at $25/user/month, and Enterprise on custom pricing. No existing plan price has moved since April 2026, but OpenAI added Pro $500 on September 29 and what each plan buys has changed. GPT-6 Astra now answers in standard chat as GPT-6 Pro on every Pro tier, Business and Enterprise; Plus gets Astra in ChatGPT Work and Codex rather than in Chat, and answers ordinary chats on GPT-5.6 Sol; Free and Go stay on GPT-5.6 Luna with unlimited text chats. [...] 5x more usage than a standard seat No five-hour usage limit, the cap that cuts off long Codex and agent runs mid-task Predictable weekly usage resets Overflow handled through shared workspace credits managed by the workspace owner Access is by waitlist. OpenAI\u2019s announcement is titled \u201cPremium seats are coming to ChatGPT Business\u201d and says some customers may get early access \u201cbefore Premium becomes generally available\u201d, and the public ChatGPT pricing page still did not list the tier as of 20 August 2026. Treat $125 as announced pricing rather than a plan you can buy today. It is also worth knowing that Claude Team Premium carries the identical $125/seat monthly and $100/seat annual rate, so the two now sit seat for seat. ChatGPT Enterprise (Custom Pricing) [...] OpenAI added Pro $500 on 29 September 2026 as its highest-usage Pro tier. It has the same model suite as the other two, GPT-6 Pro in standard chat and GPT-5.6 Sol Pro, plus the most included usage, which OpenAI put at 25 times the Plus allowance at launch and doubled for Work and Codex on 29 October 2026, and Ultrafast, a faster service tier for GPT-6 Astra and GPT-6.1 Sol in ChatGPT Work and Codex that no other Pro tier unlocks, even with purchased credits. Ultrafast uses your included allowance first and then your credit balance. At launch, Pro $500 is sold through ChatGPT on the web. ChatGPT Business ($25/user/month)",
+          "timestamp": "2026-10-30T18:00:00+00:00"
+        },
+        {
+          "id": "node_f23d1f2abbca4a86",
+          "chip_id": "#node_f23d1f2",
+          "label": "ChatGPT Team Pri...",
+          "full_title": "ChatGPT Team Pricing 2026: Plans, Seats & API Costs",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 65,
+          "content": "Article: ChatGPT Team Pricing 2026: Plans, Seats & API Costs\nSource: www.activepieces.com\nPublished: 2026-10-28T09:05:41+00:00\nURL: https://www.activepieces.com/blog/chatgpt-team-pricing-2026-plans-seats-api-costs\nContent: Plan | Built for | How it's billed | --- | Free | One person trying the tool | No charge, one account | | Go | One person, light regular use | Individual subscription | | Plus | One person, heavier daily use | Individual subscription | | Pro | One person, the heaviest use | Individual subscription | | Business Standard | A team sharing a workspace | $25 per seat per month, per person | | Business Premium | A team sharing a workspace | Per seat, per person | | Enterprise | Large organizations | Negotiated with OpenAI | Prices and plan limits checked against chatgpt.com on October 28, 2026. [...] Buying four Plus accounts isn't the same as buying four Business seats. The first gives you four separate logins with no shared control, and the second gives you one workspace someone can administer. What changed since the plan was launched If you remember the launch price, it has dropped: the standard seat fell from $30 to $25 in 2026, so the plan's cheaper than it was at launch. OpenAI's own figures put it at $30 per seat per month in January 2024. It was still $30 in August 2025. The drop to $25 came by April 2026, and the price held in August 2026. For a five-person team, that's $25 a month saved on the seat bill, or $300 a year. If you are running this arithmetic for your own team, see what the same workload costs on Activepieces. [...] Skip to content Build for free ChatGPT Team Pricing 2026: Plans, Seats & API Costs Dario Espinoza-Blum Dario Espinoza-Blum Covers untangling inherited e-commerce spreadsheets for solo operators: what to fix first, what to leave alone, and what neglect costs. This article was researched and fact-checked by an advanced research system. \u00b7Oct 28, 2026\u00b714 min read ChatGPT Team pricing today, plan by plan How much ChatGPT Team costs per seat Search for ChatGPT Team and you land on ChatGPT Business, whose standard seat costs $25 per seat per month as of August 2026. That's the number on the page, and it's the smallest line on what a building team pays.",
+          "timestamp": "2026-10-28T09:05:41+00:00"
+        },
+        {
+          "id": "node_3ee87cdbb03e43af",
+          "chip_id": "#node_3ee87cd",
+          "label": "ChatGPT Team Pri...",
+          "full_title": "ChatGPT Team Pricing 2026: Plans, Seats & API Costs",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 90,
+          "content": "Article: ChatGPT Team Pricing 2026: Plans, Seats & API Costs\nSource: www.activepieces.com\nPublished: 2026-10-28T09:05:41+00:00\nURL: https://www.activepieces.com/blog/chatgpt-team-pricing-2026-plans-seats-api-costs\nContent: Plan | Built for | How it's billed | --- | Free | One person trying the tool | No charge, one account | | Go | One person, light regular use | Individual subscription | | Plus | One person, heavier daily use | Individual subscription | | Pro | One person, the heaviest use | Individual subscription | | Business Standard | A team sharing a workspace | $25 per seat per month, per person | | Business Premium | A team sharing a workspace | Per seat, per person | | Enterprise | Large organizations | Negotiated with OpenAI | Prices and plan limits checked against chatgpt.com on October 28, 2026. [...] Buying four Plus accounts isn't the same as buying four Business seats. The first gives you four separate logins with no shared control, and the second gives you one workspace someone can administer. What changed since the plan was launched If you remember the launch price, it has dropped: the standard seat fell from $30 to $25 in 2026, so the plan's cheaper than it was at launch. OpenAI's own figures put it at $30 per seat per month in January 2024. It was still $30 in August 2025. The drop to $25 came by April 2026, and the price held in August 2026. For a five-person team, that's $25 a month saved on the seat bill, or $300 a year. If you are running this arithmetic for your own team, see what the same workload costs on Activepieces. [...] Skip to content Build for free ChatGPT Team Pricing 2026: Plans, Seats & API Costs Dario Espinoza-Blum Dario Espinoza-Blum Covers untangling inherited e-commerce spreadsheets for solo operators: what to fix first, what to leave alone, and what neglect costs. This article was researched and fact-checked by an advanced research system. \u00b7Oct 28, 2026\u00b714 min read ChatGPT Team pricing today, plan by plan How much ChatGPT Team costs per seat Search for ChatGPT Team and you land on ChatGPT Business, whose standard seat costs $25 per seat per month as of August 2026. That's the number on the page, and it's the smallest line on what a building team pays.",
+          "timestamp": "2026-10-28T09:05:41+00:00"
+        },
+        {
+          "id": "node_c4ad107b38a84568",
+          "chip_id": "#node_c4ad107",
+          "label": "Audit pricing pari...",
+          "full_title": "Audit pricing parity against Google Competitors 2026 and deploy targeted annual incentive bundles.",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 140,
+          "content": "Strategic Move [P0 Critical]: Audit pricing parity against Google Competitors 2026 and deploy targeted annual incentive bundles.. Rationale: Directly counters Google Competitors 2026's aggressive positioning while defending margin on renewal cohorts.",
+          "timestamp": "2026-11-07T11:16:19.385565+00:00"
+        },
+        {
+          "id": "node_066f6b3ce10340b3",
+          "chip_id": "#node_066f6b3",
+          "label": "Accelerate self-se...",
+          "full_title": "Accelerate self-serve product onboarding for high-velocity teams underserved by Google Competitors 2026.",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 195,
+          "content": "Strategic Move [P1 Offensive]: Accelerate self-serve product onboarding for high-velocity teams underserved by Google Competitors 2026.. Rationale: Google Competitors 2026 is focusing on monolithic enterprise tiers, leaving an opening in developer-first teams.",
+          "timestamp": "2026-11-07T11:16:19.385568+00:00"
+        },
+        {
+          "id": "node_8b36d498e9ee41cb",
+          "chip_id": "#node_8b36d49",
+          "label": "Double down on per...",
+          "full_title": "Double down on performance ergonomics and publish public benchmark comparisons against ChatGPT Competitors.",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 235,
+          "content": "Strategic Move [P2 Strategic]: Double down on performance ergonomics and publish public benchmark comparisons against ChatGPT Competitors.. Rationale: Shifts the buyer conversation from a commodity pricing contest to superior execution speed and craft.",
+          "timestamp": "2026-11-07T11:16:19.385571+00:00"
+        }
+      ],
+      "recalled_chips": [
+        "#node_fa6746f",
+        "#node_8d1ed3c",
+        "#node_0a0f24d",
+        "#node_f23d1f2",
+        "#node_3ee87cd",
+        "#node_c4ad107"
+      ],
+      "instant_prompts": [
+        "What is Chatgpt's pricing moat?",
+        "How have competitor prices shifted?",
+        "What strategic counter-move should we execute?"
+      ]
+    },
+    "neural_nodes": [
+      {
+        "id": "node_fa6746f0771644b3",
+        "chip_id": "#node_fa6746f",
+        "label": "ChatGPT Pricing ...",
+        "full_title": "ChatGPT Pricing 2026: Which Plan Is Right for You?",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 270,
+        "content": "Article: ChatGPT Pricing 2026: Which Plan Is Right for You?\nSource: alloypress.com\nPublished: 2026-07-13T18:30:31+00:00\nURL: https://alloypress.com/blogs/chatgpt-pricing-plans\nContent: In one line: Start with Plus at $20 a month. Only move up when you actually hit a limit. > Note: OpenAI changes plans often. In 2026 alone, Go launched in the US (January), Business got cheaper (April), Business Premium seats arrived (August) and a new $500 Pro plan launched (September 29). Always check the official ChatGPT pricing page before you buy. What Changed Since Our Last Update? ChatGPT has made a few important changes to its plans, models and API pricing. Here are the key updates. 1. New $500 Pro Plan Launched on September 29, 2026. Offers the highest usage allowance among personal Pro plans. Includes Ultrafast mode, available only on Pro 500. 2. Pro 200 Usage Reduced [...] 2. Pro 200 Usage Reduced New subscribers get a lower usage allowance for the same $200/month. Eligible existing subscribers keep their previous allowance until October 29, 2026. After that, the reduced allowance applies. 3. New ChatGPT Business Seat Options Standard: For regular team usage. Premium: 5\u00d7 more included usage, with no five-hour usage limit. Businesses can mix both seat types in one workspace. 4. Unlimited Everyday Text Chats on Free Free users can send unlimited everyday text messages, subject to fair-use safeguards. File uploads, image generation, voice, and deep research still have separate limits. 5. New GPT-6 Models [...] 5. New GPT-6 Models GPT-6 Sol is rolling out in ChatGPT. GPT-6 Astra powers GPT-6 Pro. GPT-6.1 Sol is available in ChatGPT Work and Codex. Model access depends on your plan and availability. 6. Lower API Pricing GPT-6 Sol API pricing is now: Input: $2 per million tokens. Output: $10 per million tokens. This can lower costs for developers building AI-powered apps and websites. API usage is billed separately from a ChatGPT subscription. Before You Choose a Plan ChatGPT used to be simple. You either used it free, or you paid $20 for Plus.",
+        "timestamp": "2026-07-13T18:30:31+00:00"
+      },
+      {
+        "id": "node_8d1ed3cc48be479a",
+        "chip_id": "#node_8d1ed3c",
+        "label": "Introducing GPT-...",
+        "full_title": "Introducing GPT-6.1 Terra",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 320,
+        "content": "Article: Introducing GPT-6.1 Terra\nSource: openai.com\nPublished: 2026-10-26T18:08:29+00:00\nURL: https://openai.com/index/introducing-gpt-6-1-terra\nContent: Pricing and availability Starting today, GPT-6.1 Terra is available to all Plus, Pro, Enterprise, and Edu users in ChatGPT Work and Codex. Developers can also access it through the OpenAI API as `gpt-6.1-terra`. Standard API pricing is $1 per million input tokens, $0.05 per million cached input tokens, and $5 per million output tokens. 2026 GPT Author OpenAI Research Research Index Research Overview Economic Research Latest Advancements GPT-6.1 Sol GPT-6 Astra GPT-5.6 GPT-5.5 Safety Safety Approach Deployment Safety(opens in a new window) Security & Privacy Trust & Transparency [...] Terra continues to advance the cost-intelligence frontier across our model families, providing a new balance of speed, capability, and cost. Its standard API prices are 50% lower than those of GPT-5.6 Terra and GPT-6.1 Sol, making it practical for developers to automate high-volume work, like reading incoming invoices and entering their details into accounting software. In ChatGPT Work and Codex, your plan goes further with GPT-6.1 Terra\u2014the same usage allowance covers more tasks than with GPT\u20115.6 Terra and substantially more than with GPT\u20116.1 Sol or GPT\u20116 Astra. From visual understanding to action [...] Skip to main content Log inTry ChatGPT(opens in a new window) Research Products Business Developers Company Foundation(opens in a new window) Introducing GPT-6.1 Terra | OpenAI GPT-6.1 Terra From visual understanding to action From visual understanding to action A significant step up on factuality and coding Safety and alignment Pricing and availability From visual understanding to action A significant step up on factuality and coding Safety and alignment Pricing and availability Delivering fast and capable computer use at scale A 30-second introduction to GPT-6.1 Terra. Video 1",
+        "timestamp": "2026-10-26T18:08:29+00:00"
+      },
+      {
+        "id": "node_0a0f24dda18b4e92",
+        "chip_id": "#node_0a0f24d",
+        "label": "ChatGPT Pricing ...",
+        "full_title": "ChatGPT Pricing 2026: Free, Go, Plus and Pro Plans Compared",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 15,
+        "content": "Article: ChatGPT Pricing 2026: Free, Go, Plus and Pro Plans Compared\nSource: felloai.com\nPublished: 2026-10-30T18:00:00+00:00\nURL: https://felloai.com/chatgpt-pricing\nContent: ChatGPT pricing in 2026 covers eight pricing plans plus pay-per-token API access: Free at $0, Go at $8/month, Plus at $20/month, Pro at $100, $200 or $500/month, Business at $25/user/month, and Enterprise on custom pricing. No existing plan price has moved since April 2026, but OpenAI added Pro $500 on September 29 and what each plan buys has changed. GPT-6 Astra now answers in standard chat as GPT-6 Pro on every Pro tier, Business and Enterprise; Plus gets Astra in ChatGPT Work and Codex rather than in Chat, and answers ordinary chats on GPT-5.6 Sol; Free and Go stay on GPT-5.6 Luna with unlimited text chats. [...] 5x more usage than a standard seat No five-hour usage limit, the cap that cuts off long Codex and agent runs mid-task Predictable weekly usage resets Overflow handled through shared workspace credits managed by the workspace owner Access is by waitlist. OpenAI\u2019s announcement is titled \u201cPremium seats are coming to ChatGPT Business\u201d and says some customers may get early access \u201cbefore Premium becomes generally available\u201d, and the public ChatGPT pricing page still did not list the tier as of 20 August 2026. Treat $125 as announced pricing rather than a plan you can buy today. It is also worth knowing that Claude Team Premium carries the identical $125/seat monthly and $100/seat annual rate, so the two now sit seat for seat. ChatGPT Enterprise (Custom Pricing) [...] OpenAI added Pro $500 on 29 September 2026 as its highest-usage Pro tier. It has the same model suite as the other two, GPT-6 Pro in standard chat and GPT-5.6 Sol Pro, plus the most included usage, which OpenAI put at 25 times the Plus allowance at launch and doubled for Work and Codex on 29 October 2026, and Ultrafast, a faster service tier for GPT-6 Astra and GPT-6.1 Sol in ChatGPT Work and Codex that no other Pro tier unlocks, even with purchased credits. Ultrafast uses your included allowance first and then your credit balance. At launch, Pro $500 is sold through ChatGPT on the web. ChatGPT Business ($25/user/month)",
+        "timestamp": "2026-10-30T18:00:00+00:00"
+      },
+      {
+        "id": "node_f23d1f2abbca4a86",
+        "chip_id": "#node_f23d1f2",
+        "label": "ChatGPT Team Pri...",
+        "full_title": "ChatGPT Team Pricing 2026: Plans, Seats & API Costs",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 65,
+        "content": "Article: ChatGPT Team Pricing 2026: Plans, Seats & API Costs\nSource: www.activepieces.com\nPublished: 2026-10-28T09:05:41+00:00\nURL: https://www.activepieces.com/blog/chatgpt-team-pricing-2026-plans-seats-api-costs\nContent: Plan | Built for | How it's billed | --- | Free | One person trying the tool | No charge, one account | | Go | One person, light regular use | Individual subscription | | Plus | One person, heavier daily use | Individual subscription | | Pro | One person, the heaviest use | Individual subscription | | Business Standard | A team sharing a workspace | $25 per seat per month, per person | | Business Premium | A team sharing a workspace | Per seat, per person | | Enterprise | Large organizations | Negotiated with OpenAI | Prices and plan limits checked against chatgpt.com on October 28, 2026. [...] Buying four Plus accounts isn't the same as buying four Business seats. The first gives you four separate logins with no shared control, and the second gives you one workspace someone can administer. What changed since the plan was launched If you remember the launch price, it has dropped: the standard seat fell from $30 to $25 in 2026, so the plan's cheaper than it was at launch. OpenAI's own figures put it at $30 per seat per month in January 2024. It was still $30 in August 2025. The drop to $25 came by April 2026, and the price held in August 2026. For a five-person team, that's $25 a month saved on the seat bill, or $300 a year. If you are running this arithmetic for your own team, see what the same workload costs on Activepieces. [...] Skip to content Build for free ChatGPT Team Pricing 2026: Plans, Seats & API Costs Dario Espinoza-Blum Dario Espinoza-Blum Covers untangling inherited e-commerce spreadsheets for solo operators: what to fix first, what to leave alone, and what neglect costs. This article was researched and fact-checked by an advanced research system. \u00b7Oct 28, 2026\u00b714 min read ChatGPT Team pricing today, plan by plan How much ChatGPT Team costs per seat Search for ChatGPT Team and you land on ChatGPT Business, whose standard seat costs $25 per seat per month as of August 2026. That's the number on the page, and it's the smallest line on what a building team pays.",
+        "timestamp": "2026-10-28T09:05:41+00:00"
+      },
+      {
+        "id": "node_3ee87cdbb03e43af",
+        "chip_id": "#node_3ee87cd",
+        "label": "ChatGPT Team Pri...",
+        "full_title": "ChatGPT Team Pricing 2026: Plans, Seats & API Costs",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 90,
+        "content": "Article: ChatGPT Team Pricing 2026: Plans, Seats & API Costs\nSource: www.activepieces.com\nPublished: 2026-10-28T09:05:41+00:00\nURL: https://www.activepieces.com/blog/chatgpt-team-pricing-2026-plans-seats-api-costs\nContent: Plan | Built for | How it's billed | --- | Free | One person trying the tool | No charge, one account | | Go | One person, light regular use | Individual subscription | | Plus | One person, heavier daily use | Individual subscription | | Pro | One person, the heaviest use | Individual subscription | | Business Standard | A team sharing a workspace | $25 per seat per month, per person | | Business Premium | A team sharing a workspace | Per seat, per person | | Enterprise | Large organizations | Negotiated with OpenAI | Prices and plan limits checked against chatgpt.com on October 28, 2026. [...] Buying four Plus accounts isn't the same as buying four Business seats. The first gives you four separate logins with no shared control, and the second gives you one workspace someone can administer. What changed since the plan was launched If you remember the launch price, it has dropped: the standard seat fell from $30 to $25 in 2026, so the plan's cheaper than it was at launch. OpenAI's own figures put it at $30 per seat per month in January 2024. It was still $30 in August 2025. The drop to $25 came by April 2026, and the price held in August 2026. For a five-person team, that's $25 a month saved on the seat bill, or $300 a year. If you are running this arithmetic for your own team, see what the same workload costs on Activepieces. [...] Skip to content Build for free ChatGPT Team Pricing 2026: Plans, Seats & API Costs Dario Espinoza-Blum Dario Espinoza-Blum Covers untangling inherited e-commerce spreadsheets for solo operators: what to fix first, what to leave alone, and what neglect costs. This article was researched and fact-checked by an advanced research system. \u00b7Oct 28, 2026\u00b714 min read ChatGPT Team pricing today, plan by plan How much ChatGPT Team costs per seat Search for ChatGPT Team and you land on ChatGPT Business, whose standard seat costs $25 per seat per month as of August 2026. That's the number on the page, and it's the smallest line on what a building team pays.",
+        "timestamp": "2026-10-28T09:05:41+00:00"
+      },
+      {
+        "id": "node_c4ad107b38a84568",
+        "chip_id": "#node_c4ad107",
+        "label": "Audit pricing pari...",
+        "full_title": "Audit pricing parity against Google Competitors 2026 and deploy targeted annual incentive bundles.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 140,
+        "content": "Strategic Move [P0 Critical]: Audit pricing parity against Google Competitors 2026 and deploy targeted annual incentive bundles.. Rationale: Directly counters Google Competitors 2026's aggressive positioning while defending margin on renewal cohorts.",
+        "timestamp": "2026-11-07T11:16:19.385565+00:00"
+      },
+      {
+        "id": "node_066f6b3ce10340b3",
+        "chip_id": "#node_066f6b3",
+        "label": "Accelerate self-se...",
+        "full_title": "Accelerate self-serve product onboarding for high-velocity teams underserved by Google Competitors 2026.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 195,
+        "content": "Strategic Move [P1 Offensive]: Accelerate self-serve product onboarding for high-velocity teams underserved by Google Competitors 2026.. Rationale: Google Competitors 2026 is focusing on monolithic enterprise tiers, leaving an opening in developer-first teams.",
+        "timestamp": "2026-11-07T11:16:19.385568+00:00"
+      },
+      {
+        "id": "node_8b36d498e9ee41cb",
+        "chip_id": "#node_8b36d49",
+        "label": "Double down on per...",
+        "full_title": "Double down on performance ergonomics and publish public benchmark comparisons against ChatGPT Competitors.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 235,
+        "content": "Strategic Move [P2 Strategic]: Double down on performance ergonomics and publish public benchmark comparisons against ChatGPT Competitors.. Rationale: Shifts the buyer conversation from a commodity pricing contest to superior execution speed and craft.",
+        "timestamp": "2026-11-07T11:16:19.385571+00:00"
+      }
+    ],
+    "recalled_chips": [
+      "#node_fa6746f",
+      "#node_8d1ed3c",
+      "#node_0a0f24d",
+      "#node_f23d1f2",
+      "#node_3ee87cd",
+      "#node_c4ad107"
+    ],
+    "instant_prompts": [
+      "What is Chatgpt's pricing moat?",
+      "How have competitor prices shifted?",
+      "What strategic counter-move should we execute?"
+    ],
+    "compounding_message": "The next time Chatgpt is scanned, the agent remembers previous findings and identifies what's changed, which strategies are developing and which trends are continuing."
+  },
+  "neural_network": {
+    "center_node": {
+      "id": "node_center",
+      "label": "Chatgpt",
+      "color": "#0284c7"
+    },
+    "radial_nodes": [
+      {
+        "id": "node_fa6746f0771644b3",
+        "chip_id": "#node_fa6746f",
+        "label": "ChatGPT Pricing ...",
+        "full_title": "ChatGPT Pricing 2026: Which Plan Is Right for You?",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 270,
+        "content": "Article: ChatGPT Pricing 2026: Which Plan Is Right for You?\nSource: alloypress.com\nPublished: 2026-07-13T18:30:31+00:00\nURL: https://alloypress.com/blogs/chatgpt-pricing-plans\nContent: In one line: Start with Plus at $20 a month. Only move up when you actually hit a limit. > Note: OpenAI changes plans often. In 2026 alone, Go launched in the US (January), Business got cheaper (April), Business Premium seats arrived (August) and a new $500 Pro plan launched (September 29). Always check the official ChatGPT pricing page before you buy. What Changed Since Our Last Update? ChatGPT has made a few important changes to its plans, models and API pricing. Here are the key updates. 1. New $500 Pro Plan Launched on September 29, 2026. Offers the highest usage allowance among personal Pro plans. Includes Ultrafast mode, available only on Pro 500. 2. Pro 200 Usage Reduced [...] 2. Pro 200 Usage Reduced New subscribers get a lower usage allowance for the same $200/month. Eligible existing subscribers keep their previous allowance until October 29, 2026. After that, the reduced allowance applies. 3. New ChatGPT Business Seat Options Standard: For regular team usage. Premium: 5\u00d7 more included usage, with no five-hour usage limit. Businesses can mix both seat types in one workspace. 4. Unlimited Everyday Text Chats on Free Free users can send unlimited everyday text messages, subject to fair-use safeguards. File uploads, image generation, voice, and deep research still have separate limits. 5. New GPT-6 Models [...] 5. New GPT-6 Models GPT-6 Sol is rolling out in ChatGPT. GPT-6 Astra powers GPT-6 Pro. GPT-6.1 Sol is available in ChatGPT Work and Codex. Model access depends on your plan and availability. 6. Lower API Pricing GPT-6 Sol API pricing is now: Input: $2 per million tokens. Output: $10 per million tokens. This can lower costs for developers building AI-powered apps and websites. API usage is billed separately from a ChatGPT subscription. Before You Choose a Plan ChatGPT used to be simple. You either used it free, or you paid $20 for Plus.",
+        "timestamp": "2026-07-13T18:30:31+00:00"
+      },
+      {
+        "id": "node_8d1ed3cc48be479a",
+        "chip_id": "#node_8d1ed3c",
+        "label": "Introducing GPT-...",
+        "full_title": "Introducing GPT-6.1 Terra",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 320,
+        "content": "Article: Introducing GPT-6.1 Terra\nSource: openai.com\nPublished: 2026-10-26T18:08:29+00:00\nURL: https://openai.com/index/introducing-gpt-6-1-terra\nContent: Pricing and availability Starting today, GPT-6.1 Terra is available to all Plus, Pro, Enterprise, and Edu users in ChatGPT Work and Codex. Developers can also access it through the OpenAI API as `gpt-6.1-terra`. Standard API pricing is $1 per million input tokens, $0.05 per million cached input tokens, and $5 per million output tokens. 2026 GPT Author OpenAI Research Research Index Research Overview Economic Research Latest Advancements GPT-6.1 Sol GPT-6 Astra GPT-5.6 GPT-5.5 Safety Safety Approach Deployment Safety(opens in a new window) Security & Privacy Trust & Transparency [...] Terra continues to advance the cost-intelligence frontier across our model families, providing a new balance of speed, capability, and cost. Its standard API prices are 50% lower than those of GPT-5.6 Terra and GPT-6.1 Sol, making it practical for developers to automate high-volume work, like reading incoming invoices and entering their details into accounting software. In ChatGPT Work and Codex, your plan goes further with GPT-6.1 Terra\u2014the same usage allowance covers more tasks than with GPT\u20115.6 Terra and substantially more than with GPT\u20116.1 Sol or GPT\u20116 Astra. From visual understanding to action [...] Skip to main content Log inTry ChatGPT(opens in a new window) Research Products Business Developers Company Foundation(opens in a new window) Introducing GPT-6.1 Terra | OpenAI GPT-6.1 Terra From visual understanding to action From visual understanding to action A significant step up on factuality and coding Safety and alignment Pricing and availability From visual understanding to action A significant step up on factuality and coding Safety and alignment Pricing and availability Delivering fast and capable computer use at scale A 30-second introduction to GPT-6.1 Terra. Video 1",
+        "timestamp": "2026-10-26T18:08:29+00:00"
+      },
+      {
+        "id": "node_0a0f24dda18b4e92",
+        "chip_id": "#node_0a0f24d",
+        "label": "ChatGPT Pricing ...",
+        "full_title": "ChatGPT Pricing 2026: Free, Go, Plus and Pro Plans Compared",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 15,
+        "content": "Article: ChatGPT Pricing 2026: Free, Go, Plus and Pro Plans Compared\nSource: felloai.com\nPublished: 2026-10-30T18:00:00+00:00\nURL: https://felloai.com/chatgpt-pricing\nContent: ChatGPT pricing in 2026 covers eight pricing plans plus pay-per-token API access: Free at $0, Go at $8/month, Plus at $20/month, Pro at $100, $200 or $500/month, Business at $25/user/month, and Enterprise on custom pricing. No existing plan price has moved since April 2026, but OpenAI added Pro $500 on September 29 and what each plan buys has changed. GPT-6 Astra now answers in standard chat as GPT-6 Pro on every Pro tier, Business and Enterprise; Plus gets Astra in ChatGPT Work and Codex rather than in Chat, and answers ordinary chats on GPT-5.6 Sol; Free and Go stay on GPT-5.6 Luna with unlimited text chats. [...] 5x more usage than a standard seat No five-hour usage limit, the cap that cuts off long Codex and agent runs mid-task Predictable weekly usage resets Overflow handled through shared workspace credits managed by the workspace owner Access is by waitlist. OpenAI\u2019s announcement is titled \u201cPremium seats are coming to ChatGPT Business\u201d and says some customers may get early access \u201cbefore Premium becomes generally available\u201d, and the public ChatGPT pricing page still did not list the tier as of 20 August 2026. Treat $125 as announced pricing rather than a plan you can buy today. It is also worth knowing that Claude Team Premium carries the identical $125/seat monthly and $100/seat annual rate, so the two now sit seat for seat. ChatGPT Enterprise (Custom Pricing) [...] OpenAI added Pro $500 on 29 September 2026 as its highest-usage Pro tier. It has the same model suite as the other two, GPT-6 Pro in standard chat and GPT-5.6 Sol Pro, plus the most included usage, which OpenAI put at 25 times the Plus allowance at launch and doubled for Work and Codex on 29 October 2026, and Ultrafast, a faster service tier for GPT-6 Astra and GPT-6.1 Sol in ChatGPT Work and Codex that no other Pro tier unlocks, even with purchased credits. Ultrafast uses your included allowance first and then your credit balance. At launch, Pro $500 is sold through ChatGPT on the web. ChatGPT Business ($25/user/month)",
+        "timestamp": "2026-10-30T18:00:00+00:00"
+      },
+      {
+        "id": "node_f23d1f2abbca4a86",
+        "chip_id": "#node_f23d1f2",
+        "label": "ChatGPT Team Pri...",
+        "full_title": "ChatGPT Team Pricing 2026: Plans, Seats & API Costs",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 65,
+        "content": "Article: ChatGPT Team Pricing 2026: Plans, Seats & API Costs\nSource: www.activepieces.com\nPublished: 2026-10-28T09:05:41+00:00\nURL: https://www.activepieces.com/blog/chatgpt-team-pricing-2026-plans-seats-api-costs\nContent: Plan | Built for | How it's billed | --- | Free | One person trying the tool | No charge, one account | | Go | One person, light regular use | Individual subscription | | Plus | One person, heavier daily use | Individual subscription | | Pro | One person, the heaviest use | Individual subscription | | Business Standard | A team sharing a workspace | $25 per seat per month, per person | | Business Premium | A team sharing a workspace | Per seat, per person | | Enterprise | Large organizations | Negotiated with OpenAI | Prices and plan limits checked against chatgpt.com on October 28, 2026. [...] Buying four Plus accounts isn't the same as buying four Business seats. The first gives you four separate logins with no shared control, and the second gives you one workspace someone can administer. What changed since the plan was launched If you remember the launch price, it has dropped: the standard seat fell from $30 to $25 in 2026, so the plan's cheaper than it was at launch. OpenAI's own figures put it at $30 per seat per month in January 2024. It was still $30 in August 2025. The drop to $25 came by April 2026, and the price held in August 2026. For a five-person team, that's $25 a month saved on the seat bill, or $300 a year. If you are running this arithmetic for your own team, see what the same workload costs on Activepieces. [...] Skip to content Build for free ChatGPT Team Pricing 2026: Plans, Seats & API Costs Dario Espinoza-Blum Dario Espinoza-Blum Covers untangling inherited e-commerce spreadsheets for solo operators: what to fix first, what to leave alone, and what neglect costs. This article was researched and fact-checked by an advanced research system. \u00b7Oct 28, 2026\u00b714 min read ChatGPT Team pricing today, plan by plan How much ChatGPT Team costs per seat Search for ChatGPT Team and you land on ChatGPT Business, whose standard seat costs $25 per seat per month as of August 2026. That's the number on the page, and it's the smallest line on what a building team pays.",
+        "timestamp": "2026-10-28T09:05:41+00:00"
+      },
+      {
+        "id": "node_3ee87cdbb03e43af",
+        "chip_id": "#node_3ee87cd",
+        "label": "ChatGPT Team Pri...",
+        "full_title": "ChatGPT Team Pricing 2026: Plans, Seats & API Costs",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 90,
+        "content": "Article: ChatGPT Team Pricing 2026: Plans, Seats & API Costs\nSource: www.activepieces.com\nPublished: 2026-10-28T09:05:41+00:00\nURL: https://www.activepieces.com/blog/chatgpt-team-pricing-2026-plans-seats-api-costs\nContent: Plan | Built for | How it's billed | --- | Free | One person trying the tool | No charge, one account | | Go | One person, light regular use | Individual subscription | | Plus | One person, heavier daily use | Individual subscription | | Pro | One person, the heaviest use | Individual subscription | | Business Standard | A team sharing a workspace | $25 per seat per month, per person | | Business Premium | A team sharing a workspace | Per seat, per person | | Enterprise | Large organizations | Negotiated with OpenAI | Prices and plan limits checked against chatgpt.com on October 28, 2026. [...] Buying four Plus accounts isn't the same as buying four Business seats. The first gives you four separate logins with no shared control, and the second gives you one workspace someone can administer. What changed since the plan was launched If you remember the launch price, it has dropped: the standard seat fell from $30 to $25 in 2026, so the plan's cheaper than it was at launch. OpenAI's own figures put it at $30 per seat per month in January 2024. It was still $30 in August 2025. The drop to $25 came by April 2026, and the price held in August 2026. For a five-person team, that's $25 a month saved on the seat bill, or $300 a year. If you are running this arithmetic for your own team, see what the same workload costs on Activepieces. [...] Skip to content Build for free ChatGPT Team Pricing 2026: Plans, Seats & API Costs Dario Espinoza-Blum Dario Espinoza-Blum Covers untangling inherited e-commerce spreadsheets for solo operators: what to fix first, what to leave alone, and what neglect costs. This article was researched and fact-checked by an advanced research system. \u00b7Oct 28, 2026\u00b714 min read ChatGPT Team pricing today, plan by plan How much ChatGPT Team costs per seat Search for ChatGPT Team and you land on ChatGPT Business, whose standard seat costs $25 per seat per month as of August 2026. That's the number on the page, and it's the smallest line on what a building team pays.",
+        "timestamp": "2026-10-28T09:05:41+00:00"
+      },
+      {
+        "id": "node_c4ad107b38a84568",
+        "chip_id": "#node_c4ad107",
+        "label": "Audit pricing pari...",
+        "full_title": "Audit pricing parity against Google Competitors 2026 and deploy targeted annual incentive bundles.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 140,
+        "content": "Strategic Move [P0 Critical]: Audit pricing parity against Google Competitors 2026 and deploy targeted annual incentive bundles.. Rationale: Directly counters Google Competitors 2026's aggressive positioning while defending margin on renewal cohorts.",
+        "timestamp": "2026-11-07T11:16:19.385565+00:00"
+      },
+      {
+        "id": "node_066f6b3ce10340b3",
+        "chip_id": "#node_066f6b3",
+        "label": "Accelerate self-se...",
+        "full_title": "Accelerate self-serve product onboarding for high-velocity teams underserved by Google Competitors 2026.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 195,
+        "content": "Strategic Move [P1 Offensive]: Accelerate self-serve product onboarding for high-velocity teams underserved by Google Competitors 2026.. Rationale: Google Competitors 2026 is focusing on monolithic enterprise tiers, leaving an opening in developer-first teams.",
+        "timestamp": "2026-11-07T11:16:19.385568+00:00"
+      },
+      {
+        "id": "node_8b36d498e9ee41cb",
+        "chip_id": "#node_8b36d49",
+        "label": "Double down on per...",
+        "full_title": "Double down on performance ergonomics and publish public benchmark comparisons against ChatGPT Competitors.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 235,
+        "content": "Strategic Move [P2 Strategic]: Double down on performance ergonomics and publish public benchmark comparisons against ChatGPT Competitors.. Rationale: Shifts the buyer conversation from a commodity pricing contest to superior execution speed and craft.",
+        "timestamp": "2026-11-07T11:16:19.385571+00:00"
+      }
+    ],
+    "recalled_chips": [
+      "#node_fa6746f",
+      "#node_8d1ed3c",
+      "#node_0a0f24d",
+      "#node_f23d1f2",
+      "#node_3ee87cd",
+      "#node_c4ad107"
+    ],
+    "instant_prompts": [
+      "What is Chatgpt's pricing moat?",
+      "How have competitor prices shifted?",
+      "What strategic counter-move should we execute?"
+    ]
+  },
+  "source_verification": [
+    {
+      "title": "ChatGPT Pricing 2026: Free, Go, Plus and Pro Plans Compared",
+      "url": "https://felloai.com/chatgpt-pricing",
+      "publisher": "felloai.com",
+      "published_date": "Fri, 30 Oct 2026 18:00:00 GMT",
+      "snippet": "ChatGPT pricing in 2026 covers eight pricing plans plus pay-per-token API access: Free at $0, Go at $8/month, Plus at $20/month, Pro at $100, $200 or $500/month, Business at $25/user/month, and Enterprise on custom pricing. No existing plan price has moved since April 2026, but O...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "ChatGPT Pricing 2026: Which Plan Is Right for You?",
+      "url": "https://alloypress.com/blogs/chatgpt-pricing-plans",
+      "publisher": "alloypress.com",
+      "published_date": "Mon, 13 Jul 2026 18:30:31 GMT",
+      "snippet": "In one line: Start with Plus at $20 a month. Only move up when you actually hit a limit. > Note: OpenAI changes plans often. In 2026 alone, Go launched in the US (January), Business got cheaper (April), Business Premium seats arrived (August) and a new $500 Pro plan launched (Sep...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "Is ChatGPT Go Worth It in 2026? The $8 Question",
+      "url": "https://justinmckelvey.com/blog/is-chatgpt-go-worth-it",
+      "publisher": "justinmckelvey.com",
+      "published_date": "Sat, 22 Aug 2026 20:25:00 GMT",
+      "snippet": "The 2026 ChatGPT lineup runs Free ($0, ads), Go ($8, ads), Plus ($20), Pro ($100, $200 or $500 a month), with Business (the old Team plan) at $20 per seat billed annually or $25 monthly as the collaboration tier (OpenAI's pricing, read October 8, 2026). Two structural notes worth...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "ChatGPT Enterprise pricing in 2026: seats, minimums, tokens",
+      "url": "https://www.cloudzero.com/blog/chatgpt-enterprise-pricing",
+      "publisher": "www.cloudzero.com",
+      "published_date": "Tue, 20 Oct 2026 18:11:38 GMT",
+      "snippet": "Quick Answer ChatGPT Enterprise has no public list price. Reported 2026 contracts average about $60 per user per month within a $45 to $75 range, with 150-seat minimums and annual prepayment, putting the floor near $108,000 a year. Newer eligible agreements add usage-based billin...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "ChatGPT Business Plan 2026: Price, Features, vs Plus | Coursiv Blog",
+      "url": "https://coursiv.io/blog/chatgpt-business-plan",
+      "publisher": "coursiv.io",
+      "published_date": "Mon, 02 Nov 2026 09:00:00 GMT",
+      "snippet": "A 40-person companyForty Standard seats: $800amonthonannualbilling($9,600 a year), $1,000 monthly. Now the admin tools matter more than the chat. SSO, roles and a single invoice save real hours. The trap is buying 40 seats for 40 people when only 15 will use it daily. Pilot with ...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "ChatGPT Team Pricing 2026: Plans, Seats & API Costs",
+      "url": "https://www.activepieces.com/blog/chatgpt-team-pricing-2026-plans-seats-api-costs",
+      "publisher": "www.activepieces.com",
+      "published_date": "Wed, 28 Oct 2026 09:05:41 GMT",
+      "snippet": "Plan | Built for | How it's billed | --- | Free | One person trying the tool | No charge, one account | | Go | One person, light regular use | Individual subscription | | Plus | One person, heavier daily use | Individual subscription | | Pro | One person, the heaviest use | Indiv...",
+      "verification_status": "Verified Original Source"
+    }
+  ]
+}

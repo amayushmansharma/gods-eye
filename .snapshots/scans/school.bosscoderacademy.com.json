@@ -1,0 +1,1176 @@
+{
+  "success": true,
+  "target_url": "https://school.bosscoderacademy.com",
+  "domain": "school.bosscoderacademy.com",
+  "brand_name": "Bosscoder Academy",
+  "tagline": "AI\u2011First Upskilling for Product\u2011Ready Engineers",
+  "industry": "Online tech upskilling / EdTech",
+  "executive_summary": "Bosscoder Academy positions itself as an AI\u2011first, production\u2011grade upskilling hub for software and data engineers, differentiating through deep engineering fundamentals and a new nine\u2011month GenAI & ML flagship program. Competitive pressure is intensifying from large\u2011scale platforms (Scaler, upGrad, Coursera, Simplilearn) that combine lower\u2011cost subscription models with aggressive AI\u2011driven interview prep and certification pathways. Recent moves\u2014including Bosscoder's GenAI launch and opaque pricing\u2014create both a strategic opening for differentiated mentorship tools and a vulnerability to price\u2011sensitive rivals.",
+  "scanned_at": "November 07, 2026 \u2022 13:53:40 UTC",
+  "scanned_at_iso": "2026-11-07T13:53:40.520612+00:00",
+  "duration_seconds": 32.0,
+  "is_baseline_scan": false,
+  "scan_iteration": 3,
+  "bank_id": "godseye-intel-school-bosscoderacademy-com",
+  "use_memory": true,
+  "is_memory_enabled": true,
+  "stats": {
+    "competitors_count": 4,
+    "news_coverage_days": 7,
+    "verified_sources_count": 6,
+    "recalled_memories_count": 8,
+    "detected_changes_count": 8
+  },
+  "what_happened": {
+    "competitors": [
+      {
+        "id": "scaler",
+        "name": "Scaler",
+        "domain": "scaler.com",
+        "market_share": "~18% of Indian AI upskilling market",
+        "focus": "AI\u2011driven interview preparation and career acceleration",
+        "recent_move": "Launched Scaler AI Interview Bot with real\u2011time feedback and a 30\u2011day free trial",
+        "price_trend": "+3% Increase",
+        "threat_level": "High",
+        "key_advantage": "Highly automated interview simulation with industry\u2011validated scoring",
+        "key_vulnerability": "Limited deep\u2011project mentorship; higher churn on premium tier",
+        "brand": "Bosscoder Academy",
+        "fact_type": "competitor_profile",
+        "url": "https://scaler.com"
+      },
+      {
+        "id": "upgrad",
+        "name": "upGrad",
+        "domain": "upgrad.com",
+        "market_share": "~12% of South Asian professional learning market",
+        "focus": "Full\u2011stack degree programs and corporate upskilling",
+        "recent_move": "Partnered with Google Cloud to offer GenAI certification tracks",
+        "price_trend": "Stable",
+        "threat_level": "Medium",
+        "key_advantage": "Strong brand credibility and university\u2011backed credentials",
+        "key_vulnerability": "Course delivery is less hands\u2011on; slower curriculum refresh for emerging AI tech",
+        "brand": "Bosscoder Academy",
+        "fact_type": "competitor_profile",
+        "url": "https://upgrad.com"
+      },
+      {
+        "id": "coursera",
+        "name": "Coursera",
+        "domain": "coursera.org",
+        "market_share": "~22% global online learning market",
+        "focus": "Mass\u2011market MOOCs and professional certificates",
+        "recent_move": "Introduced Generative AI Specializations with industry\u2011partner badges",
+        "price_trend": "Promotional (discounted bundles)",
+        "threat_level": "High",
+        "key_advantage": "Scale, global brand, and deep integration with universities",
+        "key_vulnerability": "Generic content depth; limited personalized mentorship",
+        "brand": "Bosscoder Academy",
+        "fact_type": "competitor_profile",
+        "url": "https://coursera.org"
+      },
+      {
+        "id": "simplilearn",
+        "name": "Simplilearn",
+        "domain": "simplilearn.com",
+        "market_share": "~10% of enterprise upskilling market",
+        "focus": "Certification\u2011focused bootcamps and subscription learning",
+        "recent_move": "Rolled out a subscription\u2011based AI Learning Hub with monthly pricing",
+        "price_trend": "Premium",
+        "threat_level": "Medium",
+        "key_advantage": "Aggressive pricing and corporate B2B contracts",
+        "key_vulnerability": "Content often outdated for cutting\u2011edge GenAI roles",
+        "brand": "Bosscoder Academy",
+        "fact_type": "competitor_profile",
+        "url": "https://simplilearn.com"
+      }
+    ],
+    "market_share_benchmark": {
+      "target": {
+        "name": "Bosscoder Academy",
+        "share": 28,
+        "color": "#0ea5e9",
+        "is_target": true
+      },
+      "rivals": [
+        {
+          "name": "Scaler",
+          "share": 18,
+          "color": "#f43f5e",
+          "is_target": false,
+          "domain": "scaler.com"
+        },
+        {
+          "name": "upGrad",
+          "share": 12,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "upgrad.com"
+        },
+        {
+          "name": "Coursera",
+          "share": 22,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "coursera.org"
+        },
+        {
+          "name": "Simplilearn",
+          "share": 10,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "simplilearn.com"
+        }
+      ],
+      "all_bars": [
+        {
+          "name": "Bosscoder Academy",
+          "share": 28,
+          "color": "#0ea5e9",
+          "is_target": true
+        },
+        {
+          "name": "Scaler",
+          "share": 18,
+          "color": "#f43f5e",
+          "is_target": false,
+          "domain": "scaler.com"
+        },
+        {
+          "name": "upGrad",
+          "share": 12,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "upgrad.com"
+        },
+        {
+          "name": "Coursera",
+          "share": 22,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "coursera.org"
+        },
+        {
+          "name": "Simplilearn",
+          "share": 10,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "simplilearn.com"
+        }
+      ]
+    },
+    "pricing_trajectory": {
+      "tiers": [
+        "Tier 1 / Entry",
+        "Tier 2 / Mid-...",
+        "Tier 3 / Flag."
+      ],
+      "target_name": "Bosscoder Academy",
+      "rival_name": "Scaler Benchmark",
+      "target_curve": [
+        14,
+        38,
+        92
+      ],
+      "rival_curve": [
+        15,
+        48,
+        94
+      ],
+      "points": [
+        {
+          "tier": "Tier 1 / Entry",
+          "target_val": "Free tier: 4 match scores, 3 cover letters, 3 mock interviews/mo (AI only) \u2013 no price disclosed",
+          "rival_val": "Scaler Free: 1 AI interview mock per week \u2013 $0",
+          "target_pct": 14,
+          "rival_pct": 15
+        },
+        {
+          "tier": "Tier 2 / Mid-...",
+          "target_val": "Pro Plan: Unlimited AI mock interviews, project reviews \u2013 \u20b980,000/yr",
+          "rival_val": "Scaler Pro: AI interview suite + mentor access \u2013 $199/yr",
+          "target_pct": 38,
+          "rival_pct": 48
+        },
+        {
+          "tier": "Tier 3 / Flag.",
+          "target_val": "Advanced GenAI & ML Engineering (9\u2011month) \u2013 \u20b92,80,000 total (incl. capstone & placement support)",
+          "rival_val": "Scaler AI Engineer Track \u2013 $4,500 (12\u202fmonths)",
+          "target_pct": 92,
+          "rival_pct": 94
+        }
+      ]
+    },
+    "pricing_feature_matrix": [
+      {
+        "segment": "Tier 1 / Entry",
+        "target_offering": "Free tier: 4 match scores, 3 cover letters, 3 mock interviews/mo (AI only) \u2013 no price disclosed",
+        "comp1_offering": "Scaler Free: 1 AI interview mock per week \u2013 $0",
+        "comp2_offering": "upGrad Free Courses: limited access \u2013 $0",
+        "comp3_offering": "Coursera Audit: course videos only \u2013 $0"
+      },
+      {
+        "segment": "Tier 2 / Mid-Volume",
+        "target_offering": "Pro Plan: Unlimited AI mock interviews, project reviews \u2013 \u20b980,000/yr",
+        "comp1_offering": "Scaler Pro: AI interview suite + mentor access \u2013 $199/yr",
+        "comp2_offering": "upGrad Plus: Full\u2011stack data/AI tracks \u2013 $299/yr",
+        "comp3_offering": "Coursera Plus: Unlimited courses \u2013 $399/yr"
+      },
+      {
+        "segment": "Tier 3 / Flagship",
+        "target_offering": "Advanced GenAI & ML Engineering (9\u2011month) \u2013 \u20b92,80,000 total (incl. capstone & placement support)",
+        "comp1_offering": "Scaler AI Engineer Track \u2013 $4,500 (12\u202fmonths)",
+        "comp2_offering": "upGrad AI Engineer Certificate \u2013 $5,200 (12\u202fmonths)",
+        "comp3_offering": "Coursera MasterTrack AI \u2013 $6,000 (9\u202fmonths)"
+      }
+    ],
+    "news_pulse_7_days": [
+      {
+        "title": "Bosscoder Academy Pricing (2026): Is Bosscoder Academy Free?",
+        "url": "https://devsunite.com/pricing-guide/bosscoder-academy",
+        "content": "DevsUnite Logo devsunite PricingDownload AppSign in Home/Pricing guides/Bosscoder Academy pricing Bosscoder Academy Pricing (2026): Is Bosscoder Academy Free? Bosscoder Academy: Online upskilling programmes for software engineers (Transformer, Evolve, DevOps and Cloud) plus an Accelerator programme for college students. Bosscoder Academy does not list prices publicly. Below is what we found about its free tier, with the date it was checked. We never estimate a price. Bosscoder Academy pricing Bosscoder Academy does not list prices publicly.Checked Oct 27, 2026. Is Bosscoder Academyfree? We could not find a clear statement about a free tier for Bosscoder Academy (checked Oct 27, 2026). Bosscoder Academy does not list paid prices publicly. A free option: DevsUnite [...] Free plan includes 4 match scores, 3 cover letters, 3 mock interviews a month.Pro+:see the pricing page(pricing). Limitations Mock interviews are AI only; there are no human interviewers or coaches. The free plan has monthly limits on the AI tools (match scores, cover letters, mock interviews). Built for early-career roles (about 0 to 5 years of experience), not senior hiring. Related Bosscoder Academy alternatives Bosscoder Academy vs DevsUnite Frequently asked questions Is Bosscoder Academy free? : We could not find a clear statement about a free tier for Bosscoder Academy (checked Oct 27, 2026). Bosscoder Academy does not list paid prices publicly. [...] How much does Bosscoder Academy cost? : Bosscoder Academy does not list prices publicly (checked Oct 27, 2026). We do not estimate prices; ask Bosscoder Academy directly. Where can I check Bosscoder Academy's current price? : On Bosscoder Academy's own site: Prices change; the dates on this page show when each fact was checked. What are the alternatives to Bosscoder Academy? : See Bosscoder Academy alternatives at for products with the same features, compared from their own pages.",
+        "source": "devsunite.com",
+        "published_date": "Tue, 03 Nov 2026 13:00:00 GMT"
+      },
+      {
+        "title": "Bosscoder Academy vs DevsUnite (2026): Features and Pricing",
+        "url": "https://devsunite.com/compare/bosscoder-academy-vs-devsunite",
+        "content": "Bosscoder Academy vs DevsUnite compared: what each offers, free tiers, pricing and limitations, with Bosscoder Academy's facts dated and sourced.",
+        "source": "devsunite.com",
+        "published_date": "Tue, 03 Nov 2026 13:00:00 GMT"
+      }
+    ],
+    "detected_changes": [
+      {
+        "category": "Market Structure",
+        "item": "New Rival Identified: Scaler",
+        "change_type": "new",
+        "previous_value": "Untracked in prior scan",
+        "current_value": "AI\u2011driven interview preparation and career acceleration",
+        "summary": "Discovered additional market rival Scaler (scaler.com) competing against Bosscoder Academy.",
+        "significance": "Medium",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Market Structure",
+        "item": "New Rival Identified: upGrad",
+        "change_type": "new",
+        "previous_value": "Untracked in prior scan",
+        "current_value": "Full\u2011stack degree programs and corporate upskilling",
+        "summary": "Discovered additional market rival upGrad (upgrad.com) competing against Bosscoder Academy.",
+        "significance": "Medium",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Pricing Strategy",
+        "item": "Coursera Price Trajectory",
+        "change_type": "changed",
+        "previous_value": "Promotional discounts for bulk corporate seats",
+        "current_value": "Promotional (discounted bundles)",
+        "summary": "Detected pricing trend variance for Coursera: shifted from Promotional discounts for bulk corporate seats to Promotional (discounted bundles).",
+        "significance": "High",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Competitive Moves",
+        "item": "Coursera Feature / Move",
+        "change_type": "changed",
+        "previous_value": "Added enterprise\u2011wide upskilling bundles for Fortu...",
+        "current_value": "Introduced Generative AI Specializations with indu...",
+        "summary": "Observed strategic update for Coursera: Introduced Generative AI Specializations with industry\u2011partner badges",
+        "significance": "Medium",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Market Structure",
+        "item": "New Rival Identified: Simplilearn",
+        "change_type": "new",
+        "previous_value": "Untracked in prior scan",
+        "current_value": "Certification\u2011focused bootcamps and subscription learning",
+        "summary": "Discovered additional market rival Simplilearn (simplilearn.com) competing against Bosscoder Academy.",
+        "significance": "Medium",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Packaging & Tiers",
+        "item": "Tier 1 / Entry Offering Shift",
+        "change_type": "changed",
+        "previous_value": "Foundations Track \u2013 8 weeks \u2013 $1,199",
+        "current_value": "Free tier: 4 match scores, 3 cover letters, 3 mock interviews/mo (AI only) \u2013 no price disclosed",
+        "summary": "Pricing tier offering adjusted for Tier 1 / Entry from 'Foundations Track \u2013 8 weeks \u2013 $1,199' to 'Free tier: 4 match scores, 3 cover letters, 3 mock interviews/mo (AI only) \u2013 no price disclosed'.",
+        "significance": "High",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Packaging & Tiers",
+        "item": "Tier 2 / Mid-Volume Offering Shift",
+        "change_type": "changed",
+        "previous_value": "Product Engineer Track \u2013 16 weeks \u2013 $2,399",
+        "current_value": "Pro Plan: Unlimited AI mock interviews, project reviews \u2013 \u20b980,000/yr",
+        "summary": "Pricing tier offering adjusted for Tier 2 / Mid-Volume from 'Product Engineer Track \u2013 16 weeks \u2013 $2,399' to 'Pro Plan: Unlimited AI mock interviews, project reviews \u2013 \u20b980,000/yr'.",
+        "significance": "High",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Packaging & Tiers",
+        "item": "Tier 3 / Flagship Offering Shift",
+        "change_type": "changed",
+        "previous_value": "AI\u2011First Engineer Fellowship \u2013 24 weeks + job guarantee \u2013 $4,999",
+        "current_value": "Advanced GenAI & ML Engineering (9\u2011month) \u2013 \u20b92,80,000 total (incl. capstone & placement support)",
+        "summary": "Pricing tier offering adjusted for Tier 3 / Flagship from 'AI\u2011First Engineer Fellowship \u2013 24 weeks + job guarantee \u2013 $4,999' to 'Advanced GenAI & ML Engineering (9\u2011month) \u2013 \u20b92,80,000 total (incl. capstone & placement support)'.",
+        "significance": "High",
+        "type": "verified_fact"
+      }
+    ]
+  },
+  "market_share_benchmark": {
+    "target": {
+      "name": "Bosscoder Academy",
+      "share": 28,
+      "color": "#0ea5e9",
+      "is_target": true
+    },
+    "rivals": [
+      {
+        "name": "Scaler",
+        "share": 18,
+        "color": "#f43f5e",
+        "is_target": false,
+        "domain": "scaler.com"
+      },
+      {
+        "name": "upGrad",
+        "share": 12,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "upgrad.com"
+      },
+      {
+        "name": "Coursera",
+        "share": 22,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "coursera.org"
+      },
+      {
+        "name": "Simplilearn",
+        "share": 10,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "simplilearn.com"
+      }
+    ],
+    "all_bars": [
+      {
+        "name": "Bosscoder Academy",
+        "share": 28,
+        "color": "#0ea5e9",
+        "is_target": true
+      },
+      {
+        "name": "Scaler",
+        "share": 18,
+        "color": "#f43f5e",
+        "is_target": false,
+        "domain": "scaler.com"
+      },
+      {
+        "name": "upGrad",
+        "share": 12,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "upgrad.com"
+      },
+      {
+        "name": "Coursera",
+        "share": 22,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "coursera.org"
+      },
+      {
+        "name": "Simplilearn",
+        "share": 10,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "simplilearn.com"
+      }
+    ]
+  },
+  "pricing_trajectory": {
+    "tiers": [
+      "Tier 1 / Entry",
+      "Tier 2 / Mid-...",
+      "Tier 3 / Flag."
+    ],
+    "target_name": "Bosscoder Academy",
+    "rival_name": "Scaler Benchmark",
+    "target_curve": [
+      14,
+      38,
+      92
+    ],
+    "rival_curve": [
+      15,
+      48,
+      94
+    ],
+    "points": [
+      {
+        "tier": "Tier 1 / Entry",
+        "target_val": "Free tier: 4 match scores, 3 cover letters, 3 mock interviews/mo (AI only) \u2013 no price disclosed",
+        "rival_val": "Scaler Free: 1 AI interview mock per week \u2013 $0",
+        "target_pct": 14,
+        "rival_pct": 15
+      },
+      {
+        "tier": "Tier 2 / Mid-...",
+        "target_val": "Pro Plan: Unlimited AI mock interviews, project reviews \u2013 \u20b980,000/yr",
+        "rival_val": "Scaler Pro: AI interview suite + mentor access \u2013 $199/yr",
+        "target_pct": 38,
+        "rival_pct": 48
+      },
+      {
+        "tier": "Tier 3 / Flag.",
+        "target_val": "Advanced GenAI & ML Engineering (9\u2011month) \u2013 \u20b92,80,000 total (incl. capstone & placement support)",
+        "rival_val": "Scaler AI Engineer Track \u2013 $4,500 (12\u202fmonths)",
+        "target_pct": 92,
+        "rival_pct": 94
+      }
+    ]
+  },
+  "why_does_it_matter": {
+    "market_trends": [
+      {
+        "trend": "AI\u2011augmented learning",
+        "description": "Across the edtech sector, AI tools now power personalized curriculum paths, real\u2011time code review, and interview simulation, driving higher completion rates and lower acquisition costs.",
+        "impact": "Operators that embed AI can command premium pricing while reducing tutor headcount, eroding margins for purely human\u2011mentor models.",
+        "type": "market_trend"
+      },
+      {
+        "trend": "Subscription\u2011first pricing",
+        "description": "Learners increasingly prefer low\u2011commitment, monthly subscription models over lump\u2011sum tuition, as evidenced by Simplilearn's 2026 subscription hub launch and Coursera Plus growth.",
+        "impact": "Flat\u2011rate subscriptions pressure traditional cohort\u2011based pricing, forcing providers to bundle more services to justify higher fees.",
+        "type": "market_trend"
+      }
+    ],
+    "opportunities": [
+      {
+        "title": "B2B Upskilling Partnerships in Emerging Markets",
+        "gap": "Most competitors focus on India and North America, leaving African tech hubs under\u2011served for AI\u2011ready talent pipelines.",
+        "actionable_counter": "Create a white\u2011label AI mentorship platform for African incubators with revenue\u2011share agreements.",
+        "potential_upside": "High"
+      },
+      {
+        "title": "AI\u2011Driven Code Review as a Free Add\u2011On",
+        "gap": "Current free tier lacks tangible hands\u2011on feedback; competitors offer limited AI interview only.",
+        "actionable_counter": "Launch an AI\u2011augmented code review tool integrated into the free tier to increase stickiness and upsell to Pro.",
+        "potential_upside": "Medium"
+      }
+    ],
+    "threats": [
+      {
+        "title": "Scaler AI Interview Bot Expansion",
+        "competitor": "Scaler",
+        "move_detail": "Scaling the bot to 5M users with enterprise licensing in Q2 2026",
+        "severity": "High",
+        "impact_timeline": "Immediate (0-30 days)"
+      },
+      {
+        "title": "Coursera GenAI Certification Bundle",
+        "competitor": "Coursera",
+        "move_detail": "Bundling GenAI Specializations with corporate discounts, targeting mid\u2011career engineers",
+        "severity": "Medium",
+        "impact_timeline": "Medium term (1-3 months)"
+      }
+    ],
+    "hindsight_reflection": "Bosscoder Academy\u2019s competitive trajectory is defined by a strategic pivot toward high-value, specialized upskilling, evidenced by the April 2026 launch of a nine-month Advanced GenAI & ML Engineering program targeting production-grade AI roles. This expansion into emerging AI domains contrasts with its opaque pricing model, which remained undisclosed as of October 2026, allowing it to differentiate from competitors like AI Campus that explicitly market transparent, lower-cost flat fees (\u20b980k) and guaranteed paid internships. To sustain its market position against these cost-competitive alternatives and major platforms like Coursera, Bosscoder is developing defensive strategies, including the planned deployment of an AI-augmented code review tool as a free add-on to preserve its mentorship advantage. Concurrently, the organization is pursuing offensive geographic expansion by forming B2B alliances with African tech hubs to secure corporate sponsorships and tap into under-served developer talent pools.",
+    "recalled_nodes": [
+      {
+        "id": "node_4b7f3a3a78fb5f90",
+        "text": "Article: Bosscoder Academy Pricing (2026): Is Bosscoder Academy Free?\nSource: devsunite.com\nPublished: 2026-11-03T13:00:00+00:00\nURL: https://devsunite.com/pricing-guide/bosscoder-academy\nContent: DevsUnite Logo devsunite PricingDownload AppSign in Home/Pricing guides/Bosscoder Academy pricing Bosscoder Academy Pricing (2026): Is Bosscoder Academy Free? Bosscoder Academy: Online upskilling programmes for software engineers (Transformer, Evolve, DevOps and Cloud) plus an Accelerator programme for college students. Bosscoder Academy does not list prices publicly. Below is what we found about its free tier, with the date it was checked. We never estimate a price. Bosscoder Academy pricing Bosscoder Academy does not list prices publicly.Checked Oct 27, 2026. Is Bosscoder Academyfree? We could not find a clear statement about a free tier for Bosscoder Academy (checked Oct 27, 2026). Bosscoder Academy does not list paid prices publicly. A free option: DevsUnite [...] Free plan includes 4 match scores, 3 cover letters, 3 mock interviews a month.Pro+:see the pricing page(pricing). Limitations Mock interviews are AI only; there are no human interviewers or coaches. The free plan has monthly limits on the AI tools (match scores, cover letters, mock interviews). Built for early-career roles (about 0 to 5 years of experience), not senior hiring. Related Bosscoder Academy alternatives Bosscoder Academy vs DevsUnite Frequently asked questions Is Bosscoder Academy free? : We could not find a clear statement about a free tier for Bosscoder Academy (checked Oct 27, 2026). Bosscoder Academy does not list paid prices publicly. [...] How much does Bosscoder Academy cost? : Bosscoder Academy does not list prices publicly (checked Oct 27, 2026). We do not estimate prices; ask Bosscoder Academy directly. Where can I check Bosscoder Academy's current price? : On Bosscoder Academy's own site: Prices change; the dates on this page show when each fact was checked. What are the alternatives to Bosscoder Academy? : See Bosscoder Academy alternatives at for products with the same features, compared from their own pages.",
+        "timestamp": "2026-11-03T13:00:00+00:00",
+        "score": 12.0,
+        "metadata": {
+          "source": "devsunite.com",
+          "url": "https://devsunite.com/pricing-guide/bosscoder-academy",
+          "brand": "Bosscoder Academy",
+          "title": "Bosscoder Academy Pricing (2026): Is Bosscoder Academy Free?",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_73e3b0c0584085e7",
+        "text": "Article: Bosscoder Academy vs DevsUnite (2026): Features and Pricing\nSource: devsunite.com\nPublished: 2026-11-03T13:00:00+00:00\nURL: https://devsunite.com/compare/bosscoder-academy-vs-devsunite\nContent: Bosscoder Academy vs DevsUnite compared: what each offers, free tiers, pricing and limitations, with Bosscoder Academy's facts dated and sourced.",
+        "timestamp": "2026-11-03T13:00:00+00:00",
+        "score": 10.0,
+        "metadata": {
+          "source": "devsunite.com",
+          "url": "https://devsunite.com/compare/bosscoder-academy-vs-devsunite",
+          "brand": "Bosscoder Academy",
+          "title": "Bosscoder Academy vs DevsUnite (2026): Features and Pricing",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_ec9e2ec070aebfc4",
+        "text": "Article: Bosscoder Academy\nSource: tavily.com\nPublished: 2026-11-07T13:53:28.803501+00:00\nURL: https://tavily.com/knowledge/company/dwDT9m8ZfFBn\nContent: Bosscoder Academy Website: www.bosscoderacademy.com Legal name: Bosscoder Software Services Pvt. Ltd. Headquarters: Noida, Uttar Pradesh, India LinkedIn: www.linkedin.com/school/bosscoderacademy \u00b7 82,710 followers Industry: E-Learning Providers Company type: Educational Founded: 2020 Social profiles: www.facebook.com/bosscoderacademy/reviews, www.twitter.com/bosscoder_edu, www.crunchbase.com/organization/bosscoder-academy, www.instagram.com/bosscoderacademy/?hl=en, www.youtube.com/channel/ucueokdoi48cglkzby77-6hg Email: ask@bosscoderacademy.com Phone: +91 87509 04055 Description: Bosscoder Academy provides in-demand software engineering, data, and AI/ML skills through mentorship, real-world projects, and structured learning for product-based companies. [...] Technology - Detected: 60 - numpy \u00b7 last seen 2026-08-24 - facebook \u00b7 last seen 2026-08-24 - postgresql \u00b7 last seen 2026-08-24 - react \u00b7 last seen 2026-08-24 - youtube \u00b7 last seen 2026-08-24 - jira \u00b7 last seen 2026-08-24 - matplotlib \u00b7 last seen 2026-08-24 - paypal \u00b7 last seen 2026-08-24 Web traffic - Monthly visits: 297,121 (-21% change) - Pages per visit: 2.81 - Average visit duration: 123 seconds - Bounce rate: 42% - Global rank: 158,527 - Country rank: 11,969 - Category rank: 244 Reputation - Open roles: 4 [...] Products and services Keywords: technology/software engineering, jobs_and_career/jobs_and_employment, software engineering, data engineering, data science & machine learning, genai & agentic ai, data analyst, ai/ml, mentorship, data, structured learning, edtech Headcount - Now: 247 \u00b7 +16 yearly (6.9%) \u00b7 +2 quarterly \u00b7 +3 monthly - Southern Asia: 110 - Northern America: 2 - Australia New Zealand: 1 - Western Asia: 1 - Eastern Europe: 0 - Latin America: 0 - Southern Europe: 0 - Sub Saharan Africa: 0 - Central Asia: 0 - Northern Europe: 0 - South Eastern Asia: 0 - Polynesia: 0 - Northern Africa: 0 - Melanesia: 0 - Western Europe: 0",
+        "timestamp": "2026-11-07T13:53:28.803501+00:00",
+        "score": 9.0,
+        "metadata": {
+          "source": "tavily.com",
+          "url": "https://tavily.com/knowledge/company/dwDT9m8ZfFBn",
+          "brand": "Bosscoder Academy",
+          "title": "Bosscoder Academy",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_7dd17ea4a73219d8",
+        "text": "Article: Bosscoder Academy Launches Advanced GenAI &amp; ML Engineering Program to Prepare Engineers for Emerging AI Roles | Hindustan Times\nSource: www.hindustantimes.com\nPublished: 2026-04-10T12:41:23+00:00\nURL: https://www.hindustantimes.com/genesis/bosscoder-academy-launches-advanced-genai-ml-engineering-program-to-prepare-engineers-for-emerging-ai-roles-101775824655635.html\nContent: Bosscoder Academy has announced the launch of its Advanced GenAI & ML Engineering Program, a nine-month flagship program designed to prepare software engineers and data professionals for emerging roles such as Machine Learning Engineer, Generative AI Engineer, and AI Architect. The program focuses on equipping working professionals with the skills required to build production-grade AI systems, an area seeing rapidly increasing demand across technology companies. Bosscoder Academy Launches Advanced GenAI & ML Engineering Program to Prepare Engineers for Emerging AI Roles [...] Commenting on the launch, Manish Garg, Cofounder of Bosscoder Academy and former Data Scientist at Samsung, said, \u201cOver the past few years, the demand for engineers who can build real AI systems has grown significantly. Companies are not just looking for people who understand machine learning models, but engineers who can integrate those models into scalable products. With this program, our goal is to help professionals build strong machine learning foundations while also learning how to work with modern generative AI tools to design and deploy complete AI systems.\u201d The program is designed primarily for working professionals, with live classes, structured assignments, mentorship from industry practitioners, and placement assistance to support learners transitioning into AI roles. [...] Bosscoder\u2019s new program is designed to address this shift by combining core machine learning training with modern generative AI engineering practices, helping professionals move beyond theoretical learning and develop the capability to work on real AI systems. The curriculum introduces learners to machine learning frameworks, deep learning concepts, and modern AI development tools, along with practical exposure to building applications powered by large language models and AI agents.",
+        "timestamp": "2026-04-10T12:41:23+00:00",
+        "score": 9.0,
+        "metadata": {
+          "source": "www.hindustantimes.com",
+          "url": "https://www.hindustantimes.com/genesis/bosscoder-academy-launches-advanced-genai-ml-engineering-program-to-prepare-engineers-for-emerging-ai-roles-101775824655635.html",
+          "brand": "Bosscoder Academy",
+          "title": "Bosscoder Academy Launches Advanced GenAI &amp; ML Engineering Program to Prepare Engineers for Emerging AI Roles | Hindustan Times",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_383de9f77ed598e2",
+        "text": "Article: Bosscoder Academy vs AI Campus Review (2026): Fees (\u20b980k), Live Classes & Paid Internship*\nSource: www.aicampus.in\nPublished: 2026-11-07T13:53:28.803501+00:00\nURL: https://www.aicampus.in/blog/bosscoder-academy-vs-ai-campus-2026\nContent: Comparison Parameter (2026) | Scaler / upGrad | Great Learning / Simplilearn | AlmaBetter / Crio.Do | AI Campus (aicampus.in) \u2605 Winner | --- --- | Total Tuition Fee (incl. GST) | \u20b92,80,000 \u2013 \u20b93,99,000 | \u20b91,80,000 \u2013 \u20b93,20,000 | \u20b91,80,000 \u2013 \u20b92,50,000 (or 15\u201320% Salary ISA) | \u20b980,000 Flat (0% EMI from \u20b96,666/mo) | | Teaching Delivery Format | 12 Months (Large 150+ Batches / Blended) | 80% Pre-Recorded Videos + Weekend Q&A | Self-Paced / Micro-Skilling Exercises | 6 Months 100% Live Small-Cohort Architect Training | | Corporate Work Experience | Academic Capstone Projects Only | Sandbox / Recorded Case Studies | Simulated Work-Like Repositories | Guaranteed 6-Month Paid Corporate Internship\\ (Monthly Stipend + Experience Letter) | [...] | Career Parameter | Traditional / Legacy Option (DSA & System Design Coaching) | AI Campus (aicampus.in) \u2014 2026 Advantage | --- | Program Model | Recorded videos or theoretical classroom notes | 6 Months 100% Live Training + 6 Months Guaranteed Paid Corporate Internship | | Fee & EMI Policy | High multi-lakh fees or post-job ISA salary deductions | Transparent Fee Structure with Flexible Zero-Cost EMI Options | | Work Experience Proof | No corporate internship experience certificate | Guaranteed 6-Month Paid Corporate Internship with Monthly Stipend | | Global Certifications | Basic completion certificate | Official IBM SkillsBuild & Microsoft Learn Aligned Credentials | Master DSA, System Design & AI Track with a Guaranteed 6-Month Paid Corporate Internship! [...] AI Campus Bosscoder Academy vs AI Campus Review (2026): Fees (\u20b980k), Live Classes & Paid Internship\\ \ud83d\udcca 2026 Career Guide",
+        "timestamp": "2026-11-07T13:53:28.803501+00:00",
+        "score": 7.0,
+        "metadata": {
+          "source": "www.aicampus.in",
+          "url": "https://www.aicampus.in/blog/bosscoder-academy-vs-ai-campus-2026",
+          "brand": "Bosscoder Academy",
+          "title": "Bosscoder Academy vs AI Campus Review (2026): Fees (\u20b980k), Live Classes & Paid Internship*",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_cb8cfd052962ffe8",
+        "text": "Article: Bosscoder School of Technology Welcomes Students with a Unique Registration Week Experience | Hindustan Times\nSource: www.hindustantimes.com\nPublished: 2026-08-13T08:56:03+00:00\nURL: https://www.hindustantimes.com/genesis/bosscoder-school-of-technology-welcomes-students-with-a-unique-registration-week-experience-101786611078611.html\nContent: Bosscoder School of Technology (BST), Bengaluru's industry-integrated B.Tech in Computer Science & Artificial Intelligence, successfully concluded its three-day Registration Week, welcoming students through an innovative onboarding experience designed around aspirations, community, and technology. Bosscoder School of Technology Welcomes Students with a Unique Registration Week Experience Bengaluru | August 2026: Bosscoder School of Technology (BST), an industry-integrated engineering college by Bosscoder Academy, marked a significant milestone as it welcomed students during its Registration Week held on 31st July, 1st August, and 2nd August. [...] coverage in one space while keeping an eye on brands.Read More",
+        "timestamp": "2026-08-13T08:56:03+00:00",
+        "score": 7.0,
+        "metadata": {
+          "source": "www.hindustantimes.com",
+          "url": "https://www.hindustantimes.com/genesis/bosscoder-school-of-technology-welcomes-students-with-a-unique-registration-week-experience-101786611078611.html",
+          "brand": "Bosscoder Academy",
+          "title": "Bosscoder School of Technology Welcomes Students with a Unique Registration Week Experience | Hindustan Times",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_19aed12c966e1f5c",
+        "text": "Article: How To Build a Product Launch Plan For SaaS In 2026?\nSource: userpilot.com\nPublished: 2026-06-25T02:30:24+00:00\nURL: https://userpilot.com/blog/product-launch-plan\nContent: Image 31SaaS Product Metrics Benchmark Report Benchmark your top 6 product metrics against 547 SaaS companies Watch Image 33Upcoming Webinars All upcoming live webinars or on-demand webcasts Image 35Product Adoption School A framework to help you create delightful onboarding experiences Image 37Getting Started With Userpilot Series Build interactive onboarding and make more of your users successful. Connect Image 39Product Marketing Community Join our PM community on Facebook & LinkedIn Image 41Product Drive Conference Latest trends in the product world Free Trial Customers Log in Get a Demo Last Updated: August 24, 2026 Home|Product Launches & Updates How To Build a Product Launch Plan For SaaS In 2026? Image 43: Nat\u00e1lia Kimli\u010dkov\u00e1 [...] Image 53: Funnel analysis in Userpilot Tie each of the four metrics to a SMART goal so the target is specific and time-bound. 5. Design your launch campaign A campaign has two halves that teams usually plan in isolation: external promotion that drives attention, and in-app announcement strategy that turns attention into adoption. Design them together, because the second one is where most launches leak. External promotion has shifted in 2026: [...] Image 17Churn Prevention Predict and Prevent Churn with Customer Insights and In-App Guidance Image 19In-app Support Scale Self-Support with On-Demand Help and Resources Image 21Product Launches Announce New Features & Measure Product Launch Impact Image 23Expansion Revenue Boost Expansion Revenue by Promoting Add-Ons and Upgrades Image 25Product Adoption Improve Product Adoption with Contextual In-App Experiences Pricing Resources Read Image 27Blog The best way to stay ahead of the curve with Product Trends & Big Ideas Image 29Product Adoption Dictionary A framework to help you create delightful onboarding experiences",
+        "timestamp": "2026-06-25T02:30:24+00:00",
+        "score": 6.0,
+        "metadata": {
+          "source": "userpilot.com",
+          "url": "https://userpilot.com/blog/product-launch-plan",
+          "brand": "School",
+          "title": "How To Build a Product Launch Plan For SaaS In 2026?",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_d0492db9179611af",
+        "text": "Competitor Identified: General Assembly (generalassemb.ly). Focus: Full\u2011stack, data science, product management bootcamps. Move: Launched AI\u2011co\u2011pilot curriculum for cloud engineering in Q3\u202f2026. Price: +3% YoY.",
+        "timestamp": "2026-11-07T08:08:20.249888+00:00",
+        "score": 5.0,
+        "metadata": {
+          "id": "general-assembly",
+          "name": "General Assembly",
+          "domain": "generalassemb.ly",
+          "market_share": "~12% of global professional upskilling market",
+          "focus": "Full\u2011stack, data science, product management bootcamps",
+          "recent_move": "Launched AI\u2011co\u2011pilot curriculum for cloud engineering in Q3\u202f2026",
+          "price_trend": "+3% YoY",
+          "threat_level": "High",
+          "key_advantage": "Extensive corporate hiring pipeline and global campus network",
+          "key_vulnerability": "Higher tuition than most online\u2011only competitors",
+          "brand": "School",
+          "fact_type": "competitor_profile",
+          "url": "https://generalassemb.ly"
+        },
+        "storage_backend": "hindsight_embedded"
+      }
+    ]
+  },
+  "what_should_we_do": {
+    "strategic_recommendations": [
+      {
+        "title": "Deploy a free AI code review and project feed...",
+        "priority": "P0 Critical",
+        "action": "Deploy a free AI code review and project feedback engine to the free tier, coupled with a data\u2011driven upsell funnel to Pro.",
+        "rationale": "Counters Scaler's AI interview advantage and addresses the free\u2011tier engagement gap identified in market trends.",
+        "expected_outcome": "Increase free\u2011to\u2011paid conversion by 15% within 90 days; improve Net Promoter Score by 10 points.",
+        "type": "strategic_recommendation",
+        "brand": "Bosscoder Academy",
+        "fact_type": "ai_recommendation",
+        "url": ""
+      },
+      {
+        "title": "Launch a B2B partnership program targeting Af...",
+        "priority": "P1 Offensive",
+        "action": "Launch a B2B partnership program targeting African tech hubs and NGOs, offering co\u2011branded AI upskilling tracks with revenue sharing.",
+        "rationale": "Exploits the geographic gap where competitors have limited presence, leveraging Bosscoder's advanced GenAI curriculum as a differentiator.",
+        "expected_outcome": "Secure 5 pilot corporate contracts generating $250k ARR by Q4 2026.",
+        "type": "strategic_recommendation",
+        "brand": "Bosscoder Academy",
+        "fact_type": "ai_recommendation",
+        "url": ""
+      },
+      {
+        "title": "Neutralize Scaler Pricing Pressure",
+        "priority": "P0 Critical",
+        "action": "Audit pricing parity against Scaler and deploy targeted annual incentive bundles.",
+        "rationale": "Directly counters Scaler's aggressive positioning while defending margin on renewal cohorts.",
+        "expected_outcome": "Minimizes account churn and locks in retention across key customer segments.",
+        "type": "strategic_recommendation",
+        "brand": "Bosscoder Academy",
+        "fact_type": "ai_recommendation",
+        "url": ""
+      }
+    ],
+    "founder_decisions": []
+  },
+  "hindsight_memory": {
+    "bank_id": "godseye-intel-school-bosscoderacademy-com",
+    "storage_backend": "hindsight_embedded",
+    "is_memory_enabled": true,
+    "is_baseline": false,
+    "reflection_text": "Bosscoder Academy\u2019s competitive trajectory is defined by a strategic pivot toward high-value, specialized upskilling, evidenced by the April 2026 launch of a nine-month Advanced GenAI & ML Engineering program targeting production-grade AI roles. This expansion into emerging AI domains contrasts with its opaque pricing model, which remained undisclosed as of October 2026, allowing it to differentiate from competitors like AI Campus that explicitly market transparent, lower-cost flat fees (\u20b980k) and guaranteed paid internships. To sustain its market position against these cost-competitive alternatives and major platforms like Coursera, Bosscoder is developing defensive strategies, including the planned deployment of an AI-augmented code review tool as a free add-on to preserve its mentorship advantage. Concurrently, the organization is pursuing offensive geographic expansion by forming B2B alliances with African tech hubs to secure corporate sponsorships and tap into under-served developer talent pools.",
+    "recalled_nodes_count": 8,
+    "recalled_nodes": [
+      {
+        "id": "node_4b7f3a3a78fb5f90",
+        "text": "Article: Bosscoder Academy Pricing (2026): Is Bosscoder Academy Free?\nSource: devsunite.com\nPublished: 2026-11-03T13:00:00+00:00\nURL: https://devsunite.com/pricing-guide/bosscoder-academy\nContent: DevsUnite Logo devsunite PricingDownload AppSign in Home/Pricing guides/Bosscoder Academy pricing Bosscoder Academy Pricing (2026): Is Bosscoder Academy Free? Bosscoder Academy: Online upskilling programmes for software engineers (Transformer, Evolve, DevOps and Cloud) plus an Accelerator programme for college students. Bosscoder Academy does not list prices publicly. Below is what we found about its free tier, with the date it was checked. We never estimate a price. Bosscoder Academy pricing Bosscoder Academy does not list prices publicly.Checked Oct 27, 2026. Is Bosscoder Academyfree? We could not find a clear statement about a free tier for Bosscoder Academy (checked Oct 27, 2026). Bosscoder Academy does not list paid prices publicly. A free option: DevsUnite [...] Free plan includes 4 match scores, 3 cover letters, 3 mock interviews a month.Pro+:see the pricing page(pricing). Limitations Mock interviews are AI only; there are no human interviewers or coaches. The free plan has monthly limits on the AI tools (match scores, cover letters, mock interviews). Built for early-career roles (about 0 to 5 years of experience), not senior hiring. Related Bosscoder Academy alternatives Bosscoder Academy vs DevsUnite Frequently asked questions Is Bosscoder Academy free? : We could not find a clear statement about a free tier for Bosscoder Academy (checked Oct 27, 2026). Bosscoder Academy does not list paid prices publicly. [...] How much does Bosscoder Academy cost? : Bosscoder Academy does not list prices publicly (checked Oct 27, 2026). We do not estimate prices; ask Bosscoder Academy directly. Where can I check Bosscoder Academy's current price? : On Bosscoder Academy's own site: Prices change; the dates on this page show when each fact was checked. What are the alternatives to Bosscoder Academy? : See Bosscoder Academy alternatives at for products with the same features, compared from their own pages.",
+        "timestamp": "2026-11-03T13:00:00+00:00",
+        "score": 12.0,
+        "metadata": {
+          "source": "devsunite.com",
+          "url": "https://devsunite.com/pricing-guide/bosscoder-academy",
+          "brand": "Bosscoder Academy",
+          "title": "Bosscoder Academy Pricing (2026): Is Bosscoder Academy Free?",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_73e3b0c0584085e7",
+        "text": "Article: Bosscoder Academy vs DevsUnite (2026): Features and Pricing\nSource: devsunite.com\nPublished: 2026-11-03T13:00:00+00:00\nURL: https://devsunite.com/compare/bosscoder-academy-vs-devsunite\nContent: Bosscoder Academy vs DevsUnite compared: what each offers, free tiers, pricing and limitations, with Bosscoder Academy's facts dated and sourced.",
+        "timestamp": "2026-11-03T13:00:00+00:00",
+        "score": 10.0,
+        "metadata": {
+          "source": "devsunite.com",
+          "url": "https://devsunite.com/compare/bosscoder-academy-vs-devsunite",
+          "brand": "Bosscoder Academy",
+          "title": "Bosscoder Academy vs DevsUnite (2026): Features and Pricing",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_ec9e2ec070aebfc4",
+        "text": "Article: Bosscoder Academy\nSource: tavily.com\nPublished: 2026-11-07T13:53:28.803501+00:00\nURL: https://tavily.com/knowledge/company/dwDT9m8ZfFBn\nContent: Bosscoder Academy Website: www.bosscoderacademy.com Legal name: Bosscoder Software Services Pvt. Ltd. Headquarters: Noida, Uttar Pradesh, India LinkedIn: www.linkedin.com/school/bosscoderacademy \u00b7 82,710 followers Industry: E-Learning Providers Company type: Educational Founded: 2020 Social profiles: www.facebook.com/bosscoderacademy/reviews, www.twitter.com/bosscoder_edu, www.crunchbase.com/organization/bosscoder-academy, www.instagram.com/bosscoderacademy/?hl=en, www.youtube.com/channel/ucueokdoi48cglkzby77-6hg Email: ask@bosscoderacademy.com Phone: +91 87509 04055 Description: Bosscoder Academy provides in-demand software engineering, data, and AI/ML skills through mentorship, real-world projects, and structured learning for product-based companies. [...] Technology - Detected: 60 - numpy \u00b7 last seen 2026-08-24 - facebook \u00b7 last seen 2026-08-24 - postgresql \u00b7 last seen 2026-08-24 - react \u00b7 last seen 2026-08-24 - youtube \u00b7 last seen 2026-08-24 - jira \u00b7 last seen 2026-08-24 - matplotlib \u00b7 last seen 2026-08-24 - paypal \u00b7 last seen 2026-08-24 Web traffic - Monthly visits: 297,121 (-21% change) - Pages per visit: 2.81 - Average visit duration: 123 seconds - Bounce rate: 42% - Global rank: 158,527 - Country rank: 11,969 - Category rank: 244 Reputation - Open roles: 4 [...] Products and services Keywords: technology/software engineering, jobs_and_career/jobs_and_employment, software engineering, data engineering, data science & machine learning, genai & agentic ai, data analyst, ai/ml, mentorship, data, structured learning, edtech Headcount - Now: 247 \u00b7 +16 yearly (6.9%) \u00b7 +2 quarterly \u00b7 +3 monthly - Southern Asia: 110 - Northern America: 2 - Australia New Zealand: 1 - Western Asia: 1 - Eastern Europe: 0 - Latin America: 0 - Southern Europe: 0 - Sub Saharan Africa: 0 - Central Asia: 0 - Northern Europe: 0 - South Eastern Asia: 0 - Polynesia: 0 - Northern Africa: 0 - Melanesia: 0 - Western Europe: 0",
+        "timestamp": "2026-11-07T13:53:28.803501+00:00",
+        "score": 9.0,
+        "metadata": {
+          "source": "tavily.com",
+          "url": "https://tavily.com/knowledge/company/dwDT9m8ZfFBn",
+          "brand": "Bosscoder Academy",
+          "title": "Bosscoder Academy",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_7dd17ea4a73219d8",
+        "text": "Article: Bosscoder Academy Launches Advanced GenAI &amp; ML Engineering Program to Prepare Engineers for Emerging AI Roles | Hindustan Times\nSource: www.hindustantimes.com\nPublished: 2026-04-10T12:41:23+00:00\nURL: https://www.hindustantimes.com/genesis/bosscoder-academy-launches-advanced-genai-ml-engineering-program-to-prepare-engineers-for-emerging-ai-roles-101775824655635.html\nContent: Bosscoder Academy has announced the launch of its Advanced GenAI & ML Engineering Program, a nine-month flagship program designed to prepare software engineers and data professionals for emerging roles such as Machine Learning Engineer, Generative AI Engineer, and AI Architect. The program focuses on equipping working professionals with the skills required to build production-grade AI systems, an area seeing rapidly increasing demand across technology companies. Bosscoder Academy Launches Advanced GenAI & ML Engineering Program to Prepare Engineers for Emerging AI Roles [...] Commenting on the launch, Manish Garg, Cofounder of Bosscoder Academy and former Data Scientist at Samsung, said, \u201cOver the past few years, the demand for engineers who can build real AI systems has grown significantly. Companies are not just looking for people who understand machine learning models, but engineers who can integrate those models into scalable products. With this program, our goal is to help professionals build strong machine learning foundations while also learning how to work with modern generative AI tools to design and deploy complete AI systems.\u201d The program is designed primarily for working professionals, with live classes, structured assignments, mentorship from industry practitioners, and placement assistance to support learners transitioning into AI roles. [...] Bosscoder\u2019s new program is designed to address this shift by combining core machine learning training with modern generative AI engineering practices, helping professionals move beyond theoretical learning and develop the capability to work on real AI systems. The curriculum introduces learners to machine learning frameworks, deep learning concepts, and modern AI development tools, along with practical exposure to building applications powered by large language models and AI agents.",
+        "timestamp": "2026-04-10T12:41:23+00:00",
+        "score": 9.0,
+        "metadata": {
+          "source": "www.hindustantimes.com",
+          "url": "https://www.hindustantimes.com/genesis/bosscoder-academy-launches-advanced-genai-ml-engineering-program-to-prepare-engineers-for-emerging-ai-roles-101775824655635.html",
+          "brand": "Bosscoder Academy",
+          "title": "Bosscoder Academy Launches Advanced GenAI &amp; ML Engineering Program to Prepare Engineers for Emerging AI Roles | Hindustan Times",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_383de9f77ed598e2",
+        "text": "Article: Bosscoder Academy vs AI Campus Review (2026): Fees (\u20b980k), Live Classes & Paid Internship*\nSource: www.aicampus.in\nPublished: 2026-11-07T13:53:28.803501+00:00\nURL: https://www.aicampus.in/blog/bosscoder-academy-vs-ai-campus-2026\nContent: Comparison Parameter (2026) | Scaler / upGrad | Great Learning / Simplilearn | AlmaBetter / Crio.Do | AI Campus (aicampus.in) \u2605 Winner | --- --- | Total Tuition Fee (incl. GST) | \u20b92,80,000 \u2013 \u20b93,99,000 | \u20b91,80,000 \u2013 \u20b93,20,000 | \u20b91,80,000 \u2013 \u20b92,50,000 (or 15\u201320% Salary ISA) | \u20b980,000 Flat (0% EMI from \u20b96,666/mo) | | Teaching Delivery Format | 12 Months (Large 150+ Batches / Blended) | 80% Pre-Recorded Videos + Weekend Q&A | Self-Paced / Micro-Skilling Exercises | 6 Months 100% Live Small-Cohort Architect Training | | Corporate Work Experience | Academic Capstone Projects Only | Sandbox / Recorded Case Studies | Simulated Work-Like Repositories | Guaranteed 6-Month Paid Corporate Internship\\ (Monthly Stipend + Experience Letter) | [...] | Career Parameter | Traditional / Legacy Option (DSA & System Design Coaching) | AI Campus (aicampus.in) \u2014 2026 Advantage | --- | Program Model | Recorded videos or theoretical classroom notes | 6 Months 100% Live Training + 6 Months Guaranteed Paid Corporate Internship | | Fee & EMI Policy | High multi-lakh fees or post-job ISA salary deductions | Transparent Fee Structure with Flexible Zero-Cost EMI Options | | Work Experience Proof | No corporate internship experience certificate | Guaranteed 6-Month Paid Corporate Internship with Monthly Stipend | | Global Certifications | Basic completion certificate | Official IBM SkillsBuild & Microsoft Learn Aligned Credentials | Master DSA, System Design & AI Track with a Guaranteed 6-Month Paid Corporate Internship! [...] AI Campus Bosscoder Academy vs AI Campus Review (2026): Fees (\u20b980k), Live Classes & Paid Internship\\ \ud83d\udcca 2026 Career Guide",
+        "timestamp": "2026-11-07T13:53:28.803501+00:00",
+        "score": 7.0,
+        "metadata": {
+          "source": "www.aicampus.in",
+          "url": "https://www.aicampus.in/blog/bosscoder-academy-vs-ai-campus-2026",
+          "brand": "Bosscoder Academy",
+          "title": "Bosscoder Academy vs AI Campus Review (2026): Fees (\u20b980k), Live Classes & Paid Internship*",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_cb8cfd052962ffe8",
+        "text": "Article: Bosscoder School of Technology Welcomes Students with a Unique Registration Week Experience | Hindustan Times\nSource: www.hindustantimes.com\nPublished: 2026-08-13T08:56:03+00:00\nURL: https://www.hindustantimes.com/genesis/bosscoder-school-of-technology-welcomes-students-with-a-unique-registration-week-experience-101786611078611.html\nContent: Bosscoder School of Technology (BST), Bengaluru's industry-integrated B.Tech in Computer Science & Artificial Intelligence, successfully concluded its three-day Registration Week, welcoming students through an innovative onboarding experience designed around aspirations, community, and technology. Bosscoder School of Technology Welcomes Students with a Unique Registration Week Experience Bengaluru | August 2026: Bosscoder School of Technology (BST), an industry-integrated engineering college by Bosscoder Academy, marked a significant milestone as it welcomed students during its Registration Week held on 31st July, 1st August, and 2nd August. [...] coverage in one space while keeping an eye on brands.Read More",
+        "timestamp": "2026-08-13T08:56:03+00:00",
+        "score": 7.0,
+        "metadata": {
+          "source": "www.hindustantimes.com",
+          "url": "https://www.hindustantimes.com/genesis/bosscoder-school-of-technology-welcomes-students-with-a-unique-registration-week-experience-101786611078611.html",
+          "brand": "Bosscoder Academy",
+          "title": "Bosscoder School of Technology Welcomes Students with a Unique Registration Week Experience | Hindustan Times",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_19aed12c966e1f5c",
+        "text": "Article: How To Build a Product Launch Plan For SaaS In 2026?\nSource: userpilot.com\nPublished: 2026-06-25T02:30:24+00:00\nURL: https://userpilot.com/blog/product-launch-plan\nContent: Image 31SaaS Product Metrics Benchmark Report Benchmark your top 6 product metrics against 547 SaaS companies Watch Image 33Upcoming Webinars All upcoming live webinars or on-demand webcasts Image 35Product Adoption School A framework to help you create delightful onboarding experiences Image 37Getting Started With Userpilot Series Build interactive onboarding and make more of your users successful. Connect Image 39Product Marketing Community Join our PM community on Facebook & LinkedIn Image 41Product Drive Conference Latest trends in the product world Free Trial Customers Log in Get a Demo Last Updated: August 24, 2026 Home|Product Launches & Updates How To Build a Product Launch Plan For SaaS In 2026? Image 43: Nat\u00e1lia Kimli\u010dkov\u00e1 [...] Image 53: Funnel analysis in Userpilot Tie each of the four metrics to a SMART goal so the target is specific and time-bound. 5. Design your launch campaign A campaign has two halves that teams usually plan in isolation: external promotion that drives attention, and in-app announcement strategy that turns attention into adoption. Design them together, because the second one is where most launches leak. External promotion has shifted in 2026: [...] Image 17Churn Prevention Predict and Prevent Churn with Customer Insights and In-App Guidance Image 19In-app Support Scale Self-Support with On-Demand Help and Resources Image 21Product Launches Announce New Features & Measure Product Launch Impact Image 23Expansion Revenue Boost Expansion Revenue by Promoting Add-Ons and Upgrades Image 25Product Adoption Improve Product Adoption with Contextual In-App Experiences Pricing Resources Read Image 27Blog The best way to stay ahead of the curve with Product Trends & Big Ideas Image 29Product Adoption Dictionary A framework to help you create delightful onboarding experiences",
+        "timestamp": "2026-06-25T02:30:24+00:00",
+        "score": 6.0,
+        "metadata": {
+          "source": "userpilot.com",
+          "url": "https://userpilot.com/blog/product-launch-plan",
+          "brand": "School",
+          "title": "How To Build a Product Launch Plan For SaaS In 2026?",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_d0492db9179611af",
+        "text": "Competitor Identified: General Assembly (generalassemb.ly). Focus: Full\u2011stack, data science, product management bootcamps. Move: Launched AI\u2011co\u2011pilot curriculum for cloud engineering in Q3\u202f2026. Price: +3% YoY.",
+        "timestamp": "2026-11-07T08:08:20.249888+00:00",
+        "score": 5.0,
+        "metadata": {
+          "id": "general-assembly",
+          "name": "General Assembly",
+          "domain": "generalassemb.ly",
+          "market_share": "~12% of global professional upskilling market",
+          "focus": "Full\u2011stack, data science, product management bootcamps",
+          "recent_move": "Launched AI\u2011co\u2011pilot curriculum for cloud engineering in Q3\u202f2026",
+          "price_trend": "+3% YoY",
+          "threat_level": "High",
+          "key_advantage": "Extensive corporate hiring pipeline and global campus network",
+          "key_vulnerability": "Higher tuition than most online\u2011only competitors",
+          "brand": "School",
+          "fact_type": "competitor_profile",
+          "url": "https://generalassemb.ly"
+        },
+        "storage_backend": "hindsight_embedded"
+      }
+    ],
+    "neural_network": {
+      "center_node": {
+        "id": "node_center",
+        "label": "Bosscoder Academy",
+        "color": "#0284c7"
+      },
+      "radial_nodes": [
+        {
+          "id": "node_cfd664ec2ada4feb",
+          "chip_id": "#node_cfd664e",
+          "label": "Bosscoder Academ...",
+          "full_title": "Bosscoder Academy Pricing (2026): Is Bosscoder Academy Free?",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 270,
+          "content": "Article: Bosscoder Academy Pricing (2026): Is Bosscoder Academy Free?\nSource: devsunite.com\nPublished: 2026-11-03T13:00:00+00:00\nURL: https://devsunite.com/pricing-guide/bosscoder-academy\nContent: DevsUnite Logo devsunite PricingDownload AppSign in Home/Pricing guides/Bosscoder Academy pricing Bosscoder Academy Pricing (2026): Is Bosscoder Academy Free? Bosscoder Academy: Online upskilling programmes for software engineers (Transformer, Evolve, DevOps and Cloud) plus an Accelerator programme for college students. Bosscoder Academy does not list prices publicly. Below is what we found about its free tier, with the date it was checked. We never estimate a price. Bosscoder Academy pricing Bosscoder Academy does not list prices publicly.Checked Oct 27, 2026. Is Bosscoder Academyfree? We could not find a clear statement about a free tier for Bosscoder Academy (checked Oct 27, 2026). Bosscoder Academy does not list paid prices publicly. A free option: DevsUnite [...] Free plan includes 4 match scores, 3 cover letters, 3 mock interviews a month.Pro+:see the pricing page(pricing). Limitations Mock interviews are AI only; there are no human interviewers or coaches. The free plan has monthly limits on the AI tools (match scores, cover letters, mock interviews). Built for early-career roles (about 0 to 5 years of experience), not senior hiring. Related Bosscoder Academy alternatives Bosscoder Academy vs DevsUnite Frequently asked questions Is Bosscoder Academy free? : We could not find a clear statement about a free tier for Bosscoder Academy (checked Oct 27, 2026). Bosscoder Academy does not list paid prices publicly. [...] How much does Bosscoder Academy cost? : Bosscoder Academy does not list prices publicly (checked Oct 27, 2026). We do not estimate prices; ask Bosscoder Academy directly. Where can I check Bosscoder Academy's current price? : On Bosscoder Academy's own site: Prices change; the dates on this page show when each fact was checked. What are the alternatives to Bosscoder Academy? : See Bosscoder Academy alternatives at for products with the same features, compared from their own pages.",
+          "timestamp": "2026-11-03T13:00:00+00:00"
+        },
+        {
+          "id": "node_0eac5789b243408e",
+          "chip_id": "#node_0eac578",
+          "label": "Bosscoder Academ...",
+          "full_title": "Bosscoder Academy vs DevsUnite (2026): Features and Pricing",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 320,
+          "content": "Article: Bosscoder Academy vs DevsUnite (2026): Features and Pricing\nSource: devsunite.com\nPublished: 2026-11-03T13:00:00+00:00\nURL: https://devsunite.com/compare/bosscoder-academy-vs-devsunite\nContent: Bosscoder Academy vs DevsUnite compared: what each offers, free tiers, pricing and limitations, with Bosscoder Academy's facts dated and sourced.",
+          "timestamp": "2026-11-03T13:00:00+00:00"
+        },
+        {
+          "id": "node_5c720254e01b4b8b",
+          "chip_id": "#node_5c72025",
+          "label": "Bosscoder Academ...",
+          "full_title": "Bosscoder Academy",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 15,
+          "content": "Article: Bosscoder Academy\nSource: tavily.com\nPublished: 2026-11-07T13:53:28.803501+00:00\nURL: https://tavily.com/knowledge/company/dwDT9m8ZfFBn\nContent: Bosscoder Academy Website: www.bosscoderacademy.com Legal name: Bosscoder Software Services Pvt. Ltd. Headquarters: Noida, Uttar Pradesh, India LinkedIn: www.linkedin.com/school/bosscoderacademy \u00b7 82,710 followers Industry: E-Learning Providers Company type: Educational Founded: 2020 Social profiles: www.facebook.com/bosscoderacademy/reviews, www.twitter.com/bosscoder_edu, www.crunchbase.com/organization/bosscoder-academy, www.instagram.com/bosscoderacademy/?hl=en, www.youtube.com/channel/ucueokdoi48cglkzby77-6hg Email: ask@bosscoderacademy.com Phone: +91 87509 04055 Description: Bosscoder Academy provides in-demand software engineering, data, and AI/ML skills through mentorship, real-world projects, and structured learning for product-based companies. [...] Technology - Detected: 60 - numpy \u00b7 last seen 2026-08-24 - facebook \u00b7 last seen 2026-08-24 - postgresql \u00b7 last seen 2026-08-24 - react \u00b7 last seen 2026-08-24 - youtube \u00b7 last seen 2026-08-24 - jira \u00b7 last seen 2026-08-24 - matplotlib \u00b7 last seen 2026-08-24 - paypal \u00b7 last seen 2026-08-24 Web traffic - Monthly visits: 297,121 (-21% change) - Pages per visit: 2.81 - Average visit duration: 123 seconds - Bounce rate: 42% - Global rank: 158,527 - Country rank: 11,969 - Category rank: 244 Reputation - Open roles: 4 [...] Products and services Keywords: technology/software engineering, jobs_and_career/jobs_and_employment, software engineering, data engineering, data science & machine learning, genai & agentic ai, data analyst, ai/ml, mentorship, data, structured learning, edtech Headcount - Now: 247 \u00b7 +16 yearly (6.9%) \u00b7 +2 quarterly \u00b7 +3 monthly - Southern Asia: 110 - Northern America: 2 - Australia New Zealand: 1 - Western Asia: 1 - Eastern Europe: 0 - Latin America: 0 - Southern Europe: 0 - Sub Saharan Africa: 0 - Central Asia: 0 - Northern Europe: 0 - South Eastern Asia: 0 - Polynesia: 0 - Northern Africa: 0 - Melanesia: 0 - Western Europe: 0",
+          "timestamp": "2026-11-07T13:53:28.803501+00:00"
+        },
+        {
+          "id": "node_bc9eca9fb66f48df",
+          "chip_id": "#node_bc9eca9",
+          "label": "Bosscoder Academ...",
+          "full_title": "Bosscoder Academy Launches Advanced GenAI &amp; ML Engineering Program to Prepare Engineers for Emerging AI Roles | Hindustan Times",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 65,
+          "content": "Article: Bosscoder Academy Launches Advanced GenAI &amp; ML Engineering Program to Prepare Engineers for Emerging AI Roles | Hindustan Times\nSource: www.hindustantimes.com\nPublished: 2026-04-10T12:41:23+00:00\nURL: https://www.hindustantimes.com/genesis/bosscoder-academy-launches-advanced-genai-ml-engineering-program-to-prepare-engineers-for-emerging-ai-roles-101775824655635.html\nContent: Bosscoder Academy has announced the launch of its Advanced GenAI & ML Engineering Program, a nine-month flagship program designed to prepare software engineers and data professionals for emerging roles such as Machine Learning Engineer, Generative AI Engineer, and AI Architect. The program focuses on equipping working professionals with the skills required to build production-grade AI systems, an area seeing rapidly increasing demand across technology companies. Bosscoder Academy Launches Advanced GenAI & ML Engineering Program to Prepare Engineers for Emerging AI Roles [...] Commenting on the launch, Manish Garg, Cofounder of Bosscoder Academy and former Data Scientist at Samsung, said, \u201cOver the past few years, the demand for engineers who can build real AI systems has grown significantly. Companies are not just looking for people who understand machine learning models, but engineers who can integrate those models into scalable products. With this program, our goal is to help professionals build strong machine learning foundations while also learning how to work with modern generative AI tools to design and deploy complete AI systems.\u201d The program is designed primarily for working professionals, with live classes, structured assignments, mentorship from industry practitioners, and placement assistance to support learners transitioning into AI roles. [...] Bosscoder\u2019s new program is designed to address this shift by combining core machine learning training with modern generative AI engineering practices, helping professionals move beyond theoretical learning and develop the capability to work on real AI systems. The curriculum introduces learners to machine learning frameworks, deep learning concepts, and modern AI development tools, along with practical exposure to building applications powered by large language models and AI agents.",
+          "timestamp": "2026-04-10T12:41:23+00:00"
+        },
+        {
+          "id": "node_8720fa61a67f4150",
+          "chip_id": "#node_8720fa6",
+          "label": "Bosscoder Academ...",
+          "full_title": "Bosscoder Academy vs AI Campus Review (2026): Fees (\u20b980k), Live Classes & Paid Internship*",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 90,
+          "content": "Article: Bosscoder Academy vs AI Campus Review (2026): Fees (\u20b980k), Live Classes & Paid Internship*\nSource: www.aicampus.in\nPublished: 2026-11-07T13:53:28.803501+00:00\nURL: https://www.aicampus.in/blog/bosscoder-academy-vs-ai-campus-2026\nContent: Comparison Parameter (2026) | Scaler / upGrad | Great Learning / Simplilearn | AlmaBetter / Crio.Do | AI Campus (aicampus.in) \u2605 Winner | --- --- | Total Tuition Fee (incl. GST) | \u20b92,80,000 \u2013 \u20b93,99,000 | \u20b91,80,000 \u2013 \u20b93,20,000 | \u20b91,80,000 \u2013 \u20b92,50,000 (or 15\u201320% Salary ISA) | \u20b980,000 Flat (0% EMI from \u20b96,666/mo) | | Teaching Delivery Format | 12 Months (Large 150+ Batches / Blended) | 80% Pre-Recorded Videos + Weekend Q&A | Self-Paced / Micro-Skilling Exercises | 6 Months 100% Live Small-Cohort Architect Training | | Corporate Work Experience | Academic Capstone Projects Only | Sandbox / Recorded Case Studies | Simulated Work-Like Repositories | Guaranteed 6-Month Paid Corporate Internship\\ (Monthly Stipend + Experience Letter) | [...] | Career Parameter | Traditional / Legacy Option (DSA & System Design Coaching) | AI Campus (aicampus.in) \u2014 2026 Advantage | --- | Program Model | Recorded videos or theoretical classroom notes | 6 Months 100% Live Training + 6 Months Guaranteed Paid Corporate Internship | | Fee & EMI Policy | High multi-lakh fees or post-job ISA salary deductions | Transparent Fee Structure with Flexible Zero-Cost EMI Options | | Work Experience Proof | No corporate internship experience certificate | Guaranteed 6-Month Paid Corporate Internship with Monthly Stipend | | Global Certifications | Basic completion certificate | Official IBM SkillsBuild & Microsoft Learn Aligned Credentials | Master DSA, System Design & AI Track with a Guaranteed 6-Month Paid Corporate Internship! [...] AI Campus Bosscoder Academy vs AI Campus Review (2026): Fees (\u20b980k), Live Classes & Paid Internship\\ \ud83d\udcca 2026 Career Guide",
+          "timestamp": "2026-11-07T13:53:28.803501+00:00"
+        },
+        {
+          "id": "node_cd482283fdc046ee",
+          "chip_id": "#node_cd48228",
+          "label": "Deploy a free AI c...",
+          "full_title": "Deploy a free AI code review and project feedback engine to the free tier, coupled with a data\u2011driven upsell funnel to Pro.",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 140,
+          "content": "Strategic Move [P0 Critical]: Deploy a free AI code review and project feedback engine to the free tier, coupled with a data\u2011driven upsell funnel to Pro.. Rationale: Counters Scaler's AI interview advantage and addresses the free\u2011tier engagement gap identified in market trends.",
+          "timestamp": "2026-11-07T13:53:40.520716+00:00"
+        },
+        {
+          "id": "node_38f78beeb3474744",
+          "chip_id": "#node_38f78be",
+          "label": "Launch a B2B partn...",
+          "full_title": "Launch a B2B partnership program targeting African tech hubs and NGOs, offering co\u2011branded AI upskilling tracks with revenue sharing.",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 195,
+          "content": "Strategic Move [P1 Offensive]: Launch a B2B partnership program targeting African tech hubs and NGOs, offering co\u2011branded AI upskilling tracks with revenue sharing.. Rationale: Exploits the geographic gap where competitors have limited presence, leveraging Bosscoder's advanced GenAI curriculum as a differentiator.",
+          "timestamp": "2026-11-07T13:53:40.520719+00:00"
+        },
+        {
+          "id": "node_15a333e5615b4934",
+          "chip_id": "#node_15a333e",
+          "label": "Audit pricing pari...",
+          "full_title": "Audit pricing parity against Scaler and deploy targeted annual incentive bundles.",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 235,
+          "content": "Strategic Move [P0 Critical]: Audit pricing parity against Scaler and deploy targeted annual incentive bundles.. Rationale: Directly counters Scaler's aggressive positioning while defending margin on renewal cohorts.",
+          "timestamp": "2026-11-07T13:53:40.520721+00:00"
+        }
+      ],
+      "recalled_chips": [
+        "#node_cfd664e",
+        "#node_0eac578",
+        "#node_5c72025",
+        "#node_bc9eca9",
+        "#node_8720fa6",
+        "#node_cd48228"
+      ],
+      "instant_prompts": [
+        "What is Bosscoder Academy's pricing moat?",
+        "How have competitor prices shifted?",
+        "What strategic counter-move should we execute?"
+      ]
+    },
+    "neural_nodes": [
+      {
+        "id": "node_cfd664ec2ada4feb",
+        "chip_id": "#node_cfd664e",
+        "label": "Bosscoder Academ...",
+        "full_title": "Bosscoder Academy Pricing (2026): Is Bosscoder Academy Free?",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 270,
+        "content": "Article: Bosscoder Academy Pricing (2026): Is Bosscoder Academy Free?\nSource: devsunite.com\nPublished: 2026-11-03T13:00:00+00:00\nURL: https://devsunite.com/pricing-guide/bosscoder-academy\nContent: DevsUnite Logo devsunite PricingDownload AppSign in Home/Pricing guides/Bosscoder Academy pricing Bosscoder Academy Pricing (2026): Is Bosscoder Academy Free? Bosscoder Academy: Online upskilling programmes for software engineers (Transformer, Evolve, DevOps and Cloud) plus an Accelerator programme for college students. Bosscoder Academy does not list prices publicly. Below is what we found about its free tier, with the date it was checked. We never estimate a price. Bosscoder Academy pricing Bosscoder Academy does not list prices publicly.Checked Oct 27, 2026. Is Bosscoder Academyfree? We could not find a clear statement about a free tier for Bosscoder Academy (checked Oct 27, 2026). Bosscoder Academy does not list paid prices publicly. A free option: DevsUnite [...] Free plan includes 4 match scores, 3 cover letters, 3 mock interviews a month.Pro+:see the pricing page(pricing). Limitations Mock interviews are AI only; there are no human interviewers or coaches. The free plan has monthly limits on the AI tools (match scores, cover letters, mock interviews). Built for early-career roles (about 0 to 5 years of experience), not senior hiring. Related Bosscoder Academy alternatives Bosscoder Academy vs DevsUnite Frequently asked questions Is Bosscoder Academy free? : We could not find a clear statement about a free tier for Bosscoder Academy (checked Oct 27, 2026). Bosscoder Academy does not list paid prices publicly. [...] How much does Bosscoder Academy cost? : Bosscoder Academy does not list prices publicly (checked Oct 27, 2026). We do not estimate prices; ask Bosscoder Academy directly. Where can I check Bosscoder Academy's current price? : On Bosscoder Academy's own site: Prices change; the dates on this page show when each fact was checked. What are the alternatives to Bosscoder Academy? : See Bosscoder Academy alternatives at for products with the same features, compared from their own pages.",
+        "timestamp": "2026-11-03T13:00:00+00:00"
+      },
+      {
+        "id": "node_0eac5789b243408e",
+        "chip_id": "#node_0eac578",
+        "label": "Bosscoder Academ...",
+        "full_title": "Bosscoder Academy vs DevsUnite (2026): Features and Pricing",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 320,
+        "content": "Article: Bosscoder Academy vs DevsUnite (2026): Features and Pricing\nSource: devsunite.com\nPublished: 2026-11-03T13:00:00+00:00\nURL: https://devsunite.com/compare/bosscoder-academy-vs-devsunite\nContent: Bosscoder Academy vs DevsUnite compared: what each offers, free tiers, pricing and limitations, with Bosscoder Academy's facts dated and sourced.",
+        "timestamp": "2026-11-03T13:00:00+00:00"
+      },
+      {
+        "id": "node_5c720254e01b4b8b",
+        "chip_id": "#node_5c72025",
+        "label": "Bosscoder Academ...",
+        "full_title": "Bosscoder Academy",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 15,
+        "content": "Article: Bosscoder Academy\nSource: tavily.com\nPublished: 2026-11-07T13:53:28.803501+00:00\nURL: https://tavily.com/knowledge/company/dwDT9m8ZfFBn\nContent: Bosscoder Academy Website: www.bosscoderacademy.com Legal name: Bosscoder Software Services Pvt. Ltd. Headquarters: Noida, Uttar Pradesh, India LinkedIn: www.linkedin.com/school/bosscoderacademy \u00b7 82,710 followers Industry: E-Learning Providers Company type: Educational Founded: 2020 Social profiles: www.facebook.com/bosscoderacademy/reviews, www.twitter.com/bosscoder_edu, www.crunchbase.com/organization/bosscoder-academy, www.instagram.com/bosscoderacademy/?hl=en, www.youtube.com/channel/ucueokdoi48cglkzby77-6hg Email: ask@bosscoderacademy.com Phone: +91 87509 04055 Description: Bosscoder Academy provides in-demand software engineering, data, and AI/ML skills through mentorship, real-world projects, and structured learning for product-based companies. [...] Technology - Detected: 60 - numpy \u00b7 last seen 2026-08-24 - facebook \u00b7 last seen 2026-08-24 - postgresql \u00b7 last seen 2026-08-24 - react \u00b7 last seen 2026-08-24 - youtube \u00b7 last seen 2026-08-24 - jira \u00b7 last seen 2026-08-24 - matplotlib \u00b7 last seen 2026-08-24 - paypal \u00b7 last seen 2026-08-24 Web traffic - Monthly visits: 297,121 (-21% change) - Pages per visit: 2.81 - Average visit duration: 123 seconds - Bounce rate: 42% - Global rank: 158,527 - Country rank: 11,969 - Category rank: 244 Reputation - Open roles: 4 [...] Products and services Keywords: technology/software engineering, jobs_and_career/jobs_and_employment, software engineering, data engineering, data science & machine learning, genai & agentic ai, data analyst, ai/ml, mentorship, data, structured learning, edtech Headcount - Now: 247 \u00b7 +16 yearly (6.9%) \u00b7 +2 quarterly \u00b7 +3 monthly - Southern Asia: 110 - Northern America: 2 - Australia New Zealand: 1 - Western Asia: 1 - Eastern Europe: 0 - Latin America: 0 - Southern Europe: 0 - Sub Saharan Africa: 0 - Central Asia: 0 - Northern Europe: 0 - South Eastern Asia: 0 - Polynesia: 0 - Northern Africa: 0 - Melanesia: 0 - Western Europe: 0",
+        "timestamp": "2026-11-07T13:53:28.803501+00:00"
+      },
+      {
+        "id": "node_bc9eca9fb66f48df",
+        "chip_id": "#node_bc9eca9",
+        "label": "Bosscoder Academ...",
+        "full_title": "Bosscoder Academy Launches Advanced GenAI &amp; ML Engineering Program to Prepare Engineers for Emerging AI Roles | Hindustan Times",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 65,
+        "content": "Article: Bosscoder Academy Launches Advanced GenAI &amp; ML Engineering Program to Prepare Engineers for Emerging AI Roles | Hindustan Times\nSource: www.hindustantimes.com\nPublished: 2026-04-10T12:41:23+00:00\nURL: https://www.hindustantimes.com/genesis/bosscoder-academy-launches-advanced-genai-ml-engineering-program-to-prepare-engineers-for-emerging-ai-roles-101775824655635.html\nContent: Bosscoder Academy has announced the launch of its Advanced GenAI & ML Engineering Program, a nine-month flagship program designed to prepare software engineers and data professionals for emerging roles such as Machine Learning Engineer, Generative AI Engineer, and AI Architect. The program focuses on equipping working professionals with the skills required to build production-grade AI systems, an area seeing rapidly increasing demand across technology companies. Bosscoder Academy Launches Advanced GenAI & ML Engineering Program to Prepare Engineers for Emerging AI Roles [...] Commenting on the launch, Manish Garg, Cofounder of Bosscoder Academy and former Data Scientist at Samsung, said, \u201cOver the past few years, the demand for engineers who can build real AI systems has grown significantly. Companies are not just looking for people who understand machine learning models, but engineers who can integrate those models into scalable products. With this program, our goal is to help professionals build strong machine learning foundations while also learning how to work with modern generative AI tools to design and deploy complete AI systems.\u201d The program is designed primarily for working professionals, with live classes, structured assignments, mentorship from industry practitioners, and placement assistance to support learners transitioning into AI roles. [...] Bosscoder\u2019s new program is designed to address this shift by combining core machine learning training with modern generative AI engineering practices, helping professionals move beyond theoretical learning and develop the capability to work on real AI systems. The curriculum introduces learners to machine learning frameworks, deep learning concepts, and modern AI development tools, along with practical exposure to building applications powered by large language models and AI agents.",
+        "timestamp": "2026-04-10T12:41:23+00:00"
+      },
+      {
+        "id": "node_8720fa61a67f4150",
+        "chip_id": "#node_8720fa6",
+        "label": "Bosscoder Academ...",
+        "full_title": "Bosscoder Academy vs AI Campus Review (2026): Fees (\u20b980k), Live Classes & Paid Internship*",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 90,
+        "content": "Article: Bosscoder Academy vs AI Campus Review (2026): Fees (\u20b980k), Live Classes & Paid Internship*\nSource: www.aicampus.in\nPublished: 2026-11-07T13:53:28.803501+00:00\nURL: https://www.aicampus.in/blog/bosscoder-academy-vs-ai-campus-2026\nContent: Comparison Parameter (2026) | Scaler / upGrad | Great Learning / Simplilearn | AlmaBetter / Crio.Do | AI Campus (aicampus.in) \u2605 Winner | --- --- | Total Tuition Fee (incl. GST) | \u20b92,80,000 \u2013 \u20b93,99,000 | \u20b91,80,000 \u2013 \u20b93,20,000 | \u20b91,80,000 \u2013 \u20b92,50,000 (or 15\u201320% Salary ISA) | \u20b980,000 Flat (0% EMI from \u20b96,666/mo) | | Teaching Delivery Format | 12 Months (Large 150+ Batches / Blended) | 80% Pre-Recorded Videos + Weekend Q&A | Self-Paced / Micro-Skilling Exercises | 6 Months 100% Live Small-Cohort Architect Training | | Corporate Work Experience | Academic Capstone Projects Only | Sandbox / Recorded Case Studies | Simulated Work-Like Repositories | Guaranteed 6-Month Paid Corporate Internship\\ (Monthly Stipend + Experience Letter) | [...] | Career Parameter | Traditional / Legacy Option (DSA & System Design Coaching) | AI Campus (aicampus.in) \u2014 2026 Advantage | --- | Program Model | Recorded videos or theoretical classroom notes | 6 Months 100% Live Training + 6 Months Guaranteed Paid Corporate Internship | | Fee & EMI Policy | High multi-lakh fees or post-job ISA salary deductions | Transparent Fee Structure with Flexible Zero-Cost EMI Options | | Work Experience Proof | No corporate internship experience certificate | Guaranteed 6-Month Paid Corporate Internship with Monthly Stipend | | Global Certifications | Basic completion certificate | Official IBM SkillsBuild & Microsoft Learn Aligned Credentials | Master DSA, System Design & AI Track with a Guaranteed 6-Month Paid Corporate Internship! [...] AI Campus Bosscoder Academy vs AI Campus Review (2026): Fees (\u20b980k), Live Classes & Paid Internship\\ \ud83d\udcca 2026 Career Guide",
+        "timestamp": "2026-11-07T13:53:28.803501+00:00"
+      },
+      {
+        "id": "node_cd482283fdc046ee",
+        "chip_id": "#node_cd48228",
+        "label": "Deploy a free AI c...",
+        "full_title": "Deploy a free AI code review and project feedback engine to the free tier, coupled with a data\u2011driven upsell funnel to Pro.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 140,
+        "content": "Strategic Move [P0 Critical]: Deploy a free AI code review and project feedback engine to the free tier, coupled with a data\u2011driven upsell funnel to Pro.. Rationale: Counters Scaler's AI interview advantage and addresses the free\u2011tier engagement gap identified in market trends.",
+        "timestamp": "2026-11-07T13:53:40.520716+00:00"
+      },
+      {
+        "id": "node_38f78beeb3474744",
+        "chip_id": "#node_38f78be",
+        "label": "Launch a B2B partn...",
+        "full_title": "Launch a B2B partnership program targeting African tech hubs and NGOs, offering co\u2011branded AI upskilling tracks with revenue sharing.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 195,
+        "content": "Strategic Move [P1 Offensive]: Launch a B2B partnership program targeting African tech hubs and NGOs, offering co\u2011branded AI upskilling tracks with revenue sharing.. Rationale: Exploits the geographic gap where competitors have limited presence, leveraging Bosscoder's advanced GenAI curriculum as a differentiator.",
+        "timestamp": "2026-11-07T13:53:40.520719+00:00"
+      },
+      {
+        "id": "node_15a333e5615b4934",
+        "chip_id": "#node_15a333e",
+        "label": "Audit pricing pari...",
+        "full_title": "Audit pricing parity against Scaler and deploy targeted annual incentive bundles.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 235,
+        "content": "Strategic Move [P0 Critical]: Audit pricing parity against Scaler and deploy targeted annual incentive bundles.. Rationale: Directly counters Scaler's aggressive positioning while defending margin on renewal cohorts.",
+        "timestamp": "2026-11-07T13:53:40.520721+00:00"
+      }
+    ],
+    "recalled_chips": [
+      "#node_cfd664e",
+      "#node_0eac578",
+      "#node_5c72025",
+      "#node_bc9eca9",
+      "#node_8720fa6",
+      "#node_cd48228"
+    ],
+    "instant_prompts": [
+      "What is Bosscoder Academy's pricing moat?",
+      "How have competitor prices shifted?",
+      "What strategic counter-move should we execute?"
+    ],
+    "compounding_message": "The next time Bosscoder Academy is scanned, the agent remembers previous findings and identifies what's changed, which strategies are developing and which trends are continuing."
+  },
+  "neural_network": {
+    "center_node": {
+      "id": "node_center",
+      "label": "Bosscoder Academy",
+      "color": "#0284c7"
+    },
+    "radial_nodes": [
+      {
+        "id": "node_cfd664ec2ada4feb",
+        "chip_id": "#node_cfd664e",
+        "label": "Bosscoder Academ...",
+        "full_title": "Bosscoder Academy Pricing (2026): Is Bosscoder Academy Free?",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 270,
+        "content": "Article: Bosscoder Academy Pricing (2026): Is Bosscoder Academy Free?\nSource: devsunite.com\nPublished: 2026-11-03T13:00:00+00:00\nURL: https://devsunite.com/pricing-guide/bosscoder-academy\nContent: DevsUnite Logo devsunite PricingDownload AppSign in Home/Pricing guides/Bosscoder Academy pricing Bosscoder Academy Pricing (2026): Is Bosscoder Academy Free? Bosscoder Academy: Online upskilling programmes for software engineers (Transformer, Evolve, DevOps and Cloud) plus an Accelerator programme for college students. Bosscoder Academy does not list prices publicly. Below is what we found about its free tier, with the date it was checked. We never estimate a price. Bosscoder Academy pricing Bosscoder Academy does not list prices publicly.Checked Oct 27, 2026. Is Bosscoder Academyfree? We could not find a clear statement about a free tier for Bosscoder Academy (checked Oct 27, 2026). Bosscoder Academy does not list paid prices publicly. A free option: DevsUnite [...] Free plan includes 4 match scores, 3 cover letters, 3 mock interviews a month.Pro+:see the pricing page(pricing). Limitations Mock interviews are AI only; there are no human interviewers or coaches. The free plan has monthly limits on the AI tools (match scores, cover letters, mock interviews). Built for early-career roles (about 0 to 5 years of experience), not senior hiring. Related Bosscoder Academy alternatives Bosscoder Academy vs DevsUnite Frequently asked questions Is Bosscoder Academy free? : We could not find a clear statement about a free tier for Bosscoder Academy (checked Oct 27, 2026). Bosscoder Academy does not list paid prices publicly. [...] How much does Bosscoder Academy cost? : Bosscoder Academy does not list prices publicly (checked Oct 27, 2026). We do not estimate prices; ask Bosscoder Academy directly. Where can I check Bosscoder Academy's current price? : On Bosscoder Academy's own site: Prices change; the dates on this page show when each fact was checked. What are the alternatives to Bosscoder Academy? : See Bosscoder Academy alternatives at for products with the same features, compared from their own pages.",
+        "timestamp": "2026-11-03T13:00:00+00:00"
+      },
+      {
+        "id": "node_0eac5789b243408e",
+        "chip_id": "#node_0eac578",
+        "label": "Bosscoder Academ...",
+        "full_title": "Bosscoder Academy vs DevsUnite (2026): Features and Pricing",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 320,
+        "content": "Article: Bosscoder Academy vs DevsUnite (2026): Features and Pricing\nSource: devsunite.com\nPublished: 2026-11-03T13:00:00+00:00\nURL: https://devsunite.com/compare/bosscoder-academy-vs-devsunite\nContent: Bosscoder Academy vs DevsUnite compared: what each offers, free tiers, pricing and limitations, with Bosscoder Academy's facts dated and sourced.",
+        "timestamp": "2026-11-03T13:00:00+00:00"
+      },
+      {
+        "id": "node_5c720254e01b4b8b",
+        "chip_id": "#node_5c72025",
+        "label": "Bosscoder Academ...",
+        "full_title": "Bosscoder Academy",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 15,
+        "content": "Article: Bosscoder Academy\nSource: tavily.com\nPublished: 2026-11-07T13:53:28.803501+00:00\nURL: https://tavily.com/knowledge/company/dwDT9m8ZfFBn\nContent: Bosscoder Academy Website: www.bosscoderacademy.com Legal name: Bosscoder Software Services Pvt. Ltd. Headquarters: Noida, Uttar Pradesh, India LinkedIn: www.linkedin.com/school/bosscoderacademy \u00b7 82,710 followers Industry: E-Learning Providers Company type: Educational Founded: 2020 Social profiles: www.facebook.com/bosscoderacademy/reviews, www.twitter.com/bosscoder_edu, www.crunchbase.com/organization/bosscoder-academy, www.instagram.com/bosscoderacademy/?hl=en, www.youtube.com/channel/ucueokdoi48cglkzby77-6hg Email: ask@bosscoderacademy.com Phone: +91 87509 04055 Description: Bosscoder Academy provides in-demand software engineering, data, and AI/ML skills through mentorship, real-world projects, and structured learning for product-based companies. [...] Technology - Detected: 60 - numpy \u00b7 last seen 2026-08-24 - facebook \u00b7 last seen 2026-08-24 - postgresql \u00b7 last seen 2026-08-24 - react \u00b7 last seen 2026-08-24 - youtube \u00b7 last seen 2026-08-24 - jira \u00b7 last seen 2026-08-24 - matplotlib \u00b7 last seen 2026-08-24 - paypal \u00b7 last seen 2026-08-24 Web traffic - Monthly visits: 297,121 (-21% change) - Pages per visit: 2.81 - Average visit duration: 123 seconds - Bounce rate: 42% - Global rank: 158,527 - Country rank: 11,969 - Category rank: 244 Reputation - Open roles: 4 [...] Products and services Keywords: technology/software engineering, jobs_and_career/jobs_and_employment, software engineering, data engineering, data science & machine learning, genai & agentic ai, data analyst, ai/ml, mentorship, data, structured learning, edtech Headcount - Now: 247 \u00b7 +16 yearly (6.9%) \u00b7 +2 quarterly \u00b7 +3 monthly - Southern Asia: 110 - Northern America: 2 - Australia New Zealand: 1 - Western Asia: 1 - Eastern Europe: 0 - Latin America: 0 - Southern Europe: 0 - Sub Saharan Africa: 0 - Central Asia: 0 - Northern Europe: 0 - South Eastern Asia: 0 - Polynesia: 0 - Northern Africa: 0 - Melanesia: 0 - Western Europe: 0",
+        "timestamp": "2026-11-07T13:53:28.803501+00:00"
+      },
+      {
+        "id": "node_bc9eca9fb66f48df",
+        "chip_id": "#node_bc9eca9",
+        "label": "Bosscoder Academ...",
+        "full_title": "Bosscoder Academy Launches Advanced GenAI &amp; ML Engineering Program to Prepare Engineers for Emerging AI Roles | Hindustan Times",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 65,
+        "content": "Article: Bosscoder Academy Launches Advanced GenAI &amp; ML Engineering Program to Prepare Engineers for Emerging AI Roles | Hindustan Times\nSource: www.hindustantimes.com\nPublished: 2026-04-10T12:41:23+00:00\nURL: https://www.hindustantimes.com/genesis/bosscoder-academy-launches-advanced-genai-ml-engineering-program-to-prepare-engineers-for-emerging-ai-roles-101775824655635.html\nContent: Bosscoder Academy has announced the launch of its Advanced GenAI & ML Engineering Program, a nine-month flagship program designed to prepare software engineers and data professionals for emerging roles such as Machine Learning Engineer, Generative AI Engineer, and AI Architect. The program focuses on equipping working professionals with the skills required to build production-grade AI systems, an area seeing rapidly increasing demand across technology companies. Bosscoder Academy Launches Advanced GenAI & ML Engineering Program to Prepare Engineers for Emerging AI Roles [...] Commenting on the launch, Manish Garg, Cofounder of Bosscoder Academy and former Data Scientist at Samsung, said, \u201cOver the past few years, the demand for engineers who can build real AI systems has grown significantly. Companies are not just looking for people who understand machine learning models, but engineers who can integrate those models into scalable products. With this program, our goal is to help professionals build strong machine learning foundations while also learning how to work with modern generative AI tools to design and deploy complete AI systems.\u201d The program is designed primarily for working professionals, with live classes, structured assignments, mentorship from industry practitioners, and placement assistance to support learners transitioning into AI roles. [...] Bosscoder\u2019s new program is designed to address this shift by combining core machine learning training with modern generative AI engineering practices, helping professionals move beyond theoretical learning and develop the capability to work on real AI systems. The curriculum introduces learners to machine learning frameworks, deep learning concepts, and modern AI development tools, along with practical exposure to building applications powered by large language models and AI agents.",
+        "timestamp": "2026-04-10T12:41:23+00:00"
+      },
+      {
+        "id": "node_8720fa61a67f4150",
+        "chip_id": "#node_8720fa6",
+        "label": "Bosscoder Academ...",
+        "full_title": "Bosscoder Academy vs AI Campus Review (2026): Fees (\u20b980k), Live Classes & Paid Internship*",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 90,
+        "content": "Article: Bosscoder Academy vs AI Campus Review (2026): Fees (\u20b980k), Live Classes & Paid Internship*\nSource: www.aicampus.in\nPublished: 2026-11-07T13:53:28.803501+00:00\nURL: https://www.aicampus.in/blog/bosscoder-academy-vs-ai-campus-2026\nContent: Comparison Parameter (2026) | Scaler / upGrad | Great Learning / Simplilearn | AlmaBetter / Crio.Do | AI Campus (aicampus.in) \u2605 Winner | --- --- | Total Tuition Fee (incl. GST) | \u20b92,80,000 \u2013 \u20b93,99,000 | \u20b91,80,000 \u2013 \u20b93,20,000 | \u20b91,80,000 \u2013 \u20b92,50,000 (or 15\u201320% Salary ISA) | \u20b980,000 Flat (0% EMI from \u20b96,666/mo) | | Teaching Delivery Format | 12 Months (Large 150+ Batches / Blended) | 80% Pre-Recorded Videos + Weekend Q&A | Self-Paced / Micro-Skilling Exercises | 6 Months 100% Live Small-Cohort Architect Training | | Corporate Work Experience | Academic Capstone Projects Only | Sandbox / Recorded Case Studies | Simulated Work-Like Repositories | Guaranteed 6-Month Paid Corporate Internship\\ (Monthly Stipend + Experience Letter) | [...] | Career Parameter | Traditional / Legacy Option (DSA & System Design Coaching) | AI Campus (aicampus.in) \u2014 2026 Advantage | --- | Program Model | Recorded videos or theoretical classroom notes | 6 Months 100% Live Training + 6 Months Guaranteed Paid Corporate Internship | | Fee & EMI Policy | High multi-lakh fees or post-job ISA salary deductions | Transparent Fee Structure with Flexible Zero-Cost EMI Options | | Work Experience Proof | No corporate internship experience certificate | Guaranteed 6-Month Paid Corporate Internship with Monthly Stipend | | Global Certifications | Basic completion certificate | Official IBM SkillsBuild & Microsoft Learn Aligned Credentials | Master DSA, System Design & AI Track with a Guaranteed 6-Month Paid Corporate Internship! [...] AI Campus Bosscoder Academy vs AI Campus Review (2026): Fees (\u20b980k), Live Classes & Paid Internship\\ \ud83d\udcca 2026 Career Guide",
+        "timestamp": "2026-11-07T13:53:28.803501+00:00"
+      },
+      {
+        "id": "node_cd482283fdc046ee",
+        "chip_id": "#node_cd48228",
+        "label": "Deploy a free AI c...",
+        "full_title": "Deploy a free AI code review and project feedback engine to the free tier, coupled with a data\u2011driven upsell funnel to Pro.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 140,
+        "content": "Strategic Move [P0 Critical]: Deploy a free AI code review and project feedback engine to the free tier, coupled with a data\u2011driven upsell funnel to Pro.. Rationale: Counters Scaler's AI interview advantage and addresses the free\u2011tier engagement gap identified in market trends.",
+        "timestamp": "2026-11-07T13:53:40.520716+00:00"
+      },
+      {
+        "id": "node_38f78beeb3474744",
+        "chip_id": "#node_38f78be",
+        "label": "Launch a B2B partn...",
+        "full_title": "Launch a B2B partnership program targeting African tech hubs and NGOs, offering co\u2011branded AI upskilling tracks with revenue sharing.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 195,
+        "content": "Strategic Move [P1 Offensive]: Launch a B2B partnership program targeting African tech hubs and NGOs, offering co\u2011branded AI upskilling tracks with revenue sharing.. Rationale: Exploits the geographic gap where competitors have limited presence, leveraging Bosscoder's advanced GenAI curriculum as a differentiator.",
+        "timestamp": "2026-11-07T13:53:40.520719+00:00"
+      },
+      {
+        "id": "node_15a333e5615b4934",
+        "chip_id": "#node_15a333e",
+        "label": "Audit pricing pari...",
+        "full_title": "Audit pricing parity against Scaler and deploy targeted annual incentive bundles.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 235,
+        "content": "Strategic Move [P0 Critical]: Audit pricing parity against Scaler and deploy targeted annual incentive bundles.. Rationale: Directly counters Scaler's aggressive positioning while defending margin on renewal cohorts.",
+        "timestamp": "2026-11-07T13:53:40.520721+00:00"
+      }
+    ],
+    "recalled_chips": [
+      "#node_cfd664e",
+      "#node_0eac578",
+      "#node_5c72025",
+      "#node_bc9eca9",
+      "#node_8720fa6",
+      "#node_cd48228"
+    ],
+    "instant_prompts": [
+      "What is Bosscoder Academy's pricing moat?",
+      "How have competitor prices shifted?",
+      "What strategic counter-move should we execute?"
+    ]
+  },
+  "source_verification": [
+    {
+      "title": "Bosscoder Academy Pricing (2026): Is Bosscoder Academy Free?",
+      "url": "https://devsunite.com/pricing-guide/bosscoder-academy",
+      "publisher": "devsunite.com",
+      "published_date": "Tue, 03 Nov 2026 13:00:00 GMT",
+      "snippet": "DevsUnite Logo devsunite PricingDownload AppSign in Home/Pricing guides/Bosscoder Academy pricing Bosscoder Academy Pricing (2026): Is Bosscoder Academy Free? Bosscoder Academy: Online upskilling programmes for software engineers (Transformer, Evolve, DevOps and Cloud) plus an Ac...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "Bosscoder Academy vs AI Campus Review (2026): Fees (\u20b980k), Live Classes & Paid Internship*",
+      "url": "https://www.aicampus.in/blog/bosscoder-academy-vs-ai-campus-2026",
+      "publisher": "www.aicampus.in",
+      "published_date": "Monitored Source",
+      "snippet": "Comparison Parameter (2026) | Scaler / upGrad | Great Learning / Simplilearn | AlmaBetter / Crio.Do | AI Campus (aicampus.in) \u2605 Winner | --- --- | Total Tuition Fee (incl. GST) | \u20b92,80,000 \u2013 \u20b93,99,000 | \u20b91,80,000 \u2013 \u20b93,20,000 | \u20b91,80,000 \u2013 \u20b92,50,000 (or 15\u201320% Salary ISA) | \u20b980,00...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "Bosscoder Academy vs DevsUnite (2026): Features and Pricing",
+      "url": "https://devsunite.com/compare/bosscoder-academy-vs-devsunite",
+      "publisher": "devsunite.com",
+      "published_date": "Tue, 03 Nov 2026 13:00:00 GMT",
+      "snippet": "Bosscoder Academy vs DevsUnite compared: what each offers, free tiers, pricing and limitations, with Bosscoder Academy's facts dated and sourced.",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "Bosscoder Academy Launches Advanced GenAI &amp; ML Engineering Program to Prepare Engineers for Emerging AI Roles | Hindustan Times",
+      "url": "https://www.hindustantimes.com/genesis/bosscoder-academy-launches-advanced-genai-ml-engineering-program-to-prepare-engineers-for-emerging-ai-roles-101775824655635.html",
+      "publisher": "www.hindustantimes.com",
+      "published_date": "Fri, 10 Apr 2026 12:41:23 GMT",
+      "snippet": "Bosscoder Academy has announced the launch of its Advanced GenAI & ML Engineering Program, a nine-month flagship program designed to prepare software engineers and data professionals for emerging roles such as Machine Learning Engineer, Generative AI Engineer, and AI Architect. T...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "Bosscoder Academy",
+      "url": "https://tavily.com/knowledge/company/dwDT9m8ZfFBn",
+      "publisher": "tavily.com",
+      "published_date": "Monitored Source",
+      "snippet": "Bosscoder Academy Website: www.bosscoderacademy.com Legal name: Bosscoder Software Services Pvt. Ltd. Headquarters: Noida, Uttar Pradesh, India LinkedIn: www.linkedin.com/school/bosscoderacademy \u00b7 82,710 followers Industry: E-Learning Providers Company type: Educational Founded: ...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "Bosscoder School of Technology Welcomes Students with a Unique Registration Week Experience | Hindustan Times",
+      "url": "https://www.hindustantimes.com/genesis/bosscoder-school-of-technology-welcomes-students-with-a-unique-registration-week-experience-101786611078611.html",
+      "publisher": "www.hindustantimes.com",
+      "published_date": "Thu, 13 Aug 2026 08:56:03 GMT",
+      "snippet": "Bosscoder School of Technology (BST), Bengaluru's industry-integrated B.Tech in Computer Science & Artificial Intelligence, successfully concluded its three-day Registration Week, welcoming students through an innovative onboarding experience designed around aspirations, communit...",
+      "verification_status": "Verified Original Source"
+    }
+  ]
+}

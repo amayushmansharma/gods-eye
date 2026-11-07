@@ -1,0 +1,33 @@
+{
+  "linear-app": [
+    {
+      "id": "dec_1793940305718",
+      "competitor_id": "linear-app",
+      "competitor_name": "Linear",
+      "action": "Held price",
+      "note": "Maintained current tier pricing to preserve 80% margins.",
+      "timestamp": "2026-11-06T04:45:05.718316+00:00",
+      "is_sample": true
+    },
+    {
+      "id": "dec_1793940092206",
+      "competitor_id": "linear-app",
+      "competitor_name": "Linear",
+      "action": "Held price",
+      "note": "Preserved 80% margins while highlighting superior free tier limits.",
+      "timestamp": "2026-11-06T04:41:32.206370+00:00",
+      "is_sample": true
+    }
+  ],
+  "resend-com": [
+    {
+      "id": "dec_1793941780529",
+      "competitor_id": "resend-com",
+      "competitor_name": "Resend",
+      "action": "Held price",
+      "note": "Maintained current pricing to protect 82% margin while rival kept pricing static.",
+      "timestamp": "2026-11-06T05:09:40.529638+00:00",
+      "is_sample": true
+    }
+  ]
+}

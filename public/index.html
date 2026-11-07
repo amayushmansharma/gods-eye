@@ -1872,7 +1872,11 @@
                     ${data.domain}
                   </span>
                 </div>
-                <p class="text-xs text-zinc-400 italic">${escapeHtml(data.tagline || data.industry)}</p>
+                <p class="text-xs text-zinc-400 italic">${escapeHtml(
+                  (data.tagline && data.tagline.trim().toLowerCase() !== (data.brand_name || '').trim().toLowerCase())
+                    ? data.tagline 
+                    : (data.industry || 'Market Intelligence Profile')
+                )}</p>
               </div>
 
               <!-- Top Actions: PDF Export & Simulate Rescan -->

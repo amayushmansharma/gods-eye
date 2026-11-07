@@ -1,0 +1,1227 @@
+{
+  "success": true,
+  "target_url": "https://brave.com",
+  "domain": "brave.com",
+  "brand_name": "Brave",
+  "tagline": "Build a user\u2011first Web",
+  "industry": "Internet technology",
+  "executive_summary": "Brave holds a modest 1\u20131.8% global browser share but differentiates itself with a 44% RAM advantage over Chrome and a zero\u2011data\u2011retention policy, positioning it as a privacy\u2011plus\u2011performance alternative. In the API space, Brave\u2019s transparent tiered pricing ($5 per 1,000 Search requests) competes well against larger incumbents, while its recent defense\u2011sector contracts signal a strategic pivot toward sovereign tech. However, Chrome\u2019s dominant ecosystem and Edge\u2019s Windows integration pose ongoing competitive pressures that require proactive pricing and performance positioning.",
+  "scanned_at": "November 07, 2026 \u2022 12:07:07 UTC",
+  "scanned_at_iso": "2026-11-07T12:07:07.267157+00:00",
+  "duration_seconds": 30.0,
+  "is_baseline_scan": false,
+  "scan_iteration": 8,
+  "bank_id": "godseye-intel-brave-com",
+  "use_memory": true,
+  "is_memory_enabled": true,
+  "stats": {
+    "competitors_count": 4,
+    "news_coverage_days": 7,
+    "verified_sources_count": 6,
+    "recalled_memories_count": 8,
+    "detected_changes_count": 10
+  },
+  "what_happened": {
+    "competitors": [
+      {
+        "id": "chrome",
+        "name": "Google Chrome",
+        "domain": "google.com",
+        "market_share": "68%",
+        "focus": "Browser & search ecosystem",
+        "recent_move": "Launched AI\u2011powered search and V8 engine updates",
+        "price_trend": "Premium",
+        "threat_level": "High",
+        "key_advantage": "Dominant ecosystem & data collection",
+        "key_vulnerability": "Privacy concerns & high resource usage",
+        "brand": "Brave",
+        "fact_type": "competitor_profile",
+        "url": "https://google.com"
+      },
+      {
+        "id": "edge",
+        "name": "Microsoft Edge",
+        "domain": "microsoft.com",
+        "market_share": "5.5%",
+        "focus": "Browser & Windows integration",
+        "recent_move": "Adopted Chromium engine with AI features",
+        "price_trend": "Stable",
+        "threat_level": "Medium",
+        "key_advantage": "Deep Windows integration",
+        "key_vulnerability": "Smaller user base",
+        "brand": "Brave",
+        "fact_type": "competitor_profile",
+        "url": "https://microsoft.com"
+      },
+      {
+        "id": "duckduckgo",
+        "name": "DuckDuckGo",
+        "domain": "duckduckgo.com",
+        "market_share": "0.5%",
+        "focus": "Privacy\u2011centric search",
+        "recent_move": "Released DuckDuckGo API for developers",
+        "price_trend": "Promotional",
+        "threat_level": "Moderate",
+        "key_advantage": "Strong privacy brand",
+        "key_vulnerability": "Limited feature set",
+        "brand": "Brave",
+        "fact_type": "competitor_profile",
+        "url": "https://duckduckgo.com"
+      },
+      {
+        "id": "firefox",
+        "name": "Mozilla Firefox",
+        "domain": "mozilla.org",
+        "market_share": "3%",
+        "focus": "Open\u2011source browser",
+        "recent_move": "Quantum engine upgrade with AI integration",
+        "price_trend": "Stable",
+        "threat_level": "Moderate",
+        "key_advantage": "Open\u2011source community support",
+        "key_vulnerability": "Limited monetization",
+        "brand": "Brave",
+        "fact_type": "competitor_profile",
+        "url": "https://mozilla.org"
+      }
+    ],
+    "market_share_benchmark": {
+      "target": {
+        "name": "Brave",
+        "share": 28,
+        "color": "#0ea5e9",
+        "is_target": true
+      },
+      "rivals": [
+        {
+          "name": "Google Chrome",
+          "share": 68,
+          "color": "#f43f5e",
+          "is_target": false,
+          "domain": "google.com"
+        },
+        {
+          "name": "Microsoft Edge",
+          "share": 5,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "microsoft.com"
+        },
+        {
+          "name": "DuckDuckGo",
+          "share": 0,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "duckduckgo.com"
+        },
+        {
+          "name": "Mozilla Firefox",
+          "share": 3,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "mozilla.org"
+        }
+      ],
+      "all_bars": [
+        {
+          "name": "Brave",
+          "share": 28,
+          "color": "#0ea5e9",
+          "is_target": true
+        },
+        {
+          "name": "Google Chrome",
+          "share": 68,
+          "color": "#f43f5e",
+          "is_target": false,
+          "domain": "google.com"
+        },
+        {
+          "name": "Microsoft Edge",
+          "share": 5,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "microsoft.com"
+        },
+        {
+          "name": "DuckDuckGo",
+          "share": 0,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "duckduckgo.com"
+        },
+        {
+          "name": "Mozilla Firefox",
+          "share": 3,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "mozilla.org"
+        }
+      ]
+    },
+    "pricing_trajectory": {
+      "tiers": [
+        "Tier 1 / Entry",
+        "Tier 2 / Mid-...",
+        "Tier 3 / Flag."
+      ],
+      "target_name": "Brave",
+      "rival_name": "Google Chrome Benchmark",
+      "target_curve": [
+        14,
+        38,
+        92
+      ],
+      "rival_curve": [
+        15,
+        48,
+        94
+      ],
+      "points": [
+        {
+          "tier": "Tier 1 / Entry",
+          "target_val": "Brave Search $5/1k",
+          "rival_val": "SerpApi $10/1k",
+          "target_pct": 14,
+          "rival_pct": 15
+        },
+        {
+          "tier": "Tier 2 / Mid-...",
+          "target_val": "Brave Search $5/1k",
+          "rival_val": "SerpApi $8/1k",
+          "target_pct": 38,
+          "rival_pct": 48
+        },
+        {
+          "tier": "Tier 3 / Flag.",
+          "target_val": "Brave Search $5/1k",
+          "rival_val": "SerpApi $6/1k",
+          "target_pct": 92,
+          "rival_pct": 94
+        }
+      ]
+    },
+    "pricing_feature_matrix": [
+      {
+        "segment": "Tier 1 / Entry",
+        "target_offering": "Brave Search $5/1k",
+        "comp1_offering": "SerpApi $10/1k",
+        "comp2_offering": "Bing Search $4/1k",
+        "comp3_offering": "Google Cloud $6/1k"
+      },
+      {
+        "segment": "Tier 2 / Mid-Volume",
+        "target_offering": "Brave Search $5/1k",
+        "comp1_offering": "SerpApi $8/1k",
+        "comp2_offering": "Bing Search $3.5/1k",
+        "comp3_offering": "Google Cloud $5/1k"
+      },
+      {
+        "segment": "Tier 3 / Flagship",
+        "target_offering": "Brave Search $5/1k",
+        "comp1_offering": "SerpApi $6/1k",
+        "comp2_offering": "Bing Search $3/1k",
+        "comp3_offering": "Google Cloud $4/1k"
+      }
+    ],
+    "news_pulse_7_days": [
+      {
+        "title": "Brave Search API Pricing: Plans, Limits, Cost (2026)",
+        "url": "https://www.activepieces.com/blog/brave-search-api-pricing-plans-limits-cost-2026",
+        "content": "Monthly queries | Fitting plan | Bill after $5 credit (Search / Answers) | Upgrade point | Effective cost per 1,000 (Search / Answers) | --- --- | 1,000 | Either; the credit covers it | $0 / $0 | The first query past 1,000 | $0 | | 10,000 | Answers if you want finished replies | $45 / $35 | When the bill passes your cap | $4.50 / $3.50 | | 100,000 | Pick by workload and set a hard cap | $495 / $395 | Before traffic doubles | $4.95 / $3.95 | | 1,000,000 | Either, after checking limits | $4,995 / $3,995 | Already at the top of this ladder | $5.00 / $4.00 | At 1,000 queries a month, both bills are $0, because the $5 credit absorbs the whole thing. The catch is the edge: query 1,001 starts billing, and a looping script can cross it in an afternoon. [...] AI agent at 10,000 queries a month At this volume an agent costs $45 on Search or $35 on Answers, which works out to $4.50 and $3.50 per 1,000. Agents also retry and fan out, so count queries per task, not per user. > The catch is the edge: query 1,001 starts billing, and a looping script can cross it in an afternoon. Product at 100,000 and 1,000,000 queries At 100,000 queries the bill is [$495 on Search or $395 on Answers], so you need to budget for this cost if you reach this volume. At a million it's [$4,995 or $3,995], which means operating at that scale requires serious justification. Each step up multiplies the bill by almost exactly ten. [...] Each step up multiplies the bill by almost exactly ten. That is $100 a month at the lower volume and $1,000 at the higher: what the choice between the two tiers is worth, which makes it a decision to price out before launch, not after. Know hidden Brave Search API costs and limits Past the sticker price there are other meters, and they run on limits and habits you may not have priced yet. You can be well under the quota and still get refused because two requests landed in the same second. The free plan caps you at one query per second, and that's a separate limit from your monthly quota. Retries and agent loops that multiply queries Rarely does one user question mean one search.",
+        "source": "www.activepieces.com",
+        "published_date": "Wed, 04 Nov 2026 02:10:56 GMT"
+      }
+    ],
+    "detected_changes": [
+      {
+        "category": "Pricing Strategy",
+        "item": "Google Chrome Price Trajectory",
+        "change_type": "changed",
+        "previous_value": "Free (Ad-supported)",
+        "current_value": "Premium",
+        "summary": "Detected pricing trend variance for Google Chrome: shifted from Free (Ad-supported) to Premium.",
+        "significance": "High",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Competitive Moves",
+        "item": "Google Chrome Feature / Move",
+        "change_type": "changed",
+        "previous_value": "Maintaining dominance through ecosystem lock-in an...",
+        "current_value": "Launched AI\u2011powered search and V8 engine updates",
+        "summary": "Observed strategic update for Google Chrome: Launched AI\u2011powered search and V8 engine updates",
+        "significance": "Medium",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Pricing Strategy",
+        "item": "Microsoft Edge Price Trajectory",
+        "change_type": "changed",
+        "previous_value": "Free (OS-bundled)",
+        "current_value": "Stable",
+        "summary": "Detected pricing trend variance for Microsoft Edge: shifted from Free (OS-bundled) to Stable.",
+        "significance": "High",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Competitive Moves",
+        "item": "Microsoft Edge Feature / Move",
+        "change_type": "changed",
+        "previous_value": "Aggressively promoting Copilot+ PC features and in...",
+        "current_value": "Adopted Chromium engine with AI features",
+        "summary": "Observed strategic update for Microsoft Edge: Adopted Chromium engine with AI features",
+        "significance": "Medium",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Pricing Strategy",
+        "item": "DuckDuckGo Price Trajectory",
+        "change_type": "changed",
+        "previous_value": "Free (Ad-supported)",
+        "current_value": "Promotional",
+        "summary": "Detected pricing trend variance for DuckDuckGo: shifted from Free (Ad-supported) to Promotional.",
+        "significance": "High",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Competitive Moves",
+        "item": "DuckDuckGo Feature / Move",
+        "change_type": "changed",
+        "previous_value": "Expanding its browser features and AI chat capabil...",
+        "current_value": "Released DuckDuckGo API for developers",
+        "summary": "Observed strategic update for DuckDuckGo: Released DuckDuckGo API for developers",
+        "significance": "Medium",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Market Structure",
+        "item": "New Rival Identified: Mozilla Firefox",
+        "change_type": "new",
+        "previous_value": "Untracked in prior scan",
+        "current_value": "Open\u2011source browser",
+        "summary": "Discovered additional market rival Mozilla Firefox (mozilla.org) competing against Brave.",
+        "significance": "Medium",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Packaging & Tiers",
+        "item": "Tier 1 / Entry Offering Shift",
+        "change_type": "changed",
+        "previous_value": "Brave Search API: $5 per 1,000 requests (up to 50 req/s), includes web, news, images, videos, LLM Context.",
+        "current_value": "Brave Search $5/1k",
+        "summary": "Pricing tier offering adjusted for Tier 1 / Entry from 'Brave Search API: $5 per 1,000 requests (up to 50 req/s), includes web, news, images, videos, LLM Context.' to 'Brave Search $5/1k'.",
+        "significance": "High",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Packaging & Tiers",
+        "item": "Tier 2 / Mid-Volume Offering Shift",
+        "change_type": "changed",
+        "previous_value": "Brave Answers API: $4 per 1,000 queries + $5 per million input tokens, optimized for LLM integration.",
+        "current_value": "Brave Search $5/1k",
+        "summary": "Pricing tier offering adjusted for Tier 2 / Mid-Volume from 'Brave Answers API: $4 per 1,000 queries + $5 per million input tokens, optimized for LLM integration.' to 'Brave Search $5/1k'.",
+        "significance": "High",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Packaging & Tiers",
+        "item": "Tier 3 / Flagship Offering Shift",
+        "change_type": "changed",
+        "previous_value": "Brave Enterprise: Custom SLAs, dedicated support, and zero-data-retention guarantees for large-scale deployments.",
+        "current_value": "Brave Search $5/1k",
+        "summary": "Pricing tier offering adjusted for Tier 3 / Flagship from 'Brave Enterprise: Custom SLAs, dedicated support, and zero-data-retention guarantees for large-scale deployments.' to 'Brave Search $5/1k'.",
+        "significance": "High",
+        "type": "verified_fact"
+      }
+    ]
+  },
+  "market_share_benchmark": {
+    "target": {
+      "name": "Brave",
+      "share": 28,
+      "color": "#0ea5e9",
+      "is_target": true
+    },
+    "rivals": [
+      {
+        "name": "Google Chrome",
+        "share": 68,
+        "color": "#f43f5e",
+        "is_target": false,
+        "domain": "google.com"
+      },
+      {
+        "name": "Microsoft Edge",
+        "share": 5,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "microsoft.com"
+      },
+      {
+        "name": "DuckDuckGo",
+        "share": 0,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "duckduckgo.com"
+      },
+      {
+        "name": "Mozilla Firefox",
+        "share": 3,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "mozilla.org"
+      }
+    ],
+    "all_bars": [
+      {
+        "name": "Brave",
+        "share": 28,
+        "color": "#0ea5e9",
+        "is_target": true
+      },
+      {
+        "name": "Google Chrome",
+        "share": 68,
+        "color": "#f43f5e",
+        "is_target": false,
+        "domain": "google.com"
+      },
+      {
+        "name": "Microsoft Edge",
+        "share": 5,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "microsoft.com"
+      },
+      {
+        "name": "DuckDuckGo",
+        "share": 0,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "duckduckgo.com"
+      },
+      {
+        "name": "Mozilla Firefox",
+        "share": 3,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "mozilla.org"
+      }
+    ]
+  },
+  "pricing_trajectory": {
+    "tiers": [
+      "Tier 1 / Entry",
+      "Tier 2 / Mid-...",
+      "Tier 3 / Flag."
+    ],
+    "target_name": "Brave",
+    "rival_name": "Google Chrome Benchmark",
+    "target_curve": [
+      14,
+      38,
+      92
+    ],
+    "rival_curve": [
+      15,
+      48,
+      94
+    ],
+    "points": [
+      {
+        "tier": "Tier 1 / Entry",
+        "target_val": "Brave Search $5/1k",
+        "rival_val": "SerpApi $10/1k",
+        "target_pct": 14,
+        "rival_pct": 15
+      },
+      {
+        "tier": "Tier 2 / Mid-...",
+        "target_val": "Brave Search $5/1k",
+        "rival_val": "SerpApi $8/1k",
+        "target_pct": 38,
+        "rival_pct": 48
+      },
+      {
+        "tier": "Tier 3 / Flag.",
+        "target_val": "Brave Search $5/1k",
+        "rival_val": "SerpApi $6/1k",
+        "target_pct": 92,
+        "rival_pct": 94
+      }
+    ]
+  },
+  "why_does_it_matter": {
+    "market_trends": [
+      {
+        "trend": "Privacy\u2011Centric Consumer Shift",
+        "description": "Consumers increasingly demand browsers that protect data and reduce tracking, driving adoption of privacy\u2011first solutions.",
+        "impact": "Increases market share for privacy\u2011focused browsers, pressures incumbents to enhance privacy features."
+      },
+      {
+        "trend": "API Monetization for Search",
+        "description": "Search API providers are moving toward transparent, tiered pricing models to attract developers and enterprises.",
+        "impact": "Creates new revenue streams for API\u2011centric companies and intensifies price competition."
+      }
+    ],
+    "opportunities": [
+      {
+        "title": "Position as Performance+Privacy Flagship",
+        "gap": "Chrome\u2019s high RAM usage and data collection practices",
+        "actionable_counter": "Launch targeted marketing highlighting 44% RAM advantage and zero\u2011data\u2011retention",
+        "potential_upside": "High"
+      },
+      {
+        "title": "Leverage Defense Contracts",
+        "gap": "Limited sovereign tech solutions in defense sector",
+        "actionable_counter": "Expand UNITE\u2011Brave program and secure additional defense grants",
+        "potential_upside": "Medium"
+      }
+    ],
+    "threats": [
+      {
+        "title": "Chrome AI Integration",
+        "competitor": "Google",
+        "move_detail": "Release of AI\u2011powered search and integrated AI features",
+        "severity": "High",
+        "impact_timeline": "Immediate (0-30 days)"
+      },
+      {
+        "title": "Edge Windows Integration",
+        "competitor": "Microsoft",
+        "move_detail": "Deep integration with Office 365 and Windows 11",
+        "severity": "Medium",
+        "impact_timeline": "Medium term (1-3 months)"
+      }
+    ],
+    "hindsight_reflection": "Brave\u2019s competitive trajectory is defined by a dual-track strategy: in the consumer browser market, it is aggressively shifting its positioning from a privacy-centric narrative to a \"performance + privacy\" value proposition, leveraging a 44% RAM advantage over Chrome to justify its standing against commodity pricing. Concurrently, in the enterprise API sector, Brave has established a transparent, tiered pricing structure (e.g., $5 per 1,000 requests for Search) that remains highly competitive against alternatives like SerpApi, which only becomes cheaper at massive volume thresholds. Strategic developments are accelerating with a focus on public benchmarking to reframe buyer conversations around execution speed, while the \"Brave\" brand simultaneously expands into high-stakes defense innovation through the UNITE-Brave NATO program, which is scaling from \u20ac10 million to a planned \u20ac50 million in funding. These trends indicate a continuing commitment to technical superiority and zero-data-retention features, now being leveraged to capture both developer mindshare and sovereign defense contracts.",
+    "recalled_nodes": [
+      {
+        "id": "node_739865fd1aad4e3a",
+        "text": "Strategic Recommendation [P1 Offensive]: Accelerate self-serve product onboarding for high-velocity teams underserved by BRAVE Competitors.. Rationale: BRAVE Competitors is focusing on monolithic enterprise tiers, leaving an opening in developer-first teams.",
+        "timestamp": "2026-11-07T11:59:40.122434+00:00",
+        "score": 10.0,
+        "metadata": {
+          "title": "Exploit Unaddressed Workflow Gaps",
+          "priority": "P1 Offensive",
+          "action": "Accelerate self-serve product onboarding for high-velocity teams underserved by BRAVE Competitors.",
+          "rationale": "BRAVE Competitors is focusing on monolithic enterprise tiers, leaving an opening in developer-first teams.",
+          "expected_outcome": "Drives 15-20% acceleration in qualified product-led conversion.",
+          "type": "strategic_recommendation",
+          "brand": "Brave",
+          "fact_type": "ai_recommendation",
+          "url": ""
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_4b69859ca0388287",
+        "text": "Strategic Recommendation [P0 Critical]: Audit pricing parity against BRAVE Competitors and deploy targeted annual incentive bundles.. Rationale: Directly counters BRAVE Competitors's aggressive positioning while defending margin on renewal cohorts.",
+        "timestamp": "2026-11-07T11:59:40.121205+00:00",
+        "score": 10.0,
+        "metadata": {
+          "title": "Neutralize BRAVE Competitors Pricing Pressure",
+          "priority": "P0 Critical",
+          "action": "Audit pricing parity against BRAVE Competitors and deploy targeted annual incentive bundles.",
+          "rationale": "Directly counters BRAVE Competitors's aggressive positioning while defending margin on renewal cohorts.",
+          "expected_outcome": "Minimizes account churn and locks in retention across key customer segments.",
+          "type": "strategic_recommendation",
+          "brand": "Brave",
+          "fact_type": "ai_recommendation",
+          "url": ""
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_ea0126d52d54f7a3",
+        "text": "Article: Brave Search API Pricing: Plans, Limits, Cost (2026)\nSource: www.activepieces.com\nPublished: 2026-11-04T02:10:56+00:00\nURL: https://www.activepieces.com/blog/brave-search-api-pricing-plans-limits-cost-2026\nContent: Monthly queries | Fitting plan | Bill after $5 credit (Search / Answers) | Upgrade point | Effective cost per 1,000 (Search / Answers) | --- --- | 1,000 | Either; the credit covers it | $0 / $0 | The first query past 1,000 | $0 | | 10,000 | Answers if you want finished replies | $45 / $35 | When the bill passes your cap | $4.50 / $3.50 | | 100,000 | Pick by workload and set a hard cap | $495 / $395 | Before traffic doubles | $4.95 / $3.95 | | 1,000,000 | Either, after checking limits | $4,995 / $3,995 | Already at the top of this ladder | $5.00 / $4.00 | At 1,000 queries a month, both bills are $0, because the $5 credit absorbs the whole thing. The catch is the edge: query 1,001 starts billing, and a looping script can cross it in an afternoon. [...] AI agent at 10,000 queries a month At this volume an agent costs $45 on Search or $35 on Answers, which works out to $4.50 and $3.50 per 1,000. Agents also retry and fan out, so count queries per task, not per user. > The catch is the edge: query 1,001 starts billing, and a looping script can cross it in an afternoon. Product at 100,000 and 1,000,000 queries At 100,000 queries the bill is [$495 on Search or $395 on Answers], so you need to budget for this cost if you reach this volume. At a million it's [$4,995 or $3,995], which means operating at that scale requires serious justification. Each step up multiplies the bill by almost exactly ten. [...] Each step up multiplies the bill by almost exactly ten. That is $100 a month at the lower volume and $1,000 at the higher: what the choice between the two tiers is worth, which makes it a decision to price out before launch, not after. Know hidden Brave Search API costs and limits Past the sticker price there are other meters, and they run on limits and habits you may not have priced yet. You can be well under the quota and still get refused because two requests landed in the same second. The free plan caps you at one query per second, and that's a separate limit from your monthly quota. Retries and agent loops that multiply queries Rarely does one user question mean one search.",
+        "timestamp": "2026-11-04T02:10:56+00:00",
+        "score": 9.0,
+        "metadata": {
+          "source": "www.activepieces.com",
+          "url": "https://www.activepieces.com/blog/brave-search-api-pricing-plans-limits-cost-2026",
+          "brand": "Brave",
+          "title": "Brave Search API Pricing: Plans, Limits, Cost (2026)",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_9c9223d0b83d84d8",
+        "text": "Strategic Recommendation [P2 Strategic]: Double down on performance ergonomics and publish public benchmark comparisons against Brave vs Chrome 2026.. Rationale: Shifts the buyer conversation from a commodity pricing contest to superior execution speed and craft.",
+        "timestamp": "2026-11-07T11:59:40.123539+00:00",
+        "score": 8.0,
+        "metadata": {
+          "title": "Strengthen Differentiated Product Moats",
+          "priority": "P2 Strategic",
+          "action": "Double down on performance ergonomics and publish public benchmark comparisons against Brave vs Chrome 2026.",
+          "rationale": "Shifts the buyer conversation from a commodity pricing contest to superior execution speed and craft.",
+          "expected_outcome": "Reinforces premium brand equity and improves net revenue retention.",
+          "type": "strategic_recommendation",
+          "brand": "Brave",
+          "fact_type": "ai_recommendation",
+          "url": ""
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_3768b7e35fc47663",
+        "text": "Article: Brave Search API Alternatives: 5 Search APIs Compared (2026)\nSource: cloro.dev\nPublished: 2026-10-22T00:00:00+00:00\nURL: https://cloro.dev/comparisons/brave-search-api-alternatives\nContent: Brave sells four public plans (pricing, read 2026-10-22): Search, $5 per 1,000 requests at up to 50 requests per second. It covers web, news, images, videos and the LLM Context endpoint. Answers, $4 per 1,000 queries plus $5 per million input tokens and $5 per million output tokens, at 2 requests per second. Spellcheck and Autocomplete, $5 per 10,000 requests each. Enterprise, priced on request, with zero data retention and custom terms. Each plan includes $5 of credit every month. Brave\u2019s launch post for these plans says that to receive the credit you attribute the Brave Search API on your project\u2019s website or about page. Where Brave earns its price [...] Pricing: Free (250 searches a month), Starter $25 (1,000), Developer $75 (5,000), Production $150 (15,000), Big Data $275 (30,000), up to Cloud plans from $3,750 for 1,000,000 (SerpApi pricing). SerpApi homepage Pros +Google, Bing, Baidu, YouTube, eBay and dozens more under one key. +Parsed AI Overview on Google. +Only successful searches are counted. Cons \u2212$25 per 1,000 on the Starter plan. \u2212The rate drops below Brave's only on plans of 1,000,000 searches a month. Which Brave Search API alternative to pick Need fast, private grounding on the open web, and $5 per 1,000 is fine? Stay on Brave Its index, speed and zero data retention option are the reasons to pay. [...] Pricing: A Google search is 3 credits at 10 results, plus 2 credits for AI Overview and 2 per extra page, on the async route. A synchronous `/v1/monitor/google` call adds 2 credits, so 5 credits for a plain search. Lite is $30/month for 37,500 credits ($0.80 per 1,000 credits), Hobby is $100/month for 250,000 credits ($0.40), and self-serve plans go down to $0.305 per 1,000 credits on Enterprise 5,000, with $0.25 on a custom contract. The Free plan carries 500 credits a month. See the pricing page. cloro homepage Pros +Returns Google's actual results page. +AI Overview and People Also Ask parsed, with cited sources. +ChatGPT, Gemini, Copilot and Google AI Mode under the same key. +$1.20 per 1,000 Google searches on Hobby, less at volume. Cons",
+        "timestamp": "2026-10-22T00:00:00+00:00",
+        "score": 8.0,
+        "metadata": {
+          "source": "cloro.dev",
+          "url": "https://cloro.dev/comparisons/brave-search-api-alternatives",
+          "brand": "Brave",
+          "title": "Brave Search API Alternatives: 5 Search APIs Compared (2026)",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_5475ebd7b426eaab",
+        "text": "Article: Salesforce Signs Definitive Agreement to Acquire Braze - Salesforce\nSource: www.salesforce.com\nPublished: 2026-10-20T00:00:00+00:00\nURL: https://www.salesforce.com/news/press-releases/2026/10/20/salesforce-signs-definitive-agreement-to-acquire-braze\nContent: in marketing technology by industry analysts and was named a G2 \u201cBest of Marketing and Digital Advertising Software Product\u201d in 2026. Braze was also named one of Built In\u2019s 2026 Best Places to Work, one of America\u2019s Greenest Companies for 2025 by Newsweek, and a 2025 Fortune Best Workplace in Technology\u2122 by Great Place To Work\u00ae. The company is headquartered in New York with 15 offices across the Americas, EMEA, and APAC. Learn more at Braze.com. [...] not be realized within the expected time period, (xiii) the possibility that competing offers may be made, (xiv) negative effects of the announcement or the consummation of the proposed acquisition on the market price of Salesforce\u2019s common stock and/or operating results, (xv) significant transaction costs and expenses, and (xvi) unknown liabilities. [...] the requisite vote by Braze shareholders and satisfy other conditions to the completion of the transaction, (ii) the effect of the announcement or pendency of the proposed transaction on Braze\u2019s business, operating results, ability to retain and hire key personnel, and relationships with customers, suppliers, competitors and others, (iii) risks that the proposed transaction may disrupt Braze\u2019s current plans and business operations or divert management\u2019s attention from ongoing business operations, (iv) the occurrence of any event, change or other circumstances that could give rise to the termination of the merger agreement, (v) the risk that the merger agreement may be terminated in circumstances requiring Salesforce or Braze to pay a termination fee, (vi) the risk and outcome of any legal",
+        "timestamp": "2026-10-20T00:00:00+00:00",
+        "score": 8.0,
+        "metadata": {
+          "source": "www.salesforce.com",
+          "url": "https://www.salesforce.com/news/press-releases/2026/10/20/salesforce-signs-definitive-agreement-to-acquire-braze",
+          "brand": "Brave",
+          "title": "Salesforce Signs Definitive Agreement to Acquire Braze - Salesforce",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_27950b1006a81a74",
+        "text": "Competitor Identified: BRAVE Competitors (rocketreach.co). Focus: Direct Industry Competitor. Move: Active in target market segment. Price: Monitored.",
+        "timestamp": "2026-11-07T11:59:40.116925+00:00",
+        "score": 7.0,
+        "metadata": {
+          "id": "comp-3",
+          "name": "BRAVE Competitors",
+          "domain": "rocketreach.co",
+          "market_share": "Peer Competitor",
+          "focus": "Direct Industry Competitor",
+          "recent_move": "Active in target market segment",
+          "price_trend": "Monitored",
+          "threat_level": "Medium",
+          "key_advantage": "Market presence in core segment",
+          "key_vulnerability": "Specialized positioning gap",
+          "brand": "Brave",
+          "fact_type": "competitor_profile",
+          "url": "https://rocketreach.co"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_f88a1a8c389293f3",
+        "text": "Competitor Identified: SerpApi (serpapi.com). Focus: Search Engine Results Page (SERP) API. Move: Aggressive volume-tier pricing undercutting Brave's $5/1k rate for high-volume enterprise clients. Price: Decreasing (Volume discounts).",
+        "timestamp": "2026-11-07T11:53:53.664305+00:00",
+        "score": 7.0,
+        "metadata": {
+          "id": "serpapi",
+          "name": "SerpApi",
+          "domain": "serpapi.com",
+          "market_share": "Niche API Provider",
+          "focus": "Search Engine Results Page (SERP) API",
+          "recent_move": "Aggressive volume-tier pricing undercutting Brave's $5/1k rate for high-volume enterprise clients",
+          "price_trend": "Decreasing (Volume discounts)",
+          "threat_level": "Medium",
+          "key_advantage": "Lower per-unit cost at high volume tiers and broader engine support",
+          "key_vulnerability": "Lacks native privacy guarantees and zero-data-retention certification",
+          "brand": "Brave",
+          "fact_type": "competitor_profile",
+          "url": "https://serpapi.com"
+        },
+        "storage_backend": "hindsight_embedded"
+      }
+    ]
+  },
+  "what_should_we_do": {
+    "strategic_recommendations": [
+      {
+        "title": "Audit pricing parity against competitors and ...",
+        "priority": "P0 Critical",
+        "action": "Audit pricing parity against competitors and deploy targeted annual incentive bundles",
+        "rationale": "Directly counters Brave\u2019s aggressive pricing and aligns with competitor price adjustments",
+        "expected_outcome": "Defend margins and prevent price erosion",
+        "type": "strategic_recommendation",
+        "brand": "Brave",
+        "fact_type": "ai_recommendation",
+        "url": ""
+      },
+      {
+        "title": "Double down on performance ergonomics and pub...",
+        "priority": "P1 Offensive",
+        "action": "Double down on performance ergonomics and publish public benchmark comparisons vs Chrome",
+        "rationale": "Shifts buyer conversation from price to execution speed and performance",
+        "expected_outcome": "Increase customer acquisition and retention",
+        "type": "strategic_recommendation",
+        "brand": "Brave",
+        "fact_type": "ai_recommendation",
+        "url": ""
+      },
+      {
+        "title": "Neutralize Google Chrome Pricing Pressure",
+        "priority": "P0 Critical",
+        "action": "Audit pricing parity against Google Chrome and deploy targeted annual incentive bundles.",
+        "rationale": "Directly counters Google Chrome's aggressive positioning while defending margin on renewal cohorts.",
+        "expected_outcome": "Minimizes account churn and locks in retention across key customer segments.",
+        "type": "strategic_recommendation",
+        "brand": "Brave",
+        "fact_type": "ai_recommendation",
+        "url": ""
+      }
+    ],
+    "founder_decisions": []
+  },
+  "hindsight_memory": {
+    "bank_id": "godseye-intel-brave-com",
+    "storage_backend": "hindsight_embedded",
+    "is_memory_enabled": true,
+    "is_baseline": false,
+    "reflection_text": "Brave\u2019s competitive trajectory is defined by a dual-track strategy: in the consumer browser market, it is aggressively shifting its positioning from a privacy-centric narrative to a \"performance + privacy\" value proposition, leveraging a 44% RAM advantage over Chrome to justify its standing against commodity pricing. Concurrently, in the enterprise API sector, Brave has established a transparent, tiered pricing structure (e.g., $5 per 1,000 requests for Search) that remains highly competitive against alternatives like SerpApi, which only becomes cheaper at massive volume thresholds. Strategic developments are accelerating with a focus on public benchmarking to reframe buyer conversations around execution speed, while the \"Brave\" brand simultaneously expands into high-stakes defense innovation through the UNITE-Brave NATO program, which is scaling from \u20ac10 million to a planned \u20ac50 million in funding. These trends indicate a continuing commitment to technical superiority and zero-data-retention features, now being leveraged to capture both developer mindshare and sovereign defense contracts.",
+    "recalled_nodes_count": 8,
+    "recalled_nodes": [
+      {
+        "id": "node_739865fd1aad4e3a",
+        "text": "Strategic Recommendation [P1 Offensive]: Accelerate self-serve product onboarding for high-velocity teams underserved by BRAVE Competitors.. Rationale: BRAVE Competitors is focusing on monolithic enterprise tiers, leaving an opening in developer-first teams.",
+        "timestamp": "2026-11-07T11:59:40.122434+00:00",
+        "score": 10.0,
+        "metadata": {
+          "title": "Exploit Unaddressed Workflow Gaps",
+          "priority": "P1 Offensive",
+          "action": "Accelerate self-serve product onboarding for high-velocity teams underserved by BRAVE Competitors.",
+          "rationale": "BRAVE Competitors is focusing on monolithic enterprise tiers, leaving an opening in developer-first teams.",
+          "expected_outcome": "Drives 15-20% acceleration in qualified product-led conversion.",
+          "type": "strategic_recommendation",
+          "brand": "Brave",
+          "fact_type": "ai_recommendation",
+          "url": ""
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_4b69859ca0388287",
+        "text": "Strategic Recommendation [P0 Critical]: Audit pricing parity against BRAVE Competitors and deploy targeted annual incentive bundles.. Rationale: Directly counters BRAVE Competitors's aggressive positioning while defending margin on renewal cohorts.",
+        "timestamp": "2026-11-07T11:59:40.121205+00:00",
+        "score": 10.0,
+        "metadata": {
+          "title": "Neutralize BRAVE Competitors Pricing Pressure",
+          "priority": "P0 Critical",
+          "action": "Audit pricing parity against BRAVE Competitors and deploy targeted annual incentive bundles.",
+          "rationale": "Directly counters BRAVE Competitors's aggressive positioning while defending margin on renewal cohorts.",
+          "expected_outcome": "Minimizes account churn and locks in retention across key customer segments.",
+          "type": "strategic_recommendation",
+          "brand": "Brave",
+          "fact_type": "ai_recommendation",
+          "url": ""
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_ea0126d52d54f7a3",
+        "text": "Article: Brave Search API Pricing: Plans, Limits, Cost (2026)\nSource: www.activepieces.com\nPublished: 2026-11-04T02:10:56+00:00\nURL: https://www.activepieces.com/blog/brave-search-api-pricing-plans-limits-cost-2026\nContent: Monthly queries | Fitting plan | Bill after $5 credit (Search / Answers) | Upgrade point | Effective cost per 1,000 (Search / Answers) | --- --- | 1,000 | Either; the credit covers it | $0 / $0 | The first query past 1,000 | $0 | | 10,000 | Answers if you want finished replies | $45 / $35 | When the bill passes your cap | $4.50 / $3.50 | | 100,000 | Pick by workload and set a hard cap | $495 / $395 | Before traffic doubles | $4.95 / $3.95 | | 1,000,000 | Either, after checking limits | $4,995 / $3,995 | Already at the top of this ladder | $5.00 / $4.00 | At 1,000 queries a month, both bills are $0, because the $5 credit absorbs the whole thing. The catch is the edge: query 1,001 starts billing, and a looping script can cross it in an afternoon. [...] AI agent at 10,000 queries a month At this volume an agent costs $45 on Search or $35 on Answers, which works out to $4.50 and $3.50 per 1,000. Agents also retry and fan out, so count queries per task, not per user. > The catch is the edge: query 1,001 starts billing, and a looping script can cross it in an afternoon. Product at 100,000 and 1,000,000 queries At 100,000 queries the bill is [$495 on Search or $395 on Answers], so you need to budget for this cost if you reach this volume. At a million it's [$4,995 or $3,995], which means operating at that scale requires serious justification. Each step up multiplies the bill by almost exactly ten. [...] Each step up multiplies the bill by almost exactly ten. That is $100 a month at the lower volume and $1,000 at the higher: what the choice between the two tiers is worth, which makes it a decision to price out before launch, not after. Know hidden Brave Search API costs and limits Past the sticker price there are other meters, and they run on limits and habits you may not have priced yet. You can be well under the quota and still get refused because two requests landed in the same second. The free plan caps you at one query per second, and that's a separate limit from your monthly quota. Retries and agent loops that multiply queries Rarely does one user question mean one search.",
+        "timestamp": "2026-11-04T02:10:56+00:00",
+        "score": 9.0,
+        "metadata": {
+          "source": "www.activepieces.com",
+          "url": "https://www.activepieces.com/blog/brave-search-api-pricing-plans-limits-cost-2026",
+          "brand": "Brave",
+          "title": "Brave Search API Pricing: Plans, Limits, Cost (2026)",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_9c9223d0b83d84d8",
+        "text": "Strategic Recommendation [P2 Strategic]: Double down on performance ergonomics and publish public benchmark comparisons against Brave vs Chrome 2026.. Rationale: Shifts the buyer conversation from a commodity pricing contest to superior execution speed and craft.",
+        "timestamp": "2026-11-07T11:59:40.123539+00:00",
+        "score": 8.0,
+        "metadata": {
+          "title": "Strengthen Differentiated Product Moats",
+          "priority": "P2 Strategic",
+          "action": "Double down on performance ergonomics and publish public benchmark comparisons against Brave vs Chrome 2026.",
+          "rationale": "Shifts the buyer conversation from a commodity pricing contest to superior execution speed and craft.",
+          "expected_outcome": "Reinforces premium brand equity and improves net revenue retention.",
+          "type": "strategic_recommendation",
+          "brand": "Brave",
+          "fact_type": "ai_recommendation",
+          "url": ""
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_3768b7e35fc47663",
+        "text": "Article: Brave Search API Alternatives: 5 Search APIs Compared (2026)\nSource: cloro.dev\nPublished: 2026-10-22T00:00:00+00:00\nURL: https://cloro.dev/comparisons/brave-search-api-alternatives\nContent: Brave sells four public plans (pricing, read 2026-10-22): Search, $5 per 1,000 requests at up to 50 requests per second. It covers web, news, images, videos and the LLM Context endpoint. Answers, $4 per 1,000 queries plus $5 per million input tokens and $5 per million output tokens, at 2 requests per second. Spellcheck and Autocomplete, $5 per 10,000 requests each. Enterprise, priced on request, with zero data retention and custom terms. Each plan includes $5 of credit every month. Brave\u2019s launch post for these plans says that to receive the credit you attribute the Brave Search API on your project\u2019s website or about page. Where Brave earns its price [...] Pricing: Free (250 searches a month), Starter $25 (1,000), Developer $75 (5,000), Production $150 (15,000), Big Data $275 (30,000), up to Cloud plans from $3,750 for 1,000,000 (SerpApi pricing). SerpApi homepage Pros +Google, Bing, Baidu, YouTube, eBay and dozens more under one key. +Parsed AI Overview on Google. +Only successful searches are counted. Cons \u2212$25 per 1,000 on the Starter plan. \u2212The rate drops below Brave's only on plans of 1,000,000 searches a month. Which Brave Search API alternative to pick Need fast, private grounding on the open web, and $5 per 1,000 is fine? Stay on Brave Its index, speed and zero data retention option are the reasons to pay. [...] Pricing: A Google search is 3 credits at 10 results, plus 2 credits for AI Overview and 2 per extra page, on the async route. A synchronous `/v1/monitor/google` call adds 2 credits, so 5 credits for a plain search. Lite is $30/month for 37,500 credits ($0.80 per 1,000 credits), Hobby is $100/month for 250,000 credits ($0.40), and self-serve plans go down to $0.305 per 1,000 credits on Enterprise 5,000, with $0.25 on a custom contract. The Free plan carries 500 credits a month. See the pricing page. cloro homepage Pros +Returns Google's actual results page. +AI Overview and People Also Ask parsed, with cited sources. +ChatGPT, Gemini, Copilot and Google AI Mode under the same key. +$1.20 per 1,000 Google searches on Hobby, less at volume. Cons",
+        "timestamp": "2026-10-22T00:00:00+00:00",
+        "score": 8.0,
+        "metadata": {
+          "source": "cloro.dev",
+          "url": "https://cloro.dev/comparisons/brave-search-api-alternatives",
+          "brand": "Brave",
+          "title": "Brave Search API Alternatives: 5 Search APIs Compared (2026)",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_5475ebd7b426eaab",
+        "text": "Article: Salesforce Signs Definitive Agreement to Acquire Braze - Salesforce\nSource: www.salesforce.com\nPublished: 2026-10-20T00:00:00+00:00\nURL: https://www.salesforce.com/news/press-releases/2026/10/20/salesforce-signs-definitive-agreement-to-acquire-braze\nContent: in marketing technology by industry analysts and was named a G2 \u201cBest of Marketing and Digital Advertising Software Product\u201d in 2026. Braze was also named one of Built In\u2019s 2026 Best Places to Work, one of America\u2019s Greenest Companies for 2025 by Newsweek, and a 2025 Fortune Best Workplace in Technology\u2122 by Great Place To Work\u00ae. The company is headquartered in New York with 15 offices across the Americas, EMEA, and APAC. Learn more at Braze.com. [...] not be realized within the expected time period, (xiii) the possibility that competing offers may be made, (xiv) negative effects of the announcement or the consummation of the proposed acquisition on the market price of Salesforce\u2019s common stock and/or operating results, (xv) significant transaction costs and expenses, and (xvi) unknown liabilities. [...] the requisite vote by Braze shareholders and satisfy other conditions to the completion of the transaction, (ii) the effect of the announcement or pendency of the proposed transaction on Braze\u2019s business, operating results, ability to retain and hire key personnel, and relationships with customers, suppliers, competitors and others, (iii) risks that the proposed transaction may disrupt Braze\u2019s current plans and business operations or divert management\u2019s attention from ongoing business operations, (iv) the occurrence of any event, change or other circumstances that could give rise to the termination of the merger agreement, (v) the risk that the merger agreement may be terminated in circumstances requiring Salesforce or Braze to pay a termination fee, (vi) the risk and outcome of any legal",
+        "timestamp": "2026-10-20T00:00:00+00:00",
+        "score": 8.0,
+        "metadata": {
+          "source": "www.salesforce.com",
+          "url": "https://www.salesforce.com/news/press-releases/2026/10/20/salesforce-signs-definitive-agreement-to-acquire-braze",
+          "brand": "Brave",
+          "title": "Salesforce Signs Definitive Agreement to Acquire Braze - Salesforce",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_27950b1006a81a74",
+        "text": "Competitor Identified: BRAVE Competitors (rocketreach.co). Focus: Direct Industry Competitor. Move: Active in target market segment. Price: Monitored.",
+        "timestamp": "2026-11-07T11:59:40.116925+00:00",
+        "score": 7.0,
+        "metadata": {
+          "id": "comp-3",
+          "name": "BRAVE Competitors",
+          "domain": "rocketreach.co",
+          "market_share": "Peer Competitor",
+          "focus": "Direct Industry Competitor",
+          "recent_move": "Active in target market segment",
+          "price_trend": "Monitored",
+          "threat_level": "Medium",
+          "key_advantage": "Market presence in core segment",
+          "key_vulnerability": "Specialized positioning gap",
+          "brand": "Brave",
+          "fact_type": "competitor_profile",
+          "url": "https://rocketreach.co"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_f88a1a8c389293f3",
+        "text": "Competitor Identified: SerpApi (serpapi.com). Focus: Search Engine Results Page (SERP) API. Move: Aggressive volume-tier pricing undercutting Brave's $5/1k rate for high-volume enterprise clients. Price: Decreasing (Volume discounts).",
+        "timestamp": "2026-11-07T11:53:53.664305+00:00",
+        "score": 7.0,
+        "metadata": {
+          "id": "serpapi",
+          "name": "SerpApi",
+          "domain": "serpapi.com",
+          "market_share": "Niche API Provider",
+          "focus": "Search Engine Results Page (SERP) API",
+          "recent_move": "Aggressive volume-tier pricing undercutting Brave's $5/1k rate for high-volume enterprise clients",
+          "price_trend": "Decreasing (Volume discounts)",
+          "threat_level": "Medium",
+          "key_advantage": "Lower per-unit cost at high volume tiers and broader engine support",
+          "key_vulnerability": "Lacks native privacy guarantees and zero-data-retention certification",
+          "brand": "Brave",
+          "fact_type": "competitor_profile",
+          "url": "https://serpapi.com"
+        },
+        "storage_backend": "hindsight_embedded"
+      }
+    ],
+    "neural_network": {
+      "center_node": {
+        "id": "node_center",
+        "label": "Brave",
+        "color": "#0284c7"
+      },
+      "radial_nodes": [
+        {
+          "id": "node_d5074ce63322406b",
+          "chip_id": "#node_d5074ce",
+          "label": "Strategic Recomm...",
+          "full_title": "Strategic Recommendation [P1 Offensive]: Accelerate self-serve product onboarding for high-velocity teams underserved by BRAVE Competitors.. Rationale: BRAVE Competitors is focusing on monolithic enterprise tiers, leaving an opening in developer-first teams.",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 270,
+          "content": "Strategic Recommendation [P1 Offensive]: Accelerate self-serve product onboarding for high-velocity teams underserved by BRAVE Competitors.. Rationale: BRAVE Competitors is focusing on monolithic enterprise tiers, leaving an opening in developer-first teams.",
+          "timestamp": "2026-11-07T11:59:40.122434+00:00"
+        },
+        {
+          "id": "node_d45a2062fb2c4957",
+          "chip_id": "#node_d45a206",
+          "label": "Strategic Recomm...",
+          "full_title": "Strategic Recommendation [P0 Critical]: Audit pricing parity against BRAVE Competitors and deploy targeted annual incentive bundles.. Rationale: Directly counters BRAVE Competitors's aggressive positioning while defending margin on renewal cohorts.",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 320,
+          "content": "Strategic Recommendation [P0 Critical]: Audit pricing parity against BRAVE Competitors and deploy targeted annual incentive bundles.. Rationale: Directly counters BRAVE Competitors's aggressive positioning while defending margin on renewal cohorts.",
+          "timestamp": "2026-11-07T11:59:40.121205+00:00"
+        },
+        {
+          "id": "node_90ccf54f8b754815",
+          "chip_id": "#node_90ccf54",
+          "label": "Brave Search API...",
+          "full_title": "Brave Search API Pricing: Plans, Limits, Cost (2026)",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 15,
+          "content": "Article: Brave Search API Pricing: Plans, Limits, Cost (2026)\nSource: www.activepieces.com\nPublished: 2026-11-04T02:10:56+00:00\nURL: https://www.activepieces.com/blog/brave-search-api-pricing-plans-limits-cost-2026\nContent: Monthly queries | Fitting plan | Bill after $5 credit (Search / Answers) | Upgrade point | Effective cost per 1,000 (Search / Answers) | --- --- | 1,000 | Either; the credit covers it | $0 / $0 | The first query past 1,000 | $0 | | 10,000 | Answers if you want finished replies | $45 / $35 | When the bill passes your cap | $4.50 / $3.50 | | 100,000 | Pick by workload and set a hard cap | $495 / $395 | Before traffic doubles | $4.95 / $3.95 | | 1,000,000 | Either, after checking limits | $4,995 / $3,995 | Already at the top of this ladder | $5.00 / $4.00 | At 1,000 queries a month, both bills are $0, because the $5 credit absorbs the whole thing. The catch is the edge: query 1,001 starts billing, and a looping script can cross it in an afternoon. [...] AI agent at 10,000 queries a month At this volume an agent costs $45 on Search or $35 on Answers, which works out to $4.50 and $3.50 per 1,000. Agents also retry and fan out, so count queries per task, not per user. > The catch is the edge: query 1,001 starts billing, and a looping script can cross it in an afternoon. Product at 100,000 and 1,000,000 queries At 100,000 queries the bill is [$495 on Search or $395 on Answers], so you need to budget for this cost if you reach this volume. At a million it's [$4,995 or $3,995], which means operating at that scale requires serious justification. Each step up multiplies the bill by almost exactly ten. [...] Each step up multiplies the bill by almost exactly ten. That is $100 a month at the lower volume and $1,000 at the higher: what the choice between the two tiers is worth, which makes it a decision to price out before launch, not after. Know hidden Brave Search API costs and limits Past the sticker price there are other meters, and they run on limits and habits you may not have priced yet. You can be well under the quota and still get refused because two requests landed in the same second. The free plan caps you at one query per second, and that's a separate limit from your monthly quota. Retries and agent loops that multiply queries Rarely does one user question mean one search.",
+          "timestamp": "2026-11-04T02:10:56+00:00"
+        },
+        {
+          "id": "node_3995a2837ece4f84",
+          "chip_id": "#node_3995a28",
+          "label": "Strategic Recomm...",
+          "full_title": "Strategic Recommendation [P2 Strategic]: Double down on performance ergonomics and publish public benchmark comparisons against Brave vs Chrome 2026.. Rationale: Shifts the buyer conversation from a commodity pricing contest to superior execution speed and craft.",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 65,
+          "content": "Strategic Recommendation [P2 Strategic]: Double down on performance ergonomics and publish public benchmark comparisons against Brave vs Chrome 2026.. Rationale: Shifts the buyer conversation from a commodity pricing contest to superior execution speed and craft.",
+          "timestamp": "2026-11-07T11:59:40.123539+00:00"
+        },
+        {
+          "id": "node_21710123bb0e4b35",
+          "chip_id": "#node_2171012",
+          "label": "Brave Search API...",
+          "full_title": "Brave Search API Alternatives: 5 Search APIs Compared (2026)",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 90,
+          "content": "Article: Brave Search API Alternatives: 5 Search APIs Compared (2026)\nSource: cloro.dev\nPublished: 2026-10-22T00:00:00+00:00\nURL: https://cloro.dev/comparisons/brave-search-api-alternatives\nContent: Brave sells four public plans (pricing, read 2026-10-22): Search, $5 per 1,000 requests at up to 50 requests per second. It covers web, news, images, videos and the LLM Context endpoint. Answers, $4 per 1,000 queries plus $5 per million input tokens and $5 per million output tokens, at 2 requests per second. Spellcheck and Autocomplete, $5 per 10,000 requests each. Enterprise, priced on request, with zero data retention and custom terms. Each plan includes $5 of credit every month. Brave\u2019s launch post for these plans says that to receive the credit you attribute the Brave Search API on your project\u2019s website or about page. Where Brave earns its price [...] Pricing: Free (250 searches a month), Starter $25 (1,000), Developer $75 (5,000), Production $150 (15,000), Big Data $275 (30,000), up to Cloud plans from $3,750 for 1,000,000 (SerpApi pricing). SerpApi homepage Pros +Google, Bing, Baidu, YouTube, eBay and dozens more under one key. +Parsed AI Overview on Google. +Only successful searches are counted. Cons \u2212$25 per 1,000 on the Starter plan. \u2212The rate drops below Brave's only on plans of 1,000,000 searches a month. Which Brave Search API alternative to pick Need fast, private grounding on the open web, and $5 per 1,000 is fine? Stay on Brave Its index, speed and zero data retention option are the reasons to pay. [...] Pricing: A Google search is 3 credits at 10 results, plus 2 credits for AI Overview and 2 per extra page, on the async route. A synchronous `/v1/monitor/google` call adds 2 credits, so 5 credits for a plain search. Lite is $30/month for 37,500 credits ($0.80 per 1,000 credits), Hobby is $100/month for 250,000 credits ($0.40), and self-serve plans go down to $0.305 per 1,000 credits on Enterprise 5,000, with $0.25 on a custom contract. The Free plan carries 500 credits a month. See the pricing page. cloro homepage Pros +Returns Google's actual results page. +AI Overview and People Also Ask parsed, with cited sources. +ChatGPT, Gemini, Copilot and Google AI Mode under the same key. +$1.20 per 1,000 Google searches on Hobby, less at volume. Cons",
+          "timestamp": "2026-10-22T00:00:00+00:00"
+        },
+        {
+          "id": "node_5c522790464d4b19",
+          "chip_id": "#node_5c52279",
+          "label": "Audit pricing pari...",
+          "full_title": "Audit pricing parity against competitors and deploy targeted annual incentive bundles",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 140,
+          "content": "Strategic Move [P0 Critical]: Audit pricing parity against competitors and deploy targeted annual incentive bundles. Rationale: Directly counters Brave\u2019s aggressive pricing and aligns with competitor price adjustments",
+          "timestamp": "2026-11-07T12:07:07.267708+00:00"
+        },
+        {
+          "id": "node_5f06658e3014422c",
+          "chip_id": "#node_5f06658",
+          "label": "Double down on per...",
+          "full_title": "Double down on performance ergonomics and publish public benchmark comparisons vs Chrome",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 195,
+          "content": "Strategic Move [P1 Offensive]: Double down on performance ergonomics and publish public benchmark comparisons vs Chrome. Rationale: Shifts buyer conversation from price to execution speed and performance",
+          "timestamp": "2026-11-07T12:07:07.267716+00:00"
+        },
+        {
+          "id": "node_4c5c292f283a49f2",
+          "chip_id": "#node_4c5c292",
+          "label": "Audit pricing pari...",
+          "full_title": "Audit pricing parity against Google Chrome and deploy targeted annual incentive bundles.",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 235,
+          "content": "Strategic Move [P0 Critical]: Audit pricing parity against Google Chrome and deploy targeted annual incentive bundles.. Rationale: Directly counters Google Chrome's aggressive positioning while defending margin on renewal cohorts.",
+          "timestamp": "2026-11-07T12:07:07.267719+00:00"
+        }
+      ],
+      "recalled_chips": [
+        "#node_d5074ce",
+        "#node_d45a206",
+        "#node_90ccf54",
+        "#node_3995a28",
+        "#node_2171012",
+        "#node_5c52279"
+      ],
+      "instant_prompts": [
+        "What is Brave's pricing moat?",
+        "How have competitor prices shifted?",
+        "What strategic counter-move should we execute?"
+      ]
+    },
+    "neural_nodes": [
+      {
+        "id": "node_d5074ce63322406b",
+        "chip_id": "#node_d5074ce",
+        "label": "Strategic Recomm...",
+        "full_title": "Strategic Recommendation [P1 Offensive]: Accelerate self-serve product onboarding for high-velocity teams underserved by BRAVE Competitors.. Rationale: BRAVE Competitors is focusing on monolithic enterprise tiers, leaving an opening in developer-first teams.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 270,
+        "content": "Strategic Recommendation [P1 Offensive]: Accelerate self-serve product onboarding for high-velocity teams underserved by BRAVE Competitors.. Rationale: BRAVE Competitors is focusing on monolithic enterprise tiers, leaving an opening in developer-first teams.",
+        "timestamp": "2026-11-07T11:59:40.122434+00:00"
+      },
+      {
+        "id": "node_d45a2062fb2c4957",
+        "chip_id": "#node_d45a206",
+        "label": "Strategic Recomm...",
+        "full_title": "Strategic Recommendation [P0 Critical]: Audit pricing parity against BRAVE Competitors and deploy targeted annual incentive bundles.. Rationale: Directly counters BRAVE Competitors's aggressive positioning while defending margin on renewal cohorts.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 320,
+        "content": "Strategic Recommendation [P0 Critical]: Audit pricing parity against BRAVE Competitors and deploy targeted annual incentive bundles.. Rationale: Directly counters BRAVE Competitors's aggressive positioning while defending margin on renewal cohorts.",
+        "timestamp": "2026-11-07T11:59:40.121205+00:00"
+      },
+      {
+        "id": "node_90ccf54f8b754815",
+        "chip_id": "#node_90ccf54",
+        "label": "Brave Search API...",
+        "full_title": "Brave Search API Pricing: Plans, Limits, Cost (2026)",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 15,
+        "content": "Article: Brave Search API Pricing: Plans, Limits, Cost (2026)\nSource: www.activepieces.com\nPublished: 2026-11-04T02:10:56+00:00\nURL: https://www.activepieces.com/blog/brave-search-api-pricing-plans-limits-cost-2026\nContent: Monthly queries | Fitting plan | Bill after $5 credit (Search / Answers) | Upgrade point | Effective cost per 1,000 (Search / Answers) | --- --- | 1,000 | Either; the credit covers it | $0 / $0 | The first query past 1,000 | $0 | | 10,000 | Answers if you want finished replies | $45 / $35 | When the bill passes your cap | $4.50 / $3.50 | | 100,000 | Pick by workload and set a hard cap | $495 / $395 | Before traffic doubles | $4.95 / $3.95 | | 1,000,000 | Either, after checking limits | $4,995 / $3,995 | Already at the top of this ladder | $5.00 / $4.00 | At 1,000 queries a month, both bills are $0, because the $5 credit absorbs the whole thing. The catch is the edge: query 1,001 starts billing, and a looping script can cross it in an afternoon. [...] AI agent at 10,000 queries a month At this volume an agent costs $45 on Search or $35 on Answers, which works out to $4.50 and $3.50 per 1,000. Agents also retry and fan out, so count queries per task, not per user. > The catch is the edge: query 1,001 starts billing, and a looping script can cross it in an afternoon. Product at 100,000 and 1,000,000 queries At 100,000 queries the bill is [$495 on Search or $395 on Answers], so you need to budget for this cost if you reach this volume. At a million it's [$4,995 or $3,995], which means operating at that scale requires serious justification. Each step up multiplies the bill by almost exactly ten. [...] Each step up multiplies the bill by almost exactly ten. That is $100 a month at the lower volume and $1,000 at the higher: what the choice between the two tiers is worth, which makes it a decision to price out before launch, not after. Know hidden Brave Search API costs and limits Past the sticker price there are other meters, and they run on limits and habits you may not have priced yet. You can be well under the quota and still get refused because two requests landed in the same second. The free plan caps you at one query per second, and that's a separate limit from your monthly quota. Retries and agent loops that multiply queries Rarely does one user question mean one search.",
+        "timestamp": "2026-11-04T02:10:56+00:00"
+      },
+      {
+        "id": "node_3995a2837ece4f84",
+        "chip_id": "#node_3995a28",
+        "label": "Strategic Recomm...",
+        "full_title": "Strategic Recommendation [P2 Strategic]: Double down on performance ergonomics and publish public benchmark comparisons against Brave vs Chrome 2026.. Rationale: Shifts the buyer conversation from a commodity pricing contest to superior execution speed and craft.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 65,
+        "content": "Strategic Recommendation [P2 Strategic]: Double down on performance ergonomics and publish public benchmark comparisons against Brave vs Chrome 2026.. Rationale: Shifts the buyer conversation from a commodity pricing contest to superior execution speed and craft.",
+        "timestamp": "2026-11-07T11:59:40.123539+00:00"
+      },
+      {
+        "id": "node_21710123bb0e4b35",
+        "chip_id": "#node_2171012",
+        "label": "Brave Search API...",
+        "full_title": "Brave Search API Alternatives: 5 Search APIs Compared (2026)",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 90,
+        "content": "Article: Brave Search API Alternatives: 5 Search APIs Compared (2026)\nSource: cloro.dev\nPublished: 2026-10-22T00:00:00+00:00\nURL: https://cloro.dev/comparisons/brave-search-api-alternatives\nContent: Brave sells four public plans (pricing, read 2026-10-22): Search, $5 per 1,000 requests at up to 50 requests per second. It covers web, news, images, videos and the LLM Context endpoint. Answers, $4 per 1,000 queries plus $5 per million input tokens and $5 per million output tokens, at 2 requests per second. Spellcheck and Autocomplete, $5 per 10,000 requests each. Enterprise, priced on request, with zero data retention and custom terms. Each plan includes $5 of credit every month. Brave\u2019s launch post for these plans says that to receive the credit you attribute the Brave Search API on your project\u2019s website or about page. Where Brave earns its price [...] Pricing: Free (250 searches a month), Starter $25 (1,000), Developer $75 (5,000), Production $150 (15,000), Big Data $275 (30,000), up to Cloud plans from $3,750 for 1,000,000 (SerpApi pricing). SerpApi homepage Pros +Google, Bing, Baidu, YouTube, eBay and dozens more under one key. +Parsed AI Overview on Google. +Only successful searches are counted. Cons \u2212$25 per 1,000 on the Starter plan. \u2212The rate drops below Brave's only on plans of 1,000,000 searches a month. Which Brave Search API alternative to pick Need fast, private grounding on the open web, and $5 per 1,000 is fine? Stay on Brave Its index, speed and zero data retention option are the reasons to pay. [...] Pricing: A Google search is 3 credits at 10 results, plus 2 credits for AI Overview and 2 per extra page, on the async route. A synchronous `/v1/monitor/google` call adds 2 credits, so 5 credits for a plain search. Lite is $30/month for 37,500 credits ($0.80 per 1,000 credits), Hobby is $100/month for 250,000 credits ($0.40), and self-serve plans go down to $0.305 per 1,000 credits on Enterprise 5,000, with $0.25 on a custom contract. The Free plan carries 500 credits a month. See the pricing page. cloro homepage Pros +Returns Google's actual results page. +AI Overview and People Also Ask parsed, with cited sources. +ChatGPT, Gemini, Copilot and Google AI Mode under the same key. +$1.20 per 1,000 Google searches on Hobby, less at volume. Cons",
+        "timestamp": "2026-10-22T00:00:00+00:00"
+      },
+      {
+        "id": "node_5c522790464d4b19",
+        "chip_id": "#node_5c52279",
+        "label": "Audit pricing pari...",
+        "full_title": "Audit pricing parity against competitors and deploy targeted annual incentive bundles",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 140,
+        "content": "Strategic Move [P0 Critical]: Audit pricing parity against competitors and deploy targeted annual incentive bundles. Rationale: Directly counters Brave\u2019s aggressive pricing and aligns with competitor price adjustments",
+        "timestamp": "2026-11-07T12:07:07.267708+00:00"
+      },
+      {
+        "id": "node_5f06658e3014422c",
+        "chip_id": "#node_5f06658",
+        "label": "Double down on per...",
+        "full_title": "Double down on performance ergonomics and publish public benchmark comparisons vs Chrome",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 195,
+        "content": "Strategic Move [P1 Offensive]: Double down on performance ergonomics and publish public benchmark comparisons vs Chrome. Rationale: Shifts buyer conversation from price to execution speed and performance",
+        "timestamp": "2026-11-07T12:07:07.267716+00:00"
+      },
+      {
+        "id": "node_4c5c292f283a49f2",
+        "chip_id": "#node_4c5c292",
+        "label": "Audit pricing pari...",
+        "full_title": "Audit pricing parity against Google Chrome and deploy targeted annual incentive bundles.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 235,
+        "content": "Strategic Move [P0 Critical]: Audit pricing parity against Google Chrome and deploy targeted annual incentive bundles.. Rationale: Directly counters Google Chrome's aggressive positioning while defending margin on renewal cohorts.",
+        "timestamp": "2026-11-07T12:07:07.267719+00:00"
+      }
+    ],
+    "recalled_chips": [
+      "#node_d5074ce",
+      "#node_d45a206",
+      "#node_90ccf54",
+      "#node_3995a28",
+      "#node_2171012",
+      "#node_5c52279"
+    ],
+    "instant_prompts": [
+      "What is Brave's pricing moat?",
+      "How have competitor prices shifted?",
+      "What strategic counter-move should we execute?"
+    ],
+    "compounding_message": "The next time Brave is scanned, the agent remembers previous findings and identifies what's changed, which strategies are developing and which trends are continuing."
+  },
+  "neural_network": {
+    "center_node": {
+      "id": "node_center",
+      "label": "Brave",
+      "color": "#0284c7"
+    },
+    "radial_nodes": [
+      {
+        "id": "node_d5074ce63322406b",
+        "chip_id": "#node_d5074ce",
+        "label": "Strategic Recomm...",
+        "full_title": "Strategic Recommendation [P1 Offensive]: Accelerate self-serve product onboarding for high-velocity teams underserved by BRAVE Competitors.. Rationale: BRAVE Competitors is focusing on monolithic enterprise tiers, leaving an opening in developer-first teams.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 270,
+        "content": "Strategic Recommendation [P1 Offensive]: Accelerate self-serve product onboarding for high-velocity teams underserved by BRAVE Competitors.. Rationale: BRAVE Competitors is focusing on monolithic enterprise tiers, leaving an opening in developer-first teams.",
+        "timestamp": "2026-11-07T11:59:40.122434+00:00"
+      },
+      {
+        "id": "node_d45a2062fb2c4957",
+        "chip_id": "#node_d45a206",
+        "label": "Strategic Recomm...",
+        "full_title": "Strategic Recommendation [P0 Critical]: Audit pricing parity against BRAVE Competitors and deploy targeted annual incentive bundles.. Rationale: Directly counters BRAVE Competitors's aggressive positioning while defending margin on renewal cohorts.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 320,
+        "content": "Strategic Recommendation [P0 Critical]: Audit pricing parity against BRAVE Competitors and deploy targeted annual incentive bundles.. Rationale: Directly counters BRAVE Competitors's aggressive positioning while defending margin on renewal cohorts.",
+        "timestamp": "2026-11-07T11:59:40.121205+00:00"
+      },
+      {
+        "id": "node_90ccf54f8b754815",
+        "chip_id": "#node_90ccf54",
+        "label": "Brave Search API...",
+        "full_title": "Brave Search API Pricing: Plans, Limits, Cost (2026)",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 15,
+        "content": "Article: Brave Search API Pricing: Plans, Limits, Cost (2026)\nSource: www.activepieces.com\nPublished: 2026-11-04T02:10:56+00:00\nURL: https://www.activepieces.com/blog/brave-search-api-pricing-plans-limits-cost-2026\nContent: Monthly queries | Fitting plan | Bill after $5 credit (Search / Answers) | Upgrade point | Effective cost per 1,000 (Search / Answers) | --- --- | 1,000 | Either; the credit covers it | $0 / $0 | The first query past 1,000 | $0 | | 10,000 | Answers if you want finished replies | $45 / $35 | When the bill passes your cap | $4.50 / $3.50 | | 100,000 | Pick by workload and set a hard cap | $495 / $395 | Before traffic doubles | $4.95 / $3.95 | | 1,000,000 | Either, after checking limits | $4,995 / $3,995 | Already at the top of this ladder | $5.00 / $4.00 | At 1,000 queries a month, both bills are $0, because the $5 credit absorbs the whole thing. The catch is the edge: query 1,001 starts billing, and a looping script can cross it in an afternoon. [...] AI agent at 10,000 queries a month At this volume an agent costs $45 on Search or $35 on Answers, which works out to $4.50 and $3.50 per 1,000. Agents also retry and fan out, so count queries per task, not per user. > The catch is the edge: query 1,001 starts billing, and a looping script can cross it in an afternoon. Product at 100,000 and 1,000,000 queries At 100,000 queries the bill is [$495 on Search or $395 on Answers], so you need to budget for this cost if you reach this volume. At a million it's [$4,995 or $3,995], which means operating at that scale requires serious justification. Each step up multiplies the bill by almost exactly ten. [...] Each step up multiplies the bill by almost exactly ten. That is $100 a month at the lower volume and $1,000 at the higher: what the choice between the two tiers is worth, which makes it a decision to price out before launch, not after. Know hidden Brave Search API costs and limits Past the sticker price there are other meters, and they run on limits and habits you may not have priced yet. You can be well under the quota and still get refused because two requests landed in the same second. The free plan caps you at one query per second, and that's a separate limit from your monthly quota. Retries and agent loops that multiply queries Rarely does one user question mean one search.",
+        "timestamp": "2026-11-04T02:10:56+00:00"
+      },
+      {
+        "id": "node_3995a2837ece4f84",
+        "chip_id": "#node_3995a28",
+        "label": "Strategic Recomm...",
+        "full_title": "Strategic Recommendation [P2 Strategic]: Double down on performance ergonomics and publish public benchmark comparisons against Brave vs Chrome 2026.. Rationale: Shifts the buyer conversation from a commodity pricing contest to superior execution speed and craft.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 65,
+        "content": "Strategic Recommendation [P2 Strategic]: Double down on performance ergonomics and publish public benchmark comparisons against Brave vs Chrome 2026.. Rationale: Shifts the buyer conversation from a commodity pricing contest to superior execution speed and craft.",
+        "timestamp": "2026-11-07T11:59:40.123539+00:00"
+      },
+      {
+        "id": "node_21710123bb0e4b35",
+        "chip_id": "#node_2171012",
+        "label": "Brave Search API...",
+        "full_title": "Brave Search API Alternatives: 5 Search APIs Compared (2026)",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 90,
+        "content": "Article: Brave Search API Alternatives: 5 Search APIs Compared (2026)\nSource: cloro.dev\nPublished: 2026-10-22T00:00:00+00:00\nURL: https://cloro.dev/comparisons/brave-search-api-alternatives\nContent: Brave sells four public plans (pricing, read 2026-10-22): Search, $5 per 1,000 requests at up to 50 requests per second. It covers web, news, images, videos and the LLM Context endpoint. Answers, $4 per 1,000 queries plus $5 per million input tokens and $5 per million output tokens, at 2 requests per second. Spellcheck and Autocomplete, $5 per 10,000 requests each. Enterprise, priced on request, with zero data retention and custom terms. Each plan includes $5 of credit every month. Brave\u2019s launch post for these plans says that to receive the credit you attribute the Brave Search API on your project\u2019s website or about page. Where Brave earns its price [...] Pricing: Free (250 searches a month), Starter $25 (1,000), Developer $75 (5,000), Production $150 (15,000), Big Data $275 (30,000), up to Cloud plans from $3,750 for 1,000,000 (SerpApi pricing). SerpApi homepage Pros +Google, Bing, Baidu, YouTube, eBay and dozens more under one key. +Parsed AI Overview on Google. +Only successful searches are counted. Cons \u2212$25 per 1,000 on the Starter plan. \u2212The rate drops below Brave's only on plans of 1,000,000 searches a month. Which Brave Search API alternative to pick Need fast, private grounding on the open web, and $5 per 1,000 is fine? Stay on Brave Its index, speed and zero data retention option are the reasons to pay. [...] Pricing: A Google search is 3 credits at 10 results, plus 2 credits for AI Overview and 2 per extra page, on the async route. A synchronous `/v1/monitor/google` call adds 2 credits, so 5 credits for a plain search. Lite is $30/month for 37,500 credits ($0.80 per 1,000 credits), Hobby is $100/month for 250,000 credits ($0.40), and self-serve plans go down to $0.305 per 1,000 credits on Enterprise 5,000, with $0.25 on a custom contract. The Free plan carries 500 credits a month. See the pricing page. cloro homepage Pros +Returns Google's actual results page. +AI Overview and People Also Ask parsed, with cited sources. +ChatGPT, Gemini, Copilot and Google AI Mode under the same key. +$1.20 per 1,000 Google searches on Hobby, less at volume. Cons",
+        "timestamp": "2026-10-22T00:00:00+00:00"
+      },
+      {
+        "id": "node_5c522790464d4b19",
+        "chip_id": "#node_5c52279",
+        "label": "Audit pricing pari...",
+        "full_title": "Audit pricing parity against competitors and deploy targeted annual incentive bundles",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 140,
+        "content": "Strategic Move [P0 Critical]: Audit pricing parity against competitors and deploy targeted annual incentive bundles. Rationale: Directly counters Brave\u2019s aggressive pricing and aligns with competitor price adjustments",
+        "timestamp": "2026-11-07T12:07:07.267708+00:00"
+      },
+      {
+        "id": "node_5f06658e3014422c",
+        "chip_id": "#node_5f06658",
+        "label": "Double down on per...",
+        "full_title": "Double down on performance ergonomics and publish public benchmark comparisons vs Chrome",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 195,
+        "content": "Strategic Move [P1 Offensive]: Double down on performance ergonomics and publish public benchmark comparisons vs Chrome. Rationale: Shifts buyer conversation from price to execution speed and performance",
+        "timestamp": "2026-11-07T12:07:07.267716+00:00"
+      },
+      {
+        "id": "node_4c5c292f283a49f2",
+        "chip_id": "#node_4c5c292",
+        "label": "Audit pricing pari...",
+        "full_title": "Audit pricing parity against Google Chrome and deploy targeted annual incentive bundles.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 235,
+        "content": "Strategic Move [P0 Critical]: Audit pricing parity against Google Chrome and deploy targeted annual incentive bundles.. Rationale: Directly counters Google Chrome's aggressive positioning while defending margin on renewal cohorts.",
+        "timestamp": "2026-11-07T12:07:07.267719+00:00"
+      }
+    ],
+    "recalled_chips": [
+      "#node_d5074ce",
+      "#node_d45a206",
+      "#node_90ccf54",
+      "#node_3995a28",
+      "#node_2171012",
+      "#node_5c52279"
+    ],
+    "instant_prompts": [
+      "What is Brave's pricing moat?",
+      "How have competitor prices shifted?",
+      "What strategic counter-move should we execute?"
+    ]
+  },
+  "source_verification": [
+    {
+      "title": "Brave Search API Alternatives: 5 Search APIs Compared (2026)",
+      "url": "https://cloro.dev/comparisons/brave-search-api-alternatives",
+      "publisher": "cloro.dev",
+      "published_date": "Thu, 22 Oct 2026 00:00:00 GMT",
+      "snippet": "Brave sells four public plans (pricing, read 2026-10-22): Search, $5 per 1,000 requests at up to 50 requests per second. It covers web, news, images, videos and the LLM Context endpoint. Answers, $4 per 1,000 queries plus $5 per million input tokens and $5 per million output toke...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "Brave Search API Pricing: Plans, Limits, Cost (2026)",
+      "url": "https://www.activepieces.com/blog/brave-search-api-pricing-plans-limits-cost-2026",
+      "publisher": "www.activepieces.com",
+      "published_date": "Wed, 04 Nov 2026 02:10:56 GMT",
+      "snippet": "Monthly queries | Fitting plan | Bill after $5 credit (Search / Answers) | Upgrade point | Effective cost per 1,000 (Search / Answers) | --- --- | 1,000 | Either; the credit covers it | $0 / $0 | The first query past 1,000 | $0 | | 10,000 | Answers if you want finished replies | ...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "Brave International: over \u20ac100M in defense grants",
+      "url": "https://getgrant.ua/en/grants-and-funding/brave-international-defense-grants-ukraine",
+      "publisher": "getgrant.ua",
+      "published_date": "Sat, 19 Sep 2026 00:00:00 GMT",
+      "snippet": "Brave International at a glance: key parameters | Parameter | Details | --- | | What it is | Unified framework for international defense grant programs | | Who launched it | Cabinet of Ministers of Ukraine, 27 June 2026 | | First programs budget | Over 100 million euros | | Fundi...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "The Ministry of Defence of Ukraine together with The Ministry of Digital Transformation and Brave1 launch grant competitions for air-to-air guided missiles and Ukrainian radars",
+      "url": "https://brave1.gov.ua/en/news/ukraine-launches-grant-competitions-air-to-air-missiles-radars",
+      "publisher": "brave1.gov.ua",
+      "published_date": "Fri, 30 Oct 2026 00:00:00 GMT",
+      "snippet": "In just 10 months of 2026, Brave1 has awarded nearly 300 grants \u2014 more than in the entire previous year. And the 2027 budget for defence technology development through Brave1 is set to be 36% higher than the previous year. We are strengthening support for asymmetric solutions for...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "The best Island browser alternatives and competitors in 2026",
+      "url": "https://pushsecurity.com/blog/island-browser-alternatives-and-competitors",
+      "publisher": "pushsecurity.com",
+      "published_date": "Thu, 15 Oct 2026 00:00:00 GMT",
+      "snippet": "Island doesn't publish per-user pricing, but three UK resellers, Somerford, Bytes, and Softcat, publish the same list price: $250,000 a year per customer for the management console plus $200 per user per year. For a 500-person company, that's a total cost of $350,000 a year befor...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "Brave launches Email Aliases to keep your personal email address private from websites | Brave",
+      "url": "https://brave.com/privacy-updates/39-email-aliases",
+      "publisher": "brave.com",
+      "published_date": "Thu, 27 Aug 2026 16:00:00 GMT",
+      "snippet": "Related articles Brave improves protections against GPU fingerprinting Aug 13, 2026 Starting in version 1.93, Brave is rolling out new protections against GPU and graphics-driver fingerprinting, de-identifying WebGL vendor and renderer strings and adding noise to the list of supp...",
+      "verification_status": "Verified Original Source"
+    }
+  ]
+}

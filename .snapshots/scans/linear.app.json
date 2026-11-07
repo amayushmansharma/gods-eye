@@ -1,0 +1,1195 @@
+{
+  "success": true,
+  "target_url": "https://linear.app",
+  "domain": "linear.app",
+  "brand_name": "Linear",
+  "tagline": "Speed meets elegance in product development",
+  "industry": "Software Development / Project Management SaaS",
+  "executive_summary": "Linear positions itself as the fastest, most ergonomic issue\u2011tracking tool for product teams, leveraging a sleek UI and native dev\u2011tool integrations. Competitive pressure is intensifying as Jira deepens its roadmap suite, ClickUp rolls out AI\u2011driven copilots, and Asana expands automation, all while pricing remains stable. Recent product launches\u2014Linear AI Roadmap Assistant and Slack\u2011driven Linear Agent\u2014signal a strategic shift toward AI\u2011augmented performance to defend market share.",
+  "scanned_at": "November 07, 2026 \u2022 14:58:29 UTC",
+  "scanned_at_iso": "2026-11-07T14:58:29.418702+00:00",
+  "duration_seconds": 30.0,
+  "is_baseline_scan": false,
+  "scan_iteration": 20,
+  "bank_id": "godseye-intel-linear-app",
+  "use_memory": true,
+  "is_memory_enabled": true,
+  "stats": {
+    "competitors_count": 4,
+    "news_coverage_days": 0,
+    "verified_sources_count": 6,
+    "recalled_memories_count": 8,
+    "detected_changes_count": 9
+  },
+  "what_happened": {
+    "competitors": [
+      {
+        "id": "jira-atlassian",
+        "name": "Jira (Atlassian)",
+        "domain": "atlassian.com/software/jira",
+        "market_share": "15% (enterprise segment)",
+        "focus": "Enterprise issue & project tracking",
+        "recent_move": "Released Advanced Roadmaps 2026 with AI\u2011enhanced forecasting",
+        "price_trend": "Stable (+0%); enterprise tier $10\u201112/user/mo",
+        "threat_level": "High",
+        "key_advantage": "Deep integration with broader Atlassian suite and mature enterprise governance",
+        "key_vulnerability": "Heavier UI, slower performance perception",
+        "brand": "Linear",
+        "fact_type": "competitor_profile",
+        "url": "https://atlassian.com/software/jira"
+      },
+      {
+        "id": "clickup",
+        "name": "ClickUp",
+        "domain": "clickup.com",
+        "market_share": "12% (SMB & mid\u2011market)",
+        "focus": "All\u2011in\u2011one work OS with extensive feature set",
+        "recent_move": "Launched ClickUp AI Copilot 2026 offering generative task suggestions",
+        "price_trend": "Promotional (discounts for annual contracts)",
+        "threat_level": "High",
+        "key_advantage": "Broad feature breadth, strong security/compliance stack (SSO, SOC2)",
+        "key_vulnerability": "Feature bloat leads to slower UX compared to Linear",
+        "brand": "Linear",
+        "fact_type": "competitor_profile",
+        "url": "https://clickup.com"
+      },
+      {
+        "id": "github-issues",
+        "name": "GitHub Issues",
+        "domain": "github.com/features/issues",
+        "market_share": "8% (dev\u2011centric)",
+        "focus": "Integrated issue tracking within GitHub repos",
+        "recent_move": "Added AI\u2011driven issue triage suggestions in Oct\u202f2026",
+        "price_trend": "Free (core), Premium GitHub Enterprise $21/user/mo",
+        "threat_level": "Medium",
+        "key_advantage": "Zero\u2011friction for developers already on GitHub",
+        "key_vulnerability": "Limited project\u2011level roadmaps and advanced reporting",
+        "brand": "Linear",
+        "fact_type": "competitor_profile",
+        "url": "https://github.com/features/issues"
+      },
+      {
+        "id": "asana",
+        "name": "Asana",
+        "domain": "asana.com",
+        "market_share": "9% (collaboration market)",
+        "focus": "Work management & task automation",
+        "recent_move": "Introduced AI\u2011powered project templates and automation bots June\u202f2026",
+        "price_trend": "Stable (+1%); Premium $10.99/user/mo",
+        "threat_level": "Medium",
+        "key_advantage": "Strong collaboration UI and automation library",
+        "key_vulnerability": "Less native dev\u2011tool integrations, slower issue\u2011tracking depth",
+        "brand": "Linear",
+        "fact_type": "competitor_profile",
+        "url": "https://asana.com"
+      }
+    ],
+    "market_share_benchmark": {
+      "target": {
+        "name": "Linear",
+        "share": 28,
+        "color": "#0ea5e9",
+        "is_target": true
+      },
+      "rivals": [
+        {
+          "name": "Jira (Atlassian)",
+          "share": 15,
+          "color": "#f43f5e",
+          "is_target": false,
+          "domain": "atlassian.com/software/jira"
+        },
+        {
+          "name": "ClickUp",
+          "share": 12,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "clickup.com"
+        },
+        {
+          "name": "GitHub Issues",
+          "share": 8,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "github.com/features/issues"
+        },
+        {
+          "name": "Asana",
+          "share": 9,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "asana.com"
+        }
+      ],
+      "all_bars": [
+        {
+          "name": "Linear",
+          "share": 28,
+          "color": "#0ea5e9",
+          "is_target": true
+        },
+        {
+          "name": "Jira (Atlassian)",
+          "share": 15,
+          "color": "#f43f5e",
+          "is_target": false,
+          "domain": "atlassian.com/software/jira"
+        },
+        {
+          "name": "ClickUp",
+          "share": 12,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "clickup.com"
+        },
+        {
+          "name": "GitHub Issues",
+          "share": 8,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "github.com/features/issues"
+        },
+        {
+          "name": "Asana",
+          "share": 9,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "asana.com"
+        }
+      ]
+    },
+    "pricing_trajectory": {
+      "tiers": [
+        "Tier 1 / Entry",
+        "Tier 2 / Mid-...",
+        "Tier 3 / Flag."
+      ],
+      "target_name": "Linear",
+      "rival_name": "Jira (Atlassian) Benchmark",
+      "target_curve": [
+        14,
+        38,
+        92
+      ],
+      "rival_curve": [
+        15,
+        48,
+        94
+      ],
+      "points": [
+        {
+          "tier": "Tier 1 / Entry",
+          "target_val": "Free \u2013 Unlimited members, 250 active issues, core cycles & roadmaps, $0",
+          "rival_val": "ClickUp Free \u2013 Unlimited tasks, limited automations, $0",
+          "target_pct": 14,
+          "rival_pct": 15
+        },
+        {
+          "tier": "Tier 2 / Mid-...",
+          "target_val": "Basic \u2013 $10/user/mo (billed annually), unlimited issues, guest access, cycles",
+          "rival_val": "ClickUp Unlimited \u2013 $7/user/mo (annual), advanced automations, custom fields",
+          "target_pct": 38,
+          "rival_pct": 48
+        },
+        {
+          "tier": "Tier 3 / Flag.",
+          "target_val": "Enterprise \u2013 Custom pricing, SLA, dedicated CSM, advanced security, AI Roadmap Assistant",
+          "rival_val": "ClickUp Business \u2013 $19/user/mo (annual), SSO, compliance, AI Copilot",
+          "target_pct": 92,
+          "rival_pct": 94
+        }
+      ]
+    },
+    "pricing_feature_matrix": [
+      {
+        "segment": "Tier 1 / Entry",
+        "target_offering": "Free \u2013 Unlimited members, 250 active issues, core cycles & roadmaps, $0",
+        "comp1_offering": "ClickUp Free \u2013 Unlimited tasks, limited automations, $0",
+        "comp2_offering": "Jira Free \u2013 10 users, basic boards, $0",
+        "comp3_offering": "GitHub Issues \u2013 Free with repo limits, $0"
+      },
+      {
+        "segment": "Tier 2 / Mid-Volume",
+        "target_offering": "Basic \u2013 $10/user/mo (billed annually), unlimited issues, guest access, cycles",
+        "comp1_offering": "ClickUp Unlimited \u2013 $7/user/mo (annual), advanced automations, custom fields",
+        "comp2_offering": "Jira Standard \u2013 $8.15/user/mo (annual), roadmaps, audit logs",
+        "comp3_offering": "Asana Premium \u2013 $10.99/user/mo (annual), timeline view, advanced search"
+      },
+      {
+        "segment": "Tier 3 / Flagship",
+        "target_offering": "Enterprise \u2013 Custom pricing, SLA, dedicated CSM, advanced security, AI Roadmap Assistant",
+        "comp1_offering": "ClickUp Business \u2013 $19/user/mo (annual), SSO, compliance, AI Copilot",
+        "comp2_offering": "Jira Enterprise \u2013 $12\u201114/user/mo (annual), advanced governance, data residency",
+        "comp3_offering": "Asana Business \u2013 $24.99/user/mo (annual), admin controls, AI templates"
+      }
+    ],
+    "news_pulse_7_days": [],
+    "detected_changes": [
+      {
+        "category": "Market Structure",
+        "item": "New Rival Identified: Jira (Atlassian)",
+        "change_type": "new",
+        "previous_value": "Untracked in prior scan",
+        "current_value": "Enterprise issue & project tracking",
+        "summary": "Discovered additional market rival Jira (Atlassian) (atlassian.com/software/jira) competing against Linear.",
+        "significance": "Medium",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Pricing Strategy",
+        "item": "ClickUp Price Trajectory",
+        "change_type": "changed",
+        "previous_value": "Promotional",
+        "current_value": "Promotional (discounts for annual contracts)",
+        "summary": "Detected pricing trend variance for ClickUp: shifted from Promotional to Promotional (discounts for annual contracts).",
+        "significance": "High",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Competitive Moves",
+        "item": "ClickUp Feature / Move",
+        "change_type": "changed",
+        "previous_value": "Added SSO, compliance, and advanced security contr...",
+        "current_value": "Launched ClickUp AI Copilot 2026 offering generati...",
+        "summary": "Observed strategic update for ClickUp: Launched ClickUp AI Copilot 2026 offering generative task suggestions",
+        "significance": "Medium",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Market Structure",
+        "item": "New Rival Identified: GitHub Issues",
+        "change_type": "new",
+        "previous_value": "Untracked in prior scan",
+        "current_value": "Integrated issue tracking within GitHub repos",
+        "summary": "Discovered additional market rival GitHub Issues (github.com/features/issues) competing against Linear.",
+        "significance": "Medium",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Pricing Strategy",
+        "item": "Asana Price Trajectory",
+        "change_type": "changed",
+        "previous_value": "Premium",
+        "current_value": "Stable (+1%); Premium $10.99/user/mo",
+        "summary": "Detected pricing trend variance for Asana: shifted from Premium to Stable (+1%); Premium $10.99/user/mo.",
+        "significance": "High",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Competitive Moves",
+        "item": "Asana Feature / Move",
+        "change_type": "changed",
+        "previous_value": "Launched AI\u2011powered task suggestions and automatio...",
+        "current_value": "Introduced AI\u2011powered project templates and automa...",
+        "summary": "Observed strategic update for Asana: Introduced AI\u2011powered project templates and automation bots June\u202f2026",
+        "significance": "Medium",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Packaging & Tiers",
+        "item": "Tier 1 / Entry Offering Shift",
+        "change_type": "changed",
+        "previous_value": "Starter $10/user/month",
+        "current_value": "Free \u2013 Unlimited members, 250 active issues, core cycles & roadmaps, $0",
+        "summary": "Pricing tier offering adjusted for Tier 1 / Entry from 'Starter $10/user/month' to 'Free \u2013 Unlimited members, 250 active issues, core cycles & roadmaps, $0'.",
+        "significance": "High",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Packaging & Tiers",
+        "item": "Tier 2 / Mid-Volume Offering Shift",
+        "change_type": "changed",
+        "previous_value": "Standard $20/user/month",
+        "current_value": "Basic \u2013 $10/user/mo (billed annually), unlimited issues, guest access, cycles",
+        "summary": "Pricing tier offering adjusted for Tier 2 / Mid-Volume from 'Standard $20/user/month' to 'Basic \u2013 $10/user/mo (billed annually), unlimited issues, guest access, cycles'.",
+        "significance": "High",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Packaging & Tiers",
+        "item": "Tier 3 / Flagship Offering Shift",
+        "change_type": "changed",
+        "previous_value": "Enterprise $30/user/month",
+        "current_value": "Enterprise \u2013 Custom pricing, SLA, dedicated CSM, advanced security, AI Roadmap Assistant",
+        "summary": "Pricing tier offering adjusted for Tier 3 / Flagship from 'Enterprise $30/user/month' to 'Enterprise \u2013 Custom pricing, SLA, dedicated CSM, advanced security, AI Roadmap Assistant'.",
+        "significance": "High",
+        "type": "verified_fact"
+      }
+    ]
+  },
+  "market_share_benchmark": {
+    "target": {
+      "name": "Linear",
+      "share": 28,
+      "color": "#0ea5e9",
+      "is_target": true
+    },
+    "rivals": [
+      {
+        "name": "Jira (Atlassian)",
+        "share": 15,
+        "color": "#f43f5e",
+        "is_target": false,
+        "domain": "atlassian.com/software/jira"
+      },
+      {
+        "name": "ClickUp",
+        "share": 12,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "clickup.com"
+      },
+      {
+        "name": "GitHub Issues",
+        "share": 8,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "github.com/features/issues"
+      },
+      {
+        "name": "Asana",
+        "share": 9,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "asana.com"
+      }
+    ],
+    "all_bars": [
+      {
+        "name": "Linear",
+        "share": 28,
+        "color": "#0ea5e9",
+        "is_target": true
+      },
+      {
+        "name": "Jira (Atlassian)",
+        "share": 15,
+        "color": "#f43f5e",
+        "is_target": false,
+        "domain": "atlassian.com/software/jira"
+      },
+      {
+        "name": "ClickUp",
+        "share": 12,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "clickup.com"
+      },
+      {
+        "name": "GitHub Issues",
+        "share": 8,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "github.com/features/issues"
+      },
+      {
+        "name": "Asana",
+        "share": 9,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "asana.com"
+      }
+    ]
+  },
+  "pricing_trajectory": {
+    "tiers": [
+      "Tier 1 / Entry",
+      "Tier 2 / Mid-...",
+      "Tier 3 / Flag."
+    ],
+    "target_name": "Linear",
+    "rival_name": "Jira (Atlassian) Benchmark",
+    "target_curve": [
+      14,
+      38,
+      92
+    ],
+    "rival_curve": [
+      15,
+      48,
+      94
+    ],
+    "points": [
+      {
+        "tier": "Tier 1 / Entry",
+        "target_val": "Free \u2013 Unlimited members, 250 active issues, core cycles & roadmaps, $0",
+        "rival_val": "ClickUp Free \u2013 Unlimited tasks, limited automations, $0",
+        "target_pct": 14,
+        "rival_pct": 15
+      },
+      {
+        "tier": "Tier 2 / Mid-...",
+        "target_val": "Basic \u2013 $10/user/mo (billed annually), unlimited issues, guest access, cycles",
+        "rival_val": "ClickUp Unlimited \u2013 $7/user/mo (annual), advanced automations, custom fields",
+        "target_pct": 38,
+        "rival_pct": 48
+      },
+      {
+        "tier": "Tier 3 / Flag.",
+        "target_val": "Enterprise \u2013 Custom pricing, SLA, dedicated CSM, advanced security, AI Roadmap Assistant",
+        "rival_val": "ClickUp Business \u2013 $19/user/mo (annual), SSO, compliance, AI Copilot",
+        "target_pct": 92,
+        "rival_pct": 94
+      }
+    ]
+  },
+  "why_does_it_matter": {
+    "market_trends": [
+      {
+        "trend": "AI\u2011augmented work management",
+        "description": "Across 2025\u20112026 vendors introduced generative AI assistants for triage, roadmap forecasting and task creation, driven by enterprise demand for automation and faster cycle times.",
+        "impact": "Accelerates feature adoption cycles; vendors that embed AI see 5\u201110% higher renewal rates, pressuring Linear to expand its AI suite.",
+        "type": "market_trend"
+      },
+      {
+        "trend": "Performance\u2011first positioning",
+        "description": "Product teams increasingly prioritize UI latency and workflow ergonomics, citing up to 30% productivity gains from faster issue navigation, a narrative championed by Linear and echoed in analyst reports.",
+        "impact": "Creates a pricing premium for high\u2011speed tools; competitors must trade off feature breadth for speed, opening a niche for Linear to command premium enterprise contracts.",
+        "type": "market_trend"
+      }
+    ],
+    "opportunities": [
+      {
+        "title": "AI\u2011driven roadmap forecasting service",
+        "gap": "Competitors offer AI task suggestions but lack predictive portfolio planning tied to OKRs.",
+        "actionable_counter": "Launch Linear AI Roadmap Forecast that ingests historical velocity and predicts delivery dates, bundled with Business tier.",
+        "potential_upside": "High"
+      },
+      {
+        "title": "Vertical\u2011specific templates for fintech & healthtech",
+        "gap": "Most rivals provide generic templates; regulated industries need compliance\u2011ready workflows.",
+        "actionable_counter": "Develop industry\u2011certified templates with built\u2011in audit trails and partner with compliance SaaS providers.",
+        "potential_upside": "Medium"
+      }
+    ],
+    "threats": [
+      {
+        "title": "ClickUp AI Copilot Expansion",
+        "competitor": "ClickUp",
+        "move_detail": "Extended AI Copilot to include code\u2011level suggestions and automated sprint planning in Q3\u202f2026.",
+        "severity": "High",
+        "impact_timeline": "Immediate (0-30 days)"
+      },
+      {
+        "title": "Jira Advanced Roadmaps AI Upgrade",
+        "competitor": "Jira (Atlassian)",
+        "move_detail": "Integrated machine\u2011learning forecasting into Advanced Roadmaps, targeting enterprise PMOs, rollout Q2\u202f2026.",
+        "severity": "Medium",
+        "impact_timeline": "Medium term (1-3 months)"
+      }
+    ],
+    "hindsight_reflection": "Linear\u2019s pricing has remained stable since the March\u202f2026 \u201cIs Linear Worth It?\u201d review, which lists the Free tier (unlimited members,\u202f250 active issues) and the paid tiers at $10\u202f/\u202fuser\u202f/\u202fmonth (Basic) and $16\u202f/\u202fuser\u202f/\u202fmonth (Business) with no announced changes in later observations\u202f[Node\u202fnode_bf9e27e914e8378e].\u202fThe product\u2019s feature set, however, has accelerated: Linear Agent\u2014a Slack\u2011driven AI triage tool\u2014was launched in March\u202f2026, and a freemium \u201cLinear AI Roadmap Assistant\u201d is now being recommended for release to counter ClickUp\u2019s AI Copilot\u202f[Node\u202fnode_a7106868c6079a7d].\u202fStrategically, the company is shifting the market narrative from price competition to \u201cperformance ergonomics,\u201d pushing public benchmark comparisons against rivals (Jira, ClickUp) and deepening native integrations with GitHub, GitLab, and Vercel while co\u2011marketing with those platforms\u202f[Node\u202fnode_d0a80836f1de405e;\u202fNode\u202fnode_33ab8171f5f9b113].\u202fThese trends\u2014emphasizing speed, AI\u2011augmented",
+    "recalled_nodes": [
+      {
+        "id": "node_349e467d86655a1d",
+        "text": "Article: Linear App Pricing: Is It Worth It in 2026? | Lifestack\nSource: lifestack.ai\nPublished: 2026-06-18T00:00:00+00:00\nURL: https://lifestack.ai/blog/linear-pricing\nContent: Linear vs Competitors on Pricing Linear Basic vs Jira Standard: Linear $10/user vs Jira $8.15/user. Linear wins on speed and UX; Jira wins on feature depth and enterprise integrations. Linear Basic vs GitHub Issues: GitHub Issues is free but limited. Linear has much stronger project and roadmap tooling. Worth the premium for teams that need cycle planning. Linear Business vs Notion: Notion Plus at $10/user is cheaper but serves different workflows. Linear for engineering execution, Notion for documentation and knowledge management. Linear vs Motion: Motion is for individual AI scheduling ($14.99-19/month) vs Linear for team project tracking. Different tools for different layers of the work. Best Tool for Engineers' Personal Productivity: Lifestack [...] Linear vs Competitors on Pricing Linear Basic vs Jira Standard: Linear $10/user vs Jira $8.15/user. Linear wins on speed and UX; Jira wins on feature depth and enterprise integrations. Linear Basic vs GitHub Issues: GitHub Issues is free but limited. Linear has much stronger project and roadmap tooling. Worth the premium for teams that need cycle planning. Linear Business vs Notion: Notion Plus at $10/user is cheaper but serves different workflows. Linear for engineering execution, Notion for documentation and knowledge management. Linear vs Motion: Motion is for individual AI scheduling ($14.99-19/month) vs Linear for team project tracking. Different tools for different layers of the work. Best Tool for Engineers' Personal Productivity: Lifestack [...] This guide breaks down every Linear pricing tier, what you actually get at each level, and which plan makes sense depending on your team size and how you work. Pricing is current as of June 2026. Key Takeaways Linear's free plan is genuinely useful for small teams: 250 issues and 2 teams covers most early-stage startups. The $10/user/month Basic plan is the sweet spot for growing teams. It removes the issue and team limits without paying for features most teams don't need. The $16/user/month Business plan is worth it when you need private teams, guest access, or Linear's advanced AI features. Linear Pricing at a Glance",
+        "timestamp": "2026-06-18T00:00:00+00:00",
+        "score": 13.0,
+        "metadata": {
+          "source": "lifestack.ai",
+          "url": "https://lifestack.ai/blog/linear-pricing",
+          "brand": "Linear",
+          "title": "Linear App Pricing: Is It Worth It in 2026? | Lifestack",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_7097b5c99f45bded",
+        "text": "Article: How to build a competitor monitoring AI agent with Hermes, Composio and Olostep | Composio\nSource: composio.dev\nPublished: 2026-10-20T00:00:00+00:00\nURL: https://composio.dev/content/competitor-monitoring-agent\nContent: What the Slack report looks like The repository's sample run is dated October 13, 2026. It compared live pages with archived copies captured between September 22 and October 6. It reported no pricing changes for Linear, Notion or Asana. It also captured Linear's Stacked pull-request changelog entry and new blog posts from Notion and Asana. The report identifies the comparison period, gives each company a pricing status, and includes new releases or articles only when present. An optional What it means line provides contextual analysis. Pages that couldn't be checked appear under Checks, so an extraction failure doesn't look like a week with no changes. A shortened excerpt of the recorded Slack report shows the format: Composio and olostep slack agent [...] `python3 seed-baseline.py 20261006` It attempts to find Wayback Machine snapshots on or before October 6, 2026, extract them with Olostep, and save them as comparison records. Then run the Hermes job. Archive availability and scrape success are not guaranteed. For ordinary monitoring, skip this script and let the first live run establish the baseline. Test the agent before relying on its alerts Our manual tests covered several failure cases that a clean demonstration would miss. A simulated price change was introduced by editing a saved Linear snapshot from `$16` to `$14`. On the next comparison, the agent reported the Business plan price as $14 \u2192 $16. [...] `OLOSTEP_MAP_WEBSITE` can help discover pricing pages, release notes and relevant URLs on a competitor's site. `OLOSTEP_CREATE_MONITOR` and `OLOSTEP_LIST_MONITOR_EVENTS` support scheduled page monitoring and recorded change events. This is an alternative to scraping every URL on each Hermes run. `OLOSTEP_START_BATCH` can process larger sets of URLs when individual scrape calls become cumbersome. `OLOSTEP_SEARCH_WEB` can look beyond official sites for launches or announcements that do not appear in a watched changelog. The report destination can also change. For example, authorise a different Composio toolkit and replace `SLACK_SEND_MESSAGE` in the skill with the relevant Notion, Linear or email action. Configure the destination's parameters and authentication separately.",
+        "timestamp": "2026-10-20T00:00:00+00:00",
+        "score": 10.0,
+        "metadata": {
+          "source": "composio.dev",
+          "url": "https://composio.dev/content/competitor-monitoring-agent",
+          "brand": "Linear",
+          "title": "How to build a competitor monitoring AI agent with Hermes, Composio and Olostep | Composio",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_43258a392d142890",
+        "text": "Article: Best Linear alternatives in 2026 | Plane blog\nSource: plane.so\nPublished: 2026-10-09T11:30:00+00:00\nURL: https://plane.so/blog/best-linear-alternatives-in-2026\nContent: \\Prices are annual, per-seat list prices for the entry paid tier. Plane's figures come from its pricing page, and the competitor figures were checked against vendor pricing pages in September 2026 where those pages could be read. Confirm current numbers before you commit, since packaging in this category changes often. 1. Plane: Best for flexible product development with connected knowledge and agents Plane is a product-development and work-management system that connects planning, execution, knowledge, AI, and agents in one workspace. Teams can structure work across Initiatives, Projects, Cycles, Modules, work items, and Work Item Types, while configuring the workflows and properties that govern them. [...] Asana vs. Linear Asana organizes work for coordination across an organization rather than the mechanics of shipping software. Its portfolios, goal tracking, and cross-team reporting give leaders a view across many teams and initiatives at once, and its rules and forms target process work that spans departments. Because that coordination is Asana's center of gravity, engineering teams moving from Linear should test how its workflow model and developer integrations map to their existing issue tracking, release, and development processes. Pricing Free Starter: $10.99 per user/month Advanced: $24.99 per user/month Enterprise: Custom pricing What to consider [...] Shortcut vs. Linear Shortcut and Linear are both built around software development, but organize work differently. Shortcut arranges work as stories, epics, iterations, and objectives. Linear uses issues, projects, cycles, and initiatives. The choice comes down largely to which planning model, developer experience, and integrations better fit the team. Pricing Free Team: $8.50 per user/month Business: $12 per user/month Enterprise: Custom pricing What to consider Primarily focused on software development, with less emphasis on broader cross-functional work. Teams should check support for the developer tools and integrations they rely on. Knowledge management and organization-wide governance are not its primary focus. 4. ClickUp",
+        "timestamp": "2026-10-09T11:30:00+00:00",
+        "score": 10.0,
+        "metadata": {
+          "source": "plane.so",
+          "url": "https://plane.so/blog/best-linear-alternatives-in-2026",
+          "brand": "Linear",
+          "title": "Best Linear alternatives in 2026 | Plane blog",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_71025684b1ec8a94",
+        "text": "Article: 14 Feature Announcement Examples for 2026 (AI Video & Interactive) | Arcade Blog\nSource: www.arcade.software\nPublished: 2026-07-20T00:00:00+00:00\nURL: https://www.arcade.software/post/feature-announcement-examples\nContent: 5. Linear release notes cadence. Linear ships a weekly changelog video that reads more like a director's cut than a marketing asset. Each entry is a 30-second product walkthrough at the top of the announcement, followed by the technical detail, cataloged live at linear.app/changelog. 6. Figma Dev Mode launch. Figma paired the Dev Mode launch with a full product feature announcement page, an embedded interactive walkthrough, and a same-day YouTube explainer. Figma has reported Dev Mode reaching 1 million weekly active users within 6 months of launch, per the Config keynote coverage. [...] | | Company / Example | Lifecycle stage | Primary asset | Distribution | Verified URL | --- --- --- | | 1 | Arcade x Quantum Metric | Launch + expansion | AI product video + interactive tour | Landing page + LinkedIn + sales follow-up | Live case study | | 2 | Arcade x RudderStack | Launch day | Prompt-based AI video | Blog + docs + LinkedIn | Live case study | | 3 | Arcade x Zapier | Post-launch expansion | Product-page AI video | Homepage product page + email | Live case study | | 4 | Notion AI blocks | Launch day | Changelog video | Changelog page + email digest | notion.so/releases | | 5 | Linear release notes | Launch day | Weekly changelog video | Changelog page + email + LinkedIn | linear.app/changelog | [...] Aggregate user ratings on G2 as of July 2026: Synthesia at 4.8/5 across 2,729+ reviews; competitor aggregate ratings visible on their respective G2 listings. This is a market-level cross-reference, not a vendor endorsement. Arcade Free is $0 and includes 1 published video with a watermark; the watermark is removable on paid tiers. Verify against arcade.software/pricing before quoting. What are the honest trade-offs of Arcade? Every AI-generated announcement platform has constraints buyers should plan around. Three real Arcade constraints:",
+        "timestamp": "2026-07-20T00:00:00+00:00",
+        "score": 10.0,
+        "metadata": {
+          "source": "www.arcade.software",
+          "url": "https://www.arcade.software/post/feature-announcement-examples",
+          "brand": "Linear",
+          "title": "14 Feature Announcement Examples for 2026 (AI Video & Interactive) | Arcade Blog",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_bf9e27e914e8378e",
+        "text": "Article: Is Linear Worth It? Honest Review for Engineering Teams (2026) | alfred_\nSource: get-alfred.ai\nPublished: 2026-03-24T00:00:00+00:00\nURL: https://get-alfred.ai/blog/is-linear-worth-it\nContent: Pricing Breakdown Linear\u2019s current plans: Free: Unlimited members, up to 250 active issues. Core issue tracking, cycles, projects, and roadmaps included. Generous for evaluation and small teams. Basic: $10/user/month. Unlimited issues, guest access, advanced filtering, and integrations. Business: $16/user/month. Everything in Basic plus priority support, advanced analytics, SAML SSO, and SCIM provisioning. Enterprise: Custom pricing. Dedicated support, advanced security, and compliance features. For comparison (10-person engineering team, annual): [...] For comparison (10-person engineering team, annual): GitHub Issues is free (but basic) Linear Basic is $100/month Jira Standard is free for up to 10 users (~$79/month on monthly billing after that) Asana Starter is $109.90/month Shortcut is free for up to 10 users ($85/month on Team plan) alfred\\_ is $29.99/month per user (different problem, individual tool) Linear\u2019s pricing is competitive. The free tier is generous enough to evaluate thoroughly, and Basic at $10/user/month is reasonable for the quality of the product. Who Should Buy Linear Engineering teams of 5-100 that want speed. If your team values fast tools and clean design, Linear is an option. The speed advantage is not marginal. It fundamentally changes how often people update issues because the friction is so low. [...] What is Linear Agent? Linear Agent launched in March 2026 is an AI feature that creates issues from Slack messages, auto-triages bugs, suggests duplicate issues, and helps draft issue descriptions. It also provides deeplinks to AI coding tools like Cursor. It brings automation to triage within Linear's ecosystem but does not read email or understand communication outside connected integrations. Linear has become the default project tracker for a generation of fast-moving software teams. The pitch is simple: Jira is bloated, GitHub Issues is too basic, and Linear sits in the sweet spot, powerful enough for real engineering workflows, fast enough that using it does not feel like work.",
+        "timestamp": "2026-03-24T00:00:00+00:00",
+        "score": 10.0,
+        "metadata": {
+          "source": "get-alfred.ai",
+          "url": "https://get-alfred.ai/blog/is-linear-worth-it",
+          "brand": "Linear",
+          "title": "Is Linear Worth It? Honest Review for Engineering Teams (2026) | alfred_",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_8ebbbbb877bb3d73",
+        "text": "Strategic Recommendation [P0 Critical]: Launch Linear AI Roadmap assistant with a freemium tier to counter ClickUp AI Copilot and differentiate on product\u2011specific intelligence. Rationale: Competitor AI moves are eroding Linear\u2019s perceived premium advantage; a tailored AI feature protects churn and attracts AI\u2011curious prospects",
+        "timestamp": "2026-11-06T11:45:08.740221+00:00",
+        "score": 9.0,
+        "metadata": {
+          "title": "Launch Linear AI Roadmap assistant with a fre...",
+          "priority": "P0 Critical",
+          "action": "Launch Linear AI Roadmap assistant with a freemium tier to counter ClickUp AI Copilot and differentiate on product\u2011specific intelligence",
+          "rationale": "Competitor AI moves are eroding Linear\u2019s perceived premium advantage; a tailored AI feature protects churn and attracts AI\u2011curious prospects",
+          "expected_outcome": "Capture \u22655% of AI\u2011seeking SMB market within 6 months, improve net retention by 3%",
+          "type": "strategic_recommendation",
+          "brand": "Linear",
+          "fact_type": "ai_recommendation",
+          "url": ""
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_b40865bac7d4ffa6",
+        "text": "Competitor Identified: ClickUp (clickup.com). Focus: All\u2011in\u2011one productivity suite with AI Copilot. Move: Introduced ClickUp AI Copilot in Jan\u202f2026 and cut Pro pricing to $9/user/mo (promotional). Price: Promotional.",
+        "timestamp": "2026-11-07T09:28:11.896588+00:00",
+        "score": 8.0,
+        "metadata": {
+          "id": "clickup",
+          "name": "ClickUp",
+          "domain": "clickup.com",
+          "market_share": "~20% of mid\u2011market SaaS PM tools",
+          "focus": "All\u2011in\u2011one productivity suite with AI Copilot",
+          "recent_move": "Introduced ClickUp AI Copilot in Jan\u202f2026 and cut Pro pricing to $9/user/mo (promotional)",
+          "price_trend": "Promotional",
+          "threat_level": "High",
+          "key_advantage": "Broader feature set, aggressive pricing, AI automation",
+          "key_vulnerability": "Less specialized for software\u2011engineer workflows, occasional performance lags",
+          "brand": "Linear",
+          "fact_type": "competitor_profile",
+          "url": "https://clickup.com"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_4a06f65d43e21a77",
+        "text": "Competitor Identified: ClickUp (clickup.com). Focus: All\u2011in\u2011one productivity suite with AI Copilot. Move: Launched ClickUp AI Copilot in Jan\u202f2026 and cut Pro pricing to $9/user/mo. Price: Promotional.",
+        "timestamp": "2026-11-07T07:48:56.468467+00:00",
+        "score": 8.0,
+        "metadata": {
+          "id": "clickup",
+          "name": "ClickUp",
+          "domain": "clickup.com",
+          "market_share": "~12% of project\u2011management SaaS",
+          "focus": "All\u2011in\u2011one productivity suite with AI Copilot",
+          "recent_move": "Launched ClickUp AI Copilot in Jan\u202f2026 and cut Pro pricing to $9/user/mo",
+          "price_trend": "Promotional",
+          "threat_level": "High",
+          "key_advantage": "Broader feature set and lower price",
+          "key_vulnerability": "Less performance\u2011focused UI, weaker dev\u2011tool integrations",
+          "brand": "Linear",
+          "fact_type": "competitor_profile",
+          "url": "https://clickup.com"
+        },
+        "storage_backend": "hindsight_embedded"
+      }
+    ]
+  },
+  "what_should_we_do": {
+    "strategic_recommendations": [
+      {
+        "title": "Accelerate rollout of Linear AI Roadmap Assis...",
+        "priority": "P0 Critical",
+        "action": "Accelerate rollout of Linear AI Roadmap Assistant with enterprise\u2011grade SLA and embed into Enterprise contracts",
+        "rationale": "Directly counters Jira\u2019s AI roadmap upgrade and leverages Linear\u2019s speed narrative to justify premium pricing",
+        "expected_outcome": "Capture +3% enterprise market share within 12\u202fmonths, increase average contract value by ~8%",
+        "type": "strategic_recommendation",
+        "brand": "Linear",
+        "fact_type": "ai_recommendation",
+        "url": ""
+      },
+      {
+        "title": "Launch industry\u2011specific compliance templates...",
+        "priority": "P1 Offensive",
+        "action": "Launch industry\u2011specific compliance templates and partner with regulatory SaaS firms for co\u2011marketing",
+        "rationale": "Fills a clear gap in fintech/healthtech segments where competitors lack ready\u2011made, audit\u2011ready workflows",
+        "expected_outcome": "Open new vertical revenue stream, projected $5M ARR by FY2027",
+        "type": "strategic_recommendation",
+        "brand": "Linear",
+        "fact_type": "ai_recommendation",
+        "url": ""
+      },
+      {
+        "title": "Neutralize Jira (Atlassian) Pricing Pressure",
+        "priority": "P0 Critical",
+        "action": "Audit pricing parity against Jira (Atlassian) and deploy targeted annual incentive bundles.",
+        "rationale": "Directly counters Jira (Atlassian)'s aggressive positioning while defending margin on renewal cohorts.",
+        "expected_outcome": "Minimizes account churn and locks in retention across key customer segments.",
+        "type": "strategic_recommendation",
+        "brand": "Linear",
+        "fact_type": "ai_recommendation",
+        "url": ""
+      }
+    ],
+    "founder_decisions": []
+  },
+  "hindsight_memory": {
+    "bank_id": "godseye-intel-linear-app",
+    "storage_backend": "hindsight_embedded",
+    "is_memory_enabled": true,
+    "is_baseline": false,
+    "reflection_text": "Linear\u2019s pricing has remained stable since the March\u202f2026 \u201cIs Linear Worth It?\u201d review, which lists the Free tier (unlimited members,\u202f250 active issues) and the paid tiers at $10\u202f/\u202fuser\u202f/\u202fmonth (Basic) and $16\u202f/\u202fuser\u202f/\u202fmonth (Business) with no announced changes in later observations\u202f[Node\u202fnode_bf9e27e914e8378e].\u202fThe product\u2019s feature set, however, has accelerated: Linear Agent\u2014a Slack\u2011driven AI triage tool\u2014was launched in March\u202f2026, and a freemium \u201cLinear AI Roadmap Assistant\u201d is now being recommended for release to counter ClickUp\u2019s AI Copilot\u202f[Node\u202fnode_a7106868c6079a7d].\u202fStrategically, the company is shifting the market narrative from price competition to \u201cperformance ergonomics,\u201d pushing public benchmark comparisons against rivals (Jira, ClickUp) and deepening native integrations with GitHub, GitLab, and Vercel while co\u2011marketing with those platforms\u202f[Node\u202fnode_d0a80836f1de405e;\u202fNode\u202fnode_33ab8171f5f9b113].\u202fThese trends\u2014emphasizing speed, AI\u2011augmented",
+    "recalled_nodes_count": 8,
+    "recalled_nodes": [
+      {
+        "id": "node_349e467d86655a1d",
+        "text": "Article: Linear App Pricing: Is It Worth It in 2026? | Lifestack\nSource: lifestack.ai\nPublished: 2026-06-18T00:00:00+00:00\nURL: https://lifestack.ai/blog/linear-pricing\nContent: Linear vs Competitors on Pricing Linear Basic vs Jira Standard: Linear $10/user vs Jira $8.15/user. Linear wins on speed and UX; Jira wins on feature depth and enterprise integrations. Linear Basic vs GitHub Issues: GitHub Issues is free but limited. Linear has much stronger project and roadmap tooling. Worth the premium for teams that need cycle planning. Linear Business vs Notion: Notion Plus at $10/user is cheaper but serves different workflows. Linear for engineering execution, Notion for documentation and knowledge management. Linear vs Motion: Motion is for individual AI scheduling ($14.99-19/month) vs Linear for team project tracking. Different tools for different layers of the work. Best Tool for Engineers' Personal Productivity: Lifestack [...] Linear vs Competitors on Pricing Linear Basic vs Jira Standard: Linear $10/user vs Jira $8.15/user. Linear wins on speed and UX; Jira wins on feature depth and enterprise integrations. Linear Basic vs GitHub Issues: GitHub Issues is free but limited. Linear has much stronger project and roadmap tooling. Worth the premium for teams that need cycle planning. Linear Business vs Notion: Notion Plus at $10/user is cheaper but serves different workflows. Linear for engineering execution, Notion for documentation and knowledge management. Linear vs Motion: Motion is for individual AI scheduling ($14.99-19/month) vs Linear for team project tracking. Different tools for different layers of the work. Best Tool for Engineers' Personal Productivity: Lifestack [...] This guide breaks down every Linear pricing tier, what you actually get at each level, and which plan makes sense depending on your team size and how you work. Pricing is current as of June 2026. Key Takeaways Linear's free plan is genuinely useful for small teams: 250 issues and 2 teams covers most early-stage startups. The $10/user/month Basic plan is the sweet spot for growing teams. It removes the issue and team limits without paying for features most teams don't need. The $16/user/month Business plan is worth it when you need private teams, guest access, or Linear's advanced AI features. Linear Pricing at a Glance",
+        "timestamp": "2026-06-18T00:00:00+00:00",
+        "score": 13.0,
+        "metadata": {
+          "source": "lifestack.ai",
+          "url": "https://lifestack.ai/blog/linear-pricing",
+          "brand": "Linear",
+          "title": "Linear App Pricing: Is It Worth It in 2026? | Lifestack",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_7097b5c99f45bded",
+        "text": "Article: How to build a competitor monitoring AI agent with Hermes, Composio and Olostep | Composio\nSource: composio.dev\nPublished: 2026-10-20T00:00:00+00:00\nURL: https://composio.dev/content/competitor-monitoring-agent\nContent: What the Slack report looks like The repository's sample run is dated October 13, 2026. It compared live pages with archived copies captured between September 22 and October 6. It reported no pricing changes for Linear, Notion or Asana. It also captured Linear's Stacked pull-request changelog entry and new blog posts from Notion and Asana. The report identifies the comparison period, gives each company a pricing status, and includes new releases or articles only when present. An optional What it means line provides contextual analysis. Pages that couldn't be checked appear under Checks, so an extraction failure doesn't look like a week with no changes. A shortened excerpt of the recorded Slack report shows the format: Composio and olostep slack agent [...] `python3 seed-baseline.py 20261006` It attempts to find Wayback Machine snapshots on or before October 6, 2026, extract them with Olostep, and save them as comparison records. Then run the Hermes job. Archive availability and scrape success are not guaranteed. For ordinary monitoring, skip this script and let the first live run establish the baseline. Test the agent before relying on its alerts Our manual tests covered several failure cases that a clean demonstration would miss. A simulated price change was introduced by editing a saved Linear snapshot from `$16` to `$14`. On the next comparison, the agent reported the Business plan price as $14 \u2192 $16. [...] `OLOSTEP_MAP_WEBSITE` can help discover pricing pages, release notes and relevant URLs on a competitor's site. `OLOSTEP_CREATE_MONITOR` and `OLOSTEP_LIST_MONITOR_EVENTS` support scheduled page monitoring and recorded change events. This is an alternative to scraping every URL on each Hermes run. `OLOSTEP_START_BATCH` can process larger sets of URLs when individual scrape calls become cumbersome. `OLOSTEP_SEARCH_WEB` can look beyond official sites for launches or announcements that do not appear in a watched changelog. The report destination can also change. For example, authorise a different Composio toolkit and replace `SLACK_SEND_MESSAGE` in the skill with the relevant Notion, Linear or email action. Configure the destination's parameters and authentication separately.",
+        "timestamp": "2026-10-20T00:00:00+00:00",
+        "score": 10.0,
+        "metadata": {
+          "source": "composio.dev",
+          "url": "https://composio.dev/content/competitor-monitoring-agent",
+          "brand": "Linear",
+          "title": "How to build a competitor monitoring AI agent with Hermes, Composio and Olostep | Composio",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_43258a392d142890",
+        "text": "Article: Best Linear alternatives in 2026 | Plane blog\nSource: plane.so\nPublished: 2026-10-09T11:30:00+00:00\nURL: https://plane.so/blog/best-linear-alternatives-in-2026\nContent: \\Prices are annual, per-seat list prices for the entry paid tier. Plane's figures come from its pricing page, and the competitor figures were checked against vendor pricing pages in September 2026 where those pages could be read. Confirm current numbers before you commit, since packaging in this category changes often. 1. Plane: Best for flexible product development with connected knowledge and agents Plane is a product-development and work-management system that connects planning, execution, knowledge, AI, and agents in one workspace. Teams can structure work across Initiatives, Projects, Cycles, Modules, work items, and Work Item Types, while configuring the workflows and properties that govern them. [...] Asana vs. Linear Asana organizes work for coordination across an organization rather than the mechanics of shipping software. Its portfolios, goal tracking, and cross-team reporting give leaders a view across many teams and initiatives at once, and its rules and forms target process work that spans departments. Because that coordination is Asana's center of gravity, engineering teams moving from Linear should test how its workflow model and developer integrations map to their existing issue tracking, release, and development processes. Pricing Free Starter: $10.99 per user/month Advanced: $24.99 per user/month Enterprise: Custom pricing What to consider [...] Shortcut vs. Linear Shortcut and Linear are both built around software development, but organize work differently. Shortcut arranges work as stories, epics, iterations, and objectives. Linear uses issues, projects, cycles, and initiatives. The choice comes down largely to which planning model, developer experience, and integrations better fit the team. Pricing Free Team: $8.50 per user/month Business: $12 per user/month Enterprise: Custom pricing What to consider Primarily focused on software development, with less emphasis on broader cross-functional work. Teams should check support for the developer tools and integrations they rely on. Knowledge management and organization-wide governance are not its primary focus. 4. ClickUp",
+        "timestamp": "2026-10-09T11:30:00+00:00",
+        "score": 10.0,
+        "metadata": {
+          "source": "plane.so",
+          "url": "https://plane.so/blog/best-linear-alternatives-in-2026",
+          "brand": "Linear",
+          "title": "Best Linear alternatives in 2026 | Plane blog",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_71025684b1ec8a94",
+        "text": "Article: 14 Feature Announcement Examples for 2026 (AI Video & Interactive) | Arcade Blog\nSource: www.arcade.software\nPublished: 2026-07-20T00:00:00+00:00\nURL: https://www.arcade.software/post/feature-announcement-examples\nContent: 5. Linear release notes cadence. Linear ships a weekly changelog video that reads more like a director's cut than a marketing asset. Each entry is a 30-second product walkthrough at the top of the announcement, followed by the technical detail, cataloged live at linear.app/changelog. 6. Figma Dev Mode launch. Figma paired the Dev Mode launch with a full product feature announcement page, an embedded interactive walkthrough, and a same-day YouTube explainer. Figma has reported Dev Mode reaching 1 million weekly active users within 6 months of launch, per the Config keynote coverage. [...] | | Company / Example | Lifecycle stage | Primary asset | Distribution | Verified URL | --- --- --- | | 1 | Arcade x Quantum Metric | Launch + expansion | AI product video + interactive tour | Landing page + LinkedIn + sales follow-up | Live case study | | 2 | Arcade x RudderStack | Launch day | Prompt-based AI video | Blog + docs + LinkedIn | Live case study | | 3 | Arcade x Zapier | Post-launch expansion | Product-page AI video | Homepage product page + email | Live case study | | 4 | Notion AI blocks | Launch day | Changelog video | Changelog page + email digest | notion.so/releases | | 5 | Linear release notes | Launch day | Weekly changelog video | Changelog page + email + LinkedIn | linear.app/changelog | [...] Aggregate user ratings on G2 as of July 2026: Synthesia at 4.8/5 across 2,729+ reviews; competitor aggregate ratings visible on their respective G2 listings. This is a market-level cross-reference, not a vendor endorsement. Arcade Free is $0 and includes 1 published video with a watermark; the watermark is removable on paid tiers. Verify against arcade.software/pricing before quoting. What are the honest trade-offs of Arcade? Every AI-generated announcement platform has constraints buyers should plan around. Three real Arcade constraints:",
+        "timestamp": "2026-07-20T00:00:00+00:00",
+        "score": 10.0,
+        "metadata": {
+          "source": "www.arcade.software",
+          "url": "https://www.arcade.software/post/feature-announcement-examples",
+          "brand": "Linear",
+          "title": "14 Feature Announcement Examples for 2026 (AI Video & Interactive) | Arcade Blog",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_bf9e27e914e8378e",
+        "text": "Article: Is Linear Worth It? Honest Review for Engineering Teams (2026) | alfred_\nSource: get-alfred.ai\nPublished: 2026-03-24T00:00:00+00:00\nURL: https://get-alfred.ai/blog/is-linear-worth-it\nContent: Pricing Breakdown Linear\u2019s current plans: Free: Unlimited members, up to 250 active issues. Core issue tracking, cycles, projects, and roadmaps included. Generous for evaluation and small teams. Basic: $10/user/month. Unlimited issues, guest access, advanced filtering, and integrations. Business: $16/user/month. Everything in Basic plus priority support, advanced analytics, SAML SSO, and SCIM provisioning. Enterprise: Custom pricing. Dedicated support, advanced security, and compliance features. For comparison (10-person engineering team, annual): [...] For comparison (10-person engineering team, annual): GitHub Issues is free (but basic) Linear Basic is $100/month Jira Standard is free for up to 10 users (~$79/month on monthly billing after that) Asana Starter is $109.90/month Shortcut is free for up to 10 users ($85/month on Team plan) alfred\\_ is $29.99/month per user (different problem, individual tool) Linear\u2019s pricing is competitive. The free tier is generous enough to evaluate thoroughly, and Basic at $10/user/month is reasonable for the quality of the product. Who Should Buy Linear Engineering teams of 5-100 that want speed. If your team values fast tools and clean design, Linear is an option. The speed advantage is not marginal. It fundamentally changes how often people update issues because the friction is so low. [...] What is Linear Agent? Linear Agent launched in March 2026 is an AI feature that creates issues from Slack messages, auto-triages bugs, suggests duplicate issues, and helps draft issue descriptions. It also provides deeplinks to AI coding tools like Cursor. It brings automation to triage within Linear's ecosystem but does not read email or understand communication outside connected integrations. Linear has become the default project tracker for a generation of fast-moving software teams. The pitch is simple: Jira is bloated, GitHub Issues is too basic, and Linear sits in the sweet spot, powerful enough for real engineering workflows, fast enough that using it does not feel like work.",
+        "timestamp": "2026-03-24T00:00:00+00:00",
+        "score": 10.0,
+        "metadata": {
+          "source": "get-alfred.ai",
+          "url": "https://get-alfred.ai/blog/is-linear-worth-it",
+          "brand": "Linear",
+          "title": "Is Linear Worth It? Honest Review for Engineering Teams (2026) | alfred_",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_8ebbbbb877bb3d73",
+        "text": "Strategic Recommendation [P0 Critical]: Launch Linear AI Roadmap assistant with a freemium tier to counter ClickUp AI Copilot and differentiate on product\u2011specific intelligence. Rationale: Competitor AI moves are eroding Linear\u2019s perceived premium advantage; a tailored AI feature protects churn and attracts AI\u2011curious prospects",
+        "timestamp": "2026-11-06T11:45:08.740221+00:00",
+        "score": 9.0,
+        "metadata": {
+          "title": "Launch Linear AI Roadmap assistant with a fre...",
+          "priority": "P0 Critical",
+          "action": "Launch Linear AI Roadmap assistant with a freemium tier to counter ClickUp AI Copilot and differentiate on product\u2011specific intelligence",
+          "rationale": "Competitor AI moves are eroding Linear\u2019s perceived premium advantage; a tailored AI feature protects churn and attracts AI\u2011curious prospects",
+          "expected_outcome": "Capture \u22655% of AI\u2011seeking SMB market within 6 months, improve net retention by 3%",
+          "type": "strategic_recommendation",
+          "brand": "Linear",
+          "fact_type": "ai_recommendation",
+          "url": ""
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_b40865bac7d4ffa6",
+        "text": "Competitor Identified: ClickUp (clickup.com). Focus: All\u2011in\u2011one productivity suite with AI Copilot. Move: Introduced ClickUp AI Copilot in Jan\u202f2026 and cut Pro pricing to $9/user/mo (promotional). Price: Promotional.",
+        "timestamp": "2026-11-07T09:28:11.896588+00:00",
+        "score": 8.0,
+        "metadata": {
+          "id": "clickup",
+          "name": "ClickUp",
+          "domain": "clickup.com",
+          "market_share": "~20% of mid\u2011market SaaS PM tools",
+          "focus": "All\u2011in\u2011one productivity suite with AI Copilot",
+          "recent_move": "Introduced ClickUp AI Copilot in Jan\u202f2026 and cut Pro pricing to $9/user/mo (promotional)",
+          "price_trend": "Promotional",
+          "threat_level": "High",
+          "key_advantage": "Broader feature set, aggressive pricing, AI automation",
+          "key_vulnerability": "Less specialized for software\u2011engineer workflows, occasional performance lags",
+          "brand": "Linear",
+          "fact_type": "competitor_profile",
+          "url": "https://clickup.com"
+        },
+        "storage_backend": "hindsight_embedded"
+      },
+      {
+        "id": "node_4a06f65d43e21a77",
+        "text": "Competitor Identified: ClickUp (clickup.com). Focus: All\u2011in\u2011one productivity suite with AI Copilot. Move: Launched ClickUp AI Copilot in Jan\u202f2026 and cut Pro pricing to $9/user/mo. Price: Promotional.",
+        "timestamp": "2026-11-07T07:48:56.468467+00:00",
+        "score": 8.0,
+        "metadata": {
+          "id": "clickup",
+          "name": "ClickUp",
+          "domain": "clickup.com",
+          "market_share": "~12% of project\u2011management SaaS",
+          "focus": "All\u2011in\u2011one productivity suite with AI Copilot",
+          "recent_move": "Launched ClickUp AI Copilot in Jan\u202f2026 and cut Pro pricing to $9/user/mo",
+          "price_trend": "Promotional",
+          "threat_level": "High",
+          "key_advantage": "Broader feature set and lower price",
+          "key_vulnerability": "Less performance\u2011focused UI, weaker dev\u2011tool integrations",
+          "brand": "Linear",
+          "fact_type": "competitor_profile",
+          "url": "https://clickup.com"
+        },
+        "storage_backend": "hindsight_embedded"
+      }
+    ],
+    "neural_network": {
+      "center_node": {
+        "id": "node_center",
+        "label": "Linear",
+        "color": "#0284c7"
+      },
+      "radial_nodes": [
+        {
+          "id": "node_48f8cfe385e24e92",
+          "chip_id": "#node_48f8cfe",
+          "label": "Linear App Prici...",
+          "full_title": "Linear App Pricing: Is It Worth It in 2026? | Lifestack",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 270,
+          "content": "Article: Linear App Pricing: Is It Worth It in 2026? | Lifestack\nSource: lifestack.ai\nPublished: 2026-06-18T00:00:00+00:00\nURL: https://lifestack.ai/blog/linear-pricing\nContent: Linear vs Competitors on Pricing Linear Basic vs Jira Standard: Linear $10/user vs Jira $8.15/user. Linear wins on speed and UX; Jira wins on feature depth and enterprise integrations. Linear Basic vs GitHub Issues: GitHub Issues is free but limited. Linear has much stronger project and roadmap tooling. Worth the premium for teams that need cycle planning. Linear Business vs Notion: Notion Plus at $10/user is cheaper but serves different workflows. Linear for engineering execution, Notion for documentation and knowledge management. Linear vs Motion: Motion is for individual AI scheduling ($14.99-19/month) vs Linear for team project tracking. Different tools for different layers of the work. Best Tool for Engineers' Personal Productivity: Lifestack [...] Linear vs Competitors on Pricing Linear Basic vs Jira Standard: Linear $10/user vs Jira $8.15/user. Linear wins on speed and UX; Jira wins on feature depth and enterprise integrations. Linear Basic vs GitHub Issues: GitHub Issues is free but limited. Linear has much stronger project and roadmap tooling. Worth the premium for teams that need cycle planning. Linear Business vs Notion: Notion Plus at $10/user is cheaper but serves different workflows. Linear for engineering execution, Notion for documentation and knowledge management. Linear vs Motion: Motion is for individual AI scheduling ($14.99-19/month) vs Linear for team project tracking. Different tools for different layers of the work. Best Tool for Engineers' Personal Productivity: Lifestack [...] This guide breaks down every Linear pricing tier, what you actually get at each level, and which plan makes sense depending on your team size and how you work. Pricing is current as of June 2026. Key Takeaways Linear's free plan is genuinely useful for small teams: 250 issues and 2 teams covers most early-stage startups. The $10/user/month Basic plan is the sweet spot for growing teams. It removes the issue and team limits without paying for features most teams don't need. The $16/user/month Business plan is worth it when you need private teams, guest access, or Linear's advanced AI features. Linear Pricing at a Glance",
+          "timestamp": "2026-06-18T00:00:00+00:00"
+        },
+        {
+          "id": "node_9d69b1f90e514422",
+          "chip_id": "#node_9d69b1f",
+          "label": "How to build a c...",
+          "full_title": "How to build a competitor monitoring AI agent with Hermes, Composio and Olostep | Composio",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 320,
+          "content": "Article: How to build a competitor monitoring AI agent with Hermes, Composio and Olostep | Composio\nSource: composio.dev\nPublished: 2026-10-20T00:00:00+00:00\nURL: https://composio.dev/content/competitor-monitoring-agent\nContent: What the Slack report looks like The repository's sample run is dated October 13, 2026. It compared live pages with archived copies captured between September 22 and October 6. It reported no pricing changes for Linear, Notion or Asana. It also captured Linear's Stacked pull-request changelog entry and new blog posts from Notion and Asana. The report identifies the comparison period, gives each company a pricing status, and includes new releases or articles only when present. An optional What it means line provides contextual analysis. Pages that couldn't be checked appear under Checks, so an extraction failure doesn't look like a week with no changes. A shortened excerpt of the recorded Slack report shows the format: Composio and olostep slack agent [...] `python3 seed-baseline.py 20261006` It attempts to find Wayback Machine snapshots on or before October 6, 2026, extract them with Olostep, and save them as comparison records. Then run the Hermes job. Archive availability and scrape success are not guaranteed. For ordinary monitoring, skip this script and let the first live run establish the baseline. Test the agent before relying on its alerts Our manual tests covered several failure cases that a clean demonstration would miss. A simulated price change was introduced by editing a saved Linear snapshot from `$16` to `$14`. On the next comparison, the agent reported the Business plan price as $14 \u2192 $16. [...] `OLOSTEP_MAP_WEBSITE` can help discover pricing pages, release notes and relevant URLs on a competitor's site. `OLOSTEP_CREATE_MONITOR` and `OLOSTEP_LIST_MONITOR_EVENTS` support scheduled page monitoring and recorded change events. This is an alternative to scraping every URL on each Hermes run. `OLOSTEP_START_BATCH` can process larger sets of URLs when individual scrape calls become cumbersome. `OLOSTEP_SEARCH_WEB` can look beyond official sites for launches or announcements that do not appear in a watched changelog. The report destination can also change. For example, authorise a different Composio toolkit and replace `SLACK_SEND_MESSAGE` in the skill with the relevant Notion, Linear or email action. Configure the destination's parameters and authentication separately.",
+          "timestamp": "2026-10-20T00:00:00+00:00"
+        },
+        {
+          "id": "node_12723aac2a2447b9",
+          "chip_id": "#node_12723aa",
+          "label": "Best Linear alte...",
+          "full_title": "Best Linear alternatives in 2026 | Plane blog",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 15,
+          "content": "Article: Best Linear alternatives in 2026 | Plane blog\nSource: plane.so\nPublished: 2026-10-09T11:30:00+00:00\nURL: https://plane.so/blog/best-linear-alternatives-in-2026\nContent: \\Prices are annual, per-seat list prices for the entry paid tier. Plane's figures come from its pricing page, and the competitor figures were checked against vendor pricing pages in September 2026 where those pages could be read. Confirm current numbers before you commit, since packaging in this category changes often. 1. Plane: Best for flexible product development with connected knowledge and agents Plane is a product-development and work-management system that connects planning, execution, knowledge, AI, and agents in one workspace. Teams can structure work across Initiatives, Projects, Cycles, Modules, work items, and Work Item Types, while configuring the workflows and properties that govern them. [...] Asana vs. Linear Asana organizes work for coordination across an organization rather than the mechanics of shipping software. Its portfolios, goal tracking, and cross-team reporting give leaders a view across many teams and initiatives at once, and its rules and forms target process work that spans departments. Because that coordination is Asana's center of gravity, engineering teams moving from Linear should test how its workflow model and developer integrations map to their existing issue tracking, release, and development processes. Pricing Free Starter: $10.99 per user/month Advanced: $24.99 per user/month Enterprise: Custom pricing What to consider [...] Shortcut vs. Linear Shortcut and Linear are both built around software development, but organize work differently. Shortcut arranges work as stories, epics, iterations, and objectives. Linear uses issues, projects, cycles, and initiatives. The choice comes down largely to which planning model, developer experience, and integrations better fit the team. Pricing Free Team: $8.50 per user/month Business: $12 per user/month Enterprise: Custom pricing What to consider Primarily focused on software development, with less emphasis on broader cross-functional work. Teams should check support for the developer tools and integrations they rely on. Knowledge management and organization-wide governance are not its primary focus. 4. ClickUp",
+          "timestamp": "2026-10-09T11:30:00+00:00"
+        },
+        {
+          "id": "node_e59926a67217457a",
+          "chip_id": "#node_e59926a",
+          "label": "14 Feature Annou...",
+          "full_title": "14 Feature Announcement Examples for 2026 (AI Video & Interactive) | Arcade Blog",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 65,
+          "content": "Article: 14 Feature Announcement Examples for 2026 (AI Video & Interactive) | Arcade Blog\nSource: www.arcade.software\nPublished: 2026-07-20T00:00:00+00:00\nURL: https://www.arcade.software/post/feature-announcement-examples\nContent: 5. Linear release notes cadence. Linear ships a weekly changelog video that reads more like a director's cut than a marketing asset. Each entry is a 30-second product walkthrough at the top of the announcement, followed by the technical detail, cataloged live at linear.app/changelog. 6. Figma Dev Mode launch. Figma paired the Dev Mode launch with a full product feature announcement page, an embedded interactive walkthrough, and a same-day YouTube explainer. Figma has reported Dev Mode reaching 1 million weekly active users within 6 months of launch, per the Config keynote coverage. [...] | | Company / Example | Lifecycle stage | Primary asset | Distribution | Verified URL | --- --- --- | | 1 | Arcade x Quantum Metric | Launch + expansion | AI product video + interactive tour | Landing page + LinkedIn + sales follow-up | Live case study | | 2 | Arcade x RudderStack | Launch day | Prompt-based AI video | Blog + docs + LinkedIn | Live case study | | 3 | Arcade x Zapier | Post-launch expansion | Product-page AI video | Homepage product page + email | Live case study | | 4 | Notion AI blocks | Launch day | Changelog video | Changelog page + email digest | notion.so/releases | | 5 | Linear release notes | Launch day | Weekly changelog video | Changelog page + email + LinkedIn | linear.app/changelog | [...] Aggregate user ratings on G2 as of July 2026: Synthesia at 4.8/5 across 2,729+ reviews; competitor aggregate ratings visible on their respective G2 listings. This is a market-level cross-reference, not a vendor endorsement. Arcade Free is $0 and includes 1 published video with a watermark; the watermark is removable on paid tiers. Verify against arcade.software/pricing before quoting. What are the honest trade-offs of Arcade? Every AI-generated announcement platform has constraints buyers should plan around. Three real Arcade constraints:",
+          "timestamp": "2026-07-20T00:00:00+00:00"
+        },
+        {
+          "id": "node_5e13060a21b44f5f",
+          "chip_id": "#node_5e13060",
+          "label": "Is Linear Worth ...",
+          "full_title": "Is Linear Worth It? Honest Review for Engineering Teams (2026) | alfred_",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 90,
+          "content": "Article: Is Linear Worth It? Honest Review for Engineering Teams (2026) | alfred_\nSource: get-alfred.ai\nPublished: 2026-03-24T00:00:00+00:00\nURL: https://get-alfred.ai/blog/is-linear-worth-it\nContent: Pricing Breakdown Linear\u2019s current plans: Free: Unlimited members, up to 250 active issues. Core issue tracking, cycles, projects, and roadmaps included. Generous for evaluation and small teams. Basic: $10/user/month. Unlimited issues, guest access, advanced filtering, and integrations. Business: $16/user/month. Everything in Basic plus priority support, advanced analytics, SAML SSO, and SCIM provisioning. Enterprise: Custom pricing. Dedicated support, advanced security, and compliance features. For comparison (10-person engineering team, annual): [...] For comparison (10-person engineering team, annual): GitHub Issues is free (but basic) Linear Basic is $100/month Jira Standard is free for up to 10 users (~$79/month on monthly billing after that) Asana Starter is $109.90/month Shortcut is free for up to 10 users ($85/month on Team plan) alfred\\_ is $29.99/month per user (different problem, individual tool) Linear\u2019s pricing is competitive. The free tier is generous enough to evaluate thoroughly, and Basic at $10/user/month is reasonable for the quality of the product. Who Should Buy Linear Engineering teams of 5-100 that want speed. If your team values fast tools and clean design, Linear is an option. The speed advantage is not marginal. It fundamentally changes how often people update issues because the friction is so low. [...] What is Linear Agent? Linear Agent launched in March 2026 is an AI feature that creates issues from Slack messages, auto-triages bugs, suggests duplicate issues, and helps draft issue descriptions. It also provides deeplinks to AI coding tools like Cursor. It brings automation to triage within Linear's ecosystem but does not read email or understand communication outside connected integrations. Linear has become the default project tracker for a generation of fast-moving software teams. The pitch is simple: Jira is bloated, GitHub Issues is too basic, and Linear sits in the sweet spot, powerful enough for real engineering workflows, fast enough that using it does not feel like work.",
+          "timestamp": "2026-03-24T00:00:00+00:00"
+        },
+        {
+          "id": "node_3abda51d6e514333",
+          "chip_id": "#node_3abda51",
+          "label": "Accelerate rollout...",
+          "full_title": "Accelerate rollout of Linear AI Roadmap Assistant with enterprise\u2011grade SLA and embed into Enterprise contracts",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 140,
+          "content": "Strategic Move [P0 Critical]: Accelerate rollout of Linear AI Roadmap Assistant with enterprise\u2011grade SLA and embed into Enterprise contracts. Rationale: Directly counters Jira\u2019s AI roadmap upgrade and leverages Linear\u2019s speed narrative to justify premium pricing",
+          "timestamp": "2026-11-07T14:58:29.419179+00:00"
+        },
+        {
+          "id": "node_56adeffba11542da",
+          "chip_id": "#node_56adeff",
+          "label": "Launch industry\u2011sp...",
+          "full_title": "Launch industry\u2011specific compliance templates and partner with regulatory SaaS firms for co\u2011marketing",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 195,
+          "content": "Strategic Move [P1 Offensive]: Launch industry\u2011specific compliance templates and partner with regulatory SaaS firms for co\u2011marketing. Rationale: Fills a clear gap in fintech/healthtech segments where competitors lack ready\u2011made, audit\u2011ready workflows",
+          "timestamp": "2026-11-07T14:58:29.419183+00:00"
+        },
+        {
+          "id": "node_18f53a9a74b84caa",
+          "chip_id": "#node_18f53a9",
+          "label": "Audit pricing pari...",
+          "full_title": "Audit pricing parity against Jira (Atlassian) and deploy targeted annual incentive bundles.",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 235,
+          "content": "Strategic Move [P0 Critical]: Audit pricing parity against Jira (Atlassian) and deploy targeted annual incentive bundles.. Rationale: Directly counters Jira (Atlassian)'s aggressive positioning while defending margin on renewal cohorts.",
+          "timestamp": "2026-11-07T14:58:29.419185+00:00"
+        }
+      ],
+      "recalled_chips": [
+        "#node_48f8cfe",
+        "#node_9d69b1f",
+        "#node_12723aa",
+        "#node_e59926a",
+        "#node_5e13060",
+        "#node_3abda51"
+      ],
+      "instant_prompts": [
+        "What is Linear's pricing moat?",
+        "How have competitor prices shifted?",
+        "What strategic counter-move should we execute?"
+      ]
+    },
+    "neural_nodes": [
+      {
+        "id": "node_48f8cfe385e24e92",
+        "chip_id": "#node_48f8cfe",
+        "label": "Linear App Prici...",
+        "full_title": "Linear App Pricing: Is It Worth It in 2026? | Lifestack",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 270,
+        "content": "Article: Linear App Pricing: Is It Worth It in 2026? | Lifestack\nSource: lifestack.ai\nPublished: 2026-06-18T00:00:00+00:00\nURL: https://lifestack.ai/blog/linear-pricing\nContent: Linear vs Competitors on Pricing Linear Basic vs Jira Standard: Linear $10/user vs Jira $8.15/user. Linear wins on speed and UX; Jira wins on feature depth and enterprise integrations. Linear Basic vs GitHub Issues: GitHub Issues is free but limited. Linear has much stronger project and roadmap tooling. Worth the premium for teams that need cycle planning. Linear Business vs Notion: Notion Plus at $10/user is cheaper but serves different workflows. Linear for engineering execution, Notion for documentation and knowledge management. Linear vs Motion: Motion is for individual AI scheduling ($14.99-19/month) vs Linear for team project tracking. Different tools for different layers of the work. Best Tool for Engineers' Personal Productivity: Lifestack [...] Linear vs Competitors on Pricing Linear Basic vs Jira Standard: Linear $10/user vs Jira $8.15/user. Linear wins on speed and UX; Jira wins on feature depth and enterprise integrations. Linear Basic vs GitHub Issues: GitHub Issues is free but limited. Linear has much stronger project and roadmap tooling. Worth the premium for teams that need cycle planning. Linear Business vs Notion: Notion Plus at $10/user is cheaper but serves different workflows. Linear for engineering execution, Notion for documentation and knowledge management. Linear vs Motion: Motion is for individual AI scheduling ($14.99-19/month) vs Linear for team project tracking. Different tools for different layers of the work. Best Tool for Engineers' Personal Productivity: Lifestack [...] This guide breaks down every Linear pricing tier, what you actually get at each level, and which plan makes sense depending on your team size and how you work. Pricing is current as of June 2026. Key Takeaways Linear's free plan is genuinely useful for small teams: 250 issues and 2 teams covers most early-stage startups. The $10/user/month Basic plan is the sweet spot for growing teams. It removes the issue and team limits without paying for features most teams don't need. The $16/user/month Business plan is worth it when you need private teams, guest access, or Linear's advanced AI features. Linear Pricing at a Glance",
+        "timestamp": "2026-06-18T00:00:00+00:00"
+      },
+      {
+        "id": "node_9d69b1f90e514422",
+        "chip_id": "#node_9d69b1f",
+        "label": "How to build a c...",
+        "full_title": "How to build a competitor monitoring AI agent with Hermes, Composio and Olostep | Composio",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 320,
+        "content": "Article: How to build a competitor monitoring AI agent with Hermes, Composio and Olostep | Composio\nSource: composio.dev\nPublished: 2026-10-20T00:00:00+00:00\nURL: https://composio.dev/content/competitor-monitoring-agent\nContent: What the Slack report looks like The repository's sample run is dated October 13, 2026. It compared live pages with archived copies captured between September 22 and October 6. It reported no pricing changes for Linear, Notion or Asana. It also captured Linear's Stacked pull-request changelog entry and new blog posts from Notion and Asana. The report identifies the comparison period, gives each company a pricing status, and includes new releases or articles only when present. An optional What it means line provides contextual analysis. Pages that couldn't be checked appear under Checks, so an extraction failure doesn't look like a week with no changes. A shortened excerpt of the recorded Slack report shows the format: Composio and olostep slack agent [...] `python3 seed-baseline.py 20261006` It attempts to find Wayback Machine snapshots on or before October 6, 2026, extract them with Olostep, and save them as comparison records. Then run the Hermes job. Archive availability and scrape success are not guaranteed. For ordinary monitoring, skip this script and let the first live run establish the baseline. Test the agent before relying on its alerts Our manual tests covered several failure cases that a clean demonstration would miss. A simulated price change was introduced by editing a saved Linear snapshot from `$16` to `$14`. On the next comparison, the agent reported the Business plan price as $14 \u2192 $16. [...] `OLOSTEP_MAP_WEBSITE` can help discover pricing pages, release notes and relevant URLs on a competitor's site. `OLOSTEP_CREATE_MONITOR` and `OLOSTEP_LIST_MONITOR_EVENTS` support scheduled page monitoring and recorded change events. This is an alternative to scraping every URL on each Hermes run. `OLOSTEP_START_BATCH` can process larger sets of URLs when individual scrape calls become cumbersome. `OLOSTEP_SEARCH_WEB` can look beyond official sites for launches or announcements that do not appear in a watched changelog. The report destination can also change. For example, authorise a different Composio toolkit and replace `SLACK_SEND_MESSAGE` in the skill with the relevant Notion, Linear or email action. Configure the destination's parameters and authentication separately.",
+        "timestamp": "2026-10-20T00:00:00+00:00"
+      },
+      {
+        "id": "node_12723aac2a2447b9",
+        "chip_id": "#node_12723aa",
+        "label": "Best Linear alte...",
+        "full_title": "Best Linear alternatives in 2026 | Plane blog",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 15,
+        "content": "Article: Best Linear alternatives in 2026 | Plane blog\nSource: plane.so\nPublished: 2026-10-09T11:30:00+00:00\nURL: https://plane.so/blog/best-linear-alternatives-in-2026\nContent: \\Prices are annual, per-seat list prices for the entry paid tier. Plane's figures come from its pricing page, and the competitor figures were checked against vendor pricing pages in September 2026 where those pages could be read. Confirm current numbers before you commit, since packaging in this category changes often. 1. Plane: Best for flexible product development with connected knowledge and agents Plane is a product-development and work-management system that connects planning, execution, knowledge, AI, and agents in one workspace. Teams can structure work across Initiatives, Projects, Cycles, Modules, work items, and Work Item Types, while configuring the workflows and properties that govern them. [...] Asana vs. Linear Asana organizes work for coordination across an organization rather than the mechanics of shipping software. Its portfolios, goal tracking, and cross-team reporting give leaders a view across many teams and initiatives at once, and its rules and forms target process work that spans departments. Because that coordination is Asana's center of gravity, engineering teams moving from Linear should test how its workflow model and developer integrations map to their existing issue tracking, release, and development processes. Pricing Free Starter: $10.99 per user/month Advanced: $24.99 per user/month Enterprise: Custom pricing What to consider [...] Shortcut vs. Linear Shortcut and Linear are both built around software development, but organize work differently. Shortcut arranges work as stories, epics, iterations, and objectives. Linear uses issues, projects, cycles, and initiatives. The choice comes down largely to which planning model, developer experience, and integrations better fit the team. Pricing Free Team: $8.50 per user/month Business: $12 per user/month Enterprise: Custom pricing What to consider Primarily focused on software development, with less emphasis on broader cross-functional work. Teams should check support for the developer tools and integrations they rely on. Knowledge management and organization-wide governance are not its primary focus. 4. ClickUp",
+        "timestamp": "2026-10-09T11:30:00+00:00"
+      },
+      {
+        "id": "node_e59926a67217457a",
+        "chip_id": "#node_e59926a",
+        "label": "14 Feature Annou...",
+        "full_title": "14 Feature Announcement Examples for 2026 (AI Video & Interactive) | Arcade Blog",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 65,
+        "content": "Article: 14 Feature Announcement Examples for 2026 (AI Video & Interactive) | Arcade Blog\nSource: www.arcade.software\nPublished: 2026-07-20T00:00:00+00:00\nURL: https://www.arcade.software/post/feature-announcement-examples\nContent: 5. Linear release notes cadence. Linear ships a weekly changelog video that reads more like a director's cut than a marketing asset. Each entry is a 30-second product walkthrough at the top of the announcement, followed by the technical detail, cataloged live at linear.app/changelog. 6. Figma Dev Mode launch. Figma paired the Dev Mode launch with a full product feature announcement page, an embedded interactive walkthrough, and a same-day YouTube explainer. Figma has reported Dev Mode reaching 1 million weekly active users within 6 months of launch, per the Config keynote coverage. [...] | | Company / Example | Lifecycle stage | Primary asset | Distribution | Verified URL | --- --- --- | | 1 | Arcade x Quantum Metric | Launch + expansion | AI product video + interactive tour | Landing page + LinkedIn + sales follow-up | Live case study | | 2 | Arcade x RudderStack | Launch day | Prompt-based AI video | Blog + docs + LinkedIn | Live case study | | 3 | Arcade x Zapier | Post-launch expansion | Product-page AI video | Homepage product page + email | Live case study | | 4 | Notion AI blocks | Launch day | Changelog video | Changelog page + email digest | notion.so/releases | | 5 | Linear release notes | Launch day | Weekly changelog video | Changelog page + email + LinkedIn | linear.app/changelog | [...] Aggregate user ratings on G2 as of July 2026: Synthesia at 4.8/5 across 2,729+ reviews; competitor aggregate ratings visible on their respective G2 listings. This is a market-level cross-reference, not a vendor endorsement. Arcade Free is $0 and includes 1 published video with a watermark; the watermark is removable on paid tiers. Verify against arcade.software/pricing before quoting. What are the honest trade-offs of Arcade? Every AI-generated announcement platform has constraints buyers should plan around. Three real Arcade constraints:",
+        "timestamp": "2026-07-20T00:00:00+00:00"
+      },
+      {
+        "id": "node_5e13060a21b44f5f",
+        "chip_id": "#node_5e13060",
+        "label": "Is Linear Worth ...",
+        "full_title": "Is Linear Worth It? Honest Review for Engineering Teams (2026) | alfred_",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 90,
+        "content": "Article: Is Linear Worth It? Honest Review for Engineering Teams (2026) | alfred_\nSource: get-alfred.ai\nPublished: 2026-03-24T00:00:00+00:00\nURL: https://get-alfred.ai/blog/is-linear-worth-it\nContent: Pricing Breakdown Linear\u2019s current plans: Free: Unlimited members, up to 250 active issues. Core issue tracking, cycles, projects, and roadmaps included. Generous for evaluation and small teams. Basic: $10/user/month. Unlimited issues, guest access, advanced filtering, and integrations. Business: $16/user/month. Everything in Basic plus priority support, advanced analytics, SAML SSO, and SCIM provisioning. Enterprise: Custom pricing. Dedicated support, advanced security, and compliance features. For comparison (10-person engineering team, annual): [...] For comparison (10-person engineering team, annual): GitHub Issues is free (but basic) Linear Basic is $100/month Jira Standard is free for up to 10 users (~$79/month on monthly billing after that) Asana Starter is $109.90/month Shortcut is free for up to 10 users ($85/month on Team plan) alfred\\_ is $29.99/month per user (different problem, individual tool) Linear\u2019s pricing is competitive. The free tier is generous enough to evaluate thoroughly, and Basic at $10/user/month is reasonable for the quality of the product. Who Should Buy Linear Engineering teams of 5-100 that want speed. If your team values fast tools and clean design, Linear is an option. The speed advantage is not marginal. It fundamentally changes how often people update issues because the friction is so low. [...] What is Linear Agent? Linear Agent launched in March 2026 is an AI feature that creates issues from Slack messages, auto-triages bugs, suggests duplicate issues, and helps draft issue descriptions. It also provides deeplinks to AI coding tools like Cursor. It brings automation to triage within Linear's ecosystem but does not read email or understand communication outside connected integrations. Linear has become the default project tracker for a generation of fast-moving software teams. The pitch is simple: Jira is bloated, GitHub Issues is too basic, and Linear sits in the sweet spot, powerful enough for real engineering workflows, fast enough that using it does not feel like work.",
+        "timestamp": "2026-03-24T00:00:00+00:00"
+      },
+      {
+        "id": "node_3abda51d6e514333",
+        "chip_id": "#node_3abda51",
+        "label": "Accelerate rollout...",
+        "full_title": "Accelerate rollout of Linear AI Roadmap Assistant with enterprise\u2011grade SLA and embed into Enterprise contracts",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 140,
+        "content": "Strategic Move [P0 Critical]: Accelerate rollout of Linear AI Roadmap Assistant with enterprise\u2011grade SLA and embed into Enterprise contracts. Rationale: Directly counters Jira\u2019s AI roadmap upgrade and leverages Linear\u2019s speed narrative to justify premium pricing",
+        "timestamp": "2026-11-07T14:58:29.419179+00:00"
+      },
+      {
+        "id": "node_56adeffba11542da",
+        "chip_id": "#node_56adeff",
+        "label": "Launch industry\u2011sp...",
+        "full_title": "Launch industry\u2011specific compliance templates and partner with regulatory SaaS firms for co\u2011marketing",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 195,
+        "content": "Strategic Move [P1 Offensive]: Launch industry\u2011specific compliance templates and partner with regulatory SaaS firms for co\u2011marketing. Rationale: Fills a clear gap in fintech/healthtech segments where competitors lack ready\u2011made, audit\u2011ready workflows",
+        "timestamp": "2026-11-07T14:58:29.419183+00:00"
+      },
+      {
+        "id": "node_18f53a9a74b84caa",
+        "chip_id": "#node_18f53a9",
+        "label": "Audit pricing pari...",
+        "full_title": "Audit pricing parity against Jira (Atlassian) and deploy targeted annual incentive bundles.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 235,
+        "content": "Strategic Move [P0 Critical]: Audit pricing parity against Jira (Atlassian) and deploy targeted annual incentive bundles.. Rationale: Directly counters Jira (Atlassian)'s aggressive positioning while defending margin on renewal cohorts.",
+        "timestamp": "2026-11-07T14:58:29.419185+00:00"
+      }
+    ],
+    "recalled_chips": [
+      "#node_48f8cfe",
+      "#node_9d69b1f",
+      "#node_12723aa",
+      "#node_e59926a",
+      "#node_5e13060",
+      "#node_3abda51"
+    ],
+    "instant_prompts": [
+      "What is Linear's pricing moat?",
+      "How have competitor prices shifted?",
+      "What strategic counter-move should we execute?"
+    ],
+    "compounding_message": "The next time Linear is scanned, the agent remembers previous findings and identifies what's changed, which strategies are developing and which trends are continuing."
+  },
+  "neural_network": {
+    "center_node": {
+      "id": "node_center",
+      "label": "Linear",
+      "color": "#0284c7"
+    },
+    "radial_nodes": [
+      {
+        "id": "node_48f8cfe385e24e92",
+        "chip_id": "#node_48f8cfe",
+        "label": "Linear App Prici...",
+        "full_title": "Linear App Pricing: Is It Worth It in 2026? | Lifestack",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 270,
+        "content": "Article: Linear App Pricing: Is It Worth It in 2026? | Lifestack\nSource: lifestack.ai\nPublished: 2026-06-18T00:00:00+00:00\nURL: https://lifestack.ai/blog/linear-pricing\nContent: Linear vs Competitors on Pricing Linear Basic vs Jira Standard: Linear $10/user vs Jira $8.15/user. Linear wins on speed and UX; Jira wins on feature depth and enterprise integrations. Linear Basic vs GitHub Issues: GitHub Issues is free but limited. Linear has much stronger project and roadmap tooling. Worth the premium for teams that need cycle planning. Linear Business vs Notion: Notion Plus at $10/user is cheaper but serves different workflows. Linear for engineering execution, Notion for documentation and knowledge management. Linear vs Motion: Motion is for individual AI scheduling ($14.99-19/month) vs Linear for team project tracking. Different tools for different layers of the work. Best Tool for Engineers' Personal Productivity: Lifestack [...] Linear vs Competitors on Pricing Linear Basic vs Jira Standard: Linear $10/user vs Jira $8.15/user. Linear wins on speed and UX; Jira wins on feature depth and enterprise integrations. Linear Basic vs GitHub Issues: GitHub Issues is free but limited. Linear has much stronger project and roadmap tooling. Worth the premium for teams that need cycle planning. Linear Business vs Notion: Notion Plus at $10/user is cheaper but serves different workflows. Linear for engineering execution, Notion for documentation and knowledge management. Linear vs Motion: Motion is for individual AI scheduling ($14.99-19/month) vs Linear for team project tracking. Different tools for different layers of the work. Best Tool for Engineers' Personal Productivity: Lifestack [...] This guide breaks down every Linear pricing tier, what you actually get at each level, and which plan makes sense depending on your team size and how you work. Pricing is current as of June 2026. Key Takeaways Linear's free plan is genuinely useful for small teams: 250 issues and 2 teams covers most early-stage startups. The $10/user/month Basic plan is the sweet spot for growing teams. It removes the issue and team limits without paying for features most teams don't need. The $16/user/month Business plan is worth it when you need private teams, guest access, or Linear's advanced AI features. Linear Pricing at a Glance",
+        "timestamp": "2026-06-18T00:00:00+00:00"
+      },
+      {
+        "id": "node_9d69b1f90e514422",
+        "chip_id": "#node_9d69b1f",
+        "label": "How to build a c...",
+        "full_title": "How to build a competitor monitoring AI agent with Hermes, Composio and Olostep | Composio",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 320,
+        "content": "Article: How to build a competitor monitoring AI agent with Hermes, Composio and Olostep | Composio\nSource: composio.dev\nPublished: 2026-10-20T00:00:00+00:00\nURL: https://composio.dev/content/competitor-monitoring-agent\nContent: What the Slack report looks like The repository's sample run is dated October 13, 2026. It compared live pages with archived copies captured between September 22 and October 6. It reported no pricing changes for Linear, Notion or Asana. It also captured Linear's Stacked pull-request changelog entry and new blog posts from Notion and Asana. The report identifies the comparison period, gives each company a pricing status, and includes new releases or articles only when present. An optional What it means line provides contextual analysis. Pages that couldn't be checked appear under Checks, so an extraction failure doesn't look like a week with no changes. A shortened excerpt of the recorded Slack report shows the format: Composio and olostep slack agent [...] `python3 seed-baseline.py 20261006` It attempts to find Wayback Machine snapshots on or before October 6, 2026, extract them with Olostep, and save them as comparison records. Then run the Hermes job. Archive availability and scrape success are not guaranteed. For ordinary monitoring, skip this script and let the first live run establish the baseline. Test the agent before relying on its alerts Our manual tests covered several failure cases that a clean demonstration would miss. A simulated price change was introduced by editing a saved Linear snapshot from `$16` to `$14`. On the next comparison, the agent reported the Business plan price as $14 \u2192 $16. [...] `OLOSTEP_MAP_WEBSITE` can help discover pricing pages, release notes and relevant URLs on a competitor's site. `OLOSTEP_CREATE_MONITOR` and `OLOSTEP_LIST_MONITOR_EVENTS` support scheduled page monitoring and recorded change events. This is an alternative to scraping every URL on each Hermes run. `OLOSTEP_START_BATCH` can process larger sets of URLs when individual scrape calls become cumbersome. `OLOSTEP_SEARCH_WEB` can look beyond official sites for launches or announcements that do not appear in a watched changelog. The report destination can also change. For example, authorise a different Composio toolkit and replace `SLACK_SEND_MESSAGE` in the skill with the relevant Notion, Linear or email action. Configure the destination's parameters and authentication separately.",
+        "timestamp": "2026-10-20T00:00:00+00:00"
+      },
+      {
+        "id": "node_12723aac2a2447b9",
+        "chip_id": "#node_12723aa",
+        "label": "Best Linear alte...",
+        "full_title": "Best Linear alternatives in 2026 | Plane blog",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 15,
+        "content": "Article: Best Linear alternatives in 2026 | Plane blog\nSource: plane.so\nPublished: 2026-10-09T11:30:00+00:00\nURL: https://plane.so/blog/best-linear-alternatives-in-2026\nContent: \\Prices are annual, per-seat list prices for the entry paid tier. Plane's figures come from its pricing page, and the competitor figures were checked against vendor pricing pages in September 2026 where those pages could be read. Confirm current numbers before you commit, since packaging in this category changes often. 1. Plane: Best for flexible product development with connected knowledge and agents Plane is a product-development and work-management system that connects planning, execution, knowledge, AI, and agents in one workspace. Teams can structure work across Initiatives, Projects, Cycles, Modules, work items, and Work Item Types, while configuring the workflows and properties that govern them. [...] Asana vs. Linear Asana organizes work for coordination across an organization rather than the mechanics of shipping software. Its portfolios, goal tracking, and cross-team reporting give leaders a view across many teams and initiatives at once, and its rules and forms target process work that spans departments. Because that coordination is Asana's center of gravity, engineering teams moving from Linear should test how its workflow model and developer integrations map to their existing issue tracking, release, and development processes. Pricing Free Starter: $10.99 per user/month Advanced: $24.99 per user/month Enterprise: Custom pricing What to consider [...] Shortcut vs. Linear Shortcut and Linear are both built around software development, but organize work differently. Shortcut arranges work as stories, epics, iterations, and objectives. Linear uses issues, projects, cycles, and initiatives. The choice comes down largely to which planning model, developer experience, and integrations better fit the team. Pricing Free Team: $8.50 per user/month Business: $12 per user/month Enterprise: Custom pricing What to consider Primarily focused on software development, with less emphasis on broader cross-functional work. Teams should check support for the developer tools and integrations they rely on. Knowledge management and organization-wide governance are not its primary focus. 4. ClickUp",
+        "timestamp": "2026-10-09T11:30:00+00:00"
+      },
+      {
+        "id": "node_e59926a67217457a",
+        "chip_id": "#node_e59926a",
+        "label": "14 Feature Annou...",
+        "full_title": "14 Feature Announcement Examples for 2026 (AI Video & Interactive) | Arcade Blog",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 65,
+        "content": "Article: 14 Feature Announcement Examples for 2026 (AI Video & Interactive) | Arcade Blog\nSource: www.arcade.software\nPublished: 2026-07-20T00:00:00+00:00\nURL: https://www.arcade.software/post/feature-announcement-examples\nContent: 5. Linear release notes cadence. Linear ships a weekly changelog video that reads more like a director's cut than a marketing asset. Each entry is a 30-second product walkthrough at the top of the announcement, followed by the technical detail, cataloged live at linear.app/changelog. 6. Figma Dev Mode launch. Figma paired the Dev Mode launch with a full product feature announcement page, an embedded interactive walkthrough, and a same-day YouTube explainer. Figma has reported Dev Mode reaching 1 million weekly active users within 6 months of launch, per the Config keynote coverage. [...] | | Company / Example | Lifecycle stage | Primary asset | Distribution | Verified URL | --- --- --- | | 1 | Arcade x Quantum Metric | Launch + expansion | AI product video + interactive tour | Landing page + LinkedIn + sales follow-up | Live case study | | 2 | Arcade x RudderStack | Launch day | Prompt-based AI video | Blog + docs + LinkedIn | Live case study | | 3 | Arcade x Zapier | Post-launch expansion | Product-page AI video | Homepage product page + email | Live case study | | 4 | Notion AI blocks | Launch day | Changelog video | Changelog page + email digest | notion.so/releases | | 5 | Linear release notes | Launch day | Weekly changelog video | Changelog page + email + LinkedIn | linear.app/changelog | [...] Aggregate user ratings on G2 as of July 2026: Synthesia at 4.8/5 across 2,729+ reviews; competitor aggregate ratings visible on their respective G2 listings. This is a market-level cross-reference, not a vendor endorsement. Arcade Free is $0 and includes 1 published video with a watermark; the watermark is removable on paid tiers. Verify against arcade.software/pricing before quoting. What are the honest trade-offs of Arcade? Every AI-generated announcement platform has constraints buyers should plan around. Three real Arcade constraints:",
+        "timestamp": "2026-07-20T00:00:00+00:00"
+      },
+      {
+        "id": "node_5e13060a21b44f5f",
+        "chip_id": "#node_5e13060",
+        "label": "Is Linear Worth ...",
+        "full_title": "Is Linear Worth It? Honest Review for Engineering Teams (2026) | alfred_",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 90,
+        "content": "Article: Is Linear Worth It? Honest Review for Engineering Teams (2026) | alfred_\nSource: get-alfred.ai\nPublished: 2026-03-24T00:00:00+00:00\nURL: https://get-alfred.ai/blog/is-linear-worth-it\nContent: Pricing Breakdown Linear\u2019s current plans: Free: Unlimited members, up to 250 active issues. Core issue tracking, cycles, projects, and roadmaps included. Generous for evaluation and small teams. Basic: $10/user/month. Unlimited issues, guest access, advanced filtering, and integrations. Business: $16/user/month. Everything in Basic plus priority support, advanced analytics, SAML SSO, and SCIM provisioning. Enterprise: Custom pricing. Dedicated support, advanced security, and compliance features. For comparison (10-person engineering team, annual): [...] For comparison (10-person engineering team, annual): GitHub Issues is free (but basic) Linear Basic is $100/month Jira Standard is free for up to 10 users (~$79/month on monthly billing after that) Asana Starter is $109.90/month Shortcut is free for up to 10 users ($85/month on Team plan) alfred\\_ is $29.99/month per user (different problem, individual tool) Linear\u2019s pricing is competitive. The free tier is generous enough to evaluate thoroughly, and Basic at $10/user/month is reasonable for the quality of the product. Who Should Buy Linear Engineering teams of 5-100 that want speed. If your team values fast tools and clean design, Linear is an option. The speed advantage is not marginal. It fundamentally changes how often people update issues because the friction is so low. [...] What is Linear Agent? Linear Agent launched in March 2026 is an AI feature that creates issues from Slack messages, auto-triages bugs, suggests duplicate issues, and helps draft issue descriptions. It also provides deeplinks to AI coding tools like Cursor. It brings automation to triage within Linear's ecosystem but does not read email or understand communication outside connected integrations. Linear has become the default project tracker for a generation of fast-moving software teams. The pitch is simple: Jira is bloated, GitHub Issues is too basic, and Linear sits in the sweet spot, powerful enough for real engineering workflows, fast enough that using it does not feel like work.",
+        "timestamp": "2026-03-24T00:00:00+00:00"
+      },
+      {
+        "id": "node_3abda51d6e514333",
+        "chip_id": "#node_3abda51",
+        "label": "Accelerate rollout...",
+        "full_title": "Accelerate rollout of Linear AI Roadmap Assistant with enterprise\u2011grade SLA and embed into Enterprise contracts",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 140,
+        "content": "Strategic Move [P0 Critical]: Accelerate rollout of Linear AI Roadmap Assistant with enterprise\u2011grade SLA and embed into Enterprise contracts. Rationale: Directly counters Jira\u2019s AI roadmap upgrade and leverages Linear\u2019s speed narrative to justify premium pricing",
+        "timestamp": "2026-11-07T14:58:29.419179+00:00"
+      },
+      {
+        "id": "node_56adeffba11542da",
+        "chip_id": "#node_56adeff",
+        "label": "Launch industry\u2011sp...",
+        "full_title": "Launch industry\u2011specific compliance templates and partner with regulatory SaaS firms for co\u2011marketing",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 195,
+        "content": "Strategic Move [P1 Offensive]: Launch industry\u2011specific compliance templates and partner with regulatory SaaS firms for co\u2011marketing. Rationale: Fills a clear gap in fintech/healthtech segments where competitors lack ready\u2011made, audit\u2011ready workflows",
+        "timestamp": "2026-11-07T14:58:29.419183+00:00"
+      },
+      {
+        "id": "node_18f53a9a74b84caa",
+        "chip_id": "#node_18f53a9",
+        "label": "Audit pricing pari...",
+        "full_title": "Audit pricing parity against Jira (Atlassian) and deploy targeted annual incentive bundles.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 235,
+        "content": "Strategic Move [P0 Critical]: Audit pricing parity against Jira (Atlassian) and deploy targeted annual incentive bundles.. Rationale: Directly counters Jira (Atlassian)'s aggressive positioning while defending margin on renewal cohorts.",
+        "timestamp": "2026-11-07T14:58:29.419185+00:00"
+      }
+    ],
+    "recalled_chips": [
+      "#node_48f8cfe",
+      "#node_9d69b1f",
+      "#node_12723aa",
+      "#node_e59926a",
+      "#node_5e13060",
+      "#node_3abda51"
+    ],
+    "instant_prompts": [
+      "What is Linear's pricing moat?",
+      "How have competitor prices shifted?",
+      "What strategic counter-move should we execute?"
+    ]
+  },
+  "source_verification": [
+    {
+      "title": "Linear Alternative for Developer Teams Using AI | Agiflow",
+      "url": "https://agiflow.io/linear-alternative",
+      "publisher": "agiflow.io",
+      "published_date": "Sun, 14 Jun 2026 00:00:00 GMT",
+      "snippet": "Pricing and ownership comparison As of June 2026, Linear's pricing page listed Free, Basic at $10 per user per month billed yearly, Business at $16 per user per month billed yearly, and Enterprise with custom annual billing. Agiflow is positioned around a free solo path, Team and...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "Linear App Pricing: Is It Worth It in 2026? | Lifestack",
+      "url": "https://lifestack.ai/blog/linear-pricing",
+      "publisher": "lifestack.ai",
+      "published_date": "Thu, 18 Jun 2026 00:00:00 GMT",
+      "snippet": "Linear vs Competitors on Pricing Linear Basic vs Jira Standard: Linear $10/user vs Jira $8.15/user. Linear wins on speed and UX; Jira wins on feature depth and enterprise integrations. Linear Basic vs GitHub Issues: GitHub Issues is free but limited. Linear has much stronger proj...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "Is Linear Worth It? Honest Review for Engineering Teams (2026) | alfred_",
+      "url": "https://get-alfred.ai/blog/is-linear-worth-it",
+      "publisher": "get-alfred.ai",
+      "published_date": "Tue, 24 Mar 2026 00:00:00 GMT",
+      "snippet": "Pricing Breakdown Linear\u2019s current plans: Free: Unlimited members, up to 250 active issues. Core issue tracking, cycles, projects, and roadmaps included. Generous for evaluation and small teams. Basic: $10/user/month. Unlimited issues, guest access, advanced filtering, and integr...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "Best Linear alternatives in 2026 | Plane blog",
+      "url": "https://plane.so/blog/best-linear-alternatives-in-2026",
+      "publisher": "plane.so",
+      "published_date": "Fri, 09 Oct 2026 11:30:00 GMT",
+      "snippet": "\\Prices are annual, per-seat list prices for the entry paid tier. Plane's figures come from its pricing page, and the competitor figures were checked against vendor pricing pages in September 2026 where those pages could be read. Confirm current numbers before you commit, since p...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "14 Feature Announcement Examples for 2026 (AI Video & Interactive) | Arcade Blog",
+      "url": "https://www.arcade.software/post/feature-announcement-examples",
+      "publisher": "www.arcade.software",
+      "published_date": "Mon, 20 Jul 2026 00:00:00 GMT",
+      "snippet": "5. Linear release notes cadence. Linear ships a weekly changelog video that reads more like a director's cut than a marketing asset. Each entry is a 30-second product walkthrough at the top of the announcement, followed by the technical detail, cataloged live at linear.app/change...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "How to build a competitor monitoring AI agent with Hermes, Composio and Olostep | Composio",
+      "url": "https://composio.dev/content/competitor-monitoring-agent",
+      "publisher": "composio.dev",
+      "published_date": "Tue, 20 Oct 2026 00:00:00 GMT",
+      "snippet": "What the Slack report looks like The repository's sample run is dated October 13, 2026. It compared live pages with archived copies captured between September 22 and October 6. It reported no pricing changes for Linear, Notion or Asana. It also captured Linear's Stacked pull-requ...",
+      "verification_status": "Verified Original Source"
+    }
+  ]
+}

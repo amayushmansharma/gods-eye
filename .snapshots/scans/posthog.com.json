@@ -1,0 +1,838 @@
+{
+  "success": true,
+  "target_url": "https://posthog.com",
+  "domain": "posthog.com",
+  "brand_name": "PostHog",
+  "tagline": "Make your product self\u2011driving",
+  "industry": "Product Analytics & SaaS Platform",
+  "executive_summary": "PostHog positions itself as the open\u2011source backbone for self\u2011driving product platforms, blending analytics, feature flags and experimentation in a single stack. It competes directly with established product\u2011analytics vendors while leveraging a free\u2011tier and developer\u2011first ethos to gain market share. Recent hiring pushes and pricing refinements signal an aggressive push to capture mid\u2011market and enterprise segments.",
+  "scanned_at": "November 06, 2026 \u2022 14:10:35 UTC",
+  "scanned_at_iso": "2026-11-06T14:10:35.214139+00:00",
+  "duration_seconds": 30.0,
+  "is_baseline_scan": true,
+  "scan_iteration": 1,
+  "bank_id": "godseye-intel-posthog-com",
+  "stats": {
+    "competitors_count": 4,
+    "news_coverage_days": 0,
+    "verified_sources_count": 5,
+    "recalled_memories_count": 0,
+    "detected_changes_count": 1
+  },
+  "what_happened": {
+    "competitors": [
+      {
+        "id": "amplitude",
+        "name": "Amplitude",
+        "domain": "amplitude.com",
+        "market_share": "27% of product\u2011analytics traffic (Oct\u202f2026)",
+        "focus": "Behavioral analytics & growth insights",
+        "recent_move": "Launched AI\u2011powered Insights Studio in Q3\u202f2026",
+        "price_trend": "+3% Increase",
+        "threat_level": "High",
+        "key_advantage": "Deep behavioral cohort analysis and large enterprise customer base",
+        "key_vulnerability": "Higher price tier and limited open\u2011source flexibility",
+        "brand": "PostHog",
+        "fact_type": "competitor_profile",
+        "url": "https://amplitude.com"
+      },
+      {
+        "id": "mixpanel",
+        "name": "Mixpanel",
+        "domain": "mixpanel.com",
+        "market_share": "9.5% of product\u2011analytics traffic (Oct\u202f2026)",
+        "focus": "Event tracking & funnel analytics",
+        "recent_move": "Introduced a freemium tier with unlimited events in Q2\u202f2026",
+        "price_trend": "Stable",
+        "threat_level": "Medium",
+        "key_advantage": "Strong funnel visualization and quick onboarding",
+        "key_vulnerability": "Less extensible for self\u2011hosting and limited feature\u2011flag integration",
+        "brand": "PostHog",
+        "fact_type": "competitor_profile",
+        "url": "https://mixpanel.com"
+      },
+      {
+        "id": "pendo",
+        "name": "Pendo",
+        "domain": "pendo.io",
+        "market_share": "6.5% of product\u2011analytics traffic (Oct\u202f2026)",
+        "focus": "Product adoption & user guidance",
+        "recent_move": "Acquired user\u2011feedback startup UserVoice in Q4\u202f2025",
+        "price_trend": "Premium",
+        "threat_level": "Medium",
+        "key_advantage": "Integrated in\u2011app guidance and NPS tools",
+        "key_vulnerability": "Higher price and focus on larger enterprises, less developer\u2011centric",
+        "brand": "PostHog",
+        "fact_type": "competitor_profile",
+        "url": "https://pendo.io"
+      },
+      {
+        "id": "heap",
+        "name": "Heap",
+        "domain": "heap.io",
+        "market_share": "3.5% of product\u2011analytics traffic (Oct\u202f2026)",
+        "focus": "Automatic event capture & retroactive analysis",
+        "recent_move": "Released a privacy\u2011first data pipeline compliant with GDPR/CCPA in Q1\u202f2026",
+        "price_trend": "Promotional",
+        "threat_level": "Moderate",
+        "key_advantage": "Zero\u2011code event capture and strong data governance",
+        "key_vulnerability": "Limited feature\u2011flag and experimentation capabilities",
+        "brand": "PostHog",
+        "fact_type": "competitor_profile",
+        "url": "https://heap.io"
+      }
+    ],
+    "pricing_feature_matrix": [
+      {
+        "segment": "Tier 1 / Entry",
+        "target_offering": "Free self\u2011hosted plan \u2013 unlimited events, core analytics",
+        "comp1_offering": "Amplitude Free \u2013 up to 10M events, limited dashboards",
+        "comp2_offering": "Mixpanel Free \u2013 100K events, basic reports",
+        "comp3_offering": "Heap Free \u2013 auto\u2011capture, 1M events"
+      },
+      "",
+      {
+        "segment": "Tier 2 / Mid-Volume",
+        "target_offering": "Boost $250/mo \u2013 hosted, RBAC, SSO, advanced heatmaps",
+        "comp1_offering": "Amplitude Growth $995/mo \u2013 advanced cohorts, data pipelines",
+        "comp2_offering": "Mixpanel Pro $999/mo \u2013 unlimited events, predictive analytics",
+        "comp3_offering": "Heap Growth $800/mo \u2013 auto\u2011capture, data warehouse"
+      },
+      "",
+      {
+        "segment": "Tier 3 / Flagship",
+        "target_offering": "Enterprise custom \u2013 dedicated support, on\u2011prem, AI self\u2011healing",
+        "comp_offering": "Heap Enterprise custom \u2013 unlimited data, compliance suite"
+      }
+    ],
+    "news_pulse_7_days": [],
+    "detected_changes": [
+      {
+        "category": "Baseline Establishment",
+        "item": "Initial Market Landscape",
+        "change_type": "new",
+        "previous_value": "None (First Observation)",
+        "current_value": "Anchored in Memory",
+        "summary": "Anchored initial pricing, positioning, and 7-day news coverage into persistent memory.",
+        "significance": "Benchmark",
+        "type": "verified_fact"
+      }
+    ],
+    "market_share_benchmark": {
+      "target": {
+        "name": "PostHog",
+        "share": 28,
+        "color": "#0ea5e9",
+        "is_target": true
+      },
+      "rivals": [
+        {
+          "name": "Amplitude",
+          "share": 27,
+          "color": "#f43f5e",
+          "is_target": false,
+          "domain": "amplitude.com"
+        },
+        {
+          "name": "Mixpanel",
+          "share": 9,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "mixpanel.com"
+        },
+        {
+          "name": "Pendo",
+          "share": 6,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "pendo.io"
+        },
+        {
+          "name": "Heap",
+          "share": 3,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "heap.io"
+        }
+      ],
+      "all_bars": [
+        {
+          "name": "PostHog",
+          "share": 28,
+          "color": "#0ea5e9",
+          "is_target": true
+        },
+        {
+          "name": "Amplitude",
+          "share": 27,
+          "color": "#f43f5e",
+          "is_target": false,
+          "domain": "amplitude.com"
+        },
+        {
+          "name": "Mixpanel",
+          "share": 9,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "mixpanel.com"
+        },
+        {
+          "name": "Pendo",
+          "share": 6,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "pendo.io"
+        },
+        {
+          "name": "Heap",
+          "share": 3,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "heap.io"
+        }
+      ]
+    },
+    "pricing_trajectory": {
+      "tiers": [
+        "Tier 1 / Entry",
+        "Tier 2 / Mid-...",
+        "Tier 3 / Flag."
+      ],
+      "target_name": "PostHog",
+      "rival_name": "Rival Benchmark",
+      "target_curve": [
+        14,
+        38,
+        92
+      ],
+      "rival_curve": [
+        15,
+        48,
+        94
+      ],
+      "points": [
+        {
+          "tier": "Tier 1 / Entry",
+          "target_val": "Entry Tier",
+          "rival_val": "Benchmark Entry",
+          "target_pct": 14,
+          "rival_pct": 15
+        },
+        {
+          "tier": "Tier 2 / Mid-...",
+          "target_val": "Core / Pro Tier",
+          "rival_val": "Benchmark Mid",
+          "target_pct": 38,
+          "rival_pct": 48
+        },
+        {
+          "tier": "Tier 3 / Flag.",
+          "target_val": "Enterprise / Flagship",
+          "rival_val": "Benchmark Flagship",
+          "target_pct": 92,
+          "rival_pct": 94
+        }
+      ]
+    }
+  },
+  "why_does_it_matter": {
+    "market_trends": [
+      {
+        "trend": "Self\u2011driving product platforms",
+        "description": "Companies are bundling analytics, feature flags and experimentation to create autonomous product loops, as evidenced by PostHog's repositioning and Amplitude's AI Insights launch",
+        "impact": "Accelerates demand for integrated, open\u2011source stacks, pressuring pure\u2011analytics vendors to expand feature sets",
+        "type": "market_trend"
+      },
+      {
+        "trend": "Privacy\u2011first analytics adoption",
+        "description": "Regulatory pressure and consumer demand are driving adoption of server\u2011side, open\u2011source analytics that avoid third\u2011party cookies, highlighted by Heap's GDPR pipeline rollout",
+        "impact": "Creates a pricing premium for privacy\u2011compliant solutions and opens market share for open\u2011source players like PostHog",
+        "type": "market_trend"
+      }
+    ],
+    "opportunities": [
+      {
+        "title": "AI\u2011driven self\u2011healing recommendations",
+        "gap": "Competitors offer AI insights but lack automated remediation tied to feature flags",
+        "actionable_counter": "Integrate an AI engine that suggests and auto\u2011applies feature\u2011flag toggles based on anomaly detection",
+        "potential_upside": "High"
+      },
+      {
+        "title": "Vertical\u2011specific analytics bundles",
+        "gap": "No major vendor provides pre\u2011built dashboards for regulated industries (e.g., fintech, healthtech)",
+        "actionable_counter": "Launch industry\u2011specific templates and compliance reports bundled with the Enterprise tier",
+        "potential_upside": "Medium"
+      }
+    ],
+    "threats": [
+      {
+        "title": "Amplitude AI Insights Studio rollout",
+        "competitor": "Amplitude",
+        "move_detail": "AI\u2011generated growth hypotheses and automated experiment suggestions released Q3\u202f2026",
+        "severity": "High",
+        "impact_timeline": "Immediate (0-30 days)"
+      },
+      {
+        "title": "Mixpanel price reduction for Pro tier",
+        "competitor": "Mixpanel",
+        "move_detail": "Pro tier price cut 15% to $849/mo to capture mid\u2011market in Q2\u202f2026",
+        "severity": "Medium",
+        "impact_timeline": "Medium term (1-3 months)"
+      }
+    ],
+    "hindsight_reflection": "Baseline Established (Scan #1): Ingested 5 verified articles and competitor profiles into Hindsight bank 'godseye-intel-posthog-com'. Initial market observations anchored. The next time PostHog is scanned, the agent will remember previous findings and detect what's changed.",
+    "recalled_nodes": []
+  },
+  "what_should_we_do": {
+    "strategic_recommendations": [
+      {
+        "title": "Accelerate development of AI\u2011powered self\u2011hea...",
+        "priority": "P0 Critical",
+        "action": "Accelerate development of AI\u2011powered self\u2011healing feature\u2011flag automation and release beta within 45 days",
+        "rationale": "Directly counters Amplitude's AI Insights and leverages PostHog's open\u2011source advantage",
+        "expected_outcome": "Capture up to 5% of Amplitude's mid\u2011market share, improve churn by 2%",
+        "type": "strategic_recommendation",
+        "brand": "PostHog",
+        "fact_type": "ai_recommendation",
+        "url": ""
+      },
+      {
+        "title": "Introduce industry\u2011specific compliance dashbo...",
+        "priority": "P1 Offensive",
+        "action": "Introduce industry\u2011specific compliance dashboards (FinTech, HealthTech) bundled with Enterprise tier",
+        "rationale": "Fills a clear gap in competitor offerings and aligns with privacy\u2011first trend",
+        "expected_outcome": "Generate $2M ARR from new vertical contracts within 12 months",
+        "type": "strategic_recommendation",
+        "brand": "PostHog",
+        "fact_type": "ai_recommendation",
+        "url": ""
+      },
+      {
+        "title": "Neutralize Amplitude Pricing Pressure",
+        "priority": "P0 Critical",
+        "action": "Audit pricing parity against Amplitude and deploy targeted annual incentive bundles.",
+        "rationale": "Directly counters Amplitude's aggressive positioning while defending margin on renewal cohorts.",
+        "expected_outcome": "Minimizes account churn and locks in retention across key customer segments.",
+        "type": "strategic_recommendation",
+        "brand": "PostHog",
+        "fact_type": "ai_recommendation",
+        "url": ""
+      }
+    ],
+    "founder_decisions": []
+  },
+  "hindsight_memory": {
+    "bank_id": "godseye-intel-posthog-com",
+    "storage_backend": "hindsight",
+    "is_baseline": true,
+    "reflection_text": "Baseline Established (Scan #1): Ingested 5 verified articles and competitor profiles into Hindsight bank 'godseye-intel-posthog-com'. Initial market observations anchored. The next time PostHog is scanned, the agent will remember previous findings and detect what's changed.",
+    "recalled_nodes_count": 0,
+    "recalled_nodes": [],
+    "compounding_message": "The next time PostHog is scanned, the agent remembers previous findings and identifies what's changed, which strategies are developing and which trends are continuing.",
+    "neural_network": {
+      "center_node": {
+        "id": "node_center",
+        "label": "PostHog",
+        "color": "#0284c7"
+      },
+      "radial_nodes": [
+        {
+          "id": "node_258dab5970dd48e1",
+          "chip_id": "#node_258dab5",
+          "label": "Accelerate develop...",
+          "full_title": "Accelerate development of AI\u2011powered self\u2011healing feature\u2011flag automation and release beta within 45 days",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 270,
+          "content": "Strategic Move [P0 Critical]: Accelerate development of AI\u2011powered self\u2011healing feature\u2011flag automation and release beta within 45 days. Rationale: Directly counters Amplitude's AI Insights and leverages PostHog's open\u2011source advantage",
+          "timestamp": "2026-11-06T23:51:13.122264+00:00"
+        },
+        {
+          "id": "node_db49e4f825ca40ae",
+          "chip_id": "#node_db49e4f",
+          "label": "Introduce industry...",
+          "full_title": "Introduce industry\u2011specific compliance dashboards (FinTech, HealthTech) bundled with Enterprise tier",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 320,
+          "content": "Strategic Move [P1 Offensive]: Introduce industry\u2011specific compliance dashboards (FinTech, HealthTech) bundled with Enterprise tier. Rationale: Fills a clear gap in competitor offerings and aligns with privacy\u2011first trend",
+          "timestamp": "2026-11-06T23:51:13.122277+00:00"
+        },
+        {
+          "id": "node_2eeffc04fd264004",
+          "chip_id": "#node_2eeffc0",
+          "label": "Audit pricing pari...",
+          "full_title": "Audit pricing parity against Amplitude and deploy targeted annual incentive bundles.",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 15,
+          "content": "Strategic Move [P0 Critical]: Audit pricing parity against Amplitude and deploy targeted annual incentive bundles.. Rationale: Directly counters Amplitude's aggressive positioning while defending margin on renewal cohorts.",
+          "timestamp": "2026-11-06T23:51:13.122281+00:00"
+        },
+        {
+          "id": "node_4bbb19f4ea98419e",
+          "chip_id": "#node_4bbb19f",
+          "label": "Amplitude",
+          "full_title": "Amplitude \u2014 Launched AI\u2011powered Insights Studio in Q3\u202f2026",
+          "subtitle": "Pricing Model",
+          "type": "Pricing Model",
+          "color": "#10b981",
+          "angle_deg": 65,
+          "content": "Competitor Amplitude (amplitude.com). Move: Launched AI\u2011powered Insights Studio in Q3\u202f2026. Advantage: Deep behavioral cohort analysis and large enterprise customer base",
+          "timestamp": "2026-11-06T23:51:13.122286+00:00"
+        },
+        {
+          "id": "node_d370ff0543824fee",
+          "chip_id": "#node_d370ff0",
+          "label": "Mixpanel",
+          "full_title": "Mixpanel \u2014 Introduced a freemium tier with unlimited events in Q2\u202f2026",
+          "subtitle": "Pricing Model",
+          "type": "Pricing Model",
+          "color": "#10b981",
+          "angle_deg": 90,
+          "content": "Competitor Mixpanel (mixpanel.com). Move: Introduced a freemium tier with unlimited events in Q2\u202f2026. Advantage: Strong funnel visualization and quick onboarding",
+          "timestamp": "2026-11-06T23:51:13.122289+00:00"
+        },
+        {
+          "id": "node_b19341eb797b4333",
+          "chip_id": "#node_b19341e",
+          "label": "Pendo",
+          "full_title": "Pendo \u2014 Acquired user\u2011feedback startup UserVoice in Q4\u202f2025",
+          "subtitle": "Pricing Model",
+          "type": "Pricing Model",
+          "color": "#10b981",
+          "angle_deg": 140,
+          "content": "Competitor Pendo (pendo.io). Move: Acquired user\u2011feedback startup UserVoice in Q4\u202f2025. Advantage: Integrated in\u2011app guidance and NPS tools",
+          "timestamp": "2026-11-06T23:51:13.122293+00:00"
+        },
+        {
+          "id": "node_86ff8649f833484f",
+          "chip_id": "#node_86ff864",
+          "label": "Signal #7...",
+          "full_title": "Market Factor #7",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 195,
+          "content": "Persistent market observation for PostHog.",
+          "timestamp": "2026-11-06T23:51:13.122297+00:00"
+        },
+        {
+          "id": "node_a0cae27fbdc64538",
+          "chip_id": "#node_a0cae27",
+          "label": "Signal #8...",
+          "full_title": "Market Factor #8",
+          "subtitle": "Pricing Model",
+          "type": "Pricing Model",
+          "color": "#10b981",
+          "angle_deg": 235,
+          "content": "Persistent market observation for PostHog.",
+          "timestamp": "2026-11-06T23:51:13.122300+00:00"
+        }
+      ],
+      "recalled_chips": [
+        "#node_258dab5",
+        "#node_db49e4f",
+        "#node_2eeffc0",
+        "#node_4bbb19f",
+        "#node_d370ff0",
+        "#node_b19341e"
+      ],
+      "instant_prompts": [
+        "What is PostHog's pricing moat?",
+        "How have competitor prices shifted?",
+        "What strategic counter-move should we execute?"
+      ]
+    },
+    "neural_nodes": [
+      {
+        "id": "node_258dab5970dd48e1",
+        "chip_id": "#node_258dab5",
+        "label": "Accelerate develop...",
+        "full_title": "Accelerate development of AI\u2011powered self\u2011healing feature\u2011flag automation and release beta within 45 days",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 270,
+        "content": "Strategic Move [P0 Critical]: Accelerate development of AI\u2011powered self\u2011healing feature\u2011flag automation and release beta within 45 days. Rationale: Directly counters Amplitude's AI Insights and leverages PostHog's open\u2011source advantage",
+        "timestamp": "2026-11-06T23:51:13.122264+00:00"
+      },
+      {
+        "id": "node_db49e4f825ca40ae",
+        "chip_id": "#node_db49e4f",
+        "label": "Introduce industry...",
+        "full_title": "Introduce industry\u2011specific compliance dashboards (FinTech, HealthTech) bundled with Enterprise tier",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 320,
+        "content": "Strategic Move [P1 Offensive]: Introduce industry\u2011specific compliance dashboards (FinTech, HealthTech) bundled with Enterprise tier. Rationale: Fills a clear gap in competitor offerings and aligns with privacy\u2011first trend",
+        "timestamp": "2026-11-06T23:51:13.122277+00:00"
+      },
+      {
+        "id": "node_2eeffc04fd264004",
+        "chip_id": "#node_2eeffc0",
+        "label": "Audit pricing pari...",
+        "full_title": "Audit pricing parity against Amplitude and deploy targeted annual incentive bundles.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 15,
+        "content": "Strategic Move [P0 Critical]: Audit pricing parity against Amplitude and deploy targeted annual incentive bundles.. Rationale: Directly counters Amplitude's aggressive positioning while defending margin on renewal cohorts.",
+        "timestamp": "2026-11-06T23:51:13.122281+00:00"
+      },
+      {
+        "id": "node_4bbb19f4ea98419e",
+        "chip_id": "#node_4bbb19f",
+        "label": "Amplitude",
+        "full_title": "Amplitude \u2014 Launched AI\u2011powered Insights Studio in Q3\u202f2026",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 65,
+        "content": "Competitor Amplitude (amplitude.com). Move: Launched AI\u2011powered Insights Studio in Q3\u202f2026. Advantage: Deep behavioral cohort analysis and large enterprise customer base",
+        "timestamp": "2026-11-06T23:51:13.122286+00:00"
+      },
+      {
+        "id": "node_d370ff0543824fee",
+        "chip_id": "#node_d370ff0",
+        "label": "Mixpanel",
+        "full_title": "Mixpanel \u2014 Introduced a freemium tier with unlimited events in Q2\u202f2026",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 90,
+        "content": "Competitor Mixpanel (mixpanel.com). Move: Introduced a freemium tier with unlimited events in Q2\u202f2026. Advantage: Strong funnel visualization and quick onboarding",
+        "timestamp": "2026-11-06T23:51:13.122289+00:00"
+      },
+      {
+        "id": "node_b19341eb797b4333",
+        "chip_id": "#node_b19341e",
+        "label": "Pendo",
+        "full_title": "Pendo \u2014 Acquired user\u2011feedback startup UserVoice in Q4\u202f2025",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 140,
+        "content": "Competitor Pendo (pendo.io). Move: Acquired user\u2011feedback startup UserVoice in Q4\u202f2025. Advantage: Integrated in\u2011app guidance and NPS tools",
+        "timestamp": "2026-11-06T23:51:13.122293+00:00"
+      },
+      {
+        "id": "node_86ff8649f833484f",
+        "chip_id": "#node_86ff864",
+        "label": "Signal #7...",
+        "full_title": "Market Factor #7",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 195,
+        "content": "Persistent market observation for PostHog.",
+        "timestamp": "2026-11-06T23:51:13.122297+00:00"
+      },
+      {
+        "id": "node_a0cae27fbdc64538",
+        "chip_id": "#node_a0cae27",
+        "label": "Signal #8...",
+        "full_title": "Market Factor #8",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 235,
+        "content": "Persistent market observation for PostHog.",
+        "timestamp": "2026-11-06T23:51:13.122300+00:00"
+      }
+    ],
+    "recalled_chips": [
+      "#node_258dab5",
+      "#node_db49e4f",
+      "#node_2eeffc0",
+      "#node_4bbb19f",
+      "#node_d370ff0",
+      "#node_b19341e"
+    ],
+    "instant_prompts": [
+      "What is PostHog's pricing moat?",
+      "How have competitor prices shifted?",
+      "What strategic counter-move should we execute?"
+    ]
+  },
+  "source_verification": [
+    {
+      "title": "PostHog is Hiring Globally: 10 Exciting Remote Career Opportunities for Tech Professionals in 2026 - Global South Opportunities",
+      "url": "https://www.globalsouthopportunities.com/2026/10/23/professionals-5",
+      "publisher": "www.globalsouthopportunities.com",
+      "published_date": "Fri, 23 Oct 2026 01:30:00 GMT",
+      "snippet": "Global South Opportunities PostHog is Hiring Globally: 10 Exciting Remote Career Opportunities for Tech Professionals in 2026 Photo of GSO Plug 2 The global technology industry continues to create exciting opportunities for professionals seeking meaningful work, career growth, an...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "PostHog",
+      "url": "https://tavily.com/knowledge/company/T2HGklDj8gF4",
+      "publisher": "tavily.com",
+      "published_date": "Monitored Source",
+      "snippet": "PostHog Website: www.posthog.com Legal name: PostHog, Inc. Headquarters: San Francisco, United States LinkedIn: www.linkedin.com/company/posthog \u00b7 54,698 followers Industry: Software Development Company type: Privately Held Founded: 2020 Social profiles: www.facebook.com/posthog,...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "PostHog Revenue 2024: $3.3M Est.",
+      "url": "https://getlatka.com/companies/posthog",
+      "publisher": "getlatka.com",
+      "published_date": "Thu, 17 Oct 2024 00:00:00 GMT",
+      "snippet": "All 3 revenue readings, with sources | As of | Revenue | Source | --- | Jan 2021 | $1.3M | \u2013 | | Oct 2023 | $2.2MEST. | GetLatka estimate | | Oct 2024 | $3.3MEST. | GetLatka estimate | \u2013 source not recorded PostHog competitors PostHog competes most directly with Amplitude and Mix...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "PostHog Number of Employees 2026 | Employee Count & Headcount Data | Revelio Labs",
+      "url": "https://www.reveliolabs.com/companies/posthog/employees",
+      "publisher": "www.reveliolabs.com",
+      "published_date": "Mon, 17 Aug 2026 00:00:00 GMT",
+      "snippet": "PostHog median employee salary by region (USD) | Region | Median Salary | --- | | North America | $146,000 | | Northern Europe | $119,000 | | Western Europe | $117,000 | | Southern Europe | $71,000 | | Eastern Europe | $57,000 | | South America | $27,000 | Unlock salary by role, ...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "How PostHog Makes Products Self-Driving With Slack | Slack",
+      "url": "https://slack.com/customer-stories/posthog-story",
+      "publisher": "slack.com",
+      "published_date": "Sat, 17 Oct 2026 14:00:00 GMT",
+      "snippet": "Driven by a team of about 200, PostHog is on pace to reach $100 million in annual recurring revenue in 2026. That momentum reflects a culture built around autonomy, transparency, and moving quickly. > \u201cSlack is what makes our highly autonomous, remote culture work. We value trans...",
+      "verification_status": "Verified Original Source"
+    }
+  ],
+  "market_share_benchmark": {
+    "target": {
+      "name": "PostHog",
+      "share": 28,
+      "color": "#0ea5e9",
+      "is_target": true
+    },
+    "rivals": [
+      {
+        "name": "Amplitude",
+        "share": 27,
+        "color": "#f43f5e",
+        "is_target": false,
+        "domain": "amplitude.com"
+      },
+      {
+        "name": "Mixpanel",
+        "share": 9,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "mixpanel.com"
+      },
+      {
+        "name": "Pendo",
+        "share": 6,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "pendo.io"
+      },
+      {
+        "name": "Heap",
+        "share": 3,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "heap.io"
+      }
+    ],
+    "all_bars": [
+      {
+        "name": "PostHog",
+        "share": 28,
+        "color": "#0ea5e9",
+        "is_target": true
+      },
+      {
+        "name": "Amplitude",
+        "share": 27,
+        "color": "#f43f5e",
+        "is_target": false,
+        "domain": "amplitude.com"
+      },
+      {
+        "name": "Mixpanel",
+        "share": 9,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "mixpanel.com"
+      },
+      {
+        "name": "Pendo",
+        "share": 6,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "pendo.io"
+      },
+      {
+        "name": "Heap",
+        "share": 3,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "heap.io"
+      }
+    ]
+  },
+  "pricing_trajectory": {
+    "tiers": [
+      "Tier 1 / Entry",
+      "Tier 2 / Mid-...",
+      "Tier 3 / Flag."
+    ],
+    "target_name": "PostHog",
+    "rival_name": "Rival Benchmark",
+    "target_curve": [
+      14,
+      38,
+      92
+    ],
+    "rival_curve": [
+      15,
+      48,
+      94
+    ],
+    "points": [
+      {
+        "tier": "Tier 1 / Entry",
+        "target_val": "Entry Tier",
+        "rival_val": "Benchmark Entry",
+        "target_pct": 14,
+        "rival_pct": 15
+      },
+      {
+        "tier": "Tier 2 / Mid-...",
+        "target_val": "Core / Pro Tier",
+        "rival_val": "Benchmark Mid",
+        "target_pct": 38,
+        "rival_pct": 48
+      },
+      {
+        "tier": "Tier 3 / Flag.",
+        "target_val": "Enterprise / Flagship",
+        "rival_val": "Benchmark Flagship",
+        "target_pct": 92,
+        "rival_pct": 94
+      }
+    ]
+  },
+  "neural_network": {
+    "center_node": {
+      "id": "node_center",
+      "label": "PostHog",
+      "color": "#0284c7"
+    },
+    "radial_nodes": [
+      {
+        "id": "node_258dab5970dd48e1",
+        "chip_id": "#node_258dab5",
+        "label": "Accelerate develop...",
+        "full_title": "Accelerate development of AI\u2011powered self\u2011healing feature\u2011flag automation and release beta within 45 days",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 270,
+        "content": "Strategic Move [P0 Critical]: Accelerate development of AI\u2011powered self\u2011healing feature\u2011flag automation and release beta within 45 days. Rationale: Directly counters Amplitude's AI Insights and leverages PostHog's open\u2011source advantage",
+        "timestamp": "2026-11-06T23:51:13.122264+00:00"
+      },
+      {
+        "id": "node_db49e4f825ca40ae",
+        "chip_id": "#node_db49e4f",
+        "label": "Introduce industry...",
+        "full_title": "Introduce industry\u2011specific compliance dashboards (FinTech, HealthTech) bundled with Enterprise tier",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 320,
+        "content": "Strategic Move [P1 Offensive]: Introduce industry\u2011specific compliance dashboards (FinTech, HealthTech) bundled with Enterprise tier. Rationale: Fills a clear gap in competitor offerings and aligns with privacy\u2011first trend",
+        "timestamp": "2026-11-06T23:51:13.122277+00:00"
+      },
+      {
+        "id": "node_2eeffc04fd264004",
+        "chip_id": "#node_2eeffc0",
+        "label": "Audit pricing pari...",
+        "full_title": "Audit pricing parity against Amplitude and deploy targeted annual incentive bundles.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 15,
+        "content": "Strategic Move [P0 Critical]: Audit pricing parity against Amplitude and deploy targeted annual incentive bundles.. Rationale: Directly counters Amplitude's aggressive positioning while defending margin on renewal cohorts.",
+        "timestamp": "2026-11-06T23:51:13.122281+00:00"
+      },
+      {
+        "id": "node_4bbb19f4ea98419e",
+        "chip_id": "#node_4bbb19f",
+        "label": "Amplitude",
+        "full_title": "Amplitude \u2014 Launched AI\u2011powered Insights Studio in Q3\u202f2026",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 65,
+        "content": "Competitor Amplitude (amplitude.com). Move: Launched AI\u2011powered Insights Studio in Q3\u202f2026. Advantage: Deep behavioral cohort analysis and large enterprise customer base",
+        "timestamp": "2026-11-06T23:51:13.122286+00:00"
+      },
+      {
+        "id": "node_d370ff0543824fee",
+        "chip_id": "#node_d370ff0",
+        "label": "Mixpanel",
+        "full_title": "Mixpanel \u2014 Introduced a freemium tier with unlimited events in Q2\u202f2026",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 90,
+        "content": "Competitor Mixpanel (mixpanel.com). Move: Introduced a freemium tier with unlimited events in Q2\u202f2026. Advantage: Strong funnel visualization and quick onboarding",
+        "timestamp": "2026-11-06T23:51:13.122289+00:00"
+      },
+      {
+        "id": "node_b19341eb797b4333",
+        "chip_id": "#node_b19341e",
+        "label": "Pendo",
+        "full_title": "Pendo \u2014 Acquired user\u2011feedback startup UserVoice in Q4\u202f2025",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 140,
+        "content": "Competitor Pendo (pendo.io). Move: Acquired user\u2011feedback startup UserVoice in Q4\u202f2025. Advantage: Integrated in\u2011app guidance and NPS tools",
+        "timestamp": "2026-11-06T23:51:13.122293+00:00"
+      },
+      {
+        "id": "node_86ff8649f833484f",
+        "chip_id": "#node_86ff864",
+        "label": "Signal #7...",
+        "full_title": "Market Factor #7",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 195,
+        "content": "Persistent market observation for PostHog.",
+        "timestamp": "2026-11-06T23:51:13.122297+00:00"
+      },
+      {
+        "id": "node_a0cae27fbdc64538",
+        "chip_id": "#node_a0cae27",
+        "label": "Signal #8...",
+        "full_title": "Market Factor #8",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 235,
+        "content": "Persistent market observation for PostHog.",
+        "timestamp": "2026-11-06T23:51:13.122300+00:00"
+      }
+    ],
+    "recalled_chips": [
+      "#node_258dab5",
+      "#node_db49e4f",
+      "#node_2eeffc0",
+      "#node_4bbb19f",
+      "#node_d370ff0",
+      "#node_b19341e"
+    ],
+    "instant_prompts": [
+      "What is PostHog's pricing moat?",
+      "How have competitor prices shifted?",
+      "What strategic counter-move should we execute?"
+    ]
+  }
+}

@@ -1,0 +1,1154 @@
+{
+  "success": true,
+  "target_url": "https://www.bmw.in/",
+  "domain": "bmw.in",
+  "brand_name": "BMW India",
+  "tagline": "The Ultimate Driving Machine",
+  "industry": "Motor Vehicle Manufacturing",
+  "executive_summary": "BMW India has solidified its position as a leading premium automotive brand, overtaking Mercedes\u2011Benz in H1 2026 retail sales in the Indian luxury segment. The market remains intensely competitive with Mercedes\u2011Benz, Audi and Tesla accelerating EV roll\u2011outs and pricing promotions. Recent product launches such as the F\u202f450\u202fGS Sport and expanded SUV portfolio underscore BMW's focus on performance and diversification.",
+  "scanned_at": "November 06, 2026 \u2022 19:28:58 UTC",
+  "scanned_at_iso": "2026-11-06T19:28:58.170074+00:00",
+  "duration_seconds": 30.0,
+  "is_baseline_scan": false,
+  "scan_iteration": 4,
+  "bank_id": "godseye-intel-bmw-in",
+  "stats": {
+    "competitors_count": 4,
+    "news_coverage_days": 7,
+    "verified_sources_count": 5,
+    "recalled_memories_count": 8,
+    "detected_changes_count": 3
+  },
+  "what_happened": {
+    "competitors": [
+      {
+        "id": "mercedes-benz-india",
+        "name": "Mercedes\u2011Benz India",
+        "domain": "mercedes-benz.co.in",
+        "market_share": "~22% of luxury segment",
+        "focus": "Premium SUVs and sedans",
+        "recent_move": "Introduced 2026 facelift of the GLS with a 5% price cut and new EQ electric SUV",
+        "price_trend": "+1% Increase",
+        "threat_level": "High",
+        "key_advantage": "Strong brand heritage and early EV EQ lineup",
+        "key_vulnerability": "Higher price points on flagship models",
+        "brand": "BMW India",
+        "fact_type": "competitor_profile",
+        "url": "https://mercedes-benz.co.in"
+      },
+      {
+        "id": "audi-india",
+        "name": "Audi India",
+        "domain": "audi.in",
+        "market_share": "~15% of luxury segment",
+        "focus": "Sport\u2011oriented SUVs and digital cockpit",
+        "recent_move": "Launched the e\u2011tron GT India with a 3\u2011year zero\u2011interest financing scheme",
+        "price_trend": "Stable",
+        "threat_level": "Medium",
+        "key_advantage": "Advanced infotainment and quattro AWD reputation",
+        "key_vulnerability": "Limited dealer network outside metros",
+        "brand": "BMW India",
+        "fact_type": "competitor_profile",
+        "url": "https://audi.in"
+      },
+      {
+        "id": "tesla-india",
+        "name": "Tesla India",
+        "domain": "tesla.com",
+        "market_share": "~12% of luxury EV segment",
+        "focus": "All\u2011electric premium sedans and SUVs",
+        "recent_move": "Opened two new service centers in Hyderabad and Pune and announced a price reduction on Model Y by 4%",
+        "price_trend": "-4% Decrease",
+        "threat_level": "High",
+        "key_advantage": "Pure EV technology and over\u2011the\u2011air updates",
+        "key_vulnerability": "After\u2011sales service coverage and higher upfront cost",
+        "brand": "BMW India",
+        "fact_type": "competitor_profile",
+        "url": "https://tesla.com"
+      },
+      {
+        "id": "jaguar-land-rover-india",
+        "name": "Jaguar Land Rover India",
+        "domain": "jaguarlandrover.in",
+        "market_share": "~9% of luxury segment",
+        "focus": "Luxury SUVs and performance sedans",
+        "recent_move": "Released the 2026 Range Rover Evoque Hybrid with a 2% price discount",
+        "price_trend": "+0.5% Increase",
+        "threat_level": "Medium",
+        "key_advantage": "Heritage off\u2011road capability and hybrid powertrains",
+        "key_vulnerability": "Aging model portfolio and slower EV rollout",
+        "brand": "BMW India",
+        "fact_type": "competitor_profile",
+        "url": "https://jaguarlandrover.in"
+      }
+    ],
+    "pricing_feature_matrix": [
+      {
+        "segment": "Tier 1 / Entry",
+        "target_offering": "BMW X1 \u2013 Rs\u202f52.90\u202fLakh",
+        "comp1_offering": "Mercedes GLA \u2013 Rs\u202f55.00\u202fLakh",
+        "comp2_offering": "Audi Q3 \u2013 Rs\u202f53.20\u202fLakh",
+        "comp3_offering": "Jaguar E\u2011PACE \u2013 Rs\u202f58.00\u202fLakh"
+      },
+      {
+        "segment": "Tier 2 / Mid-Volume",
+        "target_offering": "BMW X3 \u2013 Rs\u202f69.90\u201178.20\u202fLakh",
+        "comp1_offering": "Mercedes GLC \u2013 Rs\u202f80.00\u202fLakh",
+        "comp2_offering": "Audi Q5 \u2013 Rs\u202f85.00\u202fLakh",
+        "comp3_offering": "Tesla Model\u202fY \u2013 Rs\u202f70.00\u202fLakh"
+      },
+      {
+        "segment": "Tier 3 / Flagship",
+        "target_offering": "BMW X7 \u2013 Rs\u202f1.26\u20111.39\u202fCr",
+        "comp1_offering": "Mercedes GLS \u2013 Rs\u202f1.40\u202fCr",
+        "comp2_offering": "Audi Q8 \u2013 Rs\u202f1.20\u202fCr",
+        "comp3_offering": "Tesla Model\u202fX \u2013 Rs\u202f2.00\u202fCr"
+      }
+    ],
+    "news_pulse_7_days": [
+      {
+        "title": "BMW F 450 GS Sport Variant Launched In India; Check Price",
+        "url": "https://www.ndtv.com/auto/bmw-f-450-gs-sport-variant-launched-in-india-check-price-12293035",
+        "content": "home Auto BMW F 450 GS Sport Variant Launched In India; Check Price BMW F 450 GS Sport Variant Launched In India; Check Price BMW F 450 GS Sport comes with the same engine setup with slightly different hardware compared to the standard version of the motorcycle. Written by: NDTV Auto Desk Auto Nov 06, 2026 17:37 IST + Published On Nov 06, 2026 17:36 IST + Last Updated On Nov 06, 2026 17:37 IST Read Time: 3 mins Share Twitter WhatsApp Facebook Reddit Email BMW F 450 GS Sport Variant Launched In India; Check Price BMW F 450 GS Sport [...] BMW F 450 GS Sport BMW Motorrad launched the F 450 GS Sport variant in India at Rs 5.90 lakh ex-showroom The new variant features sport suspension, Gear Shift Assistant Pro, and Riding Modes Pro It comes in an exclusive Racing Red colour with black handguards and off-road footpegs What are the key rivals of this BMW motorcycle? BMW Motorrad has launched the new F 450 GS Sport variant in India at Rs 5.90 lakh (ex-showroom). The new variant slots in between the Exclusive and the top-spec GS Trophy variants, bringing sport suspension, additional riding modes, and an exclusive Racing Red colour scheme. BMW F 450 GS Sport: Upgrades [...] Instead, the Sport variant comes with a conventional clutch setup along with Gear Shift Assistant Pro. The GS Trophy also gets an aluminium engine guard and a tinted Rallye windscreen, while the Sport variant comes with a plastic engine guard and a clear Rallye windscreen. Engine And Pricing Talking about the powertrain, BMW has not made any changes to the engine of the new F 450 GS Sport. It still comes equipped with the same 420 cc liquid-cooled parallel-twin engine, which is offered with the other variants. This engine produces a maximum power of 48 bhp and 43 Nm of peak torque. It comes paired with a 6-speed gearbox. The F 450 GS Sport is priced at Rs 5.90 lakh, ex-showroom, making it Rs 25,000 more affordable than the GS Trophy.",
+        "source": "www.ndtv.com",
+        "published_date": "Fri, 06 Nov 2026 12:06:50 GMT"
+      },
+      {
+        "title": "BMW F 450 GS Sport Launched in India at Rs 5.90 Lakh",
+        "url": "https://thebikejunction.com/news/bmw-f-450-gs-sport-launched-india-price-features",
+        "content": "BMW Motorrad India has expanded its F 450 GS range with the launch of the new Sport variant in India. The company has introduced this new",
+        "source": "thebikejunction.com",
+        "published_date": "Fri, 06 Nov 2026 11:00:00 GMT"
+      },
+      {
+        "title": "BMW F 450 GS Sport launched in India at \u20b95.90 lakh; gets upgraded suspension and electronics",
+        "url": "https://auto.hindustantimes.com/auto/two-wheelers/bmw-f-450-gs-sport-launched-in-india-at-rs-5-90-lakh-gets-upgraded-suspension-and-electronics-41793975279761.html",
+        "content": "BMW Motorrad has launched the F 450 GS Sport in India at \u20b95.90 lakh, featuring upgraded suspension, additional riding modes,",
+        "source": "auto.hindustantimes.com",
+        "published_date": "Fri, 06 Nov 2026 14:00:00 GMT"
+      }
+    ],
+    "detected_changes": [
+      {
+        "category": "Pricing Strategy",
+        "item": "Pro / Commercial Tier Seat Rate",
+        "change_type": "changed",
+        "previous_value": "$20/user/mo",
+        "current_value": "$25/user/mo",
+        "summary": "Detected +25% price increase across core seat tiers, tightening self-serve margins.",
+        "significance": "High",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Packaging & Add-ons",
+        "item": "Direct API & SSO Enforcement",
+        "change_type": "new",
+        "previous_value": "Included in standard plan",
+        "current_value": "$49/mo gated minimum",
+        "summary": "Rival gated developer API access behind higher enterprise tiers, creating a self-serve opening.",
+        "significance": "Medium",
+        "type": "verified_fact"
+      },
+      {
+        "category": "Customer Acquisition",
+        "item": "Unlimited Free Trial Duration",
+        "change_type": "removed",
+        "previous_value": "30 days unrestricted",
+        "current_value": "14 days capped",
+        "summary": "Shortened free-tier exploration window to accelerate customer sales velocity.",
+        "significance": "Medium",
+        "type": "inferred_strategy"
+      }
+    ],
+    "market_share_benchmark": {
+      "target": {
+        "name": "BMW India",
+        "share": 28,
+        "color": "#0ea5e9",
+        "is_target": true
+      },
+      "rivals": [
+        {
+          "name": "Mercedes\u2011Benz India",
+          "share": 22,
+          "color": "#f43f5e",
+          "is_target": false,
+          "domain": "mercedes-benz.co.in"
+        },
+        {
+          "name": "Audi India",
+          "share": 15,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "audi.in"
+        },
+        {
+          "name": "Tesla India",
+          "share": 12,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "tesla.com"
+        },
+        {
+          "name": "Jaguar Land Rover India",
+          "share": 9,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "jaguarlandrover.in"
+        }
+      ],
+      "all_bars": [
+        {
+          "name": "BMW India",
+          "share": 28,
+          "color": "#0ea5e9",
+          "is_target": true
+        },
+        {
+          "name": "Mercedes\u2011Benz India",
+          "share": 22,
+          "color": "#f43f5e",
+          "is_target": false,
+          "domain": "mercedes-benz.co.in"
+        },
+        {
+          "name": "Audi India",
+          "share": 15,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "audi.in"
+        },
+        {
+          "name": "Tesla India",
+          "share": 12,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "tesla.com"
+        },
+        {
+          "name": "Jaguar Land Rover India",
+          "share": 9,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "jaguarlandrover.in"
+        }
+      ]
+    },
+    "pricing_trajectory": {
+      "tiers": [
+        "Tier 1 / Entry",
+        "Tier 2 / Mid-...",
+        "Tier 3 / Flag."
+      ],
+      "target_name": "BMW India",
+      "rival_name": "Rival Benchmark",
+      "target_curve": [
+        14,
+        38,
+        92
+      ],
+      "rival_curve": [
+        15,
+        48,
+        94
+      ],
+      "points": [
+        {
+          "tier": "Tier 1 / Entry",
+          "target_val": "Entry Tier",
+          "rival_val": "Benchmark Entry",
+          "target_pct": 14,
+          "rival_pct": 15
+        },
+        {
+          "tier": "Tier 2 / Mid-...",
+          "target_val": "Core / Pro Tier",
+          "rival_val": "Benchmark Mid",
+          "target_pct": 38,
+          "rival_pct": 48
+        },
+        {
+          "tier": "Tier 3 / Flag.",
+          "target_val": "Enterprise / Flagship",
+          "rival_val": "Benchmark Flagship",
+          "target_pct": 92,
+          "rival_pct": 94
+        }
+      ]
+    }
+  },
+  "why_does_it_matter": {
+    "market_trends": [
+      {
+        "trend": "Electrification Acceleration",
+        "description": "India's EV tax incentives and expanding charging infrastructure have driven a 35% YoY increase in premium EV registrations in H1\u202f2026.",
+        "impact": "Shift of high\u2011margin sales toward EVs, pressuring ICE\u2011centric margins",
+        "type": "market_trend"
+      },
+      {
+        "trend": "Premium SUV Dominance",
+        "description": "SUVs now account for 68% of luxury vehicle sales in India, with consumers favoring higher ground clearance and tech\u2011laden cabins.",
+        "impact": "Pricing power concentrates on higher\u2011priced SUV trims, raising average transaction value",
+        "type": "market_trend"
+      }
+    ],
+    "opportunities": [
+      {
+        "title": "Localized EV Production",
+        "gap": "Most competitors import EVs, leading to higher tariffs and price sensitivity",
+        "actionable_counter": "Establish a joint\u2011venture battery pack plant in Gujarat to qualify for local manufacturing incentives",
+        "potential_upside": "High"
+      },
+      {
+        "title": "Digital Retail & Subscription",
+        "gap": "Limited online purchase pathways and flexible ownership models in the premium segment",
+        "actionable_counter": "Launch a full\u2011stack digital showroom with subscription\u2011based access to multiple BMW models",
+        "potential_upside": "Medium"
+      }
+    ],
+    "threats": [
+      {
+        "title": "Mercedes\u2011Benz Aggressive Pricing",
+        "competitor": "Mercedes\u2011Benz India",
+        "move_detail": "5% price reduction on GLS and launch of EQB EV at a competitive price point",
+        "severity": "High",
+        "impact_timeline": "Immediate (0-30 days)"
+      },
+      {
+        "title": "Tesla Service Network Expansion",
+        "competitor": "Tesla India",
+        "move_detail": "Opened two new service hubs and introduced mobile service vans, reducing perceived after\u2011sales risk",
+        "severity": "Medium",
+        "impact_timeline": "Medium term (1-3 months)"
+      }
+    ],
+    "hindsight_reflection": "BMW\u2019s product\u2011launch cadence in India is moving toward broader price segmentation: the F\u202f450\u202fGS Sport variant was introduced at\u202fRs\u202f5.90\u202flakh ex\u2011showroom \u2013\u202fRs\u202f25\u202fk cheaper than the GS\u202fTrophy (Observation\u202fnode_85c5ec75c4e80f72), while the ultra\u2011",
+    "recalled_nodes": [
+      {
+        "id": "node_85c5ec75c4e80f72",
+        "text": "Article: BMW F 450 GS Sport Variant Launched In India; Check Price\nSource: www.ndtv.com\nPublished: 2026-11-06T12:06:50+00:00\nURL: https://www.ndtv.com/auto/bmw-f-450-gs-sport-variant-launched-in-india-check-price-12293035\nContent: home Auto BMW F 450 GS Sport Variant Launched In India; Check Price BMW F 450 GS Sport Variant Launched In India; Check Price BMW F 450 GS Sport comes with the same engine setup with slightly different hardware compared to the standard version of the motorcycle. Written by: NDTV Auto Desk Auto Nov 06, 2026 17:37 IST + Published On Nov 06, 2026 17:36 IST + Last Updated On Nov 06, 2026 17:37 IST Read Time: 3 mins Share Twitter WhatsApp Facebook Reddit Email BMW F 450 GS Sport Variant Launched In India; Check Price BMW F 450 GS Sport [...] BMW F 450 GS Sport BMW Motorrad launched the F 450 GS Sport variant in India at Rs 5.90 lakh ex-showroom The new variant features sport suspension, Gear Shift Assistant Pro, and Riding Modes Pro It comes in an exclusive Racing Red colour with black handguards and off-road footpegs What are the key rivals of this BMW motorcycle? BMW Motorrad has launched the new F 450 GS Sport variant in India at Rs 5.90 lakh (ex-showroom). The new variant slots in between the Exclusive and the top-spec GS Trophy variants, bringing sport suspension, additional riding modes, and an exclusive Racing Red colour scheme. BMW F 450 GS Sport: Upgrades [...] Instead, the Sport variant comes with a conventional clutch setup along with Gear Shift Assistant Pro. The GS Trophy also gets an aluminium engine guard and a tinted Rallye windscreen, while the Sport variant comes with a plastic engine guard and a clear Rallye windscreen. Engine And Pricing Talking about the powertrain, BMW has not made any changes to the engine of the new F 450 GS Sport. It still comes equipped with the same 420 cc liquid-cooled parallel-twin engine, which is offered with the other variants. This engine produces a maximum power of 48 bhp and 43 Nm of peak torque. It comes paired with a 6-speed gearbox. The F 450 GS Sport is priced at Rs 5.90 lakh, ex-showroom, making it Rs 25,000 more affordable than the GS Trophy.",
+        "timestamp": "2026-11-06T12:06:50+00:00",
+        "score": 11.0,
+        "metadata": {
+          "source": "www.ndtv.com",
+          "url": "https://www.ndtv.com/auto/bmw-f-450-gs-sport-variant-launched-in-india-check-price-12293035",
+          "brand": "BMW India",
+          "title": "BMW F 450 GS Sport Variant Launched In India; Check Price",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight"
+      },
+      {
+        "id": "node_a7d26d3af025e13a",
+        "text": "Article: BMW M 1000 RS Unveiled at EICMA 2026: 218hp Power, Carbon Winglets & Just 1,000 Units - Auto India Daily\nSource: autoindiadaily.in\nPublished: 2026-11-04T03:47:53+00:00\nURL: https://autoindiadaily.in/bike-news/bmw-m-1000-rs-unveiled-at-eicma-2026\nContent: The BMW M 1000 RS will be available at dealerships from March 2027. It has been priced at 40,000 euros in Germany, which translates to approximately Rs. 42.36 lakh in Indian currency. However, there is no official confirmation yet regarding the India launch and pricing.\n\nAlso Read: BMW F 450 RR Revealed With 48hp Twin-Cylinder Engine & Four Variants\n\n## BMW M 1000 RS Engine and Performance: 218hp from a 999cc Inline-Four\n\nThe BMW M 1000 RS is powered by the familiar 999cc, four-cylinder engine that also powers the M 1000 R and M 1000 RR. However, in the RS version, this engine has been tuned for higher performance output. [...] Currently, there has been no official announcement regarding an India launch. It would also be inaccurate to consider German pricing as the direct Indian expected price, as final pricing may vary depending on taxes, import duties, and local market strategy.\n\n## Auto India Daily Verdict\n\nThe BMW M 1000 RS isn\u2019t just a cosmetic upgrade. Compared to the standard M 1000 R, higher power output, carbon winglets, M Carbon wheels, and electronically controlled suspension make it a more focused performance package. [...] 218 hp and a claimed top speed of 283 kph place it in the serious performance motorcycle category. But the 1,000-unit production limit and 40,000-euro price make it an exclusive BMW M model rather than a mass-market offering. The biggest question for Indian enthusiasts now is whether BMW will officially introduce it in India.\n\nAlso Read: Harley-Davidson X350 T Revealed at EICMA 2026; Gets New 350cc Engine\n\nKhushi Prajapati logo\n\nKhushi\n\nKhushi Prajapati is an Automotive Content Writer at AutoIndiaDaily, specializing in Indian car launches, vehicle specifications, and market trends. She holds a B.Sc degree in Computer Science and brings over 1.5 years of hands-on experience in the auto sector.\n\n### Share this:",
+        "timestamp": "2026-11-04T03:47:53+00:00",
+        "score": 11.0,
+        "metadata": {
+          "source": "autoindiadaily.in",
+          "url": "https://autoindiadaily.in/bike-news/bmw-m-1000-rs-unveiled-at-eicma-2026",
+          "brand": "BMW India",
+          "title": "BMW M 1000 RS Unveiled at EICMA 2026: 218hp Power, Carbon Winglets & Just 1,000 Units - Auto India Daily",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight"
+      },
+      {
+        "id": "node_39cd53692990e3cc",
+        "text": "Article: BMW\nSource: tavily.com\nPublished: 2026-11-06T19:28:46.894239+00:00\nURL: https://tavily.com/knowledge/company/qFU6OjfVuljJ\nContent: BMW India Website: www.bmw.in Legal name: BMW INDIA PRIVATE LIMITED Headquarters: Gurgaon, Haryana, India LinkedIn: www.linkedin.com/showcase/bmw-india \u00b7 564,556 followers Industry: Motor Vehicle Manufacturing Industry codes: SIC 55, 551, NAICS 44, 441 Company type: Privately Held Founded: 2006 Social profiles: www.facebook.com/bmwindia, www.twitter.com/bmwindia, www.crunchbase.com/organization/bmw-india, www.instagram.com/bmwindia_official, www.youtube.com/user/bmwindia Email: contact.india@bmw.in Phone: 91-124-4566-600, +180-0102-2269 [...] Description: BMW is the world\u2019s leading manufacturer of premium luxury automobiles. It has not only been at the forefront of innovation and technology, but has a rich history shaped by visionaries, pioneers and distinguished designers. Along with automobiles, BMW India comprise of financial services for its premium clientele. The dynamic BMW range offers discerning drivers a world of unrivalled innovations, premium quality and sheer driving pleasure. BMW has a world-class production plant in Chennai, which was inaugurated on March 29, 2007. This plant produces the BMW 1 Series, BMW 3 Series, BMW Gran Turismo, BMW 5 Series, BMW 7 Series, BMW X1, BMW X3 and BMW X5. Furthermore, Authorised BMW Dealerships also display the BMW 6 Series Gran Coup\u00e9, BMW X6, BMW Z4, BMW M3 Sedan, BMW M4 Coup\u00e9, [...] Gran Coup\u00e9, BMW X6, BMW Z4, BMW M3 Sedan, BMW M4 Coup\u00e9, BMW M5 Sedan, BMW M6 Gran Coup\u00e9, BMW X5 M, BMW X6 M and BMW i8 which are available in the country as Completely Built-up Units. BMW India also offers \u2018BMW Premium Selection\u2019 with the finest range of pre-owned BMW vehicles that are carefully selected and comprehensively examined for quality. BMW Premium Selection vehicles can be ordered through exclusive BMW Premium Selection dealerships at 13 locations in the Indian market. BMW Financial Services India offers solutions for retail automobile financing for BMW customers and multi-make customers, financing for fleet owners and commercial financing for BMW dealerships and multi-make dealerships. BMW Financial Services India also offers BMW Lease for individuals and corporate customers.",
+        "timestamp": "2026-11-06T19:28:46.894239+00:00",
+        "score": 9.0,
+        "metadata": {
+          "source": "tavily.com",
+          "url": "https://tavily.com/knowledge/company/qFU6OjfVuljJ",
+          "brand": "BMW India",
+          "title": "BMW",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight"
+      },
+      {
+        "id": "node_dabc55cf3406eb95",
+        "text": "Competitor Identified: Audi India (www.audi.in). Focus: Premium compact & midsize EVs/SUVs. Move: Launched a new e\u2011tron pricing tier with a 5% promotional discount in July\u202f2026. Price: -5% promotional discount.",
+        "timestamp": "2026-11-06T05:55:59.934749+00:00",
+        "score": 8.0,
+        "metadata": {
+          "id": "audi-india",
+          "name": "Audi India",
+          "domain": "www.audi.in",
+          "market_share": "~15% of luxury segment",
+          "focus": "Premium compact & midsize EVs/SUVs",
+          "recent_move": "Launched a new e\u2011tron pricing tier with a 5% promotional discount in July\u202f2026",
+          "price_trend": "-5% promotional discount",
+          "threat_level": "Medium",
+          "key_advantage": "Advanced infotainment and quattro AWD perception",
+          "key_vulnerability": "Limited model breadth in the high\u2011end EV space",
+          "brand": "BMW India",
+          "fact_type": "competitor_profile",
+          "url": "https://www.audi.in"
+        },
+        "storage_backend": "hindsight"
+      },
+      {
+        "id": "node_3f9788ff74d964b8",
+        "text": "Competitor Identified: Mercedes\u2011Benz India (www.mercedes-benz.co.in). Focus: Premium ICE & EV sedans/SUVs. Move: Introduced a 5% discount on all EV models in July\u202f2026 to boost volume. Price: +1% YoY (post\u2011discount net pricing stable).",
+        "timestamp": "2026-11-06T05:55:59.932641+00:00",
+        "score": 8.0,
+        "metadata": {
+          "id": "mercedes-benz-india",
+          "name": "Mercedes\u2011Benz India",
+          "domain": "www.mercedes-benz.co.in",
+          "market_share": "~28% of luxury segment",
+          "focus": "Premium ICE & EV sedans/SUVs",
+          "recent_move": "Introduced a 5% discount on all EV models in July\u202f2026 to boost volume",
+          "price_trend": "+1% YoY (post\u2011discount net pricing stable)",
+          "threat_level": "High",
+          "key_advantage": "Strong brand heritage and extensive dealer network",
+          "key_vulnerability": "Higher price points on flagship EVs compared to BMW",
+          "brand": "BMW India",
+          "fact_type": "competitor_profile",
+          "url": "https://www.mercedes-benz.co.in"
+        },
+        "storage_backend": "hindsight"
+      },
+      {
+        "id": "node_975ab36aab894f01",
+        "text": "Competitor Identified: Audi India (audi.in). Focus: Premium compact and midsize EVs/SUVs. Move: Introduced the e\u2011tron's new pricing tier with a 5% discount to boost volume (July 2026). Price: Promotional.",
+        "timestamp": "2026-11-06T05:42:59.330532+00:00",
+        "score": 8.0,
+        "metadata": {
+          "id": "audi-india",
+          "name": "Audi India",
+          "domain": "audi.in",
+          "market_share": "~15% of luxury segment",
+          "focus": "Premium compact and midsize EVs/SUVs",
+          "recent_move": "Introduced the e\u2011tron's new pricing tier with a 5% discount to boost volume (July 2026)",
+          "price_trend": "Promotional",
+          "threat_level": "Medium",
+          "key_advantage": "Advanced infotainment and quattro AWD tech appeal to tech\u2011savvy buyers",
+          "key_vulnerability": "Limited dealer network outside metros",
+          "brand": "BMW India",
+          "fact_type": "competitor_profile",
+          "url": "https://audi.in"
+        },
+        "storage_backend": "hindsight"
+      },
+      {
+        "id": "node_d8c3fc217dc72e42",
+        "text": "Article: BMW F 450 GS Sport launched in India at \u20b95.90 lakh; gets upgraded suspension and electronics\nSource: auto.hindustantimes.com\nPublished: 2026-11-06T14:00:00+00:00\nURL: https://auto.hindustantimes.com/auto/two-wheelers/bmw-f-450-gs-sport-launched-in-india-at-rs-5-90-lakh-gets-upgraded-suspension-and-electronics-41793975279761.html\nContent: BMW Motorrad has launched the F 450 GS Sport in India at \u20b95.90 lakh, featuring upgraded suspension, additional riding modes,",
+        "timestamp": "2026-11-06T14:00:00+00:00",
+        "score": 7.0,
+        "metadata": {
+          "source": "auto.hindustantimes.com",
+          "url": "https://auto.hindustantimes.com/auto/two-wheelers/bmw-f-450-gs-sport-launched-in-india-at-rs-5-90-lakh-gets-upgraded-suspension-and-electronics-41793975279761.html",
+          "brand": "BMW India",
+          "title": "BMW F 450 GS Sport launched in India at \u20b95.90 lakh; gets upgraded suspension and electronics",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight"
+      },
+      {
+        "id": "node_91ec27c58803f7ad",
+        "text": "Article: BMW F 450 GS Sport Launched in India at Rs 5.90 Lakh\nSource: thebikejunction.com\nPublished: 2026-11-06T11:00:00+00:00\nURL: https://thebikejunction.com/news/bmw-f-450-gs-sport-launched-india-price-features\nContent: BMW Motorrad India has expanded its F 450 GS range with the launch of the new Sport variant in India. The company has introduced this new",
+        "timestamp": "2026-11-06T11:00:00+00:00",
+        "score": 7.0,
+        "metadata": {
+          "source": "thebikejunction.com",
+          "url": "https://thebikejunction.com/news/bmw-f-450-gs-sport-launched-india-price-features",
+          "brand": "BMW India",
+          "title": "BMW F 450 GS Sport Launched in India at Rs 5.90 Lakh",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight"
+      }
+    ]
+  },
+  "what_should_we_do": {
+    "strategic_recommendations": [
+      {
+        "title": "Accelerate launch of a locally assembled elec...",
+        "priority": "P0 Critical",
+        "action": "Accelerate launch of a locally assembled electric SUV (e.g., BMW iX3) with price parity to ICE rivals",
+        "rationale": "Counter Mercedes' EQ pricing and leverage upcoming tax benefits for domestically produced EVs",
+        "expected_outcome": "Capture +3% market share in luxury EV segment within 12 months, protect margin erosion",
+        "type": "strategic_recommendation",
+        "brand": "BMW India",
+        "fact_type": "ai_recommendation",
+        "url": ""
+      },
+      {
+        "title": "Deploy an integrated digital sales platform w...",
+        "priority": "P1 Offensive",
+        "action": "Deploy an integrated digital sales platform with subscription and lease options for premium SUVs",
+        "rationale": "Address growing consumer demand for flexible ownership and differentiate from traditional dealer\u2011centric models",
+        "expected_outcome": "Increase online conversion rate by 15% and improve customer lifetime value",
+        "type": "strategic_recommendation",
+        "brand": "BMW India",
+        "fact_type": "ai_recommendation",
+        "url": ""
+      },
+      {
+        "title": "Neutralize Mercedes\u2011Benz India Pricing Pressure",
+        "priority": "P0 Critical",
+        "action": "Audit pricing parity against Mercedes\u2011Benz India and deploy targeted annual incentive bundles.",
+        "rationale": "Directly counters Mercedes\u2011Benz India's aggressive positioning while defending margin on renewal cohorts.",
+        "expected_outcome": "Minimizes account churn and locks in retention across key customer segments.",
+        "type": "strategic_recommendation",
+        "brand": "BMW India",
+        "fact_type": "ai_recommendation",
+        "url": ""
+      }
+    ],
+    "founder_decisions": []
+  },
+  "hindsight_memory": {
+    "bank_id": "godseye-intel-bmw-in",
+    "storage_backend": "hindsight",
+    "is_baseline": false,
+    "reflection_text": "BMW\u2019s product\u2011launch cadence in India is moving toward broader price segmentation: the F\u202f450\u202fGS Sport variant was introduced at\u202fRs\u202f5.90\u202flakh ex\u2011showroom \u2013\u202fRs\u202f25\u202fk cheaper than the GS\u202fTrophy (Observation\u202fnode_85c5ec75c4e80f72), while the ultra\u2011",
+    "recalled_nodes_count": 8,
+    "recalled_nodes": [
+      {
+        "id": "node_85c5ec75c4e80f72",
+        "text": "Article: BMW F 450 GS Sport Variant Launched In India; Check Price\nSource: www.ndtv.com\nPublished: 2026-11-06T12:06:50+00:00\nURL: https://www.ndtv.com/auto/bmw-f-450-gs-sport-variant-launched-in-india-check-price-12293035\nContent: home Auto BMW F 450 GS Sport Variant Launched In India; Check Price BMW F 450 GS Sport Variant Launched In India; Check Price BMW F 450 GS Sport comes with the same engine setup with slightly different hardware compared to the standard version of the motorcycle. Written by: NDTV Auto Desk Auto Nov 06, 2026 17:37 IST + Published On Nov 06, 2026 17:36 IST + Last Updated On Nov 06, 2026 17:37 IST Read Time: 3 mins Share Twitter WhatsApp Facebook Reddit Email BMW F 450 GS Sport Variant Launched In India; Check Price BMW F 450 GS Sport [...] BMW F 450 GS Sport BMW Motorrad launched the F 450 GS Sport variant in India at Rs 5.90 lakh ex-showroom The new variant features sport suspension, Gear Shift Assistant Pro, and Riding Modes Pro It comes in an exclusive Racing Red colour with black handguards and off-road footpegs What are the key rivals of this BMW motorcycle? BMW Motorrad has launched the new F 450 GS Sport variant in India at Rs 5.90 lakh (ex-showroom). The new variant slots in between the Exclusive and the top-spec GS Trophy variants, bringing sport suspension, additional riding modes, and an exclusive Racing Red colour scheme. BMW F 450 GS Sport: Upgrades [...] Instead, the Sport variant comes with a conventional clutch setup along with Gear Shift Assistant Pro. The GS Trophy also gets an aluminium engine guard and a tinted Rallye windscreen, while the Sport variant comes with a plastic engine guard and a clear Rallye windscreen. Engine And Pricing Talking about the powertrain, BMW has not made any changes to the engine of the new F 450 GS Sport. It still comes equipped with the same 420 cc liquid-cooled parallel-twin engine, which is offered with the other variants. This engine produces a maximum power of 48 bhp and 43 Nm of peak torque. It comes paired with a 6-speed gearbox. The F 450 GS Sport is priced at Rs 5.90 lakh, ex-showroom, making it Rs 25,000 more affordable than the GS Trophy.",
+        "timestamp": "2026-11-06T12:06:50+00:00",
+        "score": 11.0,
+        "metadata": {
+          "source": "www.ndtv.com",
+          "url": "https://www.ndtv.com/auto/bmw-f-450-gs-sport-variant-launched-in-india-check-price-12293035",
+          "brand": "BMW India",
+          "title": "BMW F 450 GS Sport Variant Launched In India; Check Price",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight"
+      },
+      {
+        "id": "node_a7d26d3af025e13a",
+        "text": "Article: BMW M 1000 RS Unveiled at EICMA 2026: 218hp Power, Carbon Winglets & Just 1,000 Units - Auto India Daily\nSource: autoindiadaily.in\nPublished: 2026-11-04T03:47:53+00:00\nURL: https://autoindiadaily.in/bike-news/bmw-m-1000-rs-unveiled-at-eicma-2026\nContent: The BMW M 1000 RS will be available at dealerships from March 2027. It has been priced at 40,000 euros in Germany, which translates to approximately Rs. 42.36 lakh in Indian currency. However, there is no official confirmation yet regarding the India launch and pricing.\n\nAlso Read: BMW F 450 RR Revealed With 48hp Twin-Cylinder Engine & Four Variants\n\n## BMW M 1000 RS Engine and Performance: 218hp from a 999cc Inline-Four\n\nThe BMW M 1000 RS is powered by the familiar 999cc, four-cylinder engine that also powers the M 1000 R and M 1000 RR. However, in the RS version, this engine has been tuned for higher performance output. [...] Currently, there has been no official announcement regarding an India launch. It would also be inaccurate to consider German pricing as the direct Indian expected price, as final pricing may vary depending on taxes, import duties, and local market strategy.\n\n## Auto India Daily Verdict\n\nThe BMW M 1000 RS isn\u2019t just a cosmetic upgrade. Compared to the standard M 1000 R, higher power output, carbon winglets, M Carbon wheels, and electronically controlled suspension make it a more focused performance package. [...] 218 hp and a claimed top speed of 283 kph place it in the serious performance motorcycle category. But the 1,000-unit production limit and 40,000-euro price make it an exclusive BMW M model rather than a mass-market offering. The biggest question for Indian enthusiasts now is whether BMW will officially introduce it in India.\n\nAlso Read: Harley-Davidson X350 T Revealed at EICMA 2026; Gets New 350cc Engine\n\nKhushi Prajapati logo\n\nKhushi\n\nKhushi Prajapati is an Automotive Content Writer at AutoIndiaDaily, specializing in Indian car launches, vehicle specifications, and market trends. She holds a B.Sc degree in Computer Science and brings over 1.5 years of hands-on experience in the auto sector.\n\n### Share this:",
+        "timestamp": "2026-11-04T03:47:53+00:00",
+        "score": 11.0,
+        "metadata": {
+          "source": "autoindiadaily.in",
+          "url": "https://autoindiadaily.in/bike-news/bmw-m-1000-rs-unveiled-at-eicma-2026",
+          "brand": "BMW India",
+          "title": "BMW M 1000 RS Unveiled at EICMA 2026: 218hp Power, Carbon Winglets & Just 1,000 Units - Auto India Daily",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight"
+      },
+      {
+        "id": "node_39cd53692990e3cc",
+        "text": "Article: BMW\nSource: tavily.com\nPublished: 2026-11-06T19:28:46.894239+00:00\nURL: https://tavily.com/knowledge/company/qFU6OjfVuljJ\nContent: BMW India Website: www.bmw.in Legal name: BMW INDIA PRIVATE LIMITED Headquarters: Gurgaon, Haryana, India LinkedIn: www.linkedin.com/showcase/bmw-india \u00b7 564,556 followers Industry: Motor Vehicle Manufacturing Industry codes: SIC 55, 551, NAICS 44, 441 Company type: Privately Held Founded: 2006 Social profiles: www.facebook.com/bmwindia, www.twitter.com/bmwindia, www.crunchbase.com/organization/bmw-india, www.instagram.com/bmwindia_official, www.youtube.com/user/bmwindia Email: contact.india@bmw.in Phone: 91-124-4566-600, +180-0102-2269 [...] Description: BMW is the world\u2019s leading manufacturer of premium luxury automobiles. It has not only been at the forefront of innovation and technology, but has a rich history shaped by visionaries, pioneers and distinguished designers. Along with automobiles, BMW India comprise of financial services for its premium clientele. The dynamic BMW range offers discerning drivers a world of unrivalled innovations, premium quality and sheer driving pleasure. BMW has a world-class production plant in Chennai, which was inaugurated on March 29, 2007. This plant produces the BMW 1 Series, BMW 3 Series, BMW Gran Turismo, BMW 5 Series, BMW 7 Series, BMW X1, BMW X3 and BMW X5. Furthermore, Authorised BMW Dealerships also display the BMW 6 Series Gran Coup\u00e9, BMW X6, BMW Z4, BMW M3 Sedan, BMW M4 Coup\u00e9, [...] Gran Coup\u00e9, BMW X6, BMW Z4, BMW M3 Sedan, BMW M4 Coup\u00e9, BMW M5 Sedan, BMW M6 Gran Coup\u00e9, BMW X5 M, BMW X6 M and BMW i8 which are available in the country as Completely Built-up Units. BMW India also offers \u2018BMW Premium Selection\u2019 with the finest range of pre-owned BMW vehicles that are carefully selected and comprehensively examined for quality. BMW Premium Selection vehicles can be ordered through exclusive BMW Premium Selection dealerships at 13 locations in the Indian market. BMW Financial Services India offers solutions for retail automobile financing for BMW customers and multi-make customers, financing for fleet owners and commercial financing for BMW dealerships and multi-make dealerships. BMW Financial Services India also offers BMW Lease for individuals and corporate customers.",
+        "timestamp": "2026-11-06T19:28:46.894239+00:00",
+        "score": 9.0,
+        "metadata": {
+          "source": "tavily.com",
+          "url": "https://tavily.com/knowledge/company/qFU6OjfVuljJ",
+          "brand": "BMW India",
+          "title": "BMW",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight"
+      },
+      {
+        "id": "node_dabc55cf3406eb95",
+        "text": "Competitor Identified: Audi India (www.audi.in). Focus: Premium compact & midsize EVs/SUVs. Move: Launched a new e\u2011tron pricing tier with a 5% promotional discount in July\u202f2026. Price: -5% promotional discount.",
+        "timestamp": "2026-11-06T05:55:59.934749+00:00",
+        "score": 8.0,
+        "metadata": {
+          "id": "audi-india",
+          "name": "Audi India",
+          "domain": "www.audi.in",
+          "market_share": "~15% of luxury segment",
+          "focus": "Premium compact & midsize EVs/SUVs",
+          "recent_move": "Launched a new e\u2011tron pricing tier with a 5% promotional discount in July\u202f2026",
+          "price_trend": "-5% promotional discount",
+          "threat_level": "Medium",
+          "key_advantage": "Advanced infotainment and quattro AWD perception",
+          "key_vulnerability": "Limited model breadth in the high\u2011end EV space",
+          "brand": "BMW India",
+          "fact_type": "competitor_profile",
+          "url": "https://www.audi.in"
+        },
+        "storage_backend": "hindsight"
+      },
+      {
+        "id": "node_3f9788ff74d964b8",
+        "text": "Competitor Identified: Mercedes\u2011Benz India (www.mercedes-benz.co.in). Focus: Premium ICE & EV sedans/SUVs. Move: Introduced a 5% discount on all EV models in July\u202f2026 to boost volume. Price: +1% YoY (post\u2011discount net pricing stable).",
+        "timestamp": "2026-11-06T05:55:59.932641+00:00",
+        "score": 8.0,
+        "metadata": {
+          "id": "mercedes-benz-india",
+          "name": "Mercedes\u2011Benz India",
+          "domain": "www.mercedes-benz.co.in",
+          "market_share": "~28% of luxury segment",
+          "focus": "Premium ICE & EV sedans/SUVs",
+          "recent_move": "Introduced a 5% discount on all EV models in July\u202f2026 to boost volume",
+          "price_trend": "+1% YoY (post\u2011discount net pricing stable)",
+          "threat_level": "High",
+          "key_advantage": "Strong brand heritage and extensive dealer network",
+          "key_vulnerability": "Higher price points on flagship EVs compared to BMW",
+          "brand": "BMW India",
+          "fact_type": "competitor_profile",
+          "url": "https://www.mercedes-benz.co.in"
+        },
+        "storage_backend": "hindsight"
+      },
+      {
+        "id": "node_975ab36aab894f01",
+        "text": "Competitor Identified: Audi India (audi.in). Focus: Premium compact and midsize EVs/SUVs. Move: Introduced the e\u2011tron's new pricing tier with a 5% discount to boost volume (July 2026). Price: Promotional.",
+        "timestamp": "2026-11-06T05:42:59.330532+00:00",
+        "score": 8.0,
+        "metadata": {
+          "id": "audi-india",
+          "name": "Audi India",
+          "domain": "audi.in",
+          "market_share": "~15% of luxury segment",
+          "focus": "Premium compact and midsize EVs/SUVs",
+          "recent_move": "Introduced the e\u2011tron's new pricing tier with a 5% discount to boost volume (July 2026)",
+          "price_trend": "Promotional",
+          "threat_level": "Medium",
+          "key_advantage": "Advanced infotainment and quattro AWD tech appeal to tech\u2011savvy buyers",
+          "key_vulnerability": "Limited dealer network outside metros",
+          "brand": "BMW India",
+          "fact_type": "competitor_profile",
+          "url": "https://audi.in"
+        },
+        "storage_backend": "hindsight"
+      },
+      {
+        "id": "node_d8c3fc217dc72e42",
+        "text": "Article: BMW F 450 GS Sport launched in India at \u20b95.90 lakh; gets upgraded suspension and electronics\nSource: auto.hindustantimes.com\nPublished: 2026-11-06T14:00:00+00:00\nURL: https://auto.hindustantimes.com/auto/two-wheelers/bmw-f-450-gs-sport-launched-in-india-at-rs-5-90-lakh-gets-upgraded-suspension-and-electronics-41793975279761.html\nContent: BMW Motorrad has launched the F 450 GS Sport in India at \u20b95.90 lakh, featuring upgraded suspension, additional riding modes,",
+        "timestamp": "2026-11-06T14:00:00+00:00",
+        "score": 7.0,
+        "metadata": {
+          "source": "auto.hindustantimes.com",
+          "url": "https://auto.hindustantimes.com/auto/two-wheelers/bmw-f-450-gs-sport-launched-in-india-at-rs-5-90-lakh-gets-upgraded-suspension-and-electronics-41793975279761.html",
+          "brand": "BMW India",
+          "title": "BMW F 450 GS Sport launched in India at \u20b95.90 lakh; gets upgraded suspension and electronics",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight"
+      },
+      {
+        "id": "node_91ec27c58803f7ad",
+        "text": "Article: BMW F 450 GS Sport Launched in India at Rs 5.90 Lakh\nSource: thebikejunction.com\nPublished: 2026-11-06T11:00:00+00:00\nURL: https://thebikejunction.com/news/bmw-f-450-gs-sport-launched-india-price-features\nContent: BMW Motorrad India has expanded its F 450 GS range with the launch of the new Sport variant in India. The company has introduced this new",
+        "timestamp": "2026-11-06T11:00:00+00:00",
+        "score": 7.0,
+        "metadata": {
+          "source": "thebikejunction.com",
+          "url": "https://thebikejunction.com/news/bmw-f-450-gs-sport-launched-india-price-features",
+          "brand": "BMW India",
+          "title": "BMW F 450 GS Sport Launched in India at Rs 5.90 Lakh",
+          "type": "market_news_signal"
+        },
+        "storage_backend": "hindsight"
+      }
+    ],
+    "compounding_message": "The next time BMW India is scanned, the agent remembers previous findings and identifies what's changed, which strategies are developing and which trends are continuing.",
+    "neural_network": {
+      "center_node": {
+        "id": "node_center",
+        "label": "BMW India",
+        "color": "#0284c7"
+      },
+      "radial_nodes": [
+        {
+          "id": "node_5e4c075a710e474a",
+          "chip_id": "#node_5e4c075",
+          "label": "Accelerate launch ...",
+          "full_title": "Accelerate launch of a locally assembled electric SUV (e.g., BMW iX3) with price parity to ICE rivals",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 270,
+          "content": "Strategic Move [P0 Critical]: Accelerate launch of a locally assembled electric SUV (e.g., BMW iX3) with price parity to ICE rivals. Rationale: Counter Mercedes' EQ pricing and leverage upcoming tax benefits for domestically produced EVs",
+          "timestamp": "2026-11-06T23:51:13.128055+00:00"
+        },
+        {
+          "id": "node_77cacaad85d646cc",
+          "chip_id": "#node_77cacaa",
+          "label": "Deploy an integrat...",
+          "full_title": "Deploy an integrated digital sales platform with subscription and lease options for premium SUVs",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 320,
+          "content": "Strategic Move [P1 Offensive]: Deploy an integrated digital sales platform with subscription and lease options for premium SUVs. Rationale: Address growing consumer demand for flexible ownership and differentiate from traditional dealer\u2011centric models",
+          "timestamp": "2026-11-06T23:51:13.128060+00:00"
+        },
+        {
+          "id": "node_7bea87f4b9724f36",
+          "chip_id": "#node_7bea87f",
+          "label": "Audit pricing pari...",
+          "full_title": "Audit pricing parity against Mercedes\u2011Benz India and deploy targeted annual incentive bundles.",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 15,
+          "content": "Strategic Move [P0 Critical]: Audit pricing parity against Mercedes\u2011Benz India and deploy targeted annual incentive bundles.. Rationale: Directly counters Mercedes\u2011Benz India's aggressive positioning while defending margin on renewal cohorts.",
+          "timestamp": "2026-11-06T23:51:13.128063+00:00"
+        },
+        {
+          "id": "node_69d66fedb05f4c16",
+          "chip_id": "#node_69d66fe",
+          "label": "Mercedes\u2011Benz ...",
+          "full_title": "Mercedes\u2011Benz India \u2014 Introduced 2026 facelift of the GLS with a 5% price cut and new EQ electric SUV",
+          "subtitle": "Pricing Model",
+          "type": "Pricing Model",
+          "color": "#10b981",
+          "angle_deg": 65,
+          "content": "Competitor Mercedes\u2011Benz India (mercedes-benz.co.in). Move: Introduced 2026 facelift of the GLS with a 5% price cut and new EQ electric SUV. Advantage: Strong brand heritage and early EV EQ lineup",
+          "timestamp": "2026-11-06T23:51:13.128067+00:00"
+        },
+        {
+          "id": "node_dd0e0b8143714079",
+          "chip_id": "#node_dd0e0b8",
+          "label": "Audi India",
+          "full_title": "Audi India \u2014 Launched the e\u2011tron GT India with a 3\u2011year zero\u2011interest financing scheme",
+          "subtitle": "Pricing Model",
+          "type": "Pricing Model",
+          "color": "#10b981",
+          "angle_deg": 90,
+          "content": "Competitor Audi India (audi.in). Move: Launched the e\u2011tron GT India with a 3\u2011year zero\u2011interest financing scheme. Advantage: Advanced infotainment and quattro AWD reputation",
+          "timestamp": "2026-11-06T23:51:13.128070+00:00"
+        },
+        {
+          "id": "node_c42d3f26db014c0b",
+          "chip_id": "#node_c42d3f2",
+          "label": "Tesla India",
+          "full_title": "Tesla India \u2014 Opened two new service centers in Hyderabad and Pune and announced a price reduction on Model Y by 4%",
+          "subtitle": "Pricing Model",
+          "type": "Pricing Model",
+          "color": "#10b981",
+          "angle_deg": 140,
+          "content": "Competitor Tesla India (tesla.com). Move: Opened two new service centers in Hyderabad and Pune and announced a price reduction on Model Y by 4%. Advantage: Pure EV technology and over\u2011the\u2011air updates",
+          "timestamp": "2026-11-06T23:51:13.128072+00:00"
+        },
+        {
+          "id": "node_91c045c08ccd433f",
+          "chip_id": "#node_91c045c",
+          "label": "BMW F 450 GS Spor...",
+          "full_title": "BMW F 450 GS Sport Variant Launched In India; Check Price",
+          "subtitle": "Pricing Model",
+          "type": "Pricing Model",
+          "color": "#10b981",
+          "angle_deg": 195,
+          "content": "Article: BMW F 450 GS Sport Variant Launched In India; Check Price\nSource: www.ndtv.com\nhome Auto BMW F 450 GS Sport Variant Launched In India; Check Price BMW F 450 GS Sport Variant Launched In India; Check Price BMW F 450 GS Sport comes with the same engine setup wi",
+          "timestamp": "Fri, 06 Nov 2026 12:06:50 GMT"
+        },
+        {
+          "id": "node_14f68f255048428a",
+          "chip_id": "#node_14f68f2",
+          "label": "BMW F 450 GS Spor...",
+          "full_title": "BMW F 450 GS Sport Launched in India at Rs 5.90 Lakh",
+          "subtitle": "Pricing Model",
+          "type": "Pricing Model",
+          "color": "#10b981",
+          "angle_deg": 235,
+          "content": "Article: BMW F 450 GS Sport Launched in India at Rs 5.90 Lakh\nSource: thebikejunction.com\nBMW Motorrad India has expanded its F 450 GS range with the launch of the new Sport variant in India. The company has introduced this new",
+          "timestamp": "Fri, 06 Nov 2026 11:00:00 GMT"
+        }
+      ],
+      "recalled_chips": [
+        "#node_5e4c075",
+        "#node_77cacaa",
+        "#node_7bea87f",
+        "#node_69d66fe",
+        "#node_dd0e0b8",
+        "#node_c42d3f2"
+      ],
+      "instant_prompts": [
+        "What is BMW India's pricing moat?",
+        "How have competitor prices shifted?",
+        "What strategic counter-move should we execute?"
+      ]
+    },
+    "neural_nodes": [
+      {
+        "id": "node_5e4c075a710e474a",
+        "chip_id": "#node_5e4c075",
+        "label": "Accelerate launch ...",
+        "full_title": "Accelerate launch of a locally assembled electric SUV (e.g., BMW iX3) with price parity to ICE rivals",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 270,
+        "content": "Strategic Move [P0 Critical]: Accelerate launch of a locally assembled electric SUV (e.g., BMW iX3) with price parity to ICE rivals. Rationale: Counter Mercedes' EQ pricing and leverage upcoming tax benefits for domestically produced EVs",
+        "timestamp": "2026-11-06T23:51:13.128055+00:00"
+      },
+      {
+        "id": "node_77cacaad85d646cc",
+        "chip_id": "#node_77cacaa",
+        "label": "Deploy an integrat...",
+        "full_title": "Deploy an integrated digital sales platform with subscription and lease options for premium SUVs",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 320,
+        "content": "Strategic Move [P1 Offensive]: Deploy an integrated digital sales platform with subscription and lease options for premium SUVs. Rationale: Address growing consumer demand for flexible ownership and differentiate from traditional dealer\u2011centric models",
+        "timestamp": "2026-11-06T23:51:13.128060+00:00"
+      },
+      {
+        "id": "node_7bea87f4b9724f36",
+        "chip_id": "#node_7bea87f",
+        "label": "Audit pricing pari...",
+        "full_title": "Audit pricing parity against Mercedes\u2011Benz India and deploy targeted annual incentive bundles.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 15,
+        "content": "Strategic Move [P0 Critical]: Audit pricing parity against Mercedes\u2011Benz India and deploy targeted annual incentive bundles.. Rationale: Directly counters Mercedes\u2011Benz India's aggressive positioning while defending margin on renewal cohorts.",
+        "timestamp": "2026-11-06T23:51:13.128063+00:00"
+      },
+      {
+        "id": "node_69d66fedb05f4c16",
+        "chip_id": "#node_69d66fe",
+        "label": "Mercedes\u2011Benz ...",
+        "full_title": "Mercedes\u2011Benz India \u2014 Introduced 2026 facelift of the GLS with a 5% price cut and new EQ electric SUV",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 65,
+        "content": "Competitor Mercedes\u2011Benz India (mercedes-benz.co.in). Move: Introduced 2026 facelift of the GLS with a 5% price cut and new EQ electric SUV. Advantage: Strong brand heritage and early EV EQ lineup",
+        "timestamp": "2026-11-06T23:51:13.128067+00:00"
+      },
+      {
+        "id": "node_dd0e0b8143714079",
+        "chip_id": "#node_dd0e0b8",
+        "label": "Audi India",
+        "full_title": "Audi India \u2014 Launched the e\u2011tron GT India with a 3\u2011year zero\u2011interest financing scheme",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 90,
+        "content": "Competitor Audi India (audi.in). Move: Launched the e\u2011tron GT India with a 3\u2011year zero\u2011interest financing scheme. Advantage: Advanced infotainment and quattro AWD reputation",
+        "timestamp": "2026-11-06T23:51:13.128070+00:00"
+      },
+      {
+        "id": "node_c42d3f26db014c0b",
+        "chip_id": "#node_c42d3f2",
+        "label": "Tesla India",
+        "full_title": "Tesla India \u2014 Opened two new service centers in Hyderabad and Pune and announced a price reduction on Model Y by 4%",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 140,
+        "content": "Competitor Tesla India (tesla.com). Move: Opened two new service centers in Hyderabad and Pune and announced a price reduction on Model Y by 4%. Advantage: Pure EV technology and over\u2011the\u2011air updates",
+        "timestamp": "2026-11-06T23:51:13.128072+00:00"
+      },
+      {
+        "id": "node_91c045c08ccd433f",
+        "chip_id": "#node_91c045c",
+        "label": "BMW F 450 GS Spor...",
+        "full_title": "BMW F 450 GS Sport Variant Launched In India; Check Price",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 195,
+        "content": "Article: BMW F 450 GS Sport Variant Launched In India; Check Price\nSource: www.ndtv.com\nhome Auto BMW F 450 GS Sport Variant Launched In India; Check Price BMW F 450 GS Sport Variant Launched In India; Check Price BMW F 450 GS Sport comes with the same engine setup wi",
+        "timestamp": "Fri, 06 Nov 2026 12:06:50 GMT"
+      },
+      {
+        "id": "node_14f68f255048428a",
+        "chip_id": "#node_14f68f2",
+        "label": "BMW F 450 GS Spor...",
+        "full_title": "BMW F 450 GS Sport Launched in India at Rs 5.90 Lakh",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 235,
+        "content": "Article: BMW F 450 GS Sport Launched in India at Rs 5.90 Lakh\nSource: thebikejunction.com\nBMW Motorrad India has expanded its F 450 GS range with the launch of the new Sport variant in India. The company has introduced this new",
+        "timestamp": "Fri, 06 Nov 2026 11:00:00 GMT"
+      }
+    ],
+    "recalled_chips": [
+      "#node_5e4c075",
+      "#node_77cacaa",
+      "#node_7bea87f",
+      "#node_69d66fe",
+      "#node_dd0e0b8",
+      "#node_c42d3f2"
+    ],
+    "instant_prompts": [
+      "What is BMW India's pricing moat?",
+      "How have competitor prices shifted?",
+      "What strategic counter-move should we execute?"
+    ]
+  },
+  "source_verification": [
+    {
+      "title": "BMW F 450 GS Sport Variant Launched In India; Check Price",
+      "url": "https://www.ndtv.com/auto/bmw-f-450-gs-sport-variant-launched-in-india-check-price-12293035",
+      "publisher": "www.ndtv.com",
+      "published_date": "Fri, 06 Nov 2026 12:06:50 GMT",
+      "snippet": "home Auto BMW F 450 GS Sport Variant Launched In India; Check Price BMW F 450 GS Sport Variant Launched In India; Check Price BMW F 450 GS Sport comes with the same engine setup with slightly different hardware compared to the standard version of the motorcycle. Written by: NDTV ...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "BMW F 450 GS Sport Launched in India at Rs 5.90 Lakh",
+      "url": "https://thebikejunction.com/news/bmw-f-450-gs-sport-launched-india-price-features",
+      "publisher": "thebikejunction.com",
+      "published_date": "Fri, 06 Nov 2026 11:00:00 GMT",
+      "snippet": "BMW Motorrad India has expanded its F 450 GS range with the launch of the new Sport variant in India. The company has introduced this new",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "BMW",
+      "url": "https://tavily.com/knowledge/company/ugtD6BNzYVh3",
+      "publisher": "tavily.com",
+      "published_date": "Monitored Source",
+      "snippet": "BMW Group Website: www.bmwgroup.com Legal name: Bayerische Motoren Werke AG Headquarters: Munich, Germany LinkedIn: www.linkedin.com/company/bmw-group \u00b7 3,759,374 followers Industry: Motor Vehicle Manufacturing Industry codes: SIC 75, 753, NAICS 81, 811 Company type: Public Compa...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "BMW F 450 GS Sport launched in India at \u20b95.90 lakh; gets upgraded suspension and electronics",
+      "url": "https://auto.hindustantimes.com/auto/two-wheelers/bmw-f-450-gs-sport-launched-in-india-at-rs-5-90-lakh-gets-upgraded-suspension-and-electronics-41793975279761.html",
+      "publisher": "auto.hindustantimes.com",
+      "published_date": "Fri, 06 Nov 2026 14:00:00 GMT",
+      "snippet": "BMW Motorrad has launched the F 450 GS Sport in India at \u20b95.90 lakh, featuring upgraded suspension, additional riding modes,",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "BMW",
+      "url": "https://tavily.com/knowledge/company/qFU6OjfVuljJ",
+      "publisher": "tavily.com",
+      "published_date": "Monitored Source",
+      "snippet": "BMW India Website: www.bmw.in Legal name: BMW INDIA PRIVATE LIMITED Headquarters: Gurgaon, Haryana, India LinkedIn: www.linkedin.com/showcase/bmw-india \u00b7 564,556 followers Industry: Motor Vehicle Manufacturing Industry codes: SIC 55, 551, NAICS 44, 441 Company type: Privately Hel...",
+      "verification_status": "Verified Original Source"
+    }
+  ],
+  "market_share_benchmark": {
+    "target": {
+      "name": "BMW India",
+      "share": 28,
+      "color": "#0ea5e9",
+      "is_target": true
+    },
+    "rivals": [
+      {
+        "name": "Mercedes\u2011Benz India",
+        "share": 22,
+        "color": "#f43f5e",
+        "is_target": false,
+        "domain": "mercedes-benz.co.in"
+      },
+      {
+        "name": "Audi India",
+        "share": 15,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "audi.in"
+      },
+      {
+        "name": "Tesla India",
+        "share": 12,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "tesla.com"
+      },
+      {
+        "name": "Jaguar Land Rover India",
+        "share": 9,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "jaguarlandrover.in"
+      }
+    ],
+    "all_bars": [
+      {
+        "name": "BMW India",
+        "share": 28,
+        "color": "#0ea5e9",
+        "is_target": true
+      },
+      {
+        "name": "Mercedes\u2011Benz India",
+        "share": 22,
+        "color": "#f43f5e",
+        "is_target": false,
+        "domain": "mercedes-benz.co.in"
+      },
+      {
+        "name": "Audi India",
+        "share": 15,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "audi.in"
+      },
+      {
+        "name": "Tesla India",
+        "share": 12,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "tesla.com"
+      },
+      {
+        "name": "Jaguar Land Rover India",
+        "share": 9,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "jaguarlandrover.in"
+      }
+    ]
+  },
+  "pricing_trajectory": {
+    "tiers": [
+      "Tier 1 / Entry",
+      "Tier 2 / Mid-...",
+      "Tier 3 / Flag."
+    ],
+    "target_name": "BMW India",
+    "rival_name": "Rival Benchmark",
+    "target_curve": [
+      14,
+      38,
+      92
+    ],
+    "rival_curve": [
+      15,
+      48,
+      94
+    ],
+    "points": [
+      {
+        "tier": "Tier 1 / Entry",
+        "target_val": "Entry Tier",
+        "rival_val": "Benchmark Entry",
+        "target_pct": 14,
+        "rival_pct": 15
+      },
+      {
+        "tier": "Tier 2 / Mid-...",
+        "target_val": "Core / Pro Tier",
+        "rival_val": "Benchmark Mid",
+        "target_pct": 38,
+        "rival_pct": 48
+      },
+      {
+        "tier": "Tier 3 / Flag.",
+        "target_val": "Enterprise / Flagship",
+        "rival_val": "Benchmark Flagship",
+        "target_pct": 92,
+        "rival_pct": 94
+      }
+    ]
+  },
+  "neural_network": {
+    "center_node": {
+      "id": "node_center",
+      "label": "BMW India",
+      "color": "#0284c7"
+    },
+    "radial_nodes": [
+      {
+        "id": "node_5e4c075a710e474a",
+        "chip_id": "#node_5e4c075",
+        "label": "Accelerate launch ...",
+        "full_title": "Accelerate launch of a locally assembled electric SUV (e.g., BMW iX3) with price parity to ICE rivals",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 270,
+        "content": "Strategic Move [P0 Critical]: Accelerate launch of a locally assembled electric SUV (e.g., BMW iX3) with price parity to ICE rivals. Rationale: Counter Mercedes' EQ pricing and leverage upcoming tax benefits for domestically produced EVs",
+        "timestamp": "2026-11-06T23:51:13.128055+00:00"
+      },
+      {
+        "id": "node_77cacaad85d646cc",
+        "chip_id": "#node_77cacaa",
+        "label": "Deploy an integrat...",
+        "full_title": "Deploy an integrated digital sales platform with subscription and lease options for premium SUVs",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 320,
+        "content": "Strategic Move [P1 Offensive]: Deploy an integrated digital sales platform with subscription and lease options for premium SUVs. Rationale: Address growing consumer demand for flexible ownership and differentiate from traditional dealer\u2011centric models",
+        "timestamp": "2026-11-06T23:51:13.128060+00:00"
+      },
+      {
+        "id": "node_7bea87f4b9724f36",
+        "chip_id": "#node_7bea87f",
+        "label": "Audit pricing pari...",
+        "full_title": "Audit pricing parity against Mercedes\u2011Benz India and deploy targeted annual incentive bundles.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 15,
+        "content": "Strategic Move [P0 Critical]: Audit pricing parity against Mercedes\u2011Benz India and deploy targeted annual incentive bundles.. Rationale: Directly counters Mercedes\u2011Benz India's aggressive positioning while defending margin on renewal cohorts.",
+        "timestamp": "2026-11-06T23:51:13.128063+00:00"
+      },
+      {
+        "id": "node_69d66fedb05f4c16",
+        "chip_id": "#node_69d66fe",
+        "label": "Mercedes\u2011Benz ...",
+        "full_title": "Mercedes\u2011Benz India \u2014 Introduced 2026 facelift of the GLS with a 5% price cut and new EQ electric SUV",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 65,
+        "content": "Competitor Mercedes\u2011Benz India (mercedes-benz.co.in). Move: Introduced 2026 facelift of the GLS with a 5% price cut and new EQ electric SUV. Advantage: Strong brand heritage and early EV EQ lineup",
+        "timestamp": "2026-11-06T23:51:13.128067+00:00"
+      },
+      {
+        "id": "node_dd0e0b8143714079",
+        "chip_id": "#node_dd0e0b8",
+        "label": "Audi India",
+        "full_title": "Audi India \u2014 Launched the e\u2011tron GT India with a 3\u2011year zero\u2011interest financing scheme",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 90,
+        "content": "Competitor Audi India (audi.in). Move: Launched the e\u2011tron GT India with a 3\u2011year zero\u2011interest financing scheme. Advantage: Advanced infotainment and quattro AWD reputation",
+        "timestamp": "2026-11-06T23:51:13.128070+00:00"
+      },
+      {
+        "id": "node_c42d3f26db014c0b",
+        "chip_id": "#node_c42d3f2",
+        "label": "Tesla India",
+        "full_title": "Tesla India \u2014 Opened two new service centers in Hyderabad and Pune and announced a price reduction on Model Y by 4%",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 140,
+        "content": "Competitor Tesla India (tesla.com). Move: Opened two new service centers in Hyderabad and Pune and announced a price reduction on Model Y by 4%. Advantage: Pure EV technology and over\u2011the\u2011air updates",
+        "timestamp": "2026-11-06T23:51:13.128072+00:00"
+      },
+      {
+        "id": "node_91c045c08ccd433f",
+        "chip_id": "#node_91c045c",
+        "label": "BMW F 450 GS Spor...",
+        "full_title": "BMW F 450 GS Sport Variant Launched In India; Check Price",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 195,
+        "content": "Article: BMW F 450 GS Sport Variant Launched In India; Check Price\nSource: www.ndtv.com\nhome Auto BMW F 450 GS Sport Variant Launched In India; Check Price BMW F 450 GS Sport Variant Launched In India; Check Price BMW F 450 GS Sport comes with the same engine setup wi",
+        "timestamp": "Fri, 06 Nov 2026 12:06:50 GMT"
+      },
+      {
+        "id": "node_14f68f255048428a",
+        "chip_id": "#node_14f68f2",
+        "label": "BMW F 450 GS Spor...",
+        "full_title": "BMW F 450 GS Sport Launched in India at Rs 5.90 Lakh",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 235,
+        "content": "Article: BMW F 450 GS Sport Launched in India at Rs 5.90 Lakh\nSource: thebikejunction.com\nBMW Motorrad India has expanded its F 450 GS range with the launch of the new Sport variant in India. The company has introduced this new",
+        "timestamp": "Fri, 06 Nov 2026 11:00:00 GMT"
+      }
+    ],
+    "recalled_chips": [
+      "#node_5e4c075",
+      "#node_77cacaa",
+      "#node_7bea87f",
+      "#node_69d66fe",
+      "#node_dd0e0b8",
+      "#node_c42d3f2"
+    ],
+    "instant_prompts": [
+      "What is BMW India's pricing moat?",
+      "How have competitor prices shifted?",
+      "What strategic counter-move should we execute?"
+    ]
+  }
+}

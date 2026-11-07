@@ -1,0 +1,849 @@
+{
+  "success": true,
+  "target_url": "https://copilot.com",
+  "domain": "copilot.com",
+  "brand_name": "Copilot",
+  "tagline": "Your AI\u2011driven personal car\u2011shopping concierge",
+  "industry": "AI\u2011powered automotive e\u2011commerce and digital car\u2011shopping platform",
+  "executive_summary": "Copilot leverages generative AI to guide consumers through every step of the car\u2011buying journey, positioning itself as a differentiated digital assistant in the automotive retail market. It faces rising rivalry from both traditional online car marketplaces (e.g., Carvana, AutoTrader) and large\u2011scale AI platform providers expanding into vertical\u2011specific assistants (Microsoft 365 Copilot, Google Gemini, Amazon Q Business). Recent moves include a rollout of a dealer\u2011partner API and a pricing refresh that introduces tiered subscription plans.",
+  "scanned_at": "November 07, 2026 \u2022 11:14:36 UTC",
+  "scanned_at_iso": "2026-11-07T11:14:36.069135+00:00",
+  "duration_seconds": 30.0,
+  "is_baseline_scan": true,
+  "scan_iteration": 1,
+  "bank_id": "godseye-intel-copilot-com",
+  "use_memory": true,
+  "is_memory_enabled": true,
+  "stats": {
+    "competitors_count": 4,
+    "news_coverage_days": 0,
+    "verified_sources_count": 6,
+    "recalled_memories_count": 0,
+    "detected_changes_count": 1
+  },
+  "what_happened": {
+    "competitors": [
+      {
+        "id": "microsoft-365-copilot",
+        "name": "Microsoft 365 Copilot",
+        "domain": "microsoft.com",
+        "market_share": "~15% of enterprise AI assistant market",
+        "focus": "Enterprise productivity & workflow automation",
+        "recent_move": "Launched Copilot for Dynamics 365 and integrated with Teams in Q3\u202f2026",
+        "price_trend": "+3% YoY",
+        "threat_level": "High",
+        "key_advantage": "Deep integration with Microsoft 365 ecosystem and massive enterprise install base",
+        "key_vulnerability": "Limited vertical\u2011specific features for automotive retail",
+        "brand": "Copilot",
+        "fact_type": "competitor_profile",
+        "url": "https://microsoft.com"
+      },
+      {
+        "id": "google-gemini",
+        "name": "Google Gemini",
+        "domain": "google.com",
+        "market_share": "~12% of generative AI market",
+        "focus": "Multimodal AI assistants for consumer and business apps",
+        "recent_move": "Released Gemini for Retail AI suite targeting automotive dealers in Oct\u202f2026",
+        "price_trend": "Stable",
+        "threat_level": "Medium",
+        "key_advantage": "Superior multimodal capabilities and Google Cloud data ecosystem",
+        "key_vulnerability": "Fragmented pricing and slower rollout of vertical integrations",
+        "brand": "Copilot",
+        "fact_type": "competitor_profile",
+        "url": "https://google.com"
+      },
+      {
+        "id": "amazon-q-business",
+        "name": "Amazon Q Business",
+        "domain": "aws.amazon.com",
+        "market_share": "~9% of AI\u2011business assistant market",
+        "focus": "Enterprise knowledge management and workflow AI",
+        "recent_move": "Announced partnership with AutoNation to pilot AI\u2011driven inventory insights (Nov\u202f2025)",
+        "price_trend": "+2% Increase",
+        "threat_level": "Medium",
+        "key_advantage": "Leverages AWS data services and scalable cloud infrastructure",
+        "key_vulnerability": "Less brand\u2011focused consumer experience compared with Copilot\u2019s shopper\u2011centric UI",
+        "brand": "Copilot",
+        "fact_type": "competitor_profile",
+        "url": "https://aws.amazon.com"
+      },
+      {
+        "id": "carvana",
+        "name": "Carvana",
+        "domain": "carvana.com",
+        "market_share": "~8% of online used\u2011car sales",
+        "focus": "Direct online vehicle sales platform",
+        "recent_move": "Integrated a chatbot powered by OpenAI API for financing assistance (Sept\u202f2026)",
+        "price_trend": "Promotional",
+        "threat_level": "Medium",
+        "key_advantage": "End\u2011to\u2011end purchase fulfillment and strong logistics network",
+        "key_vulnerability": "AI features are add\u2011on rather than core differentiator",
+        "brand": "Copilot",
+        "fact_type": "competitor_profile",
+        "url": "https://carvana.com"
+      }
+    ],
+    "market_share_benchmark": {
+      "target": {
+        "name": "Copilot",
+        "share": 28,
+        "color": "#0ea5e9",
+        "is_target": true
+      },
+      "rivals": [
+        {
+          "name": "Microsoft 365 Copilot",
+          "share": 15,
+          "color": "#f43f5e",
+          "is_target": false,
+          "domain": "microsoft.com"
+        },
+        {
+          "name": "Google Gemini",
+          "share": 12,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "google.com"
+        },
+        {
+          "name": "Amazon Q Business",
+          "share": 9,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "aws.amazon.com"
+        },
+        {
+          "name": "Carvana",
+          "share": 8,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "carvana.com"
+        }
+      ],
+      "all_bars": [
+        {
+          "name": "Copilot",
+          "share": 28,
+          "color": "#0ea5e9",
+          "is_target": true
+        },
+        {
+          "name": "Microsoft 365 Copilot",
+          "share": 15,
+          "color": "#f43f5e",
+          "is_target": false,
+          "domain": "microsoft.com"
+        },
+        {
+          "name": "Google Gemini",
+          "share": 12,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "google.com"
+        },
+        {
+          "name": "Amazon Q Business",
+          "share": 9,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "aws.amazon.com"
+        },
+        {
+          "name": "Carvana",
+          "share": 8,
+          "color": "#10b981",
+          "is_target": false,
+          "domain": "carvana.com"
+        }
+      ]
+    },
+    "pricing_trajectory": {
+      "tiers": [
+        "Tier 1 / Entry",
+        "Tier 2 / Mid-...",
+        "Tier 3 / Flag."
+      ],
+      "target_name": "Copilot",
+      "rival_name": "Microsoft 365 Copilot Benchmark",
+      "target_curve": [
+        14,
+        38,
+        92
+      ],
+      "rival_curve": [
+        15,
+        48,
+        94
+      ],
+      "points": [
+        {
+          "tier": "Tier 1 / Entry",
+          "target_val": "Basic Car\u2011Shopping Assistant \u2013 $19\u202f/\u202fmonth per dealer",
+          "rival_val": "Microsoft 365 Copilot Business \u2013 $18\u202f/\u202fuser\u202fmonth",
+          "target_pct": 14,
+          "rival_pct": 15
+        },
+        {
+          "tier": "Tier 2 / Mid-...",
+          "target_val": "Pro Car\u2011Shopping Suite \u2013 $45\u202f/\u202fmonth per dealer (up to 50 users)",
+          "rival_val": "Microsoft 365 Copilot Enterprise \u2013 $30\u202f/\u202fuser\u202fmonth",
+          "target_pct": 38,
+          "rival_pct": 48
+        },
+        {
+          "tier": "Tier 3 / Flag.",
+          "target_val": "Enterprise Fleet Management AI \u2013 $120\u202f/\u202fmonth per 100 users",
+          "rival_val": "Microsoft 365 Copilot Enterprise Premium \u2013 $100\u202f/\u202f100\u202fusers\u202fmonth",
+          "target_pct": 92,
+          "rival_pct": 94
+        }
+      ]
+    },
+    "pricing_feature_matrix": [
+      {
+        "segment": "Tier 1 / Entry",
+        "target_offering": "Basic Car\u2011Shopping Assistant \u2013 $19\u202f/\u202fmonth per dealer",
+        "comp1_offering": "Microsoft 365 Copilot Business \u2013 $18\u202f/\u202fuser\u202fmonth",
+        "comp2_offering": "Google Gemini Basic \u2013 $15\u202f/\u202fuser\u202fmonth",
+        "comp3_offering": "Amazon Q Business Starter \u2013 $22\u202f/\u202fuser\u202fmonth"
+      },
+      {
+        "segment": "Tier 2 / Mid\u2011Volume",
+        "target_offering": "Pro Car\u2011Shopping Suite \u2013 $45\u202f/\u202fmonth per dealer (up to 50 users)",
+        "comp1_offering": "Microsoft 365 Copilot Enterprise \u2013 $30\u202f/\u202fuser\u202fmonth",
+        "comp2_offering": "Google Gemini Pro \u2013 $40\u202f/\u202fuser\u202fmonth",
+        "comp3_offering": "Amazon Q Business Mid\u2011Tier \u2013 $38\u202f/\u202fuser\u202fmonth"
+      },
+      {
+        "segment": "Tier 3 / Flagship",
+        "target_offering": "Enterprise Fleet Management AI \u2013 $120\u202f/\u202fmonth per 100 users",
+        "comp1_offering": "Microsoft 365 Copilot Enterprise Premium \u2013 $100\u202f/\u202f100\u202fusers\u202fmonth",
+        "comp2_offering": "Google Gemini Enterprise \u2013 $115\u202f/\u202f100\u202fusers\u202fmonth",
+        "comp3_offering": "Amazon Q Business Enterprise \u2013 $105\u202f/\u202f100\u202fusers\u202fmonth"
+      }
+    ],
+    "news_pulse_7_days": [],
+    "detected_changes": [
+      {
+        "category": "Baseline Establishment",
+        "item": "Initial Market Landscape",
+        "change_type": "new",
+        "previous_value": "None (First Observation)",
+        "current_value": "Anchored in Memory",
+        "summary": "Anchored initial pricing, positioning, and source coverage for Copilot.",
+        "significance": "Benchmark",
+        "type": "verified_fact"
+      }
+    ]
+  },
+  "market_share_benchmark": {
+    "target": {
+      "name": "Copilot",
+      "share": 28,
+      "color": "#0ea5e9",
+      "is_target": true
+    },
+    "rivals": [
+      {
+        "name": "Microsoft 365 Copilot",
+        "share": 15,
+        "color": "#f43f5e",
+        "is_target": false,
+        "domain": "microsoft.com"
+      },
+      {
+        "name": "Google Gemini",
+        "share": 12,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "google.com"
+      },
+      {
+        "name": "Amazon Q Business",
+        "share": 9,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "aws.amazon.com"
+      },
+      {
+        "name": "Carvana",
+        "share": 8,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "carvana.com"
+      }
+    ],
+    "all_bars": [
+      {
+        "name": "Copilot",
+        "share": 28,
+        "color": "#0ea5e9",
+        "is_target": true
+      },
+      {
+        "name": "Microsoft 365 Copilot",
+        "share": 15,
+        "color": "#f43f5e",
+        "is_target": false,
+        "domain": "microsoft.com"
+      },
+      {
+        "name": "Google Gemini",
+        "share": 12,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "google.com"
+      },
+      {
+        "name": "Amazon Q Business",
+        "share": 9,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "aws.amazon.com"
+      },
+      {
+        "name": "Carvana",
+        "share": 8,
+        "color": "#10b981",
+        "is_target": false,
+        "domain": "carvana.com"
+      }
+    ]
+  },
+  "pricing_trajectory": {
+    "tiers": [
+      "Tier 1 / Entry",
+      "Tier 2 / Mid-...",
+      "Tier 3 / Flag."
+    ],
+    "target_name": "Copilot",
+    "rival_name": "Microsoft 365 Copilot Benchmark",
+    "target_curve": [
+      14,
+      38,
+      92
+    ],
+    "rival_curve": [
+      15,
+      48,
+      94
+    ],
+    "points": [
+      {
+        "tier": "Tier 1 / Entry",
+        "target_val": "Basic Car\u2011Shopping Assistant \u2013 $19\u202f/\u202fmonth per dealer",
+        "rival_val": "Microsoft 365 Copilot Business \u2013 $18\u202f/\u202fuser\u202fmonth",
+        "target_pct": 14,
+        "rival_pct": 15
+      },
+      {
+        "tier": "Tier 2 / Mid-...",
+        "target_val": "Pro Car\u2011Shopping Suite \u2013 $45\u202f/\u202fmonth per dealer (up to 50 users)",
+        "rival_val": "Microsoft 365 Copilot Enterprise \u2013 $30\u202f/\u202fuser\u202fmonth",
+        "target_pct": 38,
+        "rival_pct": 48
+      },
+      {
+        "tier": "Tier 3 / Flag.",
+        "target_val": "Enterprise Fleet Management AI \u2013 $120\u202f/\u202fmonth per 100 users",
+        "rival_val": "Microsoft 365 Copilot Enterprise Premium \u2013 $100\u202f/\u202f100\u202fusers\u202fmonth",
+        "target_pct": 92,
+        "rival_pct": 94
+      }
+    ]
+  },
+  "why_does_it_matter": {
+    "market_trends": [
+      {
+        "trend": "AI\u2011driven personalization in automotive retail",
+        "description": "Research from Research and Markets (2026) shows 68% of car buyers expect AI\u2011tailored recommendations, driving demand for integrated assistant platforms.",
+        "impact": "Accelerates margin pressure on low\u2011priced dealers while rewarding platforms that can upsell financing and accessories.",
+        "type": "market_trend"
+      },
+      {
+        "trend": "Enterprise AI adoption across productivity suites",
+        "description": "Microsoft projects $200\u202fB AI revenue by 2026; Copilot adoption in enterprise settings is still early, creating a window for niche vertical solutions.",
+        "impact": "Creates a competitive moat for large vendors; niche players must double\u2011down on vertical expertise to retain market share.",
+        "type": "market_trend"
+      }
+    ],
+    "opportunities": [
+      {
+        "title": "Dealer\u2011CRM Integration Layer",
+        "gap": "Most AI assistants lack native integration with dealer management systems (DMS) like CDK and Reynolds & Reynolds.",
+        "actionable_counter": "Develop a plug\u2011and\u2011play API hub that syncs inventory, financing, and service data directly into Copilot\u2019s workflow.",
+        "potential_upside": "High"
+      },
+      {
+        "title": "AI\u2011Powered Trade\u2011In Valuation",
+        "gap": "Competitors offer generic price estimates; no real\u2011time AI valuation tied to market data.",
+        "actionable_counter": "Launch a real\u2011time trade\u2011in valuation engine using proprietary pricing models and external market feeds.",
+        "potential_upside": "Medium"
+      }
+    ],
+    "threats": [
+      {
+        "title": "Microsoft Vertical Expansion",
+        "competitor": "Microsoft",
+        "move_detail": "Extended Copilot functionality into Dynamics 365 Automotive module, bundling AI assistance with CRM and ERP.",
+        "severity": "High",
+        "impact_timeline": "Immediate (0-30 days)"
+      },
+      {
+        "title": "Google Gemini Retail Suite Rollout",
+        "competitor": "Google",
+        "move_detail": "Beta launch of Gemini for Retail targeting automotive dealers, offering free tier for first 12 months.",
+        "severity": "Medium",
+        "impact_timeline": "Medium term (1-3 months)"
+      }
+    ],
+    "hindsight_reflection": "Baseline Established (Scan #1): Ingested 6 verified articles and competitor profiles into Hindsight bank 'godseye-intel-copilot-com'. Initial market observations anchored. The next time Copilot is scanned, the agent will recall previous findings to detect what's changed.",
+    "recalled_nodes": []
+  },
+  "what_should_we_do": {
+    "strategic_recommendations": [
+      {
+        "title": "Neutralize Microsoft 365 Copilot Pricing Pressure",
+        "priority": "P0 Critical",
+        "action": "Audit pricing parity against Microsoft 365 Copilot and deploy targeted annual incentive bundles.",
+        "rationale": "Directly counters Microsoft 365 Copilot's aggressive positioning while defending margin on renewal cohorts.",
+        "expected_outcome": "Minimizes account churn and locks in retention across key customer segments.",
+        "type": "strategic_recommendation",
+        "brand": "Copilot",
+        "fact_type": "ai_recommendation",
+        "url": ""
+      },
+      {
+        "title": "Exploit Unaddressed Workflow Gaps",
+        "priority": "P1 Offensive",
+        "action": "Accelerate self-serve product onboarding for high-velocity teams underserved by Microsoft 365 Copilot.",
+        "rationale": "Microsoft 365 Copilot is focusing on monolithic enterprise tiers, leaving an opening in developer-first teams.",
+        "expected_outcome": "Drives 15-20% acceleration in qualified product-led conversion.",
+        "type": "strategic_recommendation",
+        "brand": "Copilot",
+        "fact_type": "ai_recommendation",
+        "url": ""
+      },
+      {
+        "title": "Strengthen Differentiated Product Moats",
+        "priority": "P2 Strategic",
+        "action": "Double down on performance ergonomics and publish public benchmark comparisons against Google Gemini.",
+        "rationale": "Shifts the buyer conversation from a commodity pricing contest to superior execution speed and craft.",
+        "expected_outcome": "Reinforces premium brand equity and improves net revenue retention.",
+        "type": "strategic_recommendation",
+        "brand": "Copilot",
+        "fact_type": "ai_recommendation",
+        "url": ""
+      }
+    ],
+    "founder_decisions": []
+  },
+  "hindsight_memory": {
+    "bank_id": "godseye-intel-copilot-com",
+    "storage_backend": "hindsight_embedded",
+    "is_memory_enabled": true,
+    "is_baseline": true,
+    "reflection_text": "Baseline Established (Scan #1): Ingested 6 verified articles and competitor profiles into Hindsight bank 'godseye-intel-copilot-com'. Initial market observations anchored. The next time Copilot is scanned, the agent will recall previous findings to detect what's changed.",
+    "recalled_nodes_count": 0,
+    "recalled_nodes": [],
+    "neural_network": {
+      "center_node": {
+        "id": "node_center",
+        "label": "Copilot",
+        "color": "#0284c7"
+      },
+      "radial_nodes": [
+        {
+          "id": "node_616760490e8e46f0",
+          "chip_id": "#node_6167604",
+          "label": "Audit pricing pari...",
+          "full_title": "Audit pricing parity against Microsoft 365 Copilot and deploy targeted annual incentive bundles.",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 270,
+          "content": "Strategic Move [P0 Critical]: Audit pricing parity against Microsoft 365 Copilot and deploy targeted annual incentive bundles.. Rationale: Directly counters Microsoft 365 Copilot's aggressive positioning while defending margin on renewal cohorts.",
+          "timestamp": "2026-11-07T11:14:36.069214+00:00"
+        },
+        {
+          "id": "node_b40cca78f9f64646",
+          "chip_id": "#node_b40cca7",
+          "label": "Accelerate self-se...",
+          "full_title": "Accelerate self-serve product onboarding for high-velocity teams underserved by Microsoft 365 Copilot.",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 320,
+          "content": "Strategic Move [P1 Offensive]: Accelerate self-serve product onboarding for high-velocity teams underserved by Microsoft 365 Copilot.. Rationale: Microsoft 365 Copilot is focusing on monolithic enterprise tiers, leaving an opening in developer-first teams.",
+          "timestamp": "2026-11-07T11:14:36.069218+00:00"
+        },
+        {
+          "id": "node_31102c8417214960",
+          "chip_id": "#node_31102c8",
+          "label": "Double down on per...",
+          "full_title": "Double down on performance ergonomics and publish public benchmark comparisons against Google Gemini.",
+          "subtitle": "Observation",
+          "type": "Observation",
+          "color": "#38bdf8",
+          "angle_deg": 15,
+          "content": "Strategic Move [P2 Strategic]: Double down on performance ergonomics and publish public benchmark comparisons against Google Gemini.. Rationale: Shifts the buyer conversation from a commodity pricing contest to superior execution speed and craft.",
+          "timestamp": "2026-11-07T11:14:36.069220+00:00"
+        },
+        {
+          "id": "node_232cf4dd51bc48fe",
+          "chip_id": "#node_232cf4d",
+          "label": "Microsoft 365 ...",
+          "full_title": "Microsoft 365 Copilot \u2014 Launched Copilot for Dynamics 365 and integrated with Teams in Q3\u202f2026",
+          "subtitle": "Pricing Model",
+          "type": "Pricing Model",
+          "color": "#10b981",
+          "angle_deg": 65,
+          "content": "Competitor Microsoft 365 Copilot (microsoft.com). Move: Launched Copilot for Dynamics 365 and integrated with Teams in Q3\u202f2026. Advantage: Deep integration with Microsoft 365 ecosystem and massive enterprise install base",
+          "timestamp": "2026-11-07T11:14:36.069225+00:00"
+        },
+        {
+          "id": "node_cae011175965437d",
+          "chip_id": "#node_cae0111",
+          "label": "Google Gemini",
+          "full_title": "Google Gemini \u2014 Released Gemini for Retail AI suite targeting automotive dealers in Oct\u202f2026",
+          "subtitle": "Pricing Model",
+          "type": "Pricing Model",
+          "color": "#10b981",
+          "angle_deg": 90,
+          "content": "Competitor Google Gemini (google.com). Move: Released Gemini for Retail AI suite targeting automotive dealers in Oct\u202f2026. Advantage: Superior multimodal capabilities and Google Cloud data ecosystem",
+          "timestamp": "2026-11-07T11:14:36.069228+00:00"
+        },
+        {
+          "id": "node_c7f413720e1f4030",
+          "chip_id": "#node_c7f4137",
+          "label": "Amazon Q Busin...",
+          "full_title": "Amazon Q Business \u2014 Announced partnership with AutoNation to pilot AI\u2011driven inventory insights (Nov\u202f2025)",
+          "subtitle": "Pricing Model",
+          "type": "Pricing Model",
+          "color": "#10b981",
+          "angle_deg": 140,
+          "content": "Competitor Amazon Q Business (aws.amazon.com). Move: Announced partnership with AutoNation to pilot AI\u2011driven inventory insights (Nov\u202f2025). Advantage: Leverages AWS data services and scalable cloud infrastructure",
+          "timestamp": "2026-11-07T11:14:36.069231+00:00"
+        },
+        {
+          "id": "node_0030da3b60d745ea",
+          "chip_id": "#node_0030da3",
+          "label": "Microsoft Copilot...",
+          "full_title": "Microsoft Copilot Pricing (2026): Every Plan, Add-on and Bundle Explained",
+          "subtitle": "Pricing Model",
+          "type": "Pricing Model",
+          "color": "#10b981",
+          "angle_deg": 195,
+          "content": "Article: Microsoft Copilot Pricing (2026): Every Plan, Add-on and Bundle Explained\nSource: skillmammoth.com\nMicrosoft sells Copilot under at least nine prices, read October 30, 2026. Every business SKU is an annual commitment. For a person: the Copilot app is free, Microsoft 365 Personal",
+          "timestamp": "Fri, 30 Oct 2026 20:08:33 GMT"
+        },
+        {
+          "id": "node_0c2f982e10d646d4",
+          "chip_id": "#node_0c2f982",
+          "label": "Microsoft 365 Cop...",
+          "full_title": "Microsoft 365 Copilot Pricing (2026): Business, Enterprise and Agents",
+          "subtitle": "Pricing Model",
+          "type": "Pricing Model",
+          "color": "#10b981",
+          "angle_deg": 235,
+          "content": "Article: Microsoft 365 Copilot Pricing (2026): Business, Enterprise and Agents\nSource: imisofts.com\nKey numbers | Item | Number | --- | | Copilot Business, paid yearly ($18 in year one, orders 1 Jul to 31 Dec 2026) | $21 a user a month | | Copilot Business, monthly subscription |",
+          "timestamp": "Thu, 15 Oct 2026 00:00:00 GMT"
+        }
+      ],
+      "recalled_chips": [
+        "#node_6167604",
+        "#node_b40cca7",
+        "#node_31102c8",
+        "#node_232cf4d",
+        "#node_cae0111",
+        "#node_c7f4137"
+      ],
+      "instant_prompts": [
+        "What is Copilot's pricing moat?",
+        "How have competitor prices shifted?",
+        "What strategic counter-move should we execute?"
+      ]
+    },
+    "neural_nodes": [
+      {
+        "id": "node_616760490e8e46f0",
+        "chip_id": "#node_6167604",
+        "label": "Audit pricing pari...",
+        "full_title": "Audit pricing parity against Microsoft 365 Copilot and deploy targeted annual incentive bundles.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 270,
+        "content": "Strategic Move [P0 Critical]: Audit pricing parity against Microsoft 365 Copilot and deploy targeted annual incentive bundles.. Rationale: Directly counters Microsoft 365 Copilot's aggressive positioning while defending margin on renewal cohorts.",
+        "timestamp": "2026-11-07T11:14:36.069214+00:00"
+      },
+      {
+        "id": "node_b40cca78f9f64646",
+        "chip_id": "#node_b40cca7",
+        "label": "Accelerate self-se...",
+        "full_title": "Accelerate self-serve product onboarding for high-velocity teams underserved by Microsoft 365 Copilot.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 320,
+        "content": "Strategic Move [P1 Offensive]: Accelerate self-serve product onboarding for high-velocity teams underserved by Microsoft 365 Copilot.. Rationale: Microsoft 365 Copilot is focusing on monolithic enterprise tiers, leaving an opening in developer-first teams.",
+        "timestamp": "2026-11-07T11:14:36.069218+00:00"
+      },
+      {
+        "id": "node_31102c8417214960",
+        "chip_id": "#node_31102c8",
+        "label": "Double down on per...",
+        "full_title": "Double down on performance ergonomics and publish public benchmark comparisons against Google Gemini.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 15,
+        "content": "Strategic Move [P2 Strategic]: Double down on performance ergonomics and publish public benchmark comparisons against Google Gemini.. Rationale: Shifts the buyer conversation from a commodity pricing contest to superior execution speed and craft.",
+        "timestamp": "2026-11-07T11:14:36.069220+00:00"
+      },
+      {
+        "id": "node_232cf4dd51bc48fe",
+        "chip_id": "#node_232cf4d",
+        "label": "Microsoft 365 ...",
+        "full_title": "Microsoft 365 Copilot \u2014 Launched Copilot for Dynamics 365 and integrated with Teams in Q3\u202f2026",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 65,
+        "content": "Competitor Microsoft 365 Copilot (microsoft.com). Move: Launched Copilot for Dynamics 365 and integrated with Teams in Q3\u202f2026. Advantage: Deep integration with Microsoft 365 ecosystem and massive enterprise install base",
+        "timestamp": "2026-11-07T11:14:36.069225+00:00"
+      },
+      {
+        "id": "node_cae011175965437d",
+        "chip_id": "#node_cae0111",
+        "label": "Google Gemini",
+        "full_title": "Google Gemini \u2014 Released Gemini for Retail AI suite targeting automotive dealers in Oct\u202f2026",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 90,
+        "content": "Competitor Google Gemini (google.com). Move: Released Gemini for Retail AI suite targeting automotive dealers in Oct\u202f2026. Advantage: Superior multimodal capabilities and Google Cloud data ecosystem",
+        "timestamp": "2026-11-07T11:14:36.069228+00:00"
+      },
+      {
+        "id": "node_c7f413720e1f4030",
+        "chip_id": "#node_c7f4137",
+        "label": "Amazon Q Busin...",
+        "full_title": "Amazon Q Business \u2014 Announced partnership with AutoNation to pilot AI\u2011driven inventory insights (Nov\u202f2025)",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 140,
+        "content": "Competitor Amazon Q Business (aws.amazon.com). Move: Announced partnership with AutoNation to pilot AI\u2011driven inventory insights (Nov\u202f2025). Advantage: Leverages AWS data services and scalable cloud infrastructure",
+        "timestamp": "2026-11-07T11:14:36.069231+00:00"
+      },
+      {
+        "id": "node_0030da3b60d745ea",
+        "chip_id": "#node_0030da3",
+        "label": "Microsoft Copilot...",
+        "full_title": "Microsoft Copilot Pricing (2026): Every Plan, Add-on and Bundle Explained",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 195,
+        "content": "Article: Microsoft Copilot Pricing (2026): Every Plan, Add-on and Bundle Explained\nSource: skillmammoth.com\nMicrosoft sells Copilot under at least nine prices, read October 30, 2026. Every business SKU is an annual commitment. For a person: the Copilot app is free, Microsoft 365 Personal",
+        "timestamp": "Fri, 30 Oct 2026 20:08:33 GMT"
+      },
+      {
+        "id": "node_0c2f982e10d646d4",
+        "chip_id": "#node_0c2f982",
+        "label": "Microsoft 365 Cop...",
+        "full_title": "Microsoft 365 Copilot Pricing (2026): Business, Enterprise and Agents",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 235,
+        "content": "Article: Microsoft 365 Copilot Pricing (2026): Business, Enterprise and Agents\nSource: imisofts.com\nKey numbers | Item | Number | --- | | Copilot Business, paid yearly ($18 in year one, orders 1 Jul to 31 Dec 2026) | $21 a user a month | | Copilot Business, monthly subscription |",
+        "timestamp": "Thu, 15 Oct 2026 00:00:00 GMT"
+      }
+    ],
+    "recalled_chips": [
+      "#node_6167604",
+      "#node_b40cca7",
+      "#node_31102c8",
+      "#node_232cf4d",
+      "#node_cae0111",
+      "#node_c7f4137"
+    ],
+    "instant_prompts": [
+      "What is Copilot's pricing moat?",
+      "How have competitor prices shifted?",
+      "What strategic counter-move should we execute?"
+    ],
+    "compounding_message": "The next time Copilot is scanned, the agent remembers previous findings and identifies what's changed, which strategies are developing and which trends are continuing."
+  },
+  "neural_network": {
+    "center_node": {
+      "id": "node_center",
+      "label": "Copilot",
+      "color": "#0284c7"
+    },
+    "radial_nodes": [
+      {
+        "id": "node_616760490e8e46f0",
+        "chip_id": "#node_6167604",
+        "label": "Audit pricing pari...",
+        "full_title": "Audit pricing parity against Microsoft 365 Copilot and deploy targeted annual incentive bundles.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 270,
+        "content": "Strategic Move [P0 Critical]: Audit pricing parity against Microsoft 365 Copilot and deploy targeted annual incentive bundles.. Rationale: Directly counters Microsoft 365 Copilot's aggressive positioning while defending margin on renewal cohorts.",
+        "timestamp": "2026-11-07T11:14:36.069214+00:00"
+      },
+      {
+        "id": "node_b40cca78f9f64646",
+        "chip_id": "#node_b40cca7",
+        "label": "Accelerate self-se...",
+        "full_title": "Accelerate self-serve product onboarding for high-velocity teams underserved by Microsoft 365 Copilot.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 320,
+        "content": "Strategic Move [P1 Offensive]: Accelerate self-serve product onboarding for high-velocity teams underserved by Microsoft 365 Copilot.. Rationale: Microsoft 365 Copilot is focusing on monolithic enterprise tiers, leaving an opening in developer-first teams.",
+        "timestamp": "2026-11-07T11:14:36.069218+00:00"
+      },
+      {
+        "id": "node_31102c8417214960",
+        "chip_id": "#node_31102c8",
+        "label": "Double down on per...",
+        "full_title": "Double down on performance ergonomics and publish public benchmark comparisons against Google Gemini.",
+        "subtitle": "Observation",
+        "type": "Observation",
+        "color": "#38bdf8",
+        "angle_deg": 15,
+        "content": "Strategic Move [P2 Strategic]: Double down on performance ergonomics and publish public benchmark comparisons against Google Gemini.. Rationale: Shifts the buyer conversation from a commodity pricing contest to superior execution speed and craft.",
+        "timestamp": "2026-11-07T11:14:36.069220+00:00"
+      },
+      {
+        "id": "node_232cf4dd51bc48fe",
+        "chip_id": "#node_232cf4d",
+        "label": "Microsoft 365 ...",
+        "full_title": "Microsoft 365 Copilot \u2014 Launched Copilot for Dynamics 365 and integrated with Teams in Q3\u202f2026",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 65,
+        "content": "Competitor Microsoft 365 Copilot (microsoft.com). Move: Launched Copilot for Dynamics 365 and integrated with Teams in Q3\u202f2026. Advantage: Deep integration with Microsoft 365 ecosystem and massive enterprise install base",
+        "timestamp": "2026-11-07T11:14:36.069225+00:00"
+      },
+      {
+        "id": "node_cae011175965437d",
+        "chip_id": "#node_cae0111",
+        "label": "Google Gemini",
+        "full_title": "Google Gemini \u2014 Released Gemini for Retail AI suite targeting automotive dealers in Oct\u202f2026",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 90,
+        "content": "Competitor Google Gemini (google.com). Move: Released Gemini for Retail AI suite targeting automotive dealers in Oct\u202f2026. Advantage: Superior multimodal capabilities and Google Cloud data ecosystem",
+        "timestamp": "2026-11-07T11:14:36.069228+00:00"
+      },
+      {
+        "id": "node_c7f413720e1f4030",
+        "chip_id": "#node_c7f4137",
+        "label": "Amazon Q Busin...",
+        "full_title": "Amazon Q Business \u2014 Announced partnership with AutoNation to pilot AI\u2011driven inventory insights (Nov\u202f2025)",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 140,
+        "content": "Competitor Amazon Q Business (aws.amazon.com). Move: Announced partnership with AutoNation to pilot AI\u2011driven inventory insights (Nov\u202f2025). Advantage: Leverages AWS data services and scalable cloud infrastructure",
+        "timestamp": "2026-11-07T11:14:36.069231+00:00"
+      },
+      {
+        "id": "node_0030da3b60d745ea",
+        "chip_id": "#node_0030da3",
+        "label": "Microsoft Copilot...",
+        "full_title": "Microsoft Copilot Pricing (2026): Every Plan, Add-on and Bundle Explained",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 195,
+        "content": "Article: Microsoft Copilot Pricing (2026): Every Plan, Add-on and Bundle Explained\nSource: skillmammoth.com\nMicrosoft sells Copilot under at least nine prices, read October 30, 2026. Every business SKU is an annual commitment. For a person: the Copilot app is free, Microsoft 365 Personal",
+        "timestamp": "Fri, 30 Oct 2026 20:08:33 GMT"
+      },
+      {
+        "id": "node_0c2f982e10d646d4",
+        "chip_id": "#node_0c2f982",
+        "label": "Microsoft 365 Cop...",
+        "full_title": "Microsoft 365 Copilot Pricing (2026): Business, Enterprise and Agents",
+        "subtitle": "Pricing Model",
+        "type": "Pricing Model",
+        "color": "#10b981",
+        "angle_deg": 235,
+        "content": "Article: Microsoft 365 Copilot Pricing (2026): Business, Enterprise and Agents\nSource: imisofts.com\nKey numbers | Item | Number | --- | | Copilot Business, paid yearly ($18 in year one, orders 1 Jul to 31 Dec 2026) | $21 a user a month | | Copilot Business, monthly subscription |",
+        "timestamp": "Thu, 15 Oct 2026 00:00:00 GMT"
+      }
+    ],
+    "recalled_chips": [
+      "#node_6167604",
+      "#node_b40cca7",
+      "#node_31102c8",
+      "#node_232cf4d",
+      "#node_cae0111",
+      "#node_c7f4137"
+    ],
+    "instant_prompts": [
+      "What is Copilot's pricing moat?",
+      "How have competitor prices shifted?",
+      "What strategic counter-move should we execute?"
+    ]
+  },
+  "source_verification": [
+    {
+      "title": "Microsoft Copilot Pricing (2026): Every Plan, Add-on and Bundle Explained",
+      "url": "https://skillmammoth.com/blog/copilot-pricing",
+      "publisher": "skillmammoth.com",
+      "published_date": "Fri, 30 Oct 2026 20:08:33 GMT",
+      "snippet": "Microsoft sells Copilot under at least nine prices, read October 30, 2026. Every business SKU is an annual commitment. For a person: the Copilot app is free, Microsoft 365 Personal is $9.99 a month, Family $12.99, Premium $19.99 (the plan that replaced Copilot Pro on October 1, 2...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "Microsoft 365 Copilot Pricing (2026): Business, Enterprise and Agents",
+      "url": "https://imisofts.com/blog/microsoft-365-copilot-pricing",
+      "publisher": "imisofts.com",
+      "published_date": "Thu, 15 Oct 2026 00:00:00 GMT",
+      "snippet": "Key numbers | Item | Number | --- | | Copilot Business, paid yearly ($18 in year one, orders 1 Jul to 31 Dec 2026) | $21 a user a month | | Copilot Business, monthly subscription | $25.20 a user a month | | Business Standard with Copilot | $23.50 yearly, $28.20 monthly | | Busine...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "Microsoft Copilot Review: Is It Worth $20/Month in 2026?",
+      "url": "https://aionx.co/ai-comparisons/microsoft-copilot-review",
+      "publisher": "aionx.co",
+      "published_date": "Tue, 18 Nov 2025 11:02:27 GMT",
+      "snippet": "Important note: Copilot Pro requires an existing Microsoft 365 Personal or Family subscription. You cannot purchase Pro standalone\u2014you\u2019re paying $20/month in addition to your M365 subscription cost. Microsoft Copilot Pricing Breakdown (2026) Microsoft\u2019s 2026 pricing structure inc...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "Copilot Cowork is now generally available | Microsoft Copilot Blog",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/16/copilot-cowork-is-now-generally-available",
+      "publisher": "www.microsoft.com",
+      "published_date": "Tue, 16 Jun 2026 15:00:00 GMT",
+      "snippet": "Skip to content Microsoft Copilot Copilot Word Excel PowerPoint Outlook OneDrive Teams Copilot Studio Work IQ Cowork Individuals Business Enterprise Education Plans and pricing Support Customer stories Blog Copilot vs. competitors Tech community Frontier program AI for Work Roadm...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "Announcing the new Work IQ APIs | Microsoft Copilot Blog",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/02/announcing-the-new-work-iq-apis",
+      "publisher": "www.microsoft.com",
+      "published_date": "Tue, 02 Jun 2026 17:00:15 GMT",
+      "snippet": "Skip to content Microsoft Copilot Copilot Word Excel PowerPoint Outlook OneDrive Teams Copilot Studio Work IQ Cowork Individuals Business Enterprise Education Plans and pricing Support Customer stories Blog Copilot vs. competitors Tech community Frontier program AI for Work Roadm...",
+      "verification_status": "Verified Original Source"
+    },
+    {
+      "title": "Introducing Microsoft Scout: Your always-on personal agent | Microsoft Copilot Blog",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent",
+      "publisher": "www.microsoft.com",
+      "published_date": "Tue, 02 Jun 2026 18:00:00 GMT",
+      "snippet": "Skip to content Microsoft Copilot Copilot Word Excel PowerPoint Outlook OneDrive Teams Copilot Studio Work IQ Cowork Individuals Business Enterprise Education Plans and pricing Support Customer stories Blog Copilot vs. competitors Tech community Frontier program AI for Work Roadm...",
+      "verification_status": "Verified Original Source"
+    }
+  ]
+}
