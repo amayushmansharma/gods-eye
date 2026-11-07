@@ -4,6 +4,8 @@
 > **"Your market never stops moving. Neither should your intelligence."**
 > 
 > **God's Eye** is an autonomous competitive intelligence agent that researches competitors, tracks market movements, remembers historical developments, and turns raw business signals into actionable executive decisions. Powered by **[Vectorize Hindsight](https://github.com/vectorize-io/hindsight)**, Groq, and Tavily.
+>
+> Try It Out On:-  https://gods-eye-ibsr.onrender.com/
 
 ---
 
