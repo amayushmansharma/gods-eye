@@ -7,15 +7,19 @@
 
 ---
 
-## 📸 Interface & Dashboard
+## 📸 Interface & Live Surveillance Dashboard
 
-| Desktop Surveillance (1440px) | 30s+ Autonomous Scanner Visualizer |
+| 01. Temporal Diff & Compounding Dossier | 02. 30s+ Autonomous Scanner Visualizer |
 | :---: | :---: |
-| ![Desktop Dashboard](public/screenshots/viewport_1440.png) | ![Scanner Visualizer](public/screenshots/scanner_iris_visualizer.png) |
+| ![Temporal Diff Dossier](public/screenshots/01_temporal_diff_dossier.png) | ![30s Scanner Visualizer](public/screenshots/02_scanner_iris_engine.png) |
 
-| Responsive Mobile View (390px) | Neural Memory Network |
+| 03. Section 01: What Happened? (Competitors & Benchmark) | 04. Section 02 & 03: Why It Matters & Strategic Actions |
 | :---: | :---: |
-| ![Mobile View](public/screenshots/viewport_390.png) | ![Header Canvas](public/screenshots/header_state_done.png) |
+| ![What Happened Competitors](public/screenshots/03_what_happened_competitors.png) | ![Why It Matters & Recommendations](public/screenshots/04_why_matters_recommendations.png) |
+
+| 05. Section 04: Hindsight Memory Neural Network & Watchlist |
+| :---: |
+| ![Hindsight Memory Neural Network](public/screenshots/05_hindsight_neural_network.png) |
 
 ---
 

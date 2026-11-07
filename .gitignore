@@ -26,5 +26,9 @@ __pycache__/
 *$py.class
 .pytest_cache/
 
+# JetBrains / WebStorm
+.idea/
+*.iml
+
 # Node / Package managers (if used)
 node_modules/
