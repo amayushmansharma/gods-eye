@@ -9,17 +9,17 @@
 
 ## 📸 Interface & Live Surveillance Dashboard
 
-| 01. Temporal Diff & Compounding Dossier | 02. 30s+ Autonomous Scanner Visualizer |
-| :---: | :---: |
-| ![Temporal Diff Dossier](public/screenshots/01_temporal_diff_dossier.png) | ![30s Scanner Visualizer](public/screenshots/02_scanner_iris_engine.png) |
+### 1. Surveillance Command Center & Tracked Watchlist
+> The obsidian surveillance interface with autonomous search capsule and live multi-scan market watchlist.
 
-| 03. Section 01: What Happened? (Competitors & Benchmark) | 04. Section 02 & 03: Why It Matters & Strategic Actions |
-| :---: | :---: |
-| ![What Happened Competitors](public/screenshots/03_what_happened_competitors.png) | ![Why It Matters & Recommendations](public/screenshots/04_why_matters_recommendations.png) |
+![Surveillance Command Center](public/screenshots/hero_surveillance_watchlist.png)
 
-| 05. Section 04: Hindsight Memory Neural Network & Watchlist |
-| :---: |
-| ![Hindsight Memory Neural Network](public/screenshots/05_hindsight_neural_network.png) |
+---
+
+### 2. Full End-to-End Intelligence Dossier (Compounded with Hindsight)
+> Complete autonomous intelligence report: temporal diff tracking, 4 discovered rivals, market share benchmarks, cross-tier pricing trajectories, opportunity/threat matrix, board-ready counter-moves, and the interactive persistent memory neural graph.
+
+![Full Intelligence Dossier](public/screenshots/full_intelligence_dossier.png)
 
 ---
 
