@@ -1,8 +1,30 @@
+# Environment and secret credentials
 .env
+.env.*
+!.env.example
+
+# macOS metadata
+.DS_Store
+*.DS_Store
+__MACOSX/
+
+# Local databases and persistence snapshots
+*.db
+*.sqlite
+*.sqlite3
+.snapshots/
 .local_memory_bank.json
 .scan_metadata.json
-.snapshots/
+
+# Runtime logs
 *.log
+scan_log.jsonl
+
+# Python cache & test artifacts
 __pycache__/
-*.pyc
-.DS_Store
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Node / Package managers (if used)
+node_modules/

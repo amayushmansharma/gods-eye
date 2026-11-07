@@ -1,12 +1,23 @@
-Most AI agents suffer from amnesia. You run a web crawl, get a snapshot, and tomorrow the model has forgotten everything it saw.
+Most AI competitive intelligence tools suffer from total amnesia.
 
-We fixed this by connecting our market intelligence agent, God's Eye, to Vectorize Hindsight persistent memory.
+You run a web crawl, get a snapshot of today's pricing, and tomorrow the agent has completely forgotten everything it saw.
 
-The core primitives:
-• retain(): Automatically logs competitor pricing events and announcements with temporal anchors.
-• recall(): Pulls historical facts via multi-strategy search (embeddings + BM25 + entity graph).
-• reflect(): Native cross-temporal synthesis comparing historical scans against today's web signals.
+Stateless AI can tell you what your rival charges today. It cannot tell you what changed since last month, why they changed it, or what strategy they are building toward.
 
-Stop stuffing raw crawl logs into system prompts. Giving your agent an autonomous memory layer with retain/recall/reflect changes everything.
+To solve this, we built God's Eye 👁️ — an autonomous Competitive Intelligence Agent powered by Vectorize Hindsight persistent memory.
 
-#AIAgents #AI #Hindsight #AgentMemory #AIMemory #LLM
+Here is how persistent memory changes the game:
+1. retain(): Automatically logs competitor pricing events, feature launches, and 7-day news signals with real temporal anchors.
+2. recall(): Pulls historical facts across prior scans using multi-strategy search.
+3. reflect(): Native cross-temporal trajectory synthesis that compares past baselines with today's moves and prescribes tactical counter-measures.
+
+The 3-Question Framework:
+• What happened? (Verified facts, competitor profiles, pricing matrix)
+• Why does it matter? (Macro trends, opportunity gaps, threat detection via Hindsight)
+• What should we do? (Prioritized P0/P1 executive counter-measures)
+
+Stop building stateless AI that forgets. Persistent memory is the real frontier of agentic intelligence.
+
+Check out the demo and code on GitHub: https://github.com/ayushmansharma/gods-eye
+
+#AIAgents #Hindsight #AgentMemory #AIMemory #LLM #Vectorize #CompetitiveIntelligence #BuildInPublic #AI

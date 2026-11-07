@@ -4,12 +4,36 @@ import json
 import hashlib
 import difflib
 import subprocess
+import socket
+import ipaddress
+from urllib.parse import urlparse
 from datetime import datetime, timezone
 from typing import Dict, Any, List, Optional, Tuple
 import requests
 from tavily import TavilyClient
 from groq import Groq
 from dotenv import load_dotenv
+
+def is_safe_url(url: str) -> bool:
+    """Validates that a URL does not target localhost, private subnets, or cloud metadata endpoints."""
+    try:
+        p = urlparse(url if "://" in url else "https://" + url)
+        if p.scheme not in ("http", "https"):
+            return False
+        host = p.hostname
+        if not host:
+            return False
+        if host.lower() in ("localhost", "127.0.0.1", "0.0.0.0", "::1", "metadata.google.internal"):
+            return False
+        addrs = socket.getaddrinfo(host, None)
+        for family, socktype, proto, canonname, sockaddr in addrs:
+            ip_str = sockaddr[0]
+            ip = ipaddress.ip_address(ip_str)
+            if ip.is_private or ip.is_loopback or ip.is_link_local or ip.is_reserved or ip.is_multicast:
+                return False
+        return True
+    except Exception:
+        return False
 
 ENV_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".env"))
 load_dotenv(ENV_PATH)
@@ -126,6 +150,8 @@ class SnapshotService:
         """
         Probes a URL to see if it is live and returns the effective reachable URL.
         """
+        if not is_safe_url(url):
+            return None
         headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"}
         try:
             r = requests.head(url, headers=headers, allow_redirects=True, timeout=3)
@@ -254,6 +280,8 @@ class SnapshotService:
         Fetches live page text using Tavily extract with direct curl text extraction fallback.
         Returns: (success, raw_content, error_message)
         """
+        if not is_safe_url(url):
+            return False, "", "Extraction aborted: URL targets a restricted/private network or metadata endpoint."
         # 1. Primary extraction via Tavily
         if self.client:
             try:
